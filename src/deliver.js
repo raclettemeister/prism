@@ -133,7 +133,7 @@ function wrapInTemplate(htmlContent, stats) {
   </div>
   ${htmlContent}
   <div style="margin-top:32px;padding-top:16px;border-top:1px solid #eee;font-size:11px;color:#aaa;">
-    PRISM v0.4.0 — Scored ${stats.articlesScored} articles, analyzed ${stats.articlesAnalyzed} — <a href="https://github.com/raclettemeister/prism" style="color:#aaa;">GitHub</a>
+    PRISM v0.5.0 — Scored ${stats.articlesScored} articles, analyzed ${stats.articlesAnalyzed} — <a href="https://github.com/raclettemeister/prism" style="color:#aaa;">GitHub</a>
   </div>
 </body>
 </html>`;

@@ -1,53 +1,46 @@
 // ============================================================
-// PRISM Context Generator — Reads MylifeOS, writes life-context.md
+// PRISM Context Generator v2 — Human-in-the-loop design
 //
-// Runs as the first step of every PRISM pipeline.
-// Clones the private MylifeOS repo from GitHub, reads key files,
-// sends them to Claude for synthesis into a life-context snapshot.
+// Priority order:
+//   1. context-note.md  — Written by Julien + Opus (THE source of truth)
+//   2. LOG.md           — Last 3 days only (what actually happened)
+//   3. Recently modified — Git tells us what changed in last 48h
+//   4. CLAUDE.md        — Stable identity (read but low-weighted)
+//
+// If context-note.md exists and is fresh (<48h old), PRISM uses it
+// directly with minimal processing. The whole point: Julien already
+// told the AI what matters. Don't second-guess him.
 // ============================================================
 
-import { readFile, writeFile, readdir, stat, mkdir } from 'fs/promises';
-import { join, relative } from 'path';
+import { readFile, writeFile, readdir, mkdir } from 'fs/promises';
+import { join } from 'path';
 import { execSync } from 'child_process';
 import Anthropic from '@anthropic-ai/sdk';
 import { MODELS, LIFE_CONTEXT_FILE } from './config.js';
 
 const client = new Anthropic();
 
-// Where we clone MylifeOS temporarily
 const MYLIFEOS_DIR = '/tmp/mylifeos';
 
-// Files to ALWAYS read (core identity)
-const CORE_FILES = [
-  'CLAUDE.md',
-  'AGENT.md',
-  'LOG.md',
-  'System/Values.md',
-  'System/Disciplines.md',
-  'System/Strategy Guide.md',
-  'System/Personal Strategy.md',
-  'Business/Operation Autonomy.md',
-  'Business/README.md',
-  'Projects/README.md',
-];
+// The human-written context note — highest priority
+const CONTEXT_NOTE_PATH = 'Journal/context-note.md';
 
-// Directories to scan for STATUS.md / README.md files
-const PROJECT_DIRS = ['Projects'];
+// Stable identity file — always read but low priority
+const IDENTITY_FILE = 'CLAUDE.md';
 
-// How many recent journal entries to include
-const JOURNAL_DAILY_COUNT = 5;
-const JOURNAL_WEEKLY_COUNT = 2;
+// How many days of LOG.md to extract
+const LOG_DAYS = 3;
 
 /**
- * Generate a fresh life-context.md from the live MylifeOS vault.
+ * Generate life-context.md for PRISM.
  *
- * 1. Clone/pull MylifeOS from GitHub
- * 2. Read core files + recent journals + project statuses
- * 3. Send to Claude for synthesis
- * 4. Write data/life-context.md
+ * Strategy:
+ * - If context-note.md exists and is fresh: use it as PRIMARY source
+ * - Always supplement with LOG.md (last 3 days) and recently modified files
+ * - Claude's job is to MERGE these layers, not to guess from 25 files
  */
 export default async function generateContext() {
-  console.log('\n🧬 CONTEXT GENERATOR — Building fresh life context...');
+  console.log('\n🧬 CONTEXT GENERATOR v2 — Human-in-the-loop');
 
   const repoUrl = process.env.MYLIFEOS_REPO;
   if (!repoUrl) {
@@ -61,29 +54,38 @@ export default async function generateContext() {
     // Step 1: Clone the repo
     await cloneRepo(repoUrl);
 
-    // Step 2: Gather all relevant content
+    // Step 2: Gather content (prioritized)
     const content = await gatherContent();
 
-    if (content.totalChars === 0) {
-      console.log('  ⚠️ No content gathered from MylifeOS — keeping existing context');
-      return { generated: false, reason: 'no content found' };
+    // Step 3: Generate context
+    let lifeContext;
+
+    if (content.contextNote) {
+      console.log(`  📝 Context note found (${content.contextNote.length} chars)`);
+
+      if (content.needsSynthesis) {
+        // Context note exists but we have supplementary data — merge them
+        lifeContext = await synthesizeContext(content);
+      } else {
+        // Context note is all we need — use it directly (save tokens)
+        lifeContext = formatDirectContext(content);
+      }
+    } else {
+      console.log('  ⚠️ No context-note.md found — generating from LOG + recent files');
+      lifeContext = await synthesizeContext(content);
     }
-
-    console.log(`  📚 Gathered ${content.files.length} files (${(content.totalChars / 1024).toFixed(1)}KB)`);
-
-    // Step 3: Synthesize with Claude
-    const lifeContext = await synthesizeContext(content);
 
     // Step 4: Write to file
     await mkdir('data', { recursive: true });
     await writeFile(LIFE_CONTEXT_FILE, lifeContext, 'utf-8');
 
     const elapsed = ((Date.now() - startTime) / 1000).toFixed(1);
-    console.log(`  ✅ Life context generated (${lifeContext.length} chars) in ${elapsed}s`);
+    console.log(`  ✅ Life context ready (${lifeContext.length} chars) in ${elapsed}s`);
 
     return {
       generated: true,
-      filesRead: content.files.length,
+      hasContextNote: !!content.contextNote,
+      filesRead: content.fileCount,
       inputChars: content.totalChars,
       outputChars: lifeContext.length,
       elapsed,
@@ -97,29 +99,23 @@ export default async function generateContext() {
 }
 
 /**
- * Clone the MylifeOS repo. Uses a GitHub PAT if available.
+ * Clone the MylifeOS repo.
  */
 async function cloneRepo(repoUrl) {
   console.log('  📥 Cloning MylifeOS...');
 
-  // Build authenticated URL if PAT is available
   let authUrl = repoUrl;
   const pat = process.env.MYLIFEOS_PAT;
   if (pat && repoUrl.startsWith('https://')) {
-    // Insert PAT into URL: https://TOKEN@github.com/user/repo.git
     authUrl = repoUrl.replace('https://', `https://${pat}@`);
   }
 
   try {
-    // Clean previous clone
     execSync(`rm -rf ${MYLIFEOS_DIR}`, { stdio: 'pipe' });
-
-    // Shallow clone (only latest commit, saves time)
     execSync(`git clone --depth 1 --single-branch ${authUrl} ${MYLIFEOS_DIR}`, {
       stdio: 'pipe',
-      timeout: 60000, // 60s timeout
+      timeout: 60000,
     });
-
     console.log('  ✅ MylifeOS cloned');
   } catch (err) {
     throw new Error(`Git clone failed: ${err.stderr?.toString()?.trim() || err.message}`);
@@ -127,192 +123,234 @@ async function cloneRepo(repoUrl) {
 }
 
 /**
- * Read all relevant files from the cloned MylifeOS.
- * Returns structured content organized by category.
+ * Gather content with clear priority layers.
  */
 async function gatherContent() {
-  const files = [];
   let totalChars = 0;
+  let fileCount = 0;
 
-  // 1. Core files
-  for (const filePath of CORE_FILES) {
-    const content = await safeRead(join(MYLIFEOS_DIR, filePath));
-    if (content) {
-      files.push({ path: filePath, content, category: 'core' });
-      totalChars += content.length;
-    }
+  // ── Layer 1: Context Note (human-written, highest priority) ──
+  const contextNote = await safeRead(join(MYLIFEOS_DIR, CONTEXT_NOTE_PATH));
+  if (contextNote) {
+    totalChars += contextNote.length;
+    fileCount++;
   }
 
-  // 2. Project STATUS.md files
-  for (const dir of PROJECT_DIRS) {
-    const projectsPath = join(MYLIFEOS_DIR, dir);
-    try {
-      const entries = await readdir(projectsPath, { withFileTypes: true });
-      for (const entry of entries) {
-        if (entry.isDirectory()) {
-          // Try STATUS.md first, then README.md
-          const statusPath = join(projectsPath, entry.name, 'STATUS.md');
-          const readmePath = join(projectsPath, entry.name, 'README.md');
-
-          const statusContent = await safeRead(statusPath);
-          if (statusContent) {
-            files.push({ path: `${dir}/${entry.name}/STATUS.md`, content: statusContent, category: 'project' });
-            totalChars += statusContent.length;
-          } else {
-            const readmeContent = await safeRead(readmePath);
-            if (readmeContent) {
-              files.push({ path: `${dir}/${entry.name}/README.md`, content: readmeContent, category: 'project' });
-              totalChars += readmeContent.length;
-            }
-          }
-        }
-      }
-    } catch { /* directory doesn't exist */ }
+  // ── Layer 2: LOG.md — last N days only ──
+  const logContent = await extractRecentLog(LOG_DAYS);
+  if (logContent) {
+    totalChars += logContent.length;
+    fileCount++;
   }
 
-  // 3. Recent daily journal entries (latest N)
-  const dailyDir = join(MYLIFEOS_DIR, 'Journal/Daily');
-  try {
-    const dailyEntries = (await readdir(dailyDir))
-      .filter(f => f.endsWith('.md'))
-      .sort()
-      .reverse()
-      .slice(0, JOURNAL_DAILY_COUNT);
-
-    for (const entry of dailyEntries) {
-      const content = await safeRead(join(dailyDir, entry));
-      if (content) {
-        files.push({ path: `Journal/Daily/${entry}`, content, category: 'journal-daily' });
-        totalChars += content.length;
-      }
-    }
-  } catch { /* no daily entries */ }
-
-  // 4. Recent weekly plans (latest N)
-  const weeklyDir = join(MYLIFEOS_DIR, 'Journal/Weekly');
-  try {
-    const weeklyEntries = (await readdir(weeklyDir))
-      .filter(f => f.endsWith('.md'))
-      .sort()
-      .reverse()
-      .slice(0, JOURNAL_WEEKLY_COUNT);
-
-    for (const entry of weeklyEntries) {
-      const content = await safeRead(join(weeklyDir, entry));
-      if (content) {
-        files.push({ path: `Journal/Weekly/${entry}`, content, category: 'journal-weekly' });
-        totalChars += content.length;
-      }
-    }
-  } catch { /* no weekly entries */ }
-
-  // 5. Business team files
-  const teamDir = join(MYLIFEOS_DIR, 'Business/Team');
-  try {
-    const teamEntries = await readdir(teamDir);
-    for (const entry of teamEntries) {
-      if (entry.endsWith('.md')) {
-        const content = await safeRead(join(teamDir, entry));
-        if (content) {
-          files.push({ path: `Business/Team/${entry}`, content, category: 'business' });
-          totalChars += content.length;
-        }
-      }
-    }
-  } catch { /* no team files */ }
-
-  // 6. The Big Meeting (if it exists)
-  const meetingDir = join(MYLIFEOS_DIR, 'Business/The Big Meeting');
-  try {
-    const meetingEntries = await readdir(meetingDir);
-    for (const entry of meetingEntries) {
-      if (entry.endsWith('.md')) {
-        const content = await safeRead(join(meetingDir, entry));
-        if (content) {
-          files.push({ path: `Business/The Big Meeting/${entry}`, content, category: 'business' });
-          totalChars += content.length;
-        }
-      }
-    }
-  } catch { /* no meeting files */ }
-
-  // 7. Personal — key files only
-  const personalFiles = ['Personal/Health', 'Personal/Lucia', 'Personal/Holidays'];
-  for (const dir of personalFiles) {
-    const fullDir = join(MYLIFEOS_DIR, dir);
-    try {
-      const entries = await readdir(fullDir);
-      for (const entry of entries) {
-        if (entry.endsWith('.md')) {
-          const content = await safeRead(join(fullDir, entry));
-          if (content) {
-            files.push({ path: `${dir}/${entry}`, content, category: 'personal' });
-            totalChars += content.length;
-          }
-        }
-      }
-    } catch { /* skip */ }
+  // ── Layer 3: Recently modified files (git-based) ──
+  const recentFiles = await getRecentlyModifiedFiles();
+  for (const f of recentFiles) {
+    totalChars += f.content.length;
+    fileCount++;
   }
 
-  return { files, totalChars };
+  // ── Layer 4: Stable identity ──
+  const identity = await safeRead(join(MYLIFEOS_DIR, IDENTITY_FILE));
+  if (identity) {
+    totalChars += identity.length;
+    fileCount++;
+  }
+
+  // Decide if we need Claude synthesis or can use context note directly
+  const needsSynthesis = !contextNote || recentFiles.length > 0 || logContent;
+
+  return {
+    contextNote,
+    logContent,
+    recentFiles,
+    identity,
+    totalChars,
+    fileCount,
+    needsSynthesis,
+  };
 }
 
 /**
- * Send gathered content to Claude for life context synthesis.
+ * Extract only the last N days from LOG.md.
+ * Parses the date headers (## 2026-02-14) and takes only recent ones.
  */
-async function synthesizeContext(content) {
-  // Organize content into a structured prompt
-  const sections = {};
-  for (const file of content.files) {
-    if (!sections[file.category]) sections[file.category] = [];
-    sections[file.category].push(`===== ${file.path} =====\n${file.content}`);
+async function extractRecentLog(days) {
+  const logPath = join(MYLIFEOS_DIR, 'LOG.md');
+  const raw = await safeRead(logPath);
+  if (!raw) return null;
+
+  const lines = raw.split('\n');
+  const sections = [];
+  let currentSection = null;
+
+  // Parse LOG.md into date sections
+  for (const line of lines) {
+    const dateMatch = line.match(/^## (\d{4}-\d{2}-\d{2})/);
+    if (dateMatch) {
+      if (currentSection) sections.push(currentSection);
+      currentSection = { date: dateMatch[1], lines: [line] };
+    } else if (currentSection) {
+      currentSection.lines.push(line);
+    }
+  }
+  if (currentSection) sections.push(currentSection);
+
+  // Filter to last N days
+  const cutoff = new Date();
+  cutoff.setDate(cutoff.getDate() - days);
+  const cutoffStr = cutoff.toISOString().split('T')[0];
+
+  const recentSections = sections.filter(s => s.date >= cutoffStr);
+
+  if (recentSections.length === 0) {
+    // Fallback: take at least the most recent section
+    return sections.length > 0 ? sections[0].lines.join('\n') : null;
   }
 
-  const allContent = Object.entries(sections)
-    .map(([category, items]) => {
-      const label = {
-        'core': '🏠 CORE IDENTITY & SYSTEM',
-        'project': '🚀 ACTIVE PROJECTS',
-        'journal-daily': '📅 RECENT DAILY JOURNAL',
-        'journal-weekly': '📋 RECENT WEEKLY PLANS',
-        'business': '💼 BUSINESS',
-        'personal': '❤️ PERSONAL',
-      }[category] || category.toUpperCase();
+  console.log(`  📋 LOG.md: ${recentSections.length} day(s) extracted (last ${days} days)`);
+  return recentSections.map(s => s.lines.join('\n')).join('\n\n');
+}
 
-      return `\n${'='.repeat(60)}\n${label}\n${'='.repeat(60)}\n\n${items.join('\n\n')}`;
-    })
-    .join('\n');
+/**
+ * Use git log to find files modified in the last 48 hours.
+ * Read only the ones that matter (STATUS.md, README.md, strategy docs).
+ */
+async function getRecentlyModifiedFiles() {
+  const files = [];
 
-  const prompt = `You are a context synthesizer for PRISM (Personal Research Intelligence System Mine).
+  try {
+    // Get list of all tracked files with their last commit date
+    const output = execSync(
+      `cd ${MYLIFEOS_DIR} && git log --all --format="" --name-only --since="48 hours ago" | sort -u`,
+      { stdio: 'pipe', encoding: 'utf-8' }
+    ).trim();
 
-You've been given the complete contents of Julien's personal knowledge base (MylifeOS). Your job is to produce a LIFE CONTEXT SNAPSHOT — a single document that tells an AI analyst everything it needs to know about Julien RIGHT NOW to personalize intelligence briefings.
+    if (!output) {
+      console.log('  📂 No files modified in last 48h');
+      return files;
+    }
 
-The snapshot should cover:
+    const modifiedPaths = output.split('\n').filter(Boolean);
 
-1. **Who he is** — identity, values, roles, how he thinks (brief — 2-3 sentences)
-2. **Current season** — what phase of life/work he's in, the dominant tension or theme
-3. **Active projects** — every project with its current status, priority, and what's happening THIS WEEK
-4. **Business status** — Chez Julien, Operation Autonomy, Henry's development, team situation
-5. **Tech stack & tools** — what he's using RIGHT NOW (models, tools, platforms, machines)
-6. **Current challenges** — what's hard, what's stuck, what needs attention
-7. **Learning focus** — what he's actively learning or exploring
-8. **Relationships & life** — Lucia, key dates, personal priorities
-9. **Budget stance** — spending approach for AI/tools
-10. **Key dates coming up** — anything in the next 2-4 weeks
+    // Filter to meaningful files only (skip media, obsidian config, etc.)
+    const meaningful = modifiedPaths.filter(p =>
+      p.endsWith('.md') &&
+      !p.startsWith('.obsidian') &&
+      !p.startsWith('_Archive') &&
+      !p.startsWith('Books/') &&
+      !p.startsWith('Media/') &&
+      p !== 'CLAUDE.md' && // Already read as identity
+      p !== 'LOG.md' &&    // Already extracted separately
+      p !== 'AGENT.md' &&  // Not relevant for context
+      p !== `Journal/${CONTEXT_NOTE_PATH}` // Already read as primary
+    );
+
+    console.log(`  📂 ${meaningful.length} files modified in last 48h`);
+
+    for (const filePath of meaningful.slice(0, 15)) { // Cap at 15 files
+      const content = await safeRead(join(MYLIFEOS_DIR, filePath));
+      if (content && content.length < 20000) { // Skip huge files
+        files.push({ path: filePath, content });
+      }
+    }
+  } catch {
+    console.log('  📂 Could not check recent modifications (git log failed)');
+  }
+
+  return files;
+}
+
+/**
+ * When context-note.md exists, format it directly with supplementary data.
+ * Saves an API call when the note is sufficient on its own.
+ */
+function formatDirectContext(content) {
+  const parts = [
+    `<!-- PRISM Life Context — ${new Date().toISOString()} -->`,
+    `<!-- Source: context-note.md (human-written) -->`,
+    '',
+    '# Julien — Life Context (Human-written)',
+    '',
+    content.contextNote,
+  ];
+
+  if (content.identity) {
+    // Append a condensed identity section
+    parts.push('', '---', '', '# Stable Identity (from CLAUDE.md)', '');
+    // Only take the first ~2000 chars of CLAUDE.md (the about section)
+    parts.push(content.identity.substring(0, 2000));
+  }
+
+  return parts.join('\n');
+}
+
+/**
+ * Full Claude synthesis — used when there's no context note,
+ * or when we need to merge the note with recent activity.
+ */
+async function synthesizeContext(content) {
+  const promptParts = [];
+
+  promptParts.push(`You are building a life context snapshot for PRISM, Julien's personal AI research system.`);
+  promptParts.push(`Today's date: ${new Date().toISOString().split('T')[0]}`);
+  promptParts.push('');
+
+  if (content.contextNote) {
+    promptParts.push('===== JULIEN\'S OWN WORDS (HIGHEST PRIORITY — this is what he told you directly) =====');
+    promptParts.push(content.contextNote);
+    promptParts.push('');
+    promptParts.push('The above is Julien\'s own description of where he is. TRUST IT ABOVE ALL ELSE.');
+    promptParts.push('Below is supplementary data to enrich the snapshot. Use it to add details, not to contradict his words.');
+    promptParts.push('');
+  }
+
+  if (content.logContent) {
+    promptParts.push('===== ACTIVITY LOG (last 3 days — what actually happened) =====');
+    promptParts.push(content.logContent);
+    promptParts.push('');
+  }
+
+  if (content.recentFiles.length > 0) {
+    promptParts.push('===== RECENTLY MODIFIED FILES (last 48h — what he\'s been working on) =====');
+    for (const f of content.recentFiles) {
+      promptParts.push(`--- ${f.path} ---`);
+      promptParts.push(f.content.substring(0, 5000)); // Cap per file
+      promptParts.push('');
+    }
+  }
+
+  if (content.identity) {
+    promptParts.push('===== STABLE IDENTITY (from CLAUDE.md — background info, lower priority than recent activity) =====');
+    promptParts.push(content.identity);
+    promptParts.push('');
+  }
+
+  promptParts.push(`
+Write a LIFE CONTEXT SNAPSHOT. This will be read by an AI analyst to personalize an intelligence briefing.
+
+PRIORITY RULES:
+1. Context note (Julien's own words) = ground truth. Never contradict it.
+2. LOG.md last 3 days = what actually happened. More reliable than STATUS files.
+3. Recently modified files = what he's actively working on RIGHT NOW.
+4. CLAUDE.md = stable background. Use for identity, not for current state.
+
+STRUCTURE:
+1. **Right now** — What Julien is doing TODAY. Current focus, energy, mood if known. (2-3 sentences)
+2. **This week** — Active projects and their real status. What's moving, what's stuck. (bullet points OK)
+3. **Priorities & struggles** — What he said matters most. What's hard. What he's avoiding.
+4. **Business** — Chez Julien, Operation Autonomy, Henry, team. Only if relevant this week.
+5. **Tools & stack** — What he's using right now (models, platforms, machines).
+6. **Life** — Lucia, health, energy, key upcoming dates. Only what's relevant.
 
 RULES:
-- Be SPECIFIC. Use names, dates, numbers, project names. No vague statements.
-- Prioritize RECENCY. If the journal says something different from CLAUDE.md, the journal is more current.
-- Include emotional/energy state if visible from journal entries.
-- Keep it under 3000 words — dense, no fluff.
-- Write in third person ("Julien is..." not "You are...").
-- Use present tense.
-- This document is READ BY AN AI, not by Julien. Optimize for machine consumption.
+- Be SPECIFIC. Names, dates, numbers, project names.
+- RECENCY > COMPLETENESS. Skip old projects that haven't been touched.
+- Under 1500 words. Dense. No fluff.
+- Third person ("Julien is...").
+- This is for an AI reader. Optimize for machine consumption.`);
 
-Today's date: ${new Date().toISOString().split('T')[0]}
-
-===== MYLIFEOS CONTENTS =====
-${allContent}`;
+  const prompt = promptParts.join('\n');
 
   console.log(`  🤖 Synthesizing with ${MODELS.analyzer}...`);
   console.log(`     Input: ~${(prompt.length / 4).toLocaleString()} tokens estimated`);
@@ -327,10 +365,9 @@ ${allContent}`;
 
   console.log(`     Tokens: ${response.usage.input_tokens.toLocaleString()} in / ${response.usage.output_tokens.toLocaleString()} out`);
 
-  // Add metadata header
   const header = [
     `<!-- PRISM Life Context — Auto-generated ${new Date().toISOString()} -->`,
-    `<!-- Source: MylifeOS (${content.files.length} files, ${(content.totalChars / 1024).toFixed(1)}KB) -->`,
+    `<!-- Source: ${content.contextNote ? 'context-note.md + ' : ''}LOG (${LOG_DAYS}d) + ${content.recentFiles.length} recent files -->`,
     `<!-- Model: ${MODELS.analyzer} -->`,
     '',
   ].join('\n');
@@ -339,7 +376,7 @@ ${allContent}`;
 }
 
 /**
- * Safely read a file, returning null if it doesn't exist or can't be read.
+ * Safely read a file, returning null if it doesn't exist.
  */
 async function safeRead(filePath) {
   try {
