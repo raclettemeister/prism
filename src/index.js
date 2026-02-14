@@ -3,12 +3,13 @@
 // PRISM — Personal Research Intelligence System (Mine)
 //
 // Entry point. Orchestrates the full pipeline:
-// collect → score → analyze → synthesize → deliver
+// context → collect → score → analyze → synthesize → deliver
 //
 // Run: node src/index.js
 // Dry run (collect only): node src/index.js --dry-run
 // ============================================================
 
+import generateContext from './context.js';
 import collect from './collect.js';
 import score from './score.js';
 import analyze from './analyze.js';
@@ -21,7 +22,7 @@ async function main() {
   const startTime = Date.now();
 
   console.log('═══════════════════════════════════════════════');
-  console.log('  PRISM v0.2.0 — Personal Research Intelligence');
+  console.log('  PRISM v0.4.0 — Personal Research Intelligence');
   console.log(`  ${new Date().toISOString()}`);
   console.log('═══════════════════════════════════════════════');
 
@@ -30,6 +31,9 @@ async function main() {
   let totalOutputTokens = 0;
 
   try {
+    // ── Step 0: Generate Life Context ───────────────────
+    const contextResult = await generateContext();
+
     // ── Step 1: Collect ──────────────────────────────────
     const articles = await collect();
 
@@ -102,6 +106,7 @@ async function main() {
     console.log('\n═══════════════════════════════════════════════');
     console.log('  PRISM RUN COMPLETE');
     console.log('═══════════════════════════════════════════════');
+    console.log(`  Context:  ${contextResult.generated ? '✅ Fresh (' + contextResult.filesRead + ' files)' : '⏭️  ' + contextResult.reason}`);
     console.log(`  Briefing: ${filepath}`);
     console.log(`  Email:    ${emailResult.sent ? '✅ Sent' : '❌ ' + emailResult.reason}`);
     console.log(`  Articles: ${articles.length} collected → ${topArticles.length} analyzed`);
