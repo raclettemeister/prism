@@ -2,6 +2,50 @@
   "lastBriefings": [
     {
       "date": "2026-02-14",
+      "bigStory": "The Harness Problem: Interface Matters More Than Model Choice",
+      "patterns": [
+        {
+          "pattern": "Tooling/harness improvements outperform model upgrades — the infrastructure around AI matters more than raw model capability",
+          "evidence": [
+            "http://blog.can.ac/2026/02/12/the-harness-problem/",
+            "https://www.exponentialview.co/p/the-hundred-million-token-day"
+          ]
+        },
+        {
+          "pattern": "Autonomous agents are now running in production and making public mistakes — we're past demos and into real-world deployment with real consequences",
+          "evidence": [
+            "https://github.com/matplotlib/matplotlib/pull/31132",
+            "https://theshamblog.com/an-ai-agent-published-a-hit-piece-on-me/",
+            "https://theshamblog.com/an-ai-agent-published-a-hit-piece-on-me-part-2/"
+          ]
+        },
+        {
+          "pattern": "Social/judgment failures in technically competent agents — the gap between 'works' and 'works appropriately' is widening",
+          "evidence": [
+            "https://github.com/matplotlib/matplotlib/pull/31132",
+            "https://theshamblog.com/an-ai-agent-published-a-hit-piece-on-me/"
+          ]
+        },
+        {
+          "pattern": "Massive capital inflows continuing ($30B to Anthropic) — competitive pressure driving rapid capability evolution",
+          "evidence": [
+            "https://www.latent.space/p/ainews-new-gemini-3-deep-think-anthropic"
+          ]
+        }
+      ],
+      "toolsFlagged": [
+        "Better Testing Harnesses for LLM Coding"
+      ],
+      "projectConnections": [
+        "PRISM",
+        "Operation Autonomy",
+        "Sweden Odyssey (learning to code project)",
+        "Two-machine workflow (Mac Mini + MacBook Pro)",
+        "Blog/julien.care (launching Feb 23)"
+      ]
+    },
+    {
+      "date": "2026-02-14",
       "bigStory": "Autonomous AI Agents Are Now Operating in Production — And Making Mistakes Publicly",
       "patterns": [
         "Autonomous agents moving from demos to production with real consequences — the 'agent in the wild' era has arrived",
@@ -22,12 +66,41 @@
     }
   ],
   "trackedPatterns": [
+    {
+      "pattern": "Tooling/harness improvements outperform model upgrades — the infrastructure around AI matters more than raw model capability",
+      "evidence": [
+        "http://blog.can.ac/2026/02/12/the-harness-problem/",
+        "https://www.exponentialview.co/p/the-hundred-million-token-day"
+      ]
+    },
+    {
+      "pattern": "Autonomous agents are now running in production and making public mistakes — we're past demos and into real-world deployment with real consequences",
+      "evidence": [
+        "https://github.com/matplotlib/matplotlib/pull/31132",
+        "https://theshamblog.com/an-ai-agent-published-a-hit-piece-on-me/",
+        "https://theshamblog.com/an-ai-agent-published-a-hit-piece-on-me-part-2/"
+      ]
+    },
+    {
+      "pattern": "Social/judgment failures in technically competent agents — the gap between 'works' and 'works appropriately' is widening",
+      "evidence": [
+        "https://github.com/matplotlib/matplotlib/pull/31132",
+        "https://theshamblog.com/an-ai-agent-published-a-hit-piece-on-me/"
+      ]
+    },
+    {
+      "pattern": "Massive capital inflows continuing ($30B to Anthropic) — competitive pressure driving rapid capability evolution",
+      "evidence": [
+        "https://www.latent.space/p/ainews-new-gemini-3-deep-think-anthropic"
+      ]
+    },
     "Autonomous agents moving from demos to production with real consequences — the 'agent in the wild' era has arrived",
     "Performance improvements coming from better interfaces/harnesses rather than better models — the tooling layer matters more than previously understood",
     "Massive capital flowing into AI infrastructure (Anthropic $30B) suggesting rapid capability evolution and competitive pressure",
     "Social/judgment failures in agents that are technically competent — the gap between 'works' and 'works appropriately' is the new frontier"
   ],
   "toolsEvaluated": [
+    "Better Testing Harnesses for LLM Coding",
     "LLM Harness/Prompting Framework (specific tool unclear)"
   ]
 }
