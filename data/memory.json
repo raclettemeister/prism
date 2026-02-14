@@ -2,6 +2,50 @@
   "lastBriefings": [
     {
       "date": "2026-02-14",
+      "bigStory": "The Harness Problem: Better Interfaces Unlock More From Existing Models",
+      "patterns": [
+        {
+          "pattern": "Harness/Interface Matters More Than Model Choice (Day 3 continuation)",
+          "evidence": [
+            "http://blog.can.ac/2026/02/12/the-harness-problem/",
+            "https://www.latent.space/p/jeffdean"
+          ]
+        },
+        {
+          "pattern": "Autonomous Agents in Production: The Judgment Gap",
+          "evidence": [
+            "https://theshamblog.com/an-ai-agent-published-a-hit-piece-on-me/",
+            "https://theshamblog.com/an-ai-agent-published-a-hit-piece-on-me-part-2/"
+          ]
+        },
+        {
+          "pattern": "Multi-Model Strategies: Pareto Frontier Approach",
+          "evidence": [
+            "https://www.latent.space/p/jeffdean",
+            "https://www.exponentialview.co/p/the-hundred-million-token-day"
+          ]
+        },
+        {
+          "pattern": "Capital Concentration in Foundation Model Providers",
+          "evidence": [
+            "https://www.latent.space/p/ainews-new-gemini-3-deep-think-anthropic"
+          ]
+        }
+      ],
+      "toolsFlagged": [
+        "Harness Optimization Framework"
+      ],
+      "projectConnections": [
+        "PRISM v0.4.0",
+        "Operation Autonomy (shop automation with Henry as manager)",
+        "Blog text polishing (the avoidance task)",
+        "MylifeOS context generation",
+        "Cursor coding workflow",
+        "Staffing Dashboard V2 (needs Cloudflare Worker deployment)"
+      ]
+    },
+    {
+      "date": "2026-02-14",
       "bigStory": "The Harness Problem: Interface Matters More Than Model Choice",
       "patterns": [
         {
@@ -67,6 +111,33 @@
   ],
   "trackedPatterns": [
     {
+      "pattern": "Harness/Interface Matters More Than Model Choice (Day 3 continuation)",
+      "evidence": [
+        "http://blog.can.ac/2026/02/12/the-harness-problem/",
+        "https://www.latent.space/p/jeffdean"
+      ]
+    },
+    {
+      "pattern": "Autonomous Agents in Production: The Judgment Gap",
+      "evidence": [
+        "https://theshamblog.com/an-ai-agent-published-a-hit-piece-on-me/",
+        "https://theshamblog.com/an-ai-agent-published-a-hit-piece-on-me-part-2/"
+      ]
+    },
+    {
+      "pattern": "Multi-Model Strategies: Pareto Frontier Approach",
+      "evidence": [
+        "https://www.latent.space/p/jeffdean",
+        "https://www.exponentialview.co/p/the-hundred-million-token-day"
+      ]
+    },
+    {
+      "pattern": "Capital Concentration in Foundation Model Providers",
+      "evidence": [
+        "https://www.latent.space/p/ainews-new-gemini-3-deep-think-anthropic"
+      ]
+    },
+    {
       "pattern": "Tooling/harness improvements outperform model upgrades — the infrastructure around AI matters more than raw model capability",
       "evidence": [
         "http://blog.can.ac/2026/02/12/the-harness-problem/",
@@ -100,6 +171,7 @@
     "Social/judgment failures in agents that are technically competent — the gap between 'works' and 'works appropriately' is the new frontier"
   ],
   "toolsEvaluated": [
+    "Harness Optimization Framework",
     "Better Testing Harnesses for LLM Coding",
     "LLM Harness/Prompting Framework (specific tool unclear)"
   ]
