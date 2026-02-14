@@ -3,7 +3,7 @@
 // PRISM — Personal Research Intelligence System (Mine)
 //
 // Entry point. Orchestrates the full pipeline:
-// collect → score → analyze → synthesize
+// collect → score → analyze → synthesize → deliver
 //
 // Run: node src/index.js
 // Dry run (collect only): node src/index.js --dry-run
@@ -13,6 +13,7 @@ import collect from './collect.js';
 import score from './score.js';
 import analyze from './analyze.js';
 import synthesize from './synthesize.js';
+import deliver from './deliver.js';
 
 const isDryRun = process.argv.includes('--dry-run');
 
@@ -86,6 +87,14 @@ async function main() {
     totalInputTokens += synthTokens.input_tokens;
     totalOutputTokens += synthTokens.output_tokens;
 
+    // ── Step 5: Deliver ──────────────────────────────────
+    const finalStats = {
+      ...stats,
+      totalTokens: totalInputTokens + totalOutputTokens,
+      estimatedCost: estimateCost(totalInputTokens, totalOutputTokens),
+    };
+    const emailResult = await deliver(briefing, finalStats);
+
     // ── Done ─────────────────────────────────────────────
     const elapsed = ((Date.now() - startTime) / 1000).toFixed(1);
     const finalCost = estimateCost(totalInputTokens, totalOutputTokens);
@@ -94,6 +103,7 @@ async function main() {
     console.log('  PRISM RUN COMPLETE');
     console.log('═══════════════════════════════════════════════');
     console.log(`  Briefing: ${filepath}`);
+    console.log(`  Email:    ${emailResult.sent ? '✅ Sent' : '❌ ' + emailResult.reason}`);
     console.log(`  Articles: ${articles.length} collected → ${topArticles.length} analyzed`);
     console.log(`  Tokens:   ${totalInputTokens.toLocaleString()} in / ${totalOutputTokens.toLocaleString()} out`);
     console.log(`  Cost:     ~$${finalCost}`);
