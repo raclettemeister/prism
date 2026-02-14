@@ -1,0 +1,20 @@
+{
+  "name": "prism",
+  "version": "0.1.0",
+  "description": "Personal Research Intelligence System (Mine) — Overnight AI research analyst",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "collect": "node -e \"import('./src/collect.js').then(m => m.default().then(a => console.log(JSON.stringify(a, null, 2))))\"",
+    "test": "node src/index.js --dry-run"
+  },
+  "author": "Julien",
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.39.0",
+    "rss-parser": "^3.13.0",
+    "date-fns": "^4.1.0"
+  }
+}
