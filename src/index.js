@@ -22,7 +22,7 @@ async function main() {
   const startTime = Date.now();
 
   console.log('═══════════════════════════════════════════════');
-  console.log('  PRISM v0.5.0 — Personal Research Intelligence');
+  console.log('  PRISM v1.0 — Personal Research Intelligence');
   console.log(`  ${new Date().toISOString()}`);
   console.log('═══════════════════════════════════════════════');
 

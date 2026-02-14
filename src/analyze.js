@@ -22,19 +22,19 @@ export default async function analyze(topArticles) {
   // Load life context
   const lifeContext = await loadLifeContext();
 
-  // Build the articles block
+  // Build the articles block (include category and weighted score for context)
   const articlesBlock = topArticles
     .map((a, i) => {
-      return `--- ARTICLE ${i + 1} (Score: ${a.score}/10) ---
+      return `--- ARTICLE ${i + 1} (Score: ${a.score}/10, Category: ${a.category || 'unknown'}${a.crossFeedCount >= 3 ? ', cross-feed signal' : ''}) ---
 TITLE: ${a.title}
 SOURCE: ${a.source}
 DATE: ${a.date}
-TAGS: ${a.tags.join(', ')}
+TAGS: ${(a.tags || []).join(', ')}
 SCORING REASON: ${a.reason}
 URL: ${a.link}
 
 CONTENT:
-${a.content}
+${a.content || ''}
 `;
     })
     .join('\n');

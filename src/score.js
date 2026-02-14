@@ -1,78 +1,96 @@
 // ============================================================
-// PRISM Scorer — Rates article relevance using Claude Haiku
+// PRISM Scorer v1.0 — Category weights, cross-feed bonus, budget pre-filter
 // ============================================================
 
 import Anthropic from '@anthropic-ai/sdk';
-import { MODELS, SCORING, SCORING_PROMPT, LIMITS } from './config.js';
+import { MODELS, SCORING, SCORING_PROMPT, LIMITS, FEED_CATEGORIES } from './config.js';
 
 const client = new Anthropic();
 
 /**
- * Score an array of articles for relevance using Claude Haiku.
- * Processes in parallel batches to maximize throughput.
- * Returns articles sorted by score (highest first), with score metadata attached.
+ * Pre-filter: when over threshold, keep only articles matching any keyword (title + content).
+ * Rest get score 0 without API call. Then cap at preFilterMax for API scoring.
+ */
+function preFilter(articles) {
+  if (articles.length <= SCORING.preFilterThreshold) return { toScore: articles, skipped: [] };
+  const keywords = SCORING.preFilterKeywords.map((k) => k.toLowerCase());
+  const combined = (a) => `${(a.title || '')} ${(a.content || '')}`.toLowerCase();
+  const matches = articles.filter((a) => keywords.some((kw) => combined(a).includes(kw)));
+  const toScore = matches.slice(0, SCORING.preFilterMax);
+  const skipped = articles.filter((a) => !toScore.includes(a));
+  console.log(`  📉 Budget filter: ${articles.length} → ${toScore.length} sent to Haiku, ${skipped.length} skipped (no keyword match or over cap)`);
+  return { toScore, skipped };
+}
+
+/**
+ * Score articles with Haiku; apply category weight and cross-feed bonus.
  */
 export default async function score(articles) {
-  console.log(`\n🎯 SCORING ${articles.length} articles with ${MODELS.scorer}...`);
+  const { toScore, skipped } = preFilter(articles);
+  const skippedWithZero = (skipped || []).map((a) => ({ ...a, score: 0, reason: 'pre-filtered (budget)', tags: [], actionable: false }));
+
+  console.log(`\n🎯 SCORING ${toScore.length} articles with ${MODELS.scorer}...`);
 
   let totalInputTokens = 0;
   let totalOutputTokens = 0;
-
-  // Process in batches
   const scored = [];
-  for (let i = 0; i < articles.length; i += SCORING.batchSize) {
-    const batch = articles.slice(i, i + SCORING.batchSize);
+
+  for (let i = 0; i < toScore.length; i += SCORING.batchSize) {
+    const batch = toScore.slice(i, i + SCORING.batchSize);
     const batchNum = Math.floor(i / SCORING.batchSize) + 1;
-    const totalBatches = Math.ceil(articles.length / SCORING.batchSize);
+    const totalBatches = Math.ceil(toScore.length / SCORING.batchSize);
     console.log(`  Batch ${batchNum}/${totalBatches} (${batch.length} articles)...`);
 
-    const results = await Promise.allSettled(
-      batch.map((article) => scoreOne(article))
-    );
+    const results = await Promise.allSettled(batch.map((article) => scoreOne(article)));
 
     for (let j = 0; j < results.length; j++) {
       if (results[j].status === 'fulfilled') {
         const { scored: scoredArticle, usage } = results[j].value;
-        scored.push(scoredArticle);
+        const category = scoredArticle.category || 'big_picture';
+        const weight = FEED_CATEGORIES[category]?.weight ?? 0.6;
+        let finalScore = (scoredArticle.score || 0) * weight;
+        if ((scoredArticle.crossFeedCount || 0) >= SCORING.crossFeedBonusThreshold) {
+          finalScore += SCORING.crossFeedBonus;
+        }
+        scored.push({
+          ...scoredArticle,
+          rawScore: scoredArticle.score,
+          score: Math.min(10, Math.round(finalScore * 10) / 10),
+        });
         totalInputTokens += usage.input_tokens;
         totalOutputTokens += usage.output_tokens;
       } else {
         console.log(`  ⚠️ Failed to score: ${batch[j].title} — ${results[j].reason?.message}`);
-        // Include with score 0 so we don't lose it entirely
-        scored.push({ ...batch[j], score: 0, reason: 'scoring failed', tags: [], actionable: false });
+        scored.push({ ...batch[j], score: 0, rawScore: 0, reason: 'scoring failed', tags: [], actionable: false });
       }
     }
   }
 
-  // Sort by score descending
-  scored.sort((a, b) => b.score - a.score);
-
-  // Filter by minimum score
-  const relevant = scored.filter((a) => a.score >= SCORING.minScore);
+  const all = [...scored, ...skippedWithZero].sort((a, b) => b.score - a.score);
+  const relevant = all.filter((a) => a.score >= SCORING.minScore);
+  const top = relevant.slice(0, SCORING.topN);
 
   console.log(`\n📊 Scoring complete:`);
-  console.log(`   ${scored.length} scored, ${relevant.length} above threshold (≥${SCORING.minScore})`);
-  console.log(`   Top ${Math.min(SCORING.topN, relevant.length)} go to deep analysis`);
+  console.log(`   ${all.length} total, ${relevant.length} above threshold (≥${SCORING.minScore})`);
+  console.log(`   Top ${top.length} go to deep analysis`);
   console.log(`   Tokens: ${totalInputTokens.toLocaleString()} in / ${totalOutputTokens.toLocaleString()} out`);
 
   return {
-    all: scored,
-    top: relevant.slice(0, SCORING.topN),
+    all,
+    top,
     tokens: { input: totalInputTokens, output: totalOutputTokens },
   };
 }
 
-/**
- * Score a single article with Claude Haiku.
- */
 async function scoreOne(article) {
   const articleText = `TITLE: ${article.title}
 SOURCE: ${article.source}
+CATEGORY: ${article.category || 'unknown'}
 DATE: ${article.date}
 AUTHOR: ${article.author}
 
 CONTENT:
-${article.content.substring(0, LIMITS.maxArticleLength)}`;
+${(article.content || '').substring(0, LIMITS.maxArticleLength)}`;
 
   const response = await client.messages.create({
     model: MODELS.scorer,
@@ -86,15 +104,11 @@ ${article.content.substring(0, LIMITS.maxArticleLength)}`;
   });
 
   const text = response.content[0].text.trim();
-
-  // Parse JSON response
   let parsed;
   try {
-    // Handle potential markdown wrapping
     const jsonStr = text.replace(/```json\n?/g, '').replace(/```\n?/g, '').trim();
     parsed = JSON.parse(jsonStr);
   } catch {
-    // If JSON parsing fails, try to extract score from text
     const scoreMatch = text.match(/\"score\"\s*:\s*(\d+)/);
     parsed = {
       score: scoreMatch ? parseInt(scoreMatch[1]) : 0,
@@ -107,7 +121,7 @@ ${article.content.substring(0, LIMITS.maxArticleLength)}`;
   return {
     scored: {
       ...article,
-      score: parsed.score || 0,
+      score: parsed.score ?? 0,
       reason: parsed.reason || '',
       tags: parsed.tags || [],
       actionable: parsed.actionable || false,

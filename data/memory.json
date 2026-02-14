@@ -174,5 +174,392 @@
     "Harness Optimization Framework",
     "Better Testing Harnesses for LLM Coding",
     "LLM Harness/Prompting Framework (specific tool unclear)"
-  ]
+  ],
+  "lastRun": "2026-02-14T13:57:58.616Z",
+  "feedHealth": {
+    "https://www.latent.space/feed": {
+      "lastSuccess": "2026-02-14",
+      "failCount": 0,
+      "avgArticles": 3,
+      "samples": [
+        3,
+        3
+      ]
+    },
+    "https://buttondown.email/ainews/rss": {
+      "lastSuccess": "2026-02-14",
+      "failCount": 0,
+      "avgArticles": 0,
+      "samples": [
+        0,
+        0
+      ]
+    },
+    "https://alphasignal.ai/feed": {
+      "lastSuccess": null,
+      "failCount": 2,
+      "avgArticles": 0,
+      "samples": []
+    },
+    "https://tldr.tech/ai/rss": {
+      "lastSuccess": null,
+      "failCount": 2,
+      "avgArticles": 0,
+      "samples": []
+    },
+    "https://www.therundown.ai/feed": {
+      "lastSuccess": null,
+      "failCount": 2,
+      "avgArticles": 0,
+      "samples": []
+    },
+    "https://jack-clark.net/feed/": {
+      "lastSuccess": "2026-02-14",
+      "failCount": 0,
+      "avgArticles": 0,
+      "samples": [
+        0,
+        0
+      ]
+    },
+    "https://www.exponentialview.co/feed": {
+      "lastSuccess": "2026-02-14",
+      "failCount": 0,
+      "avgArticles": 3,
+      "samples": [
+        3,
+        3
+      ]
+    },
+    "https://hnrss.org/best?count=30&q=AI+OR+LLM+OR+agent+OR+Claude": {
+      "lastSuccess": "2026-02-14",
+      "failCount": 0,
+      "avgArticles": 5,
+      "samples": [
+        5,
+        5
+      ]
+    },
+    "https://hnrss.org/best?count=20&q=cursor+OR+coding+OR+prompt": {
+      "lastSuccess": "2026-02-14",
+      "failCount": 0,
+      "avgArticles": 0,
+      "samples": [
+        0,
+        0
+      ]
+    },
+    "https://simonwillison.net/atom/everything/": {
+      "lastSuccess": "2026-02-14",
+      "failCount": 0,
+      "avgArticles": 9,
+      "samples": [
+        9
+      ]
+    },
+    "https://lilianweng.github.io/index.xml": {
+      "lastSuccess": "2026-02-14",
+      "failCount": 0,
+      "avgArticles": 0,
+      "samples": [
+        0
+      ]
+    },
+    "https://www.interconnects.ai/feed": {
+      "lastSuccess": "2026-02-14",
+      "failCount": 0,
+      "avgArticles": 0,
+      "samples": [
+        0
+      ]
+    },
+    "https://www.bensbites.com/feed": {
+      "lastSuccess": "2026-02-14",
+      "failCount": 0,
+      "avgArticles": 1,
+      "samples": [
+        1
+      ]
+    },
+    "https://hnrss.org/show": {
+      "lastSuccess": "2026-02-14",
+      "failCount": 0,
+      "avgArticles": 20,
+      "samples": [
+        20
+      ]
+    },
+    "https://hnrss.org/launches": {
+      "lastSuccess": "2026-02-14",
+      "failCount": 0,
+      "avgArticles": 1,
+      "samples": [
+        1
+      ]
+    },
+    "https://www.artificialintelligence-news.com/feed/": {
+      "lastSuccess": "2026-02-14",
+      "failCount": 0,
+      "avgArticles": 7,
+      "samples": [
+        7
+      ]
+    },
+    "https://the-decoder.com/feed/": {
+      "lastSuccess": "2026-02-14",
+      "failCount": 0,
+      "avgArticles": 10,
+      "samples": [
+        10
+      ]
+    },
+    "https://venturebeat.com/category/ai/feed/": {
+      "lastSuccess": "2026-02-14",
+      "failCount": 0,
+      "avgArticles": 0,
+      "samples": [
+        0
+      ]
+    },
+    "https://www.nocode.tech/feed.xml": {
+      "lastSuccess": null,
+      "failCount": 1,
+      "avgArticles": 0,
+      "samples": []
+    },
+    "https://blog.replit.com/feed.xml": {
+      "lastSuccess": "2026-02-14",
+      "failCount": 0,
+      "avgArticles": 1,
+      "samples": [
+        1
+      ]
+    },
+    "https://medium.com/feed/lovable": {
+      "lastSuccess": null,
+      "failCount": 1,
+      "avgArticles": 0,
+      "samples": []
+    },
+    "https://www.builder.io/blog/rss.xml": {
+      "lastSuccess": null,
+      "failCount": 1,
+      "avgArticles": 0,
+      "samples": []
+    },
+    "https://www.indiehackers.com/feed.xml": {
+      "lastSuccess": null,
+      "failCount": 1,
+      "avgArticles": 0,
+      "samples": []
+    },
+    "https://blog.pragmaticengineer.com/rss/": {
+      "lastSuccess": "2026-02-14",
+      "failCount": 0,
+      "avgArticles": 0,
+      "samples": [
+        0
+      ]
+    },
+    "https://entrepreneurshandbook.co/feed": {
+      "lastSuccess": "2026-02-14",
+      "failCount": 0,
+      "avgArticles": 0,
+      "samples": [
+        0
+      ]
+    },
+    "https://www.saastr.com/feed/": {
+      "lastSuccess": "2026-02-14",
+      "failCount": 0,
+      "avgArticles": 5,
+      "samples": [
+        5
+      ]
+    },
+    "https://www.reddit.com/r/microsaas/.rss": {
+      "lastSuccess": null,
+      "failCount": 1,
+      "avgArticles": 0,
+      "samples": []
+    },
+    "https://gamefromscratch.com/feed/": {
+      "lastSuccess": "2026-02-14",
+      "failCount": 0,
+      "avgArticles": 1,
+      "samples": [
+        1
+      ]
+    },
+    "https://gamedeveloper.com/rss.xml": {
+      "lastSuccess": "2026-02-14",
+      "failCount": 0,
+      "avgArticles": 7,
+      "samples": [
+        7
+      ]
+    },
+    "https://www.gamesindustry.biz/feed/news": {
+      "lastSuccess": "2026-02-14",
+      "failCount": 0,
+      "avgArticles": 4,
+      "samples": [
+        4
+      ]
+    },
+    "https://itch.io/games/new-and-popular.xml": {
+      "lastSuccess": "2026-02-14",
+      "failCount": 0,
+      "avgArticles": 0,
+      "samples": [
+        0
+      ]
+    },
+    "https://godotengine.org/rss.xml": {
+      "lastSuccess": "2026-02-14",
+      "failCount": 0,
+      "avgArticles": 1,
+      "samples": [
+        1
+      ]
+    },
+    "https://weirdwonderfulai.art/feed/": {
+      "lastSuccess": "2026-02-14",
+      "failCount": 0,
+      "avgArticles": 0,
+      "samples": [
+        0
+      ]
+    },
+    "https://www.creativebloq.com/feed": {
+      "lastSuccess": "2026-02-14",
+      "failCount": 0,
+      "avgArticles": 19,
+      "samples": [
+        19
+      ]
+    },
+    "https://arstechnica.com/ai/feed/": {
+      "lastSuccess": "2026-02-14",
+      "failCount": 0,
+      "avgArticles": 4,
+      "samples": [
+        4
+      ]
+    },
+    "https://www.theverge.com/rss/ai-artificial-intelligence/index.xml": {
+      "lastSuccess": "2026-02-14",
+      "failCount": 0,
+      "avgArticles": 6,
+      "samples": [
+        6
+      ]
+    },
+    "https://sifted.eu/feed/": {
+      "lastSuccess": "2026-02-14",
+      "failCount": 0,
+      "avgArticles": 7,
+      "samples": [
+        7
+      ]
+    },
+    "https://eu-startups.com/feed/": {
+      "lastSuccess": "2026-02-14",
+      "failCount": 0,
+      "avgArticles": 10,
+      "samples": [
+        10
+      ]
+    },
+    "https://siliconcanals.com/feed/": {
+      "lastSuccess": "2026-02-14",
+      "failCount": 0,
+      "avgArticles": 10,
+      "samples": [
+        10
+      ]
+    },
+    "https://tech.eu/feed/": {
+      "lastSuccess": "2026-02-14",
+      "failCount": 0,
+      "avgArticles": 3,
+      "samples": [
+        3
+      ]
+    },
+    "https://www.euractiv.com/sections/digital/feed/": {
+      "lastSuccess": null,
+      "failCount": 1,
+      "avgArticles": 0,
+      "samples": []
+    },
+    "https://www.brusselstimes.com/feed/": {
+      "lastSuccess": null,
+      "failCount": 1,
+      "avgArticles": 0,
+      "samples": []
+    },
+    "https://www.brusselsmorning.com/feed/": {
+      "lastSuccess": "2026-02-14",
+      "failCount": 0,
+      "avgArticles": 9,
+      "samples": [
+        9
+      ]
+    },
+    "https://stratechery.com/feed/": {
+      "lastSuccess": "2026-02-14",
+      "failCount": 0,
+      "avgArticles": 1,
+      "samples": [
+        1
+      ]
+    },
+    "https://www.oneusefulthing.org/feed": {
+      "lastSuccess": "2026-02-14",
+      "failCount": 0,
+      "avgArticles": 0,
+      "samples": [
+        0
+      ]
+    },
+    "https://www.technologyreview.com/feed/": {
+      "lastSuccess": "2026-02-14",
+      "failCount": 0,
+      "avgArticles": 5,
+      "samples": [
+        5
+      ]
+    },
+    "https://www.retaildive.com/feeds/news/": {
+      "lastSuccess": null,
+      "failCount": 1,
+      "avgArticles": 0,
+      "samples": []
+    },
+    "https://www.grocerydive.com/feeds/news/": {
+      "lastSuccess": "2026-02-14",
+      "failCount": 0,
+      "avgArticles": 5,
+      "samples": [
+        5
+      ]
+    },
+    "https://www.modernretail.co/feed/": {
+      "lastSuccess": "2026-02-14",
+      "failCount": 0,
+      "avgArticles": 5,
+      "samples": [
+        5
+      ]
+    },
+    "https://www.lightspeedhq.com/blog/feed/": {
+      "lastSuccess": "2026-02-14",
+      "failCount": 0,
+      "avgArticles": 1,
+      "samples": [
+        1
+      ]
+    }
+  }
 }
