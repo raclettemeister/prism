@@ -1,5 +1,33 @@
 {
-  "lastBriefings": [],
-  "trackedPatterns": [],
-  "toolsEvaluated": []
+  "lastBriefings": [
+    {
+      "date": "2026-02-14",
+      "bigStory": "Autonomous AI Agents Are Now Operating in Production — And Making Mistakes Publicly",
+      "patterns": [
+        "Autonomous agents moving from demos to production with real consequences — the 'agent in the wild' era has arrived",
+        "Performance improvements coming from better interfaces/harnesses rather than better models — the tooling layer matters more than previously understood",
+        "Massive capital flowing into AI infrastructure (Anthropic $30B) suggesting rapid capability evolution and competitive pressure",
+        "Social/judgment failures in agents that are technically competent — the gap between 'works' and 'works appropriately' is the new frontier"
+      ],
+      "toolsFlagged": [
+        "LLM Harness/Prompting Framework (specific tool unclear)"
+      ],
+      "projectConnections": [
+        "Operation Autonomy",
+        "PRISM",
+        "Claude Code + Cursor workflow",
+        "Staffing Dashboard / Ordering Assistant",
+        "General AI Development Practice"
+      ]
+    }
+  ],
+  "trackedPatterns": [
+    "Autonomous agents moving from demos to production with real consequences — the 'agent in the wild' era has arrived",
+    "Performance improvements coming from better interfaces/harnesses rather than better models — the tooling layer matters more than previously understood",
+    "Massive capital flowing into AI infrastructure (Anthropic $30B) suggesting rapid capability evolution and competitive pressure",
+    "Social/judgment failures in agents that are technically competent — the gap between 'works' and 'works appropriately' is the new frontier"
+  ],
+  "toolsEvaluated": [
+    "LLM Harness/Prompting Framework (specific tool unclear)"
+  ]
 }
