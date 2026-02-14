@@ -4,20 +4,23 @@
 
 import { readFile } from 'fs/promises';
 import Anthropic from '@anthropic-ai/sdk';
-import { MODELS, ANALYSIS_PROMPT, LIMITS, MEMORY_FILE } from './config.js';
+import { MODELS, ANALYSIS_PROMPT, LIMITS, MEMORY_FILE, LIFE_CONTEXT_FILE, BUDGET_MODE } from './config.js';
 
 const client = new Anthropic();
 
 /**
  * Deep-analyze the top scored articles using Claude Sonnet.
  * Cross-references articles, detects patterns, connects to Julien's projects.
- * Uses memory from previous briefings for continuity.
+ * Uses memory from previous briefings and life context for personalization.
  */
 export default async function analyze(topArticles) {
   console.log(`\n🧠 ANALYZING ${topArticles.length} articles with ${MODELS.analyzer}...`);
 
   // Load memory for continuity
   const memory = await loadMemory();
+
+  // Load life context
+  const lifeContext = await loadLifeContext();
 
   // Build the articles block
   const articlesBlock = topArticles
@@ -43,8 +46,11 @@ ${a.content}
         .join('\n')
     : 'No previous briefings yet. This is the first run.';
 
-  // Replace memory placeholder in prompt
-  const prompt = ANALYSIS_PROMPT.replace('{memory}', memoryContext);
+  // Replace placeholders in prompt
+  const prompt = ANALYSIS_PROMPT
+    .replace('{memory}', memoryContext)
+    .replace('{life_context}', lifeContext)
+    .replace('{budget_mode}', BUDGET_MODE);
 
   const response = await client.messages.create({
     model: MODELS.analyzer,
@@ -72,9 +78,11 @@ ${a.content}
         what: text.substring(0, 500),
         why_it_matters: 'The analysis was generated but could not be parsed as JSON.',
         action: 'Check the raw output in the logs.',
+        sources: [],
       },
       worth_knowing: [],
       tools_and_techniques: [],
+      llm_recommendations: [],
       patterns: [],
       project_connections: [],
     };
@@ -84,8 +92,10 @@ ${a.content}
   console.log(`   Big story: ${analysis.big_story?.title || 'unknown'}`);
   console.log(`   Worth knowing: ${analysis.worth_knowing?.length || 0} items`);
   console.log(`   Tools flagged: ${analysis.tools_and_techniques?.length || 0}`);
+  console.log(`   LLM recommendations: ${analysis.llm_recommendations?.length || 0}`);
   console.log(`   Patterns: ${analysis.patterns?.length || 0}`);
   console.log(`   Project connections: ${analysis.project_connections?.length || 0}`);
+  console.log(`   Budget mode: ${BUDGET_MODE}`);
   console.log(`   Tokens: ${response.usage.input_tokens.toLocaleString()} in / ${response.usage.output_tokens.toLocaleString()} out`);
 
   return {
@@ -104,5 +114,27 @@ async function loadMemory() {
   } catch {
     // No memory yet — first run
     return { lastBriefings: [], trackedPatterns: [], toolsEvaluated: [] };
+  }
+}
+
+/**
+ * Load life context from MylifeOS snapshot.
+ * This file is updated before each PRISM run (manually, by Cowork, or by a script).
+ */
+async function loadLifeContext() {
+  try {
+    const raw = await readFile(LIFE_CONTEXT_FILE, 'utf-8');
+    console.log(`  📋 Life context loaded (${raw.length} chars)`);
+    return raw;
+  } catch {
+    console.log('  ⚠️ No life context file found. Using default context.');
+    return `Julien — 31, founder of Chez Julien (specialty food shop, Brussels).
+Building "Operation Autonomy" — making the shop run without him via a trained manager (Henry) and custom software tools.
+Transitioning to AI software developer. Zero coding background, builds everything with Claude Code + Cursor.
+Active projects: PRISM (this system), staffing dashboard, ordering assistant, blog (julien.care), Chez Julien Simulator, Sweden Odyssey game.
+Uses: Claude API, Anthropic tools, GitHub, Node.js, Supabase, Cloudflare Workers, Lovable.
+Learning: agentic AI, prompt engineering, context engineering, management.
+
+(No detailed life context available. Update data/life-context.md for personalized briefings.)`;
   }
 }

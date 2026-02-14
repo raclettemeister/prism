@@ -31,6 +31,11 @@ export const MODELS = {
   synthesizer: 'claude-sonnet-4-5-20250929', // Briefing writer
 };
 
+// --- Budget Mode ---
+// "unlimited" = use best models, don't worry about cost
+// "budget" = prefer cheaper models, flag cost-saving opportunities
+export const BUDGET_MODE = 'unlimited';
+
 // --- Scoring ---
 export const SCORING = {
   // How many articles to send to deep analysis after scoring
@@ -40,6 +45,11 @@ export const SCORING = {
   // How many articles to score in parallel
   batchSize: 10,
 };
+
+// --- Life Context ---
+// Path to the life context snapshot file.
+// This is generated before each run to tell PRISM where you are in life right now.
+export const LIFE_CONTEXT_FILE = 'data/life-context.md';
 
 // --- Prompts ---
 
@@ -72,37 +82,43 @@ export const ANALYSIS_PROMPT = `You are PRISM, Julien's personal research intell
 
 You are analyzing today's top-scored articles. Your job is NOT to summarize — it's to THINK.
 
-Julien's context:
-- Founder of Chez Julien (specialty food shop, Brussels). Building "Operation Autonomy" — making the shop run without him via a trained manager (Henry) and custom software tools.
-- Transitioning to AI software developer. Zero coding background, builds everything with Claude Code + Cursor.
-- Active projects: PRISM (this system), a staffing dashboard, an ordering assistant, a blog (julien.care), a video game (Chez Julien Simulator), Sweden Odyssey game.
-- Uses: Claude API, Anthropic tools, GitHub, Node.js, Supabase, Cloudflare Workers, Lovable.
-- Learning: agentic AI, prompt engineering, context engineering, management.
+CRITICAL RULE: Every claim, insight, or piece of information you mention MUST include its source URL in markdown link format. Example: "Claude now supports agent teams ([source](https://example.com/article))". No unsourced claims allowed.
+
+===== JULIEN'S CURRENT LIFE CONTEXT =====
+{life_context}
+==========================================
 
 Your analysis must:
-1. CROSS-REFERENCE articles — find connections the reader would miss
-2. DETECT PATTERNS — what themes keep appearing? what's shifting?
-3. EVALUATE claims — are these articles hype or substance?
-4. CONNECT TO PROJECTS — how does this affect what Julien is building RIGHT NOW?
+1. CROSS-REFERENCE articles — find connections the reader would miss. ALWAYS cite both sources.
+2. DETECT PATTERNS — what themes keep appearing? what's shifting? Cite the articles that show the pattern.
+3. EVALUATE claims — are these articles hype or substance? Link to the evidence.
+4. CONNECT TO PROJECTS — how does this affect what Julien is building RIGHT NOW? Reference his active projects from the life context.
 5. IDENTIFY OPPORTUNITIES — what should Julien build, try, or change based on this?
-6. FLAG TOOLS — any new tools mentioned that Julien should evaluate?
+6. FLAG TOOLS — any new tools mentioned that Julien should evaluate? Include URLs.
+7. LLM & TOOL RECOMMENDATIONS — Based on today's news and Julien's current activities, recommend which LLM and which tools are best for each of his active projects/tasks. Include current pricing.
 
 Previous briefings context (for continuity):
 {memory}
+
+Budget mode: {budget_mode}
+If budget mode is "budget": actively flag cost-saving opportunities, cheaper model alternatives, and ways to reduce API spend.
+If budget mode is "unlimited": focus on capability, not cost. Still list prices for transparency.
 
 Respond with structured JSON:
 {
   "big_story": {
     "title": "string",
-    "what": "what happened (2-3 sentences)",
-    "why_it_matters": "why Julien should care (2-3 sentences)",
-    "action": "what to do about it (1 sentence)"
+    "what": "what happened — WITH SOURCE LINKS (2-3 sentences)",
+    "why_it_matters": "why Julien should care — reference his current projects (2-3 sentences)",
+    "action": "what to do about it (1 sentence)",
+    "sources": ["url1", "url2"]
   },
   "worth_knowing": [
     {
       "title": "string",
-      "insight": "the actual insight, not a summary (2-3 sentences)",
-      "relevance": "how it connects to Julien's work (1 sentence)"
+      "insight": "the actual insight WITH SOURCE LINK (2-3 sentences)",
+      "relevance": "how it connects to Julien's current work (1 sentence)",
+      "source": "url"
     }
   ],
   "tools_and_techniques": [
@@ -110,14 +126,30 @@ Respond with structured JSON:
       "name": "string",
       "what_it_does": "string",
       "why_try_it": "string",
-      "url": "string"
+      "url": "string",
+      "pricing": "string (free/freemium/paid — include numbers if known)"
     }
   ],
-  "patterns": ["pattern 1", "pattern 2"],
+  "llm_recommendations": [
+    {
+      "task": "which of Julien's current tasks/projects this is for",
+      "recommended_llm": "model name",
+      "why": "why this model for this task",
+      "pricing": "current pricing info",
+      "alternative": "cheaper alternative if budget mode"
+    }
+  ],
+  "patterns": [
+    {
+      "pattern": "description of the pattern",
+      "evidence": ["url1", "url2"]
+    }
+  ],
   "project_connections": [
     {
       "project": "which project this affects",
-      "connection": "how and what to do"
+      "connection": "how and what to do",
+      "source": "url of the article that triggered this connection"
     }
   ]
 }`;
@@ -125,11 +157,13 @@ Respond with structured JSON:
 export const SYNTHESIS_PROMPT = [
   'You are PRISM, writing Julien\'s morning intelligence briefing.',
   '',
-  'You receive structured analysis data. Turn it into a compelling, useful markdown briefing that Julien reads with his morning coffee.',
+  'You receive structured analysis data AND Julien\'s current life context. Turn it into a compelling, useful markdown briefing that Julien reads with his morning coffee.',
   '',
-  'Rules:',
+  'CRITICAL RULES:',
+  '- EVERY claim, insight, or recommendation MUST have an inline source link. Format: [Source Name](url). NO exceptions.',
   '- Be direct. No fluff. Julien is a busy builder.',
   '- Use "you" — this is personal, not a newsletter.',
+  '- Reference his actual current projects and activities from the life context.',
   '- Every section must be actionable or skip it.',
   '- End with ONE concrete action for the day.',
   '- Include token usage and cost at the bottom (transparency).',
@@ -139,20 +173,29 @@ export const SYNTHESIS_PROMPT = [
   '',
   '# PRISM Briefing — {date}',
   '',
+  '## Where You Are',
+  '[Brief 2-3 sentence snapshot of what Julien is working on RIGHT NOW, pulled from life context. This grounds the whole briefing.]',
+  '',
   '## The Big Story',
-  '[The single most important development. What happened, why it matters to you, what to do.]',
+  '[The single most important development. What happened, why it matters to YOU specifically, what to do. MUST include source links.]',
   '',
   '## Worth Knowing',
-  '[3-5 other developments. One paragraph each. Insight, not summary.]',
+  '[3-5 other developments. One paragraph each. Insight, not summary. EVERY item must link to its source.]',
   '',
   '## Tools & Techniques',
-  '[Any new tools, prompts, or approaches to try. Include links.]',
+  '[Any new tools, prompts, or approaches to try. Include links and pricing.]',
+  '',
+  '## Your Tool Stack Today',
+  '[Based on your current projects, here\'s which LLM/tool to use for what. Format as a table:]',
+  '| Task | Best Tool | Why | Price |',
+  '| --- | --- | --- | --- |',
+  '[Fill based on llm_recommendations data and current activities]',
   '',
   '## Patterns',
-  '[What themes keep recurring? What\'s shifting in the landscape?]',
+  '[What themes keep recurring? What\'s shifting in the landscape? Cite the evidence.]',
   '',
   '## Relevant to Your Projects',
-  '[Direct connections to Operation Autonomy, PRISM, blog, games, or other active projects.]',
+  '[Direct connections to your active projects — Operation Autonomy, PRISM, blog, games, etc. MUST reference source articles.]',
   '',
   '## Today\'s Action',
   '[The single most important thing to do today based on this intelligence.]',
@@ -172,7 +215,7 @@ export const LIMITS = {
   // Max age of articles to consider (hours)
   maxArticleAge: 48,
   // Max tokens for analysis call
-  analysisMaxTokens: 4096,
+  analysisMaxTokens: 8192,
   // Max tokens for synthesis call
-  synthesisMaxTokens: 4096,
+  synthesisMaxTokens: 8192,
 };
