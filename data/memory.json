@@ -175,13 +175,14 @@
     "Better Testing Harnesses for LLM Coding",
     "LLM Harness/Prompting Framework (specific tool unclear)"
   ],
-  "lastRun": "2026-02-14T13:57:58.616Z",
+  "lastRun": "2026-02-14T14:47:38.962Z",
   "feedHealth": {
     "https://www.latent.space/feed": {
       "lastSuccess": "2026-02-14",
       "failCount": 0,
       "avgArticles": 3,
       "samples": [
+        3,
         3,
         3
       ]
@@ -192,24 +193,25 @@
       "avgArticles": 0,
       "samples": [
         0,
+        0,
         0
       ]
     },
     "https://alphasignal.ai/feed": {
       "lastSuccess": null,
-      "failCount": 2,
+      "failCount": 3,
       "avgArticles": 0,
       "samples": []
     },
     "https://tldr.tech/ai/rss": {
       "lastSuccess": null,
-      "failCount": 2,
+      "failCount": 3,
       "avgArticles": 0,
       "samples": []
     },
     "https://www.therundown.ai/feed": {
       "lastSuccess": null,
-      "failCount": 2,
+      "failCount": 3,
       "avgArticles": 0,
       "samples": []
     },
@@ -218,6 +220,7 @@
       "failCount": 0,
       "avgArticles": 0,
       "samples": [
+        0,
         0,
         0
       ]
@@ -228,6 +231,7 @@
       "avgArticles": 3,
       "samples": [
         3,
+        3,
         3
       ]
     },
@@ -236,6 +240,7 @@
       "failCount": 0,
       "avgArticles": 5,
       "samples": [
+        5,
         5,
         5
       ]
@@ -246,6 +251,7 @@
       "avgArticles": 0,
       "samples": [
         0,
+        0,
         0
       ]
     },
@@ -254,6 +260,7 @@
       "failCount": 0,
       "avgArticles": 9,
       "samples": [
+        9,
         9
       ]
     },
@@ -262,6 +269,7 @@
       "failCount": 0,
       "avgArticles": 0,
       "samples": [
+        0,
         0
       ]
     },
@@ -270,6 +278,7 @@
       "failCount": 0,
       "avgArticles": 0,
       "samples": [
+        0,
         0
       ]
     },
@@ -278,7 +287,8 @@
       "failCount": 0,
       "avgArticles": 1,
       "samples": [
-        1
+        1,
+        0
       ]
     },
     "https://hnrss.org/show": {
@@ -286,6 +296,7 @@
       "failCount": 0,
       "avgArticles": 20,
       "samples": [
+        20,
         20
       ]
     },
@@ -294,6 +305,7 @@
       "failCount": 0,
       "avgArticles": 1,
       "samples": [
+        1,
         1
       ]
     },
@@ -302,6 +314,7 @@
       "failCount": 0,
       "avgArticles": 7,
       "samples": [
+        7,
         7
       ]
     },
@@ -310,6 +323,7 @@
       "failCount": 0,
       "avgArticles": 10,
       "samples": [
+        10,
         10
       ]
     },
@@ -318,12 +332,13 @@
       "failCount": 0,
       "avgArticles": 0,
       "samples": [
+        0,
         0
       ]
     },
     "https://www.nocode.tech/feed.xml": {
       "lastSuccess": null,
-      "failCount": 1,
+      "failCount": 2,
       "avgArticles": 0,
       "samples": []
     },
@@ -332,24 +347,25 @@
       "failCount": 0,
       "avgArticles": 1,
       "samples": [
+        1,
         1
       ]
     },
     "https://medium.com/feed/lovable": {
       "lastSuccess": null,
-      "failCount": 1,
+      "failCount": 2,
       "avgArticles": 0,
       "samples": []
     },
     "https://www.builder.io/blog/rss.xml": {
       "lastSuccess": null,
-      "failCount": 1,
+      "failCount": 2,
       "avgArticles": 0,
       "samples": []
     },
     "https://www.indiehackers.com/feed.xml": {
       "lastSuccess": null,
-      "failCount": 1,
+      "failCount": 2,
       "avgArticles": 0,
       "samples": []
     },
@@ -358,6 +374,7 @@
       "failCount": 0,
       "avgArticles": 0,
       "samples": [
+        0,
         0
       ]
     },
@@ -366,6 +383,7 @@
       "failCount": 0,
       "avgArticles": 0,
       "samples": [
+        0,
         0
       ]
     },
@@ -374,12 +392,13 @@
       "failCount": 0,
       "avgArticles": 5,
       "samples": [
+        5,
         5
       ]
     },
     "https://www.reddit.com/r/microsaas/.rss": {
       "lastSuccess": null,
-      "failCount": 1,
+      "failCount": 2,
       "avgArticles": 0,
       "samples": []
     },
@@ -388,6 +407,7 @@
       "failCount": 0,
       "avgArticles": 1,
       "samples": [
+        1,
         1
       ]
     },
@@ -396,6 +416,7 @@
       "failCount": 0,
       "avgArticles": 7,
       "samples": [
+        7,
         7
       ]
     },
@@ -404,7 +425,8 @@
       "failCount": 0,
       "avgArticles": 4,
       "samples": [
-        4
+        4,
+        3
       ]
     },
     "https://itch.io/games/new-and-popular.xml": {
@@ -412,6 +434,7 @@
       "failCount": 0,
       "avgArticles": 0,
       "samples": [
+        0,
         0
       ]
     },
@@ -420,6 +443,7 @@
       "failCount": 0,
       "avgArticles": 1,
       "samples": [
+        1,
         1
       ]
     },
@@ -428,6 +452,7 @@
       "failCount": 0,
       "avgArticles": 0,
       "samples": [
+        0,
         0
       ]
     },
@@ -436,7 +461,8 @@
       "failCount": 0,
       "avgArticles": 19,
       "samples": [
-        19
+        19,
+        18
       ]
     },
     "https://arstechnica.com/ai/feed/": {
@@ -444,6 +470,7 @@
       "failCount": 0,
       "avgArticles": 4,
       "samples": [
+        4,
         4
       ]
     },
@@ -452,6 +479,7 @@
       "failCount": 0,
       "avgArticles": 6,
       "samples": [
+        6,
         6
       ]
     },
@@ -460,6 +488,7 @@
       "failCount": 0,
       "avgArticles": 7,
       "samples": [
+        7,
         7
       ]
     },
@@ -468,6 +497,7 @@
       "failCount": 0,
       "avgArticles": 10,
       "samples": [
+        10,
         10
       ]
     },
@@ -476,6 +506,7 @@
       "failCount": 0,
       "avgArticles": 10,
       "samples": [
+        10,
         10
       ]
     },
@@ -484,18 +515,19 @@
       "failCount": 0,
       "avgArticles": 3,
       "samples": [
+        3,
         3
       ]
     },
     "https://www.euractiv.com/sections/digital/feed/": {
       "lastSuccess": null,
-      "failCount": 1,
+      "failCount": 2,
       "avgArticles": 0,
       "samples": []
     },
     "https://www.brusselstimes.com/feed/": {
       "lastSuccess": null,
-      "failCount": 1,
+      "failCount": 2,
       "avgArticles": 0,
       "samples": []
     },
@@ -504,6 +536,7 @@
       "failCount": 0,
       "avgArticles": 9,
       "samples": [
+        9,
         9
       ]
     },
@@ -512,6 +545,7 @@
       "failCount": 0,
       "avgArticles": 1,
       "samples": [
+        1,
         1
       ]
     },
@@ -520,6 +554,7 @@
       "failCount": 0,
       "avgArticles": 0,
       "samples": [
+        0,
         0
       ]
     },
@@ -528,18 +563,19 @@
       "failCount": 0,
       "avgArticles": 5,
       "samples": [
+        5,
         5
       ]
     },
     "https://www.retaildive.com/feeds/news/": {
       "lastSuccess": null,
-      "failCount": 1,
+      "failCount": 2,
       "avgArticles": 0,
       "samples": []
     },
     "https://www.grocerydive.com/feeds/news/": {
       "lastSuccess": "2026-02-14",
-      "failCount": 0,
+      "failCount": 1,
       "avgArticles": 5,
       "samples": [
         5
@@ -550,6 +586,7 @@
       "failCount": 0,
       "avgArticles": 5,
       "samples": [
+        5,
         5
       ]
     },
@@ -558,6 +595,7 @@
       "failCount": 0,
       "avgArticles": 1,
       "samples": [
+        1,
         1
       ]
     }

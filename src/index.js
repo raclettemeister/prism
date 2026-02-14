@@ -3,15 +3,17 @@
 // PRISM — Personal Research Intelligence System (Mine)
 //
 // Entry point. Orchestrates the full pipeline:
-// context → collect → score → analyze → synthesize → deliver
+// context → deepdive → collect → score → read → analyze → synthesize → deliver
 //
 // Run: node src/index.js
 // Dry run (collect only): node src/index.js --dry-run
 // ============================================================
 
 import generateContext from './context.js';
+import deepdive from './deepdive.js';
 import collect from './collect.js';
 import score from './score.js';
+import read from './read.js';
 import analyze from './analyze.js';
 import synthesize from './synthesize.js';
 import deliver from './deliver.js';
@@ -34,6 +36,9 @@ async function main() {
     // ── Step 0: Generate Life Context ───────────────────
     const contextResult = await generateContext();
 
+    // ── Step 0b: Deep dives (if requested in life-context) ─
+    const deepDiveReport = await deepdive();
+
     // ── Step 1: Collect ──────────────────────────────────
     const articles = await collect();
 
@@ -52,46 +57,41 @@ async function main() {
     }
 
     // ── Step 2: Score ────────────────────────────────────
-    const { all: scoredAll, top: topArticles, tokens: scoreTokens } = await score(articles);
+    const { all: scoredAll, tokens: scoreTokens } = await score(articles);
     totalInputTokens += scoreTokens.input;
     totalOutputTokens += scoreTokens.output;
 
-    if (topArticles.length === 0) {
-      console.log('\n⚠️ No articles scored above threshold. Lowering standards...');
-      // Take top 5 regardless of score
-      const fallback = scoredAll.slice(0, 5);
-      if (fallback.length === 0) {
-        console.log('  Still nothing. Exiting.');
-        process.exit(1);
-      }
-      topArticles.push(...fallback);
+    // ── Step 3: Read (select top 15 with diversity, fetch full text) ───
+    const articlesToAnalyze = await read(scoredAll);
+    if (articlesToAnalyze.length === 0) {
+      console.log('\n⚠️ No articles to analyze (none scored above 3). Exiting.');
+      process.exit(1);
     }
 
-    // Log top articles
     console.log('\n📋 Top articles going to analysis:');
-    topArticles.forEach((a, i) => {
-      console.log(`  ${i + 1}. [${a.score}/10] [${a.source}] ${a.title}`);
+    articlesToAnalyze.forEach((a, i) => {
+      console.log(`  ${i + 1}. [${a.score}/10] [${a.source}] ${a.title}${a.fullTextAvailable ? ' ✓ full text' : ''}`);
       console.log(`     ${a.reason}`);
     });
 
-    // ── Step 3: Analyze ──────────────────────────────────
-    const { analysis, tokens: analyzeTokens } = await analyze(topArticles);
+    // ── Step 4: Analyze ──────────────────────────────────
+    const { analysis, tokens: analyzeTokens } = await analyze(articlesToAnalyze);
     totalInputTokens += analyzeTokens.input_tokens;
     totalOutputTokens += analyzeTokens.output_tokens;
 
-    // ── Step 4: Synthesize ───────────────────────────────
+    // ── Step 5: Synthesize ───────────────────────────────
     const stats = {
       articlesScored: articles.length,
-      articlesAnalyzed: topArticles.length,
+      articlesAnalyzed: articlesToAnalyze.length,
       totalTokens: totalInputTokens + totalOutputTokens,
       estimatedCost: estimateCost(totalInputTokens, totalOutputTokens),
     };
 
-    const { briefing, filepath, tokens: synthTokens } = await synthesize(analysis, stats);
+    const { briefing, filepath, tokens: synthTokens } = await synthesize(analysis, stats, deepDiveReport);
     totalInputTokens += synthTokens.input_tokens;
     totalOutputTokens += synthTokens.output_tokens;
 
-    // ── Step 5: Deliver ──────────────────────────────────
+    // ── Step 6: Deliver ──────────────────────────────────
     const finalStats = {
       ...stats,
       totalTokens: totalInputTokens + totalOutputTokens,
@@ -109,7 +109,7 @@ async function main() {
     console.log(`  Context:  ${contextResult.generated ? '✅ Fresh (' + contextResult.filesRead + ' files)' : '⏭️  ' + contextResult.reason}`);
     console.log(`  Briefing: ${filepath}`);
     console.log(`  Email:    ${emailResult.sent ? '✅ Sent' : '❌ ' + emailResult.reason}`);
-    console.log(`  Articles: ${articles.length} collected → ${topArticles.length} analyzed`);
+    console.log(`  Articles: ${articles.length} collected → ${articlesToAnalyze.length} analyzed`);
     console.log(`  Tokens:   ${totalInputTokens.toLocaleString()} in / ${totalOutputTokens.toLocaleString()} out`);
     console.log(`  Cost:     ~$${finalCost}`);
     console.log(`  Time:     ${elapsed}s`);

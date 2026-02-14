@@ -22,10 +22,12 @@ export default async function analyze(topArticles) {
   // Load life context
   const lifeContext = await loadLifeContext();
 
-  // Build the articles block (include category and weighted score for context)
+  // Build the articles block — use full article text when available (from read.js), else RSS summary
   const articlesBlock = topArticles
     .map((a, i) => {
-      return `--- ARTICLE ${i + 1} (Score: ${a.score}/10, Category: ${a.category || 'unknown'}${a.crossFeedCount >= 3 ? ', cross-feed signal' : ''}) ---
+      const content = a.fullTextAvailable && a.fullText ? a.fullText : (a.content || '');
+      const contentNote = a.fullTextAvailable && a.fullText ? ' [full article text]' : ' [RSS summary]';
+      return `--- ARTICLE ${i + 1} (Score: ${a.score}/10, Category: ${a.category || 'unknown'}${a.crossFeedCount >= 3 ? ', cross-feed signal' : ''}${contentNote}) ---
 TITLE: ${a.title}
 SOURCE: ${a.source}
 DATE: ${a.date}
@@ -34,7 +36,7 @@ SCORING REASON: ${a.reason}
 URL: ${a.link}
 
 CONTENT:
-${a.content || ''}
+${content}
 `;
     })
     .join('\n');

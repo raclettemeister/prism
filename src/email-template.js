@@ -12,14 +12,26 @@ const SECTION_BORDERS = {
   'europe lens': '#003399',
   "today's priorities": '#16a34a',
   'trend tracker': '#6b7280',
+  'deep dive': '#4c1d95', // dark purple, distinct for on-demand research
+};
+const SECTION_BACKGROUNDS = {
+  'deep dive': '#f5f0ff',
 };
 
 function getSectionColor(headerText) {
-  const lower = (headerText || '').toLowerCase().replace(/[🔴📊🛠️🏗️🇪🇺🎯📈]/g, '').trim();
+  const lower = (headerText || '').toLowerCase().replace(/[🔴📊🛠️🏗️🇪🇺🎯📈🔬]/g, '').trim();
   for (const [key, color] of Object.entries(SECTION_BORDERS)) {
     if (lower.includes(key)) return color;
   }
   return '#6b7280';
+}
+
+function getSectionBackground(headerText) {
+  const lower = (headerText || '').toLowerCase().replace(/[🔴📊🛠️🏗️🇪🇺🎯📈🔬]/g, '').trim();
+  for (const [key, bg] of Object.entries(SECTION_BACKGROUNDS)) {
+    if (lower.includes(key)) return bg;
+  }
+  return null;
 }
 
 /**
@@ -45,11 +57,12 @@ export function renderEmail(briefingMarkdown, date) {
 
     if (i === 0) {
       firstBlock = headerHtml;
-      if (body) sections.push({ color: getSectionColor(body.slice(0, 80)), body: bodyHtml });
+      if (body) sections.push({ color: getSectionColor(body.slice(0, 80)), background: getSectionBackground(body.slice(0, 80)), body: bodyHtml });
       continue;
     }
     sections.push({
       color,
+      background: getSectionBackground(headerText),
       header: headerHtml,
       body: bodyHtml,
     });
@@ -80,7 +93,8 @@ export function renderEmail(briefingMarkdown, date) {
 
   const sectionHtml = sections
     .map((s) => {
-      const cardCss = cardStyle.replace('{{color}}', s.color);
+      const cardBg = s.background || '#fafafa';
+      const cardCss = cardStyle.replace('{{color}}', s.color).replace('background:#fafafa', `background:${cardBg}`);
       const inner = (s.header ? `<div style="font-size:18px;font-weight:700;margin-bottom:10px;">${s.header}</div>` : '') + inlineSection(s.body);
       return `<div style="${cardCss}">${inner}</div>`;
     })

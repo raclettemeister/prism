@@ -16,7 +16,7 @@ import {
 
 const client = new Anthropic();
 
-export default async function synthesize(analysis, stats) {
+export default async function synthesize(analysis, stats, deepDiveReport = null) {
   const today = format(new Date(), 'yyyy-MM-dd');
   console.log(`\n📝 SYNTHESIZING briefing for ${today}...`);
 
@@ -46,6 +46,20 @@ export default async function synthesize(analysis, stats) {
   });
 
   let briefing = response.content[0].text.trim();
+  if (deepDiveReport && deepDiveReport.deepDives && deepDiveReport.deepDives.length > 0) {
+    const deepDiveSections = deepDiveReport.deepDives
+      .map(
+        (d) =>
+          `## 🔬 DEEP DIVE: ${d.topic}\n\n${d.summary}\n\nFull report saved to briefings/deep-dives/`
+      )
+      .join('\n\n');
+    const prioritiesRegex = /\n(##\s*🎯\s*TODAY'S PRIORITIES[^\n]*\n)/i;
+    if (prioritiesRegex.test(briefing)) {
+      briefing = briefing.replace(prioritiesRegex, `\n${deepDiveSections}\n\n$1`);
+    } else {
+      briefing += `\n\n${deepDiveSections}\n\n`;
+    }
+  }
   const footer = `\n---\n*PRISM v1.0 — ${stats.articlesScored} articles scored, ${stats.articlesAnalyzed} analyzed, ${stats.totalTokens.toLocaleString()} tokens (~$${stats.estimatedCost})*`;
   if (!briefing.includes('*PRISM v1.0')) briefing += footer;
 
