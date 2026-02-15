@@ -1,6 +1,34 @@
 {
   "lastBriefings": [
     {
+      "date": "2026-02-15",
+      "bigStory": "Cognitive Debt: The Hidden Cost of AI-Assisted Development That Will Paralyze Your Projects",
+      "patterns": [
+        "Cognitive Debt Is the New Technical Debt for AI-Assisted Development",
+        "Multi-Model Consensus Emerging as Security Pattern for Autonomous Agents",
+        "Git-Based Memory/Context Is Becoming Standard for Agent Persistence",
+        "Agentic AI ROI Proven in Structured, Rules-Based Workflows (80% vs 67% for General AI)",
+        "Solo Developers Building Production-Grade Autonomous Systems With AI Assistance",
+        "The Engineering Role Is Shifting From Writing Code to Prompting/Coordinating (Junior Developer Advantage)"
+      ],
+      "toolsFlagged": [
+        "BOND",
+        "Letta Code (formerly MemGPT)",
+        "Quoracle",
+        "Decision Audit",
+        "WebMCP"
+      ],
+      "projectConnections": [
+        "Sweden Odyssey (learning to code)",
+        "PRISM v1.3 deep dive feature",
+        "Blog launch (Feb 23 — 8 days away)",
+        "Operation Autonomy (tonight's meeting with Henry and Lucas)",
+        "Staffing system (went live Feb 12)",
+        "MylifeOS infrastructure",
+        "PRISM autonomous pipeline (running nightly at 4 AM)"
+      ]
+    },
+    {
       "date": "2026-02-14",
       "bigStory": "The Harness Problem: Better Interfaces Unlock More From Existing Models",
       "patterns": [
@@ -175,23 +203,25 @@
     "Better Testing Harnesses for LLM Coding",
     "LLM Harness/Prompting Framework (specific tool unclear)"
   ],
-  "lastRun": "2026-02-14T14:47:38.962Z",
+  "lastRun": "2026-02-15T06:11:08.488Z",
   "feedHealth": {
     "https://www.latent.space/feed": {
-      "lastSuccess": "2026-02-14",
+      "lastSuccess": "2026-02-15",
       "failCount": 0,
       "avgArticles": 3,
       "samples": [
         3,
         3,
-        3
+        3,
+        2
       ]
     },
     "https://buttondown.email/ainews/rss": {
-      "lastSuccess": "2026-02-14",
+      "lastSuccess": "2026-02-15",
       "failCount": 0,
       "avgArticles": 0,
       "samples": [
+        0,
         0,
         0,
         0
@@ -199,293 +229,319 @@
     },
     "https://alphasignal.ai/feed": {
       "lastSuccess": null,
-      "failCount": 3,
+      "failCount": 4,
       "avgArticles": 0,
       "samples": []
     },
     "https://tldr.tech/ai/rss": {
       "lastSuccess": null,
-      "failCount": 3,
+      "failCount": 4,
       "avgArticles": 0,
       "samples": []
     },
     "https://www.therundown.ai/feed": {
       "lastSuccess": null,
-      "failCount": 3,
+      "failCount": 4,
       "avgArticles": 0,
       "samples": []
     },
     "https://jack-clark.net/feed/": {
-      "lastSuccess": "2026-02-14",
+      "lastSuccess": "2026-02-15",
       "failCount": 0,
       "avgArticles": 0,
       "samples": [
+        0,
         0,
         0,
         0
       ]
     },
     "https://www.exponentialview.co/feed": {
-      "lastSuccess": "2026-02-14",
+      "lastSuccess": "2026-02-15",
       "failCount": 0,
       "avgArticles": 3,
       "samples": [
         3,
         3,
-        3
+        3,
+        4
       ]
     },
     "https://hnrss.org/best?count=30&q=AI+OR+LLM+OR+agent+OR+Claude": {
-      "lastSuccess": "2026-02-14",
+      "lastSuccess": "2026-02-15",
       "failCount": 0,
       "avgArticles": 5,
       "samples": [
         5,
         5,
-        5
+        5,
+        6
       ]
     },
     "https://hnrss.org/best?count=20&q=cursor+OR+coding+OR+prompt": {
-      "lastSuccess": "2026-02-14",
+      "lastSuccess": "2026-02-15",
       "failCount": 0,
       "avgArticles": 0,
       "samples": [
+        0,
         0,
         0,
         0
       ]
     },
     "https://simonwillison.net/atom/everything/": {
-      "lastSuccess": "2026-02-14",
+      "lastSuccess": "2026-02-15",
       "failCount": 0,
-      "avgArticles": 9,
+      "avgArticles": 8,
       "samples": [
         9,
-        9
+        9,
+        6
       ]
     },
     "https://lilianweng.github.io/index.xml": {
-      "lastSuccess": "2026-02-14",
+      "lastSuccess": "2026-02-15",
       "failCount": 0,
       "avgArticles": 0,
       "samples": [
+        0,
         0,
         0
       ]
     },
     "https://www.interconnects.ai/feed": {
-      "lastSuccess": "2026-02-14",
+      "lastSuccess": "2026-02-15",
       "failCount": 0,
       "avgArticles": 0,
       "samples": [
+        0,
         0,
         0
       ]
     },
     "https://www.bensbites.com/feed": {
-      "lastSuccess": "2026-02-14",
+      "lastSuccess": "2026-02-15",
       "failCount": 0,
-      "avgArticles": 1,
+      "avgArticles": 0,
       "samples": [
         1,
+        0,
         0
       ]
     },
     "https://hnrss.org/show": {
-      "lastSuccess": "2026-02-14",
+      "lastSuccess": "2026-02-15",
       "failCount": 0,
       "avgArticles": 20,
       "samples": [
+        20,
         20,
         20
       ]
     },
     "https://hnrss.org/launches": {
-      "lastSuccess": "2026-02-14",
+      "lastSuccess": "2026-02-15",
       "failCount": 0,
       "avgArticles": 1,
       "samples": [
         1,
-        1
+        1,
+        0
       ]
     },
     "https://www.artificialintelligence-news.com/feed/": {
-      "lastSuccess": "2026-02-14",
+      "lastSuccess": "2026-02-15",
       "failCount": 0,
       "avgArticles": 7,
       "samples": [
+        7,
         7,
         7
       ]
     },
     "https://the-decoder.com/feed/": {
-      "lastSuccess": "2026-02-14",
+      "lastSuccess": "2026-02-15",
       "failCount": 0,
       "avgArticles": 10,
       "samples": [
+        10,
         10,
         10
       ]
     },
     "https://venturebeat.com/category/ai/feed/": {
-      "lastSuccess": "2026-02-14",
+      "lastSuccess": "2026-02-15",
       "failCount": 0,
       "avgArticles": 0,
       "samples": [
+        0,
         0,
         0
       ]
     },
     "https://www.nocode.tech/feed.xml": {
       "lastSuccess": null,
-      "failCount": 2,
+      "failCount": 3,
       "avgArticles": 0,
       "samples": []
     },
     "https://blog.replit.com/feed.xml": {
-      "lastSuccess": "2026-02-14",
+      "lastSuccess": "2026-02-15",
       "failCount": 0,
       "avgArticles": 1,
       "samples": [
+        1,
         1,
         1
       ]
     },
     "https://medium.com/feed/lovable": {
       "lastSuccess": null,
-      "failCount": 2,
+      "failCount": 3,
       "avgArticles": 0,
       "samples": []
     },
     "https://www.builder.io/blog/rss.xml": {
       "lastSuccess": null,
-      "failCount": 2,
+      "failCount": 3,
       "avgArticles": 0,
       "samples": []
     },
     "https://www.indiehackers.com/feed.xml": {
       "lastSuccess": null,
-      "failCount": 2,
+      "failCount": 3,
       "avgArticles": 0,
       "samples": []
     },
     "https://blog.pragmaticengineer.com/rss/": {
-      "lastSuccess": "2026-02-14",
+      "lastSuccess": "2026-02-15",
       "failCount": 0,
       "avgArticles": 0,
       "samples": [
+        0,
         0,
         0
       ]
     },
     "https://entrepreneurshandbook.co/feed": {
-      "lastSuccess": "2026-02-14",
+      "lastSuccess": "2026-02-15",
       "failCount": 0,
       "avgArticles": 0,
       "samples": [
+        0,
         0,
         0
       ]
     },
     "https://www.saastr.com/feed/": {
-      "lastSuccess": "2026-02-14",
+      "lastSuccess": "2026-02-15",
       "failCount": 0,
       "avgArticles": 5,
       "samples": [
+        5,
         5,
         5
       ]
     },
     "https://www.reddit.com/r/microsaas/.rss": {
       "lastSuccess": null,
-      "failCount": 2,
+      "failCount": 3,
       "avgArticles": 0,
       "samples": []
     },
     "https://gamefromscratch.com/feed/": {
-      "lastSuccess": "2026-02-14",
+      "lastSuccess": "2026-02-15",
       "failCount": 0,
       "avgArticles": 1,
       "samples": [
         1,
-        1
+        1,
+        0
       ]
     },
     "https://gamedeveloper.com/rss.xml": {
-      "lastSuccess": "2026-02-14",
+      "lastSuccess": "2026-02-15",
       "failCount": 0,
       "avgArticles": 7,
       "samples": [
         7,
-        7
+        7,
+        6
       ]
     },
     "https://www.gamesindustry.biz/feed/news": {
-      "lastSuccess": "2026-02-14",
+      "lastSuccess": "2026-02-15",
       "failCount": 0,
-      "avgArticles": 4,
+      "avgArticles": 3,
       "samples": [
         4,
+        3,
         3
       ]
     },
     "https://itch.io/games/new-and-popular.xml": {
-      "lastSuccess": "2026-02-14",
+      "lastSuccess": "2026-02-15",
       "failCount": 0,
       "avgArticles": 0,
       "samples": [
+        0,
         0,
         0
       ]
     },
     "https://godotengine.org/rss.xml": {
-      "lastSuccess": "2026-02-14",
+      "lastSuccess": "2026-02-15",
       "failCount": 0,
       "avgArticles": 1,
       "samples": [
+        1,
         1,
         1
       ]
     },
     "https://weirdwonderfulai.art/feed/": {
-      "lastSuccess": "2026-02-14",
+      "lastSuccess": "2026-02-15",
       "failCount": 0,
       "avgArticles": 0,
       "samples": [
+        0,
         0,
         0
       ]
     },
     "https://www.creativebloq.com/feed": {
-      "lastSuccess": "2026-02-14",
+      "lastSuccess": "2026-02-15",
       "failCount": 0,
-      "avgArticles": 19,
+      "avgArticles": 17,
       "samples": [
         19,
-        18
+        18,
+        14
       ]
     },
     "https://arstechnica.com/ai/feed/": {
-      "lastSuccess": "2026-02-14",
+      "lastSuccess": "2026-02-15",
       "failCount": 0,
-      "avgArticles": 4,
+      "avgArticles": 3,
       "samples": [
         4,
-        4
+        4,
+        2
       ]
     },
     "https://www.theverge.com/rss/ai-artificial-intelligence/index.xml": {
-      "lastSuccess": "2026-02-14",
+      "lastSuccess": "2026-02-15",
       "failCount": 0,
-      "avgArticles": 6,
+      "avgArticles": 5,
       "samples": [
         6,
-        6
+        6,
+        4
       ]
     },
     "https://sifted.eu/feed/": {
       "lastSuccess": "2026-02-14",
-      "failCount": 0,
+      "failCount": 1,
       "avgArticles": 7,
       "samples": [
         7,
@@ -494,7 +550,7 @@
     },
     "https://eu-startups.com/feed/": {
       "lastSuccess": "2026-02-14",
-      "failCount": 0,
+      "failCount": 1,
       "avgArticles": 10,
       "samples": [
         10,
@@ -503,7 +559,7 @@
     },
     "https://siliconcanals.com/feed/": {
       "lastSuccess": "2026-02-14",
-      "failCount": 0,
+      "failCount": 1,
       "avgArticles": 10,
       "samples": [
         10,
@@ -511,93 +567,173 @@
       ]
     },
     "https://tech.eu/feed/": {
-      "lastSuccess": "2026-02-14",
+      "lastSuccess": "2026-02-15",
       "failCount": 0,
       "avgArticles": 3,
       "samples": [
+        3,
         3,
         3
       ]
     },
     "https://www.euractiv.com/sections/digital/feed/": {
       "lastSuccess": null,
-      "failCount": 2,
+      "failCount": 3,
       "avgArticles": 0,
       "samples": []
     },
     "https://www.brusselstimes.com/feed/": {
       "lastSuccess": null,
-      "failCount": 2,
+      "failCount": 3,
       "avgArticles": 0,
       "samples": []
     },
     "https://www.brusselsmorning.com/feed/": {
-      "lastSuccess": "2026-02-14",
+      "lastSuccess": "2026-02-15",
       "failCount": 0,
-      "avgArticles": 9,
+      "avgArticles": 8,
       "samples": [
         9,
-        9
+        9,
+        6
       ]
     },
     "https://stratechery.com/feed/": {
-      "lastSuccess": "2026-02-14",
+      "lastSuccess": "2026-02-15",
       "failCount": 0,
       "avgArticles": 1,
       "samples": [
+        1,
         1,
         1
       ]
     },
     "https://www.oneusefulthing.org/feed": {
-      "lastSuccess": "2026-02-14",
+      "lastSuccess": "2026-02-15",
       "failCount": 0,
       "avgArticles": 0,
       "samples": [
+        0,
         0,
         0
       ]
     },
     "https://www.technologyreview.com/feed/": {
-      "lastSuccess": "2026-02-14",
+      "lastSuccess": "2026-02-15",
       "failCount": 0,
       "avgArticles": 5,
       "samples": [
+        5,
         5,
         5
       ]
     },
     "https://www.retaildive.com/feeds/news/": {
-      "lastSuccess": null,
-      "failCount": 2,
-      "avgArticles": 0,
-      "samples": []
+      "lastSuccess": "2026-02-15",
+      "failCount": 0,
+      "avgArticles": 3,
+      "samples": [
+        3
+      ]
     },
     "https://www.grocerydive.com/feeds/news/": {
-      "lastSuccess": "2026-02-14",
-      "failCount": 1,
-      "avgArticles": 5,
+      "lastSuccess": "2026-02-15",
+      "failCount": 0,
+      "avgArticles": 4,
       "samples": [
-        5
+        5,
+        2
       ]
     },
     "https://www.modernretail.co/feed/": {
-      "lastSuccess": "2026-02-14",
+      "lastSuccess": "2026-02-15",
       "failCount": 0,
-      "avgArticles": 5,
+      "avgArticles": 4,
       "samples": [
         5,
-        5
+        5,
+        2
       ]
     },
     "https://www.lightspeedhq.com/blog/feed/": {
-      "lastSuccess": "2026-02-14",
+      "lastSuccess": "2026-02-15",
       "failCount": 0,
       "avgArticles": 1,
       "samples": [
         1,
-        1
+        1,
+        0
       ]
     }
-  }
+  },
+  "topicFrequency": {
+    "cognitive-debt-is-the-new-technical-debt-for-ai-as": {
+      "mentions": 1,
+      "lastSeen": "2026-02-15",
+      "trend": "new"
+    },
+    "multi-model-consensus-emerging-as-security-pattern": {
+      "mentions": 1,
+      "lastSeen": "2026-02-15",
+      "trend": "new"
+    },
+    "git-based-memorycontext-is-becoming-standard-for-": {
+      "mentions": 1,
+      "lastSeen": "2026-02-15",
+      "trend": "new"
+    },
+    "agentic-ai-roi-proven-in-structured-rules-based-w": {
+      "mentions": 1,
+      "lastSeen": "2026-02-15",
+      "trend": "new"
+    },
+    "solo-developers-building-production-grade-autonomo": {
+      "mentions": 1,
+      "lastSeen": "2026-02-15",
+      "trend": "new"
+    },
+    "the-engineering-role-is-shifting-from-writing-code": {
+      "mentions": 1,
+      "lastSeen": "2026-02-15",
+      "trend": "new"
+    }
+  },
+  "toolsMentioned": [
+    {
+      "name": "BOND",
+      "firstSeen": "2026-02-15",
+      "mentions": 1,
+      "category": "ai_tools",
+      "url": "https://github.com/moneyjarrod/BOND"
+    },
+    {
+      "name": "Letta Code (formerly MemGPT)",
+      "firstSeen": "2026-02-15",
+      "mentions": 1,
+      "category": "ai_tools",
+      "url": "https://www.letta.com/"
+    },
+    {
+      "name": "Quoracle",
+      "firstSeen": "2026-02-15",
+      "mentions": 1,
+      "category": "ai_tools",
+      "url": "https://github.com/shelvick/quoracle"
+    },
+    {
+      "name": "Decision Audit",
+      "firstSeen": "2026-02-15",
+      "mentions": 1,
+      "category": "ai_tools",
+      "url": "https://decide.trk7.app/intake/should-i-quit"
+    },
+    {
+      "name": "WebMCP",
+      "firstSeen": "2026-02-15",
+      "mentions": 1,
+      "category": "ai_tools",
+      "url": "https://the-decoder.com/googles-webmcp-moves-the-web-closer-to-becoming-a-structured-database-for-ai-agents/"
+    }
+  ],
+  "weeklyDigestDue": "2026-02-22"
 }
