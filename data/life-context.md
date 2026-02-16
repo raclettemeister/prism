@@ -1,143 +1,141 @@
-<!-- PRISM Life Context — Auto-generated 2026-02-15T06:10:29.476Z -->
+<!-- PRISM Life Context — Auto-generated 2026-02-16T06:46:04.121Z -->
 <!-- Source: context-note.md + LOG (3d) + 13 recent files -->
 <!-- Model: claude-sonnet-4-5-20250929 -->
-# Life Context Snapshot — Julien Thibaut
-**Generated:** 2026-02-15
+# LIFE CONTEXT SNAPSHOT — 2026-02-16
 
-## Right Now
+## Right now
 
-Julien just shipped PRISM v0.4.0 yesterday — his personal AI research system that runs autonomously every night at 4 AM on GitHub Actions and emails him a briefing. He moved his entire MylifeOS off iCloud to GitHub with Obsidian Git syncing every 30 minutes. The big strategic shift: Operation Autonomy is now the plan instead of selling the shop — Henry becomes manager. Tonight (Feb 15) is the big meeting with Henry and Lucas to discuss this restructure. He's avoiding the blog text (hasn't touched it in days despite the Feb 23 launch deadline) and knows he's spending too much time building AI tools instead of simple human tasks.
+Julien is in the middle of testing his first deep dive feature on PRISM v1.3 tonight. He's actively pushing the boundaries of "software developer who never codes" — building real production systems (PRISM, blog, game, micro softwares for the shop) purely through AI delegation. His main bottleneck isn't ideas or execution speed anymore — it's learning to manage AI at scale and finding enough problems to give AI work. He built PRISM specifically to consume tokens while he sleeps. Top priority right now: getting BOND working on macOS (current blockers exist, expects fast community implementation).
 
-## This Week
+## This week
 
-**PRISM (Personal AI Research System):**
-- v0.4.0 shipped Feb 14 with autonomous life context generation
-- v1.1 expanded from 9 to ~45 RSS feeds across 9 categories (AI Tools, AI News, No-Code, Indie Founders, Game Dev, Creative AI, Europe/Belgium, Big Picture, Retail Automation)
-- v1.3 deep dive feature designed: write "deep dive: topic" in context note, PRISM generates 5 queries, fetches 20 full articles, synthesizes research report (~$0.72 per deep dive)
-- Full pipeline: context → collect → score (Haiku) → analyze (Sonnet) → synthesize (Sonnet) → deliver (Resend email)
-- Live on GitHub Actions, runs nightly, emails staycreative@julien.care
-- Budget: unlimited
+**PRISM v1.3 — operational, first deep dive tonight:**
+- 45 RSS feeds across 9 categories (AI Tools, AI News, No-Code, Indie Founders, Game Dev, Creative AI, Europe/Belgium, Big Picture, Retail Automation)
+- Deep dive feature designed Feb 14: writes `deep dive: topic` in context note → PRISM generates 5 search queries → fetches 20 full articles → produces research report at 4AM → saves to briefings/deep-dives/
+- Supports up to 3 simultaneous deep dives
+- Email delivery via Resend to staycreative@julien.care
+- Cost: ~$0.72 per deep dive on top of normal run
+- Testing deep dive tonight for first time: "AI agent frameworks for non-coders — what tools exist today for building autonomous agents without writing code (Wordware, Lindy, CrewAI Studio, n8n AI agents, Relevance AI)"
 
-**MylifeOS Infrastructure:**
-- Migrated off iCloud to GitHub (raclettemeister/MyLifeOS, private repo)
-- Vault now at `/Users/julienthibaut/MylifeOS/MylifeOSv2`
-- Obsidian Git: auto commit-and-sync every 30 minutes
-- Major cleanup: 19,711 → 258 files (removed app code, build artifacts, .DS_Store files, dead root files)
-- Created `.gitignore` to prevent future bloat
-- PRISM now clones this repo every morning to generate life context autonomously
+**MylifeOS v2 — major cleanup completed Feb 14:**
+- Migrated off iCloud → GitHub (private repo raclettemeister/MyLifeOS)
+- Obsidian Git plugin installed: auto commit-and-sync every 30 min
+- Massive file reduction: 19,711 → 258 files
+- Removed: all app code (moved to separate GitHub repos), 13 lovable-prompt files, cursor-prompt files, Todoist archive, duplicate images, .DS_Store files
+- Created .gitignore to prevent future bloat
+- Now a clean knowledge base — no code, no build artifacts
 
-**Blog (julien.care):**
-- LIVE but text not polished
-- Launch date: Feb 23 (8 days away)
-- Julien admits: "Haven't touched the text in days. That's the thing I'm avoiding."
-- Newsletter via Resend + Supabase
-- Subscriber notification pipeline working (ntfy + Notion + welcome email)
+**Letta AI agents — 3-agent system built and operational (Feb 15):**
+- **Brain** (session continuity) — 5 memory blocks: commitment_map, session_log, project_states, open_decisions, identity_anchor
+- **Coach** (discipline & energy) — 5 memory blocks: commitment_map, session_log, daily_disciplines, energy_patterns, discipline_streaks
+- **Queue** (work capacity) — 7 memory blocks: commitment_map, session_log, project_states, open_decisions, task_queue, urgency_matrix, energy_patterns
+- Shared memory architecture: when one agent updates commitment_map or session_log, others see it immediately
+- Known bug documented and fixed: new Letta agents don't inject memory blocks into context on first message (fix: detach/re-attach one block, clear messages, resend)
+- Next build phase: Letta ↔ MylifeOS sync via Cloudflare Worker (3 automations: Letta→MylifeOS push, MylifeOS→Letta pull, nightly review email digest)
 
-**Chez Julien Simulator:**
-- Live at julien.care/game
-- Beta testing ready, bug reports implemented
-- Family plays tonight (Feb 15) — grand opening
+**Blog — live at julien.care, text needs polishing:**
+- Infrastructure complete, domain live, newsletter operational
+- Public launch scheduled Feb 23 (7 days away)
+- Current blocker: text polishing — the thing Julien is avoiding
+- Self-described issue: "I'm avoiding the blog text polishing"
 
-**Sweden Odyssey (NEW):**
-- Video game about two-week Sweden trip with ~20 friends
-- **First project where Julien learns to code** — not vibe-coding, actual learning
-- GitHub-only, multi-person collaboration
-- Project folder + STATUS.md created Feb 12
+**Operation Autonomy — big meeting happened Feb 14:**
+- Henry development path: stepping into manager role
+- Strategy shift from "Operation Exit" to "Operation Autonomy" (archived SellOS)
+- Goal: Henry becomes manager, shop runs without Julien
+- Full meeting prep completed (8-page document with 5 development paths for Henry, bonus structure, individual + shared conversation frameworks)
+- Outcomes pending
 
-**Staffing System (Built Feb 12):**
-- Complete Notion system: 3 databases (Disponibilités & Planning, Congés & Vacances, Pointage)
-- Full SOP with WhatsApp message templates (FR)
-- Staffing Dashboard V2 (`Business/staffing-dashboard.html`) with live Notion read/write via Cloudflare Worker proxy
-- System went LIVE Feb 12 — Julien sent messages to team WhatsApp group
-- Clock in/out format: flexible (⏰ 10h-18h40 or separate messages)
+**Commitment mapping session — Feb 15:**
+- Honest inventory: 14 active commitments organized into 5 priority tiers
+- Key insight: Tier 1 (non-negotiable: Lucia, Poncho, disciplines, nature, dancing) is all undertended while Tier 3 (creative projects) gets most energy
+- Currently at 70/30 work/life split instead of target 50/50
+- Decision: do Tier 1 FIRST every day, then projects
+- This map became foundation for all 3 Letta agents' shared memory
 
-## Priorities & Struggles
+## Priorities & struggles
 
-**Stated priorities (from context note):**
-1. Test PRISM full run
-2. Prep for tonight's meeting with Henry and Lucas
-3. STOP building AI tools and work on blog text this weekend
+**Top priority:** Blog launch Feb 23 — infrastructure done, text needs polishing (psychological block, not technical)
 
-**The core struggle:**
-"Spending too much time building AI tools, not enough on the simple human things (shop, Lucia, blog text). 70/30 ratio needs to flip."
+**Main bottleneck:** Learning to manage AI at scale — packaging work into delegatable chunks, running parallel sessions across two machines, building long-running tasks that keep AI busy while he does other things
 
-**What he's avoiding:**
-- Blog text polishing (the voice isn't right, needs full pass before public launch)
-- Simple staffing conversations (spent Feb 12 trying to build a WhatsApp bot to ask employees about availability instead of just texting them — he called it "definitely ridiculous")
-- The shop and human tasks in general
+**The problem he's solving:** "AI is so fast it solves my problems faster than I can think of giving them a job. That's why I built PRISM today — tokens while I sleep. Need much more of that."
 
-**Key insight from Feb 12:**
-Asking an LLM about bleeding-edge AI is a "big no-no" — the field moves faster than training data. This reinforces the urgency of PRISM as a real personalized news feed.
+**Current edge:** Becoming a "software developer who never codes" — building real systems purely through AI delegation
 
-## Business — Operation Autonomy
+**What's hard:** 
+- Text polishing for blog (avoiding it)
+- Using more tokens per day but running out of ideas for AI work
+- Tier 1 commitments (Lucia, Poncho, disciplines) undertended vs Tier 3 creative projects overtended
+- 70/30 work/life split when target is 50/50
 
-**Strategic shift (Feb 14):**
-- Archived Operation Exit / SellOS
-- New plan: Operation Autonomy — keep the shop, make it fully autonomous, Henry becomes manager
-- Principle: "Everything is replaceable. Humans handle the human parts, software does the heavy lifting."
+**What's working:**
+- PRISM operational and autonomous
+- MylifeOS clean and GitHub-backed
+- Letta agents holding persistent memory
+- Two-machine AI workflow maximizing utilization
+- Honest self-awareness about commitment imbalance
 
-**Tonight's meeting (Feb 15) — The Big Meeting:**
-- Henry and Lucas together, then individual conversations
-- Henry's path: 5 options including title upgrade to Shop Manager, potentially taking over operations, or buyer keeps him as manager
-- Lucas's path: "Let your best friend shine" — step back from cognitive tasks, focus on customer-facing work
-- Bonus structure tied to potential sale: Lucas 4.5%, Henry 2% (on €200K sale = €9K for Lucas, €4K for Henry)
-- Goal: Henry on thinking/projects, Lucas on customers (currently reversed — Lucas grabs cognitive tasks but underperforms)
+## Business
 
-**Team:**
-- **Henry:** 24, full-time, 4 months in. Eager, growing fast, wants responsibility. But still learning, lacks maturity. Best friend of Lucas (risk: if one leaves, both might).
-- **Lucas:** 24, part-time (3/4), 2 years in. Good with customers, deliberately conserves cognitive energy for his own creative agency projects. Treats shop as "battery charger" for his real ambitions. Not ready for self-awareness.
+**Chez Julien / Operation Autonomy:**
+- Big meeting with Henry and Lucas happened Feb 14
+- Henry development as manager is critical path
+- Staffing infrastructure complete (Notion databases, WhatsApp templates, staffing dashboard HTML app)
+- Goal: shop runs without Julien's daily involvement
+- Strategy: Henry becomes manager → documented processes → software tools for efficiency
+- Business is healthy and profitable (~500K annual sales)
 
-**Chez Julien status:**
-- ~€500K annual sales, very high profitability
-- Julien owns 48% of the building
-- Shop already very self-sustainable, but needs to run without Julien
+**Henry:** 24, full-time, 4 months in, wants to grow, getting the manager development opportunity
 
-## Tools & Stack
+**Lucas:** Part-time (3/4), 2 years tenure, good with customers but strategically disengaged from cognitive work
 
-**Current setup:**
-- **Primary:** Mac Mini (16GB RAM) — Cursor + Claude Cowork (Opus)
-- **Secondary:** MacBook Pro 2019 (Intel i5, 8GB RAM) — discovered Feb 12 it's incompatible with Cowork (not Apple Silicon), tried to use as Claude bot, didn't work
-- **Hardware discipline:** No new device purchases until current RAM usage maxed out
+## Tools & stack
 
-**AI stack:**
-- Claude Cowork (Opus) for interactive work
-- Claude Sonnet 4 for PRISM analysis/synthesis
-- Claude Haiku for PRISM scoring (cheap, fast)
-- Cursor for code (AI-assisted development)
-- Lovable for web apps (built blog + game)
-- GitHub Actions for PRISM automation
-- Resend for email (blog newsletter + PRISM briefings)
-- Supabase for blog backend
-- Notion for business operations (3 staffing databases)
-- Obsidian + Obsidian Git for MylifeOS
-- ntfy for push notifications (3 topics: mylifeos-rhythm, mylifeos-business, mylifeos-projects)
-- Zapier: 3 automations live (Morning Nudge 8:30 AM, Google Review Alert, Weekly Planning Sunday 7 PM)
+**Active AI tools:**
+- Claude Cowork (Opus) — primary interface, two parallel sessions across two machines
+- Cursor — code generation and editing
+- Letta ADE (app.letta.com) — 3 persistent AI agents with shared memory
+- Lovable — used for rapid prototyping
+- Ultra AI from Google — recently purchased, needs testing
 
-**Budget:** Unlimited for AI tokens
+**Automation:**
+- GitHub Actions (not enough usage — wants more)
+- Zapier (not enough usage — wants more)
+- Resend (email delivery for PRISM)
+- ntfy (push notifications)
+- Cloudflare Workers (next: Letta↔MylifeOS sync)
 
-**The bottleneck Julien is solving:**
-Learning to manage AI at scale. Goal: always have at least one AI working in the background. Parallel sessions across both machines. Package work into AI-delegatable chunks. Push every machine to its limits before buying more.
+**Hardware:**
+- Mac Mini 16GB RAM — primary workstation (Cursor + Cowork)
+- MacBook Pro 2019 8GB Intel i5 — secondary station (Cowork only, browser-based, no Cursor)
+- Two machines running parallel Cowork sessions to maximize AI utilization
+- Hardware discipline: no new purchases until current RAM maxed out
+
+**Blockers:**
+- BOND doesn't work on macOS — top priority, expecting fast community implementation from other GitHub repos
+- Product Hunt RSS is dead (403 blocked) — no clean alternative yet
+
+**Development pattern:**
+- Zero coding background — grew up modding Paradox strategy games (EU4, HOI4)
+- Thinks in systems and layers
+- Micromanages early stages (setup, design), drops off at operational stage
+- Uses Gemini Deep Thinking for research (with verification — half of suggestions are hallucinated)
 
 ## Life
 
-**Lucia:**
-- Girlfriend, artist, teaching at International Yehudi Menuhin Foundation
-- **Quitting May 1, 2026** to go self-employed (teaching art, selling her own work)
-- Julien needs to support her with time and money during transition
-- Meeting anniversary: 27th of each month | Birthday: Jan 13 | Yearly anniversary: April 27
+**Lucia:** Girlfriend, artist, currently works at International Yehudi Menuhin Foundation. **Quitting May 1, 2026** (10 weeks away) to go self-employed. This is a major upcoming transition requiring Julien's support (time + money). Meeting anniversary: 27th of each month. Yearly anniversary: 27 April.
 
-**Health & presence:**
-- Disciplines slipped lately (all unchecked every day per Feb 12 assessment)
-- Self-assessed at 70% investment / 30% life (target is 50/50)
-- "The one thing AI won't do for you is taking care of your body and your relationships"
-- Dancing practice (keystone habit) has slipped
+**Relationship tension:** Julien at 70/30 work/life, needs to move toward 50/50. Lucia values presence — Shutdown ritual and Reynolds Mode (work forbidden, full presence) is the mechanism but undertended.
 
-**Upcoming:**
-- Tonight (Feb 15): Big Meeting with Henry and Lucas
-- Feb 23: Blog public launch (8 days away)
-- May 1: Lucia quits her job
+**Poncho:** Australian Shepherd, 2.5 years old. Julien frames this as "the ultimate test" — can he break the generational pattern and engage fully? Father didn't engage enough with him, sister doesn't engage enough with nephew. Currently undertended (nature walks, obedience training, nosework, dog park time).
 
-**Timezone:** Europe/Brussels (CET/CEST)
+**Daily disciplines:** Meditation, stretch, bodyweight, singing — all designed but not practiced. "All unchecked most days."
 
-**Key principle:**
-"I'm excellent at micromanaging early stages — setting things up, designing systems, getting the details right. But I drop off at the macro/operational stage. I'm the founder who builds the machine, not the operator who runs it."
+**Nature time:** Aspirational, needs to become routine. Can merge with Poncho walks.
+
+**Lindy hop dancing:** Keystone habit for community presence. Daily practice goal. Currently slipped.
+
+**Energy state (Feb 15):** Self-described as "good, absorbed, flowing" but also "a bit dizzy" and "fragile" from 14 active commitments. Honest self-awareness that Tier 1 is undertended.
+
+**Upcoming:** Blog public launch Feb 23 (7 days). Lucia quits May 1 (10 weeks). Event business with Lucia starts ramping after May 1 (she's CEO, Julien provides systems/strategy/AI support).
