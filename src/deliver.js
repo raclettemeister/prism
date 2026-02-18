@@ -1,5 +1,5 @@
 // ============================================================
-// PRISM v2.0 Delivery — HTML email via Resend, validation confidence in subject
+// PRISM v3.0 Delivery — HTML email via Resend, web search count, feedback section
 // ============================================================
 
 import { format } from 'date-fns';
@@ -47,6 +47,7 @@ export default async function deliver(briefingMarkdown, stats) {
 
     if (response.ok) {
       console.log(`  ✅ Email sent (id: ${result.id})`);
+      console.log(`  📊 Stats: ${stats.webSearches || 0} web searches, confidence ${((stats.confidence || 0) * 100).toFixed(0)}%`);
       return { sent: true, id: result.id };
     } else {
       console.log(`  ❌ Email failed: ${JSON.stringify(result)}`);

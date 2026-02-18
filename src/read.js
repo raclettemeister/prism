@@ -1,5 +1,5 @@
 // ============================================================
-// PRISM v2.0 Read — Select top 50 (diversity + score), batch-fetch full text
+// PRISM v3.0 Read — Select top 80 (diversity + score), batch-fetch full text
 // Uses cheerio for HTML extraction; 15s timeout per URL.
 // ============================================================
 
@@ -7,7 +7,7 @@ import * as cheerio from 'cheerio';
 
 const FETCH_TIMEOUT_MS = 15000;
 const MAX_WORDS = 3000;
-const TARGET_SELECTION = 50;  // was 15
+const TARGET_SELECTION = 80;  // v3.0: more articles for THE BIG CALL's 1M context
 const MIN_SCORE_FOR_POOL = 3;
 const MIN_SCORE_FIRST_PASS = 4;  // was 5 — more articles, lower threshold
 const FETCH_BATCH_SIZE = 10;
@@ -78,7 +78,7 @@ async function fetchFullText(url) {
   try {
     const res = await fetch(url, {
       signal: controller.signal,
-      headers: { 'User-Agent': 'PRISM/2.0 (Personal Research Intelligence; +https://github.com/raclettemeister/prism)' },
+      headers: { 'User-Agent': 'PRISM/3.0 (Personal Research Intelligence; +https://github.com/raclettemeister/prism)' },
     });
     clearTimeout(timeout);
     if (!res.ok) return null;

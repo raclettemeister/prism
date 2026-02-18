@@ -1,6 +1,6 @@
 // ============================================================
-// PRISM v2.0 — Validation Step (Anti-Hallucination Checker)
-// Post-synthesis, pre-delivery: Haiku checks briefing against sources.
+// PRISM v3.0 — Validation Step (Anti-Hallucination Checker)
+// Post-research, pre-delivery: Sonnet checks briefing against sources.
 // ============================================================
 
 import Anthropic from '@anthropic-ai/sdk';
@@ -8,21 +8,20 @@ import { MODELS } from './config.js';
 
 const client = new Anthropic();
 
-const VALIDATION_PROMPT = `You are a fact-checker for PRISM, a personal intelligence briefing.
+const VALIDATION_PROMPT = `You are a fact-checker for PRISM v3.0, a personal intelligence briefing.
 
-You will receive:
-1. A briefing (markdown)
-2. The source analysis data (JSON) that the briefing was generated from
+You will receive a briefing (markdown) that was generated from source articles and web search.
 
-Your job: check every factual claim in the briefing against the source data.
+Your job: check every factual claim in the briefing.
 
 For each section of the briefing, evaluate:
-- Are all URLs mentioned actually present in the source data?
-- Are all claims supported by the source articles?
+- Are all URLs mentioned likely real (properly formatted, from known domains)?
 - Are there any invented problems or crises not supported by evidence?
 - Are there any sections that feel like filler (vague, unsourced, speculative)?
+- Does the WORLD LENS section maintain an analytical tone (not clickbait)?
+- Does the FEED HEALTH REPORT contain reasonable recommendations?
 
-CRITICAL: Flag any instance where the briefing invents a problem with Julien's projects that isn't in the source data. This is the most dangerous failure mode.
+CRITICAL: Flag any instance where the briefing invents a problem with Julien's projects that isn't supported by the articles.
 
 Respond with ONLY valid JSON:
 {
@@ -39,20 +38,24 @@ Respond with ONLY valid JSON:
   "summary": "one sentence overall assessment"
 }`;
 
-export default async function validate(briefing, analysisData) {
+export default async function validate(briefing) {
   console.log('\n✅ VALIDATING briefing against source data...');
 
   try {
     const response = await client.messages.create({
-      model: MODELS.scorer, // Haiku — cheap
-      max_tokens: 2048,
+      model: MODELS.analyzer, // Sonnet 4.6
+      max_tokens: 4096,
+      thinking: { type: 'adaptive' },
       messages: [{
         role: 'user',
-        content: `${VALIDATION_PROMPT}\n\n===== BRIEFING =====\n${briefing}\n\n===== SOURCE ANALYSIS DATA =====\n${JSON.stringify(analysisData, null, 2).substring(0, 30000)}`
+        content: `${VALIDATION_PROMPT}\n\n===== BRIEFING =====\n${briefing}`
       }],
     });
 
-    const text = response.content[0].text.trim();
+    // Filter for text blocks (skip thinking blocks)
+    const textBlocks = response.content.filter(b => b.type === 'text');
+    const text = textBlocks.map(b => b.text).join('').trim();
+
     let validation;
     try {
       validation = JSON.parse(text.replace(/```json\n?/g, '').replace(/```\n?/g, '').trim());
@@ -73,7 +76,6 @@ export default async function validate(briefing, analysisData) {
     const criticalIssues = (validation.issues || []).filter(i => i.severity === 'critical' && i.action === 'remove');
     if (criticalIssues.length > 0) {
       console.log(`  ⚠️ ${criticalIssues.length} critical issues found — flagging in briefing`);
-      // Add a warning banner at the top if confidence is low
       if (confidence < 0.7) {
         validatedBriefing = `> ⚠️ **Low-confidence briefing** — Some sections may contain unverified claims. PRISM confidence: ${(confidence * 100).toFixed(0)}%\n\n${validatedBriefing}`;
       }

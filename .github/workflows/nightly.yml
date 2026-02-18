@@ -11,7 +11,7 @@ on:
 jobs:
   run-prism:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 25  # v3.0: increased for web search + 1M context
 
     steps:
       - name: Checkout repo
@@ -26,6 +26,31 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Copy news interests from MylifeOS
+        run: |
+          mkdir -p data
+          if [ -n "$MYLIFEOS_PAT" ] && [ -n "$MYLIFEOS_REPO" ]; then
+            curl -sf -H "Authorization: token $MYLIFEOS_PAT" \
+              "https://raw.githubusercontent.com/$MYLIFEOS_REPO/main/Projects/Research%20Center/NEWS-INTERESTS.md" \
+              -o data/news-interests.md || echo "⚠️ Could not fetch news interests — using existing"
+          else
+            echo "⚠️ No MylifeOS credentials — using existing news interests file"
+          fi
+        env:
+          MYLIFEOS_PAT: ${{ secrets.MYLIFEOS_PAT }}
+          MYLIFEOS_REPO: ${{ secrets.MYLIFEOS_REPO }}
+
+      - name: Copy feedback from MylifeOS
+        run: |
+          if [ -n "$MYLIFEOS_PAT" ] && [ -n "$MYLIFEOS_REPO" ]; then
+            curl -sf -H "Authorization: token $MYLIFEOS_PAT" \
+              "https://raw.githubusercontent.com/$MYLIFEOS_REPO/main/Journal/prism-feedback.md" \
+              -o data/feedback-latest.md || echo "⚠️ No feedback file found — first run"
+          fi
+        env:
+          MYLIFEOS_PAT: ${{ secrets.MYLIFEOS_PAT }}
+          MYLIFEOS_REPO: ${{ secrets.MYLIFEOS_REPO }}
+
       - name: Run PRISM
         run: node src/index.js
         env:
@@ -34,10 +59,38 @@ jobs:
           MYLIFEOS_REPO: ${{ secrets.MYLIFEOS_REPO }}
           MYLIFEOS_PAT: ${{ secrets.MYLIFEOS_PAT }}
 
-      - name: Commit briefing
+      - name: Commit briefing and data
         run: |
           git config user.name "PRISM Bot"
           git config user.email "prism@noreply.github.com"
           git add briefings/ data/
-          git diff --staged --quiet || git commit -m "📡 PRISM briefing $(date +%Y-%m-%d)"
+          git diff --staged --quiet || git commit -m "📡 PRISM v3.0 briefing $(date +%Y-%m-%d)"
           git push
+
+      - name: Push feedback template to MylifeOS
+        run: |
+          if [ -n "$MYLIFEOS_PAT" ] && [ -n "$MYLIFEOS_REPO" ] && [ -f "data/feedback-template.md" ]; then
+            # Get current file SHA (if exists) for update
+            SHA=$(curl -sf -H "Authorization: token $MYLIFEOS_PAT" \
+              "https://api.github.com/repos/$MYLIFEOS_REPO/contents/Journal/prism-feedback.md" \
+              | python3 -c "import sys,json; print(json.load(sys.stdin).get('sha',''))" 2>/dev/null || echo "")
+
+            CONTENT=$(base64 -w 0 data/feedback-template.md)
+
+            if [ -n "$SHA" ]; then
+              curl -sf -X PUT -H "Authorization: token $MYLIFEOS_PAT" \
+                "https://api.github.com/repos/$MYLIFEOS_REPO/contents/Journal/prism-feedback.md" \
+                -d "{\"message\":\"📡 PRISM feedback template $(date +%Y-%m-%d)\",\"content\":\"$CONTENT\",\"sha\":\"$SHA\"}" \
+                > /dev/null && echo "✅ Feedback template pushed to MylifeOS" || echo "⚠️ Failed to push feedback template"
+            else
+              curl -sf -X PUT -H "Authorization: token $MYLIFEOS_PAT" \
+                "https://api.github.com/repos/$MYLIFEOS_REPO/contents/Journal/prism-feedback.md" \
+                -d "{\"message\":\"📡 PRISM feedback template $(date +%Y-%m-%d)\",\"content\":\"$CONTENT\"}" \
+                > /dev/null && echo "✅ Feedback template pushed to MylifeOS" || echo "⚠️ Failed to push feedback template"
+            fi
+          else
+            echo "⚠️ No feedback template to push"
+          fi
+        env:
+          MYLIFEOS_PAT: ${{ secrets.MYLIFEOS_PAT }}
+          MYLIFEOS_REPO: ${{ secrets.MYLIFEOS_REPO }}
