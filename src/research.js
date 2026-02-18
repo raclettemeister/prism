@@ -102,7 +102,7 @@ ${content.substring(0, LIMITS.maxArticleLength)}
   // THE BIG CALL — Sonnet 4.6 with web search + 1M context + adaptive thinking
   let response;
   try {
-    response = await client.messages.create({
+    const stream = client.messages.stream({
       model: MODELS.analyzer,
       max_tokens: LIMITS.synthesisMaxTokens,
       thinking: { type: 'adaptive' },
@@ -115,15 +115,17 @@ ${content.substring(0, LIMITS.maxArticleLength)}
       ],
       messages: [{ role: 'user', content: userContent }],
     });
+    response = await stream.finalMessage();
   } catch (err) {
     // Fallback: if web search or 1M context fails, try without them
     console.log(`  ⚠️ Big call failed: ${err.message}`);
     console.log(`  Retrying without web search and 1M context...`);
-    response = await client.messages.create({
+    const fallbackStream = client.messages.stream({
       model: MODELS.analyzer,
       max_tokens: LIMITS.synthesisMaxTokens,
       messages: [{ role: 'user', content: userContent.substring(0, 800000) }], // trim to ~200K tokens
     });
+    response = await fallbackStream.finalMessage();
   }
 
   // Extract the briefing text from the response
