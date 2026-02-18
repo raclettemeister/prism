@@ -1,25 +1,28 @@
 // ============================================================
-// PRISM Email Template v1.0 — Structured HTML email, mobile-first, inline CSS
+// PRISM v2.0 Email Template — Section colors for new sections, v2.0 footer
 // ============================================================
 
 import { marked } from 'marked';
 
 const SECTION_BORDERS = {
   'the signal': '#dc2626',
+  'must-read': '#9333ea',        // purple — these are the articles that matter
   'pioneer advantage': '#7c3aed',
   'tools to try': '#2563eb',
   'build watch': '#ea580c',
   'europe lens': '#003399',
+  'action audit': '#f59e0b',    // amber — accountability
   "today's priorities": '#16a34a',
   'trend tracker': '#6b7280',
-  'deep dive': '#4c1d95', // dark purple, distinct for on-demand research
+  'slop filter': '#78716c',      // stone — feed hygiene
+  'deep dive': '#4c1d95',
 };
 const SECTION_BACKGROUNDS = {
   'deep dive': '#f5f0ff',
 };
 
 function getSectionColor(headerText) {
-  const lower = (headerText || '').toLowerCase().replace(/[🔴📊🛠️🏗️🇪🇺🎯📈🔬]/g, '').trim();
+  const lower = (headerText || '').toLowerCase().replace(/[🔴📊🛠️🏗️🇪🇺🎯📈🔬📚⏪🚮]/g, '').trim();
   for (const [key, color] of Object.entries(SECTION_BORDERS)) {
     if (lower.includes(key)) return color;
   }
@@ -27,7 +30,7 @@ function getSectionColor(headerText) {
 }
 
 function getSectionBackground(headerText) {
-  const lower = (headerText || '').toLowerCase().replace(/[🔴📊🛠️🏗️🇪🇺🎯📈🔬]/g, '').trim();
+  const lower = (headerText || '').toLowerCase().replace(/[🔴📊🛠️🏗️🇪🇺🎯📈🔬📚⏪🚮]/g, '').trim();
   for (const [key, bg] of Object.entries(SECTION_BACKGROUNDS)) {
     if (lower.includes(key)) return bg;
   }
@@ -74,7 +77,6 @@ export function renderEmail(briefingMarkdown, date) {
   const tableStyle = 'width:100%;border-collapse:collapse;margin:12px 0;font-size:14px;';
   const thStyle = 'text-align:left;padding:10px 12px;background:#f1f5f9;border-bottom:2px solid #e2e8f0;font-weight:600;';
   const tdStyle = 'padding:10px 12px;border-bottom:1px solid #e2e8f0;';
-  const tdAltStyle = 'padding:10px 12px;border-bottom:1px solid #e2e8f0;background:#f8fafc;';
 
   // Inline styles into marked output (tables and links)
   function inlineSection(html) {
@@ -115,7 +117,7 @@ export function renderEmail(briefingMarkdown, date) {
   ${headerBlock}
   ${sectionHtml}
   <div style="margin-top:32px;padding-top:16px;border-top:1px solid #e5e7eb;font-size:12px;color:#9ca3af;">
-    PRISM v1.0 — Built by Julien · Powered by Claude · ${date}
+    PRISM v2.0 — Built by Julien · Powered by Claude · ${date}
   </div>
 </body>
 </html>`;

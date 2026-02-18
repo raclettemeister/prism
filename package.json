@@ -1,7 +1,7 @@
 {
   "name": "prism",
-  "version": "1.0.0",
-  "description": "Personal Research Intelligence System (Mine) — Overnight AI research analyst",
+  "version": "2.0.0",
+  "description": "Personal Research Intelligence System (Mine) — Overnight AI research analyst v2.0",
   "type": "module",
   "main": "src/index.js",
   "scripts": {

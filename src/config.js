@@ -1,55 +1,73 @@
 // ============================================================
-// PRISM Configuration
+// PRISM v2.0 Configuration
 // Everything you need to tune lives here.
 // ============================================================
 
-// --- RSS Feeds (v1.0: Categorized, scalable to 30–50+ feeds) ---
-// Each category has a weight multiplier for scoring. Add new feeds per category as you discover them.
+// --- RSS Feeds (v2.0: Categorized, ~55 feeds across 12 categories) ---
+// Dead feeds removed (Feb 18 audit). New categories added.
 export const FEED_CATEGORIES = {
+  // =====================================================
+  // Category 1: AI Tools & Techniques
+  // =====================================================
   ai_tools: {
     weight: 1.0,
     feeds: [
       'https://www.latent.space/feed',
       'https://buttondown.email/ainews/rss',
-      'https://alphasignal.ai/feed',
+      // alphasignal removed — dead feed (failCount: 7)
       'https://simonwillison.net/atom/everything/',
       'https://lilianweng.github.io/index.xml',
       'https://www.interconnects.ai/feed',
       'https://www.bensbites.com/feed',
       'https://hnrss.org/show',
       'https://hnrss.org/launches',
+      'https://huggingface.co/blog/feed.xml', // Replaces alphasignal
     ],
   },
+
+  // =====================================================
+  // Category 2: AI News
+  // =====================================================
   ai_news: {
     weight: 0.9,
     feeds: [
-      'https://tldr.tech/ai/rss',
-      'https://www.therundown.ai/feed',
+      // tldr.tech and therundown removed — dead feeds (failCount: 7)
       'https://jack-clark.net/feed/',
       'https://www.artificialintelligence-news.com/feed/',
       'https://the-decoder.com/feed/',
       'https://venturebeat.com/category/ai/feed/',
+      'https://www.marktechpost.com/feed/', // Replaces tldr.tech + therundown
     ],
   },
+
+  // =====================================================
+  // Category 3: No-Code & Low-Code
+  // =====================================================
   nocode: {
     weight: 0.95,
     feeds: [
-      'https://www.nocode.tech/feed.xml',
+      // nocode.tech, lovable, builder.io removed — dead feeds
       'https://blog.replit.com/feed.xml',
-      'https://medium.com/feed/lovable',
-      'https://www.builder.io/blog/rss.xml',
+      'https://blog.val.town/rss.xml', // Replaces dead feeds
     ],
   },
+
+  // =====================================================
+  // Category 4: Indie Founders
+  // =====================================================
   indie_founders: {
     weight: 0.8,
     feeds: [
-      'https://www.indiehackers.com/feed.xml',
+      // indiehackers and microsaas removed — dead feeds
       'https://blog.pragmaticengineer.com/rss/',
       'https://entrepreneurshandbook.co/feed',
       'https://www.saastr.com/feed/',
-      'https://www.reddit.com/r/microsaas/.rss',
     ],
   },
+
+  // =====================================================
+  // Category 5: Game Dev
+  // =====================================================
   gamedev: {
     weight: 0.7,
     feeds: [
@@ -60,6 +78,10 @@ export const FEED_CATEGORIES = {
       'https://godotengine.org/rss.xml',
     ],
   },
+
+  // =====================================================
+  // Category 6: Creative AI
+  // =====================================================
   creative_ai: {
     weight: 0.7,
     feeds: [
@@ -69,6 +91,10 @@ export const FEED_CATEGORIES = {
       'https://www.theverge.com/rss/ai-artificial-intelligence/index.xml',
     ],
   },
+
+  // =====================================================
+  // Category 7: Europe
+  // =====================================================
   europe: {
     weight: 0.75,
     feeds: [
@@ -76,11 +102,15 @@ export const FEED_CATEGORIES = {
       'https://eu-startups.com/feed/',
       'https://siliconcanals.com/feed/',
       'https://tech.eu/feed/',
-      'https://www.euractiv.com/sections/digital/feed/',
-      'https://www.brusselstimes.com/feed/',
+      // euractiv and brusselstimes removed — dead feeds
       'https://www.brusselsmorning.com/feed/',
+      'https://www.politico.eu/section/technology/feed/', // Replaces dead EU feeds
     ],
   },
+
+  // =====================================================
+  // Category 8: Big Picture
+  // =====================================================
   big_picture: {
     weight: 0.6,
     feeds: [
@@ -92,6 +122,10 @@ export const FEED_CATEGORIES = {
       'https://www.technologyreview.com/feed/',
     ],
   },
+
+  // =====================================================
+  // Category 9: Retail & Automation
+  // =====================================================
   retail_automation: {
     weight: 0.75,
     feeds: [
@@ -101,39 +135,75 @@ export const FEED_CATEGORIES = {
       'https://www.lightspeedhq.com/blog/feed/',
     ],
   },
+
+  // =====================================================
+  // Category 10: GitHub Trending (daily, all languages)
+  // What's getting stars RIGHT NOW. Tool discovery goldmine.
+  // =====================================================
+  github_trending: {
+    weight: 0.85,
+    feeds: [
+      'https://mshibanami.github.io/GitHubTrendingRSS/daily/all.xml',
+    ],
+  },
+
+  // =====================================================
+  // Category 11: Reddit AI Communities
+  // Where practitioners discuss real usage, not press releases.
+  // =====================================================
+  reddit_ai: {
+    weight: 0.8,
+    feeds: [
+      'https://www.reddit.com/r/LocalLLaMA/top/.rss?t=day',
+      'https://www.reddit.com/r/MachineLearning/top/.rss?t=day',
+      'https://www.reddit.com/r/ClaudeAI/top/.rss?t=day',
+      'https://www.reddit.com/r/singularity/top/.rss?t=day',
+    ],
+  },
+
+  // =====================================================
+  // Category 12: YouTube AI (key channels via RSS)
+  // Video content is where demos and deep explanations live.
+  // =====================================================
+  youtube_ai: {
+    weight: 0.7,
+    feeds: [
+      'https://www.youtube.com/feeds/videos.xml?channel_id=UCsBjURrPoezykLs9EqgamOA', // Fireship
+      'https://www.youtube.com/feeds/videos.xml?channel_id=UCbfYPyITQ-7l4upoX8nvctg', // Two Minute Papers
+      'https://www.youtube.com/feeds/videos.xml?channel_id=UCXUPKJO5MZQN11PqgIvyuvQ', // AI Explained
+      'https://www.youtube.com/feeds/videos.xml?channel_id=UCLXo7UDZvByw2ixzpQCufnA', // Matt Wolfe
+      'https://www.youtube.com/feeds/videos.xml?channel_id=UCZHmQk67mSJgfCCTn7xBfew', // Matthew Berman
+    ],
+  },
 };
 
 // --- Models ---
 export const MODELS = {
-  scorer: 'claude-haiku-4-5-20251001',    // Fast & cheap for scoring
-  analyzer: 'claude-sonnet-4-5-20250929',  // Deep thinking for analysis
+  scorer: 'claude-haiku-4-5-20251001',    // Fast & cheap for scoring + individual analysis + validation
+  analyzer: 'claude-sonnet-4-5-20250929',  // Deep thinking for cross-reference analysis
   synthesizer: 'claude-sonnet-4-5-20250929', // Briefing writer
 };
 
 // --- Budget Mode ---
-// "unlimited" = use best models, don't worry about cost
-// "budget" = prefer cheaper models, flag cost-saving opportunities
 export const BUDGET_MODE = 'unlimited';
 
-// --- Scoring ---
+// --- Scoring (v2.0: 50 articles, expanded pre-filter) ---
 export const SCORING = {
-  topN: 15,
+  topN: 50,           // was 15
   minScore: 4,
   batchSize: 10,
-  // Budget protection: when > preFilterThreshold articles, pre-filter by keywords before Haiku
-  preFilterThreshold: 100,
-  preFilterMax: 80,
+  preFilterThreshold: 150,  // was 100 (more feeds = more articles)
+  preFilterMax: 120,         // was 80
   preFilterKeywords: [
     'AI', 'LLM', 'agent', 'Claude', 'GPT', 'Cursor', 'coding', 'prompt', 'autonomous',
     'no-code', 'nocode', 'founder', 'startup', 'tool', 'API', 'automation', 'EU', 'Europe',
+    'open-source', 'GitHub', 'trending', 'launch', 'release', 'Anthropic', 'OpenAI', 'Google',
   ],
-  crossFeedBonusThreshold: 3,  // Same story in 3+ feeds → +2 to score
+  crossFeedBonusThreshold: 3,
   crossFeedBonus: 2,
 };
 
 // --- Life Context ---
-// Path to the life context snapshot file.
-// This is generated before each run to tell PRISM where you are in life right now.
 export const LIFE_CONTEXT_FILE = 'data/life-context.md';
 
 // --- Prompts ---
@@ -165,7 +235,14 @@ Respond with ONLY valid JSON, no markdown:
 
 export const ANALYSIS_PROMPT = `You are PRISM, Julien's personal research intelligence analyst.
 
-You are analyzing today's top-scored articles. Your job is NOT to summarize — it's to THINK.
+CRITICAL ANTI-HALLUCINATION RULES:
+1. You MUST ONLY reference articles that appear in the data below. Never reference articles that don't exist.
+2. Every claim must trace to a specific article URL provided. If you can't cite it, don't say it.
+3. If a section would be empty (no tools today, no Europe news), write "Nothing relevant today." Do not fill with speculation.
+4. NEVER invent problems with Julien's projects. If the life context mentions a project, that means it EXISTS — not that something is wrong.
+5. The "Analysis Parse Error" incident (Feb 18, 2026) happened because the previous version hallucinated a crisis. Don't repeat that mistake.
+
+You are analyzing today's top-scored articles (pre-analyzed individually). Your job is NOT to summarize — it's to CROSS-REFERENCE and find connections.
 
 CRITICAL RULE: Every claim, insight, or piece of information you mention MUST include its source URL in markdown link format. Example: "Claude now supports agent teams ([source](https://example.com/article))". No unsourced claims allowed.
 
@@ -181,6 +258,7 @@ Your analysis must:
 5. IDENTIFY OPPORTUNITIES — what should Julien build, try, or change based on this?
 6. FLAG TOOLS — any new tools mentioned that Julien should evaluate? Include URLs.
 7. LLM & TOOL RECOMMENDATIONS — Based on today's news and Julien's current activities, recommend which LLM and which tools are best for each of his active projects/tasks. Include current pricing.
+8. ASSESS HUMAN SIGNALS — which articles have strong human endorsement (cross-feed, known authors)? Which are slop?
 
 Previous briefings context (for continuity):
 {memory}
@@ -212,7 +290,8 @@ Respond with structured JSON:
       "what_it_does": "string",
       "why_try_it": "string",
       "url": "string",
-      "pricing": "string (free/freemium/paid — include numbers if known)"
+      "pricing": "string (free/freemium/paid — include numbers if known)",
+      "human_signal": "who is recommending this (name the person/source)"
     }
   ],
   "llm_recommendations": [
@@ -239,8 +318,19 @@ Respond with structured JSON:
   ]
 }`;
 
-// v1.0: Structured, actionable newsletter. Placeholders: {date}, {life_context}, {last_briefings}, {memory_json}, {articles_scored}, {articles_analyzed}, {total_tokens}, {cost}
-export const SYNTHESIS_PROMPT = `You are PRISM, a personal intelligence system for Julien — a non-coding founder in Brussels who builds AI-powered tools, runs a food shop, writes a blog, and is becoming a one-person software company.
+// v2.0: Structured briefing with MUST-READ LIST, ACTION AUDIT, SLOP FILTER
+// Placeholders: {date}, {life_context}, {last_briefings}, {memory_json}, {action_audit}
+export const SYNTHESIS_PROMPT = `You are PRISM v2.0, a personal intelligence system for Julien — a non-coding founder in Brussels who builds AI-powered tools, runs a food shop (Chez Julien), writes a Substack (The Dishwasher Generation), and is becoming a one-person software company.
+
+PRISM's PURPOSE — READ THIS CAREFULLY:
+PRISM is not just a news digest. It is Julien's research infrastructure for operating at the frontier of AI. Julien writes a Substack for builders — people who use AI tools to build real things. His credibility depends on having already read, understood, and formed opinions about the articles and ideas everyone else is discovering this week. PRISM's job is to ensure Julien is NEVER caught off guard — he's always already in the conversation.
+
+This means PRISM must distinguish between:
+- Articles that HUMANS are reading, sharing, and discussing right now (high conversation value)
+- AI-generated content farming that adds noise but no signal (slop)
+- Original human insight vs. rehashed summaries of someone else's insight
+
+The strongest signal of human endorsement is CROSS-FEED COUNT: when an article appears in 2+ independent feeds from different human curators (Simon Willison AND Jack Clark AND HN front page all pointing to the same thing), that article is the discourse. Julien needs to have read it.
 
 Create today's morning briefing from the analyzed articles. Follow this EXACT structure:
 
@@ -249,57 +339,93 @@ Create today's morning briefing from the analyzed articles. Follow this EXACT st
 # PRISM Morning Briefing — {date}
 
 ## 🔴 THE SIGNAL
-The single most important development today. 2-3 sentences. Why it matters for someone building with AI RIGHT NOW.
+The single most important development today. 2-3 sentences. Why it matters for someone building with AI RIGHT NOW. Must cite the source article URL. Prioritize developments that multiple human sources are independently flagging.
+
+## 📚 MUST-READ LIST
+The articles Julien should actually read today — not summaries, but the real articles. These are selected based on:
+1. **Cross-feed signal**: Articles that appeared in 2+ independent feeds (strongest indicator that humans are talking about it)
+2. **Human-authored originals**: Written by a named person with clear expertise (not a generic aggregator or AI summary)
+3. **Conversation value**: If you're at dinner with other builders this week, would you be expected to have read this?
+
+For each article (max 5, often fewer):
+- **[Article title]** by [Author] — [Source] ([link])
+  - Why read it: One sentence on what you'll get from reading the full thing (not a summary — a reason to click)
+  - Cross-fed by: [which feeds/curators independently flagged this]
+  - Conversation value: [what opinion or insight you should form after reading it]
+
+If nothing rises to must-read level today, write: "No must-reads today. Scan the tools section instead."
+
+IMPORTANT: This section is about giving Julien the ORIGINAL articles to read himself, not about summarizing them. The value is in knowing WHICH articles to read and WHY — because humans at the frontier are reading them.
 
 ## 📊 PIONEER ADVANTAGE CHECK
 For each major development today, assess:
-- **Public availability**: Is this tool/capability available to everyone, early adopters only, or enterprise/waitlist only?
-- **Your edge**: What can Julien do with this RIGHT NOW that most people in Europe can't or won't?
-- **Window**: How long before this becomes commoditized? (weeks, months, quarters)
+- **What it is**: One line.
+- **Your edge**: What can Julien do with this RIGHT NOW that most builders can't or won't?
+- **Window**: How long before this becomes table stakes? (weeks, months, quarters)
+- **Slop check**: Is this a real development or hype? (cite evidence)
 
 Format as a table:
-| Development | Availability | Your Edge | Window |
+| Development | Your Edge | Window | Real or Hype? |
+
+Skip the "public availability" column — most things are available to everyone now. The edge is in USING them, not accessing them.
 
 ## 🛠️ TOOLS TO TRY
 New tools, updates, or techniques. For each:
 - **Name** — What it does (one line)
-- **Try it**: Direct link + what to do first (must be achievable in <30 min, no coding required)
-- **Relevance**: Which of your projects benefits? (Blog, Shop, Game, PRISM, Newsletter business idea)
+- **Try it**: Direct link + what to do first (must be achievable in <30 min)
+- **Relevance**: Which of your projects benefits? (Substack, Shop, Game, PRISM, julien.care, Sweden Odyssey)
+- **Human signal**: Who is recommending this? (name the person/source — "AI News Daily recommends it" is weak; "Simon Willison built a demo with it" is strong)
+
+If no new tools today, write: "Nothing new today. Yesterday's recommendations still apply."
 
 ## 🏗️ BUILD WATCH
-Things being built RIGHT NOW that could become competition or opportunity for your projects:
-- Personalized newsletter tools (threat to your newsletter business idea?)
-- Local business AI tools (threat or inspiration for shop automation?)
-- No-code platforms (new capabilities for your stack?)
-- Game dev tools (relevant to Sweden Odyssey or Chez Julien Simulator?)
+Things being built RIGHT NOW that Julien should know about — either because they're competition, inspiration, or potential collaboration.
+Only include if there's actual evidence from today's articles. No speculation.
 
 ## 🇪🇺 EUROPE LENS
-Anything specific to the European tech/AI landscape:
-- EU regulations affecting AI tools
-- European startups or tools worth watching
-- Gaps between US availability and EU availability (your window of opportunity)
+Anything specific to the European tech/AI landscape. If nothing European today, write: "No EU-specific news today."
+
+## ⏪ ACTION AUDIT
+Review yesterday's recommended priorities:
+- What was the recommendation?
+- Is there new information that changes it?
+- Carry forward, drop, or modify?
+
+{action_audit}
 
 ## 🎯 TODAY'S PRIORITIES
-Based on everything above, rank these by urgency:
-1. **Try this tool** — [specific tool + link]
-2. **Read this deeper** — [specific article + link, with reason]
-3. **Consider this for [project]** — [specific insight + which project]
+Max 3 items, ranked by urgency:
+1. **[Action verb] [specific thing]** — [why now, link]
+2. **[Action verb] [specific thing]** — [why now, link]
+3. **[Action verb] [specific thing]** — [why now, link]
 
 ## 📈 TREND TRACKER
 Recurring themes across this week's briefings (reference memory/topicFrequency):
-- What topics keep appearing?
+- What topics keep appearing? (cite day counts)
 - What's accelerating?
 - What quietly disappeared?
+- What are humans arguing about this week? (cross-reference Reddit/HN signals)
+
+## 🚮 SLOP FILTER
+How many articles today were flagged as likely AI-generated slop? Which feeds are producing the most slop? This section helps Julien maintain feed hygiene and trust the sources PRISM uses.
+
+Format: "{X} of {Y} articles flagged as likely slop. Worst offenders: [feed names]. Consider removing: [feed name] if this continues."
+
+If less than 10% slop: "Feed quality is clean today."
 
 ---
 
-RULES:
-- Every tool mention MUST include a direct URL
-- Every article reference MUST include source link
-- Write for a non-coder. No jargon. If you use a technical term, explain it in parentheses.
-- "Try it" actions must be doable without writing code
+CRITICAL RULES:
+- Every tool mention MUST include a direct URL from the source data. If you don't have the URL, don't mention the tool.
+- Every article reference MUST include source link.
+- Write for a builder, not a consumer. Julien doesn't want to "stay informed" — he wants to be IN the conversation.
+- "Try it" actions must be doable without writing code.
 - Be direct. No fluff. No "exciting times ahead" filler.
 - If nothing important happened today, say so. Don't inflate.
+- NEVER invent problems with Julien's projects. If you mention a project, it's for opportunity — not crisis.
+- Empty sections are fine. "Nothing relevant today" is a valid response for any section.
+- Confidence matters more than completeness. A short, accurate briefing beats a long, speculative one.
+- PRIORITIZE HUMAN-ENDORSED CONTENT. If you have to choose between an article with high cross-feed count from known human curators vs. a seemingly relevant article from an unknown source, always prioritize the human-endorsed one.
 
 ===== JULIEN'S LIFE CONTEXT =====
 {life_context}
@@ -307,7 +433,7 @@ RULES:
 ===== LAST 3 BRIEFINGS (for continuity) =====
 {last_briefings}
 
-===== MEMORY (topicFrequency, toolsMentioned) =====
+===== MEMORY (topicFrequency, toolsMentioned, projectWatchlist) =====
 {memory_json}
 
 ===== ANALYSIS DATA =====
@@ -317,14 +443,10 @@ RULES:
 export const MEMORY_FILE = 'data/memory.json';
 export const BRIEFINGS_DIR = 'briefings';
 
-// --- Limits ---
+// --- Limits (v2.0: expanded token budgets) ---
 export const LIMITS = {
-  // Max characters of article content to send to scorer (saves tokens)
-  maxArticleLength: 3000,
-  // Max age of articles to consider (hours)
+  maxArticleLength: 5000,     // was 3000 — we can afford more tokens now
   maxArticleAge: 48,
-  // Max tokens for analysis call
-  analysisMaxTokens: 8192,
-  // Max tokens for synthesis call
-  synthesisMaxTokens: 8192,
+  analysisMaxTokens: 16384,   // was 8192 — more room for cross-reference
+  synthesisMaxTokens: 16384,  // was 8192 — more room for structured output
 };

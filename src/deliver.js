@@ -1,5 +1,5 @@
 // ============================================================
-// PRISM Delivery v1.0 — HTML email via Resend, plaintext fallback
+// PRISM v2.0 Delivery — HTML email via Resend, validation confidence in subject
 // ============================================================
 
 import { format } from 'date-fns';
@@ -20,10 +20,15 @@ export default async function deliver(briefingMarkdown, stats) {
 
   const htmlBody = renderEmail(briefingMarkdown, dateStr);
 
+  // Add warning emoji to subject when confidence is low
+  const subject = stats.confidence && stats.confidence < 0.7
+    ? `PRISM — ${dateStr} ⚠️`
+    : `PRISM — ${dateStr}`;
+
   const emailPayload = {
     from: 'PRISM <prism@julien.care>',
     to: ['staycreative@julien.care'],
-    subject: `PRISM — ${dateStr}`,
+    subject,
     html: htmlBody,
     text: briefingMarkdown,
   };

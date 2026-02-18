@@ -1,5 +1,6 @@
 // ============================================================
-// PRISM Analyzer — Deep analysis with Claude Sonnet
+// PRISM v2.0 Analyzer — Cross-Reference Analysis with Claude Sonnet
+// Pass 2: receives pre-analyzed articles from analyze-individual.js
 // ============================================================
 
 import { readFile } from 'fs/promises';
@@ -9,12 +10,12 @@ import { MODELS, ANALYSIS_PROMPT, LIMITS, MEMORY_FILE, LIFE_CONTEXT_FILE, BUDGET
 const client = new Anthropic();
 
 /**
- * Deep-analyze the top scored articles using Claude Sonnet.
- * Cross-references articles, detects patterns, connects to Julien's projects.
- * Uses memory from previous briefings and life context for personalization.
+ * Cross-reference analysis of pre-analyzed articles using Claude Sonnet.
+ * Receives articles with .analysis property (from analyzeIndividual).
+ * Finds connections, patterns, and project implications.
  */
 export default async function analyze(topArticles) {
-  console.log(`\n🧠 ANALYZING ${topArticles.length} articles with ${MODELS.analyzer}...`);
+  console.log(`\n🧠 CROSS-REFERENCE ANALYSIS: ${topArticles.length} articles with ${MODELS.analyzer}...`);
 
   // Load memory for continuity
   const memory = await loadMemory();
@@ -22,21 +23,25 @@ export default async function analyze(topArticles) {
   // Load life context
   const lifeContext = await loadLifeContext();
 
-  // Build the articles block — use full article text when available (from read.js), else RSS summary
+  // Build the articles block from pre-analyzed data (structured summaries, not raw text)
   const articlesBlock = topArticles
     .map((a, i) => {
-      const content = a.fullTextAvailable && a.fullText ? a.fullText : (a.content || '');
-      const contentNote = a.fullTextAvailable && a.fullText ? ' [full article text]' : ' [RSS summary]';
-      return `--- ARTICLE ${i + 1} (Score: ${a.score}/10, Category: ${a.category || 'unknown'}${a.crossFeedCount >= 3 ? ', cross-feed signal' : ''}${contentNote}) ---
+      const analysis = a.analysis || {};
+      return `--- ARTICLE ${i + 1} (Score: ${a.score}/10, Category: ${a.category || 'unknown'}${a.crossFeedCount >= 3 ? ', CROSS-FEED SIGNAL' : ''}) ---
 TITLE: ${a.title}
 SOURCE: ${a.source}
-DATE: ${a.date}
-TAGS: ${(a.tags || []).join(', ')}
-SCORING REASON: ${a.reason}
 URL: ${a.link}
+DATE: ${a.date}
 
-CONTENT:
-${content}
+SUMMARY: ${analysis.summary || 'No summary available'}
+KEY CLAIMS: ${(analysis.key_claims || []).join(' | ')}
+TOOLS MENTIONED: ${(analysis.tools_mentioned || []).map(t => `${t.name} (${t.url || 'no url'})`).join(', ') || 'none'}
+RELEVANCE: ${analysis.relevance_to_julien || 'unknown'}
+NOVELTY: ${analysis.novelty || 'unknown'}
+TAGS: ${(analysis.category_tags || []).join(', ')}
+HUMAN SIGNAL: ${analysis.human_signal || 'unknown'} — ${analysis.human_signal_reason || ''}
+CONVERSATION VALUE: ${analysis.conversation_value || 'unknown'}
+CROSS-FEED COUNT: ${a.crossFeedCount || 1} feeds carried this story
 `;
     })
     .join('\n');
@@ -60,7 +65,7 @@ ${content}
     messages: [
       {
         role: 'user',
-        content: `${prompt}\n\n===== TODAY'S TOP ARTICLES =====\n\n${articlesBlock}`,
+        content: `${prompt}\n\n===== TODAY'S TOP ARTICLES (PRE-ANALYZED) =====\n\n${articlesBlock}`,
       },
     ],
   });
@@ -76,9 +81,9 @@ ${content}
     console.log('  ⚠️ Failed to parse analysis JSON, using raw text');
     analysis = {
       big_story: {
-        title: 'Analysis Parse Error',
-        what: text.substring(0, 500),
-        why_it_matters: 'The analysis was generated but could not be parsed as JSON.',
+        title: 'Cross-Reference Analysis Available',
+        what: 'The cross-reference analysis was generated but could not be parsed as structured JSON. See logs for raw output.',
+        why_it_matters: 'Individual article analyses are still available for synthesis.',
         action: 'Check the raw output in the logs.',
         sources: [],
       },
@@ -90,7 +95,7 @@ ${content}
     };
   }
 
-  console.log(`  ✅ Analysis complete`);
+  console.log(`  ✅ Cross-reference analysis complete`);
   console.log(`   Big story: ${analysis.big_story?.title || 'unknown'}`);
   console.log(`   Worth knowing: ${analysis.worth_knowing?.length || 0} items`);
   console.log(`   Tools flagged: ${analysis.tools_and_techniques?.length || 0}`);
@@ -114,14 +119,12 @@ async function loadMemory() {
     const raw = await readFile(MEMORY_FILE, 'utf-8');
     return JSON.parse(raw);
   } catch {
-    // No memory yet — first run
     return { lastBriefings: [], trackedPatterns: [], toolsEvaluated: [] };
   }
 }
 
 /**
  * Load life context from MylifeOS snapshot.
- * This file is updated before each PRISM run (manually, by Cowork, or by a script).
  */
 async function loadLifeContext() {
   try {
