@@ -29,7 +29,7 @@ const client = new Anthropic();
  * @param {object|null} deepDiveReport - Optional deep dive
  * @returns {{ briefing, filepath, tokens, webSearches }}
  */
-export default async function research(articles, stats, deepDiveReport = null) {
+export default async function research(articles, deepDiveReport = null) {
   const today = format(new Date(), 'yyyy-MM-dd');
   console.log(`\n🧠 THE BIG CALL — ${articles.length} articles → Sonnet 4.6 (1M context + web search)...`);
 
@@ -102,7 +102,7 @@ ${content.substring(0, LIMITS.maxArticleLength)}
   // THE BIG CALL — Sonnet 4.6 with web search + 1M context + adaptive thinking
   let response;
   try {
-    const stream = client.messages.stream({
+    const stream = client.beta.messages.stream({
       model: MODELS.analyzer,
       max_tokens: LIMITS.synthesisMaxTokens,
       thinking: { type: 'adaptive' },
@@ -157,10 +157,10 @@ ${content.substring(0, LIMITS.maxArticleLength)}
 
   // Add footer
   const finalCost = estimateCost(
-    response.usage.input_tokens + (stats.scoreTokensInput || 0),
-    response.usage.output_tokens + (stats.scoreTokensOutput || 0),
+    response.usage.input_tokens,
+    response.usage.output_tokens,
   );
-  const footer = `\n---\n*PRISM v3.0 — ${stats.articlesScored} collected, ${stats.articlesAnalyzed} analyzed, ${webSearchCount} web searches, ~$${finalCost}*`;
+  const footer = `\n---\n*PRISM v3.0 — ${articles.length} analyzed, ${webSearchCount} web searches, ~${finalCost}*`;
   if (!briefing.includes('*PRISM v3.0')) briefing += footer;
 
   // Save briefing
