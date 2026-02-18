@@ -1,121 +1,125 @@
-<!-- PRISM Life Context — Auto-generated 2026-02-18T06:18:18.861Z -->
+<!-- PRISM Life Context — Auto-generated 2026-02-18T10:54:31.216Z -->
 <!-- Source: context-note.md + LOG (3d) + 13 recent files -->
 <!-- Model: claude-sonnet-4-5-20250929 -->
 # LIFE CONTEXT SNAPSHOT — Julien
 
 **Generated:** 2026-02-18
-**Source priority:** Context note (ground truth) → Activity log → Modified files → Stable identity
+**For:** PRISM v2.0 intelligence briefing personalization
 
 ---
 
 ## RIGHT NOW
 
-Julien is in recovery/polish mode after a high-intensity build week. Monday Feb 17 he completed the Substack business infrastructure (3 interconnected posts + vision skeleton) and is pushing toward 1,000 paid subscribers as the objective. Both blogs (personal julien.care + The Dishwasher Generation Substack) launch publicly Feb 23. His single task this week: full pass on personal blog text — no infrastructure, no features, just the words. He's also doing a thinking pass on "why 2 blogs, what are they for, and why different?"
+Julien is 6 days away from public launch (Feb 23). Two major specs completed today: PRISM v2.0 upgrade (50 articles, multi-pass architecture, 10x budget increase to €2.50/night) and Nightbot v1 (automated MylifeOS maintenance bot). Both are ready for autonomous execution in fresh Cursor sessions. The core challenge right now: figuring out what to ask of PRISM at 900K tokens vs 90K. MylifeOS underwent major cleanup — CLAUDE.md rewritten, new CURRENT.md file created, stale content removed, Operation Exit renamed to Operation Autonomy throughout the system.
 
 ---
 
-## THIS WEEK (Feb 17-23)
+## THIS WEEK
+
+**Launch priorities (from Julien's own words):**
+- Full text/voice pass on julien.care — "no infrastructure, no features, just the words"
+- Clean finish of first game for publication Sunday
+- Scale PRISM 90K→900K tokens (10x improvement) — **key task: FIND what to ask of it**
+- Think pass on why 2 blogs, what they're for, why different
+
+**Explicitly NOT this week:** Letta sync, new tools, agent frameworks, dashboard tinkering, new GitHub repos.
 
 **Active projects:**
-
-- **Personal blog (julien.care)** — LIVE, needs text polish before Feb 23 public launch. Infrastructure complete.
-- **The Dishwasher Generation (Substack)** — Skeleton built Monday with 3 interconnected posts. Goal: 1,000 paid subscribers ASAP.
-- **PRISM (night assistant)** — Needs to scale from 90k tokens to 900k tokens (10x improvement). Key challenge: "the most important thing will be to FIND what to ask of it."
-- **First game** — Clean finish for publication Sunday (Feb 23). Nearly complete.
-- **Physical product exploration (NEW)** — Interested in furniture and physical products (has a new leash design idea for Poncho). Will explore how AI can help design and build physical things.
-
-**Explicitly NOT this week:**
-- Letta sync
-- New tools or agent frameworks
-- Dashboard tinkering
-- "Revolutionary github repos"
-
-**Key insight driving him:** "Start being public, start being a voice on internet now, you got interested things to say. Time on the web beats timing the web."
+- **PRISM v2.0** — Spec complete, ready to build. New architecture: individual Haiku analysis per article → Sonnet cross-reference → synthesis → anti-hallucination validation. Adds 35 new feeds (50 total), removes 10 dead ones. Fixes Feb 18 hallucination bug (invented "parse error").
+- **Nightbot v1** — Spec complete, ready to build. Runs 5 AM CET via GitHub Actions. Auto-fixes LOG.md gaps, flags stale STATUS.md/CURRENT.md, checks cross-file consistency, sends health report via ntfy. Budget: ~$0.05/night.
+- **Staffing Calendar System** — Live but not viable. 90% deployed Feb 16-17 across 3 marathon sessions. Full Google Calendar ↔ Notion sync working, 2-month lookahead built, WhatsApp formatting complete. Still needs: Pointage DB sharing fix, auto-planning validation, planning grid UX, mobile access, general polish.
+- **The Dishwasher Generation** (Substack) — 3 interconnected posts drafted, skeleton complete. Goal: 1000 paid subscribers ASAP. Public launch Feb 23.
+- **julien.care** — Needs full polish pass before launch. Newsletter infrastructure complete (Resend + Supabase, domain warming).
 
 ---
 
 ## PRIORITIES & STRUGGLES
 
-**Current priorities (from his own words):**
+**Key insight driving this season:** "Start being public, start being a voice on internet now. Time on the web beats timing the web."
 
-1. Full text pass on personal blog (only task before Feb 23 launch)
-2. Conceptual clarity: why 2 blogs, what's each for?
-3. PRISM token expansion (90k → 900k) — main blocker is figuring out what to ask it
-4. Game publication (Sunday deadline)
-5. Starting to be a public voice online
+**The 10x PRISM challenge:** Budget is solved (€2.50/night is acceptable), architecture is designed, feeds are expanded. The bottleneck is conceptual: **what questions does a 900K token briefing answer that a 90K token briefing can't?** This is the critical thinking work for this week.
 
-**What he's avoiding this week:**
-- Infrastructure work (explicitly forbidden)
-- New shiny tools
-- Dashboard or system tinkering
-- Letta integration work
+**Commitment imbalance (from Feb 15 mapping):** 14 active commitments across 5 tiers. Tier 1 (non-negotiable: Lucia, health, Poncho, family, disciplines) is undertended. Tier 3 (creative projects) gets most energy. Currently 70/30 work/life instead of target 50/50.
 
-**The pattern:**
-Recent activity log (Feb 15-16) shows he crashed hard into infrastructure work (Staffing Calendar System — 3 consecutive sessions, 90% deployed). Feb 16 he had a "gentle reset session" where he acknowledged cognitive debt and wrote explicit weekly plans with a NOT list. The commitment mapping session (Feb 15) revealed he's running 14 active commitments across 5 tiers, with Tier 1 (life/relationships) undertended while Tier 3 (creative projects) gets most energy. Self-assessed at 70/30 work/life instead of target 50/50.
+**Cognitive debt awareness:** Single-task creativity (writing, designing) energizes. Multi-project vibe-coding and automation specs burn out. This matters for how he plans AI work.
 
-**The recovery strategy:** This week is intentionally constrained — polish only, no building. He's protecting against his pattern of infrastructure obsession.
+**Two blogs question (open):** julien.care = friend blog (intimate, personal, analog-feeling). The Dishwasher Generation = professional voice (ideas, frameworks, analysis). The boundary isn't fully clear yet. Needs thinking pass this week.
+
+**Emerging interest:** Physical products — furniture building, new leash design for Poncho. Exploring how AI can help design/build physical things.
 
 ---
 
-## BUSINESS (Chez Julien / Operation Autonomy)
+## BUSINESS
 
-**Recent massive build (Feb 16-17):** Staffing Calendar System went from code to 90% deployed in one day. Cloudflare Worker + dashboard + Google Calendar bidirectional sync. Julien's availability now auto-syncs from his dedicated Google Calendar. Red day flagging (understaffing alerts) operational. 2-month lookahead feature built Feb 17. System generates WhatsApp-ready planning text.
+**Chez Julien status:** Operation Autonomy (renamed from Operation Exit Feb 18). Goal: shop runs without Julien's daily involvement. Not selling anymore — pushing toward full autonomy with Henry as potential manager.
 
-**What's left:** 15 minutes of work to set 5 environment variables + cron trigger, then end-to-end testing. Deliberately paused — not doing it this week per his NOT list.
+**Staffing cycle in progress (Feb 16-22):** Jeanne added as new team member (waiting on internship schedule). Henry full availability, Lucas full availability. New WhatsApp automation working: planning + 2-month lookahead combined into one clipboard message with emoji formatting.
 
-**Team status:**
-- **Henry** — Full-time, 24 years old. Doing good work, wants manager role. Development path being designed.
-- **Lucas** — Part-time, best friends with Henry. Good with customers, strategically disengaged from cognitive work.
-- **Jeanne** — New column added to staffing system Feb 16 (waiting on internship schedule).
+**Henry development path:** 24 years old, 4 months in, showing strong growth. Wants manager role. Needs training but is invested. Lucas (part-time, age 24) is good with customers but conserves cognitive energy for his own projects (creative agency, sound/light work). The goal: flip their roles — Henry on thinking/cognitive work, Lucas on customer-facing only.
 
-**The Big Meeting** — Was planned for Saturday Feb 14 (mentioned in modified files), but no activity log entry confirms it happened. Status unclear.
+**Team meeting Feb 4:** Foundation-laying conversation completed. Next: "The Big Meeting" (target Feb 14, but hasn't happened based on logs) for full role restructure.
 
-**Operation mode:** Still in Operation Autonomy (transform shop to run without Julien's daily involvement). Previous mode was Operation Exit (selling) — archived after deciding not to sell. Henry development is the key path forward.
+**Financials:** ~€500K annual sales, very high profitability. 48% building ownership (18-year loan).
 
 ---
 
 ## TOOLS & STACK
 
-**Current AI setup:**
+**Hardware:** Mac Mini 16GB RAM (primary and only workstation). Runs Cursor + Claude Cowork. MacBook Pro 2019 removed from setup Feb 18 (never worked as planned).
 
-- **Primary:** Claude (via Cowork and direct sessions like this one)
-- **Machines:** Mac Mini (16GB, primary) + MacBook Pro 2019 (8GB Intel, secondary for background tasks)
-- **Infrastructure:** Cloudflare Workers, Notion (heavy operational use), Supabase, Resend (newsletter), Google Calendar API (service account auth)
-- **Recent builds:** Staffing dashboard (HTML + Worker proxy), automated subscriber pipeline (Zapier/Activepieces), 2-month lookahead with Belgian holiday calculation
+**MylifeOS:** On GitHub (raclettemeister/MyLifeOS, private). Obsidian Git auto-sync every 30 min. Moved off iCloud Feb 14 to solve deadlocks.
 
-**Letta agents (built Feb 15, not mentioned in context note):**
-- Brain, Coach, Queue — 3 persistent agents with shared memory blocks
-- Hold commitment map, session log, project states
-- Next step was Letta ↔ MylifeOS sync via Cloudflare Worker, but this is explicitly on the NOT list this week
+**Active infrastructure:**
+- **PRISM** — GitHub Actions, 4 AM CET, reads 45+ RSS feeds, emails briefing. v1.3 live, v2.0 spec ready to build.
+- **Staffing system** — HTML dashboard + Cloudflare Worker (`chez-julien-staffing.old-morning-a434.workers.dev`). Connects to 3 Notion DBs + 2 Google Calendars. Service account: `staffing-sync@chez-julien-staffing.iam.gserviceaccount.com`.
+- **Letta agents** — 3 agents built Feb 15 (Brain, Coach, Queue) with shared memory blocks at app.letta.com. Not actively used since building. Sync automation parked.
+- **Zapier** — 3 live: Morning Nudge (8:30 AM), Google Review Alert, Weekly Planning Reminder (Sunday 7 PM). PRISM context-note reminder (8:30 PM via ntfy).
+- **Newsletter** — Resend + Supabase. Edge Function for subscribe form. Domain warm-up in progress.
 
-**PRISM challenge:** Needs 10x token expansion (90k → 900k). He identifies the real problem as "finding what to ask of it" — not a technical limit, but a conceptual one about how to use that capacity.
+**Models:** Claude Sonnet 4.6 for autonomous execution, Haiku for batch analysis (PRISM v2.0 architecture).
+
+**Current bottleneck:** "Ideas, never hardware." Principle: maximize AI utilization — if a machine is idle, it should be working.
 
 ---
 
 ## LIFE
 
-**Lucia:** Girlfriend, artist. Quitting her job May 1, 2026 to go self-employed (teaching + selling art). Julien needs to support her with time and money through the transition. Meeting anniversary: 27th of each month (yesterday, Feb 17). Yearly anniversary: April 27. Birthday: Jan 13.
+**Lucia:** Girlfriend, artist. Currently at International Yehudi Menuhin Foundation (MUS-E programme). **Quitting May 1, 2026** to go self-employed (teaching art, selling her own art). This is a major transition requiring Julien's time and money support. Meeting anniversary: 27th of each month. Birthday: Jan 13. Yearly anniversary: Apr 27.
 
-**Poncho:** Australian Shepherd, 2.5 years old. Julien has a new leash design idea for him (ties into new physical product interest).
+**Poncho:** Australian Shepherd, born June 2023 (2.5 years old).
 
-**Physical product interest (NEW):** Wants to explore building furniture and physical products. Planning to explore how AI can help with design and fabrication. This is a genuine new direction, not just a passing idea.
+**Energy/health:** Disciplines mostly unchecked daily (meditation, stretching, dancing, guitar). Self-assessed 70/30 work/life vs target 50/50. Restorative menu practice when tired (not screens).
 
-**Household dynamics:** Lucia "wouldn't accept" a second monitor on Julien's desk (from Feb 12 Mac setup analysis). Space is constrained. Physical environment matters.
+**Upcoming key date:** **Feb 23 (5 days)** — public launch of julien.care, game, and The Dishwasher Generation. This is when stealth phase ends.
 
-**Energy state:** Coming off a crash. Feb 16 daily note called it "Path B — gentle reset" after acknowledging cognitive debt. Weekly plans written with explicit constraints. He's in recovery, not expansion mode.
-
-**Key insight from Feb 16:** "Whatever I can build today will be shit compared to what I can build in 6 months. What matters today is learning the skills that will matter in 6 months and the next decade."
+**Weekly rhythm:** Morning check-in with AI, shutdown ritual enables "Reynolds Mode" (work forbidden, full presence for Lucia). Weekly plans in Journal/Weekly/ (latest: 26-02-16 value plan + business plan — gentle reset week, only 2 priorities).
 
 ---
 
-## UPCOMING DATES
+## INTELLIGENCE BRIEFING RELEVANCE
 
-- **Sunday Feb 23** — Public launch of both blogs + game publication deadline
-- **May 1, 2026** — Lucia quits her job (75 days away)
-- **Feb 27** — Monthly anniversary with Lucia (9 days)
+**High-signal topics:**
+- AI agent frameworks, autonomous execution patterns, token budget optimization strategies
+- Substack monetization case studies, newsletter growth tactics (European audience)
+- Physical product design + AI (furniture, consumer products)
+- Google Calendar API + Notion integration patterns
+- Cloudflare Workers architecture, cron trigger optimization
+- GitHub Actions workflow design, automated maintenance bots
+- RSS feed curation for AI/tech space (PRISM v2.0 expansion)
+- Founder autonomy strategies, business operation handoff case studies
+- Anti-hustle culture movement, European tech scene (Dishwasher Generation positioning)
+
+**Low-signal topics:**
+- Cryptocurrency, blockchain, web3
+- Enterprise SaaS marketing
+- US-centric startup advice (he's in Brussels, different ecosystem)
+- Mobile app development (not current focus)
+- Social media growth hacks (he's anti-algorithm-gaming)
+
+**Key people/sources he follows:** Information in Substack feeds processed by PRISM. Uses Readwise for learning. Follows AI space via ideas/tools/possibilities, not code.
+
+**Communication style:** Direct, honest, systems-thinking. Values specificity over abstraction. Prefers "what actually happened" over "what should happen." Tracks everything in markdown.
 
 ---
 
-## MACHINE-READABLE TAGS
-
-`#recovery-mode` `#blog-polish` `#public-launch-feb23` `#prism-scaling` `#physical-products-new` `#lucia-transition-may` `#infrastructure-pause` `#substack-1000-subscribers` `#staffing-90-percent-done` `#not-list-active`
+**END SNAPSHOT**

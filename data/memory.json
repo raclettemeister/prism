@@ -2,6 +2,37 @@
   "lastBriefings": [
     {
       "date": "2026-02-18",
+      "bigStory": "Claude Sonnet 4.6 Launched: Opus-Level Performance at Sonnet Pricing Changes Multi-Agent Economics",
+      "patterns": [
+        "The 1M-token context window is becoming standard, shifting architecture from 'how do we work within limits' to 'what becomes possible with no limits'",
+        "Cross-agent memory/context sharing is emerging as the critical infrastructure challenge for autonomous systems",
+        "Production autonomous agents are shipping at $270-$300 total cost for complete applications, validating low-cost automation strategies",
+        "Research is showing that more context/documentation for agents may hurt rather than help performance — minimalism beats verbosity",
+        "AI tooling is moving into the browser as sandboxed environments (Shiro.computer, browser-based shells) for safer autonomous execution"
+      ],
+      "toolsFlagged": [
+        "LedgerSync",
+        "Claude Quickstarts (Official Anthropic Repository)",
+        "Claude Code Templates (100+ Ready Agents)",
+        "Sonarly (YC W26)",
+        "Shiro.computer (Claude Code in Browser)",
+        "Jarvish (AI-Integrated Shell)",
+        "Rodney v0.4.0 (Browser Automation)",
+        "Recall Lite (Local Semantic Search for Windows)",
+        "Zvec (Alibaba In-Process Vector Database)"
+      ],
+      "projectConnections": [
+        "PRISM v2.0 (10x token budget expansion)",
+        "Nightbot v1 (automated MylifeOS maintenance)",
+        "Staffing Calendar System (90% deployed, not viable)",
+        "The Dishwasher Generation and julien.care (Feb 23 launch)",
+        "Letta agents (Brain, Coach, Queue) — built but not actively used",
+        "Newsletter infrastructure (Resend + Supabase, domain warming)",
+        "Operation Autonomy (Chez Julien shop automation)"
+      ]
+    },
+    {
+      "date": "2026-02-18",
       "bigStory": "Analysis Parse Error",
       "patterns": [],
       "toolsFlagged": [],
@@ -183,26 +214,6 @@
         "Two-machine workflow (Mac Mini + MacBook Pro)",
         "Blog/julien.care (launching Feb 23)"
       ]
-    },
-    {
-      "date": "2026-02-14",
-      "bigStory": "Autonomous AI Agents Are Now Operating in Production — And Making Mistakes Publicly",
-      "patterns": [
-        "Autonomous agents moving from demos to production with real consequences — the 'agent in the wild' era has arrived",
-        "Performance improvements coming from better interfaces/harnesses rather than better models — the tooling layer matters more than previously understood",
-        "Massive capital flowing into AI infrastructure (Anthropic $30B) suggesting rapid capability evolution and competitive pressure",
-        "Social/judgment failures in agents that are technically competent — the gap between 'works' and 'works appropriately' is the new frontier"
-      ],
-      "toolsFlagged": [
-        "LLM Harness/Prompting Framework (specific tool unclear)"
-      ],
-      "projectConnections": [
-        "Operation Autonomy",
-        "PRISM",
-        "Claude Code + Cursor workflow",
-        "Staffing Dashboard / Ordering Assistant",
-        "General AI Development Practice"
-      ]
     }
   ],
   "trackedPatterns": [
@@ -271,7 +282,7 @@
     "Better Testing Harnesses for LLM Coding",
     "LLM Harness/Prompting Framework (specific tool unclear)"
   ],
-  "lastRun": "2026-02-18T06:18:38.563Z",
+  "lastRun": "2026-02-18T10:54:56.850Z",
   "feedHealth": {
     "https://www.latent.space/feed": {
       "lastSuccess": "2026-02-18",
@@ -284,7 +295,8 @@
         2,
         1,
         1,
-        1
+        1,
+        2
       ]
     },
     "https://buttondown.email/ainews/rss": {
@@ -292,6 +304,7 @@
       "failCount": 0,
       "avgArticles": 0,
       "samples": [
+        0,
         0,
         0,
         0,
@@ -330,6 +343,7 @@
         0,
         0,
         1,
+        1,
         1
       ]
     },
@@ -343,6 +357,7 @@
         3,
         4,
         2,
+        1,
         1,
         1
       ]
@@ -358,7 +373,8 @@
         6,
         1,
         5,
-        7
+        7,
+        8
       ]
     },
     "https://hnrss.org/best?count=20&q=cursor+OR+coding+OR+prompt": {
@@ -366,6 +382,7 @@
       "failCount": 0,
       "avgArticles": 0,
       "samples": [
+        0,
         0,
         0,
         0,
@@ -385,6 +402,7 @@
         6,
         9,
         10,
+        9,
         9
       ]
     },
@@ -393,6 +411,7 @@
       "failCount": 0,
       "avgArticles": 0,
       "samples": [
+        0,
         0,
         0,
         0,
@@ -411,6 +430,7 @@
         0,
         0,
         0,
+        1,
         1
       ]
     },
@@ -424,6 +444,7 @@
         0,
         0,
         0,
+        1,
         1
       ]
     },
@@ -432,6 +453,7 @@
       "failCount": 0,
       "avgArticles": 20,
       "samples": [
+        20,
         20,
         20,
         20,
@@ -450,6 +472,7 @@
         0,
         0,
         0,
+        1,
         1
       ]
     },
@@ -463,7 +486,8 @@
         7,
         0,
         3,
-        7
+        7,
+        6
       ]
     },
     "https://the-decoder.com/feed/": {
@@ -471,6 +495,7 @@
       "failCount": 0,
       "avgArticles": 10,
       "samples": [
+        10,
         10,
         10,
         10,
@@ -489,6 +514,7 @@
         0,
         0,
         0,
+        0,
         0
       ]
     },
@@ -501,11 +527,12 @@
     "https://blog.replit.com/feed.xml": {
       "lastSuccess": "2026-02-18",
       "failCount": 0,
-      "avgArticles": 1,
+      "avgArticles": 0,
       "samples": [
         1,
         1,
         1,
+        0,
         0,
         0,
         0
@@ -539,6 +566,7 @@
         0,
         0,
         0,
+        0,
         0
       ]
     },
@@ -547,6 +575,7 @@
       "failCount": 0,
       "avgArticles": 0,
       "samples": [
+        0,
         0,
         0,
         0,
@@ -564,6 +593,7 @@
         5,
         5,
         5,
+        4,
         4,
         4
       ]
@@ -584,6 +614,7 @@
         0,
         0,
         0,
+        1,
         1
       ]
     },
@@ -597,19 +628,21 @@
         6,
         0,
         4,
-        9
+        9,
+        10
       ]
     },
     "https://www.gamesindustry.biz/feed/news": {
       "lastSuccess": "2026-02-18",
       "failCount": 0,
-      "avgArticles": 5,
+      "avgArticles": 6,
       "samples": [
         4,
         3,
         3,
         0,
         7,
+        12,
         12
       ]
     },
@@ -623,7 +656,8 @@
         0,
         1,
         2,
-        3
+        3,
+        4
       ]
     },
     "https://godotengine.org/rss.xml": {
@@ -636,6 +670,7 @@
         1,
         1,
         2,
+        1,
         1
       ]
     },
@@ -649,19 +684,21 @@
         0,
         0,
         0,
+        0,
         0
       ]
     },
     "https://www.creativebloq.com/feed": {
       "lastSuccess": "2026-02-18",
       "failCount": 0,
-      "avgArticles": 17,
+      "avgArticles": 18,
       "samples": [
         19,
         18,
         14,
         13,
         18,
+        21,
         21
       ]
     },
@@ -674,6 +711,7 @@
         4,
         2,
         0,
+        1,
         1,
         1
       ]
@@ -688,12 +726,13 @@
         4,
         4,
         5,
+        9,
         9
       ]
     },
     "https://sifted.eu/feed/": {
       "lastSuccess": "2026-02-14",
-      "failCount": 4,
+      "failCount": 5,
       "avgArticles": 7,
       "samples": [
         7,
@@ -702,7 +741,7 @@
     },
     "https://eu-startups.com/feed/": {
       "lastSuccess": "2026-02-14",
-      "failCount": 4,
+      "failCount": 5,
       "avgArticles": 10,
       "samples": [
         10,
@@ -711,7 +750,7 @@
     },
     "https://siliconcanals.com/feed/": {
       "lastSuccess": "2026-02-14",
-      "failCount": 4,
+      "failCount": 5,
       "avgArticles": 10,
       "samples": [
         10,
@@ -721,14 +760,15 @@
     "https://tech.eu/feed/": {
       "lastSuccess": "2026-02-18",
       "failCount": 0,
-      "avgArticles": 5,
+      "avgArticles": 6,
       "samples": [
         3,
         3,
         3,
         0,
         8,
-        15
+        15,
+        13
       ]
     },
     "https://www.euractiv.com/sections/digital/feed/": {
@@ -746,13 +786,14 @@
     "https://www.brusselsmorning.com/feed/": {
       "lastSuccess": "2026-02-18",
       "failCount": 0,
-      "avgArticles": 11,
+      "avgArticles": 12,
       "samples": [
         9,
         9,
         6,
         9,
         16,
+        17,
         17
       ]
     },
@@ -766,6 +807,7 @@
         1,
         0,
         0,
+        1,
         1
       ]
     },
@@ -779,6 +821,7 @@
         0,
         0,
         0,
+        1,
         1
       ]
     },
@@ -792,29 +835,32 @@
         5,
         0,
         4,
+        6,
         6
       ]
     },
     "https://www.retaildive.com/feeds/news/": {
       "lastSuccess": "2026-02-18",
       "failCount": 0,
-      "avgArticles": 3,
+      "avgArticles": 5,
       "samples": [
         3,
         0,
         0,
+        10,
         10
       ]
     },
     "https://www.grocerydive.com/feeds/news/": {
       "lastSuccess": "2026-02-18",
       "failCount": 0,
-      "avgArticles": 2,
+      "avgArticles": 3,
       "samples": [
         5,
         2,
         0,
         0,
+        5,
         5
       ]
     },
@@ -828,6 +874,7 @@
         2,
         1,
         3,
+        6,
         6
       ]
     },
@@ -841,6 +888,111 @@
         0,
         0,
         0,
+        0,
+        0
+      ]
+    },
+    "https://huggingface.co/blog/feed.xml": {
+      "lastSuccess": "2026-02-18",
+      "failCount": 0,
+      "avgArticles": 1,
+      "samples": [
+        1
+      ]
+    },
+    "https://www.marktechpost.com/feed/": {
+      "lastSuccess": "2026-02-18",
+      "failCount": 0,
+      "avgArticles": 8,
+      "samples": [
+        8
+      ]
+    },
+    "https://blog.val.town/rss.xml": {
+      "lastSuccess": "2026-02-18",
+      "failCount": 0,
+      "avgArticles": 0,
+      "samples": [
+        0
+      ]
+    },
+    "https://www.politico.eu/section/technology/feed/": {
+      "lastSuccess": "2026-02-18",
+      "failCount": 0,
+      "avgArticles": 10,
+      "samples": [
+        10
+      ]
+    },
+    "https://mshibanami.github.io/GitHubTrendingRSS/daily/all.xml": {
+      "lastSuccess": "2026-02-18",
+      "failCount": 0,
+      "avgArticles": 13,
+      "samples": [
+        13
+      ]
+    },
+    "https://www.reddit.com/r/LocalLLaMA/top/.rss?t=day": {
+      "lastSuccess": null,
+      "failCount": 1,
+      "avgArticles": 0,
+      "samples": []
+    },
+    "https://www.reddit.com/r/MachineLearning/top/.rss?t=day": {
+      "lastSuccess": null,
+      "failCount": 1,
+      "avgArticles": 0,
+      "samples": []
+    },
+    "https://www.reddit.com/r/ClaudeAI/top/.rss?t=day": {
+      "lastSuccess": null,
+      "failCount": 1,
+      "avgArticles": 0,
+      "samples": []
+    },
+    "https://www.reddit.com/r/singularity/top/.rss?t=day": {
+      "lastSuccess": null,
+      "failCount": 1,
+      "avgArticles": 0,
+      "samples": []
+    },
+    "https://www.youtube.com/feeds/videos.xml?channel_id=UCsBjURrPoezykLs9EqgamOA": {
+      "lastSuccess": "2026-02-18",
+      "failCount": 0,
+      "avgArticles": 1,
+      "samples": [
+        1
+      ]
+    },
+    "https://www.youtube.com/feeds/videos.xml?channel_id=UCbfYPyITQ-7l4upoX8nvctg": {
+      "lastSuccess": "2026-02-18",
+      "failCount": 0,
+      "avgArticles": 0,
+      "samples": [
+        0
+      ]
+    },
+    "https://www.youtube.com/feeds/videos.xml?channel_id=UCXUPKJO5MZQN11PqgIvyuvQ": {
+      "lastSuccess": "2026-02-18",
+      "failCount": 0,
+      "avgArticles": 0,
+      "samples": [
+        0
+      ]
+    },
+    "https://www.youtube.com/feeds/videos.xml?channel_id=UCLXo7UDZvByw2ixzpQCufnA": {
+      "lastSuccess": "2026-02-18",
+      "failCount": 0,
+      "avgArticles": 0,
+      "samples": [
+        0
+      ]
+    },
+    "https://www.youtube.com/feeds/videos.xml?channel_id=UCZHmQk67mSJgfCCTn7xBfew": {
+      "lastSuccess": "2026-02-18",
+      "failCount": 0,
+      "avgArticles": 0,
+      "samples": [
         0
       ]
     }
@@ -939,6 +1091,31 @@
     "context-compression-focus-shifting-from-models-to-": {
       "mentions": 1,
       "lastSeen": "2026-02-17",
+      "trend": "new"
+    },
+    "the-1m-token-context-window-is-becoming-standard-": {
+      "mentions": 1,
+      "lastSeen": "2026-02-18",
+      "trend": "new"
+    },
+    "cross-agent-memorycontext-sharing-is-emerging-as-": {
+      "mentions": 1,
+      "lastSeen": "2026-02-18",
+      "trend": "new"
+    },
+    "production-autonomous-agents-are-shipping-at-270-": {
+      "mentions": 1,
+      "lastSeen": "2026-02-18",
+      "trend": "new"
+    },
+    "research-is-showing-that-more-contextdocumentatio": {
+      "mentions": 1,
+      "lastSeen": "2026-02-18",
+      "trend": "new"
+    },
+    "ai-tooling-is-moving-into-the-browser-as-sandboxed": {
+      "mentions": 1,
+      "lastSeen": "2026-02-18",
       "trend": "new"
     }
   },
@@ -1054,7 +1231,145 @@
       "mentions": 1,
       "category": "ai_tools",
       "url": "https://simonwillison.net/2026/Feb/17/chartroom-and-datasette-showboat/"
+    },
+    {
+      "name": "LedgerSync",
+      "firstSeen": "2026-02-18",
+      "mentions": 1,
+      "category": "ai_tools",
+      "url": "https://github.com/Metacog-AI/ledgersync"
+    },
+    {
+      "name": "Claude Quickstarts (Official Anthropic Repository)",
+      "firstSeen": "2026-02-18",
+      "mentions": 1,
+      "category": "ai_tools",
+      "url": "https://github.com/anthropics/claude-quickstarts"
+    },
+    {
+      "name": "Claude Code Templates (100+ Ready Agents)",
+      "firstSeen": "2026-02-18",
+      "mentions": 1,
+      "category": "ai_tools",
+      "url": "https://github.com/davila7/claude-code-templates"
+    },
+    {
+      "name": "Sonarly (YC W26)",
+      "firstSeen": "2026-02-18",
+      "mentions": 1,
+      "category": "ai_tools",
+      "url": "https://sonarly.com/"
+    },
+    {
+      "name": "Shiro.computer (Claude Code in Browser)",
+      "firstSeen": "2026-02-18",
+      "mentions": 1,
+      "category": "ai_tools",
+      "url": "https://shiro.computer/about"
+    },
+    {
+      "name": "Jarvish (AI-Integrated Shell)",
+      "firstSeen": "2026-02-18",
+      "mentions": 1,
+      "category": "ai_tools",
+      "url": "https://github.com/tominaga-h/jarvis-shell"
+    },
+    {
+      "name": "Rodney v0.4.0 (Browser Automation)",
+      "firstSeen": "2026-02-18",
+      "mentions": 1,
+      "category": "ai_tools",
+      "url": "https://simonwillison.net/2026/Feb/17/rodney/#atom-everything"
+    },
+    {
+      "name": "Recall Lite (Local Semantic Search for Windows)",
+      "firstSeen": "2026-02-18",
+      "mentions": 1,
+      "category": "ai_tools",
+      "url": "https://github.com/illegal-instruction-co/recall-lite"
+    },
+    {
+      "name": "Zvec (Alibaba In-Process Vector Database)",
+      "firstSeen": "2026-02-18",
+      "mentions": 1,
+      "category": "ai_tools",
+      "url": "https://github.com/alibaba/zvec"
     }
   ],
-  "weeklyDigestDue": "2026-02-22"
+  "weeklyDigestDue": "2026-02-22",
+  "actionTracking": [
+    {
+      "date": "2026-02-18",
+      "actions": [
+        {
+          "action": "Before building v2.0's two-tier architecture, test whether the 1M context can handle all 50 pre-analyzed articles simultaneously. This could eliminate your Haiku tier entirely and answer the \"what to ask of 900K tokens\" question: ask it to hold everything and find cross-feed patterns humans miss. Run test in Cursor today, measure token usage and quality.",
+          "project": "general",
+          "status": "pending"
+        },
+        {
+          "action": "[github.com/anthropics/claude-quickstarts](https://github.com/anthropics/claude-quickstarts) — Official Anthropic patterns for the exact systems you're building (PRISM v2.0, Nightbot v1). Focus on the health check implementation for unattended GitHub Actions runs. 1 hour maximum setup.",
+          "project": "general",
+          "status": "pending"
+        },
+        {
+          "action": "Feb 23 is 5 days away. You've avoided this for 4 days. Open Claude.ai, paste your julien.care draft, ask for polish. 2 hours maximum. This is the only non-coding task blocking public launch. Stop reading about tools and write the actual content people will see on Sunday.",
+          "project": "general",
+          "status": "pending"
+        }
+      ]
+    }
+  ],
+  "projectWatchlist": [],
+  "feedQuality": {
+    "hnrss.org": {
+      "humanCount": 2,
+      "slopCount": 0,
+      "lastChecked": "2026-02-18"
+    },
+    "mshibanami.github.io": {
+      "humanCount": 0,
+      "slopCount": 1,
+      "lastChecked": "2026-02-18"
+    },
+    "marktechpost.com": {
+      "humanCount": 0,
+      "slopCount": 0,
+      "lastChecked": "2026-02-18"
+    },
+    "tech.eu": {
+      "humanCount": 0,
+      "slopCount": 0,
+      "lastChecked": "2026-02-18"
+    },
+    "oneusefulthing.org": {
+      "humanCount": 0,
+      "slopCount": 0,
+      "lastChecked": "2026-02-18"
+    },
+    "simonwillison.net": {
+      "humanCount": 1,
+      "slopCount": 0,
+      "lastChecked": "2026-02-18"
+    },
+    "latent.space": {
+      "humanCount": 0,
+      "slopCount": 0,
+      "lastChecked": "2026-02-18"
+    },
+    "the-decoder.com": {
+      "humanCount": 0,
+      "slopCount": 0,
+      "lastChecked": "2026-02-18"
+    },
+    "bensbites.com": {
+      "humanCount": 0,
+      "slopCount": 0,
+      "lastChecked": "2026-02-18"
+    },
+    "youtube.com": {
+      "humanCount": 0,
+      "slopCount": 0,
+      "lastChecked": "2026-02-18"
+    }
+  }
 }
