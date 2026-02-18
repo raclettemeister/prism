@@ -363,10 +363,10 @@ export const NEWS_INTERESTS_FILE = 'data/news-interests.md';
 // --- Scoring (v3.1: 100 articles, expanded keywords for new categories) ---
 export const SCORING = {
   topN: 100,        // v3.1: bumped from 80 — more feeds = more top articles
-  minScore: 4,
+  minScore: 3,             // v3.2: lowered from 4
   batchSize: 10,
-  preFilterThreshold: 250, // v3.1: bumped from 200
-  preFilterMax: 200,       // v3.1: bumped from 150
+  preFilterThreshold: 400, // v3.2: bumped from 250 // v3.1: bumped from 200
+  preFilterMax: 350,       // v3.2: bumped from 200       // v3.1: bumped from 150
   preFilterKeywords: [
     'AI', 'LLM', 'agent', 'Claude', 'GPT', 'Cursor', 'coding', 'prompt', 'autonomous',
     'no-code', 'nocode', 'founder', 'startup', 'tool', 'API', 'automation', 'EU', 'Europe',
@@ -425,8 +425,9 @@ BATCH SCORING RULES:
 - Geopolitics/economics: score based on the interest profile's stated priorities, not generic news value.
 - Economist/FT articles: score higher when they match the profile's analytical lens (structural forces, not breaking news).
 
-Respond with a JSON array, one entry per article in the SAME ORDER as input:
-[{"score": N, "reason": "one sentence", "tags": ["tag1"], "actionable": true/false}, ...]`;
+Respond with a JSON array, one entry per article in the SAME ORDER as input.
+IMPORTANT: Include the article index number in each entry for reliable mapping.
+[{"index": 0, "score": N, "reason": "one sentence", "tags": ["tag1"], "actionable": true/false}, ...]`;
 
 // v3.0: THE BIG CALL — single massive prompt for research + synthesis
 export const RESEARCH_PROMPT = `You are PRISM v3.1, a personal research intelligence system.
