@@ -11,7 +11,7 @@ on:
 jobs:
   run-prism:
     runs-on: ubuntu-latest
-    timeout-minutes: 35  # v3.2: increased — Big Call with web search needs ~20min
+    timeout-minutes: 35  # v4.0: parallel synthesis targets 11-21 min (was 22-40 min in v3.3)
 
     steps:
       - name: Checkout repo
@@ -58,13 +58,17 @@ jobs:
           RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
           MYLIFEOS_REPO: ${{ secrets.MYLIFEOS_REPO }}
           MYLIFEOS_PAT: ${{ secrets.MYLIFEOS_PAT }}
+          # v4.0: PRISM Portal + Feedback Worker
+          PRISM_PORTAL_URL: ${{ secrets.PRISM_PORTAL_URL }}
+          FEEDBACK_WORKER_URL: ${{ secrets.FEEDBACK_WORKER_URL }}
+          PRISM_FEEDBACK_SECRET: ${{ secrets.PRISM_FEEDBACK_SECRET }}
 
       - name: Commit briefing and data
         run: |
           git config user.name "PRISM Bot"
           git config user.email "prism@noreply.github.com"
           git add briefings/ data/
-          git diff --staged --quiet || git commit -m "📡 PRISM v3.0 briefing $(date +%Y-%m-%d)"
+          git diff --staged --quiet || git commit -m "📡 PRISM v4.0 briefing $(date +%Y-%m-%d)"
           git push
 
       - name: Push feedback template to MylifeOS

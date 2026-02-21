@@ -1,0 +1,18 @@
+name = "prism-feedback"
+main = "feedback.js"
+compatibility_date = "2024-01-01"
+
+# Deploy: cd worker && wrangler deploy
+#
+# Required secrets (set via: wrangler secret put SECRET_NAME):
+#   PRISM_GITHUB_TOKEN    — GitHub PAT with repo write scope (repo permission)
+#   PRISM_GITHUB_REPO     — e.g. "raclettemeister/prism"
+#   PRISM_FEEDBACK_SECRET — shared secret embedded in PRISM Portal HTML page
+#
+# Optional secrets:
+#   ALLOWED_ORIGIN        — CORS origin (defaults to * if not set)
+#   PRISM_PORTAL_URL      — e.g. "https://prism.julien.care"
+
+[vars]
+# Non-secret config (safe to commit)
+ENVIRONMENT = "production"

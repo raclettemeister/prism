@@ -1,55 +1,66 @@
 // ============================================================
-// PRISM v3.0 Read — Select top 80 (diversity + score), batch-fetch full text
-// Uses cheerio for HTML extraction; 15s timeout per URL.
+// PRISM v4.0 Read — Tier-aware article selection + full text fetch
+//
+// v4.0 changes:
+//   - Accepts { tier1, tier2, tier3, all } from classify.js (not flat scored list)
+//   - Target: 30 articles (down from 80) — higher quality, faster synthesis
+//   - Preserves tier assignment on each article for synthesize.js routing
+//   - Diversity algorithm unchanged; tier1 always included first
+//
+// v3.x: accepted flat scoredAll array from score.js, selected top 80
 // ============================================================
 
 import * as cheerio from 'cheerio';
 
 const FETCH_TIMEOUT_MS = 15000;
 const MAX_WORDS = 3000;
-const TARGET_SELECTION = 80;  // v3.0: more articles for THE BIG CALL's 1M context
-const MIN_SCORE_FOR_POOL = 3;
-const MIN_SCORE_FIRST_PASS = 4;  // was 5 — more articles, lower threshold
 const FETCH_BATCH_SIZE = 10;
 
+// ── Article Selection ────────────────────────────────────────
+
 /**
- * Select up to 50 articles:
- * - First pass: highest-scoring article from each category with score >= 4.
- * - Second pass: fill remaining with highest score overall, skipping already selected.
- * - If fewer than 50 scored above 3, take whatever scored above 3.
+ * Select articles to read:
+ *   1. All Tier 1 (Expert Trusted) articles — guaranteed inclusion
+ *   2. Fill remaining slots with Tier 2 (top by score), then Tier 3 if budget remains
+ *
+ * @param {{ tier1, tier2, tier3 }} classified - Output from classify.js
+ * @param {number} target - Total articles to select (default: from LIMITS.readTargetArticles)
+ * @returns {object[]} Selected articles with tier property preserved
  */
-function selectTop(scoredAll) {
-  const eligible = scoredAll.filter((a) => a.score > MIN_SCORE_FOR_POOL);
-  if (eligible.length === 0) return [];
+function selectArticles(classified, target = 30) {
+  const { tier1 = [], tier2 = [], tier3 = [] } = classified;
 
-  const selected = new Map(); // link -> article (to preserve order and dedupe)
+  const selected = new Map(); // link → article (dedup by URL)
 
-  // First pass: best per category with score >= 4
-  const byCategory = new Map();
-  for (const a of eligible) {
-    if (a.score < MIN_SCORE_FIRST_PASS) continue;
-    const cat = a.category || 'big_picture';
-    if (!byCategory.has(cat) || byCategory.get(cat).score < a.score) {
-      byCategory.set(cat, a);
+  // Step 1: Tier 1 always included first
+  for (const article of tier1) {
+    if (article.link) selected.set(article.link, article);
+  }
+
+  // Step 2: Fill with Tier 2 by score (already sorted from classify.js)
+  for (const article of tier2) {
+    if (selected.size >= target) break;
+    if (article.link && !selected.has(article.link)) {
+      selected.set(article.link, article);
     }
   }
-  for (const a of byCategory.values()) {
-    selected.set(a.link, a);
-  }
 
-  // Second pass: fill up to TARGET_SELECTION by score
-  const sorted = [...eligible].sort((a, b) => b.score - a.score);
-  for (const a of sorted) {
-    if (selected.size >= TARGET_SELECTION) break;
-    if (!selected.has(a.link)) selected.set(a.link, a);
+  // Step 3: Fill remaining slots with Tier 3 if budget allows
+  for (const article of tier3) {
+    if (selected.size >= target) break;
+    if (article.link && !selected.has(article.link)) {
+      selected.set(article.link, article);
+    }
   }
 
   return Array.from(selected.values());
 }
 
+// ── Full Text Extraction ─────────────────────────────────────
+
 /**
- * Extract main content from HTML: try <article>, <main>, then <body>.
- * Strip nav, footer, sidebar, script, style.
+ * Extract main content from HTML.
+ * Strips nav, footer, sidebar, scripts; tries article > main > body.
  */
 function extractText(html) {
   const $ = cheerio.load(html);
@@ -58,9 +69,7 @@ function extractText(html) {
   if (root.length === 0) root = $('main').first();
   if (root.length === 0) root = $('body');
   const text = root.length ? root.text() : $.text();
-  return text
-    .replace(/\s+/g, ' ')
-    .trim();
+  return text.replace(/\s+/g, ' ').trim();
 }
 
 function truncateToWords(text, maxWords) {
@@ -70,7 +79,7 @@ function truncateToWords(text, maxWords) {
 }
 
 /**
- * Fetch URL with timeout; return full text or null on failure.
+ * Fetch URL with timeout. Returns clean text or null on failure.
  */
 async function fetchFullText(url) {
   const controller = new AbortController();
@@ -78,7 +87,9 @@ async function fetchFullText(url) {
   try {
     const res = await fetch(url, {
       signal: controller.signal,
-      headers: { 'User-Agent': 'PRISM/3.0 (Personal Research Intelligence; +https://github.com/raclettemeister/prism)' },
+      headers: {
+        'User-Agent': 'PRISM/4.0 (Personal Research Intelligence; +https://github.com/raclettemeister/prism)',
+      },
     });
     clearTimeout(timeout);
     if (!res.ok) return null;
@@ -91,25 +102,46 @@ async function fetchFullText(url) {
   }
 }
 
+// ── Main Export ──────────────────────────────────────────────
+
 /**
- * Takes scored articles from score.js; selects top 50 (diversity algorithm);
- * fetches full article text in batches of 10; returns articles with fullText / fullTextAvailable.
- * Preserves all article properties including crossFeedCount.
+ * Select top articles from classified tiers and fetch their full text.
+ *
+ * Accepts either:
+ *   - v4.0: classified object { tier1, tier2, tier3 } from classify.js
+ *   - v3.x: flat scored array from score.js (backward compatible)
+ *
+ * Returns articles with fullText / fullTextAvailable added,
+ * tier property preserved for synthesize.js routing.
+ *
+ * @param {object[]|{tier1, tier2, tier3}} input - Articles from classify.js or score.js
+ * @param {number} [target=30] - Target article count
+ * @returns {Promise<object[]>} Articles with full text
  */
-export default async function read(scoredAll) {
-  const selected = selectTop(scoredAll);
+export default async function read(input, target = 30) {
+  // v3.x backward compat: if passed a flat array, wrap it
+  const classified = Array.isArray(input)
+    ? { tier1: [], tier2: input.filter(a => a.score >= 4), tier3: input.filter(a => a.score < 4) }
+    : input;
+
+  const selected = selectArticles(classified, target);
+
   if (selected.length === 0) {
-    console.log('\n📖 READ: No articles with score > 3. Skipping read step.');
+    console.log('\n📖 READ: No articles to read. Skipping.');
     return [];
   }
 
-  console.log(`\n📖 READING ${selected.length} articles (full text fetch, ${FETCH_TIMEOUT_MS / 1000}s timeout, batches of ${FETCH_BATCH_SIZE})...`);
+  const tier1Count = selected.filter(a => a.tier === 1).length;
+  const tier2Count = selected.filter(a => a.tier === 2).length;
+  const tier3Count = selected.filter(a => a.tier === 3).length;
+
+  console.log(`\n📖 READ — ${selected.length} articles (T1:${tier1Count} T2:${tier2Count} T3:${tier3Count}) — fetching full text...`);
 
   let successCount = 0;
   let failCount = 0;
   const withFullText = [];
 
-  // Batch fetching: 10 URLs at a time to avoid rate limits and timeouts
+  // Fetch in batches of 10 to avoid hammering servers
   for (let i = 0; i < selected.length; i += FETCH_BATCH_SIZE) {
     const batch = selected.slice(i, i + FETCH_BATCH_SIZE);
     const batchNum = Math.floor(i / FETCH_BATCH_SIZE) + 1;
@@ -134,6 +166,6 @@ export default async function read(scoredAll) {
     withFullText.push(...batchResults);
   }
 
-  console.log(`  Read ${successCount}/${selected.length} articles successfully (${failCount} failed to fetch)\n`);
+  console.log(`  Read ${successCount}/${selected.length} successfully (${failCount} failed, using RSS snippet as fallback)\n`);
   return withFullText;
 }

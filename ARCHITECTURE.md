@@ -1,6 +1,19 @@
 # PRISM — Architecture
 
-**v3.3** — Personal Research Intelligence System
+**v4.0 "The Smart Analyst"** — Personal Research Intelligence System
+
+---
+
+## Design Philosophy
+
+v3.3 was a **factory**: collect 400+ articles, score everything blindly, feed 80 into one 20-minute mega-call. It worked, but it threatened the 35-minute GitHub Actions ceiling and treated Dan Shipper the same as a random VentureBeat post until an algorithm decided otherwise.
+
+v4.0 is a **smart analyst**: it knows who to trust, asks targeted questions before sitting down to write, and thinks in parallel.
+
+```
+v3.3: COLLECT EVERYTHING → SCORE EVERYTHING → ONE GIANT CALL
+v4.0: KNOW WHO TO TRUST → ASK SMART QUESTIONS FIRST → PARALLEL SPECIALIST CALLS
+```
 
 ---
 
@@ -9,23 +22,79 @@
 ```
 GitHub Actions (3:00 UTC daily)
 │
-├─ [CI] Fetch news-interests.md from MylifeOS via GitHub API
-├─ [CI] Fetch prism-feedback.md from MylifeOS via GitHub API
+├── Step 0:  context.js    → Clone MylifeOS → data/life-context.md
+├── Step 0b: deepdive.js   → Run deep dives (usually skipped)
+├── Step 1:  collect.js    → 100+ RSS feeds → 400-700 raw articles
 │
-└─ node src/index.js
-   │
-   ├── Step 0  · context.js    → Clone MylifeOS, generate data/life-context.md
-   ├── Step 0b · deepdive.js   → Run any requested deep dives (usually skipped)
-   ├── Step 1  · collect.js    → Fetch ~100 RSS feeds → deduplicate → ~400–700 articles
-   ├── Step 2  · score.js      → Pre-filter → batch Claude scoring → top 100 by score
-   ├── Step 3  · read.js       → Select top 80 (diversity algorithm) → fetch full text
-   ├── Step 4  · research.js   → THE BIG CALL (Sonnet + 1M ctx + web search) → briefing
-   ├── Step 5  · validate.js   → Anti-hallucination check → confidence score
-   └── Step 6  · deliver.js    → HTML email via Resend
-   
-[CI] Commit briefings/ + data/ to git
-[CI] Push feedback template back to MylifeOS
+│   ┌──────────────────────────────────┐
+├── │ Step 2: classify.js  [PARALLEL]  │ → Tier 1 (always read)
+│   │ Step 3: webintel.js  [PARALLEL]  │ → data/web-intelligence.md
+│   └──────────────────────────────────┘
+│
+├── Step 4:  read.js       → Select 30 articles, fetch full text
+│
+│   ┌──────────────────────────────────────────────┐
+├── │ Step 5a: synthesize.js Call A  [PARALLEL]    │ → Builder Intelligence
+│   │ Step 5b: synthesize.js Call B  [PARALLEL]    │ → World Context
+│   └──────────────────────────────────────────────┘
+│
+├── Step 6:  synthesize.js → Assemble A+B → briefings/YYYY-MM-DD.md
+├── Step 7:  validate.js   → Anti-hallucination check
+├── Step 8:  page.js       → Generate briefings/YYYY-MM-DD.html (feedback UI)
+└── Step 9:  deliver.js    → Email + live page URL via Resend
+
+[CI] Commit briefings/ + data/ → Cloudflare Pages picks up → live in <1 min
+[CI] Push feedback-template.md back to MylifeOS
 ```
+
+---
+
+## The Three Architectural Shifts
+
+### Shift 1: Trust Tiers (classify.js)
+
+Instead of scoring all 400+ articles, every article is assigned a Trust Tier:
+
+| Tier | Treatment | Who qualifies | Count |
+|---|---|---|---|
+| **Tier 1: Expert Trusted** | Always read, no scoring | 12 hardcoded expert sources | ~20 articles |
+| **Tier 2: Amplified Signal** | Selectively scored | crossFeedCount ≥ 3 OR from HN Best feeds | ~50-80 → top 20 |
+| **Tier 3: Long Tail** | Scored only if budget allows | Everything else | top 10 if slots remain |
+
+**Target: ~30 articles for synthesis** (down from 80 in v3.3)
+
+**Tier 1 sources (hardcoded in `TRUST_TIERS`):**
+Dan Shipper/Every, Simon Willison, Steve Yegge, Brian Casel, Addy Osmani,
+Latent Space, Ethan Mollick, Pragmatic Engineer, The Economist, Adam Tooze, Noah Smith, FT
+
+**Dynamic learning:** `memory.json.sourceRatings` adjusts tier weights over time. A source consistently loved by Julien (avgScore ≥ 4.0, 10+ data points) auto-promotes toward Tier 1. A consistently skipped source demotes toward Tier 3.
+
+### Shift 2: Proactive Web Intelligence (webintel.js)
+
+Runs **in parallel with classify.js**, before synthesis. Two-step process:
+
+1. **Query generation** — Claude reads `life-context.md` + recent briefings, outputs 5-8 targeted search queries as JSON (~30 seconds, no web search needed)
+2. **Parallel execution** — All queries run concurrently via `Promise.all()` (~2-3 min)
+
+Results saved to `data/web-intelligence.md`. Both synthesis calls receive this pre-built intelligence. Web search during synthesis becomes **verification only**, not primary research.
+
+### Shift 3: Parallel Specialist Synthesis (synthesize.js)
+
+Two concurrent Claude calls via `Promise.all()` replace THE BIG CALL:
+
+**Call A — Builder Intelligence (critical path)**
+- Input: Tier 1 expert articles + web intelligence + life context + memory + feedback
+- Output: 🔴 SIGNAL · 📚 MUST-READS · 🧱 BUILDER INTELLIGENCE · ⏪ ACTION AUDIT · 🎯 PRIORITIES
+- Budget: 8,000 output tokens | ~4-7 min
+- If Call A fails: the run fails. This is the core.
+
+**Call B — World Context (secondary)**
+- Input: Tier 2/3 articles + web intelligence + last 3 briefings
+- Output: 📊 PIONEER ADVANTAGE · 🛠️ TOOLS · 🏗️ BUILD WATCH · 🌍 WORLD LENS · 🇪🇺 EU TECH · 📈 TRENDS · 🚮 SLOP · 🔄 FEED HEALTH · 💬 FEEDBACK
+- Budget: 6,000 output tokens | ~4-7 min
+- If Call B fails: Call A sections delivered alone with a note. Graceful degradation.
+
+**Assembly:** sections extracted by header pattern and reordered into canonical section order.
 
 ---
 
@@ -33,171 +102,165 @@ GitHub Actions (3:00 UTC daily)
 
 ### `src/index.js` — Orchestrator
 
-Runs the 8-step pipeline in sequence. Tracks token usage across all steps. Aggregates cost estimate. Handles `--dry-run` flag (stops after collect, prints first 10 articles).
+Runs the 9-step pipeline. Tracks token usage and cost. Handles `--dry-run` flag.
 
-**Key behaviour:**
-- Any step can fail without crashing later steps (each step has internal error handling)
-- Token counts are summed across scoring + research + validation passes
-- Cost is estimated using Sonnet 4.6 pricing ($3/$15 per MTok input/output)
+Key behavior:
+- Steps 2+3 (classify + webintel) run in parallel via `Promise.all()`
+- Steps 5a+5b (Builder + World synthesis) run in parallel inside `synthesize.js`
+- Any step can fail without crashing later steps (internal error handling)
 
 ---
 
 ### `src/config.js` — Central Configuration
 
-Single source of truth for everything tunable. **If you want to change behaviour, start here.**
+Single source of truth for everything tunable.
 
 **Key exports:**
+
 | Export | Purpose |
 |---|---|
-| `FEED_CATEGORIES` | All RSS feeds, grouped by category with weights |
-| `MODELS` | Which Claude model to use for each step |
-| `SONNET_46_BETAS` | Beta headers for 1M context + web search |
-| `SCORING` | Pre-filter thresholds, batch sizes, keyword list, top-N |
-| `LIMITS` | Max article length, age cutoff, token budgets |
-| `SCORING_PROMPT` | Full system prompt for the batch scoring step |
-| `RESEARCH_PROMPT` | Full system prompt for THE BIG CALL |
+| `TRUST_TIERS` | Tier 1 patterns, Tier 2 conditions, Tier 3 limits |
+| `FEED_CATEGORIES` | 20 categories, ~110 feeds, with `tier` property on `ai_builder` |
+| `MODELS` | Which Claude model for each step |
+| `SCORING` | preFilterKeywords, crossFeedBonus, thresholds |
+| `LIMITS` | Article targets, token budgets per call |
+| `WEBINTEL_PROMPT` | Query generation instructions |
+| `CLASSIFY_PROMPT` | Tier 2 selective scoring (builder-weighted) |
+| `BUILDER_PROMPT` | Call A synthesis instructions |
+| `WORLD_PROMPT` | Call B synthesis instructions |
+| `SCORING_PROMPT` | **Deprecated** — kept for legacy score.js |
+| `RESEARCH_PROMPT` | **Deprecated** — kept for legacy research.js |
 
-**Category weights** (0.0–1.0): Multiply the raw Claude score. A `1.0` category's articles compete on equal footing; a `0.55` category's articles need a higher raw score to reach the top 100.
-
----
-
-### `src/context.js` — Life Context Generator
-
-Clones the MylifeOS personal vault and produces `data/life-context.md` — a snapshot of what Julien is working on, used to personalize the briefing.
-
-**Priority layers (highest → lowest):**
-1. `Journal/context-note.md` — Julien's own words, written directly. Never overridden.
-2. `LOG.md` — last 3 days of activity log. What actually happened.
-3. Recently modified `.md` files (git log, last 48h). What's being actively worked on.
-4. `CLAUDE.md` — stable identity file. Background info, lower priority.
-
-**If context-note.md exists and is fresh:** formats it directly (no Claude call, saves tokens).  
-**Otherwise:** Claude Sonnet synthesizes a context snapshot from the layers above.
-
-**Fallback:** if `MYLIFEOS_REPO` is not set, or the clone fails, uses the existing `data/life-context.md`.
-
-**Authentication fix (v3.3):** `MYLIFEOS_REPO` can be `user/repo` (bare path) or a full URL. The clone uses `oauth2:PAT@github.com` format with `GIT_TERMINAL_PROMPT=0` to prevent hanging in headless CI.
+**New feed category:** `ai_builder` (weight 1.0, tier 1) — Dan Shipper/Every, Brian Casel, Steve Yegge, Addy Osmani
 
 ---
 
-### `src/collect.js` — RSS Collector
+### `src/classify.js` — Trust Tier Classification (NEW, replaces score.js)
 
-Fetches all feeds in `FEED_CATEGORIES` in sequence (10s timeout per feed). Performs two deduplication passes.
+Assigns every article to a Trust Tier. Tier 1 articles bypass scoring entirely.
 
-**Dedup pass 1 — URL:** same article URL from multiple feeds → merge into one, keep higher-weight category, merge `feedUrlsCarried` list.
+**Algorithm:**
+1. Check `memory.json.sourceRatings` for learned overrides (avgScore ≥ 4.0 → promote, < 2.5 → demote)
+2. Check `TRUST_TIERS.tier1.patterns` (substring match on feedUrl/source) → Tier 1
+3. Check crossFeedCount ≥ 3 or feedUrl contains `hnrss.org/best` → Tier 2
+4. Everything else → Tier 3
 
-**Dedup pass 2 — Title similarity:** if 80%+ of words in two titles match → treat as same story, keep higher-weight source, merge feeds.
+Tier 1 articles are capped at `LIMITS.tier1MaxPerSource` (2) per source to prevent flooding.
+Tier 2 articles are scored using `CLASSIFY_PROMPT` (builder-weighted).
+Tier 3 articles are only scored if Tier 1 + Tier 2 total < `LIMITS.readTargetArticles` (30).
 
-**Cross-feed signal:** `crossFeedCount` tracks how many feeds independently picked up the same story. Articles appearing in 3+ feeds get a scoring bonus (`SCORING.crossFeedBonus`).
-
-**Age filter:** articles older than `LIMITS.maxArticleAge` (48h) are dropped.
-
-Also updates `data/memory.json` with per-feed health metrics (success rate, average article count).
-
----
-
-### `src/score.js` — Relevance Scorer
-
-**Pre-filter:** if total articles > `SCORING.preFilterThreshold` (300), keeps only articles matching any keyword from `SCORING.preFilterKeywords`. Caps at `SCORING.preFilterMax` (300). Articles that don't match get score 0 and are excluded from the top 100, but remain in the full list.
-
-**Batch scoring:** sends articles in batches of 100 to Claude Sonnet with the `SCORING_PROMPT` and the user's `news-interests.md`. Claude returns a JSON array with `index`, `score`, `reason`, `tags`, `actionable`.
-
-**JSON extraction (v3.3 fix):** uses `extractJsonArray()` which tries two strategies:
-1. Strip markdown code fences, parse directly
-2. Regex-find the first `[...]` block in the response (handles preamble/postamble text)
-
-**Final score formula:**
-```
-finalScore = rawScore × categoryWeight
-if crossFeedCount >= 3: finalScore += crossFeedBonus (2 points)
-finalScore = min(10, finalScore)
-```
-
-**Output:** full sorted article list. Top `SCORING.topN` (100) above `SCORING.minScore` (3) go to read.js.
+Returns: `{ tier1, tier2, tier3, all, tokens }`
 
 ---
 
-### `src/read.js` — Article Reader
+### `src/webintel.js` — Proactive Web Intelligence (NEW)
 
-Selects the top 80 articles using a **diversity-first algorithm:**
-- **First pass:** best-scoring article from each category with score ≥ 4 (ensures no category is completely unrepresented)
-- **Second pass:** fill to 80 slots with highest-scoring remaining articles
+Generates and executes targeted web searches before synthesis.
 
-Then fetches full article HTML for each, using cheerio to extract clean text:
-1. Remove nav, footer, sidebar, script, style
-2. Try `<article>` → `<main>` → `<body>` (in order)
-3. Truncate to 3,000 words
+**Step 1 — Query generation:** Fast Claude call (no web search). Reads `life-context.md` + last 2 briefings. Returns 5-8 JSON search queries.
 
-Fetches in batches of 10 with 15s per-article timeout. Failed fetches fall back to the RSS snippet.
+**Step 2 — Parallel execution:** All queries run concurrently via `Promise.all()`. Each uses Claude with `web_search` tool. Results saved to `data/web-intelligence.md`.
+
+Both synthesis calls receive this intelligence. Web search during synthesis becomes verification-only.
 
 ---
 
-### `src/research.js` — THE BIG CALL
+### `src/read.js` — Article Reader (updated)
 
-The core of PRISM. One Claude Sonnet call with:
-- **1M token context window** (via `context-1m-2025-08-07` beta)
-- **Web search** (via `code-execution-web-tools-2026-02-09` beta)
-- **Adaptive thinking** enabled
+Accepts either v4.0 classified object `{ tier1, tier2, tier3 }` or v3.x flat array (backward compatible).
 
-Builds the prompt by assembling:
-| Block | Source |
-|---|---|
-| `{life_context}` | `data/life-context.md` |
-| `{news_interests}` | `data/news-interests.md` |
-| `{last_briefings}` | Last 3 briefings from `briefings/` |
-| `{memory_json}` | Topic frequency, tools seen, project watchlist |
-| `{action_audit}` | Yesterday's recommended actions from memory |
-| `{feedback}` | `data/feedback-latest.md` (if non-empty) |
-| Articles block | All 80 articles with full text, score, category, cross-feed count |
+Selection algorithm:
+1. All Tier 1 articles (guaranteed inclusion, deduped by URL)
+2. Tier 2 articles by score until target (30) reached
+3. Tier 3 articles only if budget remains
 
-**Web search:** Claude decides what to verify. Typically 3–9 searches per run. Count is tracked and reported.
-
-**Output:** saves to `briefings/YYYY-MM-DD.md`, updates `data/memory.json`, writes `data/feedback-template.md`.
-
-**Fallback:** if the 1M context + web search call fails, retries without betas (trims to ~200K tokens).
+Fetches full HTML text for each selected article. Tier property preserved on each article for synthesize.js routing.
 
 ---
 
-### `src/validate.js` — Anti-Hallucination Checker
+### `src/synthesize.js` — Parallel Specialist Synthesis (NEW, replaces research.js)
 
-A second Claude Sonnet call that reads the full briefing and produces a structured JSON confidence report.
+**Context loading:** All context loaded in parallel: lifeContext, newsInterests, webIntelligence, lastBriefings, memory, feedback.
 
-**Checks:**
-- All URLs are plausibly real (properly formatted, known domains)
-- No invented problems with Julien's projects
-- No filler sections (vague, unsourced, speculative)
-- WORLD LENS maintains analytical tone (not clickbait)
-- FEED HEALTH REPORT contains reasonable recommendations
+**Feedback loading:** Tries `data/feedback-latest.json` (v4.0 structured) first, falls back to `data/feedback-latest.md` (v3.x markdown).
 
-**Output:** `confidence` (0.0–1.0), list of `issues` with severity + action, list of clean sections.
+**Parallel calls:** `callBuilderSynth()` + `callWorldSynth()` run via `Promise.all()`.
 
-If `confidence < 0.7`: prepends a warning banner to the briefing.
+**Assembly:** `assembleBriefing()` extracts sections by emoji+header pattern from combined output, reorders into canonical section order.
 
-**JSON extraction (v3.3 fix):** uses `extractJsonObject()` — same robust extraction as score.js but for `{...}` objects. Also removed `thinking: { type: 'adaptive' }` which was causing non-JSON preamble in responses.
+**Memory update:** Updates `memory.json` with v4.0 learning fields:
+- `sourceRatings`: updated from structured feedback ratings
+- `sectionPerformance`: updated from section feedback ratings
+- `topicPreferences`: tracked per topic
 
----
-
-### `src/deliver.js` — Email Delivery
-
-Converts the markdown briefing to HTML via `src/email-template.js` (uses `marked`) and sends via the Resend API.
-
-Subject line: `PRISM — February 21, 2026` (or with `⚠️` suffix if confidence < 70%).
-
-If `RESEND_API_KEY` is not set: logs a warning and returns `{ sent: false }`. Pipeline continues normally.
+**Feedback templates:** Writes both `data/feedback-template.md` (for MylifeOS/Obsidian) and `data/feedback-latest-template.json` (structured JSON schema).
 
 ---
 
-### `src/deepdive.js` — Deep Dive Research
+### `src/page.js` — HTML Briefing Generator (NEW)
 
-On-demand deep research on specific topics. Triggered by a config file or command-line argument. Not used in standard nightly runs.
+Generates `briefings/YYYY-MM-DD.html` alongside the `.md` file.
 
-Reports are saved to `briefings/deep-dives/` and injected into the briefing before the Priorities section.
+**Features:**
+- Full briefing rendered from markdown via `marked`
+- Per-article ❤️/✓/✗ reaction buttons (injected after MUST-READ list items)
+- Per-section 👍/👍/👎 rating buttons (injected after section headers)
+- Overall 1-5 star rating
+- Freeform notes textarea
+- Submit button → POSTs JSON to `FEEDBACK_WORKER_URL`
+- If no worker: downloads feedback as JSON for manual import
+- Self-contained: no external CDN dependencies
+
+The page is committed to git and auto-deployed via Cloudflare Pages.
 
 ---
 
-### `src/analyze-individual.js` — Legacy
+### `src/validate.js` — Anti-Hallucination Checker (unchanged)
 
-Kept for reference. Was the individual article analysis step in v2.x before THE BIG CALL consolidated everything into one prompt. Not used in v3.x.
+Second Claude call that reads the full briefing and produces a structured JSON confidence report.
+
+Checks: URL validity, no invented project problems, no filler sections, WORLD LENS tone, FEED HEALTH reasonableness.
+
+If confidence < 0.7: prepends warning banner. Subject line gets ⚠️ suffix.
+
+---
+
+### `src/deliver.js` — Email Delivery (updated)
+
+Sends HTML email via Resend API. v4.0 change: injects a portal banner with "Read live + react per article →" link when `PRISM_PORTAL_URL` is set.
+
+---
+
+### `src/context.js` — Life Context Generator (unchanged)
+
+Clones MylifeOS, generates `data/life-context.md` from priority layers:
+1. `Journal/context-note.md` — Julien's own words, never overridden
+2. `LOG.md` — last 3 days of activity
+3. Recently modified `.md` files (last 48h)
+4. `CLAUDE.md` — stable identity file
+
+Falls back to existing `data/life-context.md` if clone fails.
+
+---
+
+### `src/deepdive.js` — Deep Dive Research (unchanged)
+
+On-demand deep research on specific topics. Not used in standard nightly runs. Reports saved to `briefings/deep-dives/`.
+
+---
+
+### `worker/feedback.js` — Cloudflare Worker (NEW)
+
+Receives feedback POST from the PRISM Portal HTML page. Writes `data/feedback-latest.json` to the PRISM GitHub repo via GitHub Contents API.
+
+**Auth:** Optional `X-PRISM-Secret` header validated against `PRISM_FEEDBACK_SECRET` env var.
+
+**Deploy:** `cd worker && wrangler deploy`
+
+**Required secrets (via `wrangler secret put`):**
+- `PRISM_GITHUB_TOKEN` — PAT with repo write scope
+- `PRISM_GITHUB_REPO` — e.g. `raclettemeister/prism`
+- `PRISM_FEEDBACK_SECRET` — shared secret
 
 ---
 
@@ -205,11 +268,34 @@ Kept for reference. Was the individual article analysis step in v2.x before THE 
 
 | File | Written by | Read by | Purpose |
 |---|---|---|---|
-| `data/life-context.md` | `context.js` | `research.js` | Current snapshot of what Julien is doing |
-| `data/news-interests.md` | You / MylifeOS | `score.js`, `research.js` | Your interest profile — controls scoring and briefing tone |
-| `data/memory.json` | `collect.js`, `research.js` | `research.js` | Persistent cross-run memory: feed health, topic frequency, action tracking |
-| `data/feedback-latest.md` | MylifeOS / CI | `research.js` | Feedback from previous briefing, consumed and cleared each run |
-| `data/feedback-template.md` | `research.js` | MylifeOS / CI | Template pushed to vault after each run for next-day feedback |
+| `data/life-context.md` | `context.js` | `webintel.js`, `synthesize.js` | Julien's current projects and priorities |
+| `data/news-interests.md` | You / MylifeOS CI | `classify.js`, `synthesize.js` | Interest profile — controls scoring and briefing tone |
+| `data/web-intelligence.md` | `webintel.js` | `synthesize.js` | Proactive web intel from pre-synthesis searches |
+| `data/memory.json` | `collect.js`, `synthesize.js` | `classify.js`, `synthesize.js` | Persistent memory: feed health, topic frequency, **source ratings**, **section performance** |
+| `data/feedback-latest.json` | Cloudflare Worker / manual | `synthesize.js` | Structured feedback from PRISM Portal (v4.0) |
+| `data/feedback-latest.md` | MylifeOS / CI | `synthesize.js` | Legacy markdown feedback (v3.x, still supported) |
+| `data/feedback-template.md` | `synthesize.js` | MylifeOS / CI | Markdown feedback template pushed to vault after each run |
+
+---
+
+## The Briefing Structure (v4.0)
+
+| Section | From | Purpose |
+|---|---|---|
+| 🔴 THE SIGNAL | Call A | Single most important development today |
+| 📚 MUST-READ LIST | Call A | Articles worth clicking (max 5) |
+| 🧱 BUILDER INTELLIGENCE | Call A | Methodology beats, micro-SaaS radar, tool updates, API economics |
+| 📊 PIONEER ADVANTAGE CHECK | Call B | Development → Your Edge → Window → Builder Impact? |
+| 🛠️ TOOLS TO TRY | Call B | New tools with 30-min try actions |
+| 🏗️ BUILD WATCH | Call B | Trajectories worth tracking |
+| ⏪ ACTION AUDIT | Call A | Yesterday's priorities: carry forward, drop, modify? |
+| 🎯 TODAY'S PRIORITIES | Call A | Max 3 items ranked by urgency |
+| 🌍 WORLD LENS | Call B | Geopolitics through Brussels founder lens (Economist style) |
+| 🇪🇺 EUROPE TECH | Call B | EU/Belgian tech landscape |
+| 📈 TREND TRACKER | Call B | Recurring themes, what's accelerating, what disappeared |
+| 🚮 SLOP FILTER | Call B | Signal/noise report |
+| 🔄 FEED HEALTH REPORT | Call B | Keep/Watch/Add/Remove feed recommendations |
+| 💬 FEEDBACK RESPONSE | Call B | Response to Julien's previous feedback |
 
 ---
 
@@ -223,11 +309,27 @@ Kept for reference. Was the individual article analysis step in v2.x before THE 
 3. `npm ci`
 4. `curl` fetch `NEWS-INTERESTS.md` from MylifeOS → `data/news-interests.md`
 5. `curl` fetch `prism-feedback.md` from MylifeOS → `data/feedback-latest.md`
-6. `node src/index.js` (with all secrets injected as env vars)
-7. `git commit && git push` — commits `briefings/` and `data/`
+6. `node src/index.js` (all secrets injected)
+7. `git commit && git push` — commits `briefings/` (`.md` + `.html`) and `data/`
 8. GitHub API `PUT` — pushes `data/feedback-template.md` → MylifeOS `Journal/prism-feedback.md`
+9. Cloudflare Pages picks up new HTML files → live within 1 minute
 
-**Timeout:** 35 minutes. THE BIG CALL with web search typically takes 10–20 minutes.
+**Timeout:** 35 minutes. v4.0 typical runtime: 11-21 minutes (14-24 min safety margin).
+
+---
+
+## Time Budget
+
+| Step | v3.3 | v4.0 | Change |
+|---|---|---|---|
+| Context | 1-2 min | 1-2 min | — |
+| Collect | 2-3 min | 2-3 min | — |
+| Classify + WebIntel | 5-8 min | 3-5 min (parallel) | **-3 min** |
+| Read | 3-5 min | 1-2 min (30 not 80) | **-3 min** |
+| Synthesis | 10-20 min | 4-7 min (parallel A+B) | **-10 min** |
+| Page generation | — | <1 min | — |
+| Validate + Deliver | 2 min | 2 min | — |
+| **TOTAL** | **22-40 min** | **11-21 min** | **~-50%** |
 
 ---
 
@@ -235,13 +337,21 @@ Kept for reference. Was the individual article analysis step in v2.x before THE 
 
 All steps use **Claude Sonnet 4.6** at $3.00/$15.00 per million input/output tokens.
 
-| Step | Typical tokens | Typical cost |
+| Step | v3.3 | v4.0 |
 |---|---|---|
-| Scoring (350 articles × 4 batches) | ~35K in / ~23K out | ~$0.45 |
-| THE BIG CALL (80 articles + full context) | ~105K in / ~13K out | ~$0.51 |
-| Validation | ~15K in / ~2K out | ~$0.07 |
-| **Total** | **~155K in / ~38K out** | **~$1.03** |
+| Classify (Tier 2 only ~80 articles) | ~$0.45 (350 articles) | ~$0.15 |
+| WebIntel (query gen + 5-8 searches) | — | ~$0.10 |
+| Call A (Builder, 8K out max) | — | ~$0.28 |
+| Call B (World, 6K out max) | ~$0.51 (single call) | ~$0.22 |
+| Validation | ~$0.07 | ~$0.07 |
+| **Total** | **~$1.03** | **~$0.75** |
 
-Web search adds ~$0.01/search (10 searches ≈ $0.10).
+---
 
-Context generation (when MylifeOS clone succeeds) adds ~$0.05–0.15 depending on vault size.
+## Legacy Files (kept, not used in v4.0 pipeline)
+
+| File | Status | Notes |
+|---|---|---|
+| `src/score.js` | Legacy v3.3 | Replaced by `classify.js` |
+| `src/research.js` | Legacy v3.3 | Replaced by `synthesize.js` |
+| `src/analyze-individual.js` | Legacy v2.x | Kept for reference |

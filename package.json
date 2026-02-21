@@ -1,7 +1,7 @@
 {
   "name": "prism",
-  "version": "3.0.0",
-  "description": "Personal Research Intelligence System (Mine) — All Sonnet 4.6, web search, 1M context v3.0",
+  "version": "4.0.0",
+  "description": "Personal Research Intelligence System — v4.0 The Smart Analyst: Trust Tiers, WebIntel, Parallel Synthesis, HTML Feedback Portal",
   "type": "module",
   "main": "src/index.js",
   "scripts": {

@@ -1,5 +1,10 @@
 // ============================================================
-// PRISM v3.0 Delivery — HTML email via Resend, web search count, feedback section
+// PRISM v4.0 Delivery — HTML email via Resend
+//
+// v4.0 changes:
+//   - Includes live page URL (PRISM Portal) in email header
+//   - "Read live + give feedback →" link at top of email
+//   - Subject unchanged (PRISM — Date, with ⚠️ for low confidence)
 // ============================================================
 
 import { format } from 'date-fns';
@@ -16,9 +21,24 @@ export default async function deliver(briefingMarkdown, stats) {
   }
 
   const dateStr = format(new Date(), 'MMMM d, yyyy');
+  const todayIso = format(new Date(), 'yyyy-MM-dd');
   console.log(`\n📧 DELIVERING briefing to staycreative@julien.care...`);
 
-  const htmlBody = renderEmail(briefingMarkdown, dateStr);
+  // Build live portal URL if configured
+  const portalBase = process.env.PRISM_PORTAL_URL || '';
+  const liveUrl = portalBase ? `${portalBase}/briefings/${todayIso}.html` : '';
+
+  // Inject portal link banner into markdown before rendering
+  const portalBanner = liveUrl
+    ? `> 🌐 **[Read live + react per article →](${liveUrl})** — opens the interactive briefing page\n\n`
+    : '';
+
+  const enrichedMarkdown = briefingMarkdown.replace(
+    /^(---\n\n# PRISM Morning Briefing[^\n]*\n)/m,
+    `$1\n${portalBanner}`
+  );
+
+  const htmlBody = renderEmail(enrichedMarkdown || briefingMarkdown, dateStr);
 
   // Add warning emoji to subject when confidence is low
   const subject = stats.confidence && stats.confidence < 0.7
@@ -48,6 +68,7 @@ export default async function deliver(briefingMarkdown, stats) {
     if (response.ok) {
       console.log(`  ✅ Email sent (id: ${result.id})`);
       console.log(`  📊 Stats: ${stats.webSearches || 0} web searches, confidence ${((stats.confidence || 0) * 100).toFixed(0)}%`);
+      if (liveUrl) console.log(`  🌐 Live page: ${liveUrl}`);
       return { sent: true, id: result.id };
     } else {
       console.log(`  ❌ Email failed: ${JSON.stringify(result)}`);
