@@ -1,9 +1,25 @@
 // ============================================================
-// PRISM v3.1 Configuration — Expanded feeds, no retail/youtube
-// Everything you need to tune lives here.
+// PRISM v3.3 Configuration
+//
+// v3.3 feed audit (2026-02-21):
+//   - Removed all 16 Reddit feeds → blanket 403, Reddit blocks anonymous RSS
+//   - Removed 11 dead 404 feeds (cursor, deepmind, meta AI, deeplearning.ai,
+//     stability.ai, runway, DW old URL, ben-evans, worksinprogress, SWP Berlin, a16z)
+//   - Removed 14 blocked feeds (sifted, eu-startups, siliconcanals, bruegel,
+//     chatham house, CEPS, EPC, Euractiv + 6 Substack-hosted newsletters)
+//   - Removed 6 parse/DNS/auth errors (ihrss.io, supabase, euronews, egmont,
+//     reuters paywall, carnegie europe not-RSS)
+//   - Removed reddit_geopolitics category entirely (100% Reddit feeds)
+//   - Added: google AI blog, Lobste.rs AI/ML tags, DW corrected URL,
+//     Adam Tooze custom domain
+//   Net: 144 → ~99 feeds, 20 → 19 categories
+//
+// NOTE ON REDDIT: Reddit blocks anonymous RSS access with HTTP 403.
+// Do NOT add reddit.com RSS feeds — they will never work without OAuth.
+// Use community alternatives like lobste.rs or HN instead.
 // ============================================================
 
-// --- RSS Feeds (v3.1: 20 categories, ~150 feeds) ---
+// --- RSS Feeds (v3.3: 19 categories, ~99 feeds) ---
 export const FEED_CATEGORIES = {
   // =====================================================
   // Category 1: AI Tools & Techniques
@@ -20,12 +36,11 @@ export const FEED_CATEGORIES = {
       'https://hnrss.org/show',
       'https://hnrss.org/launches',
       'https://huggingface.co/blog/feed.xml',
-      // v3.1: new
-      'https://www.cursor.com/blog/rss.xml',           // Cursor — your daily coding tool
-      'https://vercel.com/atom',                         // Vercel — Next.js, AI SDK
-      'https://blog.cloudflare.com/rss/',                // Cloudflare — Workers, edge AI
-      'https://blog.langchain.dev/rss/',                 // LangChain — agent frameworks
-      'https://supabase.com/blog/rss.xml',               // Supabase — database + edge functions
+      'https://vercel.com/atom',                         // Next.js, AI SDK
+      'https://blog.cloudflare.com/rss/',                // Workers, edge AI
+      'https://blog.langchain.dev/rss/',                 // Agent frameworks
+      // cursor.com/blog/rss.xml → 404, no working RSS known
+      // supabase.com/blog/rss.xml → invalid XML (malformed feed)
     ],
   },
 
@@ -35,10 +50,11 @@ export const FEED_CATEGORIES = {
   ai_labs: {
     weight: 0.95,
     feeds: [
-      'https://openai.com/news/rss.xml',                                    // OpenAI official
-      'https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_anthropic_news.xml', // Anthropic (community)
-      'https://deepmind.google/blog/feed.xml',                               // Google DeepMind
-      'https://ai.meta.com/blog/rss/',                                       // Meta AI — LLaMA, open models
+      'https://openai.com/news/rss.xml',
+      'https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_anthropic_news.xml',
+      'https://blog.google/technology/ai/rss/',          // Google AI (includes DeepMind)
+      // deepmind.google/blog/feed.xml → 404
+      // ai.meta.com/blog/rss/ → 404, Meta AI has no public RSS
     ],
   },
 
@@ -48,11 +64,10 @@ export const FEED_CATEGORIES = {
   ai_news: {
     weight: 0.9,
     feeds: [
-      'https://jack-clark.net/feed/',                    // Import AI
+      'https://jack-clark.net/feed/',
       'https://www.artificialintelligence-news.com/feed/',
       'https://the-decoder.com/feed/',
       'https://venturebeat.com/category/ai/feed/',
-      // v3.1: removed marktechpost (low quality)
     ],
   },
 
@@ -62,12 +77,12 @@ export const FEED_CATEGORIES = {
   ai_thinkers: {
     weight: 0.9,
     feeds: [
-      'https://www.youtube.com/feeds/videos.xml?channel_id=UCXHV3FJAyrFJXuVWQRCv2Yw', // Andrej Karpathy
       'https://huyenchip.com/feed.xml',                  // Chip Huyen — ML systems
       'https://sebastianraschka.com/rss_feed.xml',       // Sebastian Raschka — LLM training
       'https://www.swyx.io/rss.xml',                     // Swyx — AI engineering
-      'https://magazine.sebastianraschka.com/feed',       // Ahead of AI — monthly deep dives
-      'https://www.deeplearning.ai/the-batch/feed/',      // The Batch — Andrew Ng
+      'https://magazine.sebastianraschka.com/feed',      // Ahead of AI — monthly deep dives
+      // youtube Karpathy → 404, YouTube changed feed format
+      // deeplearning.ai/the-batch/feed/ → 404
     ],
   },
 
@@ -91,17 +106,15 @@ export const FEED_CATEGORIES = {
       'https://blog.pragmaticengineer.com/rss/',
       'https://entrepreneurshandbook.co/feed',
       'https://www.saastr.com/feed/',
-      // v3.1: new
-      'https://www.lennysnewsletter.com/feed',           // Lenny's Newsletter — #1 product/growth
+      'https://www.lennysnewsletter.com/feed',           // Lenny's Newsletter
       'http://www.aaronsw.com/2002/feeds/pgessays.rss',  // Paul Graham essays
-      'https://pluralistic.net/feed/',                    // Cory Doctorow — tech culture, monopolies
-      'https://ihrss.io/organic',                         // Indie Hackers top discussions
-      'https://ihrss.io/group/building-in-public',       // Indie Hackers: building in public
-      'https://thesaasplaybook.substack.com/feed',       // SaaS Playbook — bootstrapped
+      'https://pluralistic.net/feed/',                    // Cory Doctorow
       'https://www.producthunt.com/feed',                 // Product Hunt daily
       'https://news.ycombinator.com/rss',                 // HN frontpage
       'https://techcrunch.com/category/startups/feed/',   // TechCrunch Startups
-      'https://a16z.com/feed/',                           // a16z — VC perspective
+      // ihrss.io → DNS not found (domain does not exist)
+      // thesaasplaybook.substack.com → 403
+      // a16z.com/feed/ → 404
     ],
   },
 
@@ -116,10 +129,8 @@ export const FEED_CATEGORIES = {
       'https://www.gamesindustry.biz/feed/news',
       'https://itch.io/games/new-and-popular.xml',
       'https://godotengine.org/rss.xml',
-      // v3.1: new
-      'https://www.reddit.com/r/godot/top/.rss?t=day',   // Godot community
-      'https://www.reddit.com/r/gamedev/top/.rss?t=day',  // Broader game dev
-      'https://www.reddit.com/r/IndieDev/top/.rss?t=day', // Indie game devs
+      // reddit.com/r/godot, /r/gamedev, /r/IndieDev → all 403
+      // Reddit blocks anonymous RSS access. Do not re-add.
     ],
   },
 
@@ -133,10 +144,9 @@ export const FEED_CATEGORIES = {
       'https://www.creativebloq.com/feed',
       'https://arstechnica.com/ai/feed/',
       'https://www.theverge.com/rss/ai-artificial-intelligence/index.xml',
-      // v3.1: new
-      'https://stability.ai/news/feed',                   // Stable Diffusion, image gen
-      'https://runwayml.com/blog/rss.xml',                 // Runway — video AI
-      'https://www.wired.com/feed/rss',                    // WIRED — tech + culture
+      'https://www.wired.com/feed/rss',
+      // stability.ai/news/feed → 404 (company acquired by Black Forest Labs)
+      // runwayml.com/blog/rss.xml → 404
     ],
   },
 
@@ -146,12 +156,12 @@ export const FEED_CATEGORIES = {
   europe_tech: {
     weight: 0.75,
     feeds: [
-      'https://sifted.eu/feed/',
-      'https://eu-startups.com/feed/',
-      'https://siliconcanals.com/feed/',
       'https://tech.eu/feed/',
       'https://www.brusselsmorning.com/feed/',
       'https://www.politico.eu/section/technology/feed/',
+      // sifted.eu/feed/ → 403
+      // eu-startups.com/feed/ → 403
+      // siliconcanals.com/feed/ → 403
     ],
   },
 
@@ -167,11 +177,10 @@ export const FEED_CATEGORIES = {
       'https://stratechery.com/feed/',
       'https://www.oneusefulthing.org/feed',
       'https://www.technologyreview.com/feed/',
-      // v3.1: new HN variants
-      'https://hnrss.org/best?count=20&q=agent+OR+autonomous+OR+agentic', // Agentic AI wave
-      'https://hnrss.org/best?count=15&q=Claude+OR+Anthropic',             // Your primary tool
-      'https://hnrss.org/best?count=15&q=Europe+OR+EU+OR+Brussels',        // European angle on HN
-      'https://hnrss.org/whoishiring/jobs',                                 // Job market signal
+      'https://hnrss.org/best?count=20&q=agent+OR+autonomous+OR+agentic',
+      'https://hnrss.org/best?count=15&q=Claude+OR+Anthropic',
+      'https://hnrss.org/best?count=15&q=Europe+OR+EU+OR+Brussels',
+      'https://hnrss.org/whoishiring/jobs',
     ],
   },
 
@@ -186,47 +195,43 @@ export const FEED_CATEGORIES = {
   },
 
   // =====================================================
-  // Category 12: Reddit AI Communities
+  // Category 12: Tech Communities (formerly reddit_ai)
+  //
+  // Reddit blocks anonymous RSS (HTTP 403) — do not re-add reddit.com feeds.
+  // Lobste.rs is a curated, invitation-only tech community with high signal-to-noise.
   // =====================================================
-  reddit_ai: {
-    weight: 0.75, // v3.1: lowered from 0.8 — getting noisy
+  tech_communities: {
+    weight: 0.75,
     feeds: [
-      'https://www.reddit.com/r/LocalLLaMA/top/.rss?t=day',
-      'https://www.reddit.com/r/MachineLearning/top/.rss?t=day',
-      'https://www.reddit.com/r/ClaudeAI/top/.rss?t=day',
-      'https://www.reddit.com/r/singularity/top/.rss?t=day',
-      // v3.1: new
-      'https://www.reddit.com/r/ChatGPT/top/.rss?t=day',         // Competitor intelligence
-      'https://www.reddit.com/r/artificial/top/.rss?t=day',       // Broader AI discussion
-      'https://www.reddit.com/r/StableDiffusion/top/.rss?t=day',  // Creative AI community
+      'https://lobste.rs/t/ai.rss',                      // Lobste.rs AI tag
+      'https://lobste.rs/t/ml.rss',                      // Lobste.rs ML tag
     ],
   },
 
   // =====================================================
   // Category 13: Geopolitics & Global Economy
-  // The Economist / Adam Tooze / Bruegel style
   // =====================================================
   geopolitics: {
-    weight: 0.90, // v3.1: bumped from 0.85
+    weight: 0.90,
     feeds: [
       'https://www.project-syndicate.org/rss',
-      'https://www.bruegel.org/rss.xml',
-      'https://adamtooze.substack.com/feed',             // Chartbook
       'https://www.noahpinion.blog/feed',                 // Noah Smith
-      'https://marginalrevolution.com/feed',               // Tyler Cowen
+      'https://marginalrevolution.com/feed',              // Tyler Cowen
       'https://www.foreignaffairs.com/rss.xml',
-      'https://ecfr.eu/feed/',                             // European Council on Foreign Relations
-      'https://www.chathamhouse.org/rss',
-      // v3.1: new
-      'https://www.slowboring.com/feed',                   // Matt Yglesias — policy analysis
-      'https://theovershoot.co/feed',                      // Matthew C. Klein — macro research
-      'https://timothyash.substack.com/feed',              // Timothy Ash — EM & geopolitics
-      'https://www.geopoliticaldispatch.com/feed',         // Strategic geopolitical insights
-      'https://braddelong.substack.com/feed',              // DeLong — economic history
-      'https://constructionphysics.substack.com/feed',     // Brian Potter — industrial technology
-      'https://geopoliticsunplugged.substack.com/feed',    // Daily geopolitical briefings
-      'https://geopoliticalfutures.com/feed/',              // George Friedman — forecasting
-      'https://carnegieeurope.eu/rss/',                     // Carnegie Europe — security & democracy
+      'https://ecfr.eu/feed/',                            // European Council on Foreign Relations
+      'https://www.slowboring.com/feed',                  // Matt Yglesias — policy analysis
+      'https://theovershoot.co/feed',                     // Matthew C. Klein — macro
+      'https://www.geopoliticaldispatch.com/feed',        // Strategic insights
+      'https://geopoliticalfutures.com/feed/',            // George Friedman — forecasting
+      'https://adamtooze.com/feed/',                      // Adam Tooze — Chartbook (custom domain)
+      // bruegel.org/rss.xml → 403
+      // adamtooze.substack.com/feed → 403 (use adamtooze.com/feed/ above instead)
+      // chathamhouse.org/rss → 403
+      // timothyash.substack.com/feed → 403, no custom domain
+      // braddelong.substack.com/feed → 403, no custom domain
+      // constructionphysics.substack.com/feed → 403, no custom domain
+      // geopoliticsunplugged.substack.com/feed → 403, no custom domain
+      // carnegieeurope.eu/rss/ → not recognized as RSS format
     ],
   },
 
@@ -236,13 +241,13 @@ export const FEED_CATEGORIES = {
   economist: {
     weight: 0.90,
     feeds: [
-      'https://www.economist.com/leaders/rss.xml',                      // Editorial opinion
-      'https://www.economist.com/europe/rss.xml',                       // European politics & economy
-      'https://www.economist.com/finance-and-economics/rss.xml',       // Macro, ECB, trade
-      'https://www.economist.com/asia/rss.xml',                         // China, India, BRICS
-      'https://www.economist.com/science-and-technology/rss.xml',      // Tech through Economist lens
-      'https://www.economist.com/business/rss.xml',                     // Global business trends
-      'https://www.economist.com/middle-east-and-africa/rss.xml',      // MENA coverage
+      'https://www.economist.com/leaders/rss.xml',
+      'https://www.economist.com/europe/rss.xml',
+      'https://www.economist.com/finance-and-economics/rss.xml',
+      'https://www.economist.com/asia/rss.xml',
+      'https://www.economist.com/science-and-technology/rss.xml',
+      'https://www.economist.com/business/rss.xml',
+      'https://www.economist.com/middle-east-and-africa/rss.xml',
     ],
   },
 
@@ -252,10 +257,10 @@ export const FEED_CATEGORIES = {
   ft_sections: {
     weight: 0.80,
     feeds: [
-      'https://www.ft.com/world?format=rss',                           // Global news
-      'https://www.ft.com/global-economy?format=rss',                  // Macro, trade, GDP
-      'https://www.ft.com/opinion?format=rss',                         // Martin Wolf, Rana Foroohar
-      'https://www.ft.com/climate-capital?format=rss',                 // Green transition, energy
+      'https://www.ft.com/world?format=rss',
+      'https://www.ft.com/global-economy?format=rss',
+      'https://www.ft.com/opinion?format=rss',
+      'https://www.ft.com/climate-capital?format=rss',
     ],
   },
 
@@ -265,12 +270,12 @@ export const FEED_CATEGORIES = {
   eu_think_tanks: {
     weight: 0.80,
     feeds: [
-      'https://www.ceps.eu/feed/',                        // CEPS — Centre for European Policy Studies (Brussels)
-      'https://www.epc.eu/feed/',                          // EPC — European Policy Centre (Brussels)
-      'https://www.egmontinstitute.be/feed/',              // Egmont — Belgian foreign policy
-      'https://www.swp-berlin.org/en/rss-feeds/',          // SWP — German security & foreign policy
-      'https://thediplomat.com/feed/',                     // The Diplomat — Asia-Pacific
-      'https://www.euractiv.com/feed/',                    // Euractiv — EU policy
+      'https://thediplomat.com/feed/',                   // The Diplomat — Asia-Pacific focus
+      // ceps.eu/feed/ → 500 (server error)
+      // epc.eu/feed/ → 403
+      // egmontinstitute.be/feed/ → unable to parse XML
+      // swp-berlin.org/en/rss-feeds/ → 404
+      // euractiv.com/feed/ → 403
     ],
   },
 
@@ -278,16 +283,16 @@ export const FEED_CATEGORIES = {
   // Category 17: Europe Politics & Policy
   // =====================================================
   europe_politics: {
-    weight: 0.85, // v3.1: bumped from 0.8
+    weight: 0.85,
     feeds: [
       'https://www.politico.eu/feed/',
       'https://euobserver.com/rss',
-      'https://www.dw.com/en/top-stories/europe/rss',
+      'https://rss.dw.com/rdf/rss-en-europe',            // DW Europe (corrected URL)
       'https://www.theguardian.com/world/europe-news/rss',
-      'https://www.euronews.com/rss',
-      // v3.1: new
-      'https://www.france24.com/en/rss',                   // French global perspective
-      'https://www.reuters.com/world/rss',                  // Reuters wire service
+      'https://www.france24.com/en/rss',
+      // euronews.com/rss → malformed XML (non-whitespace before first tag)
+      // reuters.com/world/rss → 401 (paywall)
+      // dw.com/en/top-stories/europe/rss → 404 (old URL, replaced above)
     ],
   },
 
@@ -295,7 +300,7 @@ export const FEED_CATEGORIES = {
   // Category 18: Global Quality News
   // =====================================================
   global_quality: {
-    weight: 0.75, // v3.1: bumped from 0.65
+    weight: 0.75,
     feeds: [
       'https://feeds.bbci.co.uk/news/world/rss.xml',
       'https://www.aljazeera.com/xml/rss/all.xml',
@@ -304,41 +309,29 @@ export const FEED_CATEGORIES = {
   },
 
   // =====================================================
-  // Category 19: Reddit Geopolitics & Communities
-  // =====================================================
-  reddit_geopolitics: {
-    weight: 0.7,
-    feeds: [
-      'https://www.reddit.com/r/geopolitics/top/.rss?t=day',
-      'https://www.reddit.com/r/europe/top/.rss?t=day',
-      'https://www.reddit.com/r/economics/top/.rss?t=day',
-      // v3.1: new
-      'https://www.reddit.com/r/GlobalTalk/top/.rss?t=day',          // International perspectives
-      'https://www.reddit.com/r/EuropeanFederalists/top/.rss?t=week', // EU integration
-      'https://www.reddit.com/r/belgica/top/.rss?t=day',              // Belgian news
-    ],
-  },
-
-  // =====================================================
-  // Category 20: Meta, Philosophy & Deep Reads
+  // Category 19: Meta, Philosophy & Deep Reads
   // =====================================================
   meta_philosophy: {
     weight: 0.55,
     feeds: [
-      'https://80000hours.org/feed/',                      // Career impact, AI safety, EA
-      'https://www.astralcodexten.com/feed',               // Scott Alexander — rationality, science
-      'https://www.lesswrong.com/feed.xml',                // Rationality, AI alignment
-      'https://timharford.com/feed/',                       // Undercover Economist
-      'https://waitbutwhy.com/feed',                        // Long-form explainers
-      'https://fs.blog/feed/',                              // Farnam Street — mental models
-      'https://thebrowser.com/feed/',                       // Curated best writing on the web
-      'https://worksinprogress.co/feed',                    // Progress, science, infrastructure
-      'https://www.palladiummag.com/feed/',                 // Governance, technology, civilization
-      'https://www.noemamag.com/feed/',                     // Cross-disciplinary thinking
-      'https://www.ben-evans.com/feed',                     // Benedict Evans — weekly tech/macro
-      'https://daringfireball.net/feeds/main',              // John Gruber — Apple, design, tech
+      'https://80000hours.org/feed/',
+      'https://www.astralcodexten.com/feed',
+      'https://www.lesswrong.com/feed.xml',
+      'https://timharford.com/feed/',
+      'https://waitbutwhy.com/feed',
+      'https://fs.blog/feed/',
+      'https://thebrowser.com/feed/',
+      'https://www.palladiummag.com/feed/',
+      'https://www.noemamag.com/feed/',
+      'https://daringfireball.net/feeds/main',
+      // worksinprogress.co/feed → 404
+      // ben-evans.com/feed → 404
     ],
   },
+
+  // NOTE: reddit_geopolitics category removed entirely.
+  // All feeds were Reddit RSS (r/geopolitics, r/europe, r/economics, etc.)
+  // Reddit blocks anonymous RSS access — HTTP 403 on all feeds.
 };
 
 // --- Models (v3.0: ALL Sonnet 4.6) ---
@@ -360,13 +353,13 @@ export const BUDGET_MODE = 'unlimited';
 // --- News Interests ---
 export const NEWS_INTERESTS_FILE = 'data/news-interests.md';
 
-// --- Scoring (v3.1: 100 articles, expanded keywords for new categories) ---
+// --- Scoring (v3.3: adjusted for feed count reduction) ---
 export const SCORING = {
-  topN: 100,        // v3.1: bumped from 80 — more feeds = more top articles
-  minScore: 3,             // v3.2: lowered from 4
+  topN: 100,
+  minScore: 3,
   batchSize: 10,
-  preFilterThreshold: 400, // v3.2: bumped from 250 // v3.1: bumped from 200
-  preFilterMax: 350,       // v3.2: bumped from 200       // v3.1: bumped from 150
+  preFilterThreshold: 300,  // v3.3: lowered — fewer feeds, fewer total articles
+  preFilterMax: 300,        // v3.3: lowered accordingly
   preFilterKeywords: [
     'AI', 'LLM', 'agent', 'Claude', 'GPT', 'Cursor', 'coding', 'prompt', 'autonomous',
     'no-code', 'nocode', 'founder', 'startup', 'tool', 'API', 'automation', 'EU', 'Europe',
@@ -376,7 +369,7 @@ export const SCORING = {
     'Brussels', 'Belgium', 'ECB', 'inflation', 'GDP', 'climate', 'energy',
     'China', 'Russia', 'Ukraine', 'Middle East', 'Africa', 'India', 'BRICS',
     'democracy', 'regulation', 'sovereignty', 'industrial policy',
-    // v3.1: Economist/FT-style keywords
+    // Economist/FT-style keywords
     'Economist', 'monetary', 'fiscal', 'central bank', 'interest rate', 'supply chain',
     'commodities', 'oil', 'gas', 'semiconductor', 'chip', 'ASML', 'TSMC',
     'European Commission', 'European Parliament', 'von der Leyen', 'Macron', 'Scholz',
@@ -395,7 +388,7 @@ export const LIFE_CONTEXT_FILE = 'data/life-context.md';
 export const MEMORY_FILE = 'data/memory.json';
 export const BRIEFINGS_DIR = 'briefings';
 
-// --- Limits (v3.1: expanded for more feeds) ---
+// --- Limits ---
 export const LIMITS = {
   maxArticleLength: 8000,
   maxArticleAge: 48,
@@ -406,7 +399,7 @@ export const LIMITS = {
 // --- Prompts ---
 
 // v3.0: Batch scoring prompt — one Sonnet call for ALL articles
-export const SCORING_PROMPT = `You are the scoring engine for PRISM v3.1, a personal intelligence system.
+export const SCORING_PROMPT = `You are the scoring engine for PRISM v3.3, a personal intelligence system.
 
 You will receive a NEWS INTEREST PROFILE and a list of articles. Score each article 0-10 based on relevance to the profile.
 
@@ -425,12 +418,12 @@ BATCH SCORING RULES:
 - Geopolitics/economics: score based on the interest profile's stated priorities, not generic news value.
 - Economist/FT articles: score higher when they match the profile's analytical lens (structural forces, not breaking news).
 
-Respond with a JSON array, one entry per article in the SAME ORDER as input.
+Respond with ONLY a JSON array, one entry per article in the SAME ORDER as input.
 IMPORTANT: Include the article index number in each entry for reliable mapping.
 [{"index": 0, "score": N, "reason": "one sentence", "tags": ["tag1"], "actionable": true/false}, ...]`;
 
 // v3.0: THE BIG CALL — single massive prompt for research + synthesis
-export const RESEARCH_PROMPT = `You are PRISM v3.1, a personal research intelligence system.
+export const RESEARCH_PROMPT = `You are PRISM v3.3, a personal research intelligence system.
 
 You have access to web search. Use it to:
 1. VERIFY claims in the articles — check if a tool/release/announcement is real

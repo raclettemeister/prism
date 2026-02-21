@@ -38,28 +38,52 @@ Respond with ONLY valid JSON:
   "summary": "one sentence overall assessment"
 }`;
 
+/**
+ * Robustly extract a JSON object from a model response.
+ * Handles: code fences, preamble text, postamble text.
+ * Returns the parsed object or null if extraction fails.
+ */
+function extractJsonObject(text) {
+  // Try 1: strip markdown code fences and parse directly
+  const stripped = text.replace(/```json\n?/g, '').replace(/```\n?/g, '').trim();
+  try {
+    const parsed = JSON.parse(stripped);
+    if (parsed && typeof parsed === 'object' && !Array.isArray(parsed)) return parsed;
+  } catch { /* fall through */ }
+
+  // Try 2: find the first {...} block in the response (handles preamble/postamble)
+  const match = text.match(/\{[\s\S]*\}/);
+  if (match) {
+    try {
+      const parsed = JSON.parse(match[0]);
+      if (parsed && typeof parsed === 'object' && !Array.isArray(parsed)) return parsed;
+    } catch { /* fall through */ }
+  }
+
+  return null;
+}
+
 export default async function validate(briefing) {
   console.log('\n✅ VALIDATING briefing against source data...');
 
   try {
+    // No adaptive thinking — this is a structured JSON fact-check, not creative synthesis.
+    // Thinking mode adds tokens and can produce non-JSON preamble that breaks parsing.
     const response = await client.messages.create({
       model: MODELS.analyzer, // Sonnet 4.6
       max_tokens: 4096,
-      thinking: { type: 'adaptive' },
       messages: [{
         role: 'user',
         content: `${VALIDATION_PROMPT}\n\n===== BRIEFING =====\n${briefing}`
       }],
     });
 
-    // Filter for text blocks (skip thinking blocks)
+    // All content should be text blocks (no thinking blocks since we removed adaptive thinking)
     const textBlocks = response.content.filter(b => b.type === 'text');
     const text = textBlocks.map(b => b.text).join('').trim();
 
-    let validation;
-    try {
-      validation = JSON.parse(text.replace(/```json\n?/g, '').replace(/```\n?/g, '').trim());
-    } catch {
+    const validation = extractJsonObject(text);
+    if (!validation) {
       console.log('  ⚠️ Validation parse failed — proceeding with unvalidated briefing');
       return {
         confidence: 0.5,

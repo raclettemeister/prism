@@ -100,14 +100,28 @@ export default async function generateContext() {
 
 /**
  * Clone the MylifeOS repo.
+ *
+ * MYLIFEOS_REPO may be a bare path ("user/repo") or a full HTTPS URL.
+ * GitHub PAT authentication uses the oauth2 format:
+ *   https://oauth2:PAT@github.com/user/repo
+ *
+ * GIT_TERMINAL_PROMPT=0 prevents git from hanging on a credential prompt
+ * in headless CI environments (it will fail fast instead).
  */
 async function cloneRepo(repoUrl) {
   console.log('  📥 Cloning MylifeOS...');
 
-  let authUrl = repoUrl;
+  // Normalize: if the secret is stored as "user/repo", construct the full URL
+  let normalizedUrl = repoUrl;
+  if (!repoUrl.startsWith('http')) {
+    normalizedUrl = `https://github.com/${repoUrl}`;
+  }
+
+  let authUrl = normalizedUrl;
   const pat = process.env.MYLIFEOS_PAT;
-  if (pat && repoUrl.startsWith('https://')) {
-    authUrl = repoUrl.replace('https://', `https://${pat}@`);
+  if (pat) {
+    // Use oauth2 token format — works with fine-grained and classic PATs
+    authUrl = normalizedUrl.replace('https://github.com/', `https://oauth2:${pat}@github.com/`);
   }
 
   try {
@@ -115,6 +129,11 @@ async function cloneRepo(repoUrl) {
     execSync(`git clone --depth 1 --single-branch ${authUrl} ${MYLIFEOS_DIR}`, {
       stdio: 'pipe',
       timeout: 60000,
+      env: {
+        ...process.env,
+        GIT_TERMINAL_PROMPT: '0', // never prompt — fail fast instead of hanging
+        GIT_ASKPASS: 'echo',      // return empty string if credentials are requested
+      },
     });
     console.log('  ✅ MylifeOS cloned');
   } catch (err) {

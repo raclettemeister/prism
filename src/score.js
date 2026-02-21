@@ -36,6 +36,31 @@ async function loadNewsInterests() {
 }
 
 /**
+ * Robustly extract a JSON array from a model response.
+ * Handles: code fences, preamble text, postamble text.
+ * Returns the parsed array or null if extraction fails.
+ */
+function extractJsonArray(text) {
+  // Try 1: strip markdown code fences and parse directly
+  const stripped = text.replace(/```json\n?/g, '').replace(/```\n?/g, '').trim();
+  try {
+    const parsed = JSON.parse(stripped);
+    if (Array.isArray(parsed)) return parsed;
+  } catch { /* fall through */ }
+
+  // Try 2: find the first [...] block in the response (handles preamble/postamble)
+  const match = text.match(/\[[\s\S]*\]/);
+  if (match) {
+    try {
+      const parsed = JSON.parse(match[0]);
+      if (Array.isArray(parsed)) return parsed;
+    } catch { /* fall through */ }
+  }
+
+  return null;
+}
+
+/**
  * Score all articles in ONE Sonnet call. Sonnet sees the full list
  * and can compare articles, detect redundancy, and apply relative scoring.
  */
@@ -55,12 +80,9 @@ async function batchScore(articles, newsInterests) {
 
   const text = response.content[0].text.trim();
 
-  // Parse JSON array of scores
-  let scores;
-  try {
-    const jsonStr = text.replace(/\`\`\`json\n?/g, '').replace(/\`\`\`\n?/g, '').trim();
-    scores = JSON.parse(jsonStr);
-  } catch {
+  // Parse JSON array of scores — robust extraction handles preamble/postamble text
+  let scores = extractJsonArray(text);
+  if (!scores) {
     console.log('  Batch score parse failed, falling back to regex extraction');
     scores = [];
     const indexMatches = text.matchAll(/"index"\s*:\s*(\d+)\s*,\s*"score"\s*:\s*(\d+)/g);
