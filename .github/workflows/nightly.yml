@@ -11,7 +11,7 @@ on:
 jobs:
   run-prism:
     runs-on: ubuntu-latest
-    timeout-minutes: 25  # v3.0: increased for web search + 1M context
+    timeout-minutes: 35  # v3.2: increased — Big Call with web search needs ~20min
 
     steps:
       - name: Checkout repo
