@@ -62,7 +62,7 @@ function estimateCost(inputTokens, outputTokens) {
 
 function buildPortalUrl(date) {
   const base = process.env.PRISM_PORTAL_URL || 'https://prism.julien.care';
-  return `${base}/briefings/${date}.html`;
+  return `${base}/${date}.html`;
 }
 
 // ── Data Loaders ─────────────────────────────────────────────

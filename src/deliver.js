@@ -26,7 +26,7 @@ export default async function deliver(briefingMarkdown, stats) {
 
   // Build live portal URL if configured
   const portalBase = process.env.PRISM_PORTAL_URL || '';
-  const liveUrl = portalBase ? `${portalBase}/briefings/${todayIso}.html` : '';
+  const liveUrl = portalBase ? `${portalBase}/${todayIso}.html` : '';
 
   // Inject portal link banner into markdown before rendering
   const portalBanner = liveUrl

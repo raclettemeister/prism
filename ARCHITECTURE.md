@@ -211,7 +211,7 @@ Generates `briefings/YYYY-MM-DD.html` alongside the `.md` file.
 - If no worker: downloads feedback as JSON for manual import
 - Self-contained: no external CDN dependencies
 
-The page is committed to git and auto-deployed via Cloudflare Pages.
+The page is committed to git and auto-deployed via Cloudflare Pages. The workflow deploys the `briefings` directory as the site root, so the live URL is `{PRISM_PORTAL_URL}/{date}.html` (no `/briefings/` in the path).
 
 ---
 

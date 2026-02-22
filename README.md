@@ -107,7 +107,7 @@ Auto-generated from MylifeOS daily. Tells PRISM what you're building, your prior
 
 After each run, PRISM generates both:
 - `data/feedback-template.md` → pushed to your vault as `Journal/prism-feedback.md` (Obsidian)
-- `briefings/YYYY-MM-DD.html` → deployed to Cloudflare Pages
+- `briefings/YYYY-MM-DD.html` → deployed to Cloudflare Pages (live at `{PRISM_PORTAL_URL}/{date}.html`; the `briefings` folder is deployed as the site root)
 
 ### Via the live portal (recommended):
 1. Click the link in your morning email

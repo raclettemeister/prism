@@ -136,7 +136,7 @@ async function main() {
     const elapsed = ((Date.now() - startTime) / 1000).toFixed(1);
     const finalCost = estimateCost(totalInputTokens, totalOutputTokens);
     const portalBase = process.env.PRISM_PORTAL_URL || '';
-    const liveUrl = portalBase ? `${portalBase}/briefings/${today}.html` : pageFilepath;
+    const liveUrl = portalBase ? `${portalBase}/${today}.html` : pageFilepath;
 
     console.log('\n═══════════════════════════════════════════════');
     console.log('  PRISM v4.0 RUN COMPLETE');
