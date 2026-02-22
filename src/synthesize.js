@@ -147,6 +147,10 @@ async function loadFeedback() {
   try {
     const raw = await readFile('data/feedback-latest.md', 'utf-8');
     if (raw.trim() && !raw.includes('(empty — edit this section)')) {
+      // Ignore redirect/HTML error pages (e.g. wrong MylifeOS URL) — treat as no feedback
+      if (/Temporary Redirect|Moved Permanently|<!DOCTYPE|<a\s+href/i.test(raw)) {
+        return { text: null, structured: null };
+      }
       return { text: raw, structured: null };
     }
   } catch { /* fall through */ }

@@ -43,9 +43,23 @@ jobs:
       - name: Copy feedback from MylifeOS
         run: |
           if [ -n "$MYLIFEOS_PAT" ] && [ -n "$MYLIFEOS_REPO" ]; then
-            curl -sf -H "Authorization: token $MYLIFEOS_PAT" \
-              "https://raw.githubusercontent.com/$MYLIFEOS_REPO/main/Journal/prism-feedback.md" \
-              -o data/feedback-latest.md || echo "⚠️ No feedback file found — first run"
+            # Normalize repo: raw.githubusercontent.com expects "owner/repo" without .git
+            REPO_NORM="${MYLIFEOS_REPO%.git}"
+            TMP=$(mktemp)
+            if curl -sf -H "Authorization: token $MYLIFEOS_PAT" \
+              "https://raw.githubusercontent.com/$REPO_NORM/main/Journal/prism-feedback.md" \
+              -o "$TMP"; then
+              # Do not overwrite with redirect or HTML error pages
+              if grep -q -e "Temporary Redirect" -e "Moved Permanently" -e "<!DOCTYPE" -e "<a href" "$TMP" 2>/dev/null; then
+                echo "⚠️ MylifeOS returned redirect/HTML — clearing feedback-latest.md (use Worker JSON or fix MylifeOS URL)"
+                printf '' > data/feedback-latest.md
+              else
+                mv "$TMP" data/feedback-latest.md
+              fi
+            else
+              echo "⚠️ No feedback file found — first run"
+            fi
+            rm -f "$TMP"
           fi
         env:
           MYLIFEOS_PAT: ${{ secrets.MYLIFEOS_PAT }}
