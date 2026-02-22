@@ -46,7 +46,7 @@ function extractMustReads(markdown) {
 
 // ── HTML Builder ─────────────────────────────────────────────
 
-function buildPage(markdown, date, articleCount, articles, workerUrl) {
+function buildPage(markdown, date, articleCount, articles, workerUrl, feedbackSecret) {
   // Render markdown to HTML
   let contentHtml = marked.parse(markdown);
 
@@ -355,6 +355,7 @@ function buildPage(markdown, date, articleCount, articles, workerUrl) {
   // ── State ────────────────────────────────────────────────
   const ARTICLES = ${articlesJson};
   const WORKER_URL = ${JSON.stringify(workerUrl || '')};
+  const FEEDBACK_SECRET = ${JSON.stringify(feedbackSecret || '')};
   const DATE = ${JSON.stringify(date)};
 
   const state = {
@@ -454,9 +455,11 @@ function buildPage(markdown, date, articleCount, articles, workerUrl) {
     }
 
     try {
+      const headers = { 'Content-Type': 'application/json' };
+      if (FEEDBACK_SECRET) headers['X-PRISM-Secret'] = FEEDBACK_SECRET;
       const res = await fetch(WORKER_URL, {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers,
         body: JSON.stringify(payload),
       });
 
@@ -500,9 +503,10 @@ function buildPage(markdown, date, articleCount, articles, workerUrl) {
  */
 export default async function generatePage(markdown, date, articleCount = 0) {
   const workerUrl = process.env.FEEDBACK_WORKER_URL || '';
+  const feedbackSecret = process.env.PRISM_FEEDBACK_SECRET || '';
   const articles = extractMustReads(markdown);
 
-  const html = buildPage(markdown, date, articleCount, articles, workerUrl);
+  const html = buildPage(markdown, date, articleCount, articles, workerUrl, feedbackSecret);
 
   await mkdir(BRIEFINGS_DIR, { recursive: true });
   const filepath = `${BRIEFINGS_DIR}/${date}.html`;
