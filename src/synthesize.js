@@ -62,7 +62,7 @@ function estimateCost(inputTokens, outputTokens) {
 
 function buildPortalUrl(date) {
   const base = process.env.PRISM_PORTAL_URL || 'https://prism.julien.care';
-  return `${base}/briefings/${date}`;
+  return `${base}/briefings/${date}.html`;
 }
 
 // ── Data Loaders ─────────────────────────────────────────────
@@ -328,7 +328,11 @@ function assembleBriefing(callAOutput, callBOutput, date, articleCount, webSearc
   const headerMatch = callAOutput.match(/^([\s\S]*?)(?=\n## 🔴|\n## THE SIGNAL|$)/);
   const header = headerMatch ? headerMatch[1].trim() : `# PRISM Morning Briefing — ${date}`;
 
-  const combined = callAOutput + '\n\n' + callBOutput;
+  // Strip any leading "# PRISM Morning Briefing…" header from Call B.
+  // The model sometimes generates its own header (occasionally with the wrong date).
+  // Call A's header is the canonical one — Call B's is always discarded.
+  const callBStripped = callBOutput.replace(/^#+\s*PRISM[^\n]*\n+/i, '').trim();
+  const combined = callAOutput + '\n\n' + callBStripped;
 
   // Extract sections in canonical order
   const sectionPatterns = [

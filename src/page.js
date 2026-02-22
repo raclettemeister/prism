@@ -31,8 +31,9 @@ function extractMustReads(markdown) {
   const sectionText = sectionMatch[1];
   const articles = [];
 
-  // Match: **[Title]** by Author — Source (link)
-  const regex = /\*\*\[([^\]]+)\]\*\*(?:[^\n]*)—\s*([^\n(]+)/g;
+  // Match: **"Title"** by Author — Source (link)  [quoted format, synthesize.js output]
+  //   or: **[Title]** by Author — Source (link)  [bracketed format, legacy fallback]
+  const regex = /\*\*["\[]([^"[\]\n]+)["\]]\*\*(?:[^\n]*)—\s*([^\n(]+)/g;
   let match;
   while ((match = regex.exec(sectionText)) !== null) {
     articles.push({
