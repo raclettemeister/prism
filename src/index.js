@@ -153,6 +153,14 @@ async function main() {
     console.log(`  Time:         ${elapsed}s`);
     console.log('═══════════════════════════════════════════════\n');
 
+    // Diagnostic: log open handles/requests that would otherwise prevent exit
+    const handles = process._getActiveHandles?.()?.length ?? '?';
+    const requests = process._getActiveRequests?.()?.length ?? '?';
+    if (handles > 0 || requests > 0) {
+      console.log(`  [debug] Forcing exit (${handles} open handles, ${requests} pending requests)`);
+    }
+    process.exit(0);
+
   } catch (err) {
     console.error('\n💥 PRISM ERROR:', err.message);
     console.error(err.stack);
@@ -167,5 +175,12 @@ function estimateCost(inputTokens, outputTokens) {
   const cost = (inputTokens / 1_000_000) * 3 + (outputTokens / 1_000_000) * 15;
   return cost.toFixed(2);
 }
+
+// Catch any unhandled promise rejections from background async operations
+// (e.g. lingering SDK connections, feed parsers) that escape the main try-catch.
+process.on('unhandledRejection', (err) => {
+  console.error('\n💥 UNHANDLED REJECTION:', err?.message || err);
+  process.exit(1);
+});
 
 main();
