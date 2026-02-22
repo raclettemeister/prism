@@ -460,3 +460,132 @@ cryptocurrency, blockchain, social media growth hacks
 12. `.env.example` — document new environment variables
 13. `ARCHITECTURE.md` — update for v4.0
 14. `README.md` — update for v4.0
+
+---
+
+## Post-Launch Fixes — From First Run (2026-02-22)
+
+**Run diagnostics:**
+- Cost: $0.48 ✅ | Runtime: 722s (12 min) ✅ | Email: delivered ✅
+- Confidence: 41% ❌ | WebIntel: 476s ❌ | ai_builder feeds: 6/8 dead ❌
+
+---
+
+### Fix 1 (CRITICAL) — WebIntel redesign: single unified call
+
+**Problem:** 8 separate Claude API calls "in parallel" took 476 seconds (66% of total runtime). Anthropic serializes concurrent web search calls server-side. One call taking ~60s × effectively serial = 476s.
+
+**Root cause:** Current architecture: (1) generate query JSON → (2) 8 separate streaming API calls. Even with `Promise.all()`, the server-side bottleneck makes them near-sequential.
+
+**Fix:** Replace with ONE unified streaming Claude call that self-directs all its searches internally. Claude with web search enabled naturally does multiple sequential searches inside one API call. This brings WebIntel from ~476s to ~90-120s.
+
+**Code change:** Rewrite `src/webintel.js` — remove `generateQueries()` + `executeSearch()` + `Promise.all()` pattern. Replace with a single `client.beta.messages.stream()` call using a new sharper prompt.
+
+**New WEBINTEL_PROMPT** (replace in `src/config.js`):
+```
+You are PRISM's Intelligence Scout. Gather today's most important external intelligence.
+You have web search. Perform 4-6 targeted searches NOW, then write a structured report.
+
+SEARCH PRIORITIES:
+1. AI tool releases/updates: Claude Code, Cursor, Windsurf, Lovable, Bolt.new — what changed today?
+2. AI-assisted engineering: methodology breakthroughs, the "70% Problem" in production, spec-driven dev?
+3. Micro-SaaS/indie: notable product launches, builder case studies, new tools?
+4. Europe: EU AI regulation news, Belgian or Brussels business developments?
+5. World: geopolitical shifts affecting European founders (ECB, trade, US-EU tech)?
+
+DO NOT search for personal projects or general background knowledge.
+FOCUS on: what changed in the last 24-48 hours that a Brussels micro-SaaS builder would not already know.
+
+After completing your searches, write a structured intelligence report:
+## [Topic]
+[2-3 sentences of key findings with source URL]
+```
+
+**Expected improvement:** WebIntel time: 476s → ~90s. Total runtime: 12 min → ~5 min.
+
+---
+
+### Fix 2 (HIGH) — ai_builder feed URL cleanup
+
+**Problem:** 6 of 8 new ai_builder feeds returned 404 or 403. Most expert Substacks block anonymous RSS. The ones that work today: `latent.space`, `simonwillison.net`, `economist.com`, `noahpinion.blog`.
+
+**Dead feeds to remove from `src/config.js`:**
+```
+every.to/feed                    → 404
+buildermethods.substack.com/feed → 403 (Substack blocked)
+briancasel.com/feed              → 404
+steve-yegge.substack.com/feed    → 403 (Substack blocked)
+steveyegge.substack.com/feed     → 403 (Substack blocked)
+addyosmani.com/rss               → 404
+```
+
+**Keep (working, just 0 articles today):**
+```
+every.to/chain-of-thought/feed   → alive, 0 articles (Dan Shipper publishes infrequently)
+addyosmani.com/feed.xml          → alive, 0 articles
+```
+
+**Add to `big_picture` as author-specific HN coverage** (these authors' work surfaces on HN):
+```javascript
+'https://hnrss.org/best?count=15&q=Dan+Shipper+OR+Every+newsletter+OR+Chain+of+Thought',
+'https://hnrss.org/best?count=15&q=Steve+Yegge+OR+vibe+coding+OR+Addy+Osmani',
+'https://hnrss.org/best?count=15&q=Brian+Casel+OR+Builder+Methods+OR+micro-SaaS+founder',
+```
+
+**Also fix broken nocode feeds:**
+```
+lovable.dev/blog/rss     → malformed XML (remove)
+lovable.dev/rss.xml      → 404 (remove)
+changelog.lovable.dev/rss → DNS not found (remove)
+codeium.com/blog/rss     → malformed XML (remove)
+codeium.com/blog/rss.xml → not recognized as RSS (remove)
+cursor.com/changelog/rss → 404 (remove — confirmed dead since v3.3)
+```
+
+**Keep from nocode:** `blog.replit.com/feed.xml`, `blog.val.town/rss.xml`, `blog.stackblitz.com/rss.xml`
+
+---
+
+### Fix 3 (HIGH) — MylifeOS PAT expired (USER ACTION)
+
+**Problem:** `remote: Invalid username or token. Password authentication is not supported for Git operations.`
+
+PRISM fell back to a 4-day-old `data/life-context.md`. This caused the 41% confidence score because synthesis was working from stale context about projects and priorities.
+
+**No code change needed.** User action required:
+1. Go to `github.com/settings/tokens` → generate a **Classic token** (not fine-grained) with `repo` scope
+2. Go to `github.com/raclettemeister/prism` → Settings → Secrets and variables → Actions → update `MYLIFEOS_PAT`
+
+After this fix, confidence should return to 80%+ because PRISM will have accurate current context.
+
+---
+
+### Fix 4 (MEDIUM) — Page widget extraction
+
+**Problem:** `📄 PAGE — (0 article widgets)` — The regex in `src/page.js` doesn't match the actual MUST-READ format Claude outputs.
+
+**Expected format (what regex expects):**
+```markdown
+**[Title]** by Author — Source (link)
+```
+
+**Actual format Claude outputs:**
+```markdown
+**1. ["Title with quotes"]** by Author — Source ([link](url))
+```
+
+**Fix options:**
+- Option A: Update regex to handle numbered + quoted format: `/\*\*\d+\.\s*\[?"?([^"\]]+)"?\]?\*\*/g`
+- Option B: Simplify — extract articles from the feedback panel as a static list of titles found in the markdown (not inject inline buttons into the rendered HTML). Show article feedback widgets as a bottom panel list, not embedded in the content flow. More reliable, less brittle.
+
+**Recommended: Option B** — move article widgets out of the content HTML and into the bottom feedback panel as a clean labeled list. The content stays untouched; the feedback panel lists articles with reaction buttons.
+
+---
+
+### Fix 5 (LOW) — Cloudflare Pages portal verification
+
+**Problem:** The portal deploy step ran but `CLOUDFLARE_API_TOKEN` + `CLOUDFLARE_ACCOUNT_ID` secrets were set after the first run started, so this run didn't deploy.
+
+**Expected behavior on next run:** The `Deploy briefing to Cloudflare Pages` step will auto-run via `npx wrangler pages deploy briefings --project-name=prism-portal`. On first successful deploy, Cloudflare creates the `prism-portal` project and the URL `https://prism-portal.pages.dev` becomes live.
+
+**Verification:** After next run completes, visit `https://prism-portal.pages.dev/2026-02-22.html`
