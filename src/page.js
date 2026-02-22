@@ -45,11 +45,69 @@ function extractMustReads(markdown) {
   return articles.slice(0, 8);
 }
 
+/**
+ * Extract tool names and snippets from the TOOLS TO TRY section.
+ * Tools are top-level list items: "- **`name`** — desc" or "- **Name** — desc".
+ */
+function extractTools(markdown) {
+  const sectionMatch = markdown.match(/## 🛠️ TOOLS TO TRY([\s\S]*?)(?=\n## |$)/);
+  if (!sectionMatch) return [];
+
+  const sectionText = sectionMatch[1];
+  const tools = [];
+  // Split by top-level list items: newline + "- **" (start of a tool entry)
+  const blocks = sectionText.split(/\n(?=- \*\*)/);
+  for (const block of blocks) {
+    const trimmed = block.trim();
+    if (!trimmed) continue;
+    // Name is inside first **...** or **`...`**
+    const nameMatch = trimmed.match(/^- \*\*`?([^`*]+)`?\*\*[ —-]/) || trimmed.match(/^- \*\*([^*]+)\*\*[ —-]/);
+    if (!nameMatch) continue;
+    const name = nameMatch[1].trim();
+    const snippet = trimmed.replace(/\s+/g, ' ').slice(0, 400);
+    tools.push({ name, snippet });
+  }
+
+  return tools.slice(0, 12);
+}
+
+/**
+ * Inject tool feedback HTML into the TOOLS TO TRY section (before marked parse).
+ * Inserts a widget after each tool block so the page can collect per-tool reactions.
+ */
+function injectToolWidgetsInMarkdown(markdown, tools) {
+  if (!tools.length) return markdown;
+
+  const sectionMatch = markdown.match(/## 🛠️ TOOLS TO TRY([\s\S]*?)(?=\n## |$)/);
+  if (!sectionMatch) return markdown;
+
+  const sectionText = sectionMatch[1];
+  // Split by double newline followed by "- **" (start of next tool)
+  const blocks = sectionText.split(/\n\n(?=- \*\*)/);
+  let toolIndex = 0;
+
+  for (let i = 0; i < blocks.length && toolIndex < tools.length; i++) {
+    const block = blocks[i];
+    if (!/^- \*\*/.test(block.trim())) continue;
+    const nameEscaped = tools[toolIndex].name.replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;');
+    const widget = `\n\n<div class="tool-feedback" data-tool="${toolIndex}" data-name="${nameEscaped}"><span class="tool-feedback-label">React:</span> <button class="tool-reaction-btn" data-value="love" onclick="setToolReaction(${toolIndex}, 'love', this)">❤️</button> <button class="tool-reaction-btn" data-value="ok" onclick="setToolReaction(${toolIndex}, 'ok', this)">👍</button> <button class="tool-reaction-btn" data-value="skip" onclick="setToolReaction(${toolIndex}, 'skip', this)">👎</button></div>`;
+    blocks[i] = block + widget;
+    toolIndex++;
+  }
+
+  const newSectionText = blocks.join('\n\n');
+  return markdown.replace(/## 🛠️ TOOLS TO TRY[\s\S]*?(?=\n## |$)/, `## 🛠️ TOOLS TO TRY${newSectionText}`);
+}
+
 // ── HTML Builder ─────────────────────────────────────────────
 
-function buildPage(markdown, date, articleCount, articles, workerUrl, feedbackSecret) {
+function buildPage(markdown, date, articleCount, articles, tools, workerUrl, feedbackSecret) {
+  let md = markdown;
+  if (tools.length > 0) {
+    md = injectToolWidgetsInMarkdown(markdown, tools);
+  }
   // Render markdown to HTML
-  let contentHtml = marked.parse(markdown);
+  let contentHtml = marked.parse(md);
 
   // Inject article feedback widgets after each must-read item
   articles.forEach((article, i) => {
@@ -99,6 +157,7 @@ function buildPage(markdown, date, articleCount, articles, workerUrl, feedbackSe
   });
 
   const articlesJson = JSON.stringify(articles);
+  const toolsJson = JSON.stringify(tools);
 
   return `<!DOCTYPE html>
 <html lang="en">
@@ -192,6 +251,33 @@ function buildPage(markdown, date, articleCount, articles, workerUrl, feedbackSe
     .reaction-btn.active-love { background: rgba(231,76,60,0.15); border-color: var(--love); color: var(--love); }
     .reaction-btn.active-ok { background: rgba(52,152,219,0.15); border-color: var(--ok); color: var(--ok); }
     .reaction-btn.active-skip { background: rgba(102,102,102,0.15); border-color: #666; color: #888; }
+    /* Tool feedback widgets (per tool in TOOLS TO TRY) */
+    .tool-feedback {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      margin: 8px 0 12px 0;
+      padding: 6px 10px;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      font-size: 0.9rem;
+    }
+    .tool-feedback-label { color: var(--text-muted); margin-right: 4px; }
+    .tool-reaction-btn {
+      background: transparent;
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 4px 8px;
+      cursor: pointer;
+      opacity: 0.7;
+      font-size: 1rem;
+    }
+    .tool-reaction-btn:hover { opacity: 1; }
+    .tool-reaction-btn.active-love { opacity: 1; border-color: var(--love); background: rgba(231,76,60,0.15); }
+    .tool-reaction-btn.active-ok { opacity: 1; border-color: var(--accent); background: rgba(232,117,59,0.15); }
+    .tool-reaction-btn.active-skip { opacity: 1; border-color: var(--text-muted); background: rgba(136,136,136,0.15); }
+
     /* Section feedback widgets */
     .section-feedback {
       display: inline-flex;
@@ -355,6 +441,7 @@ function buildPage(markdown, date, articleCount, articles, workerUrl, feedbackSe
 <script>
   // ── State ────────────────────────────────────────────────
   const ARTICLES = ${articlesJson};
+  const TOOLS = ${toolsJson};
   const WORKER_URL = ${JSON.stringify(workerUrl || '')};
   const FEEDBACK_SECRET = ${JSON.stringify(feedbackSecret || '')};
   const DATE = ${JSON.stringify(date)};
@@ -362,6 +449,7 @@ function buildPage(markdown, date, articleCount, articles, workerUrl, feedbackSe
   const state = {
     overallRating: null,
     articleReactions: {},    // index → 'love' | 'ok' | 'skip'
+    toolReactions: {},       // index → 'love' | 'ok' | 'skip'
     sectionRatings: {},      // sectionId → 'love' | 'ok' | 'skip'
     notes: '',
     totalInteractions: 0,
@@ -406,6 +494,7 @@ function buildPage(markdown, date, articleCount, articles, workerUrl, feedbackSe
 
   function updateInteractionCount() {
     const count = Object.keys(state.articleReactions).length +
+                  Object.keys(state.toolReactions).length +
                   Object.keys(state.sectionRatings).length +
                   (state.overallRating ? 1 : 0);
     state.totalInteractions = count;
@@ -429,6 +518,10 @@ function buildPage(markdown, date, articleCount, articles, workerUrl, feedbackSe
         source: article.source,
         rating: state.articleReactions[i] || null,
       })).filter(a => a.rating !== null),
+      tools: TOOLS.map((tool, i) => ({
+        name: tool.name,
+        rating: state.toolReactions[i] || null,
+      })).filter(t => t.rating !== null),
       sections: state.sectionRatings,
       openNotes: notes,
       submittedAt: new Date().toISOString(),
@@ -506,13 +599,14 @@ export default async function generatePage(markdown, date, articleCount = 0) {
   const workerUrl = process.env.FEEDBACK_WORKER_URL || '';
   const feedbackSecret = process.env.PRISM_FEEDBACK_SECRET || '';
   const articles = extractMustReads(markdown);
+  const tools = extractTools(markdown);
 
-  const html = buildPage(markdown, date, articleCount, articles, workerUrl, feedbackSecret);
+  const html = buildPage(markdown, date, articleCount, articles, tools, workerUrl, feedbackSecret);
 
   await mkdir(BRIEFINGS_DIR, { recursive: true });
   const filepath = `${BRIEFINGS_DIR}/${date}.html`;
   await writeFile(filepath, html, 'utf-8');
 
-  console.log(`\n📄 PAGE — ${filepath} (${articles.length} article widgets, ${workerUrl ? 'worker configured' : 'no worker — download fallback'})`);
+  console.log(`\n📄 PAGE — ${filepath} (${articles.length} article widgets, ${tools.length} tool widgets, ${workerUrl ? 'worker configured' : 'no worker — download fallback'})`);
   return filepath;
 }

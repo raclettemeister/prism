@@ -28,4 +28,6 @@ Feedback in PRISM is **not only** for tuning the next briefing (source ratings, 
 | **Now**  | Iteration tool: you use feedback to decide how to improve PRISM (invocable during software changes). |
 | **Later**| Auto-iteration: PRISM uses feedback to improve itself (prompts, logic, behaviour) with minimal or no manual code edits. |
 
+**Current work (2026-02-22):** Iteration-feedback design and partial implementation (tool feedback, planning gate); full handoff and "next session verify" checklist are in [docs/plans/2026-02-22-iteration-feedback-design.md](docs/plans/2026-02-22-iteration-feedback-design.md).
+
 The pipeline must reliably **ingest** feedback (Worker + optional MylifeOS fallback) and **use** it in runs; from there, iteration is human-driven, with a path to machine-driven improvement.

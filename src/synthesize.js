@@ -169,6 +169,13 @@ function formatFeedbackForPrompt(json) {
     }
   }
 
+  if (json.tools?.length > 0) {
+    lines.push('Tool ratings:');
+    for (const item of json.tools) {
+      lines.push(`  - "${item.name}": ${item.rating}`);
+    }
+  }
+
   if (json.sections) {
     lines.push('Section ratings:');
     for (const [section, rating] of Object.entries(json.sections)) {

@@ -1,0 +1,33 @@
+---
+description: Planning and brainstorming sessions are planning-only; no implementation until design is approved and user explicitly requests it.
+alwaysApply: true
+---
+
+# Planning session gate
+
+When the user is in a **planning, brainstorming, or design session** (e.g. they said "let's brainstorm", "planning session only", or a brainstorming/planning skill is in use):
+
+## Do NOT
+
+- Write or edit implementation code
+- Scaffold files, add dependencies, or run implementation commands
+- Propose or perform "quick" or "small" code changes "to help"
+
+## Do
+
+- Stay in research → design → plan mode
+- Present design (or design doc) and get explicit approval
+- After approval: produce an **implementation plan** (e.g. via writing-plans skill) unless the user already has one
+- **Only** start implementation when the user **explicitly** says to implement (e.g. "implement it", "go ahead and build it", "execute the plan")
+
+## How to recover if you already implemented
+
+If you already wrote code during what was meant to be a planning-only session:
+
+1. Acknowledge the mistake
+2. Offer to: revert the implementation and continue with planning, or treat the code as a draft and now produce the proper plan for review
+3. Do not add more implementation until the user has approved a plan and asked for implementation
+
+## Reminder
+
+"Looks good" or "almost good" on a design is **not** permission to implement. Wait for an explicit request to implement or to create the implementation plan.
