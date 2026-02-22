@@ -1,0 +1,20 @@
+{
+  "date": "2026-02-22",
+  "briefingRating": null,
+  "mustReads": [],
+  "sections": {
+    "SIGNAL": null,
+    "MUST_READ_LIST": null,
+    "BUILDER_INTELLIGENCE": null,
+    "PIONEER_ADVANTAGE": null,
+    "TOOLS_TO_TRY": null,
+    "BUILD_WATCH": null,
+    "ACTION_AUDIT": null,
+    "TODAYS_PRIORITIES": null,
+    "WORLD_LENS": null,
+    "EUROPE_TECH": null,
+    "TREND_TRACKER": null
+  },
+  "openNotes": "",
+  "_instructions": "Rating values: love / ok / skip — or 1-5 for briefingRating. Fill via PRISM Portal or edit JSON directly."
+}

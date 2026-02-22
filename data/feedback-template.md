@@ -1,34 +1,26 @@
-# PRISM Feedback — 2026-02-18
+# PRISM Feedback — 2026-02-22
 
-Edit this file in Obsidian. PRISM reads it before the next run.
-Delete sections you don't care about. Uncomment lines you want to act on.
+Edit this file in Obsidian OR react via the PRISM Portal.
+PRISM reads this before the next run. Delete sections you don't care about.
 
 ## Rate Today's Briefing
 <!-- Delete all but one -->
-- GREAT
-- GOOD
-- MEH
-- BAD
+- 5 (GREAT)
+- 4 (GOOD)
+- 3 (MEH)
+- 2 (BAD)
+- 1 (TERRIBLE)
 
-## Loved (find more like this)
-
-
-## Follow Up On
+## Articles
 
 
-## Less Of
--
+## Section Ratings
+- 🧱 BUILDER INTELLIGENCE: [ ] Love  [ ] OK  [ ] Skip
+- 📊 PIONEER ADVANTAGE: [ ] Love  [ ] OK  [ ] Skip
+- 🛠️ TOOLS TO TRY: [ ] Love  [ ] OK  [ ] Skip
+- 🌍 WORLD LENS: [ ] Love  [ ] OK  [ ] Skip
+- 🇪🇺 EUROPE TECH: [ ] Love  [ ] OK  [ ] Skip
 
-## Tools I Tried
-# - 2. [Substack Notes as primary growth channel in 2026]: 
-# - Real: 
-# - Real: 
-# - Real: 
-# - Nerve: 
-
-## Feed Notes
-- Add:
-- Remove:
-
-## Free Notes
+## Notes
+<!-- Write anything here: too much X, not enough Y, loved Z, follow up on... -->
 
