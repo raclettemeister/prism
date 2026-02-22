@@ -1,4 +1,4 @@
-<!-- PRISM Web Intelligence — 2026-02-22 — generated 2026-02-22T17:28:31.398Z -->
+<!-- PRISM Web Intelligence — 2026-02-22 — generated 2026-02-22T17:49:30.406Z -->
 
 # Proactive Web Intelligence — 2026-02-22
 
@@ -6,180 +6,171 @@
 
 
 
-## Query 1: julien.care Lovable deployment issues February 2026
+## Query 1: Cursor AI update changelog February 2026
 
-Based on my research, I was unable to find any source, blog post, or article specifically from a website called **julien.care** discussing Lovable deployment issues in February 2026. The domain "julien.care" does not appear to have indexed content related to this topic in any search results. It's possible that:
-
-- **julien.care** is a very small or personal blog not indexed by search engines,
-- The content may be behind a login/paywall,
-- The domain or article may not exist, or
-- The query may be conflating different sources (e.g., the Medium article "Lovable is Doomed" by a Paris-based author, or the blog by Julien Dumur at juliendumur.fr).
+Here is a concise summary of the most relevant recent findings on Cursor AI updates in February 2026:
 
 ---
 
-That said, here is what the search results **do** confirm about **Lovable deployment issues in February 2026**, which may be what you're looking for:
+In February 2026, Cursor expanded usage by introducing **two usage pools** — *Auto+Composer* and *API* — and boosted limits for Auto and Composer 1.5 across all individual plans, including a **limited-time 6x boost**. A new usage-visibility page was added to help users track both pools and API credits.
 
-"Lovable is Doomed," a widely-cited Medium article, highlighted that users reported analytics stopping and changes not being pushed to production, with AI diagnosing that "Lovable's deployment system is stuck serving the old commit, and no amount of code changes will fix this."
+The **Version 2.4** release (arriving in January 2026) introduced **Subagents & Skills**, and the broader 2.x series (2025–2026) progressively evolved Cursor from simple chat to Composer, then to a Unified Agent, Background Agents, multi-agent support (up to 8 parallel), and finally Subagents with Skills.
 
-Separately, the xCloud hosting blog corroborated that across Reddit, Trustpilot, and Medium, users consistently described Lovable's system as "stuck serving old commits" regardless of code changes, with UI quality reportedly degraded compared to version 1.0.
+As of **February 8, 2026**, key breaking changes include: **Cursor v2.4** requiring an update for Subagents and Skills functionality, and **Claude Opus 4.6** being set as the new default model recommendation for complex coding tasks, offering top SWE-Bench Verified scores, a 200K token context window, and improved agentic/multi-step performance.
 
-On the official Lovable status page, a confirmed incident on **February 9, 2026** showed a high error rate when enabling Lovable Cloud for new projects, beginning at ~10:12 UTC and fully resolved by 10:28 UTC. A separate incident on **February 17, 2026** was titled "Projects using GitHub experiencing elevated errors," with IsDown tracking 76 total Lovable incidents since August 2025, with typical resolution times of ~385 minutes.
+**Key Sources:**
+- https://releasebot.io/updates/cursor
+- https://developertoolkit.ai/en/resources/updates/
+- https://developertoolkit.ai/en/cursor-ide/version-management/changelog/
+
+## Query 2: Roo Code extension update release February 2026
+
+Based on the search results, here is a concise factual summary:
+
+---
+
+**Roo Code Extension — February 2026 Releases**
+
+The most recent February 2026 release of the Roo Code VS Code extension is **version 3.47.0**, released on **February 5, 2026**, preceded by **v3.46.2** (February 3) and **v3.46.1** (January 31).
+
+Version 3.47.0 includes several notable changes: a new `disabledTools` setting to globally disable native tools, renaming of the `search_and_replace` tool to `edit` with a unified UI, nested subtasks now rendering as a recursive tree in the history view, removal of 9 low-usage providers with a new retired-provider UX, full removal of browser use functionality, removal of built-in skills, and removal of file-based system prompt override ("footgun prompting").
+
+GLM-5 model support was also added to the Z.ai provider in this release.
+
+Roo Code itself is a free, open-source VS Code extension (Apache 2.0) that functions as an AI-powered development team inside the editor.
 
 **Key sources:**
-- Lovable official status history: https://statuspage.incident.io/lovable/history
-- "Lovable is Doomed" (Medium, ~Feb 5, 2026): https://medium.com/utopian/lovable-is-doomed-436d93c46037
-- IsDown Lovable tracker: https://isdown.app/status/lovable
+- Official release notes: https://docs.roocode.com/update-notes/
+- GitHub releases: https://github.com/RooCodeInc/Roo-Code/releases
 
-If you have a direct link to the specific **julien.care** article, I'd be happy to help analyze it further.
+## Query 3: Claude API Opus Sonnet pricing change February 2026
 
-## Query 2: Roo Code update changelog February 2026
-
-I now have enough detailed, sourced information to provide a solid summary. Let me compile the findings.
-
-Here is a concise, factual summary of the most relevant Roo Code changelog updates from February 2026:
+Here is a concise summary of the most relevant recent findings:
 
 ---
 
-**Roo Code – February 2026 Changelog Summary**
+**Claude API Pricing Changes — February 2026**
 
-The most recent releases in February 2026 are **v3.47.0** (released **2026-02-05**) and **v3.46.2** (released **2026-02-03**), with v3.46.1 and v3.46.0 shipping in late January.
+**Claude Opus 4.6** was released on **February 5, 2026**, priced at **$5/million input tokens and $25/million output tokens** — the same price as the previous Opus 4.5. This represents a dramatic 67% price cut versus the prior generation: Opus 4.1 and Opus 4 had cost $15/$75 per million tokens.
 
-Key changes in the v3.47.x range include: adding a `disabledTools` setting to globally disable native tools, renaming the `search_and_replace` tool to `edit` with a unified edit-family UI, rendering nested subtasks as a recursive tree in the history view, removing 9 low-usage providers with a retired-provider UX, removing browser use functionality entirely, and removing built-in skills and the built-in skills mechanism.
+Then, on **February 17, 2026** — just 12 days later — Anthropic launched **Claude Sonnet 4.6**, which ties Opus on computer use, beats it on office tasks, and costs **40% less per token**. Sonnet 4.6 is priced at **$3/$15 per million input/output tokens**, compared to $5/$25 for Opus 4.6.
 
-The **v3.46.0** release (2026-01-30) was described as a "BIG UPDATE," adding **parallel tool calling** — allowing Roo to run multiple tools in a single response — and beginning a major refactor to use the **AI SDK** at Roo's core for improved reliability. File reads were capped at 2,000 lines by default to prevent context overflows. Multiple providers — including Moonshot, DeepSeek, Cerebras, Groq, and Fireworks — were migrated to the new AI SDK in this release.
+Anthropic claims Sonnet 4.6 offers similar performance to the previous Opus 4.5, while maintaining the lower Sonnet-tier pricing of $3/million input and $15/million output tokens.
 
 **Key sources:**
-- 📄 Official release notes index: https://docs.roocode.com/update-notes/
-- 📄 v3.46.0 detailed notes: https://docs.roocode.com/update-notes/v3.46.0
-- 📄 GitHub Releases: https://github.com/RooCodeInc/Roo-Code/releases
+- Anthropic Official Pricing: https://platform.claude.com/docs/en/about-claude/pricing
+- The New Stack (Sonnet 4.6 launch): https://thenewstack.io/claude-sonnet-46-launch/
+- Simon Willison (Feb 17, 2026): https://simonwillison.net/2026/Feb/17/claude-sonnet-46/
+- LaoZhang AI Blog (Opus 4.6 pricing guide): https://blog.laozhang.ai/en/posts/claude-opus-4-6-pricing-subscription-guide
 
-## Query 3: Claude Opus Sonnet pricing API cost optimization model selection guide February 2026
+## Query 4: AI coding agent harness orchestration best practices 2026
 
-Here is a concise, sourced summary of the most relevant findings as of early February 2026:
+Here is a concise, evidence-backed summary of the most relevant recent findings:
 
 ---
 
-**Claude API Pricing & Model Selection — February 2026 Summary**
+### AI Coding Agent Harness Orchestration — Best Practices (2026)
 
-As of January 2026, Claude offers models across three capability tiers — **Opus** (most intelligent), **Sonnet** (balanced), and **Haiku** (fastest) — with pricing verified against official Anthropic documentation.
+The dominant theme emerging in early 2026 is a **shift from building agents to building harnesses** — the lightweight infrastructure layer that wraps agents with context, tools, filesystem access, and sub-agent coordination.
 
-Current pay-per-token base rates (per million tokens, input/output) are: **Haiku 3** at **$0.25/$1.25**, **Sonnet 4.5** at **$3/$15**, and **Opus 4.5** at **$5/$25**. Opus 4.6, Sonnet 4.6, Sonnet 4.5, and Sonnet 4 also support a **1M token context window** (beta, with premium pricing for requests exceeding 200K tokens).
+- Harnesses must remain **lightweight and model-agnostic**, because every new model release has a different optimal way to structure agents — capabilities that required complex, hand-coded pipelines in 2024 are now handled by a single context-window prompt in 2026. Developers should build harnesses that allow them to "rip out the smart logic they wrote yesterday," since over-engineering control flow means the next model update will break the system.
 
-**Claude Opus 4.5** (released in late 2025) delivers flagship performance at **67% lower cost** than its predecessor, and optimization features like **prompt caching** and **batch processing** can reduce costs by **up to 90%**.
+- Anthropic's engineering team (in their **Claude 4 prompting guide**) recommends a harness structure that uses **"a different prompt for the very first context window"** — an initializer agent that sets up the environment with all necessary context for future coding agents. In one example (a claude.ai clone), this initializer wrote a comprehensive feature requirements file with over 200 features, each initially marked "failing" so later coding agents had a clear outline of what full functionality looked like.
 
-Anthropic's new pricing structure (covering Sonnet 4.5, Haiku 4.5, and all future models) is now standardized, while earlier models — Claude Sonnet 4, Opus 4, and prior releases — retain their existing pricing. For model selection guidance, a practical escalation strategy is: start with **Claude Haiku 3** for simple/high-volume tasks, step up to **Haiku 3.5** for moderate complexity, and then to **Sonnet 4** for more demanding work.
+- The five key components of an effective harness are: **(1) context/state management**, (2) **filesystem access management** (e.g., Claude Code's harness controls exactly what filesystem operations the model performs), (3) **tool call orchestration** (Vercel achieved an 80% tool reduction, eliminating infinite loops and cascading failures), (4) **sub-agent coordination** (one agent researches, another writes, a third reviews), and (5) **prompt preset management** for task-specific instructions.
+
+- Cursor's January 2026 "FastRender" project — a browser built in a week using GPT-5.2, with over **1 million lines of code across 1,000 files** — validated a **three-role hierarchical orchestration pattern** as current best practice: *Planners* continuously explore the codebase and create tasks, *Workers* execute tasks independently without coordinating with each other, and *Judge agents* determine whether to continue or merge output. Equal-status agents with locking or optimistic concurrency failed: 20 agents slowed to the throughput of 2–3.
 
 ---
 
 **Key Sources:**
-- 📄 Official Anthropic Pricing Docs: https://platform.claude.com/docs/en/about-claude/pricing
-- 📄 Official Model Overview: https://platform.claude.com/docs/en/about-claude/models/overview
-- 📰 MetaCTO 2026 Breakdown (Jan 12, 2026): https://www.metacto.com/blogs/anthropic-api-pricing-a-full-breakdown-of-costs-and-integration
-- 📰 CostGoat Calculator (Feb 2026): https://costgoat.com/pricing/claude-api
+- Philipp Schmid (Jan 5, 2026): https://www.philschmid.de/agent-harness-2026
+- Anthropic Engineering: https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents
+- Mike Mason (Jan 2026): https://mikemason.ca/writing/ai-coding-agents-jan-2026/
+- Aakash Gupta (Jan 8, 2026): https://aakashgupta.medium.com/2025-was-agents-2026-is-agent-harnesses-heres-why-that-changes-everything-073e9877655e
 
-> ⚠️ **Note:** Anthropic's model lineup (including Opus 4.6, Sonnet 4.6) reflects a rapidly evolving release cadence as of early 2026. Always verify exact pricing against the [official docs](https://platform.claude.com/docs/en/about-claude/pricing), as rates and available models change frequently.
+## Query 5: micro-SaaS founder dev workflow discipline AI cost optimization February 2026
 
-## Query 4: Cursor AI coding rules best practices February 2026
+Now I have enough high-quality, sourced material to write a precise, well-cited summary. Let me compile the findings.
 
-Here is a concise, well-sourced summary of the most relevant recent findings on Cursor AI coding rules best practices as of February 2026:
+Here is a concise, source-backed summary of the most relevant recent findings on **micro-SaaS founder dev workflow discipline and AI cost optimization** as of early 2026:
 
 ---
 
-**Cursor AI Coding Rules Best Practices — February 2026 Summary**
+### AI Dev Workflow Discipline for Micro-SaaS Founders (Early 2026)
 
-As of February 2026, the AI coding landscape has shifted dramatically: the era of **"Agentic Engineering"** has replaced "Vibe Coding," meaning engineers now orchestrate agents rather than write code directly. A key recommended workflow is the **Playwright + MCP integration** for self-healing tests, where the agent runs tests, detects failures, fixes code, and verifies — enabling Test-Driven Development on autopilot.
+The dominant theme across practitioner communities is that **AI coding tools are now a core execution layer, not a side experiment — but discipline is the differentiator.**
 
-**Cursor 2.3** (dubbed "The Stability Release") focuses entirely on fixing the "Agent Hang" and "Zombie Revert" bugs that plagued version 2.2, including fixes for Composer freezing mid-generation, a new panel positioning system, and critical diff application logic corrections — upgrading to 2.3 is recommended.
+SaasRise's CEO Mastermind recap for the week of Jan 19–22, 2026 covered how teams are accelerating product delivery with modern AI dev workflows, specifically recommending using **Claude Code inside Cursor for major speed gains**, automating reviews on every commit, and implementing voice-to-task workflows. Their key warning: "Speed without discipline creates problems."
 
-On the rules side, best practices now emphasize writing **focused, composable `.mdc` rules** (the updated format replacing the deprecated `.cursorrules` file), keeping rules **under 500 lines**, reusing rule blocks instead of duplicating prompts, and giving rules concrete names and descriptions.
+On **tooling and pricing**, the 2026 comparison at aiorg.dev (updated ~2 weeks ago) found that **Cursor Pro costs $20/month** with 500 fast premium requests, while **Claude Code requires a Claude Max subscription at $100/month (5x usage) or $200/month (20x usage)**, or direct API pay-per-token — recommending solo founders on a budget start with Cursor Pro and add Claude Code when shipping speed matters more than savings.
 
-For agent configuration, the `.cursor/rules/` directory should be used for always-on context such as coding styles, tech stacks (e.g., "Use Tailwind"), and project-specific constraints, while dynamic skill documents (e.g., `SKILL.md`) handle more flexible behaviors.
+On **AI cost optimization and unit economics**, the *Hidden Economics of AI SaaS* analysis (The Marketing Hub, Dec 18, 2025) concluded that every user action triggering an LLM carries direct variable cost, and that a single heavy user can consume **500,000+ tokens/month** — meaning "if your pricing and plans do not reflect this variance, you may have a problem." Getmonetizely's *Economics of AI-First B2B SaaS in 2026* cited benchmarks of **GPT-4 Turbo at $10–30/M input tokens and $30–60/M output tokens**, and **Claude 3 Opus at $15/M input / $75/M output**, with a B2B app processing 50M tokens/month facing inference costs of **$500–$2,000/month per enterprise customer** before any other COGS. Their margin discipline advice: at scale, self-hosted models (e.g., Llama 3 70B at $0.50–$2/M tokens) reduce inference costs **60–80%**, but require **$2–5M+ upfront** — the crossover point typically occurs around **$300K/month** in external inference spend.
+
+On **dev productivity outcomes**, Freemius's *2025 State of Micro-SaaS* report (Dec 23, 2025) found that **82% of developers use AI coding assistants daily or weekly**, with studies showing **30–75% time savings** in coding, debugging, and documentation tasks. SoftwareSeni's Jan 12, 2026 deep-dive noted that the practical productivity ceiling ranges from **20–30% gains with GitHub Copilot**, **40–50% with Cursor** in enterprise deployments, and **60–70% with custom AI copilots** in optimized workflows — though custom setups require six-month implementations.
+
+---
+
+**Key sources:**
+- SaasRise CEO Mastermind Jan 2026 recap: https://www.saasrise.com/blog/saasrise-ceo-mastermind-recaps-for-the-week-of-jan-19---22-2026
+- Cursor vs Claude Code (aiorg.dev, 2026): https://aiorg.dev/blog/cursor-vs-claude-code
+- Hidden Economics of AI SaaS (TMH, Dec 2025): https://the-marketinghub.com/blog/hidden-economics-ai-saas-2026/
+- Economics of AI-First B2B SaaS (Getmonetizely, Dec 2025): https://www.getmonetizely.com/articles/the-economics-of-ai-first-b2b-saas-in-2026-margins-pricing-models-and-profitability
+- AI as Solo Founder Productivity Multiplier (SoftwareSeni, Jan 2026): https://www.softwareseni.com/ai-as-solo-founder-productivity-multiplier-tools-workflows-and-real-roi/
+
+## Query 6: Substack launch strategy tips February 2026
+
+Here is a concise summary of the most relevant recent findings on Substack launch strategy tips as of February 2026:
+
+---
+
+**Substack Launch Strategy Tips — February 2026**
+
+A key launch tip from January 2026 is to publish **at least five strong pieces in the first couple of weeks** after launching — not just a welcome post, but posts that genuinely demonstrate the quality subscribers can expect. **Substack Notes** is also highlighted as a critical growth tool: writers are encouraged to use it to sound like a human rather than a robot, sharing quick wins, frustrations, or small personal moments to build connection that long-form posts alone cannot achieve.
+
+**Live sessions** (workshops and Q&As) are described as "the highest-leverage growth tool on the platform right now," with one creator recommending scheduling at least one live session per month — even just 15 minutes. A strategy that reportedly drove 14,000+ subscribers and $100K+ in digital product revenue in one year emphasizes **authenticity and resonance** — Substack in 2026 rewards writers who lead with their real identity and "messy inner life," not just polished publishing.
+
+**Top Sources:**
+- *How to Start and Grow Your Substack Publication in 2026* (Jan. 9, 2026): https://writebuildscale.substack.com/p/start-and-grow-your-substack
+- *My 2026 Substack Strategy* (Jan. 6, 2026): https://wanderwealth.substack.com/p/my-2026-substack-strategy-and-what
+- *Substack Changed Everything in 2025* (Dec. 11, 2025): https://escapethecubicle.substack.com/p/substack-changed-everything-in-2025
+
+## Query 7: Belgium Brussels specialty food retail consumer trends February 2026
+
+Based on the search results, here is a concise, well-sourced summary of the most relevant findings:
+
+---
+
+**Belgium/Brussels Specialty Food Retail & Consumer Trends (Early 2026)**
+
+Belgium's grocery sector operates in a mature, high-pressure environment shaped by strong discounters, demanding shoppers, and well-developed private-label strategies — a market that often sets patterns seen later in nearby European countries, where price discipline is strict and margins are thin.
+
+According to NielsenIQ's Retail Spend Barometer, Belgian consumer spending grew by 1.3% in Q3 2024, reaching €9.4 billion, driven by inflation and a shift toward premium FMCG products, though FMCG-specific volume growth was nearly flat at just +0.3% year-on-year.
+
+Statista's Belgium Food Market Forecast projects organic packaged food sales to reach nearly **$480 million USD** by 2026, reflecting sustained demand for organic options. This aligns with the broader trend: Belgium's food market is experiencing growing demand for organic, locally-sourced, and sustainable products, driven by increasing consumer awareness, and there is also rising demand for international and ethnic foods due to the growing diversity of the Belgian population.
+
+The BioXpo trade fair continues to serve Belgium's organic and natural food retail segment with a strong regional audience, while Brussels-area B2B fairs remain part of a national event calendar running through 2025–2026.
 
 **Key Sources:**
-- GitHub (murataslan1/cursor-ai-tips — February 2026 update): https://github.com/murataslan1/cursor-ai-tips
-- GitHub (digitalchild/cursor-best-practices): https://github.com/digitalchild/cursor-best-practices
-- Medium (Vaibhav H Patil, January 2026): https://medium.com/@vaibhavhpatil/how-to-effectively-we-can-configure-cursor-ai-code-agent-using-agent-best-practices-b9fd2e6b0ed8
+- NielsenIQ Retail Spend Barometer (June 2024 data): https://nielseniq.com/global/en/news-center/2024/niq-retail-spend-barometer-consumer-spending-in-belgium-increases-despite-inflation/
+- Grocery Trade News – Supermarkets in Belgium 2025 (Dec 2025): https://www.grocerytradenews.com/supermarkets-in-belgium-in-2025/
+- Statista Belgium Food Market Forecast: https://www.statista.com/outlook/cmo/food/belgium
+- Belgium Food & Retail Trade Shows 2025–2026: https://www.grocerytradenews.com/trade-shows-in-belgium-2025-2026/
 
-## Query 5: micro-SaaS founder public launch checklist tips February 2026
+> **Note:** Highly granular, Brussels-specific specialty food retail data for February 2026 specifically is not yet publicly available in free sources — the above reflects the most current verified data and projections available as of early 2026. Paywalled reports from Euromonitor International (from ~$990–$1,075) would provide deeper granularity.
 
-Here is a concise summary based on the most relevant recent findings:
+## Query 8: Ren'Py visual novel engine update tutorial February 2026
 
----
-
-Most micro-SaaS founders spend months building their product and then "wing the launch" — forgetting billing webhooks, skipping GDPR compliance, and discovering that onboarding breaks on mobile. The most actionable recent guidance (published **February 2026**) clusters around a structured, four-phase public launch checklist:
-
-1. A complete SaaS launch checklist covers **four phases**: pre-launch foundation, marketing prep, launch day execution, and post-launch optimization.
-2. Three mistakes consistently derail otherwise strong launches: **skipping beta testing** (60% of SaaS products that skip validation fail; testing with 20–50 users catches critical bugs and generates testimonials), **weak onboarding** (poor onboarding drops retention by 50% — users must hit their "aha moment" within 2 minutes), and **no analytics on day one** (you cannot optimize what you cannot measure — install analytics *before* launch, not after).
-3. Before launching publicly, run thorough internal testing to ensure core workflows, automations, and user experiences function as intended.
-4. For the launch itself, the practical recommendation is: pick your idea, set a **7-day deadline**, and commit publicly — tweet it, tell a friend — so that if users pay, you've validated; if not, you've learned fast and can pivot.
-
-**Key sources:**
-- DesignRevision SaaS Launch Checklist (published ~6 days ago, February 2026): https://designrevision.com/blog/saas-launch-checklist
-- Knack No-Code Micro SaaS Guide (published ~3 weeks ago): https://www.knack.com/blog/no-code-micro-saas-ideas/
-- Medium / Vicki Larson, "15 AI Micro-SaaS Ideas" 2026 Guide (published ~2 weeks ago): https://medium.com/@vicki-larson/in15-ai-micro-saas-ideas-ranked-by-launch-speed-market-saturation-2026-guide-96d4820a4ee4
-
-> **Note:** No single article dated specifically to **February 2026** used that exact framing as a "micro-SaaS founder public launch checklist," but the DesignRevision and Medium pieces (both published within the last 2–6 weeks as of late February 2026) are the closest, most specific, and most actionable matches.
-
-## Query 6: Substack launch growth first post strategy February 2026
-
-Here is a concise summary of the most relevant recent findings on Substack launch, growth, and first-post strategy heading into 2026:
+Based on the search results, here is a concise, sourced summary:
 
 ---
 
-**Substack Growth Strategy: Key Findings (Late 2025 – February 2026)**
+**Ren'Py Visual Novel Engine – Latest Update (Early 2026)**
 
-As of January 9, 2026, practitioners like the *Write • Build • Scale* team — who built their publication to over 1,000 paid subscribers in one year — emphasize treating your Substack like a business: publish on a consistent schedule, spend serious time on headlines, and reduce complexity. They argue that growth fundamentally comes down to three things: getting readers to discover you, getting them to subscribe, and building their trust — without which no one becomes a paying subscriber.
-
-The dominant tactical advice for 2026 centers on **Substack Notes** as the #1 growth source — spending ~20 minutes a day writing 1–2 Notes and engaging with other writers, a strategy credited with driving 70% of one creator's subscribers. Additional pillars include creating one simple digital product priced under $100, building community via Substack Chat (Q&As, Notes Boosts), and writing a few SEO-focused "hero posts" that can rank on Google given Substack's strong domain authority.
-
-The *Write • Build • Scale* team's stated 2026 goal is to grow to 100,000 subscribers, more than double their current size.
+The latest official release of Ren'Py 8 is **8.5.2 "In Good Health"**, released on **January 3, 2026**. Ren'Py 8 is recommended for all projects. A nightly fix build is also available, containing fixes that haven't yet made it through the full release process. Ren'Py includes a built-in tutorial game demonstrating core features such as dialogue scripting, images, transitions, music, effects, and branching choices, and it supports building games for Windows, macOS, Linux, Android, iOS, and HTML5 with WebAssembly. Ren'Py is free to use. No specific February 2026 tutorial release was found in search results; the closest relevant content is the official documentation and quickstart guide on the Ren'Py website.
 
 **Key Sources:**
-- https://writebuildscale.substack.com/p/start-and-grow-your-substack (Jan 9, 2026)
-- https://writebuildscale.substack.com/p/our-complete-substack-strategy-for (~2 weeks ago, ~Feb 2026)
-- https://escapethecubicle.substack.com/p/substack-keeps-shifting-heres-the (Dec 16, 2025)
+- 🔗 Official site & release notes: [https://www.renpy.org/](https://www.renpy.org/)
+- 🔗 GitHub repository: [https://github.com/renpy/renpy](https://github.com/renpy/renpy)
 
-## Query 7: AI coding session cost control token budget discipline 2026
-
-Here is a concise, sourced summary of the most relevant recent findings:
-
----
-
-**AI Coding Session Cost Control & Token Budget Discipline (2026)**
-
-By early 2026, enterprise AI budgets more than doubled compared with two years prior. The shift from one-time training costs to continuous inference means every user query triggers compute cycles and token consumption — AI now carries a real monthly invoice. Without deliberate cost controls, teams risk runaway bills or even "denial-of-wallet" attacks where adversaries exploit expensive models while staying under basic rate limits.
-
-Flagship models charge **$2–$3 per million input tokens and $10–$15 per million output tokens** (a 4–5x multiplier), and wasted tokens from verbose prompts, oversized context windows, and unoptimized conversation history compound into budget-busting API bills. As of January 2026, the most affordable options are Gemini 2.0 Flash Lite and Gemini 1.5 Flash at **$0.08/million input tokens and $0.30/million output tokens.**
-
-The recommended discipline for coding sessions includes monitoring **Cost per Session** (total cost to complete a task — spikes signal agent loops), **Token Ratio** (high input ratios suggest inefficient context loading), and **Cache Hit Rate** (targeting >80%). Hard and soft API limits are essential: soft limits trigger alerts at 50% and 80% of monthly budget, while hard limits automatically pause processing at 100% to prevent runaway agents.
-
-Engineering leaders in 2026 are increasingly seeking **role-based token budgets** — e.g., giving staff engineers a larger token allowance than junior engineers — though most enterprise plans don't yet offer that level of granularity. Cost control is directly tied to ROI measurement: it's difficult to know where to limit spend without data on AI's actual productivity impact.
-
-**Key sources:**
-- Clarifai AI Cost Controls Framework: https://www.clarifai.com/blog/ai-cost-controls *(4 days ago)*
-- Redis LLM Token Optimization 2026: https://redis.io/blog/llm-token-optimization-speed-up-apps/ *(3 days ago)*
-- Fast.io AI Agent Token Optimization Guide: https://fast.io/resources/ai-agent-token-cost-optimization/
-- DX Engineering AI Tooling Budgets 2026: https://getdx.com/blog/how-are-engineering-leaders-approaching-2026-ai-tooling-budget/
-
-## Query 8: Brussels Belgium specialty food retail consumer spending February 2026
-
-Based on the search results, here is a concise, sourced summary of the most relevant recent findings:
-
----
-
-**Brussels & Belgium Specialty Food / Retail Consumer Spending — February 2026**
-
-A **4 February 2026** retail real estate report highlighted by RetailDetail EU found that **Brussels has the busiest shopping street in Belgium** — Rue Neuve — with an average of **267,000 pedestrians per week**, while Antwerp holds the largest shopping area with 2,123 stores. The report also identified **Leuven as the city with the wealthiest consumers**, noting it pays to look beyond traditional hubs like Brussels and Antwerp.
-
-In the broader Belgian retail real estate context, **prime retail space on Rue Neuve, Brussels commands up to €1,650 per square meter annually** (as of end of Q3 2025), per JLL's European Retail City Profiles.
-
-On consumer spending, NIQ's Retail Spend Barometer reported that **Belgium's total consumer spending grew 1.3% in Q3 2024, reaching €9.4 billion**, driven by inflation and a shift toward **premium FMCG products** — a trend directly relevant to specialty food retail.
-
-Separately, Euromonitor International (February 2025 report, USD 1,075) noted that Belgian consumers became "increasingly price-sensitive and conservative with spending," shifting from full-service restaurants toward **fast-casual and premium/gourmet limited-service** formats — reflecting a bifurcation in specialty food spending behavior.
-
-**Key sources:**
-- RetailDetail EU (4 Feb 2026): https://www.retaildetail.eu/news/general/brussels-busiest-leuven-richest-shopping-city-in-belgium/
-- JLL European Retail City Profiles – Brussels (Nov 2025): https://www.jll.com/en-uk/insights/european-retail-city-profiles/european-retail-city-profiles-brussels
-- NIQ Retail Spend Barometer Belgium (2024): https://nielseniq.com/global/en/news-center/2024/niq-retail-spend-barometer-consumer-spending-in-belgium-increases-despite-inflation/
-
-> **Note:** No dedicated public data report specifically on "Brussels specialty food retail consumer spending in February 2026" was found. The findings above represent the closest, most current available data from that period and surrounding months.
+> **Note:** No dedicated tutorial specifically dated **February 2026** was surfaced. If you're looking for a specific tutorial (e.g., a YouTube video or blog post from that month), I can try a more targeted search query.

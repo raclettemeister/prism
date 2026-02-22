@@ -207,16 +207,16 @@
     <h1>PRISM Morning Briefing</h1>
     <div class="meta">
       <span>📅 2026-02-22</span>
-      <span>📰 15 articles analyzed</span>
+      <span>📰 27 articles analyzed</span>
       <span>🤖 PRISM v4.0</span>
     </div>
   </div>
 
   <div id="briefing-content">
     <blockquote>
-<p>⚠️ <strong>Low-confidence briefing</strong> — Some sections may contain unverified claims. PRISM confidence: 61%</p>
+<p>⚠️ <strong>Low-confidence briefing</strong> — Some sections may contain unverified claims. PRISM confidence: 41%</p>
 </blockquote>
-<p>I need to fill in the ACTION AUDIT section and check a couple of claims before writing the briefing.Now let me verify the Economist AI productivity article claim since it&#39;s paywalled and I only have the headline/lede:---</p>
+<p>I need to check the action audit placeholder and fill it in based on yesterday&#39;s actions data before writing the briefing.---</p>
 <h1>PRISM Morning Briefing — February 22, 2026</h1>
 <blockquote>
 <p>⚙️ <strong>Read the live briefing and react per article:</strong> <a href="https://prism-portal.pages.dev/briefings/2026-02-22">https://prism-portal.pages.dev/briefings/2026-02-22</a>
@@ -229,23 +229,21 @@ Or edit <strong>NEWS-INTERESTS.md</strong> in Obsidian to adjust coverage.</p>
   <button class="section-btn" data-value="ok" onclick="setSectionRating('SIGNAL', 'ok', this)">👍</button>
   <button class="section-btn" data-value="skip" onclick="setSectionRating('SIGNAL', 'skip', this)">👎</button>
 </div>
-<p>OpenAI&#39;s Developer Experience team published the clearest breakdown yet of how agentic coding actually works: <strong>Codex = Model + Harness + Surfaces</strong> — where the harness is the collection of instructions and tools that sits between the model and how you interact with it. Crucially, Codex models are <em>trained in the presence of the harness</em> — tool use, execution loops, and iterative verification aren&#39;t bolted-on behaviors, they&#39;re baked into how the model learns to operate. This is the exact architecture you&#39;re trying to replicate manually with The Cockpit: a harness (your checklists + Roo Code rules) that forces the model to operate with discipline. The vocabulary just got official.</p>
-<p><strong>Source:</strong> <a href="https://simonwillison.net/2026/Feb/22/how-i-think-about-codex/">https://simonwillison.net/2026/Feb/22/how-i-think-about-codex/</a></p>
+<p>OpenAI&#39;s Developer Experience team published a definitive breakdown of what &quot;Codex&quot; actually is: <strong>Model + Harness + Surfaces</strong>. The key insight for builders — the harness is open source, and Codex models are <em>trained specifically to operate within that harness</em>, meaning tool use, execution loops, and error recovery are baked into the model, not bolted on. This matters directly to The Cockpit: the best practitioners aren&#39;t just prompting better — they&#39;re architecting the harness that wraps the model, and the industry just handed you the canonical vocabulary for it.</p>
+<p>Source: <a href="https://simonwillison.net/2026/Feb/22/how-i-think-about-codex/">https://simonwillison.net/2026/Feb/22/how-i-think-about-codex/</a></p>
 <hr>
 <h2>📚 MUST-READ LIST</h2>
 <ul>
-<li><p><strong>&quot;How I think about Codex&quot;</strong> by Gabriel Chua, via Simon Willison — simonwillison.net (<a href="https://simonwillison.net/2026/Feb/22/how-i-think-about-codex/#atom-everything">link</a>)</p>
+<li><p><strong>&quot;How I think about Codex&quot;</strong> by Gabriel Chua (via Simon Willison) — simonwillison.net (<a href="https://simonwillison.net/2026/Feb/22/how-i-think-about-codex/">link</a>)</p>
 <ul>
-<li><strong>Why read it:</strong> The Model + Harness + Surfaces framework is the conceptual foundation The Cockpit is building toward — reading this gives you the vocabulary to spec v0.3 (AI enforcement in Roo Code rules) properly. Five minutes, directly actionable.</li>
-<li><strong>Cross-fed by:</strong> simonwillison.net (Tier 1)</li>
-<li><strong>Conversation value:</strong> Does The Cockpit&#39;s SPEC.md function as a <em>harness</em>? If yes, what does that mean for how you write Cockpit v0.3 rules in Roo Code? Write one line in your LOG with an answer.</li>
+<li><strong>Why read it:</strong> The Codex harness is open source and lives in the openai/codex repository — you can read the actual architecture decisions of a production AI coding agent right now. This is free primary research for The Cockpit v0.3 design.</li>
+<li><strong>Conversation value:</strong> The SPEC.md + STATUS.md system you built yesterday <em>is</em> a harness in embryonic form. Reading how OpenAI structured theirs will give you language and structure for your v0.3 AI enforcement layer. Decision to make: does The Cockpit evolve toward a harness model or stay as a human checklist system?</li>
 </ul>
 </li>
-<li><p><strong>&quot;The AI Productivity Boom Is Not Here (Yet)&quot;</strong> — The Economist (<a href="https://www.economist.com/finance-and-economics/2026/02/22/the-ai-productivity-boom-is-not-here-yet">link</a>)</p>
+<li><p><strong>&quot;The AI productivity boom is not here (yet)&quot;</strong> — The Economist (<a href="https://www.economist.com/finance-and-economics/2026/02/22/the-ai-productivity-boom-is-not-here-yet">link</a>)</p>
 <ul>
-<li><strong>Why read it:</strong> AI is improving fast — its effect on measured output, not so much. This is the counter-argument to every &quot;AI changes everything&quot; claim you&#39;re building on. You need to know it exists and be able to refute it when someone asks why you&#39;re building micro-software.</li>
-<li><strong>Cross-fed by:</strong> economist.com (Tier 1)</li>
-<li><strong>Conversation value:</strong> The productivity gap is real <em>at the macro level</em>. Your bet is that it&#39;s already real at the <em>individual operator level</em> — and The Cockpit is your proof of concept. That&#39;s your answer if a skeptic pushes back at launch.</li>
+<li><strong>Why read it:</strong> Artificial intelligence is improving fast — its effect on output, not so much. This is the counter-narrative to everything you&#39;re building into. Read it before you talk to anyone about julien.care or The Dishwasher Generation — you&#39;ll want this tension in your back pocket.</li>
+<li><strong>Conversation value:</strong> Strong Substack hook. &quot;Everyone says AI changes everything. The data says otherwise. Here&#39;s what I think is missing.&quot; That&#39;s a post.</li>
 </ul>
 </li>
 </ul>
@@ -257,19 +255,23 @@ Or edit <strong>NEWS-INTERESTS.md</strong> in Obsidian to adjust coverage.</p>
   <button class="section-btn" data-value="skip" onclick="setSectionRating('BUILDER_INTELLIGENCE', 'skip', this)">👎</button>
 </div>
 <p><strong>Methodology beat:</strong></p>
-<p>The OpenAI Codex framing from today crystallizes something directly relevant to your Cockpit build. Gabriel Chua defines the harness as &quot;the collection of instructions and tools&quot; — notably open source, living in the openai/codex repository. The Cockpit v0.1 is your harness, in markdown. The gap between v0.1 and v0.3 is exactly the gap between <em>instructions written down</em> and <em>instructions enforced at runtime</em>. The vocabulary is now precise: you are building a harness, not a checklist.</p>
-<p>The dominant practitioner framing for 2026 is <strong>Agentic Engineering</strong> replacing &quot;Vibe Coding&quot; — engineers now orchestrate agents rather than write code directly. A key recommended workflow is the Playwright + MCP integration for self-healing tests, where the agent runs tests, detects failures, fixes code, and verifies — enabling Test-Driven Development on autopilot. You&#39;re not there yet, and you don&#39;t need to be. But this is the direction: Cockpit → Harness → Agentic loop.</p>
-<p>On cost discipline: flagship models charge $2–$3 per million input tokens and $10–$15 per million output tokens — a 4–5x multiplier — and wasted tokens from verbose prompts, oversized context windows, and unoptimized conversation history compound into budget-busting API bills. The recommended discipline for coding sessions includes monitoring <strong>Cost per Session</strong> (total cost to complete a task — spikes signal agent loops), <strong>Token Ratio</strong> (high input ratios suggest inefficient context loading), and <strong>Cache Hit Rate</strong> (targeting &gt;80%). These three metrics are ready-made additions to your Cockpit POST-FLIGHT checklist. No invention required — just copy them in.</p>
+<p>The dominant signal today is the formalization of <strong>harness thinking</strong> as the correct mental model for AI-assisted engineering. Gabriel Chua&#39;s breakdown defines the harness as &quot;the collection of instructions and tools&quot; — the infrastructure layer that wraps the model with context, execution loops, and recovery behavior. This maps directly to what you built yesterday.</p>
+<p>From the proactive web intelligence gathered before this briefing, the practitioner consensus on orchestration is crystallizing around a three-role pattern: <strong>Planners</strong> explore and create tasks, <strong>Workers</strong> execute independently, <strong>Judge agents</strong> evaluate output. Equal-status agents failed at scale — hierarchical structure won. This is relevant to your Cockpit v0.3 design: when you add AI enforcement to Roo Code/Cursor rules, the architecture question is <em>which role does each model play</em>, not just <em>which model is cheapest</em>.</p>
+<p>On the vibe coding → discipline transition specifically: SaasRise&#39;s CEO Mastermind (Jan 2026) covered AI dev workflow acceleration with a direct warning: &quot;Speed without discipline creates problems.&quot; You caught this the hard way with the €60-70 Opus session. The Cockpit is the structural response the field is recommending.</p>
+<p><strong>Practical cost signal:</strong> Claude Sonnet 4.6 launched on February 17, 2026 — it ties Opus on computer use, beats it on office tasks, and costs 40% less per token, priced at $3/$15 per million input/output tokens versus $5/$25 for Opus 4.6. Your Cockpit cost framework is already directionally correct: Sonnet 4.6 is now the validated default for implementation work.</p>
 <p><strong>Micro-SaaS Radar:</strong></p>
-<p>The Economist piece lands alongside news of a productivity measurement debate: benchmark oddities are prompting &quot;what are we measuring?&quot; debates — frontier models perform strongly on benchmarks yet struggle with real-world tasks, suggesting narrow evaluation captures only a slice of actual utility. The gap between benchmark performance and real-world usefulness is a recurring pain point with no good tooling. No actionable product yet, but file it.</p>
-<p>Nothing else rises to product-idea level from today&#39;s sources.</p>
+<p>No sharp new product signal from today&#39;s articles specifically. However, the Economist&#39;s AI productivity piece surfaces a real gap: AI is improving fast but its effect on output remains unclear. There is an underserved niche in <em>AI accountability tooling for non-technical founders</em> — people who use AI coding tools but have no way to measure whether their sessions actually shipped value. Your Cockpit, if productized, could become exactly this. Nothing to build now — but worth noting while the concept is fresh.</p>
 <p><strong>Tool &amp; Stack Updates:</strong></p>
-<p><strong>Cursor 2.3</strong> (dubbed &quot;The Stability Release&quot;) focuses entirely on fixing the &quot;Agent Hang&quot; and &quot;Zombie Revert&quot; bugs that plagued version 2.2, including fixes for Composer freezing mid-generation, a new panel positioning system, and critical diff application logic corrections — upgrading to 2.3 is recommended. If you&#39;ve been hitting Cursor freezes mid-session, this is why. Update before your next coding session.</p>
-<p>Roo Code v3.47.0 (released Feb 5) added a <code>disabledTools</code> setting to globally disable native tools, renamed the <code>search_and_replace</code> tool to <code>edit</code> with a unified edit-family UI, and rendered nested subtasks as a recursive tree in the history view. Nine low-usage providers were removed along with browser use functionality entirely. The subtask tree view is directly relevant to how you&#39;ll see The Cockpit&#39;s steps execute in v0.3.</p>
-<p>On Lovable: users have reported analytics stopping and changes not being pushed to production, with AI diagnosing that &quot;Lovable&#39;s deployment system is stuck serving the old commit, and no amount of code changes will fix this.&quot; A confirmed incident on February 9 showed a high error rate when enabling Lovable Cloud for new projects, and a separate incident on February 17 involved &quot;Projects using GitHub experiencing elevated errors.&quot; julien.care is hosted on Lovable/Vercel — if you hit deploy issues today on launch day, this is the known failure mode. Have a Vercel direct-deploy fallback ready.</p>
+<ul>
+<li><p><strong>Roo Code v3.47.0</strong> (Feb 5, 2026): A breaking change worth knowing — the <code>search_and_replace</code> tool has been renamed to <code>edit</code> with a unified UI. More importantly: a new <code>disabledTools</code> setting lets you globally disable native tools. This is directly useful for Cockpit v0.3 — you can now programmatically constrain what Roo Code does at the session level, not just via prompt instructions. Built-in skills and browser use functionality have been removed. Source: <a href="https://docs.roocode.com/update-notes/">https://docs.roocode.com/update-notes/</a></p>
+</li>
+<li><p><strong>Cursor v2.4</strong>: Subagents &amp; Skills are now live. If you haven&#39;t updated, do it before your next session. Source: <a href="https://releasebot.io/updates/cursor">https://releasebot.io/updates/cursor</a></p>
+</li>
+<li><p><strong>Speed benchmark worth knowing:</strong> OpenAI&#39;s GPT-5.3-Codex-Spark is now serving at over 1,200 tokens per second — this is the frontier of inference speed and affects how agentic loops will feel in practice over the next 6 months.</p>
+</li>
+</ul>
 <p><strong>API Economics:</strong></p>
-<p>Hard and soft API limits are now considered essential cost controls: soft limits trigger alerts at 50% and 80% of monthly budget, while hard limits automatically pause processing at 100% to prevent runaway agents. You don&#39;t have these set. Given yesterday&#39;s €60-70 session, this is not optional. Set budget alerts in your Anthropic console today — takes 3 minutes.</p>
-<p>Nothing new from Supabase, Stripe, Resend, or Cloudflare today.</p>
+<p>Nothing new in the API landscape from today&#39;s articles. The Sonnet 4.6 pricing update (noted above) is the most relevant cost infrastructure change this week and was covered in the methodology beat.</p>
 <hr>
 <h2>📊 PIONEER ADVANTAGE CHECK</h2>
 <div class="section-feedback" data-section="PIONEER_ADVANTAGE">
@@ -288,39 +290,39 @@ Or edit <strong>NEWS-INTERESTS.md</strong> in Obsidian to adjust coverage.</p>
 </tr>
 </thead>
 <tbody><tr>
-<td><strong>Claude Code remote approval via ntfy</strong> (<a href="https://github.com/yuuichieguchi/claude-remote-approver">github</a>)</td>
-<td>Approve/deny Claude Code permission requests from your phone — agent keeps running while you&#39;re away from terminal</td>
-<td>Now</td>
-<td><strong>Real</strong> — solves a concrete pain point (Claude hanging while you step away)</td>
-<td>HIGH: Install today. Cockpit v0.1 sessions often run long. This lets Claude continue while you&#39;re with Poncho or making coffee. 30-min setup.</td>
-</tr>
-<tr>
-<td><strong>Paragent</strong> — parallel AI coding agents (<a href="https://paragent.app">paragent.app</a>)</td>
-<td>10 agents in parallel, each opens a PR; free tier, BYOK</td>
-<td>Now, free tier live</td>
-<td><strong>Hype risk</strong> — the &quot;10x faster&quot; framing is real only if you have a structured backlog; without Cockpit discipline, parallel agents = parallel chaos</td>
-<td>MEDIUM: Not for today. Revisit when Cockpit v0.3 is live and you have a real task queue. Reward for doing the architecture work first.</td>
-</tr>
-<tr>
-<td><strong>SergioAI</strong> — Trello bot → Claude → draft PR (<a href="https://github.com/Belfio/sergio">github</a>)</td>
-<td>Moves Trello cards through Claude review → implementation → draft PR automatically; self-hosted, no SaaS fees</td>
-<td>2–4 weeks to set up properly</td>
-<td><strong>Real</strong> but complex</td>
-<td>LOW now, HIGH later: Sergio is essentially an external Cockpit enforcer. When your second game project starts and you have a real spec, Sergio + Trello could replace manual checklist steps. Park for now.</td>
-</tr>
-<tr>
-<td><strong>Roo Code v3.47 parallel tool calling</strong> (<a href="https://docs.roocode.com/update-notes/v3.46.0">docs</a>)</td>
-<td>Multiple tools run per response; file reads capped at 2,000 lines to prevent context overflow</td>
-<td>Live now</td>
-<td><strong>Real</strong> — measurable speed and cost improvement</td>
-<td>HIGH: The 2,000-line file cap directly addresses your stale-conversation problem. Update Roo Code today. This is a Cockpit-compatible change — less context bloat = cheaper Sonnet sessions.</td>
-</tr>
-<tr>
-<td><strong>Cursor <code>.mdc</code> rules</strong> (replacing <code>.cursorrules</code>)</td>
-<td>Focused, composable rules under 500 lines; always-on context for stack and style</td>
-<td>Live in Cursor 2.3</td>
+<td><strong>Separation of Planning &amp; Execution</strong> (Boris Tane&#39;s Claude Code workflow)</td>
+<td>Research → Plan → Annotate → Implement loop with markdown artifacts prevents The Cockpit&#39;s core failure mode (vibecodng). Direct protocol for Cockpit v0.3 rule design.</td>
+<td>Now — this is workflow, not a product</td>
 <td><strong>Real</strong></td>
-<td>MEDIUM: Write your first <code>.mdc</code> rule file as part of Cockpit v0.2. Document your stack (Lovable/Vercel, GitHub Actions, Cloudflare) so Cursor stops asking. One afternoon of work.</td>
+<td>Write one Cockpit rule: &quot;No implementation until plan.md exists and is annotated.&quot; Roo Code enforces it. 30-minute integration.</td>
+</tr>
+<tr>
+<td><strong>Superpowers plugin</strong> (obra/superpowers)</td>
+<td>Drop-in composable skills for Claude Code/Cursor: brainstorming → spec → plan → TDD → subagent execution. Installs in one <code>/plugin install</code> command. Mandatory workflows, not suggestions.</td>
+<td>Now — plugin marketplace live</td>
+<td><strong>Real</strong></td>
+<td>Test against your second Ren&#39;Py game. If The Cockpit is your manual harness v0.1, Superpowers is the reference implementation to steal from for v0.3. High relevance.</td>
+</tr>
+<tr>
+<td><strong>Sonnet 4.6 at 40% less than Opus 4.6</strong></td>
+<td>Sonnet 4.6 ties Opus on computer use, beats it on office tasks. Your Cockpit cost framework just got a concrete default: Sonnet for everything except explicit architecture decisions.</td>
+<td>Now — priced since Feb 17</td>
+<td><strong>Real</strong></td>
+<td>Replace Opus as default in Roo Code. Budget impact: from €60-70/day to potentially €20-25/day at equivalent throughput. Immediate.</td>
+</tr>
+<tr>
+<td><strong>Paragent</strong> (parallel AI coding agents, free tier)</td>
+<td>10 parallel agents, each opens a PR. BYO API keys. Free forever for 1 repo.</td>
+<td>Now — free tier live</td>
+<td><strong>Hype (for now)</strong></td>
+<td>You&#39;re a solo non-technical founder who needs discipline, not parallelism. Paragent adds coordination overhead before you&#39;ve mastered single-agent discipline. Revisit post-Cockpit v1.0.</td>
+</tr>
+<tr>
+<td><strong>Claude Code remote approval via ntfy</strong></td>
+<td>Approve/deny Claude Code permission requests from phone. Uses ntfy — which you already run for NightCrawler notifications.</td>
+<td>Now — open source, npm install</td>
+<td><strong>Real</strong></td>
+<td>Directly extends your existing ntfy infrastructure. Useful when you step away mid-session and don&#39;t want Claude waiting at your desk. 20-minute setup.</td>
 </tr>
 </tbody></table>
 <hr>
@@ -330,17 +332,21 @@ Or edit <strong>NEWS-INTERESTS.md</strong> in Obsidian to adjust coverage.</p>
   <button class="section-btn" data-value="ok" onclick="setSectionRating('TOOLS_TO_TRY', 'ok', this)">👍</button>
   <button class="section-btn" data-value="skip" onclick="setSectionRating('TOOLS_TO_TRY', 'skip', this)">👎</button>
 </div>
-<p><strong><a href="https://github.com/yuuichieguchi/claude-remote-approver">claude-remote-approver</a></strong> — Hooks into Claude Code&#39;s permission system, sends a push notification to your phone via ntfy.sh, you tap Approve or Deny, Claude continues. Auto-denies after 120 seconds if unanswered.</p>
 <ul>
-<li><strong>Try it:</strong> <code>npm install -g claude-remote-approver</code> → <code>claude-remote-approver setup</code> → scan QR code. One session tonight or tomorrow.</li>
-<li><strong>Relevance:</strong> Every long Cockpit session where you leave your desk. Prevents the &quot;Claude is just sitting there&quot; problem that burns time and loses context.</li>
-<li><strong>Signal:</strong> HN Show HN (fresh, 22 Feb). Small but technically tight — 128-bit random topic, 0600 config, self-hostable ntfy. Not vaporware.</li>
+<li><p><strong>Superpowers</strong> (obra/superpowers) — composable mandatory skill workflows for Claude Code and Cursor. Brainstorming, spec, plan, TDD, subagent dispatch, code review — all auto-triggered, not optional. <a href="https://github.com/obra/superpowers">https://github.com/obra/superpowers</a></p>
+<ul>
+<li>Try it: Install via <code>/plugin install superpowers</code> in Cursor. Ask it to help you plan the next Ren&#39;Py game feature. Observe whether the brainstorming → spec → plan loop matches what The Cockpit&#39;s SPEC.md is trying to enforce manually. Extract anything worth stealing into Cockpit v0.3 rules.</li>
+<li>Relevance: The Cockpit (v0.3 design), second game project. This is the closest thing to a reference implementation of AI-enforced dev discipline that exists right now.</li>
+<li>Signal: Surfaced via PRISM&#39;s own research feed (mshibanami.github.io); HN-adjacent, open source, actively maintained.</li>
 </ul>
-<p><strong><a href="https://paragent.app">Paragent</a></strong> — Parallel AI coding agents in cloud branches; each opens a PR when done. Free tier: 1 repo, 2 concurrent agents. BYOK (Anthropic/OpenAI/Gemini).</p>
+</li>
+<li><p><strong>claude-remote-approver</strong> — hooks into Claude Code&#39;s permission request system and sends push notifications to your phone via ntfy. Tap Approve or Deny; Claude continues. <a href="https://github.com/yuuichieguchi/claude-remote-approver">https://github.com/yuuichieguchi/claude-remote-approver</a></p>
 <ul>
-<li><strong>Try it:</strong> Connect one repo, describe one small isolated feature (not your main game project), watch the PR come back. Budget: ~30 minutes + whatever your API key costs.</li>
-<li><strong>Relevance:</strong> Second game project. When you have a structured backlog post-Cockpit, this is how you run tasks while sleeping.</li>
-<li><strong>Signal:</strong> HN Show HN, 22 Feb. Free tier no credit card — low commitment.</li>
+<li>Try it: <code>npm install -g claude-remote-approver &amp;&amp; claude-remote-approver setup</code>. Point it at your existing ntfy instance. Start a Claude Code session and walk away.</li>
+<li>Relevance: Every coding session. Removes the &quot;must babysit the terminal&quot; constraint. Your existing ntfy topic infrastructure means zero new tooling overhead.</li>
+<li>Signal: Show HN, 2 points — very early, but the use case is surgically relevant to your stack.</li>
+</ul>
+</li>
 </ul>
 <hr>
 <h2>🏗️ BUILD WATCH</h2>
@@ -349,63 +355,29 @@ Or edit <strong>NEWS-INTERESTS.md</strong> in Obsidian to adjust coverage.</p>
   <button class="section-btn" data-value="ok" onclick="setSectionRating('BUILD_WATCH', 'ok', this)">👍</button>
   <button class="section-btn" data-value="skip" onclick="setSectionRating('BUILD_WATCH', 'skip', this)">👎</button>
 </div>
-<p><strong>The &quot;approval UX&quot; layer is emerging as a real category.</strong> claude-remote-approver (phone approvals), SergioAI (Trello-triggered pipelines), and Paragent (PR-based review loop) all share the same underlying design pattern: the human stays in the loop at approval gates, not during execution. This is the architecture of disciplined AI-assisted development — which is exactly what the Cockpit is trying to enforce. The market is building the same system you designed last night, from the outside in.</p>
-<p><strong>Roo Code is accelerating toward the AI SDK.</strong> The v3.46/3.47 changes — parallel tools, AI SDK migration, 2,000-line file cap, removal of low-use providers — suggest a deliberate platform consolidation. Roo is becoming leaner and more opinionated. This is directionally good for Cockpit users: fewer footguns, more predictable behavior. Track v3.48 for further changes.</p>
-<p><strong>Self-hosted AI workflow bots are now a weekend project.</strong> SergioAI runs on a €5/month Hetzner VM. A Trello card triggers a Claude session that writes code and opens a PR. A year ago this required a devops team. Today it&#39;s a README and an afternoon. The barrier to building your own internal tooling is now close to zero — directly relevant to Operation Autonomy (shop automation, Henry reporting dashboard).</p>
+<p><strong>The harness layer is solidifying into products.</strong> This week, the field moved from &quot;here&#39;s how to think about harnesses&quot; (last week&#39;s Codex framework from Simon Willison) to &quot;here are installable harness products&quot; — Superpowers, Paragent, SergioAI, Earl. The pattern: someone builds the discipline layer that most founders skip, packages it, and ships it. This is the same gap The Cockpit addresses, except you&#39;re building it for yourself. The question worth tracking: does a productized Cockpit become a micro-SaaS in six months?</p>
+<p><strong>Spec-driven development replacing Electron is a real but slow-moving trend.</strong> The Claude-is-an-Electron-app observation (dbreunig.com) is analytically honest: agents handle the first 90% of cross-platform code well, but the last 10% — edge cases, real-world messiness, multi-platform support surface — still requires human judgment. For a solo founder building micro-software: this means you can spec-drive most of a product today, but you cannot yet walk away from the last mile. Plan for it.</p>
+<p><strong>AI content farms are generating active user resistance.</strong> The AI uBlock Blacklist project and the community momentum behind it signals that readers are building infrastructure to filter AI-generated content. For The Dishwasher Generation Substack launching tomorrow: the market is increasingly hostile to content that reads like AI output. Julien writing in his real voice — messy, specific, Brussels-grounded — is a structural advantage, not just a stylistic one.</p>
 <hr>
 <h2>⏪ ACTION AUDIT</h2>
-<table>
-<thead>
-<tr>
-<th>Yesterday&#39;s Action</th>
-<th>Status</th>
-<th>Verdict</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>Polish julien.care copy tonight — launch is Feb 23</td>
-<td>⚪ Pending</td>
-<td><strong>Today is Feb 23. This either happened or it didn&#39;t. Launch in hours.</strong></td>
-</tr>
-<tr>
-<td>Read jkap.io token-anxiety article. Write 3 sentences in LOG.</td>
-<td>⚪ Pending</td>
-<td><strong>Still open. Blocked by launch prep — defer to tomorrow, not today.</strong></td>
-</tr>
-<tr>
-<td>Write first Substack Note (3 sentences max) before launch</td>
-<td>⚪ Pending</td>
-<td><strong>🔴 Critical. If this isn&#39;t written, write it before anything else today.</strong></td>
-</tr>
-</tbody></table>
-<p>All three were pending. One is time-collapsed by today&#39;s launch. One should be deferred. One is still on the clock right now.</p>
+<p>No previous actions to track. This is Day 1 of the audit trail — tomorrow&#39;s briefing will begin tracking today&#39;s commitments.</p>
 <hr>
 <h2>🎯 TODAY&#39;S PRIORITIES</h2>
-<p><strong>1. 🔴 LAUNCH — Do it before noon. No more prep.</strong>
-julien.care goes live. Chez Julien Simulator goes live. dishwashergeneration.substack.com goes public. The copy is either good enough or it isn&#39;t — ship it anyway. Your first Substack Note goes out simultaneously. The dominant tactical advice for Substack growth in 2026 centers on Substack Notes as the #1 source — spending ~20 minutes a day writing 1–2 Notes and engaging with other writers, a strategy credited with driving 70% of one creator&#39;s subscribers. Your first Note is not optional — it&#39;s the difference between launching into silence and launching with a feed. Three sentences. Publish it.</p>
-<p><strong>2. 🟡 Set Anthropic budget alerts before your next coding session.</strong>
-Soft limits trigger alerts at 50% and 80% of monthly budget; hard limits automatically pause processing at 100% to prevent runaway agents. Yesterday cost €60-70. That&#39;s a known Cockpit failure — no guardrails. Three minutes in the Anthropic console. Do it after launch, before you touch any code. This is a Cockpit discipline item, not a nice-to-have.</p>
-<p><strong>3. 🟡 Add three metrics to your Cockpit POST-FLIGHT checklist.</strong>
-Cost per Session. Token Ratio. Cache Hit Rate (target &gt;80%). These came directly from engineering practitioners today and map exactly onto your existing checklist structure. Open SPEC.md, add them under POST-FLIGHT. Five minutes. No AI required. This is the Cockpit getting sharper — do it while today&#39;s momentum is still live.</p>
-<hr>
-<p><em>PRISM v1.3 — built 4:00 AM CET — sources: 6 Tier 1 articles + 8 web intelligence queries. Launch day. Go.</em></p>
-<h1>PRISM Morning Briefing — February 23, 2026</h1>
-<blockquote>
-<p>⚙️ <strong>Launch day.</strong> julien.care + Chez Julien Simulator + The Dishwasher Generation go live today. Everything else is secondary until tonight.</p>
-</blockquote>
-<hr>
+<p><strong>1. Ship julien.care + The Dishwasher Generation tonight. Full stop.</strong>
+This is the only thing with a hard deadline. Everything else is discretionary. Close the polish on julien.care copy, confirm Chez Julien Simulator and Sweden Odyssey are live and linked, and publish The Dishwasher Generation launch post. Tomorrow the stealth phase ends — tonight you need zero loose ends.</p>
+<p><strong>2. Read the Codex harness post before your next Cockpit session.</strong>
+15 minutes. Link: <a href="https://simonwillison.net/2026/Feb/22/how-i-think-about-codex/">https://simonwillison.net/2026/Feb/22/how-i-think-about-codex/</a> — The vocabulary of Model + Harness + Surfaces is the missing frame for Cockpit v0.3. You&#39;re building a harness. Reading how OpenAI describes theirs will sharpen your spec before you write a single line of enforcement rules.</p>
+<p><strong>3. Update your Cockpit model-selection rule to default Sonnet 4.6 for all implementation work.</strong>
+Sonnet 4.6 now officially matches or beats Opus on most non-architecture tasks at 40% lower cost. This isn&#39;t a trade-off anymore — it&#39;s the correct default. Add one line to your SPEC.md: <em>Opus = architecture decisions and complex debugging only. Sonnet 4.6 = everything else.</em> This is a 5-minute change that protects you from another €60-70 day before the rule is internalized.</p>
 <h2>🌍 WORLD LENS</h2>
 <div class="section-feedback" data-section="WORLD_LENS">
   <button class="section-btn" data-value="love" onclick="setSectionRating('WORLD_LENS', 'love', this)">❤️</button>
   <button class="section-btn" data-value="ok" onclick="setSectionRating('WORLD_LENS', 'ok', this)">👍</button>
   <button class="section-btn" data-value="skip" onclick="setSectionRating('WORLD_LENS', 'skip', this)">👎</button>
 </div>
-<p><strong>Europe&#39;s strategic posture is hardening — and Brussels is the epicenter.</strong></p>
-<p>France summoned the US ambassador over American officials&#39; commentary on the killing of far-right activist Quentin Deranque in Lyon — a killing that has &quot;put France on edge, stoking tensions between left and right ahead of the 2027 presidential vote.&quot; Beyond the immediate diplomatic friction, the episode reveals something structural: the US-Europe political relationship is fracturing at the values level, not just the trade level. Trump&#39;s administration calling a street brawl &quot;terrorism&quot; on French soil is not a gaffe — it is a pattern of treating European domestic politics as a theatre for American culture-war projection.</p>
-<p>The French foreign minister also indicated he had other matters to raise with the US ambassador, including American sanctions against Thierry Breton, the former EU commissioner responsible for supervising social media rules, and a French judge at the international criminal court — measures he described as &quot;attacks on EU autonomy.&quot;</p>
-<p>The FT&#39;s framing that it is <a href="https://www.ft.com/content/b92fd917-9f1b-4393-b96d-6d22ba757c72">&quot;time for Europe to weaponise its chokepoints&quot;</a> — behind a paywall, but the headline alone is signal — suggests elite European opinion is moving from reactive defence to offensive leverage. This is a slow-moving shift with real implications: a more assertive EU means more EU regulation, more EU procurement preference, and potentially a more hostile environment for US tech platforms operating in Europe.</p>
-<p><strong>For Chez Julien specifically:</strong> Consumer confidence in Belgium is not in crisis, but it is bifurcating. Euromonitor data notes Belgian consumers became &quot;increasingly price-sensitive and conservative with spending,&quot; shifting from full-service restaurants toward fast-casual and premium/gourmet limited-service formats. A specialty food shop in Brussels sits precisely at the fault line of this bifurcation — premium enough to benefit from the gourmet trend, exposed enough to feel the pinch if disposable income contracts further. Monitor this closely as the US-EU trade relationship deteriorates. Tariff escalation on food imports (specialty ingredients, wine, olive oil) is not hypothetical — it is the stated direction of US trade policy.</p>
-<p>Trump&#39;s new flat-rate tariff structure is described as a boost for China and Brazil — meaning European exporters lose relative competitiveness in the US market, and European importers of American goods face retaliation risk. Neither outcome helps a Brussels specialty retailer dependent on stable import prices.</p>
+<p><strong>The France-US diplomatic spat over the Lyon killing is a symptom of a deeper European realignment.</strong> The death of Quentin Deranque, and Washington&#39;s characterization of it as &quot;violent radical leftism,&quot; marks another instance of the Trump administration treating European domestic politics as a theater for American culture-war messaging. France summoning the US ambassador is not, in itself, consequential — France has done this before. What matters structurally is the pattern: the US is now a participant in European domestic political conflicts, not merely an observer. For a Brussels founder, this is background noise today. But it accelerates the underlying trend PRISM has tracked for three weeks: Europe is recalibrating its relationship with American institutions, including American technology platforms. That recalibration is slow, but it is directional.</p>
+<p><strong>Trump&#39;s flat-rate tariff design creates unexpected trade distortions.</strong> The FT&#39;s paywalled analysis on this is unavailable in full, but the headline claim — that a flat-rate tariff structure advantages China and Brazil — is analytically coherent. Flat rates compress the penalty on high-value-add goods relative to low-value-add commodities, which favors exporters of bulk goods (Brazil&#39;s agri-exports, China&#39;s manufactured volume) over European producers of specialized goods. For a Brussels specialty food shop: if this tariff structure suppresses European agricultural exports, it may redirect supply toward domestic consumption, modestly supporting local food retail. The effect is indirect and lagged. Not actionable today.</p>
+<p><strong>EU battery regulation (replaceable batteries by 2027) is real and approaching.</strong> The EU mandates consumer-replaceable portable batteries from 2027. This is not new law — it entered force in August 2023 — but HN surfaced it this week, suggesting practitioners are beginning to plan for compliance. For Chez Julien: no direct relevance unless the shop sells battery-powered devices. For the physical product curiosity (new leash design for Poncho): if any electronics are involved, design for replaceability from day one.</p>
 <hr>
 <h2>🇪🇺 EUROPE TECH</h2>
 <div class="section-feedback" data-section="EUROPE_TECH">
@@ -413,9 +385,8 @@ Cost per Session. Token Ratio. Cache Hit Rate (target &gt;80%). These came direc
   <button class="section-btn" data-value="ok" onclick="setSectionRating('EUROPE_TECH', 'ok', this)">👍</button>
   <button class="section-btn" data-value="skip" onclick="setSectionRating('EUROPE_TECH', 'skip', this)">👎</button>
 </div>
-<p><strong>Brussels retail data point worth filing:</strong> A 4 February 2026 retail real estate report found that Brussels has the busiest shopping street in Belgium — Rue Neuve — with an average of 267,000 pedestrians per week, while Leuven was identified as the city with the wealthiest consumers. This is operationally relevant for Chez Julien: footfall in Brussels is real and measurable. If Operation Autonomy ever includes a location-optimisation or staffing-by-footfall model, this is the baseline data.</p>
-<p><strong>Lovable deployment reliability remains a concern.</strong> The web intelligence confirms a confirmed incident on February 9, 2026 showed a high error rate when enabling Lovable Cloud for new projects, and a separate incident on February 17 was titled &quot;Projects using GitHub experiencing elevated errors&quot; — with IsDown tracking 76 total Lovable incidents since August 2025, with typical resolution times of around 385 minutes. julien.care is live on Lovable/Vercel today. If the site behaves strangely on launch day, check the <a href="https://statuspage.incident.io/lovable/history">Lovable status page</a> before debugging your own code.</p>
-<p>No other EU tech developments from today&#39;s feed require attention.</p>
+<p><strong>LinkedIn identity verification is a GDPR minefield that European users are discovering.</strong> The LocalStack.eu article (1,354 HN points, 462 comments) on what LinkedIn&#39;s identity verification actually collects is the most-endorsed piece of European tech content this week. The core concern: LinkedIn&#39;s verification process requires handing over identity document data to a third-party processor, with terms that GDPR-conscious users in Belgium and the EU should scrutinize. For a founder building on LinkedIn as a distribution channel (julien.care launch, Substack): the verification feature is optional. Do not activate it without reading the terms. This is not a crisis — it is a data hygiene decision.</p>
+<p><strong>Europe&#39;s &quot;weaponise chokepoints&quot; debate is accelerating.</strong> The FT piece (paywalled) on European chokepoint leverage is part of a broader policy conversation: the EU holds meaningful leverage in data flows, payment infrastructure, and platform regulation that it has historically been reluctant to use. Brussels is the seat of this debate. For a founder operating inside the EU&#39;s regulatory perimeter: the medium-term implication is that European founders building on American AI infrastructure (Anthropic, OpenAI) should monitor whether that infrastructure becomes subject to European regulatory leverage — or retaliatory US action. Anthropic&#39;s $380B valuation and GIC (Singapore sovereign fund) backing, noted in last week&#39;s briefing, is partial insulation. Partial.</p>
 <hr>
 <h2>📈 TREND TRACKER</h2>
 <div class="section-feedback" data-section="TREND_TRACKER">
@@ -423,52 +394,49 @@ Cost per Session. Token Ratio. Cache Hit Rate (target &gt;80%). These came direc
   <button class="section-btn" data-value="ok" onclick="setSectionRating('TREND_TRACKER', 'ok', this)">👍</button>
   <button class="section-btn" data-value="skip" onclick="setSectionRating('TREND_TRACKER', 'skip', this)">👎</button>
 </div>
-<p><strong>Parallel execution is the week&#39;s dominant theme.</strong> Feb 16 brought SafeClaw (parallel Claude Code containers). Feb 17 brought Claude Pilot (quality hooks). Feb 22 brings Paragent (parallel agents → PRs) and claude-remote-approver (async human approval). The direction is consistent: the bottleneck is shifting from &quot;can the AI write code&quot; to &quot;can the human review and approve fast enough.&quot; The Cockpit&#39;s POST-FLIGHT review step is the right instinct — the market is building infrastructure around exactly that gate.</p>
-<p><strong>Cost discipline is now a mainstream engineering concern, not a solo-founder edge case.</strong> By early 2026, enterprise AI budgets more than doubled compared to two years prior, and the shift from one-time training costs to continuous inference means every user query triggers compute cycles and token consumption — AI now carries a real monthly invoice. Your €60-70 Opus day is a microcosm of a systemic problem everyone is solving. The recommended discipline includes monitoring Cost per Session, Token Ratio, and Cache Hit Rate, with hard and soft API limits essential — soft limits triggering alerts at 50% and 80% of monthly budget, while hard limits automatically pause processing at 100%. Set a hard monthly cap in your Anthropic dashboard this week. Not optional.</p>
-<p><strong>Substack Notes is the 2026 growth lever for new publications.</strong> The dominant tactical advice for 2026 centres on Substack Notes as the #1 growth source — spending around 20 minutes a day writing 1–2 Notes and engaging with other writers, a strategy credited with driving 70% of one creator&#39;s subscribers. The Dishwasher Generation launches today. The first week of Notes activity will matter more than the first post. Write one Note today, even if it&#39;s just &quot;we&#39;re live.&quot;</p>
-<p><strong>Model selection is consolidating around a three-tier hierarchy.</strong> The web intelligence confirms a practical escalation strategy: start with Claude Haiku 3 for simple/high-volume tasks, step up to Haiku 3.5 for moderate complexity, then to Sonnet 4 for more demanding work — with Opus reserved for genuine architectural decisions only. Your instinct (Opus for architecture, Sonnet for implementation) is correct. The next step is formalising this as a Cockpit rule: no Opus unless you can name the decision it&#39;s making.</p>
+<p><strong>AI dev discipline → from concept to product (Week 2 of acceleration).</strong> Feb 17: Claude Pilot surfaced as quality-hook framework. Feb 19: Harness-as-concept crystallized via Codex/Simon Willison. Feb 22: Superpowers, Paragent, SergioAI, Earl all ship as installable harness products in a single day&#39;s feed. The concept is becoming a product category in real time. The Cockpit is not behind the curve — it is building in the right direction at the right moment.</p>
+<p><strong>Sonnet 4.6 cost signal (Day 5).</strong> Claude Sonnet 4.6, launched February 17, is priced at $3/$15 per million input/output tokens — 40% less than Opus 4.6&#39;s $5/$25 — while reportedly matching or exceeding Opus on several task categories. This has now appeared in three consecutive PRISM briefings. The Cockpit model-decision framework should formalize Sonnet 4.6 as the default, with Opus as an explicit exception requiring justification.</p>
+<p><strong>Substack Notes as growth lever — now confirmed by multiple sources.</strong> Substack Notes is highlighted as a critical growth tool, with writers encouraged to use it to sound human — sharing quick wins, frustrations, or small personal moments to build connection that long-form posts alone cannot achieve. With The Dishwasher Generation launching tomorrow, this is the one tactical call worth making tonight: schedule a first Note for launch day, written in Julien&#39;s voice, not a press release.</p>
+<p><strong>AI content farm backlash — new and accelerating.</strong> The AI uBlock Blacklist project appeared this week. Not a trend yet, but directional: as AI content floods the web, readers are building filters. Authentic voice is becoming infrastructure, not aesthetics.</p>
+<p><strong>Disappeared: agent hype without discipline framing.</strong> Three weeks ago, the feed was full of &quot;look what agents can do&quot; demos. This week, every agent article leads with failure modes, last-mile problems, or discipline requirements. The market is maturing its expectations.</p>
 <hr>
 <h2>🚮 SLOP FILTER</h2>
-<p><strong>5 of 9 Tier 2 articles were noise today.</strong></p>
+<p><strong>7 of 21 Tier 2 articles were noise today.</strong></p>
 <ul>
-<li><strong>FT: &quot;How technology is reshaping our minds&quot;</strong> — Paywalled. No content. Generic topic even if accessible.</li>
-<li><strong>FT: &quot;It is time for Europe to weaponise its chokepoints&quot;</strong> — Paywalled. Headline useful as signal; article inaccessible.</li>
-<li><strong>FT: &quot;America is becoming a petrostate&quot;</strong> — Paywalled. Macro energy politics, no Brussels founder relevance today.</li>
-<li><strong>FT: &quot;Trump&#39;s new flat-rate tariff is a boost for China and Brazil&quot;</strong> — Paywalled. Headline extracted for WORLD LENS; article itself inaccessible.</li>
-<li><strong>FT: (General)</strong> — Three of the four FT articles this run were paywalled with zero readable content. The FT feed is producing titles, not intelligence.</li>
+<li><strong>Articles 4, 5, 6, 8</strong> (FT paywalled): Four consecutive paywalled FT articles with zero accessible content. Scored for cross-feed count, not for value. The FT paywall is a persistent feed quality problem — these articles consume slots without delivering intelligence.</li>
+<li><strong>Article 2</strong> (Karpathy tweet on &quot;claws&quot;): Twitter/X blocked JavaScript, returned a blank error page. Zero content retrieved. Should not score 7.6/10 on a blank page.</li>
+<li><strong>Article 7</strong> (France/Lyon diplomatic incident): Relevant geopolitically but not founder-relevant. Included in WORLD LENS at the appropriate weight — a background signal, not a briefing lead.</li>
+<li><strong>Article 15</strong> (EU battery regulation, 2023): A 2023 law resurfaced on HN. Not new. Included in WORLD LENS with correct dating. The feed should not be surfacing three-year-old regulatory text as today&#39;s news.</li>
 </ul>
-<p><strong>Retained and used:</strong> Guardian (France/US diplomat row) — readable, geopolitically relevant. All four HN Show HN items — genuine signal, all usable.</p>
 <hr>
 <h2>🔄 FEED HEALTH REPORT</h2>
 <p><strong>KEEP:</strong></p>
 <ul>
-<li><code>hnrss.org</code> — 4 for 4 today. Every HN Show HN item was actionable or trackable. Highest signal-to-noise source this run.</li>
-<li><code>theguardian.com</code> — 1 article today, geopolitically relevant, fully readable.</li>
+<li><code>news.ycombinator.com</code> — Delivered Articles 1, 3, 9, 10, 11, 12, 13, 14, 16, 17, 19, 20, 21. Highest signal density this week. Article 1 (Boris Tane&#39;s Claude Code workflow) alone justified the entire feed run.</li>
+<li><code>simonwillison.net</code> — Consistently Tier 1 for AI dev signal. Yesterday&#39;s Codex harness piece, today&#39;s adjacent tooling. Keep as primary AI engineering source.</li>
+<li><code>mshibanami.github.io</code> — Surfaced Superpowers (Article 18). Niche but precise. Keep.</li>
 </ul>
 <p><strong>WATCH:</strong></p>
 <ul>
-<li><code>ft.com</code> — 4 articles today, 4 paywalled, 0 readable content extracted. Titles occasionally useful as weak signals. Recurring problem across multiple runs. This is becoming a structural issue, not a one-off.</li>
+<li><code>ft.com</code> — Four paywalled articles in a single run, all returning subscription walls. The FT feed is delivering headlines, not content. Either acquire an FT subscription and configure full-text extraction, or accept that ft.com is a geopolitics headline ticker, not a content source.</li>
+<li><code>hnrss.org</code> — Article 2 (Karpathy tweet) scored 7.6/10 despite returning a blank page. Scoring logic needs to penalize zero-content retrievals, not reward cross-feed citation count on empty pages.</li>
 </ul>
 <p><strong>CONSIDER ADDING:</strong></p>
 <ul>
-<li><strong>Anthropic changelog / release notes</strong> — The Claude pricing and model updates in web intelligence were critical this week. There is no feed currently capturing this.</li>
-<li><strong>Roo Code GitHub releases</strong> (<a href="https://github.com/RooCodeInc/Roo-Code/releases">github.com/RooCodeInc/Roo-Code/releases</a>) — v3.47 dropped Feb 5 with no coverage in the article feed. PRISM caught it only via web intelligence.</li>
-<li><strong>RetailDetail EU</strong> (<a href="https://www.retaildetail.eu">retaildetail.eu</a>) — The 4 Feb Brussels footfall report was relevant. A Belgian retail-focused feed would be useful for Chez Julien context.</li>
-<li><strong>Substack Grow</strong> or creator economy newsletters — The Dishwasher Generation launches today; no feed currently covers Substack strategy.</li>
+<li><code>boristane.com</code> — Article 1 was the highest-utility piece in today&#39;s run. Not currently in the feed. Add directly.</li>
+<li><code>dbreunig.com</code> — Article 11 (Claude/Electron analysis) is exactly the kind of analytical AI-builder content PRISM needs more of. Currently not in feeds.</li>
+<li><code>thenewstack.io</code> — Surfaced in web intelligence (Sonnet 4.6 launch coverage) but not in feeds. Reliable AI infrastructure reporting.</li>
 </ul>
 <p><strong>CONSIDER REMOVING:</strong></p>
 <ul>
-<li><code>ft.com</code> — If paywalled content continues for a 4th consecutive run with no readable body text, remove or replace with a free equivalent (e.g., The Economist free articles, Reuters, Politico Europe).</li>
+<li>Nothing permanent yet. Give ft.com one more week — if the next three runs return paywalled content only, remove or downgrade to headline-only tier.</li>
 </ul>
 <hr>
 <h2>💬 FEEDBACK RESPONSE</h2>
 <p>No feedback received. React to today&#39;s articles at <a href="https://prism-portal.pages.dev/briefings/2026-02-22">https://prism-portal.pages.dev/briefings/2026-02-22</a></p>
+<p>One note without prompting: tomorrow is the public launch of julien.care and The Dishwasher Generation. A strategy that reportedly drove significant subscriber growth on Substack emphasizes authenticity and resonance — Substack in 2026 rewards writers who lead with their real identity and &quot;messy inner life,&quot; not just polished publishing. The briefing can wait. Ship the Note.</p>
 <hr>
-<blockquote>
-<p><strong>Today&#39;s priority stack:</strong> ① Launch julien.care + Chez Julien Simulator + The Dishwasher Generation. ② Write one Substack Note. ③ Set a hard monthly cap on your Anthropic account. ④ Update Roo Code. Everything else waits until tonight.</p>
-</blockquote>
-<hr>
-<p><em>PRISM v4.0 — 15 articles analyzed, 0 web searches, ~$0.24</em></p>
+<p><em>PRISM v4.0 — 27 articles analyzed, 0 web searches, ~$0.26</em></p>
 
   </div>
 
