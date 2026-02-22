@@ -1,120 +1,136 @@
-<!-- PRISM Life Context — Auto-generated 2026-02-22T17:46:51.692Z -->
+<!-- PRISM Life Context — Auto-generated 2026-02-22T18:47:48.683Z -->
 <!-- Source: context-note.md + LOG (3d) + 13 recent files -->
 <!-- Model: claude-sonnet-4-6 -->
 # LIFE CONTEXT SNAPSHOT — Julien
-**Generated: 2026-02-22 | For: PRISM Intelligence Briefing**
+**Generated:** 2026-02-22 | **For:** PRISM Intelligence Briefing
 
 ---
 
 ## 1. RIGHT NOW
 
-Julien is in the immediate aftermath of a significant creative and operational push: Chez Julien Simulator shipped, Sweden Odyssey demo is done, and tomorrow (Feb 23) is the public launch of julien.care + The Dishwasher Generation Substack. The most consequential thing he did today wasn't shipping the game — it was designing The Cockpit (v0.1), a dev discipline system that he's designated his #1 priority across all coding work. He spent ~€60-70 on Roo Code/Opus 4.6 in a single session, got burned by the cost, and turned that pain into a structured framework. Energy reads as high-intensity but self-aware — a founder catching a bad pattern and building the fix.
+Julien is in the immediate aftermath of his Feb 23 public launch — Chez Julien Simulator shipped, Sweden Odyssey demo finished, julien.care text getting final polish tonight. Simultaneously, a higher-order priority crystallized today: **The Cockpit**, a dev discipline system he built v0.1 of this afternoon, which he considers the meta-infrastructure that makes all future coding work viable. He's energized but aware he burned ~€60-70 on Claude Opus 4.6 today through Roo Code — a cost he's turning into a learning signal rather than a failure.
 
 ---
 
 ## 2. THIS WEEK — ACTIVE PROJECTS
 
-**The Cockpit (TOP PRIORITY — brand new, Feb 22)**
-- v0.1 complete: SPEC.md written, STATUS.md created, first checklist (Daily Coding Session Ritual, 9 steps across PRE-FLIGHT/FLIGHT/POST-FLIGHT), Three Laws defined (no code without architecture / no moving forward without iteration / no "done" without review)
+**The Cockpit (TOP PRIORITY — started today, Feb 22)**
+- v0.1 built and documented: SPEC.md, STATUS.md, first checklist (Daily Coding Session Ritual — 9 steps across PRE-FLIGHT / FLIGHT / POST-FLIGHT), Three Laws (no code without architecture / no forward without iteration / no "done" without review)
 - Roadmap: v0.1 = manual markdown checklists → v0.3 = AI enforcement in Roo Code/Cursor rules → v1.0 = full enforcement
-- Immediate need: resources on AI-assisted dev workflows, orchestration frameworks, Cursor/Roo Code best practices (≤1 month old), cost optimization (Opus vs Sonnet decision framework)
-- Next real test: second game (Ren'Py or more advanced) — first project built under Cockpit discipline from day one
+- Standing request to PRISM: surface AI-assisted dev workflow resources, orchestration frameworks, Cursor/Roo Code best practices, cost optimization guides (max 1 month old)
 
-**julien.care / Feb 23 Launch (SHIPS TONIGHT)**
-- julien.care text getting final polish
-- Chez Julien Simulator: finished and confirmed shipped
-- Sweden Odyssey: demo finished and playable
-- The Dishwasher Generation (Substack): shipping for launch
-- Launch is tomorrow — these need to close tonight
+**Feb 23 Launch (shipping today/tonight)**
+- Chez Julien Simulator: ✅ DONE, shipped
+- Sweden Odyssey demo: ✅ DONE, playable
+- julien.care text/voice: final polish in progress
+- Everything goes public tomorrow
 
-**Now Page Bot (v1.0 functional, v1.1 pending)**
-- End-to-end pipeline works as of Feb 21 (run #8, 17 seconds): vault clone → freshness check → formatting → deploy → commit memory
+**Now Page Bot (paused until after launch)**
+- v1.0 pipeline functional as of Feb 21 (run #8, 17 seconds end-to-end)
 - 7 formatting issues documented in SPEC.md with 3-phase fix plan
-- Phase 1 (format.js fixes, resolves 5/7 issues) ready to execute
-- Blocked by decision: deploy after Feb 23 launch
-- NOT being touched this week
+- Phase 1 (format.js — fixes 5 of 7 issues) ready to execute post-launch
+- Deploy target: after Feb 23
 
-**Sales Data / Chez Julien BI (just started, Feb 22)**
-- New project: data gathering and extrapolation of shop sales on business computer
-- Business intelligence for GPFC srl
-- Early stage, no further detail
+**Julien & Lucia — "All We Got Is Weeks" (new, Feb 22)**
+- New collaborative project folder created: `Projects/Julien & Lucia/`
+- First project: workshop where participants visualize life as ~4,160 weeks on a grid, paint their past with watercolors, decide what to color next
+- Early concept stage, STATUS.md captured
 
-**PRISM v2.0 (spec complete, not yet built)**
-- Spec ready (Feb 18): multi-pass Haiku+Sonnet, 50 articles, ~€2.50/night budget
-- Waiting for autonomous build session via fresh Cowork + Sonnet 4.6
-- Not this week
+**Second Game (upcoming)**
+- Renpy or more advanced engine
+- Will be the first real Cockpit test in action — proper architecture and SPEC from day one before any code
+
+**Sales Data / Chez Julien BI (new, Feb 22)**
+- Started data gathering and extrapolation of shop sales on business computer
+- Business intelligence for GPFC srl — early stage
 
 ---
 
 ## 3. PRIORITIES & STRUGGLES
 
-**What matters most (his words):**
-- The Cockpit is #1. Without it, every other project suffers. The shift: from "talk to AI and hope for the best" → "orchestrate AI with discipline and structure"
-- Standing PRISM deep-dive request: surface anything on AI-assisted dev workflows, non-engineer software discipline, Cursor/Roo Code/orchestration best practices, AI cost optimization for founders — all ≤1 month old
+**What matters most (Julien's own words):**
+- The Cockpit is #1 across all coding work. Without it, every project produces messes.
+- The shift: from "talk to AI and hope" → "orchestrate AI with discipline and structure"
+- Every session follows the checklist. Every project starts with a SPEC. Every plan iterates 4-5x before execution.
 
-**What's hard:**
-- He vibes. Gives AI tasks that are too big, stays in stale conversations, skips architecture, skips iteration, skips review. The Cockpit is the direct response to this self-identified failure mode.
-- Cost discipline: Opus 4.6 for everything = €60-70/day. Learning when expensive models are worth it (architecture, complex decisions) vs. when Sonnet suffices (implementation, routine tasks). This is now a Cockpit dimension.
-- Low orderliness is a known self-identified weakness that undermines systems if unmanaged — The Cockpit is in part an orderliness prosthetic
+**Core struggle being addressed:**
+- Vibecoding: tasks too big, stale conversations, skipping architecture, skipping iteration, skipping review
+- Moving too fast because AI enables it — producing messes as a result
+- Cost blindness: €60-70 in one day on Opus 4.6 when Sonnet would have sufficed for implementation tasks
 
-**What he's not touching this week:**
+**New dimension of discipline — cost-efficiency:**
+- Opus worth it for: architecture decisions, complex reasoning
+- Sonnet sufficient for: implementation, straightforward tasks
+- This is now a Cockpit concern, not just a budget concern
+
+**Standing deep dive request to PRISM:**
+- AI-assisted dev workflows and orchestration frameworks
+- Cursor / Roo Code best practices
+- Software discipline for non-technical founders
+- AI cost optimization strategies
+- Resources must be ≤1 month old
+
+**What he's NOT touching this week:**
 - Staffing Calendar System (live but not viable — parked)
-- Letta AI Agents (built Feb 15, unused since)
-- PRISM v2.0 build
-- Now Page Bot v1.1 (post-launch)
+- Letta AI agents (built Feb 15, unused since)
+- PRISM v2.0 (spec complete, not yet built)
+- Staffing/team management system (parked)
 
 ---
 
 ## 4. BUSINESS — CHEZ JULIEN / OPERATION AUTONOMY
 
-**Strategic direction:** Operation Autonomy — push shop to full autonomy, Julien stays CEO with minimal time input. Old plan (sell = Operation Exit) is archived.
+**Current direction:** Operation Autonomy — make the shop run without Julien's daily presence. Henry is the key investment.
 
-**Team status:**
-- Henry (24, full-time, 4 months in): identified as the one to develop. Goal = manager-level within 6-month window. More motivated, growing fast, wants responsibility. Currently blocked from cognitive tasks because Lucas grabs them.
-- Lucas (24, 3/4 time, 2 years): deliberately conserves cognitive energy for his own projects (creative agency, sound engineering). Best fit = customer-facing, high-intensity, low-cognitive work. Not being developed at the shop — offered stability + future collaboration as retention sugar.
-- Big Meeting (Feb 14, past): full role restructure conversation — Henry gets development pitch + 5 paths, Lucas gets "let your best friend shine" frame + bonus numbers (4.5% for Lucas, 2% for Henry of sale price).
+**Henry:** Full-time, 4 months in (since Oct 2025), age 24. Growing fast. Target: manager-level within the autonomy timeline. The Feb 14 "Big Meeting" has passed (content in files suggests it was prepped and likely held) — outcomes not logged yet in the snapshot data.
 
-**Active shop infrastructure:**
-- Staffing Calendar System: live (deployed Feb 17) but not viable yet — Pointage DB sharing issue, planning UX incomplete, mobile limited. Parked this week.
-- Sales Data project: just started (Feb 22) — BI on business computer
+**Lucas:** Part-time (3/4), 2 years in, age 24. Good with customers, strategically disengaged from cognitive shop work. Management approach: customer-facing tasks only, no project/thinking work.
 
-**Henry development:** Monthly meeting cadence established. Feb 4 = foundation-laying. Big Meeting = role restructure. March = next formal meeting.
+**Staffing Calendar System:** Deployed Feb 17, Cloudflare Worker + Notion + Google Calendar integration. Julien's absences auto-sync via calendar. Red day flagging (🟡/🔴/🔴🔴) operational. Known issues remain — not being touched this week.
+
+**Sales data project:** New BI effort started Feb 22 — gathering and extrapolating sales data from business computer. Early stage.
 
 ---
 
 ## 5. TOOLS & STACK
 
-**Primary machine:** Mac Mini (16GB RAM) — only workstation. Runs Cursor + Claude Cowork.
+| Tool | Status | Notes |
+|------|--------|-------|
+| **Roo Code** | Primary coding harness | Forces architecture before code — best harness found so far |
+| **Cursor** | Active | Used alongside Roo Code |
+| **Claude Opus 4.6** | Used today — expensive | ~€60-70 in one day; learning when to deploy vs Sonnet |
+| **Claude Sonnet 4.5/4.6** | Preferred for implementation | ~1/3 the cost of Opus |
+| **Mac Mini (16GB)** | Only workstation | Runs Cursor + Claude Cowork |
+| **PRISM** | Running nightly at 4 AM CET | v1.3, 45+ feeds, emails morning briefing; v2.0 spec ready but not built |
+| **NightCrawler** | Deployed, operational | Runs 3 AM CET, vault health scans, ntfy alerts |
+| **Now Page Bot** | Functional, pre-deploy | Pipeline working, 7 fixes pending, deploy after Feb 23 |
+| **Obsidian + GitHub** | Vault sync | Auto-syncs every 30 min via Obsidian Git plugin |
+| **Cloudflare Workers** | Shop staffing infra | Staffing calendar worker live at `chez-julien-staffing.old-morning-a434.workers.dev` |
 
-**AI coding tools:**
-- Roo Code: current preferred harness — forces architecture before code. Cost: Opus 4.6 = expensive (€60-70/day at full throttle). Sonnet = ~1/3 the cost.
-- Cursor: also in use
-- Model decision framework being built into The Cockpit: Opus for architecture/complex decisions, Sonnet for implementation/routine tasks
-
-**Automation infrastructure:**
-- PRISM v1.3: runs nightly 4 AM CET via GitHub Actions (raclettemeister/prism). 45+ RSS feeds, top 15 read in full, synthesized briefing + email. Reads Journal/context-note.md for deep dive requests.
-- NightCrawler: runs 3 AM CET via GitHub Actions (raclettemeister/nightcrawler). Vault health bot — stale STATUS.md, CURRENT.md drift, naming issues. HTML report + ntfy notification.
-- Now Page Bot: raclettemeister/now-page-bot. Sunday 11 PM CET (deploy) + Saturday 10 AM CET (reminder). v1.0 functional.
-- Staffing Worker: Cloudflare Worker (chez-julien-staffing.old-morning-a434.workers.dev) — parked
-
-**Vault:** MylifeOS on GitHub (raclettemeister/MyLifeOS, private). Obsidian Git auto-sync every 30 minutes. Moved off iCloud Feb 14.
-
-**Notifications:** ntfy (topics: mylifeos-business)
+**Key workflow principle:** Always open a new chat. Always read the SPEC. Iterate architecture 4-5x before coding. Implement in small pieces. Review before closing.
 
 ---
 
 ## 6. LIFE
 
-**Lucia:** Quitting her job May 1, 2026 to go self-employed (teaching art, selling art). Julien committed to supporting her with time and money during this transition. They have shared business ideas. Reynolds Mode enforced on evenings (work forbidden, full presence).
+**Lucia:**
+- Artist, currently at International Yehudi Menuhin Foundation (MUS-E programme)
+- Quitting May 1, 2026 → self-employed: teaching art + selling her own work
+- Julien is financially and temporally supporting this transition
+- New creative collaboration started: `Projects/Julien & Lucia/` — "All We Got Is Weeks" workshop is first joint project
+- Meeting anniversary: 27th of each month
 
-**Upcoming critical date:** Feb 23 tomorrow = public launch. This is the end of the stealth phase.
+**Upcoming:**
+- **Feb 23 (tomorrow):** Public launch — julien.care live, games published, Dishwasher Generation Substack
+- **May 1, 2026:** Lucia leaves her job — significant life transition incoming
 
-**Physical projects (emerging interest):** Furniture building, new leash design for Poncho. Exploring AI for physical product design — early curiosity, not active.
+**Energy/patterns:**
+- Single-task creativity (writing, designing) energizes him; multi-project vibe-coding creates cognitive debt
+- Building The Cockpit is partly a response to burnout from unstructured AI coding sessions
+- The €60-70 day was intensive but generative — he reframed it as "learning the right process, not optimizing cost"
 
-**Poncho:** Australian Shepherd, 2.5 years old. Active in daily life.
-
-**Energy read:** High-output day (Feb 22) — shipped a game, finished a demo, built a whole discipline framework, logged everything properly. Signs of self-awareness increasing: catching bad patterns (vibecodng, cost overruns) and building structural responses rather than just resolving to do better. This is a behavioral shift worth noting.
+**Poncho:** Australian Shepherd, 2.5 years old (born June 2023). Physical product interest emerging: new leash design. AI-assisted physical design being explored alongside furniture building.
 
 ---
 
-*Snapshot confidence: HIGH. Julien's own words from today are the primary source. Activity log corroborates. Recently modified files confirm active work areas.*
+*Snapshot density: HIGH. Recency bias applied — projects untouched this week omitted. The Cockpit and the Feb 23 launch are the twin centers of gravity for this briefing window.*

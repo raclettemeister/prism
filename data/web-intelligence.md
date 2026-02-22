@@ -1,4 +1,4 @@
-<!-- PRISM Web Intelligence — 2026-02-22 — generated 2026-02-22T17:49:30.406Z -->
+<!-- PRISM Web Intelligence — 2026-02-22 — generated 2026-02-22T18:49:14.969Z -->
 
 # Proactive Web Intelligence — 2026-02-22
 
@@ -6,171 +6,169 @@
 
 
 
-## Query 1: Cursor AI update changelog February 2026
+## Query 1: Roo Code update release February 2026
 
-Here is a concise summary of the most relevant recent findings on Cursor AI updates in February 2026:
-
----
-
-In February 2026, Cursor expanded usage by introducing **two usage pools** — *Auto+Composer* and *API* — and boosted limits for Auto and Composer 1.5 across all individual plans, including a **limited-time 6x boost**. A new usage-visibility page was added to help users track both pools and API credits.
-
-The **Version 2.4** release (arriving in January 2026) introduced **Subagents & Skills**, and the broader 2.x series (2025–2026) progressively evolved Cursor from simple chat to Composer, then to a Unified Agent, Background Agents, multi-agent support (up to 8 parallel), and finally Subagents with Skills.
-
-As of **February 8, 2026**, key breaking changes include: **Cursor v2.4** requiring an update for Subagents and Skills functionality, and **Claude Opus 4.6** being set as the new default model recommendation for complex coding tasks, offering top SWE-Bench Verified scores, a 200K token context window, and improved agentic/multi-step performance.
-
-**Key Sources:**
-- https://releasebot.io/updates/cursor
-- https://developertoolkit.ai/en/resources/updates/
-- https://developertoolkit.ai/en/cursor-ide/version-management/changelog/
-
-## Query 2: Roo Code extension update release February 2026
-
-Based on the search results, here is a concise factual summary:
+Here is a concise summary of the most relevant findings on Roo Code updates in February 2026:
 
 ---
 
-**Roo Code Extension — February 2026 Releases**
+The most recent Roo Code release in February 2026 is **version 3.47.0**, released on **February 5, 2026**, preceded by **3.46.2** (February 3) and **3.46.1** (January 31).
 
-The most recent February 2026 release of the Roo Code VS Code extension is **version 3.47.0**, released on **February 5, 2026**, preceded by **v3.46.2** (February 3) and **v3.46.1** (January 31).
+Notable changes in the latest releases include: renaming the `search_and_replace` tool to `edit` with a unified edit-family UI, rendering nested subtasks as a recursive tree in the history view, removing 9 low-usage providers with a new retired-provider UX, completely removing browser-use functionality, and removing built-in skills and the footgun prompting (file-based system prompt override).
 
-Version 3.47.0 includes several notable changes: a new `disabledTools` setting to globally disable native tools, renaming of the `search_and_replace` tool to `edit` with a unified UI, nested subtasks now rendering as a recursive tree in the history view, removal of 9 low-usage providers with a new retired-provider UX, full removal of browser use functionality, removal of built-in skills, and removal of file-based system prompt override ("footgun prompting").
+Additional fixes include preserving pasted images in the chatbox during chat activity, and adding a `disabledTools` setting to globally disable native tools.
 
-GLM-5 model support was also added to the Z.ai provider in this release.
-
-Roo Code itself is a free, open-source VS Code extension (Apache 2.0) that functions as an AI-powered development team inside the editor.
+Roo Code is a free, open-source VS Code extension (Apache 2.0) that supports any LLM — including Claude, GPT, Gemini, Mistral, or local models via Ollama — and has over 22,000 GitHub stars.
 
 **Key sources:**
 - Official release notes: https://docs.roocode.com/update-notes/
-- GitHub releases: https://github.com/RooCodeInc/Roo-Code/releases
+- GitHub Releases: https://github.com/RooCodeInc/Roo-Code/releases
 
-## Query 3: Claude API Opus Sonnet pricing change February 2026
+## Query 2: Cursor AI coding agent update changelog February 22 2026
+
+Here is a concise summary of the most relevant recent findings on Cursor AI's updates around February 2026:
+
+---
+
+**Cursor AI — February 2026 Updates (Version 2.5)**
+
+**Cursor 2.5** was launched on **February 17, 2026**, introducing the **Cursor Marketplace** — an official plugin distribution platform that allows developers to install prebuilt plugins (bundles of MCP servers, skills, subagents, hooks, and rules) to extend agent capabilities, accessible at `cursor.com/marketplace` or via `/add-plugin` in the editor.
+
+Ten verified launch partners were confirmed: **Figma, Linear, Stripe, AWS, Cloudflare, Vercel, Databricks, Snowflake, Amplitude, and Hex.**
+
+The biggest change in the latest version (tested Feb 2026) is the introduction of **Subagents**, which enable parallel task execution — a shift from the previous serial agent model where AI would read a file, think, write code, then run a terminal command, one step at a time.
+
+Cursor also unveiled a **cross-platform agent sandbox** rolling out on macOS, Linux, and Windows, designed to cut interruptions and approval fatigue while boosting security — sandboxed agents only escalate when needed, delivering **40% fewer blocks**, with early enterprise adoption including NVIDIA.
+
+**Key sources:**
+- 🔗 https://releasebot.io/updates/cursor
+- 🔗 https://www.adwaitx.com/cursor-marketplace-plugins/
+- 🔗 https://myaiverdict.com/cursor-ai-review/
+
+> **Note:** My knowledge cutoff is early 2025, so these findings are drawn entirely from live web search results dated February 2026. Treat version numbers and feature details as reported by third-party sources, and verify against Cursor's official changelog at `cursor.com`.
+
+## Query 3: Claude Opus Sonnet cost optimization AI coding agents February 2026
+
+Here is a concise, sourced summary of the most relevant recent findings:
+
+---
+
+**Claude Sonnet 4.6 — Opus-Level Coding at a Fraction of the Cost (February 2026)**
+
+Anthropic released **Claude Sonnet 4.6** on **February 17, 2026**, achieving **79.6% on SWE-bench** (real-world coding) — nearly identical to Opus 4.6's 80.8% — and **72.5% on OSWorld** (computer use), essentially tied with Opus 4.6's 72.7%. Via the Claude API, the new model is priced at **$3 per million input tokens and $15 per million output tokens** — the same as Claude Sonnet 4.5, compared to Opus 4.6's $5/$25 per million tokens. For agentic coding workflows, this translates to tasks that previously required Opus (~$3.00/session) now running on Sonnet (~$0.60/session) — an **~80% cost reduction** with minimal quality loss. Notably, on the GDPVal-AA benchmark measuring real-world office and knowledge work, Sonnet 4.6 scores **1,633 Elo vs. Opus 4.6's 1,606**, meaning it actually *outperforms* the flagship model on everyday tasks.
+
+**Key sources:**
+- The New Stack (Feb 4, 2026): https://thenewstack.io/claude-sonnet-46-launch/
+- Y Build practical guide: https://ybuild.ai/en/blog/claude-sonnet-4-6-opus-level-ai-at-sonnet-price-2026
+- VentureBeat: https://venturebeat.com/technology/anthropics-sonnet-4-6-matches-flagship-ai-performance-at-one-fifth-the-cost
+
+## Query 4: AI coding harness orchestration framework best practices 2026
+
+Here is a concise, well-sourced summary of the most relevant recent findings on **AI coding harness orchestration framework best practices in 2026**:
+
+---
+
+### AI Coding Harness Orchestration: Key Findings for 2026
+
+**1. Lightweight, Swappable Harnesses Are the Core Best Practice**
+
+The central principle for 2026 is that agent harness infrastructure must be *lightweight*. Every new model release brings a different optimal way to structure agents — capabilities that required complex, hand-coded pipelines in 2024 are now handled by a single context-window prompt in 2026. Developers must build harnesses that allow them to quickly discard yesterday's "smart" logic, as over-engineering control flow risks breakage with the next model update.
+📎 Source: [philschmid.de – "The importance of Agent Harness in 2026"](https://www.philschmid.de/agent-harness-2026) (January 5, 2026)
+
+**2. Context Durability Is the New Bottleneck**
+
+A new bottleneck — *context durability* — is emerging. The harness is becoming the primary tool for solving "model drift," detecting exactly when a model stops following instructions or reasoning correctly after extended steps (e.g., 100+ steps). This harness-captured data is being fed directly back into training pipelines to produce models that don't degrade on long tasks.
+
+**3. Repository-First, In-Context Knowledge Design**
+
+For agent-first codebases (such as OpenAI's Codex engineering setup), best practices include preferring shared utility packages over hand-rolled helpers to keep invariants centralized, and validating data boundaries via typed SDKs so agents can't accidentally build on bad assumptions. Critically, because agents can only reason about what they can access in-context, teams must push all architectural knowledge — decisions, schemas, plans — into the repository itself as versioned artifacts. Knowledge that lives in chat threads or people's heads is effectively invisible to the system.
+📎 Source: [openai.com – "Harness engineering: leveraging Codex in an agent-first world"](https://openai.com/index/harness-engineering/)
+
+**4. Conscious Model Selection as an Orchestration Lever**
+
+In 2026, model selection itself has become a key orchestration lever: rapid, interruptible, context-hungry models suffice for everyday developer workflows, while "Einstein-class" models are reserved for marathon tasks. Integration harnesses, ephemeral tests, infrastructural resilience, and conscious model orchestration now matter as much as the core intelligence behind the tooling.
+📎 Source: [foo.software – "Agentic Orchestration, Harness Hype, and the Return of Human Code Review"](https://www.foo.software/posts/agentic-orchestration-harness-hype-and-the-return-of-human-code-review) (published ~1 week ago)
+
+---
+
+**Bottom line:** The consensus in early 2026 is that the best AI coding harness frameworks are *model-agnostic, repository-centric, and architected to be easily replaced* — prioritizing context management and observability over clever, brittle orchestration logic.
+
+## Query 5: Ren'Py game engine update February 2026
+
+Based on the search results, here is a concise, factual summary:
+
+---
+
+**Ren'Py Game Engine — Early 2026 Update Status**
+
+The most recent official stable release of the Ren'Py Visual Novel Engine is **version 8.5.2 "In Good Health"**, released on **January 3, 2026**. Ren'Py 8 is recommended for all projects. No further stable release has been published in February 2026 as of now; a nightly fix build is produced every night containing fixes that haven't yet made it through the official release process.
+
+The 8.5.x line is a significant update: Ren'Py 8.5 added support for Live2D models on the Web platform and introduced a new Automated Testing framework for testing games and Ren'Py itself. It also added Unicode 17 support, more Emoji characters, and numerous other improvements and fixes.
+
+**Key sources:**
+- Official site: https://www.renpy.org/
+- Latest release page: https://www.renpy.org/latest.html
+- GitHub releases: https://github.com/renpy/renpy/releases
+
+> **Note:** No Ren'Py release specifically dated to **February 2026** was found in search results. The most recent stable version remains 8.5.2 from January 3, 2026. Check the official site or nightly builds for any updates since then.
+
+## Query 6: micro-SaaS founder AI dev workflow discipline February 2026
 
 Here is a concise summary of the most relevant recent findings:
 
 ---
 
-**Claude API Pricing Changes — February 2026**
+The emerging consensus for micro-SaaS founders using AI dev tools in 2026 is that **workflow discipline is the critical differentiator**: the recommended approach is to start with a precise problem statement, feed AI agents rich context (user descriptions, constraints, examples of good output), and iterate with tight human guidance — with output quality directly proportional to input quality.
 
-**Claude Opus 4.6** was released on **February 5, 2026**, priced at **$5/million input tokens and $25/million output tokens** — the same price as the previous Opus 4.5. This represents a dramatic 67% price cut versus the prior generation: Opus 4.1 and Opus 4 had cost $15/$75 per million tokens.
+A recent Business of Apps study (published ~February 2026) found that **SaaS founders are disciplined about AI execution** — many recognize the potential of intelligent automation but deliberately wait until they have the right technical foundation and cost clarity before embedding AI into their workflows.
 
-Then, on **February 17, 2026** — just 12 days later — Anthropic launched **Claude Sonnet 4.6**, which ties Opus on computer use, beats it on office tasks, and costs **40% less per token**. Sonnet 4.6 is priced at **$3/$15 per million input/output tokens**, compared to $5/$25 for Opus 4.6.
+A February 2026 Medium post by solo founder Najeeb documented a **6-step micro-SaaS framework** that took him from $0 to $2,500/month, emphasizing that building micro-SaaS is a "game a solo founder can actually win" — in contrast to traditional software companies requiring large teams and capital — with AI tools enabling near-instant profitability on autopilot.
 
-Anthropic claims Sonnet 4.6 offers similar performance to the previous Opus 4.5, while maintaining the lower Sonnet-tier pricing of $3/million input and $15/million output tokens.
-
-**Key sources:**
-- Anthropic Official Pricing: https://platform.claude.com/docs/en/about-claude/pricing
-- The New Stack (Sonnet 4.6 launch): https://thenewstack.io/claude-sonnet-46-launch/
-- Simon Willison (Feb 17, 2026): https://simonwillison.net/2026/Feb/17/claude-sonnet-46/
-- LaoZhang AI Blog (Opus 4.6 pricing guide): https://blog.laozhang.ai/en/posts/claude-opus-4-6-pricing-subscription-guide
-
-## Query 4: AI coding agent harness orchestration best practices 2026
-
-Here is a concise, evidence-backed summary of the most relevant recent findings:
-
----
-
-### AI Coding Agent Harness Orchestration — Best Practices (2026)
-
-The dominant theme emerging in early 2026 is a **shift from building agents to building harnesses** — the lightweight infrastructure layer that wraps agents with context, tools, filesystem access, and sub-agent coordination.
-
-- Harnesses must remain **lightweight and model-agnostic**, because every new model release has a different optimal way to structure agents — capabilities that required complex, hand-coded pipelines in 2024 are now handled by a single context-window prompt in 2026. Developers should build harnesses that allow them to "rip out the smart logic they wrote yesterday," since over-engineering control flow means the next model update will break the system.
-
-- Anthropic's engineering team (in their **Claude 4 prompting guide**) recommends a harness structure that uses **"a different prompt for the very first context window"** — an initializer agent that sets up the environment with all necessary context for future coding agents. In one example (a claude.ai clone), this initializer wrote a comprehensive feature requirements file with over 200 features, each initially marked "failing" so later coding agents had a clear outline of what full functionality looked like.
-
-- The five key components of an effective harness are: **(1) context/state management**, (2) **filesystem access management** (e.g., Claude Code's harness controls exactly what filesystem operations the model performs), (3) **tool call orchestration** (Vercel achieved an 80% tool reduction, eliminating infinite loops and cascading failures), (4) **sub-agent coordination** (one agent researches, another writes, a third reviews), and (5) **prompt preset management** for task-specific instructions.
-
-- Cursor's January 2026 "FastRender" project — a browser built in a week using GPT-5.2, with over **1 million lines of code across 1,000 files** — validated a **three-role hierarchical orchestration pattern** as current best practice: *Planners* continuously explore the codebase and create tasks, *Workers* execute tasks independently without coordinating with each other, and *Judge agents* determine whether to continue or merge output. Equal-status agents with locking or optimistic concurrency failed: 20 agents slowed to the throughput of 2–3.
-
----
-
-**Key Sources:**
-- Philipp Schmid (Jan 5, 2026): https://www.philschmid.de/agent-harness-2026
-- Anthropic Engineering: https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents
-- Mike Mason (Jan 2026): https://mikemason.ca/writing/ai-coding-agents-jan-2026/
-- Aakash Gupta (Jan 8, 2026): https://aakashgupta.medium.com/2025-was-agents-2026-is-agent-harnesses-heres-why-that-changes-everything-073e9877655e
-
-## Query 5: micro-SaaS founder dev workflow discipline AI cost optimization February 2026
-
-Now I have enough high-quality, sourced material to write a precise, well-cited summary. Let me compile the findings.
-
-Here is a concise, source-backed summary of the most relevant recent findings on **micro-SaaS founder dev workflow discipline and AI cost optimization** as of early 2026:
-
----
-
-### AI Dev Workflow Discipline for Micro-SaaS Founders (Early 2026)
-
-The dominant theme across practitioner communities is that **AI coding tools are now a core execution layer, not a side experiment — but discipline is the differentiator.**
-
-SaasRise's CEO Mastermind recap for the week of Jan 19–22, 2026 covered how teams are accelerating product delivery with modern AI dev workflows, specifically recommending using **Claude Code inside Cursor for major speed gains**, automating reviews on every commit, and implementing voice-to-task workflows. Their key warning: "Speed without discipline creates problems."
-
-On **tooling and pricing**, the 2026 comparison at aiorg.dev (updated ~2 weeks ago) found that **Cursor Pro costs $20/month** with 500 fast premium requests, while **Claude Code requires a Claude Max subscription at $100/month (5x usage) or $200/month (20x usage)**, or direct API pay-per-token — recommending solo founders on a budget start with Cursor Pro and add Claude Code when shipping speed matters more than savings.
-
-On **AI cost optimization and unit economics**, the *Hidden Economics of AI SaaS* analysis (The Marketing Hub, Dec 18, 2025) concluded that every user action triggering an LLM carries direct variable cost, and that a single heavy user can consume **500,000+ tokens/month** — meaning "if your pricing and plans do not reflect this variance, you may have a problem." Getmonetizely's *Economics of AI-First B2B SaaS in 2026* cited benchmarks of **GPT-4 Turbo at $10–30/M input tokens and $30–60/M output tokens**, and **Claude 3 Opus at $15/M input / $75/M output**, with a B2B app processing 50M tokens/month facing inference costs of **$500–$2,000/month per enterprise customer** before any other COGS. Their margin discipline advice: at scale, self-hosted models (e.g., Llama 3 70B at $0.50–$2/M tokens) reduce inference costs **60–80%**, but require **$2–5M+ upfront** — the crossover point typically occurs around **$300K/month** in external inference spend.
-
-On **dev productivity outcomes**, Freemius's *2025 State of Micro-SaaS* report (Dec 23, 2025) found that **82% of developers use AI coding assistants daily or weekly**, with studies showing **30–75% time savings** in coding, debugging, and documentation tasks. SoftwareSeni's Jan 12, 2026 deep-dive noted that the practical productivity ceiling ranges from **20–30% gains with GitHub Copilot**, **40–50% with Cursor** in enterprise deployments, and **60–70% with custom AI copilots** in optimized workflows — though custom setups require six-month implementations.
+The broader shift noted across sources is that **implementation speed is no longer the competitive advantage** — "implementation is getting cheaper," and the scarce resource is now *judgment*: knowing what's worth building and having the taste and customer understanding to steer fast AI-driven iterations.
 
 ---
 
 **Key sources:**
-- SaasRise CEO Mastermind Jan 2026 recap: https://www.saasrise.com/blog/saasrise-ceo-mastermind-recaps-for-the-week-of-jan-19---22-2026
-- Cursor vs Claude Code (aiorg.dev, 2026): https://aiorg.dev/blog/cursor-vs-claude-code
-- Hidden Economics of AI SaaS (TMH, Dec 2025): https://the-marketinghub.com/blog/hidden-economics-ai-saas-2026/
-- Economics of AI-First B2B SaaS (Getmonetizely, Dec 2025): https://www.getmonetizely.com/articles/the-economics-of-ai-first-b2b-saas-in-2026-margins-pricing-models-and-profitability
-- AI as Solo Founder Productivity Multiplier (SoftwareSeni, Jan 2026): https://www.softwareseni.com/ai-as-solo-founder-productivity-multiplier-tools-workflows-and-real-roi/
+- 📄 [The New Way to Build a SaaS in 2026 With AI Coding Tools — SaaSRise](https://www.saasrise.com/blog/the-new-way-to-build-a-saas-in-2026-with-ai-coding-tools)
+- 📄 [AI Disruption in 2026: What SaaS Founders Are Actually Doing — Business of Apps](https://www.businessofapps.com/insights/ai-disruption-in-2026-what-saas-founders-are-actually-doing/) *(5 days ago)*
+- 📄 [From 0 to $2,500: My 6-Step Framework — Medium, Feb 2026](https://medium.com/write-a-catalyst/from-0-to-2-500-my-6-step-framework-for-building-micro-saas-as-a-solo-founder-fba5d545b97c) *(~2 weeks ago)*
 
-## Query 6: Substack launch strategy tips February 2026
+## Query 7: Brussels Belgium specialty food retail February 2026
 
-Here is a concise summary of the most relevant recent findings on Substack launch strategy tips as of February 2026:
+Here is a concise summary of the most relevant recent findings:
 
 ---
 
-**Substack Launch Strategy Tips — February 2026**
+**Brussels / Belgium Specialty Food Retail — February 2026**
 
-A key launch tip from January 2026 is to publish **at least five strong pieces in the first couple of weeks** after launching — not just a welcome post, but posts that genuinely demonstrate the quality subscribers can expect. **Substack Notes** is also highlighted as a critical growth tool: writers are encouraged to use it to sound like a human rather than a robot, sharing quick wins, frustrations, or small personal moments to build connection that long-form posts alone cannot achieve.
+**Ratz**, a new food market billing itself as the largest in Belgium, is opening in the Brussels municipality of **Ixelles**. The venue spans **three floors and 3,000 square meters**. This is the single most significant specialty food retail development in Brussels as of mid-February 2026. (Source: [RetailDetail EU](https://www.retaildetail.eu/news/food/brussels-to-get-belgiums-largest-food-market/), ~February 18, 2026)
 
-**Live sessions** (workshops and Q&As) are described as "the highest-leverage growth tool on the platform right now," with one creator recommending scheduling at least one live session per month — even just 15 minutes. A strategy that reportedly drove 14,000+ subscribers and $100K+ in digital product revenue in one year emphasizes **authenticity and resonance** — Substack in 2026 rewards writers who lead with their real identity and "messy inner life," not just polished publishing.
+The next edition of **Tavola** — a premium, curated exhibition focused on fine food and value-added products — is confirmed for **March 15–17, 2026**, making it a key near-term trade event for Belgian specialty food retail. (Source: [Grocery Trade News](https://www.grocerytradenews.com/trade-shows-in-belgium-2025-2026/))
 
-**Top Sources:**
-- *How to Start and Grow Your Substack Publication in 2026* (Jan. 9, 2026): https://writebuildscale.substack.com/p/start-and-grow-your-substack
-- *My 2026 Substack Strategy* (Jan. 6, 2026): https://wanderwealth.substack.com/p/my-2026-substack-strategy-and-what
-- *Substack Changed Everything in 2025* (Dec. 11, 2025): https://escapethecubicle.substack.com/p/substack-changed-everything-in-2025
+On the regulatory front, Belgian food and retail companies began enforcing stricter advertising rules from **January 1, 2026**, raising the age limit for marketing to minors from 13 to **16 years old**. (Source: [Food Ingredients First](https://www.foodingredientsfirst.com/news/belgium-food-ads-under-16.html))
 
-## Query 7: Belgium Brussels specialty food retail consumer trends February 2026
+**Key URLs:**
+- https://www.retaildetail.eu/news/food/brussels-to-get-belgiums-largest-food-market/
+- https://www.grocerytradenews.com/trade-shows-in-belgium-2025-2026/
+- https://www.foodingredientsfirst.com/news/belgium-food-ads-under-16.html
 
-Based on the search results, here is a concise, well-sourced summary of the most relevant findings:
+## Query 8: openai codex harness open source update February 2026
+
+Here is a concise summary of the most relevant findings:
 
 ---
 
-**Belgium/Brussels Specialty Food Retail & Consumer Trends (Early 2026)**
+**OpenAI Codex Harness & Open Source Updates — February 2026**
 
-Belgium's grocery sector operates in a mature, high-pressure environment shaped by strong discounters, demanding shoppers, and well-developed private-label strategies — a market that often sets patterns seen later in nearby European countries, where price discipline is strict and margins are thin.
+On **February 4, 2026**, OpenAI engineer Celia Chen published a detailed post explaining how all Codex surfaces — the web app, CLI, IDE extension, and new macOS app — are unified under the same **Codex harness** (the agent loop and logic), connected via the **Codex App Server**, a client-friendly, bidirectional JSON-RPC API.
 
-According to NielsenIQ's Retail Spend Barometer, Belgian consumer spending grew by 1.3% in Q3 2024, reaching €9.4 billion, driven by inflation and a shift toward premium FMCG products, though FMCG-specific volume growth was nearly flat at just +0.3% year-on-year.
+All source code for the Codex App Server is available in the **open-source Codex CLI repository**, and the protocol documentation includes schema generation. This is notable as the App Server is a Codex-harness-specific protocol, while a parallel effort — the Agent Client Protocol (ACP), by Zed Industries and JetBrains — aims to be a universal standard for connecting any coding agent to any editor.
 
-Statista's Belgium Food Market Forecast projects organic packaged food sales to reach nearly **$480 million USD** by 2026, reflecting sustained demand for organic options. This aligns with the broader trend: Belgium's food market is experiencing growing demand for organic, locally-sourced, and sustainable products, driven by increasing consumer awareness, and there is also rising demand for international and ethnic foods due to the growing diversity of the Belgian population.
+Separately, OpenAI detailed a new internal engineering methodology called **"Harness Engineering"**, where Codex agents generate, test, and deploy a **million-line production system**, integrating observability, architectural constraints, and structured documentation to automate key software development workflows.
 
-The BioXpo trade fair continues to serve Belgium's organic and natural food retail segment with a strong regional audience, while Brussels-area B2B fairs remain part of a national event calendar running through 2025–2026.
+On the open-source CLI side, February 2026 updates to the Codex CLI added **macOS CLI launch for Codex Desktop**, skill loading from `~/.agents/skills`, inline plan arguments, improved parallel shell execution, thread-tracking, hardening/reliability fixes, sandbox groundwork, and a security-driven dependency update for a Rust advisory (RUSTSEC-2026-0009).
 
 **Key Sources:**
-- NielsenIQ Retail Spend Barometer (June 2024 data): https://nielseniq.com/global/en/news-center/2024/niq-retail-spend-barometer-consumer-spending-in-belgium-increases-despite-inflation/
-- Grocery Trade News – Supermarkets in Belgium 2025 (Dec 2025): https://www.grocerytradenews.com/supermarkets-in-belgium-in-2025/
-- Statista Belgium Food Market Forecast: https://www.statista.com/outlook/cmo/food/belgium
-- Belgium Food & Retail Trade Shows 2025–2026: https://www.grocerytradenews.com/trade-shows-in-belgium-2025-2026/
-
-> **Note:** Highly granular, Brussels-specific specialty food retail data for February 2026 specifically is not yet publicly available in free sources — the above reflects the most current verified data and projections available as of early 2026. Paywalled reports from Euromonitor International (from ~$990–$1,075) would provide deeper granularity.
-
-## Query 8: Ren'Py visual novel engine update tutorial February 2026
-
-Based on the search results, here is a concise, sourced summary:
-
----
-
-**Ren'Py Visual Novel Engine – Latest Update (Early 2026)**
-
-The latest official release of Ren'Py 8 is **8.5.2 "In Good Health"**, released on **January 3, 2026**. Ren'Py 8 is recommended for all projects. A nightly fix build is also available, containing fixes that haven't yet made it through the full release process. Ren'Py includes a built-in tutorial game demonstrating core features such as dialogue scripting, images, transitions, music, effects, and branching choices, and it supports building games for Windows, macOS, Linux, Android, iOS, and HTML5 with WebAssembly. Ren'Py is free to use. No specific February 2026 tutorial release was found in search results; the closest relevant content is the official documentation and quickstart guide on the Ren'Py website.
-
-**Key Sources:**
-- 🔗 Official site & release notes: [https://www.renpy.org/](https://www.renpy.org/)
-- 🔗 GitHub repository: [https://github.com/renpy/renpy](https://github.com/renpy/renpy)
-
-> **Note:** No dedicated tutorial specifically dated **February 2026** was surfaced. If you're looking for a specific tutorial (e.g., a YouTube video or blog post from that month), I can try a more targeted search query.
+- OpenAI Engineering Blog (Feb 4, 2026): https://openai.com/index/unlocking-the-codex-harness/
+- InfoQ Harness Engineering summary (Feb 2026): https://www.infoq.com/news/2026/02/openai-harness-engineering-codex/
+- Codex CLI open-source release notes: https://releasebot.io/updates/openai/codex
