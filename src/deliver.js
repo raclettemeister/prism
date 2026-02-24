@@ -37,9 +37,13 @@ export default async function deliver(briefingMarkdown, stats) {
   const emailPayload = {
     from: 'PRISM <prism@julien.care>',
     to: ['staycreative@julien.care'],
+    reply_to: 'hello@chezjulien.be',
     subject,
     html,
     text,
+    headers: {
+      'List-Unsubscribe': '<mailto:prism@julien.care?subject=unsubscribe>',
+    },
   };
 
   try {
