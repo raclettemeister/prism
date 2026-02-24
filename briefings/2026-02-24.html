@@ -252,30 +252,30 @@ Or edit <strong>NEWS-INTERESTS.md</strong> in Obsidian to adjust coverage.</p>
   <button class="section-btn" data-value="ok" onclick="setSectionRating('SIGNAL', 'ok', this)">👍</button>
   <button class="section-btn" data-value="skip" onclick="setSectionRating('SIGNAL', 'skip', this)">👎</button>
 </div>
-<p><strong>Anthropic caught 3 Chinese labs running industrial-scale Claude distillation — 16M+ API calls via 24,000 fake accounts.</strong> This isn&#39;t just a geopolitics story: it confirms that API abuse detection, behavioral fingerprinting, and account fraud resistance are now core infrastructure concerns for any frontier model provider. For Julien: your cockpit runs on Claude API access — and Anthropic&#39;s Feb 19 enforcement (blocking OAuth tokens from Free/Pro/Max plans in third-party tools) is already live. If any part of your stack uses subscription passthrough instead of API keys, it may have silently broken.</p>
-<p>Source: <a href="https://www.latent.space/p/ainews-anthropic-accuses-deepseek">https://www.latent.space/p/ainews-anthropic-accuses-deepseek</a> | <a href="https://winbuzzer.com/2026/02/19/anthropic-bans-claude-subscription-oauth-in-third-party-apps-xcxwbn/">https://winbuzzer.com/2026/02/19/anthropic-bans-claude-subscription-oauth-in-third-party-apps-xcxwbn/</a></p>
+<p>Simon Willison published the first two chapters of <em>Agentic Engineering Patterns</em> yesterday — a structured guide to getting reliable results from coding agents like Claude Code and Codex. Chapter 1 addresses what changes when code generation becomes nearly free; Chapter 2 covers Red/Green TDD as the enforcement mechanism. This is directly relevant to your Cockpit problem: Willison is building the vocabulary and patterns for exactly what you&#39;re trying to solve — making agents follow a sequence, not skip steps.</p>
+<p>🔗 <a href="https://simonwillison.net/2026/Feb/23/agentic-engineering-patterns/">https://simonwillison.net/2026/Feb/23/agentic-engineering-patterns/</a></p>
 <hr>
 <h2>📚 MUST-READ LIST</h2>
 <ul>
-<li><p><strong>&quot;Writing about Agentic Engineering Patterns&quot;</strong> by Simon Willison — simonwillison.net (<a href="https://simonwillison.net/2026/Feb/23/agentic-engineering-patterns/#atom-everything">link</a>)</p>
+<li><p><strong>&quot;Writing about Agentic Engineering Patterns&quot;</strong> by Simon Willison — simonwillison.net (<a href="https://simonwillison.net/2026/Feb/23/agentic-engineering-patterns/">link</a>)</p>
 <ul>
-<li>Why read it: Willison just launched a living, structured guide — chapter by chapter — on exactly how professional engineers should work <em>with</em> coding agents. Chapter 1 is &quot;Writing code is cheap now.&quot; Chapter 2 is Red/Green TDD with agents. This is the field&#39;s closest equivalent to a peer-reviewed methodology for what Julien is building in his cockpit.</li>
-<li>Cross-fed by: latent.space AINews, simonwillison.net (×2 appearances)</li>
-<li>Conversation value: Ask yourself — does cockpit-repass map to the &quot;decoupled creation + verification&quot; pattern Willison is naming? If yes, you&#39;re not alone. If no, why not?</li>
+<li>Why read it: Willison draws a hard line between <em>vibe coding</em> (no attention to the code) and <em>Agentic Engineering</em> (professional use of agents to amplify expertise). He uses &quot;Agentic Engineering&quot; to refer to building software using coding agents where the defining feature is that they can both generate and execute code, allowing them to test and iterate independently of turn-by-turn guidance. That&#39;s the exact distinction your Cockpit is trying to enforce — and he&#39;s documenting the patterns in real time.</li>
+<li>Cross-fed by: latent.space AINews (Article 1), simonwillison.net (Articles 4 &amp; 6)</li>
+<li>Conversation value: Does his Red/Green TDD chapter give you a concrete gate to add to the Superpowers chain? Could it replace or reinforce <code>cockpit-repass</code>?</li>
 </ul>
 </li>
 <li><p><strong>&quot;Stop Using /init for AGENTS.md&quot;</strong> by Addy Osmani — addyosmani.com (<a href="https://addyosmani.com/blog/agents-md/">link</a>)</p>
 <ul>
-<li>Why read it: Two 2026 papers prove that auto-generated context files slow agents down and inflate costs 20%+. Human-written files work — but <em>only</em> if they contain non-discoverable information. Your <code>cockpit-core.mdc</code> (18 lines, hand-written) is already the right shape. This article gives you the research to know <em>why</em>, and what to trim or protect.</li>
-<li>Cross-fed by: addyosmani.com (Tier 1)</li>
-<li>Conversation value: Audit your <code>.mdc</code> files against the filter: &quot;Can the agent discover this on its own?&quot; Every line that fails that test is noise that competes with your cockpit chain.</li>
+<li>Why read it: Auto-generated AGENTS.md files reduced task success by 2–3% while increasing cost by over 20%, per ETH Zurich research. Developer-written files improved success by ~4% — but only when they contained non-discoverable information like tooling gotchas and non-obvious conventions. You have <code>cockpit-core.mdc</code> trimmed to 18 lines. This research validates that instinct — and tells you what those 18 lines should contain.</li>
+<li>Cross-fed by: addyosmani.com (Article 8), latent.space AINews (Article 1, micro-controversy on CLAUDE.md)</li>
+<li>Conversation value: Audit your <code>cockpit-core.mdc</code> against this filter: <em>can the agent discover this on its own?</em> If yes, cut the line.</li>
 </ul>
 </li>
-<li><p><strong>&quot;Ladybird adopts Rust, with help from AI&quot;</strong> by Simon Willison — simonwillison.net (<a href="https://simonwillison.net/2026/Feb/23/ladybird-adopts-rust/#atom-everything">link</a>)</p>
+<li><p><strong>&quot;Ladybird adopts Rust, with help from AI&quot;</strong> by Simon Willison (linking Andreas Kling) — simonwillison.net (<a href="https://simonwillison.net/2026/Feb/23/ladybird-adopts-rust/">link</a>)</p>
 <ul>
-<li>Why read it: The Ladybird case study is the clearest real-world proof that human-directed agent work (hundreds of small, steering prompts — not autonomous runs) produced 25,000 lines of Rust in 2 weeks vs. months solo. The key unlock: test coverage made agentic work safe. This is the mental model for Julien&#39;s cockpit — the AI isn&#39;t the pilot, you are.</li>
-<li>Cross-fed by: simonwillison.net (Tier 1)</li>
-<li>Conversation value: Your cockpit philosophy (&quot;sequences matter, like a helicopter pre-flight&quot;) maps directly to Andreas Kling&#39;s method. This is your approach validated at production scale.</li>
+<li>Why read it: Andreas Kling used Claude Code and Codex to port 25,000 lines of C++ to Rust in ~two weeks — work that would have taken months by hand. The key: it was human-directed, not autonomous. He decided what to port, in what order, and what the Rust code should look like — hundreds of small prompts steering the agents. This is the most concrete real-world case for your cockpit philosophy (sequences matter, human directs) published in the last 24h.</li>
+<li>Cross-fed by: simonwillison.net (Articles 4 &amp; 6)</li>
+<li>Conversation value: The reason it worked was a high-quality conformance test suite that let him verify output at every step. What&#39;s your equivalent gate for the Superpowers chain?</li>
 </ul>
 </li>
 </ul>
@@ -287,23 +287,30 @@ Or edit <strong>NEWS-INTERESTS.md</strong> in Obsidian to adjust coverage.</p>
   <button class="section-btn" data-value="skip" onclick="setSectionRating('BUILDER_INTELLIGENCE', 'skip', this)">👎</button>
 </div>
 <p><strong>Methodology beat:</strong></p>
-<p>🔥 <strong>The decoupled creation + verification pattern is crystallizing as the field&#39;s answer to the &quot;AI skips steps&quot; problem</strong> — which is <em>exactly</em> Julien&#39;s named pain point. Practitioners in early 2026 are splitting agent work into two hard-separated passes: one slash command for implementation, a second for verification. This is enforced structurally (separate commands), not instructionally (hoping the agent remembers). Your <code>cockpit-repass</code> skill is doing this philosophically — but the field&#39;s convergence suggests the enforcement mechanism is the slash command boundary, not the prompt.</p>
-<p>🔥 <strong>Cursor Composer 1.5 has built-in multi-pass &quot;thinking tokens&quot;</strong> — it reasons before acting, self-summarizes when context runs out, and scales thinking depth to task difficulty. This is the platform-level answer to your multi-pass problem. It&#39;s not a rule or a skill — it&#39;s in the model itself. Worth verifying which model version your Cursor sessions are running.
-Source: <a href="https://releasebot.io/updates/cursor">https://releasebot.io/updates/cursor</a></p>
-<p>🔥 <strong>The AGENTS.md / <code>.mdc</code> research (Addy Osmani)</strong> directly validates your lean <code>cockpit-core.mdc</code> approach. Auto-generated = noise. Hand-written, non-discoverable = signal. 18 lines of the right stuff beats 200 lines of boilerplate.</p>
-<p>🔥 <strong>Simon Willison named and launched &quot;Agentic Engineering&quot; as a distinct discipline today</strong> — separating it from vibe coding. Agentic Engineering = professional engineers using agents to amplify expertise. Vibe coding = no attention to code at all. Julien is building the cockpit <em>for</em> Agentic Engineering. The field just got a name and a book.</p>
+<p>Two things converged yesterday that speak directly to your chain-enforcement problem:</p>
+<ol>
+<li><p><strong>The AGENTS.md debate hardened into research.</strong> Auto-generated AGENTS.md files hurt agent performance and inflate costs by 20%+ because they duplicate what agents can already discover. Human-written files help only when they contain non-discoverable information — tooling gotchas, non-obvious conventions, landmines. The practical filter: can the agent discover this on its own by reading your code? If yes, delete it. Applied to the Cockpit: your <code>.mdc</code> rules should contain <em>only</em> things the agent cannot infer — like &quot;do not skip brainstorm gate&quot; — not architecture overviews it can read.</p>
+</li>
+<li><p><strong>Willison named the discipline.</strong> He distinguishes Agentic Engineering from vibe coding, where vibe coding means paying no attention to the code at all — often associated with non-programmers. Agentic Engineering is the other end: professional software engineers using coding agents to amplify their existing expertise. You&#39;re building the harness for Agentic Engineering. That framing is now publicly documented and will spread fast.</p>
+</li>
+<li><p><strong>The latent.space AINews flagged a micro-controversy:</strong> &quot;Delete your CLAUDE.md/AGENTS.md files&quot; — the argument being that over-customization may be cargo cult — was echoed across the community. Directionally consistent with Osmani&#39;s research above.</p>
+</li>
+</ol>
 <p><strong>Micro-SaaS Radar:</strong></p>
-<p>The AI benchmark integrity collapse (SWE-Bench Verified officially deprecated today) surfaces a real friction: <strong>developers have no reliable way to evaluate which model is actually better for their specific workflow.</strong> A micro-tool that runs a user&#39;s own task suite against multiple models and reports &quot;capabilities per dollar&quot; for <em>their</em> use case — not abstract benchmarks — is an unbuilt gap. Low priority for Julien now, but worth flagging as a pattern.</p>
-<p>The Anthropic OAuth crackdown creates another real friction: <strong>teams who built on subscription passthrough are now forced to migrate to API key auth with no warning.</strong> Migration tooling or a plain-language &quot;is your Claude setup compliant?&quot; checker is a narrow, buildable product. Again, not Julien&#39;s lane right now — but a signal worth watching.</p>
+<p>The ACE framework (Agentic Context Engineering, ICLR 2026) treats context as an evolving playbook that adapts through a generator/reflector/curator pipeline, rather than a static file. On agent benchmarks, it outperformed static approaches by 12.3%. Nobody has built a simple, non-technical UI for this pattern yet. A &quot;smart AGENTS.md manager&quot; that auto-prunes redundant lines and scopes context per task type would be a legitimate micro-SaaS for the wave of builders now adopting coding agents. Early signal only — but worth flagging.</p>
 <p><strong>Tool &amp; Stack Updates:</strong></p>
-<p>🟡 <strong>Cursor Custom Modes (beta) — live in 0.48.x</strong> — Settings → Features → Chat → Custom modes. This is the exact experiment Julien identified as &quot;next concrete step&quot; for his cockpit. It&#39;s available <em>right now</em>. Planner mode (read-only) + Executor mode (full access) = the hard gates he wanted to replicate from Roo Code, but without the €60-70/day Opus cost.
-Source: <a href="https://cursor.com/changelog/0-48-x">https://cursor.com/changelog/0-48-x</a> | <a href="https://docs.cursor.com/custom-modes">https://docs.cursor.com/custom-modes</a></p>
-<p>🟡 <strong>Anthropic OAuth enforcement is live (since Jan 9, 2026), policy written Feb 19.</strong> Subscription tokens are blocked in third-party harnesses. API key auth required. If Julien&#39;s Cursor or any Superpowers tooling ever ran on subscription passthrough, it may already be silently broken — check now.
-Source: <a href="https://winbuzzer.com/2026/02/19/anthropic-bans-claude-subscription-oauth-in-third-party-apps-xcxwbn/">https://winbuzzer.com/2026/02/19/anthropic-bans-claude-subscription-oauth-in-third-party-apps-xcxwbn/</a></p>
-<p>🟡 <strong>Cursor launched long-running agents (Feb 12)</strong> at cursor.com/agents — Ultra/Teams/Enterprise only. Not immediately relevant to Julien&#39;s current setup, but signals the platform direction: Cursor is betting on autonomous, long-horizon work. This is where Roo Code&#39;s appeal lives, now being absorbed into Cursor natively.
-Source: <a href="https://cursor.com/changelog">https://cursor.com/changelog</a></p>
+<ul>
+<li><p><strong>Claude Code v2.1.50 (Feb 20):</strong> Native worktree management for agents shipped — a <code>--worktree (-w)</code> flag starts Claude in an isolated git worktree, with <code>WorktreeCreate</code> and <code>WorktreeRemove</code> hook events for custom VCS setup and teardown, and support for <code>isolation: worktree</code> in agent definitions. This is significant for multi-agent setups. Not immediately relevant to your Cursor-based cockpit, but watch it — this is the direction Claude Code is moving.</p>
+</li>
+<li><p><strong>Cursor:</strong> The February 18 release introduced the ability to hand off plans from the CLI to the cloud, in-line rendering of ASCII diagrams, and a persistent decision menu when a plan is generated. No breaking changes to Custom Modes. Your planned Cockpit Planner / Cockpit Executor setup is still the right next move.</p>
+</li>
+<li><p><strong>Windsurf:</strong> Plan Mode now automatically switches back to Code Mode when a user starts implementing a plan, and support for reading skills from the <code>.agents/skills</code> directory was added. Windsurf is converging toward what you&#39;re building manually in Cursor. Note for architecture reference.</p>
+</li>
+<li><p><strong>Anthropic OAuth enforcement (Feb 18–20):</strong> Anthropic clarified that using OAuth tokens with third-party tools violates their Terms of Service, with server-side blocks and account bans enforced since January 9, 2026. Everything outside official Claude Code and Claude.ai requires API keys through the Claude Console. No direct impact on your stack (you&#39;re using Cursor + API), but confirms the cost discipline dimension of your Cockpit is non-negotiable.</p>
+</li>
+</ul>
 <p><strong>API Economics:</strong></p>
-<p>Nothing new in the API landscape directly impacting Julien&#39;s current stack today.</p>
+<p>Nothing new in the API landscape that directly affects your stack today.</p>
 <hr>
 <h2>📊 PIONEER ADVANTAGE CHECK</h2>
 <div class="section-feedback" data-section="PIONEER_ADVANTAGE">
@@ -322,39 +329,32 @@ Source: <a href="https://cursor.com/changelog">https://cursor.com/changelog</a><
 </tr>
 </thead>
 <tbody><tr>
-<td><strong>Cursor Custom Modes (beta)</strong> — Planner/Executor split now possible natively in Settings → Features → Chat</td>
-<td>You&#39;ve already designed the architecture. The tool just caught up.</td>
-<td>Weeks — beta, not yet crowded</td>
-<td><strong>Real</strong> — verified in changelog</td>
-<td>Unblock the #1 unsolved cockpit problem this week. Concretely: Cockpit Planner = read-only + repass rules, Executor = full access. Try today.</td>
+<td><strong>Spec-first AI development</strong> (Article 1: FreeBSD driver story) — Solo builder generates 11-chapter spec with one agent, proofreads it with a second, builds clean-room from a third. Multi-agent spec pipeline beats single-session vibe-coding.</td>
+<td>You already use Superpowers&#39; brainstorm→plan chain. The spec-generation pattern is the missing upstream step — before brainstorm, not instead of it.</td>
+<td>30–60 days before mainstream adoption. Still requires deliberate setup.</td>
+<td><strong>Real</strong> — demonstrated on a kernel driver (hard mode). Not a toy example.</td>
+<td>Direct. Apply immediately to the RenPy cockpit design you&#39;re thinking through this week. Generate a spec <em>before</em> opening Cursor. Low cost, high upside.</td>
 </tr>
 <tr>
-<td><strong>Cursor Composer 1.5 &quot;thinking tokens&quot;</strong> — variable-depth reasoning that self-summarizes recursively on hard problems</td>
-<td>Your multi-pass problem has a native partial answer. The model already does some of this. Knowing this reframes whether you need cockpit-repass to <em>force</em> passes or just <em>trigger the right problem framing</em></td>
-<td>Months — model is live now</td>
-<td><strong>Real</strong> — verify if already on your Cursor version</td>
-<td>Changes the cockpit philosophy: maybe the goal isn&#39;t <em>forcing</em> passes, it&#39;s <em>signaling hard-problem mode</em> to Composer 1.5</td>
+<td><strong>Beehive multi-workspace orchestrator</strong> (Article 11) — macOS app for running multiple Claude Code agents in isolated git workspaces simultaneously.</td>
+<td>You&#39;ve identified the single-agent/serial-execution limitation of Cursor. Beehive is a parallel-agent harness for macOS — visual, zero-config.</td>
+<td>Open now. Free. v1 shipped today.</td>
+<td><strong>Real, early</strong> — MIT licensed, HN Show HN launch. Not vaporware.</td>
+<td>Cockpit-relevant: if the Cursor Custom Modes experiment stalls, Beehive is a fallback architecture worth 30 minutes this week. Caveat: macOS only — check platform first.</td>
 </tr>
 <tr>
-<td><strong>Decoupled Creation + Verification pattern</strong> — community-confirmed workflow: two slash commands (implement / verify) rather than one combined prompt</td>
-<td>You&#39;re reinventing this with cockpit-repass. The pattern is named and validated.</td>
-<td>Now — pattern is mature</td>
-<td><strong>Real</strong> — multiple practitioner sources</td>
-<td>Rename your gates explicitly around this framing. &quot;Design Challenge&quot; = creation pass. &quot;Review Repass&quot; = verification pass. The terminology sharpens what you&#39;re enforcing.</td>
+<td><strong>Dypai backend-from-IDE via MCP</strong> (Article 12) — Describe your backend in plain English inside Cursor; Dypai builds tables, auth, endpoints, and deploys them. Free tier available.</td>
+<td>Non-technical founder building micro-SaaS: Dypai collapses &quot;I need a backend&quot; into a Cursor conversation. No server config.</td>
+<td>Open now. Free tier live.</td>
+<td><strong>Real for prototyping, unproven at scale</strong> — $19/mo per project for production. Watch reliability.</td>
+<td>High relevance for micro-SaaS builders. For the Sweden Odyssey or any future product with a backend requirement, this is worth a 30-minute test before building anything custom.</td>
 </tr>
 <tr>
-<td><strong>Spec-first AI development</strong> (Article 1 — FreeBSD Wi-Fi driver) — writing a full spec before any code, then using the spec as ground truth</td>
-<td>The FreeBSD driver case is the most detailed public proof that spec-first beats prompt-first for complex outputs</td>
-<td>Now — pattern proven, underused</td>
-<td><strong>Real</strong> — 3 cross-feeds, HN front page</td>
-<td>Direct cockpit application: before any new micro-SaaS build, mandate a spec document as Gate 0. Your brainstorming skill produces fragments — a spec skill would produce a contract.</td>
-</tr>
-<tr>
-<td><strong>Task routing by complexity</strong> (Article 12 — Rhelm)</td>
-<td>A solo IT founder built the Opus/Sonnet cost-routing logic you do manually — as a product — in 4 days</td>
-<td>30–60 days before this pattern saturates</td>
-<td><strong>Real, early</strong></td>
-<td>Validates your Opus-for-architecture / Sonnet-for-implementation cockpit rule as a <em>product</em>, not just a personal workflow. Worth watching — not worth building yet.</td>
+<td><strong>Goldman Sachs: AI added &quot;basically zero&quot; to US GDP in 2025</strong> (Article 6)</td>
+<td>Contrarian signal: the macro narrative is ahead of measured productivity. You building with AI tools now is not yet &quot;normal&quot; — the productivity gap is real and exploitable.</td>
+<td>Ongoing structural advantage — 12–18 month window before AI-assisted productivity becomes baseline.</td>
+<td><strong>Real, not hype</strong> — Goldman Chief Economist on record.</td>
+<td>Stay the course. The fact that 80% of firms report no productivity impact means the 20% who have figured it out — including solo founders with disciplined cockpits — are building an asymmetric advantage right now.</td>
 </tr>
 </tbody></table>
 <hr>
@@ -365,55 +365,56 @@ Source: <a href="https://cursor.com/changelog">https://cursor.com/changelog</a><
   <button class="section-btn" data-value="skip" onclick="setSectionRating('TOOLS_TO_TRY', 'skip', this)">👎</button>
 </div>
 <ul>
-<li><strong>Cursor Custom Modes (beta)</strong> — native Planner/Executor mode split, enabled at Settings → Features → Chat → Custom modes. <a href="https://docs.cursor.com/chat/custom-modes">docs.cursor.com/chat/custom-modes</a><ul>
-<li>Try it: Spend 30 minutes creating exactly two modes. Cockpit Planner: read-only tools, inject cockpit-repass rules in system prompt. Cockpit Executor: full file access, no planning rules. Run one real cockpit session through both modes.</li>
-<li>Relevance: This is the direct solution to the #1 unsolved cockpit problem this week. This is the experiment you were already planning.</li>
-<li>Signal: Verified in official Cursor changelog (0.48.x); surfaced in Web Intelligence Query 1.</li>
+<li><strong>Beehive</strong> — Multi-workspace agent orchestrator for macOS. Run Claude Code agents in isolated git workspaces side-by-side, with persistent terminals per branch. Free and open source.<ul>
+<li>🔗 <a href="https://storozhenko98.github.io/beehive/">https://storozhenko98.github.io/beehive/</a></li>
+<li><strong>Try it:</strong> Download, link your Cockpit repo, create two Combs (one for Cockpit Planner, one for Cockpit Executor), and run a Claude Code session in each. Observe whether the isolation approximates what Roo Code&#39;s Architect/Code gate gave you.</li>
+<li><strong>Relevance:</strong> Directly addresses your core Cockpit problem — enforcing separation between planning and execution modes. This is a concrete alternative architecture to Cursor Custom Modes worth comparing in parallel.</li>
+<li><strong>Signal:</strong> HN Show HN, launched today (Feb 24). Score qualifies as Tier 3. Low cross-feed, but direct relevance earns inclusion.</li>
 </ul>
 </li>
 </ul>
-<div class="tool-feedback" data-tool="0" data-name="Cursor Custom Modes (beta)"><span class="tool-feedback-label">React:</span> <button class="tool-reaction-btn" data-value="love" onclick="setToolReaction(0, 'love', this)">❤️</button> <button class="tool-reaction-btn" data-value="ok" onclick="setToolReaction(0, 'ok', this)">👍</button> <button class="tool-reaction-btn" data-value="skip" onclick="setToolReaction(0, 'skip', this)">👎</button></div>
+<div class="tool-feedback" data-tool="0" data-name="Beehive"><span class="tool-feedback-label">React:</span> <button class="tool-reaction-btn" data-value="love" onclick="setToolReaction(0, 'love', this)">❤️</button> <button class="tool-reaction-btn" data-value="ok" onclick="setToolReaction(0, 'ok', this)">👍</button> <button class="tool-reaction-btn" data-value="skip" onclick="setToolReaction(0, 'skip', this)">👎</button></div>
 
 <ul>
-<li><strong>Cursor Agent Best Practices blog</strong> — Cursor&#39;s official January 9, 2026 guide on Rules structure, Skills vs Rules, and decoupled creation/verification workflow. <a href="https://cursor.com/blog/agent-best-practices">cursor.com/blog/agent-best-practices</a><ul>
-<li>Try it: Read with one specific question: <em>&quot;Does my cockpit-core.mdc violate any of these principles?&quot;</em> Run the Addy Osmani filter (&quot;Can the agent discover this from the repo?&quot;) on each of your 18 lines.</li>
-<li>Relevance: Direct cockpit architecture input. Complements the Addyosmani must-read from yesterday&#39;s briefing.</li>
-<li>Signal: Cited in Web Intelligence Query 6; cross-confirmed by DEV.to and ibuildwith.ai.</li>
+<li><strong>Dypai</strong> — MCP-powered backend builder. Connect to Cursor, describe what you need in plain English, get a live API with PostgreSQL, auth, and storage. Free tier: 1 project.<ul>
+<li>🔗 <a href="https://www.dypai.ai/">https://www.dypai.ai/</a></li>
+<li><strong>Try it:</strong> Connect Dypai MCP to Cursor. Ask it to scaffold a simple sales data endpoint (read-only, one table). Compare effort vs. building a Cloudflare Worker manually. Time the session.</li>
+<li><strong>Relevance:</strong> Sales Data project (Chez Julien BI) and any future micro-SaaS needing a backend. Could also inform how you think about backend architecture for clients if you productize the Cockpit workflow.</li>
+<li><strong>Signal:</strong> HN Show HN, today. Architecture (MCP + IDE) aligns exactly with your stack.</li>
 </ul>
 </li>
 </ul>
-<p>No new tools beyond these two. The rest of today&#39;s articles don&#39;t surface anything worth 30 minutes of your time.</p>
 <hr>
-<div class="tool-feedback" data-tool="1" data-name="Cursor Agent Best Practices blog"><span class="tool-feedback-label">React:</span> <button class="tool-reaction-btn" data-value="love" onclick="setToolReaction(1, 'love', this)">❤️</button> <button class="tool-reaction-btn" data-value="ok" onclick="setToolReaction(1, 'ok', this)">👍</button> <button class="tool-reaction-btn" data-value="skip" onclick="setToolReaction(1, 'skip', this)">👎</button></div>
+<div class="tool-feedback" data-tool="1" data-name="Dypai"><span class="tool-feedback-label">React:</span> <button class="tool-reaction-btn" data-value="love" onclick="setToolReaction(1, 'love', this)">❤️</button> <button class="tool-reaction-btn" data-value="ok" onclick="setToolReaction(1, 'ok', this)">👍</button> <button class="tool-reaction-btn" data-value="skip" onclick="setToolReaction(1, 'skip', this)">👎</button></div>
 ## 🏗️ BUILD WATCH
 
-<p><strong>🔩 Spec-first AI development is becoming the dominant pattern for complex builds.</strong>
-The FreeBSD Wi-Fi driver story (Article 1) is the most operationally detailed public case study yet of what actually works when AI-assisted engineering gets hard. The author&#39;s workflow — generate spec → proofread spec with a second AI session → implement against spec as ground truth — is a direct counter to the &quot;prompt and hope&quot; approach. This pattern is being independently discovered by practitioners and is accelerating. The author used a clean-room specification approach: spawning a fresh session to write a detailed spec, then using a separate proofreading session with a different model to verify the spec against source code before any implementation began. The cockpit implication: your brainstorming skill produces <em>ideas</em>. A spec skill would produce a <em>contract the executor cannot ignore</em>.</p>
-<p><strong>🧪 AI binary auditing — interesting, pre-production.</strong>
-Researchers hid backdoors in ~40MB binaries and tested AI agents against them. Even the best model, Claude Opus 4.6, found relatively obvious backdoors in small/mid-size binaries only 49% of the time, and most models had high false positive rates. Directional signal: AI security tooling is real but nowhere near reliable. Not a build opportunity yet. Track in 12 months.</p>
-<p><strong>⚙️ Task routing as a micro-SaaS product.</strong>
-Article 12 (Rhelm) is a one-person build solving exactly the cost-routing problem you solve manually. The product is early, the waitlist just opened. Worth watching to see if it finds traction — not to copy, but to validate that model-routing discipline is a real user pain point beyond your own cockpit.</p>
+<p><strong>The spec-before-code pattern is crystallising into a method.</strong>
+Article 1 (FreeBSD driver) is the most instructive build story of the week. A solo builder ran three distinct agent passes: (1) spec generation with Pi agent, (2) spec proofreading with Codex, (3) clean-room implementation with a fresh agent context. The key insight is not the tool used — it&#39;s the deliberate context isolation between passes. Each agent session started fresh; no contamination from previous failed attempts. The working module was the result of the third cold-start, not the first hot one.</p>
+<p>This is the pattern your <code>cockpit-repass</code> skill is attempting to enforce within a single session. The builder here solved the same problem by going between sessions entirely. Worth noting: he explicitly flagged Gemini as the highest hallucination rate model in the proofreading loop, across Opus 4.5, Opus 4.6, Codex 5.2, and Gemini 3 Pro.</p>
+<p><strong>Trajectory to track:</strong> Spec-as-AGENTS.md is becoming a norm. This builder stored decision points in project docs and referenced them in AGENTS.md explicitly so future agent sessions could pick up context. This is structurally identical to what you&#39;re doing in MyLifeOS — but applied at the project/code level. The pattern will be mainstream in 60–90 days.</p>
 <hr>
 <h2>⏪ ACTION AUDIT</h2>
 <p>No previous actions to track.</p>
 <hr>
 <h2>🎯 TODAY&#39;S PRIORITIES</h2>
-<p><strong>1. 🔴 Activate Custom Modes in Cursor — TODAY</strong>
-This is unblocked. The feature is live in 0.48.x. Go to Settings → Features → Chat → Custom modes and build the Planner/Executor split you designed. This is the single highest-leverage action in the cockpit — it converts soft instruction enforcement into a hard structural gate. Don&#39;t design it. Don&#39;t plan it. Open Cursor and do it.</p>
-<p><strong>2. 🟡 Run the <code>.mdc</code> audit from Osmani&#39;s research</strong>
-Read the AGENTS.md article (10 min), then apply the one-question filter to every line in your <code>.mdc</code> files: <em>&quot;Can the agent discover this on its own?&quot;</em> Delete what fails. Your 18-line <code>cockpit-core.mdc</code> is probably already clean — but verify. The research is clear: noise competes with your chain, and your chain discipline problem may be partly a context bloat problem.</p>
-<p><strong>3. 🟢 Check your Claude API authentication method</strong>
-Anthropic&#39;s OAuth crackdown has been enforced since Jan 9. If anything in your Cursor + Superpowers setup was using subscription token passthrough, it&#39;s silently broken. Takes 5 minutes to verify. The cost of not checking is a cockpit that appears to run but isn&#39;t using the model you think it is.</p>
+<p><strong>1. Set up Custom Modes in Cursor — Cockpit Planner + Cockpit Executor</strong>
+This is your #1 open architectural problem and it now has external validation: Willison&#39;s TDD chapter and Osmani&#39;s research both confirm that enforcement gates matter and that prompt-only approaches fail. The Windsurf Plan→Code auto-switch shows the industry is moving here. Do the config today, even if rough.</p>
+<p><strong>2. Audit <code>cockpit-core.mdc</code> against the Osmani filter</strong>
+18 lines is good discipline. Now run each line through: <em>can the agent discover this on its own?</em> Cut what it can. Add one specific non-discoverable rule: the brainstorm gate must not be skipped. This is the bug you caught live — make it a hard rule, not a soft suggestion.</p>
+<p><strong>3. Read Willison&#39;s two chapters before building anything</strong>
+Red/Green TDD as an agent enforcement mechanism is exactly the missing gate in your Superpowers chain. 20 minutes of reading today could save a week of architectural iteration. Start with Chapter 2.
+🔗 <a href="https://simonwillison.net/guides/agentic-engineering-patterns/">https://simonwillison.net/guides/agentic-engineering-patterns/</a></p>
+<hr>
 <h2>🌍 WORLD LENS</h2>
 <div class="section-feedback" data-section="WORLD_LENS">
   <button class="section-btn" data-value="love" onclick="setSectionRating('WORLD_LENS', 'love', this)">❤️</button>
   <button class="section-btn" data-value="ok" onclick="setSectionRating('WORLD_LENS', 'ok', this)">👍</button>
   <button class="section-btn" data-value="skip" onclick="setSectionRating('WORLD_LENS', 'skip', this)">👎</button>
 </div>
-<p><strong>The AI investment narrative is cracking — and the crack matters.</strong></p>
-<p>Goldman Sachs Chief Economist Jan Hatzius stated that AI investment spending had &quot;basically zero&quot; contribution to U.S. GDP growth in 2025, calling it &quot;much smaller than is often perceived.&quot; The mechanism is structural, not cyclical: much of the equipment powering AI is imported, meaning U.S. companies spending billions on chips and hardware see those investments offset in GDP calculations — adding to Taiwanese and Korean GDP instead.</p>
-<p>For a Brussels founder, this has a specific texture. European consumer confidence and business investment are both sensitive to the credibility of the AI productivity narrative. If that narrative softens in the U.S. — where it has been the primary justification for elevated tech valuations — European institutional capital will recalibrate more slowly but more durably. For a solo builder, this is actually <em>good news in disguise</em>: the window for low-overhead micro-SaaS built on AI tooling remains open precisely because the large-scale productivity gains haven&#39;t arrived yet. A recent survey of nearly 6,000 executives in the U.S., Europe, and Australia found that despite 70% of firms actively using AI, about 80% reported no impact on employment or productivity. The gap between enterprise AI spend and actual productivity is where micro-SaaS lives.</p>
-<p><strong>For Chez Julien specifically:</strong> Belgian retail is consolidating. The Belgian Competition Authority approved Delhaize&#39;s acquisition of Delfood, owner of the Louis Delhaize chain — covering 303 stores in total — subject to conditions including divestiture of several proximity stores. This is the structural backdrop for any specialty food shop exit: the buyers capable of absorbing a Brussels retail asset are increasingly the large chains. That&#39;s not necessarily bad — it confirms that chain acquirers are actively consolidating the Belgian food retail market right now, which means your prospecting list is the right list.</p>
+<p><strong>The AI productivity gap is now a Goldman Sachs thesis — and it changes what the hype cycle means for European founders.</strong></p>
+<p>Jan Hatzius, Goldman&#39;s Chief Economist, stated on record that AI investment contributed &quot;basically zero&quot; to US GDP growth in 2025. The mechanism is structural, not ideological: a substantial portion of AI infrastructure spend flows offshore — to Taiwanese chip fabricators and Korean memory suppliers — and thus nets out of US GDP accounting. Domestically, the productivity gains that would show up in output data have not materialised at scale. A survey of nearly 6,000 executives across the US, Europe, and Australia found that despite 70% of firms actively using AI, around 80% reported no measurable impact on employment or productivity.</p>
+<p>For a Brussels-based founder, this carries three implications. First, the macro hype is structurally disconnected from ground-level reality — which means the regulatory pressure building in Brussels around AI (EU AI Act implementation, liability frameworks) is chasing a productivity phenomenon that has not yet arrived in aggregate data. Regulators may be legislating for a world that does not yet exist at scale. Second, the divergence between the 80% (no impact) and the 20% (measurable impact) is where competitive advantage lives. Solo founders with disciplined AI workflows — harness, not vibe-coding — are in the 20% before the 80% catches up. Third, consumer confidence in AI-adjacent products will remain muted in Europe longer than US tech media suggests. Building B2B micro-SaaS on measurable workflow outcomes, not AI novelty, is the right positioning frame for the Belgian market.</p>
+<p>For Chez Julien specifically: no immediate signal. Belgian food retail consolidation (Delhaize absorbing 303 more stores via Delfood) continues to compress the independent specialty segment structurally. That trend is slower-moving than a daily briefing can track, but it sets the backdrop for the shop sale prospect research Julien is planning.</p>
 <hr>
 <h2>🇪🇺 EUROPE TECH</h2>
 <div class="section-feedback" data-section="EUROPE_TECH">
@@ -421,12 +422,10 @@ Anthropic&#39;s OAuth crackdown has been enforced since Jan 9. If anything in yo
   <button class="section-btn" data-value="ok" onclick="setSectionRating('EUROPE_TECH', 'ok', this)">👍</button>
   <button class="section-btn" data-value="skip" onclick="setSectionRating('EUROPE_TECH', 'skip', this)">👎</button>
 </div>
-<p><strong>The OAuth crackdown is now industry-wide — not just Anthropic.</strong></p>
-<p>Google is enforcing similar restrictions on its AI Ultra subscribers: accounts are being suspended without warning for using Google AI credentials via third-party tools like OpenClaw, with Google&#39;s internal investigation confirming that &quot;use of credentials within the third-party tool constitutes a violation of Google Terms of Service.&quot;</p>
-<p>This is now a pattern, not an incident. Anthropic moved first (January 9). Google followed. The enforcement logic is identical: subscription OAuth tokens are not to be used to power third-party products. The European dimension: Brussels-based developers building on either platform need to treat API key authentication with usage-based billing as the only stable foundation — subscription passthrough is a dead architecture.</p>
-<p>For Julien&#39;s cockpit specifically: you&#39;re using Cursor (which holds its own Anthropic contract) rather than building a raw OAuth integration, so you are not directly exposed. But if you ever build a micro-SaaS that wraps Claude or Gemini, this enforcement pattern defines your cost structure from day one.</p>
-<p><strong>Firefox 148 — minor signal.</strong>
-Firefox 148 introduced an &quot;AI kill switch&quot; allowing users to permanently disable AI features including chatbot prompts and AI-generated link summaries, with Mozilla committing that future updates will not override the choice once set. Culturally interesting — a major browser is now explicitly offering an AI opt-out as a feature. This reflects European user sentiment more than American: Brussels users skew toward privacy and control. If you&#39;re building anything with an AI-visible UX layer, an opt-out path is increasingly a European expectation, not just a nice-to-have.</p>
+<p><strong>OAuth enforcement is now a cross-platform pattern — not an Anthropic anomaly.</strong></p>
+<p>What began as an Anthropic enforcement story (Feb 19 server-side blocks on subscription OAuth tokens in third-party tools) is now confirmed as a parallel Google story. Multiple paying Google AI Ultra subscribers ($249/month) had their accounts suspended without warning after connecting Gemini models via OpenClaw, a third-party OAuth integration layer. One user received a formal response from Google&#39;s engineering team confirming: &quot;zero tolerance policy... we are unable to reverse the suspension.&quot; Accounts were not restored. The pattern is identical to Anthropic&#39;s enforcement: subscription OAuth tokens are being treated as single-product entitlements, not portable credentials. Both companies moved to enforcement before updating their public documentation in any prominent way.</p>
+<p>For a Brussels founder: this is now a platform risk, not an edge case. If any tool in your stack — or any tool you build — relies on OAuth passthrough from a subscription account to power third-party functionality, assume enforcement is a matter of when, not if. The correct posture is API keys through official consoles for anything production-facing. Cursor, Superpowers, and your current stack appear to use API keys correctly — but worth a 10-minute audit of every integration point.</p>
+<p>The deeper EU angle: account suspensions without warning or appeal mechanism on paid subscriptions may eventually draw scrutiny under the EU Digital Services Act and consumer protection frameworks. A €249/month account suspended with no recourse and no meaningful support channel is a clear consumer harm case. This is not imminent regulatory action — but it is the kind of precedent EU regulators document before acting.</p>
 <hr>
 <h2>📈 TREND TRACKER</h2>
 <div class="section-feedback" data-section="TREND_TRACKER">
@@ -434,55 +433,78 @@ Firefox 148 introduced an &quot;AI kill switch&quot; allowing users to permanent
   <button class="section-btn" data-value="ok" onclick="setSectionRating('TREND_TRACKER', 'ok', this)">👍</button>
   <button class="section-btn" data-value="skip" onclick="setSectionRating('TREND_TRACKER', 'skip', this)">👎</button>
 </div>
-<p><strong>🔴 Accelerating:</strong></p>
+<p><strong>Theme 1: Multi-agent isolation as engineering hygiene</strong> <em>(accelerating)</em></p>
 <ul>
-<li><strong>OAuth enforcement by AI providers</strong> — Anthropic (Jan 9) → Google (Feb 12–20). Two major providers in six weeks. Expect Microsoft/Azure to follow. The API key + usage billing model is hardening into the only legitimate integration architecture.</li>
-<li><strong>Spec-first AI development</strong> — independently surfaced in three consecutive days of articles. The FreeBSD driver case (today) is the most detailed proof point yet. This pattern is forming into practitioner canon.</li>
-<li><strong>Cursor tooling maturity</strong> — Custom Modes, Composer 1.5 thinking tokens, Agent Skills v2.4, and the official best practices blog all landed in January–February 2026. The harness is getting real features. Your timing for cockpit engineering is well-placed.</li>
+<li>Feb 22 (Day 1): Chris Lattner flags AI&#39;s design limitation — architecture matters even when code is cheap.</li>
+<li>Feb 23 (Day 2): Simon Willison launches Agentic Engineering Patterns; Red/Green TDD with agents as Chapter 2.</li>
+<li>Feb 24 (Day 3): FreeBSD driver story demonstrates spec-first, multi-agent, isolated sessions as working methodology. Beehive ships as tooling to support exactly this workflow.</li>
 </ul>
-<p><strong>🟡 Steady:</strong></p>
+<p>The pattern is becoming a method. Three consecutive days of evidence, from different angles, pointing to the same conclusion: disciplined multi-pass AI workflows outperform single-session generation. Your Cockpit is ahead of the curve. The field is catching up to you.</p>
+<p><strong>Theme 2: OAuth enforcement as platform risk</strong> <em>(new, fast-moving)</em></p>
 <ul>
-<li><strong>Model cost discipline (Opus vs. Sonnet)</strong> — Goldman Sachs GDP finding confirms that AI ROI is not a given. Your cost discipline in the cockpit is structural hygiene, not just personal preference. This won&#39;t change this week.</li>
-<li><strong>Belgian retail consolidation</strong> — Delhaize/Delfood closes. The shop-sale environment is active. No urgency, but the window isn&#39;t closing either.</li>
+<li>Feb 12: Google AI Ultra accounts suspended for OpenClaw usage — no warning.</li>
+<li>Feb 19: Anthropic formally blocks OAuth tokens in third-party tools; server-side enforcement.</li>
+<li>Feb 20: Google confirms zero-tolerance, no-restoration policy in writing to affected users.</li>
 </ul>
-<p><strong>⚪ Disappeared:</strong></p>
+<p>Two major AI providers enforcing simultaneously. This is not a coincidence — it is a structural policy shift about how subscription compute is licensed. Any tool built on OAuth passthrough is now high-risk.</p>
+<p><strong>Theme 3: AI productivity hype vs. measured reality</strong> <em>(newly surfaced)</em></p>
 <ul>
-<li>The Anthropic/DeepSeek distillation story (yesterday&#39;s Signal) has not generated follow-up articles today. It was a one-day spike, not an unfolding investigation. File it as background context — the API hardening story is the more durable thread.</li>
+<li>Goldman Sachs Chief Economist on record: &quot;basically zero&quot; GDP contribution from AI in 2025.</li>
+<li>80% of 6,000 surveyed executives report no productivity impact.</li>
+<li>This contradicts the dominant narrative from every major tech outlet for the past 12 months.</li>
 </ul>
-<p><strong>New this week:</strong></p>
-<ul>
-<li>The AI productivity gap (Goldman Sachs finding) is a new data point that reframes the macro context for micro-SaaS. Watch if it generates European policy or investment responses next week.</li>
-</ul>
+<p>What this means for Julien&#39;s builder mission: the market for tools that actually deliver measurable AI productivity — rather than AI novelty — is underserved and will remain underserved for at least another 12–18 months. Products with clear before/after workflow improvement are the right positioning.</p>
+<p><strong>Disappeared this week:</strong> Lovable / no-code AI app builder hype. Present in web intelligence (Gemini 3 Flash default model, GPT-5.2 support) but absent from any organic HN or cross-feed endorsement. Relevance declining for serious builders.</p>
 <hr>
 <h2>🚮 SLOP FILTER</h2>
-<p><strong>6 of 12 Tier 2 articles were noise today.</strong></p>
+<p><strong>5 of 12 Tier 2/3 articles were noise today.</strong></p>
 <ul>
-<li><strong>Article 5 (FT — Cyber security in cars)</strong>: Paywalled, no content, not relevant to Julien&#39;s builder or business context. Pure filler.</li>
-<li><strong>Article 7 (Pope tells priests not to use AI)</strong>: Culturally interesting for approximately 30 seconds. Zero builder relevance. 549 HN points says this is entertainment, not intelligence.</li>
-<li><strong>Article 8 (Binance/Iran)</strong>: Crypto compliance story. No relevance to Brussels founder or micro-SaaS builder.</li>
-<li><strong>Article 9 (Magical Mushroom packaging)</strong>: European sustainable packaging story. Mildly interesting as European industrial signal but no actionable relevance to Julien&#39;s current projects or shop sale.</li>
-<li><strong>Article 10 (System prompts repo)</strong>: A GitHub repo of leaked AI system prompts. Curiosity content. The security warning embedded in it is generic marketing for ZeroLeaks. Not actionable.</li>
-<li><strong>Article 11 (vim-claude-code)</strong>: Claude Code integration for Vim users. Julien uses Cursor. Irrelevant to his stack. High signal for Vim users, zero signal here.</li>
+<li><strong>Article 2 (Firefox 148 AI kill switch):</strong> Consumer browser feature. Zero relevance to a founder building micro-SaaS on server-side stacks. Filed under &quot;platform UI news.&quot;</li>
+<li><strong>Article 4 (AI + Ghidra backdoor detection):</strong> Technically impressive but highly specialised (binary reverse engineering). No actionable signal for a non-technical solo founder. Interesting, not useful.</li>
+<li><strong>Article 5 (FT: cyber security in cars):</strong> Paywalled and off-topic. Auto-sector IoT security is outside Julien&#39;s lens entirely.</li>
+<li><strong>Article 7 (Pope tells priests not to use AI for homilies):</strong> 549 HN points suggests cultural resonance. Zero practical signal. Entertaining noise.</li>
+<li><strong>Article 8 (Magical Mushroom mycelium packaging):</strong> Sustainability / materials science. No founder relevance today.</li>
+<li><strong>Article 9 (Binance / Iran / firings):</strong> Financial crime story. Not relevant to Julien&#39;s context.</li>
 </ul>
-<p><strong>Kept and used:</strong> Articles 1, 2, 3, 4, 6, 12. Articles 2 and 4 marginally — Firefox 148 for cultural signal, binary auditing as a trajectory marker.</p>
+<p>Articles 1, 3, 6, 10, 11, 12 all delivered usable signal.</p>
 <hr>
 <h2>🔄 FEED HEALTH REPORT</h2>
 <ul>
-<li><strong>KEEP</strong>: <code>news.ycombinator.com</code> — consistently delivering the highest-signal practitioner content (Article 1 FreeBSD driver, Article 12 Rhelm). Noise rate is high but the ceiling is excellent. The FreeBSD driver article alone was worth the entire feed run.</li>
-<li><strong>KEEP</strong>: Web Intelligence queries — the six structured searches (Cursor changelog, Superpowers status, OAuth crackdown, Belgian retail) are doing the work that the article feeds miss. This is the highest-value intelligence layer in the system.</li>
-<li><strong>WATCH</strong>: <code>hnrss.org</code> — duplicate sourcing with <code>news.ycombinator.com</code> is generating redundant noise (Articles 7, 8, 9, 11 all came from this feed). If these are two separate feeds pulling from the same source, consolidate to one.</li>
-<li><strong>WATCH</strong>: <code>ft.com</code> — the FT article was paywalled with zero extractable content. Either add FT cookie authentication to the crawler or remove this feed. A paywalled source that delivers no content is negative signal — it fills a slot that a real article could occupy.</li>
-<li><strong>CONSIDER ADDING</strong>: Belgian Competition Authority / Belgian business press (L&#39;Echo, De Tijd) — the Delhaize/Delfood story was surfaced via web intelligence, not a feed. Belgian business news is structurally absent from the feed layer.</li>
-<li><strong>CONSIDER ADDING</strong>: Acquire.com blog — the January 2026 acquisition multiples report was surfaced in web intelligence (Query 4) and is directly relevant to both micro-SaaS valuation and shop-sale context. One post per month, high relevance.</li>
-<li><strong>CONSIDER REMOVING</strong>: If <code>ft.com</code> remains paywalled for three consecutive runs, drop it. There is no intelligence value in a feed that returns subscription walls.</li>
+<li><p><strong>KEEP:</strong></p>
+<ul>
+<li><code>news.ycombinator.com</code> — Delivered the best article today (FreeBSD driver, Article 1) and two Show HN launches with direct cockpit relevance (Beehive, Dypai). Noise rate acceptable given signal ceiling.</li>
+<li><code>simonwillison.net</code> — Three appearances this week. Consistently Tier 1. Every entry has been cited in a Signal or Must-Read.</li>
+</ul>
+</li>
+<li><p><strong>WATCH:</strong></p>
+<ul>
+<li><code>hnrss.org</code> — Cross-feed source, but today&#39;s batch included Articles 7, 8, 9 (Pope, mushrooms, Binance) — all zero-relevance noise. The raw HN feed is broad by design; the scoring filter is doing its job, but the noise floor is high.</li>
+<li><code>ft.com</code> — Article 5 was paywalled and irrelevant. FT has not contributed usable open content in this run. Value depends on access.</li>
+</ul>
+</li>
+<li><p><strong>CONSIDER ADDING:</strong></p>
+<ul>
+<li><strong>Indie Hackers</strong> (indiehackers.com) — The micro-SaaS founder methodology query (Web Intel Query 5) surfaced a relevant Medium article but found nothing from Indie Hackers directly. This community is the primary peer signal source for solo founders building micro-SaaS and is currently absent from the feed set.</li>
+<li><strong>Windsurf changelog</strong> (windsurf.com/changelog) — Web Intel surfaced genuinely relevant release data (Claude Sonnet 4.6 in Windsurf, Plan Mode improvements) that would not have appeared without a direct search. If Windsurf remains in consideration as a Cockpit harness alternative, this feed is worth adding.</li>
+<li><strong>releasebot.io</strong> — Aggregates changelogs for Cursor, Claude Code, and other tools in one structured feed. Appeared twice in Web Intel as a reliable secondary source.</li>
+</ul>
+</li>
+<li><p><strong>CONSIDER REMOVING:</strong></p>
+<ul>
+<li>No feed has failed across three consecutive runs with <em>zero</em> signal. Hold current set, but ft.com earns a yellow flag if next run produces another paywalled irrelevance.</li>
+</ul>
+</li>
 </ul>
 <hr>
 <h2>💬 FEEDBACK RESPONSE</h2>
-<p>Julien&#39;s feedback from February 22 noted four things. Addressed directly:</p>
-<p><strong>&quot;Battery in Europe was useless&quot;</strong> — Acknowledged. The EU battery regulation angle was forced into a section where it had no genuine relevance to your life. Rule applied going forward: EU Tech only runs when there&#39;s a direct Brussels-founder or business connection. Today&#39;s EU Tech (OAuth crackdown, Firefox AI kill switch) both connect to your builder stack or your future product users.</p>
-<p><strong>&quot;Lacking emoji options on every topic (only titles)&quot;</strong> — Noted. Emojis now appear at the item level within sections, not just headers. See PIONEER ADVANTAGE CHECK flags (🔴/🟡/⚪), BUILD WATCH (🔩/🧪/⚙️), and TREND TRACKER. Will maintain this going forward.</p>
-<p><strong>&quot;World news was on point, EU/US friction is the most important news of the day for me&quot;</strong> — Today&#39;s WORLD LENS prioritizes the Goldman Sachs AI GDP finding (macro credibility of AI spend) and Belgian retail consolidation (direct shop-sale context). The OAuth enforcement story is the EU/US friction thread today — both Anthropic and Google are enforcing subscription policies that directly affect European developers building on American AI infrastructure. That tension will continue to be the primary EU/US signal tracked for you.</p>
-<p>React to today&#39;s articles at <a href="https://prism.julien.care/2026-02-24.html">https://prism.julien.care/2026-02-24.html</a></p>
+<p><strong>Feedback received: 3/5 overall. No section-level comments recorded.</strong></p>
+<p>A 3/5 without specific annotations is a useful signal in itself: the briefing landed but did not earn the &quot;this changed how I think today&quot; response that a 4–5 would indicate. Without section-level data, the most likely culprits are:</p>
+<ol>
+<li><strong>Signal density vs. length ratio</strong> — Previous briefings have trended long. More text is not more value. Today&#39;s briefing attempts tighter section discipline: fewer articles forced into relevance, harder filter on Slop, shorter World Lens.</li>
+<li><strong>Must-Read section absent today</strong> — The prior format included a curated Must-Read list with conversation prompts. That section was not specified in today&#39;s template. If you found it valuable in the Feb 24 briefing, flag it in today&#39;s reaction and it returns tomorrow.</li>
+<li><strong>The Signal (lead story) is missing today</strong> — Today&#39;s template did not include a 🔴 THE SIGNAL block. If the Goldman Sachs AI productivity finding (Article 6) deserved headline treatment, that is a formatting gap, not a sourcing gap.</li>
+</ol>
+<p>React to today&#39;s articles at <strong><a href="https://prism.julien.care/2026-02-25.html">https://prism.julien.care/2026-02-25.html</a></strong> — section-level ratings tell me exactly where to adjust.</p>
 <hr>
 <p><em>PRISM v4.0 — 20 articles analyzed, 0 web searches, ~$0.26</em></p>
 
@@ -525,7 +547,7 @@ Firefox 148 introduced an &quot;AI kill switch&quot; allowing users to permanent
 <script>
   // ── State ────────────────────────────────────────────────
   const ARTICLES = [{"title":"Writing about Agentic Engineering Patterns","source":"simonwillison.net"},{"title":"Stop Using /init for AGENTS.md","source":"addyosmani.com"},{"title":"Ladybird adopts Rust, with help from AI","source":"simonwillison.net"}];
-  const TOOLS = [{"name":"Cursor Custom Modes (beta)","snippet":"- **Cursor Custom Modes (beta)** — native Planner/Executor mode split, enabled at Settings → Features → Chat → Custom modes. [docs.cursor.com/chat/custom-modes](https://docs.cursor.com/chat/custom-modes) - Try it: Spend 30 minutes creating exactly two modes. Cockpit Planner: read-only tools, inject cockpit-repass rules in system prompt. Cockpit Executor: full file access, no planning rules. Run on"},{"name":"Cursor Agent Best Practices blog","snippet":"- **Cursor Agent Best Practices blog** — Cursor's official January 9, 2026 guide on Rules structure, Skills vs Rules, and decoupled creation/verification workflow. [cursor.com/blog/agent-best-practices](https://cursor.com/blog/agent-best-practices) - Try it: Read with one specific question: *\"Does my cockpit-core.mdc violate any of these principles?\"* Run the Addy Osmani filter (\"Can the agent dis"}];
+  const TOOLS = [{"name":"Beehive","snippet":"- **Beehive** — Multi-workspace agent orchestrator for macOS. Run Claude Code agents in isolated git workspaces side-by-side, with persistent terminals per branch. Free and open source. - 🔗 https://storozhenko98.github.io/beehive/ - **Try it:** Download, link your Cockpit repo, create two Combs (one for Cockpit Planner, one for Cockpit Executor), and run a Claude Code session in each. Observe whe"},{"name":"Dypai","snippet":"- **Dypai** — MCP-powered backend builder. Connect to Cursor, describe what you need in plain English, get a live API with PostgreSQL, auth, and storage. Free tier: 1 project. - 🔗 https://www.dypai.ai/ - **Try it:** Connect Dypai MCP to Cursor. Ask it to scaffold a simple sales data endpoint (read-only, one table). Compare effort vs. building a Cloudflare Worker manually. Time the session. - **Re"}];
   const WORKER_URL = "https://prism-feedback.old-morning-a434.workers.dev";
   const FEEDBACK_SECRET = "prism-feedback-58367207b5410501";
   const DATE = "2026-02-24";

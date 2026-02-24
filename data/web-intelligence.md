@@ -1,4 +1,4 @@
-<!-- PRISM Web Intelligence — 2026-02-24 — generated 2026-02-24T10:40:25.330Z -->
+<!-- PRISM Web Intelligence — 2026-02-24 — generated 2026-02-24T11:16:13.690Z -->
 
 # Proactive Web Intelligence — 2026-02-24
 
@@ -8,172 +8,158 @@
 
 ## Query 1: Cursor custom modes feature release February 2026
 
-Based on the search results, here is a concise summary:
+Based on the search results, here is a concise factual summary:
 
 ---
 
-**Cursor Custom Modes — Released in Version 0.48.x**
+**Cursor Custom Modes — Key Facts**
 
-Cursor's 0.48.x release introduced chat tabs for parallel conversations, a redesigned modes system with **custom modes**, and improvements to cost visibility, indexing performance, and MCP reliability. **Custom modes (beta)** allow users to compose new modes with custom tools and prompts tailored to their workflow, and can be enabled via **Settings → Features → Chat → Custom modes**. Users can also set a default chat mode from the same settings panel.
+Cursor's custom modes feature was introduced as a **beta** in **version 0.48**, released on **March 23, 2025** (not February 2026). The release — titled *"Chat Tabs, Custom Modes & Faster Indexing"* — redesigned the modes system and introduced the ability to compose new, user-defined modes with custom tools and prompts.
 
-As part of this release, the built-in modes were streamlined — "Edit" was renamed to "Manual" to better reflect its behavior, and Ask mode now has access to all search tools by default, removing the need for the explicit `@Codebase` tool.
+Custom modes can be enabled via **Settings → Features → Chat → Custom modes**, and users can also set a default mode from the same settings panel.
+
+In v0.48, users can create their own modes, choose the tools, settings, custom instructions, and even specify the model for each mode — giving full control over how AI assistance behaves.
+
+Notably, in a later release (**Cursor 2.1.0**), custom modes were reportedly **removed**, with an 'Export' feature added so users could retrieve their old prompts and instructions.
+
+---
+
+**⚠️ Important caveat:** No search results confirm a specific "Custom Modes feature release" tied to **February 2026** specifically. The custom modes feature originally launched in **March 2025 (v0.48)**. If you're looking for a February 2026 update specifically, it may refer to broader agent/subagent enhancements in Cursor's 2.x series. The most authoritative source is the official changelog:
+👉 **https://cursor.com/changelog/0-48-x**
+
+## Query 2: Anthropic Claude API OAuth enforcement third-party tools update February 24 2026
+
+Here is a concise, sourced summary of the most relevant findings:
+
+---
+
+**Anthropic Claude OAuth Enforcement — Third-Party Tools (Feb 2026)**
+
+Anthropic updated its documentation on **February 19, 2026**, to clarify that using OAuth tokens with third-party tools violates their Terms of Service. The company's Claude Code documentation now states explicitly: "Using OAuth tokens obtained through Claude Free, Pro, or Max accounts in any other product, tool, or service — including the Agent SDK — is not permitted and constitutes a violation of the Consumer Terms of Service," and Anthropic is enforcing this with **server-side blocks and account bans**.
+
+The updated docs draw a hard line: OAuth authentication is "intended exclusively for Claude Code and Claude.ai," and everything else requires **API keys** through the Claude Console or a supported cloud provider. Notably, while the written policy is new, enforcement actually began earlier — on **January 9, 2026**, when Anthropic deployed server-side safeguards blocking subscription OAuth tokens from working outside their official Claude Code CLI.
 
 **Key sources:**
-- Official Cursor changelog for 0.48.x: https://cursor.com/changelog/0-48-x
-- Cursor custom modes documentation: https://docs.cursor.com/chat/custom-modes
+- The Register (Feb 20, 2026): https://www.theregister.com/2026/02/20/anthropic_clarifies_ban_third_party_claude_access
+- Awesome Agents (Feb 18, 2026): https://awesomeagents.ai/news/claude-code-oauth-policy-third-party-crackdown/
+- OpenClaw.rocks blog: https://openclaw.rocks/blog/anthropic-oauth-ban
 
-> **Note:** The search results did not surface a specific February 2026 date tied to the custom modes release — the 0.48.x changelog page does not display an explicit publish date. If you need the precise release date, the official changelog at **cursor.com/changelog** is the most reliable reference.
+> **Note:** My knowledge cutoff is early 2025, and the date you specified (February 24, 2026) is beyond it — the above is based entirely on live web search results. No specific February 24 event was found; the major policy update occurred on **February 18–20, 2026**.
 
-## Query 2: Cursor IDE changelog update February 24 2026
+## Query 3: Simon Willison agentic engineering patterns chapter 3 February 2026
 
-Based on my research, there is **no specific Cursor IDE changelog entry dated February 24, 2026**. February 24, 2026 is also a future date (it has not yet occurred as of my knowledge cutoff). Here is a summary of the most recent verified Cursor updates surrounding that timeframe:
+Based on my research, I can now provide a well-sourced summary. Note that as of the search results (dated ~February 23–24, 2026), Willison had published **two** chapters, not yet a dedicated "Chapter 3." Here's what the evidence shows:
 
 ---
 
-**Cursor IDE – Latest Updates (February 2026)**
+**Summary:**
 
-The most recent Cursor changelog entry is dated **February 18, 2026**, introducing the ability to hand off plans from the CLI to the cloud, in-line rendering of ASCII diagrams, and various quality-of-life improvements.
+On **February 23, 2026**, Simon Willison launched *Agentic Engineering Patterns*, a new guide collecting coding practices and patterns to help get the best results out of coding agents like **Claude Code** and **OpenAI Codex**. At launch, he published the **first two chapters** of the guide.
 
-Prior to that, on **February 12, 2026**, Cursor launched long-running agents — now available at `cursor.com/agents` for Ultra, Teams, and Enterprise plans — enabling autonomous work over longer horizons to complete larger, more complex tasks with fewer follow-ups.
+Chapter 1, **"Writing code is cheap now"**, addresses the central challenge of agentic engineering: the cost to produce working code has dropped to almost nothing, and how that disrupts existing intuitions about how developers work individually and as a team. Chapter 2, **"Red/green TDD"**, describes how test-first development helps agents write more succinct and reliable code with minimal extra prompting. Willison noted he planned to add more chapters at a rate of **1–2 per week**.
 
-In terms of version numbers, the latest known build is **version 2.5.20**, released **2026-02-20**, followed by version 2.5.17 (2026-02-17) and 2.4.37 (2026-02-14).
+The guide is structured as a "guide" — a new content format on his blog where chapters are designed to be updated over time rather than frozen at first publication — distinguishing *Agentic Engineering* (professional developers using agents to amplify their expertise) from "vibe coding" (non-programmers using LLMs with no attention to the code).
+
+> **Important caveat:** As of the search results (retrieved ~February 24, 2026), only **two chapters** had been published. There is **no evidence of a "Chapter 3"** yet. It may not exist at the time of this search, or it may be at a URL not yet indexed.
+
+**Key source:** [https://simonwillison.net/2026/Feb/23/agentic-engineering-patterns/](https://simonwillison.net/2026/Feb/23/agentic-engineering-patterns/)  
+**Guide index:** [https://simonwillison.net/guides/agentic-engineering-patterns/](https://simonwillison.net/guides/agentic-engineering-patterns/)
+
+## Query 4: Cursor IDE changelog update February 24 2026
+
+Based on the search results, there is **no specific Cursor IDE changelog entry dated February 24, 2026**. The closest available updates are from February 12 and February 18, 2026. Here is a summary of the most relevant recent findings:
+
+---
+
+The **February 18, 2026** Cursor release introduced the ability to hand off plans from the CLI to the cloud, in-line rendering of ASCII diagrams, and quality-of-life improvements, including a persistent decision menu when a plan is generated.
+
+The **February 12, 2026** release launched **long-running agents**, enabling Cursor to work autonomously over longer horizons on larger, more complex tasks — planning first and completing difficult work without human intervention. This feature is available at cursor.com/agents for **Ultra, Teams, and Enterprise plans**.
+
+Also in February, Cursor expanded usage by adding two pools — **Auto+Composer** and **API** — and boosted limits for Auto and Composer 1.5 across all individual plans, with a limited-time **6x boost** (through February 16). A new usage-visibility page was added to track both pools and API credits.
 
 **Key sources:**
-- Official changelog: https://cursor.com/changelog
-- Version download history: https://github.com/oslook/cursor-ai-downloads
+- Official Cursor Changelog: https://cursor.com/changelog
+- Releasebot February 2026 summary: https://releasebot.io/updates/cursor
 
-> ⚠️ **Note:** No changelog entry specifically dated **February 24, 2026** was found. Either the update had not been published at the time of the search, or no release occurred on that exact date. The most recent confirmed release prior to February 24 was version **2.5.20 on February 20, 2026**.
+> ⚠️ Note: No changelog entry specifically dated **February 24, 2026** was found in any source. The date may be in the future relative to available data, or no update was released on that exact date. The February 18 entry is the most recent available as of now.
 
-## Query 3: Superpowers Cursor skill framework update February 2026
+## Query 5: micro-SaaS founder methodology AI cockpit workflow published February 2026
 
-Here is a concise factual summary based on the most relevant recent findings:
+I was not able to find any source specifically titled or focused on a **"micro-SaaS founder methodology AI cockpit workflow"** published in February 2026. The closest relevant February 2026 content found is the Medium article by NAJEEB and related pieces on micro-SaaS for solo founders — none of which use the specific "AI cockpit" framing. Here is what the search results do confirm:
 
 ---
 
-**Superpowers (obra/superpowers) — Cursor Integration & February 2026 Status**
+The most relevant February 2026 publication found is **"From 0 to $2,500: My 6-Step Framework for Building Micro SaaS as a Solo Founder"** by NAJEEB, published in *Write A Catalyst* on Medium in February 2026 (URL: https://medium.com/write-a-catalyst/from-0-to-2-500-my-6-step-framework-for-building-micro-saas-as-a-solo-founder-fba5d545b97c). It argues that building and exiting a Micro SaaS is a game a solo founder can win, contrasting it with traditional IT companies that require massive teams, huge capital, and endless bureaucracy. A companion piece from January 2026 by the same author covers building three Micro-SaaS blueprints using the n8n workflow automation tool, framing the opportunity around "Vertical SaaS" — solving a very specific problem for a very specific industry.
 
-Superpowers is a complete software development workflow system built specifically for coding agents, and has accumulated **55,000+ GitHub stars**. It was officially accepted into the **Anthropic marketplace on January 15, 2026**, and is described as an open-source agentic framework that transforms Claude Code into a structured senior AI developer workflow.
+**However**, no source using the specific phrase **"AI cockpit workflow"** as a named micro-SaaS founder methodology published in February 2026 was found across multiple search queries. This exact term may refer to a paywalled article, a niche newsletter, a private community post, or it may not exist under that precise title. I'd recommend searching directly on platforms like **Substack**, **Indie Hackers**, or **Product Hunt** for that specific phrase, or verifying the original source where you encountered it.
 
-Installation now differs by platform: **Claude Code and Cursor have built-in plugin marketplaces**, while Codex and OpenCode require manual setup. A dedicated Cursor adaptation (`chauchakching/superpowers-cursor`) exists on GitHub, implementing **14 skills** (brainstorming, test-driven development, systematic debugging, parallel agents dispatch, etc.) via a `sessionStart` hook that automatically injects the `using-superpowers` skill at the start of every conversation.
+## Query 6: Belgium Brussels specialty food shop acquisition buyer market February 2026
 
-The framework's DeepWiki documentation was **last indexed on February 20, 2026** (commit `a0b9ec`), indicating active ongoing development as of that date.
+Based on the search results, there are two distinct and newsworthy stories from February 2026. Here is a concise summary of the most relevant findings:
 
-**Key Sources:**
+---
+
+**1. Delhaize Belgium Completes Acquisition of Delfood (February 2, 2026)**
+
+On **February 2, 2026**, Ahold Delhaize announced that its Belgian brand Delhaize had completed the acquisition of **Delfood NV**, comprising **303 stores** in Belgium — all *louis delhaize* stores and those supplied through Delfood — along with logistics services and Delfood's Belgian headquarters. Delfood will remain a separate legal entity within Delhaize, and the *louis delhaize* brand will continue to exist; the acquisition brings Delhaize's total network to **1,109 stores** across Belgium and Luxembourg. Financial terms of the deal were not disclosed.
+
+- 📎 Source: [newsroom.aholddelhaize.com](https://newsroom.aholddelhaize.com/ahold-delhaize-announces-that-delhaize-belgium-completes-its-acquisition-of-delfood/) | [retail-insight-network.com](https://www.retail-insight-network.com/news/delhaize-belgium-completes-delfood-acquisition/)
+
+---
+
+**2. Belgium's Largest Food Market Opens in Brussels (February 19, 2026)**
+
+**Ratz**, a new food market billing itself as the largest in Belgium, opened in the Brussels municipality of **Ixelles** (25 Rue Saint-Boniface) on **February 19, 2026**, occupying a former parking structure of **3,000 square meters** spread across three floors. The market features **fourteen food stalls**, with an emphasis on Middle Eastern and Asian cuisines.
+
+- 📎 Source: [retaildetail.eu](https://www.retaildetail.eu/news/food/brussels-to-get-belgiums-largest-food-market/)
+
+## Query 7: Superpowers Cursor skill framework update February 2026
+
+Based on the search results, here is a concise, factual summary:
+
+---
+
+**Superpowers Agentic Skills Framework — Cursor Integration (February 2026)**
+
+The **obra/superpowers** repository — an agentic skills framework and software development methodology — was last indexed on **20 February 2026** (commit `a0b9ec`), with official documentation covering installation on Claude Code, Cursor, OpenCode, and Codex. On **January 15, 2026**, Superpowers was officially accepted into the Anthropic marketplace, and as of late February 2026, the project has over **55,000 GitHub stars**.
+
+A dedicated Cursor adaptation — **`chauchakching/superpowers-cursor`** — ports the framework to Cursor, featuring a `sessionStart` hook that automatically injects the `using-superpowers` skill at the start of every conversation, along with **14 skills** covering brainstorming, plan writing, TDD, systematic debugging, subagent-driven development, and more. An alternative installation method uses `prpm` (`npm install -g prpm` → `prpm install collections/superpowers`), which leverages the OpenSkills library and progressive disclosure via `AGENTS.md` to allow Cursor to load skills as needed.
+
+**Key sources:**
 - GitHub (main repo): https://github.com/obra/superpowers
-- Cursor-specific adaptation: https://github.com/chauchakching/superpowers-cursor
+- Cursor-specific fork: https://github.com/chauchakching/superpowers-cursor
 - DeepWiki docs (indexed Feb 20, 2026): https://deepwiki.com/obra/superpowers
 
-> ⚠️ **Note:** No official Superpowers changelog or press release specifically titled "February 2026 update" was found. The above reflects the most current verifiable state of the framework as of late February 2026 based on available indexed sources.
+## Query 8: Claude Code Windsurf Lovable release notes February 24 2026
 
-## Query 4: micro-SaaS founder selling small business Belgium 2026
+Now I have comprehensive information. Let me compile the summary.I now have all the information needed to provide a comprehensive, well-cited summary. Let me compile the findings.
 
-Based on my research, there is no single prominent news story specifically about **one Belgian micro-SaaS founder selling a small business in 2026** — but here is a well-sourced summary of the most relevant findings across the Belgium SaaS ecosystem and the micro-SaaS acquisition market heading into 2026:
-
----
-
-### Summary
-
-Belgium's SaaS ecosystem is sizable, with **1,666 SaaS startups** recorded as of December 2025, including notable names like Odoo, Deliverect, and Collibra — three of which have reached unicorn status.
-
-On the acquisition side, the **Acquire.com Biannual Acquisition Multiples Report (January 2026)** found that most SaaS acquisitions occur for businesses with an enterprise value **below $10 million**, and that profitable SaaS businesses consistently attract more buyer interest, receive more offers, and close faster than unprofitable ones. Public SaaS revenue multiples declined from an average of **17× in 2022** to roughly **5.5× by end of 2025**, though profitable businesses on platforms like Acquire.com proved more resilient.
-
-Looking at the broader micro-SaaS market, industry experts expect acquisition multiples to **stabilize in the 6–8× ARR range** in 2026 as the market matures, with AI-native micro-SaaS products potentially commanding higher multiples due to their scalability and reduced maintenance requirements. Acquisition multiples have already climbed from 4× to 5–7× ARR, hybrid pricing models now dominate **68% of successful launches**, and bootstrapped founders are hitting break-even in just **10–12 months**.
-
-**Key sources:**
-- Acquire.com Jan 2026 Report: https://blog.acquire.com/acquire-com-biannual-acquisition-multiples-report-jan-2026/
-- Quick Market Pitch (July 2025): https://quickmarketpitch.com/blogs/news/micro-saas-news
-- Tracxn Belgium SaaS (Dec 2025): https://tracxn.com/d/explore/saas-startups-in-belgium/
-
-> ⚠️ **Note:** No specific viral or widely-reported story of a single Belgian micro-SaaS founder selling their business in 2026 surfaced in these results. If you're researching a specific founder or deal, sharing their name or product name would help narrow the search significantly.
-
-## Query 5: specialty food shop acquisition Belgium Brussels 2026
-
-Here is a concise factual summary of the most relevant recent findings:
+Here is a concise, well-sourced summary of the most relevant recent release notes for **Claude Code**, **Windsurf**, and **Lovable** around late February 2026:
 
 ---
 
-**Delhaize / Delfood Acquisition — Belgium, 2026**
+## 🔷 Claude Code (Anthropic)
 
-On **26 January 2026**, the Belgian Competition Authority (BCA) approved the acquisition by **Delhaize** of **Delfood**, owner of the **Louis Delhaize** retail chain, subject to conditions including the divestment of a number of proximity stores and petrol station shops in certain local markets. The acquisition covers all Louis Delhaize stores and other stores supplied by Delfood — **303 stores in total** — plus logistics services and headquarters in Belgium, with Delhaize strengthening its position in the convenience segment of the Belgian market.
+The headline development for Claude Code in this period is a major agent isolation feature. Claude Code v2.1.49 (February 19) and v2.1.50 (February 20) bring native worktree management for agents, six memory leak fixes, and new enterprise hooks. Specifically, v2.1.50 added a `--worktree (-w)` flag to start Claude in an isolated git worktree, added `WorktreeCreate` and `WorktreeRemove` hook events enabling custom VCS setup and teardown, and added support for `isolation: worktree` in agent definitions so agents can declaratively run in isolated git worktrees. The `CLAUDE_CODE_SIMPLE` mode now also disables MCP tools, attachments, hooks, and `CLAUDE.md` file loading for a fully minimal experience.
 
-As a condition of approval, Delhaize must transfer **six Delfood neighbourhood stores** (Zaffelare, Antwerp Nassau, **Franklin Roosevelt Brussels**, Alma, Messancy, and Sint Maria Oudenhove) to another player, as well as one Delhaize Shop&Go at Antwerp Central Station. Ahold Delhaize has since confirmed that Delhaize Belgium **finalised** the purchase of Delfood, though financial terms of the deal were not disclosed.
-
----
-
-**Key Sources:**
-- RetailDetail EU: https://www.retaildetail.eu/news/food/delhaize-receives-green-light-for-delfood-acquisition-but-must-sell-some-stores/
-- Retail Insight Network: https://www.retail-insight-network.com/news/delhaize-belgium-completes-delfood-acquisition/
-- Concurrences (legal/regulatory): https://www.concurrences.com/en/bulletin/news-issues/january-2026/the-belgian-competition-authority-conditionally-approves-a-retail-grocery
-
-## Query 6: AI agent workflow enforcement multi-pass thinking Cursor rules February 2026
-
-Here is a concise, well-sourced summary of the most relevant recent findings:
+**Key sources:** [releasebot.io/updates/anthropic/claude-code](https://releasebot.io/updates/anthropic/claude-code) · [github.com/anthropics/claude-code/releases](https://github.com/anthropics/claude-code/releases)
 
 ---
 
-## AI Agent Workflow Enforcement, Multi-Pass Thinking & Cursor Rules (Early 2026)
+## 🌊 Windsurf
 
-The dominant theme across early 2026 is enforcing structured, multi-pass reasoning in AI agent workflows through Cursor's Rules/Skills system. Here are the key findings:
+On February 17, 2026, Claude Sonnet 4.6 became available in Windsurf with limited-time promotional pricing for self-serve users: no thinking at 2x credits, with thinking at 3x credits. Two additional new models also launched at the same time — GLM-5 from Zhipu AI at 0.75x credits and Minimax M2.5 at 0.25x credits — both included in Arena Mode's Frontier Arena and Hybrid Arena battle groups. On February 12, 2026 (v1.9552.21), Plan Mode gained automatic switching back to Code Mode when a user starts implementing a plan, support for reading skills from the `.agents/skills` directory was added, and full Linux ARM64 support was introduced.
 
-**Cursor's Composer 1.5 — Multi-Pass "Thinking" Model (February 2026)**
-
-Cursor's Composer 1.5 is a thinking model that generates "thinking tokens" to reason about the user's codebase and plan next steps before acting. These thinking stages are described as "critical to the model's intelligence." It balances speed with depth: responding quickly on easy problems with minimal thinking, while on hard problems it "will think until it has found a satisfying answer." To handle longer-running tasks, Composer 1.5 also has the ability to self-summarize, allowing the model to continue exploring for a solution even when it runs out of available context — this self-summarization may trigger several times recursively on hard examples. Composer 1.5 was built by scaling reinforcement learning 20x further on the same pretrained model, with post-training compute that actually surpassed the amount used to pretrain the base model.
-
-**Cursor Rules as Workflow Enforcement (January–February 2026)**
-
-Cursor's official agent best practices blog (published January 9, 2026) describes Rules as "persistent instructions that shape how the agent works with your code" — always-on context the agent sees at the start of every conversation. The recommended modern structure is to use the `.cursor/rules/` directory with modular, domain-specific `.mdc` rule files (with metadata frontmatter) rather than a single monolithic `.cursorrules` file, which is considered "unmanageable and prone to context loss."
-
-**Multi-Pass Enforcement via Decoupled Creation + Verification**
-
-A key enforced workflow pattern in 2026 is decoupling creation from verification: rather than asking the agent to "create this component and make sure it follows the rules" in one pass (which causes it to gloss over rules), developers split this into two distinct slash commands — one focused purely on implementation, and a second verification pass run before accepting the output.
-
-**Agent Skills v2.4 — Dynamic, On-Demand Reasoning Capabilities (January 2026)**
-
-Cursor added support for the Agent Skills open standard in version 2.4 (January 2026). Unlike Rules (which are always active), Skills are loaded dynamically when the agent decides they're relevant, keeping the context window clean while giving the agent access to specialized, multi-step capabilities on demand.
-
-**Key Sources:**
-- Cursor official agent best practices blog (Jan 9, 2026): https://cursor.com/blog/agent-best-practices
-- Cursor Composer 1.5 release notes (Feb 2026, via Releasebot): https://releasebot.io/updates/cursor
-- DEV Community — Rules/Skills/Subagents deep dive: https://dev.to/mkomeyl94/from-prompt-to-production-mastering-rules-skills-and-subagents-in-cursor-47m4
-- iBuildWith.ai — Cursor Rules vs. Skills vs. Commands: https://www.ibuildwith.ai/blog/cursor-rules-skills-and-commands-oh-my-when-to-use-each
-
-> **Note:** The exact phrase "multi-pass thinking" does not appear to be an official Cursor term — it is best understood as Composer 1.5's variable-depth "thinking token" generation combined with the community practice of enforcing multi-step plan-then-verify agent workflows via Cursor Rules and Skills.
-
-## Query 7: Anthropic Claude API access restrictions OAuth crackdown developer impact February 2026
-
-Based on the search results, here is a concise, well-sourced summary:
+**Key source:** [windsurf.com/changelog](https://windsurf.com/changelog)
 
 ---
 
-Anthropic updated its Claude Code documentation on **February 19, 2026**, to explicitly prohibit using OAuth tokens from Claude **Free, Pro, and Max** subscription plans in any third-party products, tools, or services. Enforcement, however, predates the written policy: on **January 9, 2026**, Anthropic had already deployed server-side safeguards blocking subscription OAuth tokens from working outside their official Claude Code CLI. Teams integrating Claude into their own products must now switch to **API key authentication** and accept usage-based billing instead of subscription passthrough. Simultaneously, developers at Elon Musk's xAI reportedly lost access to Anthropic's Claude models in a separate but related enforcement action tied to their use of the Cursor IDE.
+## 💜 Lovable
 
-**Key sources:**
-- The Register: https://www.theregister.com/2026/02/20/anthropic_clarifies_ban_third_party_claude_access
-- VentureBeat: https://venturebeat.com/technology/anthropic-cracks-down-on-unauthorized-claude-usage-by-third-party-harnesses
-- Winbuzzer: https://winbuzzer.com/2026/02/19/anthropic-bans-claude-subscription-oauth-in-third-party-apps-xcxwbn/
+Lovable added support for GPT-5.2 and Gemini 3 Flash, with Gemini 3 Flash becoming the default model for building and iterating. Lovable also introduced cross-project referencing, enabling Lovable to access and reuse implementations from other projects in a workspace via `@` mentions in chat. User profiles were redesigned to be more expressive and customizable, available at `lovable.dev/@yourusername`, laying groundwork for future community and publishing features.
 
----
-
-> ⚠️ **Note:** My knowledge cutoff is early 2025, so I cannot independently verify these February 2026 events — the above is based entirely on the live web search results retrieved above. Always cross-check with primary sources.
-
-## Query 8: Lucia May 2026 freelance artist Belgium self-employed social security transition
-
-Based on my extensive searches across multiple query variations, I was unable to find any specific, identifiable content about a person or platform named **"Lucia"** in connection with a May 2026 freelance artist / Belgium / self-employed social security transition topic. This combination of terms does not correspond to any specific news article, policy document, publication, or named individual that appears in current indexed sources.
-
-Here is what the search results **do** confirm about the broader topic of **freelance artists and self-employment social security in Belgium in 2026**, which may be the underlying subject of interest:
+**Key source:** [docs.lovable.dev/changelog](https://docs.lovable.dev/changelog)
 
 ---
 
-**What is verifiable from recent sources:**
-
-Since 1 January 2024, Belgium introduced new social security rules specifically for artists — both employees and self-employed — including a new **"Attestation of Work in the Arts" (ATA / KWA)**.
-
-Starting in 2026, several changes affect creative entrepreneurs in Belgium: IT professionals can invoice under the copyright scheme again, but flat-rate cost deductions for copyright income may be abolished — with official confirmation still pending as of December 2025.
-
-From 2026, all self-employed individuals in Belgium must send invoices electronically via PEPPOL, which also applies to copyright-based creative invoicing.
-
-For 2026, the standard provisional quarterly social security contribution for a self-employed person starting out in their primary occupation is **€890.42 per quarter** (excluding management fees of 3–4%), reducible to **€459.82** for the first four quarters under certain income conditions.
-
----
-
-**Regarding "Lucia" specifically:** No results matched a person, tool, platform, guide, or policy named "Lucia" in this context. It's possible "Lucia" refers to a private individual, a niche publication, a local workshop/event, or content not indexed by public search engines. Could you clarify what "Lucia" refers to — e.g., is it a person's name, a platform, a publication, or something else? That would help me search more precisely.
+**Bottom line:** The ~February 24, 2026 window saw Claude Code ship two rapid-fire v2.1.49/v2.1.50 releases focused on multi-agent git worktree isolation; Windsurf rolled out Claude Sonnet 4.6, GLM-5, and Minimax M2.5 with promotional credit pricing; and Lovable upgraded its underlying models to GPT-5.2/Gemini 3 Flash while adding cross-project referencing for agents.
