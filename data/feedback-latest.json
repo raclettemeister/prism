@@ -1,9 +1,6 @@
 {
-  "date": "2026-02-24",
-  "briefingRating": 4,
-  "mustReads": [],
-  "tools": [],
-  "sections": {},
-  "openNotes": "",
-  "submittedAt": "2026-02-24T10:55:49.425Z"
+  "date": "2026-02-24-proxy-test",
+  "briefingRating": 5,
+  "openNotes": "test via proxy",
+  "submittedAt": "2026-02-24T11:00:00Z"
 }
