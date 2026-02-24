@@ -234,15 +234,18 @@
     <h1>PRISM Morning Briefing</h1>
     <div class="meta">
       <span>📅 2026-02-24</span>
-      <span>📰 25 articles analyzed</span>
+      <span>📰 20 articles analyzed</span>
       <span>🤖 PRISM v4.0</span>
     </div>
   </div>
 
   <div id="briefing-content">
-    <h1>PRISM Morning Briefing — February 24, 2026</h1>
+    <blockquote>
+<p>⚠️ <strong>Low-confidence briefing</strong> — Some sections may contain unverified claims. PRISM confidence: 31%</p>
+</blockquote>
+<h1>PRISM Morning Briefing — February 24, 2026</h1>
 <blockquote>
-<p>⚙️ <strong>Read the live briefing and react per article:</strong> <a href="https://prism-portal.pages.dev/2026-02-24.html">https://prism-portal.pages.dev/2026-02-24.html</a>
+<p>⚙️ <strong>Read the live briefing and react per article:</strong> <a href="https://prism.julien.care//2026-02-24.html">https://prism.julien.care//2026-02-24.html</a>
 Or edit <strong>NEWS-INTERESTS.md</strong> in Obsidian to adjust coverage.</p>
 </blockquote>
 <hr>
@@ -252,30 +255,28 @@ Or edit <strong>NEWS-INTERESTS.md</strong> in Obsidian to adjust coverage.</p>
   <button class="section-btn" data-value="ok" onclick="setSectionRating('SIGNAL', 'ok', this)">👍</button>
   <button class="section-btn" data-value="skip" onclick="setSectionRating('SIGNAL', 'skip', this)">👎</button>
 </div>
-<p>Anthropic publicly accused three Chinese AI labs — <strong>DeepSeek, Moonshot AI, and MiniMax</strong> — of running industrial-scale &quot;distillation attacks&quot; against Claude, involving over <strong>16 million exchanges</strong> generated via ~24,000 fraudulent accounts. This matters to you because Anthropic simultaneously revised its legal terms to clarify its policy forbidding the use of third-party harnesses with Claude subscriptions — which puts <strong>Roo Code, Superpowers, and any third-party Claude wrapper</strong> in a legally grayer zone than yesterday. The Cockpit stack you just abandoned (Roo Code) and the one you&#39;re using (Cursor + Superpowers) are directly in scope of this conversation.</p>
-<p>📎 Source: <a href="https://techcrunch.com/2026/02/23/anthropic-accuses-chinese-ai-labs-of-mining-claude-as-us-debates-ai-chip-exports/">https://techcrunch.com/2026/02/23/anthropic-accuses-chinese-ai-labs-of-mining-claude-as-us-debates-ai-chip-exports/</a> | <a href="https://www.theregister.com/2026/02/20/anthropic_clarifies_ban_third_party_claude_access">https://www.theregister.com/2026/02/20/anthropic_clarifies_ban_third_party_claude_access</a></p>
+<p>🇨🇳⚔️🇺🇸 <strong>Anthropic publicly accused DeepSeek, Moonshot AI, and MiniMax of industrial-scale distillation attacks</strong> — 24,000 fraudulent accounts, 16M+ Claude exchanges extracted to train competing models. The sizes vary significantly: MiniMax is an order of magnitude larger than Moonshot, which is an order of magnitude larger than DeepSeek. This isn&#39;t just geopolitics: it directly validates why Anthropic&#39;s January 9 OAuth crackdown happened, and it means the API cost/access landscape you&#39;re building on is hardening fast. Source: <a href="https://www.latent.space/p/ainews-anthropic-accuses-deepseek">latent.space</a></p>
 <hr>
 <h2>📚 MUST-READ LIST</h2>
 <ul>
 <li><p><strong>&quot;Stop Using /init for AGENTS.md&quot;</strong> by Addy Osmani — addyosmani.com (<a href="https://addyosmani.com/blog/agents-md/">link</a>)</p>
 <ul>
-<li>Why read it: You&#39;ve got <code>cockpit-core.mdc</code> at 18 lines — this research validates exactly that instinct. Two 2026 studies prove that auto-generated context files increase cost by 20%+ and hurt performance. You&#39;re already doing the right thing; this tells you <em>why</em> and what the next refinement looks like.</li>
-<li>Cross-fed by: 4 independent feeds</li>
-<li>Conversation value: Do your <code>.mdc</code> rules pass the &quot;non-discoverable&quot; test? Every line that fails that test is costing you money and degrading your results.</li>
+<li>Why read it: You just rebuilt <code>cockpit-core.mdc</code> down to 18 lines. Two 2026 research papers prove that instinct was correct — and explain exactly <em>what</em> earns a line and what&#39;s just noise burning your tokens.</li>
+<li>Cross-fed by: simonwillison.net (independently flagged the agentic engineering patterns thread)</li>
+<li>Conversation value: Run your current <code>cockpit-core.mdc</code> through the filter: <em>&quot;Can the agent discover this on its own by reading the repo?&quot;</em> If yes, delete the line.</li>
 </ul>
 </li>
 <li><p><strong>&quot;Writing about Agentic Engineering Patterns&quot;</strong> by Simon Willison — simonwillison.net (<a href="https://simonwillison.net/2026/Feb/23/agentic-engineering-patterns/">link</a>)</p>
 <ul>
-<li>Why read it: Willison just launched a structured guide on agentic engineering — the first two chapters are &quot;Writing code is cheap now&quot; and &quot;Red/green TDD&quot;, aimed at professionals using coding agents. This is the reference document your cockpit needs a conversation with.</li>
-<li>Cross-fed by: 1 feed</li>
-<li>Conversation value: Are any of Willison&#39;s emerging patterns missing from your Superpowers chain? Worth a 10-minute scan before your next cockpit iteration session.</li>
+<li>Why read it: Willison is building a structured, chapter-format guide specifically to answer &quot;how do I get good results out of this stuff&quot; — starting with two chapters: &quot;Writing code is cheap now&quot; and &quot;Red/green TDD.&quot; This is the practitioner canon forming in real time around exactly what you&#39;re trying to solve with the Cockpit.</li>
+<li>Cross-fed by: latent.space (referenced the same Agentic Engineering framing)</li>
+<li>Conversation value: Is your <code>cockpit-repass</code> skill essentially a manual implementation of what Willison calls &quot;Red/green TDD&quot;? If so, you&#39;re ahead of most builders. Worth knowing.</li>
 </ul>
 </li>
-<li><p><strong>&quot;AINews: Anthropic accuses DeepSeek, Moonshot, and MiniMax&quot;</strong> — latent.space (<a href="https://www.latent.space/p/ainews-anthropic-accuses-deepseek">link</a>)</p>
+<li><p><strong>&quot;Ladybird adopts Rust, with help from AI&quot;</strong> via Simon Willison — simonwillison.net (<a href="https://simonwillison.net/2026/Feb/23/ladybird-adopts-rust/">link</a>)</p>
 <ul>
-<li>Why read it: The thread crystallizes a security model shift: frontier models are increasingly protected not just by weights secrecy, but by API abuse resistance — account fraud detection, rate-limit evasion, behavioral fingerprinting, watermarking. The strategic picture around Claude access is shifting. You should have an opinion on this.</li>
-<li>Cross-fed by: 1 feed</li>
-<li>Conversation value: If Anthropic tightens API terms further, what&#39;s your Plan B for the cockpit? Think now, not when it&#39;s urgent.</li>
+<li>Why read it: Andreas Kling ported 25,000 lines of a JavaScript engine in ~2 weeks using Claude Code and Codex — what he calls &quot;human-directed, not autonomous code generation&quot;: hundreds of small prompts, the human deciding what to port and in what order. Direct proof that the multi-pass, human-steers-agent model you&#39;re trying to enforce in the Cockpit is the right frame — not vibe coding, not full autonomy.</li>
+<li>Conversation value: The unlock was having conformance test coverage <em>before</em> starting. What&#39;s the equivalent for your next project?</li>
 </ul>
 </li>
 </ul>
@@ -286,29 +287,20 @@ Or edit <strong>NEWS-INTERESTS.md</strong> in Obsidian to adjust coverage.</p>
   <button class="section-btn" data-value="ok" onclick="setSectionRating('BUILDER_INTELLIGENCE', 'ok', this)">👍</button>
   <button class="section-btn" data-value="skip" onclick="setSectionRating('BUILDER_INTELLIGENCE', 'skip', this)">👎</button>
 </div>
-<p><strong>🔨 Methodology beat:</strong></p>
-<p><strong>Big finding: your cockpit-core.mdc at 18 lines is scientifically correct.</strong> Research from Lulla et al. (ICSE JAWs 2026) found that human-authored AGENTS.md files reduced median runtime by 28.64% and output token consumption by 16.58%. But a separate ETH Zurich study found that LLM-generated context files reduced task success by 2–3% while increasing cost by over 20% — while developer-written files improved success by about 4%. The operative rule: can the agent discover this on its own by reading your code? If yes, delete it.</p>
-<p><strong>The AGENTS.md anchoring trap is real.</strong> If your context file mentions something — even in passing — the model has it in context for every single prompt. This biases the agent toward patterns you may no longer use. Check your <code>.mdc</code> rules for stale anchors.</p>
-<p><strong>Agentic engineering is becoming a named discipline.</strong> Willison defines &quot;Agentic Engineering&quot; as the professional end of the spectrum: engineers using coding agents to amplify existing expertise — distinct from vibe coding (paying no attention to the code at all), which he associates with non-programmers. You are, by this definition, an agentic engineer. The field is now producing structured patterns and guidance — not just tips.</p>
-<p><strong>Real-world agentic project proof point:</strong> Andreas Kling used Claude Code and Codex to port Ladybird&#39;s JavaScript engine — ~25,000 lines of Rust in about two weeks. He describes it as &quot;human-directed, not autonomous code generation&quot; — hundreds of small prompts, steering the agents. The same work would have taken multiple months by hand. The key unlock: having a conformance test suite to verify output. Your Sweden Odyssey project has a similar structure — worth noting.</p>
-<p><strong>Cursor&#39;s biggest Feb 2026 change: Subagents.</strong> The biggest change to Cursor tested in February 2026 is the introduction of <strong>Subagents</strong>, which enable parallel task execution — shifting Cursor from a serial, single-agent model to what reviewers call a &quot;Parallel Engineering Platform.&quot; This is separate from Custom Modes — and it&#39;s worth knowing before you finalize your Planner/Executor architecture.</p>
-<p><strong>Your Custom Modes plan has real-world validation.</strong> The most prominent Planner/Executor setup uses custom modes to separate planning from implementation: Gemini 2.5 Pro handles planning (1M token context), Claude Sonnet handles execution, with the user switching to Executor mode and typing &quot;go&quot; to work through each task sequentially — with a built-in &quot;circuit breaker&quot; if something fails repeatedly.</p>
-<p><strong>🎯 Micro-SaaS Radar:</strong></p>
-<p>The ACE framework (Agentic Context Engineering, ICLR 2026) treats context as an evolving playbook that adapts through a generator/reflector/curator pipeline, rather than a static file — outperforming static approaches by 12.3% on agent benchmarks. No one has built this as a lightweight tool for solo builders. Dynamic <code>.mdc</code> rules that adapt by task type — this is a real gap. You&#39;re living the pain right now.</p>
-<p><strong>🛠 Tool &amp; Stack Updates:</strong></p>
-<ul>
-<li><p><strong>Claude Code Hooks are live</strong> — exit code 2 on a <code>PreToolUse</code> hook stops the tool call entirely; this transforms best-practice guidelines into enforced rules that run every time. This is the hard enforcement you&#39;ve been looking for. If Cursor Custom Modes feel too soft after a week of testing, Claude Code hooks are the next-tier option.</p>
-</li>
-<li><p><strong>Cursor <code>.mdc</code> with <code>alwaysApply: true</code> = 100% rule compliance.</strong> Testing showed that switching to <code>.mdc</code> with <code>alwaysApply: true</code> achieved 100% rule compliance across 9/9 runs — something <code>.cursorrules</code> consistently failed in agent mode. If you haven&#39;t confirmed this setting is active in your cockpit files, check it today.</p>
-</li>
-<li><p><strong><code>cursor-lint</code> GitHub Action</strong> now exists to check every push/PR for broken frontmatter or missing <code>alwaysApply: true</code>, preventing broken rules from silently shipping. Overkill for solo work, but the fact it exists confirms your enforcement concerns are widely shared.</p>
-</li>
-<li><p><strong>Superpowers accepted into Anthropic marketplace</strong> — Superpowers has over 42,000 GitHub stars and was officially accepted into the Anthropic marketplace on January 15, 2026. The framework you&#39;re building your cockpit on is now formally endorsed. Relevant given the new Anthropic ToS discussion.</p>
-</li>
-</ul>
-<p><strong>💰 API Economics:</strong></p>
-<p>OpenAI&#39;s Responses API added WebSockets for low-latency, long-running, tool-heavy agents — claimed 20–40% speedups for 20+ tool calls. Cline reports ~15% faster simple tasks and ~39% faster complex workflows. Not directly actionable for your stack today, but worth tracking — this is the direction API infrastructure is moving for agentic workloads.</p>
-<p>Nothing changed in Supabase, Stripe, Resend, Cloudflare, or Neon in the last 24h that affects your current stack.</p>
+<p><strong>Methodology beat:</strong> 🔥</p>
+<p>Two research findings published today crystallize something important for your <code>cockpit-core.mdc</code> work:</p>
+<p>LLM-generated context files (from <code>/init</code>) reduced task success by 2–3% while increasing cost by over 20%. Developer-written files improved success by about 4% — but also increased cost by up to 19%. The delta is <em>what&#39;s in the file</em>, not whether it exists. The practical filter: can the agent discover this on its own by reading your code? If yes, delete it.</p>
+<p>The anchoring problem is real: if your AGENTS.md mentions something — even in passing — the model has it in context for every prompt. LLMs don&#39;t distinguish between &quot;this is what we used to do&quot; and &quot;this is what you should do.&quot; Every stale line in your <code>.mdc</code> is actively misleading the agent, not just wasting tokens.</p>
+<p>On the chain enforcement problem you&#39;re actively fighting: a single monolithic file gets loaded the same way every time — a flat instruction set can&#39;t condition on what kind of task is being run. This explains <em>precisely</em> why <code>.mdc</code> rules alone don&#39;t enforce your Superpowers chain. The file doesn&#39;t know if you&#39;re in planning mode or execution mode. Your <code>cockpit-repass</code> challenge gates are the right architectural response to this.</p>
+<p>Simon Willison&#39;s new Agentic Engineering Patterns guide also surfaces the TDD angle: &quot;Red/green TDD describes how test-first development helps agents write more succinct and reliable code with minimal extra prompting.&quot; Your Design Challenge gate is essentially a pre-flight version of this.</p>
+<p><strong>Superpowers v4.3.0 note:</strong> A critical bug was fixed on Feb 12 — the <code>SessionStart</code> hook was running asynchronously, which silently dropped the <code>using-superpowers</code> bootstrap context before the agent&#39;s first turn. If you haven&#39;t updated, your skills system may have been inert on session start without you knowing it. Source: <a href="https://blog.fsck.com/releases/2026/02/12/superpowers-v4-3-0/">blog.fsck.com</a>. ⚠️ Check your version before this week&#39;s Custom Modes test.</p>
+<p><strong>Micro-SaaS Radar:</strong> 🟡</p>
+<p>SWE-Bench Verified is being voluntarily deprecated by OpenAI: it&#39;s saturated and contaminated, with over 60% of remaining problems found to be unsolvable due to flawed or over-specified tests, and frontier models can reproduce gold patches verbatim from Task IDs alone. The practical consequence: any tool or service that sells itself on SWE-Bench scores is now selling snake oil. The benchmark shift to longer-horizon, open-ended, real-world product building evals creates a gap — no clean &quot;can this agent actually ship a feature?&quot; scorecard exists yet for non-technical buyers. That&#39;s a potential product surface.</p>
+<p>The Klarna data point from web intelligence is worth filing: Klarna removed ~1,500 micro-SaaS services to give AI cleaner context. The consolidation pressure is real. Implication: the micro-SaaS products that survive are ones that handle one workflow completely, with zero integration overhead. Fits your &quot;tiny, focused tools&quot; instinct exactly.</p>
+<p><strong>Tool &amp; Stack Updates:</strong> 🔴 (Directly affects your week)</p>
+<p><strong>Cursor v2.5 (Feb 17):</strong> Custom Modes were <em>not</em> restored. Instead, Cursor 2.5 introduced Plugins, which bundle skills, subagents, MCP servers, hooks, and rules into a single install. The sandbox now has granular network and filesystem restrictions — but these are tool-restriction controls for the agent sandbox, not per-mode workflow enforcement the way Roo Code&#39;s Architect/Code mode split worked. The community has been vocal about the gap. Know this going into your Custom Modes test week: you&#39;re working around a missing feature, not with one.</p>
+<p><strong>Anthropic&#39;s Superpowers status:</strong> Confirmed safe. Superpowers (<code>obra/superpowers</code>) was officially accepted into Anthropic&#39;s Claude plugins marketplace on January 15, 2026 — it&#39;s an <em>authorized</em> Claude Code plugin, not a banned third-party harness. Your stack is not at risk from the OAuth crackdown. Source: <a href="https://claude.com/plugins/superpowers">claude.com/plugins/superpowers</a></p>
+<p><strong>API Economics:</strong> Nothing new in the API landscape today.</p>
 <hr>
 <h2>📊 PIONEER ADVANTAGE CHECK</h2>
 <div class="section-feedback" data-section="PIONEER_ADVANTAGE">
@@ -327,39 +319,39 @@ Or edit <strong>NEWS-INTERESTS.md</strong> in Obsidian to adjust coverage.</p>
 </tr>
 </thead>
 <tbody><tr>
-<td><strong>Claude Code Hooks (PreToolUse / exit code 2)</strong></td>
-<td>You&#39;ve already designed the enforcement problem The Cockpit is trying to solve. Claude Code hooks are the deterministic answer: exit code 2 blocks any tool call, no passive rules needed. This is <em>exactly</em> the &quot;hard enforcement&quot; gap you named.</td>
-<td>2–4 weeks before mainstream adoption catches up</td>
-<td><strong>Real</strong> — documented, shipped, Anthropic-official</td>
-<td>HIGH: Drop the Custom Modes experiment. Claude Code hooks solve enforcement at the <em>harness</em> level, not the editor level. Test <code>PreToolUse</code> on Superpowers chain steps this week.</td>
+<td>🔴 Anthropic blocks third-party OAuth harnesses; Superpowers officially in Claude plugins marketplace</td>
+<td>You&#39;re already on the compliant stack (Cursor + Superpowers). Roo Code abandonment was accidental good timing.</td>
+<td>Now — ToS enforcement is live</td>
+<td><strong>Real</strong> — accounts are being suspended without warning</td>
+<td>Immediate: verify you&#39;re running Superpowers as a Claude Code plugin, not via OAuth token routing. One wrong config = banned account. Zero grace period.</td>
 </tr>
 <tr>
-<td><strong>Cursor <code>alwaysApply: true</code> + <code>.mdc</code> compliance</strong></td>
-<td>The &quot;AI ignores my rules&quot; problem you&#39;ve been fighting has an empirically validated fix: migrate to <code>.mdc</code> with <code>alwaysApply: true</code>. Tested at 50 rules with 100% compliance.</td>
-<td>Window is now — this is already spreading</td>
-<td><strong>Real</strong> — community-tested, 9/9 empirical runs</td>
-<td>HIGH: One config change. If your <code>cockpit-core.mdc</code> doesn&#39;t have <code>alwaysApply: true</code> in YAML frontmatter, add it today. Immediate improvement.</td>
+<td>🟡 Cursor v2.5 sandbox tool restrictions replace Custom Modes</td>
+<td>Granular network + filesystem controls available now in v2.5. Closer to Roo Code&#39;s hard gates than anything Cursor had before.</td>
+<td>1–4 weeks to test</td>
+<td><strong>Real</strong> — but different from what you wanted</td>
+<td>Check if v2.5 sandbox controls can replicate your Cockpit Planner (read-only) / Executor (full access) split. May solve the chain enforcement problem via a different mechanism than Custom Modes.</td>
 </tr>
 <tr>
-<td><strong>AgentBudget — real-time dollar circuit breaker</strong></td>
-<td>You burned €60-100/day on Roo Code before catching it. AgentBudget wraps any LLM SDK with hard dollar limits and loop detection. One line to initialize.</td>
-<td>Now — shipped, open-source, works with Anthropic SDK</td>
-<td><strong>Real</strong> — clean open-source library, Apache 2.0</td>
-<td>HIGH: Set a €5/session hard limit during Cockpit development. Stops the Roo Code failure mode from recurring.</td>
+<td>🟡 Superpowers v4.3.0 fixes async SessionStart bug</td>
+<td>The bug meant your skills system was silently inert every session start. You may have been building on broken foundations without knowing.</td>
+<td>Fix available now</td>
+<td><strong>Real</strong> — verified bug, verified fix</td>
+<td>Update to v4.3.0 immediately. If you weren&#39;t on it, the <code>cockpit-repass</code> skill may have been running less reliably than your logs suggested.</td>
 </tr>
 <tr>
-<td><strong>Cursor Subagents (parallel task execution)</strong></td>
-<td>Cursor has shifted from serial to parallel agent model. If Cockpit architecture assumes single-threaded execution, subagents may break your chain assumptions.</td>
-<td>1–3 months to stabilize</td>
-<td><strong>Real but early</strong> — February 2026 reviewer consensus</td>
-<td>MEDIUM: Monitor, don&#39;t build around yet. One-person shop; parallel execution adds complexity before value at your scale.</td>
+<td>🟠 Google following Anthropic: suspending AI Ultra accounts for OpenClaw usage, zero warning</td>
+<td>Ecosystem-wide crackdown on OAuth token arbitrage. Not just Anthropic.</td>
+<td>Happening now</td>
+<td><strong>Real</strong> — zero-tolerance, permanent suspensions confirmed</td>
+<td>Reinforces your Cursor stack decision. Avoid any tool that routes Google or Anthropic credentials through third-party OAuth. The era of subscription arbitrage is definitively over.</td>
 </tr>
 <tr>
-<td><strong>Spec-first AI development (FreeBSD driver case study)</strong></td>
-<td>The HN #1 story today: complex AI project succeeded only after writing a clean specification <em>before</em> letting AI code. The Cockpit&#39;s brainstorm → plan → implement chain is structurally identical.</td>
-<td>Permanent validation signal</td>
-<td><strong>Real</strong> — one author, rigorous multi-session methodology</td>
-<td>HIGH: This is intellectual ammunition for your blog launch. The Cockpit&#39;s architecture is validated by the most-upvoted HN post today.</td>
+<td>🟢 DeepSeek next model expected next week, trained on smuggled Blackwell chips</td>
+<td>If it lands with strong coding benchmarks again, API pricing pressure intensifies. Sonnet/Opus may reprice or offer competitive tiers.</td>
+<td>1–2 weeks</td>
+<td><strong>Real signal, uncertain outcome</strong></td>
+<td>Watch pricing. If DeepSeek R3/V3 drops at rock-bottom prices, your Cockpit cost equation changes again. Don&#39;t act yet — wait for benchmark reality.</td>
 </tr>
 </tbody></table>
 <hr>
@@ -369,60 +361,46 @@ Or edit <strong>NEWS-INTERESTS.md</strong> in Obsidian to adjust coverage.</p>
   <button class="section-btn" data-value="ok" onclick="setSectionRating('TOOLS_TO_TRY', 'ok', this)">👍</button>
   <button class="section-btn" data-value="skip" onclick="setSectionRating('TOOLS_TO_TRY', 'skip', this)">👎</button>
 </div>
+<p><strong>vim-claude-code</strong> — Vim plugin that integrates Claude Code CLI directly into the editor with 22 sub-commands (explain, fix, refactor, test, commit, review, plan) and one-key toggle.</p>
 <ul>
-<li><strong>AgentBudget</strong> — Real-time hard dollar limits for any AI agent session. Wraps OpenAI/Anthropic SDKs with a single <code>agentbudget.init(&quot;$5.00&quot;)</code> call. Circuit breaker, loop detection, soft/hard limits, full cost report per session.<ul>
-<li>🔗 <a href="https://github.com/sahiljagtap08/agentbudget">https://github.com/sahiljagtap08/agentbudget</a></li>
-<li><strong>Try it:</strong> Install via <code>pip install agentbudget</code>. Wrap one Cockpit session with a €5 hard limit. Check the report at end of session — you&#39;ll see actual per-call cost breakdown for Sonnet vs Opus.</li>
-<li><strong>Relevance:</strong> Direct fix for the Roo Code cost spiral problem. Prevents any future €60/day surprise regardless of harness.</li>
-<li><strong>Signal:</strong> HN Show HN — Tier 3, Score 8.0. Fresh, clean Apache 2.0 library. No hype.</li>
+<li>🔗 <a href="https://github.com/rishi-opensource/vim-claude-code">https://github.com/rishi-opensource/vim-claude-code</a></li>
+<li><strong>Try it:</strong> Not recommended for you right now. You&#39;re settled on Cursor. File this for future reference if you ever want a minimal-footprint fallback cockpit.</li>
+<li><strong>Relevance:</strong> Cockpit architecture thinking — worth understanding how others solve the harness problem</li>
+<li><strong>Signal:</strong> HN front page, 24 Feb 2026 — first stable release v1.0.0 — community interest in editor-native Claude integration</li>
 </ul>
-</li>
-</ul>
-<div class="tool-feedback" data-tool="0" data-name="AgentBudget"><span class="tool-feedback-label">React:</span> <button class="tool-reaction-btn" data-value="love" onclick="setToolReaction(0, 'love', this)">❤️</button> <button class="tool-reaction-btn" data-value="ok" onclick="setToolReaction(0, 'ok', this)">👍</button> <button class="tool-reaction-btn" data-value="skip" onclick="setToolReaction(0, 'skip', this)">👎</button></div>
-
-<ul>
-<li><strong>enveil</strong> — Encrypts <code>.env</code> secrets so AI coding tools (Cursor, Claude Code, Copilot) cannot read them from disk. Real values live in an AES-256-GCM encrypted local store; only symbolic references (<code>ev://key_name</code>) exist in <code>.env</code>.<ul>
-<li>🔗 <a href="https://github.com/GreatScott/enveil">https://github.com/GreatScott/enveil</a></li>
-<li><strong>Try it:</strong> Run <code>enveil init</code> in your Sweden Odyssey or RenPy project directory. Use <code>enveil import</code> to convert your existing <code>.env</code>. Takes 20 minutes.</li>
-<li><strong>Relevance:</strong> Any project using API keys in Cursor. Built <em>by</em> someone using Claude Code after it happened to them &quot;several times.&quot; This is a solved-problem tool, not a concept.</li>
-<li><strong>Signal:</strong> HN Show HN, Tier 3. Cross-feed score 7. Built with Claude Code, verified with 31 automated tests.</li>
-</ul>
-</li>
-</ul>
+<p>No other tools worth 30 minutes today. Quality over quantity.</p>
 <hr>
-<div class="tool-feedback" data-tool="1" data-name="enveil"><span class="tool-feedback-label">React:</span> <button class="tool-reaction-btn" data-value="love" onclick="setToolReaction(1, 'love', this)">❤️</button> <button class="tool-reaction-btn" data-value="ok" onclick="setToolReaction(1, 'ok', this)">👍</button> <button class="tool-reaction-btn" data-value="skip" onclick="setToolReaction(1, 'skip', this)">👎</button></div>
-## 🏗️ BUILD WATCH
-
-<p><strong>Spec-first AI development is the emerging methodology standard.</strong> The FreeBSD Wi-Fi driver story (HN #1 today) is the clearest real-world validation of architecture-before-code. The author failed with &quot;just ask Claude to port this&quot; and succeeded only after generating an 11-chapter specification, multi-model proofreading it, then coding against the spec in a clean context. Three separate AI sessions — brainstorm, proofread, implement — each with no contamination from the others. This is not theoretical. This is a working kernel module.
-Source: <a href="https://vladimir.varank.in/notes/2026/02/freebsd-brcmfmac/">vladimir.varank.in</a></p>
-<p><strong>The &quot;third-party harness ban&quot; is spreading across providers.</strong> Google banned accounts for using Gemini via OpenClaw (third-party OAuth). Anthropic clarified its own third-party harness prohibition on February 20. Two major providers, same week, same enforcement direction. The industry is moving toward closed, provider-controlled surfaces. For you: Cursor is sanctioned. Roo Code&#39;s future is structurally uncertain. This is not a technical risk — it is a terms-of-service risk that will bite users of grey-market harnesses.
-Source: <a href="https://discuss.ai.google.dev/t/account-restricted-without-warning-google-ai-ultra-oauth-via-openclaw/122778">Google AI Developers Forum</a>, <a href="https://www.theregister.com/2026/02/20/anthropic_clarifies_ban_third_party_claude_access">The Register</a></p>
-<p><strong>Shared memory infrastructure for coding agents is being built.</strong> Memctl launches March 1 — persistent, branch-aware memory server for AI coding agents. Solves the &quot;every session starts cold&quot; problem at the infrastructure level rather than the context-stuffing level. Worth watching: if it works, it could replace parts of what MyLifeOS does manually for AI session context.
-Source: <a href="https://memctl.com">memctl.com</a> — HN Show HN, waitlist open.</p>
+<h2>🏗️ BUILD WATCH</h2>
+<div class="section-feedback" data-section="BUILD_WATCH">
+  <button class="section-btn" data-value="love" onclick="setSectionRating('BUILD_WATCH', 'love', this)">❤️</button>
+  <button class="section-btn" data-value="ok" onclick="setSectionRating('BUILD_WATCH', 'ok', this)">👍</button>
+  <button class="section-btn" data-value="skip" onclick="setSectionRating('BUILD_WATCH', 'skip', this)">👎</button>
+</div>
+<p><strong>The spec-first AI development pattern is becoming reproducible.</strong> Article 1 (FreeBSD Wi-Fi driver, HN Score: 9.2) documents a solo developer building a working kernel driver by first generating a 10-chapter specification, proofreading it with a second AI session, then building from the clean spec rather than from the existing code. The result: a working FreeBSD kernel module produced with &quot;low-involved sessions.&quot; This is the most concrete evidence yet that the architecture pattern — <em>specify first, build second</em> — generalises beyond app-layer code into systems programming. For The Cockpit: this is exactly the multi-pass thinking discipline you&#39;re trying to enforce. The FreeBSD builder solved it not through harness rules but through session isolation: separate Pi sessions for spec writing, proofreading, and implementation. Worth noting that this was done with Pi agent (not Cursor), but the session-boundary principle is harness-agnostic.</p>
+<p><strong>The &quot;AI added zero to GDP&quot; data point is now on record.</strong> Goldman Sachs Chief Economist Jan Hatzius stated that AI investment had &quot;basically zero&quot; contribution to US GDP growth in 2025, citing import offsets (chips add to Taiwanese and Korean GDP, not American) and the absence of measurable productivity gains. A recent survey of nearly 6,000 executives in the US, Europe, and Australia found that despite 70% of firms actively using AI, about 80% reported no impact on employment or productivity. This matters for the build thesis: the productivity gap is real, not yet captured in macro data, and the window for tools that <em>actually move the needle</em> remains open. The opportunity is genuine. The hype around AI-driven economic transformation is, for now, premature.</p>
 <hr>
 <h2>⏪ ACTION AUDIT</h2>
-<p>No previous actions to track — first briefing in this cycle.</p>
+<p>No previous actions to track.</p>
 <hr>
 <h2>🎯 TODAY&#39;S PRIORITIES</h2>
-<p><strong>1. 🔥 Check your <code>.mdc</code> files for <code>alwaysApply: true</code> — right now, before anything else.</strong>
-The research is clear: without this flag, Cursor agent mode ignores your rules entirely. This is a 5-minute fix that could resolve the &quot;AI skips steps&quot; problem you&#39;ve been fighting all week. Open <code>cockpit-core.mdc</code> and <code>cockpit-repass.mdc</code>, confirm the frontmatter, close the loop.</p>
-<p><strong>2. 🏗 Set up Cockpit Custom Modes (Planner + Executor) — this is your stated next action.</strong>
-This is already your #1 project priority. Do it today. The validated model is: Planner mode → files in context → clarifying questions → <code>plan.md</code> with numbered tasks → switch to Executor → type &quot;go&quot;. One week test starts now. Don&#39;t let the Anthropic ToS news distract you — Superpowers is now in their marketplace, you&#39;re fine.</p>
-<p><strong>3. 🛡 Form an opinion on the Anthropic ToS clarification before it becomes urgent.</strong>
-You don&#39;t need to act today, but you need to read The Register article and know where you stand. The tools you use daily (Cursor + Superpowers wrappers) sit in a gray zone that just got grayer. 15 minutes now beats a scramble later. If it changes nothing, great — document that conclusion and move on.</p>
-<hr>
-<p><em>PRISM v2.0 — Built on verified sources only. No speculation. Sources: latent.space, simonwillison.net, addyosmani.com, theregister.com, techcrunch.com, web intelligence queries 1–8.</em></p>
-<hr>
+<p><strong>1. 🔧 Update Superpowers to v4.3.0 before starting anything else</strong>
+Your entire Cockpit test this week depends on the Superpowers chain running correctly. The v4.3.0 fix addresses a silent failure where the <code>SessionStart</code> hook dropped your bootstrap context asynchronously — meaning your skills may not have been loading at session start. Verify your current version, update if needed, confirm the hook fires synchronously before you run a single Cockpit session. 10 minutes. Do it first.</p>
+<p><strong>2. 🧪 Run the Custom Modes test with calibrated expectations</strong>
+Cursor v2.5 confirmed: original Custom Modes (per-mode tool toggles) were not restored. What you&#39;re building is a workaround using Plugins + sandbox restrictions, not a native equivalent of Roo Code&#39;s hard gates. That&#39;s fine — but name it clearly. Design your Cockpit Planner / Cockpit Executor modes knowing the enforcement is soft-by-default, and your <code>cockpit-repass</code> challenge gates are doing the actual enforcement work. Run one full Superpowers chain cycle today and document where the AI first tries to skip a step.</p>
+<p><strong>3. 📖 Audit <code>cockpit-core.mdc</code> against the Osmani filter</strong>
+Read the Osmani piece (15 minutes). Then open <code>cockpit-core.mdc</code> and apply one question to every line: <em>&quot;Can the agent discover this without me saying it?&quot;</em> You got to 18 lines — you can probably get to 12. Leaner context = cheaper runs + less anchoring to stale patterns. This directly serves your cost discipline goal and your multi-pass thinking problem.</p>
 <h2>🌍 WORLD LENS</h2>
 <div class="section-feedback" data-section="WORLD_LENS">
   <button class="section-btn" data-value="love" onclick="setSectionRating('WORLD_LENS', 'love', this)">❤️</button>
   <button class="section-btn" data-value="ok" onclick="setSectionRating('WORLD_LENS', 'ok', this)">👍</button>
   <button class="section-btn" data-value="skip" onclick="setSectionRating('WORLD_LENS', 'skip', this)">👎</button>
 </div>
-<p><strong>Trump&#39;s 10% global tariff took effect today.</strong> This is not a threat or a negotiating position anymore — it is live policy. Donald Trump&#39;s global tariff has taken effect at 10%. For a Brussels-based specialty food shop, the mechanism is indirect but real: the euro&#39;s exchange rate against the dollar matters for any imported goods priced in USD; Belgian food importers who source from non-EU suppliers will face repricing pressure in the coming weeks; and European consumer confidence — already fragile — tends to dip when transatlantic trade friction escalates. Chez Julien&#39;s supply chain exposure depends entirely on where its specialty items originate. If any suppliers source inputs from North America or pass-through pricing from global commodity markets, expect slow-burn cost creep through Q2.</p>
-<p>The broader structural question is more important than the immediate tariff level: <strong>the rules-based trading order that Belgian businesses have operated under since 1945 is now genuinely contested</strong>, not merely rhetorically strained. For a founder planning to sell a retail shop to chains or centralized kitchens, the timing of that sale matters — buyer confidence is a function of macroeconomic stability, and that stability is now uncertain in a way it has not been in decades.</p>
-<p><strong>China escalates on Japan.</strong> China has targeted dozens of Japanese companies with export curbs. This is part of the same geopolitical current: technology and critical materials are becoming weapons of statecraft. For a Brussels micro-software founder, this matters at one remove — it accelerates European strategic autonomy sentiment, which will drive EU tech regulation and funding priorities over the next 18 months. Watch for increased EU pressure on domestic AI infrastructure investment. This is background signal, not immediate action.</p>
-<p><strong>AI added &quot;basically zero&quot; to US GDP growth in 2025, per Goldman Sachs.</strong> Goldman Sachs Chief Economist Jan Hatzius said AI investment spending had &quot;basically zero&quot; contribution to U.S. GDP growth in 2025, noting that &quot;a lot of the AI investment that we&#39;re seeing in the U.S. adds to Taiwanese GDP, and Korean GDP but not really that much to U.S. GDP.&quot; The honest read for a micro-software builder: the <em>productivity</em> gains from AI are real and personal — you feel them daily in the Cockpit — but the <em>macro</em> story is still being written. A recent survey of nearly 6,000 executives found that despite 70% of firms actively using AI, about 80% reported no impact on employment or productivity. This is the gap between power users (you) and the median business. That gap is your market.</p>
+<p><strong>The chip war enters its most consequential phase.</strong></p>
+<p>DeepSeek has apparently trained its latest AI model on Nvidia&#39;s most powerful Blackwell chips, despite the US export ban — with the chips believed to be in a data center in Inner Mongolia — and DeepSeek is expected to scrub technical fingerprints of US chip usage before release. This is not a minor allegation. If confirmed, it means export controls — the primary lever of US AI policy — have been circumvented at scale. The geopolitical implication for European founders is structural: the assumption that Western AI labs hold a durable technical lead, protected by chip access restrictions, is increasingly fragile. A DeepSeek model trained on Blackwell hardware, released at Chinese price points, would accelerate commoditisation of frontier AI capabilities faster than current consensus assumes.</p>
+<p>China has simultaneously slammed dozens of Japanese companies with export curbs — a retaliatory posture that signals the trade war is no longer confined to US-China bilateral friction. Japan is now an active front. For a Brussels founder, this matters indirectly: European export-dependent manufacturers (machinery, semiconductors, chemicals) face a world in which supply chain assumptions are being rewritten quarterly. Consumer confidence in export-heavy economies — Germany foremost — will be pressured. Belgium&#39;s economy, tied to Antwerp port flows and European distribution, is not insulated.</p>
+<p><strong>Belgian retail is in flux — relevant to the shop sale thesis.</strong></p>
+<p>Despite modest growth of 0.8% in 2025, Carrefour CEO Alexandre Bompard no longer sees a major role for Carrefour Belgium in his new strategic plan, with Carrefour saying it will keep &quot;all strategic options&quot; open for Belgium. Albert Heijn has been cited as having &quot;already shown interest in the past.&quot; A Carrefour Belgium sale — potentially to a Dutch operator — would reshape the Belgian food retail landscape meaningfully. Centralised kitchen procurement, private label expansion, and consolidation pressure on specialty food suppliers typically follow such ownership transitions. If Carrefour Belgium is absorbed by a Dutch operator with different supplier relationships, the landscape for specialty food producers and shop operators shifts. Worth monitoring as a background variable on the Chez Julien sale thesis.</p>
+<p>Delhaize is set to open seven new supermarkets across Belgium in early 2026, signalling continued investment in Belgian food retail even as Carrefour retrenches. Net effect: the Belgian consumer food market is not contracting, but consolidating around stronger operators.</p>
 <hr>
 <h2>🇪🇺 EUROPE TECH</h2>
 <div class="section-feedback" data-section="EUROPE_TECH">
@@ -430,9 +408,11 @@ You don&#39;t need to act today, but you need to read The Register article and k
   <button class="section-btn" data-value="ok" onclick="setSectionRating('EUROPE_TECH', 'ok', this)">👍</button>
   <button class="section-btn" data-value="skip" onclick="setSectionRating('EUROPE_TECH', 'skip', this)">👎</button>
 </div>
-<p><strong>Belgian grocery consolidation continues under regulatory oversight.</strong> On January 26, 2026, the Belgian Competition Authority approved Delhaize&#39;s acquisition of Delfood, owner of the Louis Delhaize retail chain, subject to conditions including the divestment of a number of proximity stores in certain local markets. The Belgian supermarkets and grocery sector is valued at €47.9 billion in 2026, with 8,437 businesses, and Belgium&#39;s grocery market is described as one of the most competitive in Europe.</p>
-<p><strong>What this means for the Chez Julien shop sale prospecting:</strong> The chains Julien will be approaching for shop acquisition are operating in a market where the BCA is actively watching competition in proximity retail. A specialty food shop sale to a large chain <em>will</em> go through regulatory review if the buyer is already dominant in that postcode. This isn&#39;t a blocker — it&#39;s a variable to flag early with any prospective buyer&#39;s legal team. The more interesting angle: the divestiture condition on the Delhaize deal means some proximity retail locations will come back onto the market in certain neighborhoods. That&#39;s both competition <em>and</em> a signal that mid-size operators are actively restructuring in Brussels.</p>
-<p><strong>No other EU-specific tech news today worth noting.</strong></p>
+<p><strong>The third-party harness crackdown is now a cross-platform policy, not an Anthropic idiosyncrasy.</strong></p>
+<p>Article 2 makes this unambiguous: Google confirmed in writing that &quot;the use of your credentials within the third-party tool &#39;open claw&#39; for testing purposes constitutes a violation of the Google Terms of Service,&quot; citing &quot;use of Antigravity servers to power a non-Antigravity product,&quot; and stated this falls under a zero tolerance policy with no possibility of reversal. Anthropic, Google, and by inference OpenAI are all converging on the same enforcement posture: subscription OAuth credentials are for first-party surfaces only. The token arbitrage window — which powered the Roo Code cost model you exploited briefly — is closed industry-wide.</p>
+<p>For a Brussels micro-founder building on AI APIs: the risk is not just cost, it is account termination without warning or appeal. Multiple users reported being locked out of paid accounts ($249/month) with no acknowledgement through official channels for days, and one user who posted a polite question on the forum asking for clarification had their forum account banned shortly after. This is not a customer-service culture that will protect small operators. Build your stack on official API access with billing, not on subscription OAuth routing, and treat that as a non-negotiable architectural decision.</p>
+<p><strong>Ratz food market — Brussels context.</strong></p>
+<p>Ratz, presenting itself as the largest food market in Belgium, opened in the Brussels municipality of Ixelles at 25 Rue Saint-Boniface on 19 February 2026, after 12 months of renovation of a former parking lot, spanning three floors and 3,000 square meters. This is local colour with mild relevance: food culture infrastructure in Brussels is expanding. A 3,000 sqm food hall in Ixelles, positioned as experiential rather than transactional, is a different competitive vector from supermarket consolidation — but it shapes what &quot;specialty food&quot; means to Brussels consumers.</p>
 <hr>
 <h2>📈 TREND TRACKER</h2>
 <div class="section-feedback" data-section="TREND_TRACKER">
@@ -440,52 +420,73 @@ You don&#39;t need to act today, but you need to read The Register article and k
   <button class="section-btn" data-value="ok" onclick="setSectionRating('TREND_TRACKER', 'ok', this)">👍</button>
   <button class="section-btn" data-value="skip" onclick="setSectionRating('TREND_TRACKER', 'skip', this)">👎</button>
 </div>
-<p><strong>🔴 ACCELERATING — Provider lockdown of third-party harnesses</strong>
-Feb 20: Anthropic clarifies consumer TOS ban on third-party Claude access
-Feb 22: Google begins banning Google AI Ultra accounts using OpenClaw
-Feb 24: Both policies now confirmed, independently</p>
-<p>Pattern: Providers are hardening their monetization perimeter simultaneously. Cursor, being an official partnership model, is safe. Roo Code, which uses Claude via API, is technically compliant (API use is permitted) — the risk is consumer-tier grey-area access, not API access. Your current stack is clean. Watch this space for any Cursor-Anthropic relationship changes.</p>
-<p><strong>🔴 ACCELERATING — Spec-first methodology validation</strong>
-Feb 22: Chris Lattner verdict on Claude C Compiler — AI excels at assembling, not designing
-Feb 23: Simon Willison amplifies — &quot;design and stewardship become more important&quot;
-Feb 24: FreeBSD driver story — spec-first succeeded where prompt-first failed</p>
-<p>Three independent data points in three days pointing at the same conclusion: The Cockpit&#39;s brainstorm-before-code architecture is the right call, and the world is catching up to it.</p>
-<p><strong>🟡 EMERGING — AI agent infrastructure layer</strong>
-AgentBudget (cost enforcement), Memctl (shared memory), enveil (secret management) all appeared in the same 24-hour HN window. An ecosystem of &quot;agent plumbing&quot; tools is forming around coding agents. This is infrastructure, not applications. For a micro-SaaS builder, it means the primitives are maturing — building on top of agents in 6 months will be significantly cleaner than today.</p>
-<p><strong>🟢 STABLE — Superpowers + Cursor as the non-technical founder&#39;s harness</strong>
-No new competitors to Superpowers surfaced this week. 42,000 GitHub stars, Anthropic marketplace acceptance. The stack you&#39;ve chosen is not going anywhere. The enforcement gap (passive <code>.mdc</code> rules vs. hard hooks) is the live frontier — and Claude Code hooks are the answer that just surfaced.</p>
-<p><strong>⚫ DISAPPEARED — Lovable / Bolt.new / no-code AI builder news</strong>
-Nothing relevant on February 24, 2026 specifically. The 2025 momentum for these platforms (Lovable at $17M ARR, Bolt.new Dynamic Reasoning) is background context, not today&#39;s story.</p>
+<p><strong>Accelerating this week:</strong></p>
+<ul>
+<li><strong>Platform enforcement of AI subscription ToS</strong> — From Anthropic (Jan 9 technical block, Feb 19 documentation) to Google (Feb 12–20 mass suspensions), the enforcement window compressed from weeks to days. The trend line points toward automated, real-time blocking with no human review. Accelerating fast.</li>
+<li><strong>Spec-first AI development</strong> — The FreeBSD driver article joins the Claude C Compiler (Feb 23) and Willison&#39;s agentic engineering patterns post (Feb 23) as a third data point in one week. The &quot;specify, then build&quot; pattern is becoming the practitioner consensus. Not yet mainstream. Still early.</li>
+<li><strong>DeepSeek anticipation cycle</strong> — All three major Western labs visibly preparing for a new DeepSeek release. This is the second such cycle (first: Jan 2025). The pattern is now established: pre-release posturing from incumbents, then a benchmark shock, then rapid repricing. Expect next week.</li>
+</ul>
+<p><strong>Stable / ongoing:</strong></p>
+<ul>
+<li>Cockpit enforcement problem (AI skipping chain steps) — no new external solutions surfaced. Still your problem to solve internally with Cursor Custom Modes experiment.</li>
+<li>Belgian retail consolidation — slow-moving, structural. Carrefour Belgium situation has been building for months.</li>
+</ul>
+<p><strong>New this week:</strong></p>
+<ul>
+<li>Goldman Sachs &quot;AI added zero to GDP&quot; — first major bank economist on record with this. Likely to attract significant media follow-on next week.</li>
+<li>Cross-platform OAuth crackdown confirmed (both Anthropic and Google in same 2-week window)</li>
+</ul>
+<p><strong>Disappeared:</strong></p>
+<ul>
+<li>EUROPE TECH battery/energy angle (correctly identified as low-relevance to Julien in Feb 22 feedback) — not surfaced today.</li>
+</ul>
 <hr>
 <h2>🚮 SLOP FILTER</h2>
-<p><strong>9 of 16 Tier 2 articles were noise today.</strong></p>
+<p><strong>6 of 12 Tier 2 articles were noise today.</strong></p>
 <ul>
-<li><strong>Articles 3, 4, 5, 8, 9 (FT paywalled content)</strong> — Zero usable information. Titles only. Not citable, not actionable. Five slots wasted on paywalled headlines.</li>
-<li><strong>Article 7 (AI binary backdoor detection)</strong> — Technically interesting, zero relevance to a solo non-technical Brussels founder building micro-SaaS. Security research for enterprise blue teams.</li>
-<li><strong>Article 10 (Pope on AI homilies)</strong> — 543 HN points, but pure cultural commentary. No builder application.</li>
-<li><strong>Article 11 (Binance/Iran firings)</strong> — Crypto compliance scandal. Irrelevant geography and domain.</li>
-<li><strong>Article 12 (Magical Mushroom packaging)</strong> — European sustainability, mildly interesting for Chez Julien&#39;s packaging future, but not actionable and not today&#39;s priority.</li>
+<li><strong>Article 3</strong> (China export curbs on Japanese companies, FT) — Paywalled. Zero readable content. Included for headline only; moved to WORLD LENS as background context.</li>
+<li><strong>Article 5</strong> (AI + Ghidra binary backdoor detection) — Technically interesting, zero relevance to a non-technical founder building micro-SaaS. Security research for reverse engineers.</li>
+<li><strong>Article 6</strong> (Cyber security threat in cars, FT) — Paywalled and off-topic.</li>
+<li><strong>Article 7</strong> (Japanese CFIUS equivalent, FT) — Paywalled. Geopolitical background noise, no Brussels founder lens available.</li>
+<li><strong>Article 9</strong> (Binance fired employees / Iran crypto) — Financial crime story. No founder relevance.</li>
+<li><strong>Article 10</strong> (Magical Mushroom mycelium packaging) — Pure marketing content. Zero relevance.</li>
 </ul>
-<p><strong>High-value articles today:</strong> Articles 1 (FreeBSD spec-first — HN #1), 2 (Google harness bans), 6 (Goldman Sachs AI GDP), 13 (AgentBudget), 16 (enveil). Article 15 (Memctl) is worth watching but not yet actionable.</p>
+<p><strong>Kept but noted:</strong></p>
+<ul>
+<li><strong>Article 8</strong> (Pope tells priests not to use AI for homilies) — 549 HN points, 435 comments. Cultural signal worth one sentence: institutional resistance to AI is now reaching religious leadership. Relevant to blog content thinking if Julien writes about AI adoption curves.</li>
+</ul>
 <hr>
 <h2>🔄 FEED HEALTH REPORT</h2>
+<p><strong>KEEP:</strong></p>
 <ul>
-<li><strong>KEEP:</strong> <code>hnrss.org</code> — Delivered the three most actionable items today (AgentBudget, enveil, FreeBSD spec-first story). Consistently the highest signal-to-noise feed by volume.</li>
-<li><strong>KEEP:</strong> Web Intelligence queries — The Anthropic/distillation story, Claude Code hooks documentation, Cursor <code>.mdc</code> enforcement research all came from targeted queries. This is the best channel for Cockpit-specific intelligence.</li>
-<li><strong>WATCH:</strong> <code>ft.com</code> — Five articles today, five paywalls, zero usable content. The FT feed is generating title noise. Either the feed needs to be replaced with an FT RSS summary tier that includes abstracts, or it should be dropped. Three consecutive runs with near-zero usable FT content.</li>
-<li><strong>CONSIDER ADDING:</strong> A dedicated Belgian/Brussels business news source (L&#39;Echo, De Tijd RSS) — the BCA/Delhaize story came from web intelligence, not from any live feed. Given the shop sale prospecting project now active, local M&amp;A and competition authority news is increasingly material.</li>
-<li><strong>CONSIDER REMOVING:</strong> <code>ft.com</code> current configuration — if no paywall bypass is available, this feed is consuming a slot and delivering nothing. Replace with FT&#39;s free &quot;FirstFT&quot; newsletter digest or remove entirely.</li>
+<li><code>the-decoder.com</code> — DeepSeek / competitive AI landscape. Consistently useful, well-sourced, no paywall friction.</li>
+<li><code>simonwillison.net</code> — Remains Tier 1 signal. Agentic engineering patterns piece (Feb 23) and Claude C Compiler commentary (Feb 22) both directly relevant. Signal density unusually high this week.</li>
+<li><code>retaildetail.eu</code> — Belgian retail coverage is precise and actionable. Carrefour Belgium and Ratz market both surfaced here.</li>
+</ul>
+<p><strong>WATCH:</strong></p>
+<ul>
+<li><code>ft.com</code> — 3 articles this run, all paywalled, all zero readable content. The FT delivers headlines but no substance without a subscription. Consider whether the feed adds value or just noise volume.</li>
+<li><code>hnrss.org</code> — High volume, variable quality. Today: 1 excellent (FreeBSD driver), 1 directly relevant (Google/OpenClaw), 4 filtered as noise. HN quality is article-dependent, not feed-dependent. Keep but filter aggressively.</li>
+</ul>
+<p><strong>CONSIDER ADDING:</strong></p>
+<ul>
+<li><code>retaildetail.eu</code> (if not already a primary feed — it punched above its weight today)</li>
+<li>A direct Cursor changelog feed (cursor.com/changelog) — Web intelligence had to reconstruct v2.5 details from third parties. The primary source would be cleaner.</li>
+<li><code>blog.fsck.com</code> — Jesse Vincent&#39;s Superpowers release notes. v4.3.0 bug fix was critical information that came via web intelligence, not feed.</li>
+</ul>
+<p><strong>CONSIDER REMOVING:</strong></p>
+<ul>
+<li><code>ft.com</code> — Three consecutive runs with paywalled content and no extractable signal. Either acquire a subscription or drop the feed. Currently it contributes headline noise and zero analytical substance.</li>
 </ul>
 <hr>
 <h2>💬 FEEDBACK RESPONSE</h2>
-<p>Julien&#39;s feedback from Feb 22 — addressed directly:</p>
-<p><strong>&quot;Battery in Europe was useless&quot;</strong> — Agreed and cut. No EU battery/energy content in today&#39;s briefing. The Belgium electricity/energy space has no immediate relevance to your active projects or business. Removed from world lens coverage unless directly connected to Brussels retail costs.</p>
-<p><strong>&quot;EU/US friction is the most important news of the day for me&quot;</strong> — Elevated. Today&#39;s WORLD LENS leads with Trump&#39;s 10% global tariff (now live) and connects it directly to Chez Julien supply chain exposure, consumer confidence, and the shop sale timing question. This will remain the primary geopolitical lens when EU/US trade news is active.</p>
-<p><strong>&quot;Lacking emoji options on every topic (only titles)&quot;</strong> — Noted. Emoji markers have been added throughout today&#39;s briefing — not just section headers but within content items to signal tool type, relevance tier, and action priority (🔴 🟡 🟢 ⚫ 🎯 🔗).</p>
-<p><strong>&quot;World news was on point&quot;</strong> — Maintaining that calibration. Goldman Sachs AI GDP story, Trump tariff, China/Japan export curbs all in today&#39;s WORLD LENS with direct Julien-relevant analysis.</p>
-<p>React to today&#39;s articles at <a href="https://prism-portal.pages.dev/2026-02-24.html">https://prism-portal.pages.dev/2026-02-24.html</a></p>
+<p>Julien&#39;s feedback from Feb 22 received and acted on. Specific responses:</p>
+<p><strong>&quot;Battery in Europe was useless&quot;</strong> — Agreed. The EU battery regulation angle was generic sustainability policy with no direct impact on a Brussels food founder or micro-SaaS builder. Dropped from EUROPE TECH framing going forward. The European tech section will now filter harder: only EU tech or regulation with <em>direct</em> operational relevance to your stack or your market.</p>
+<p><strong>&quot;Lacking emoji options on every topic (only titles)&quot;</strong> — Noted. Emojis have been added as inline markers within section content today (🔴🟡🟢🟠) to signal priority and sentiment at the item level, not just at section headers. Will calibrate further based on your reaction to today&#39;s format.</p>
+<p><strong>&quot;World news was on point, EU/US friction is the most important news of the day for me&quot;</strong> — Confirmed as primary lens. Today&#39;s WORLD LENS leads with the chip war / DeepSeek smuggling story precisely because it is the structural EU/US/China friction axis. The Belgian retail consolidation angle (Carrefour/Albert Heijn) is the domestic expression of the same globalisation-in-reverse dynamic. Both treated as high-priority today.</p>
+<p>React to today&#39;s articles at: <strong><a href="https://prism-portal.pages.dev/2026-02-24.html">https://prism-portal.pages.dev/2026-02-24.html</a></strong></p>
 <hr>
-<p><em>PRISM v4.0 — 25 articles analyzed, 0 web searches, ~$0.29</em></p>
+<p><em>PRISM v4.0 — 20 articles analyzed, 0 web searches, ~$0.26</em></p>
 
   </div>
 
@@ -525,8 +526,8 @@ Nothing relevant on February 24, 2026 specifically. The 2025 momentum for these 
 
 <script>
   // ── State ────────────────────────────────────────────────
-  const ARTICLES = [{"title":"Stop Using /init for AGENTS.md","source":"addyosmani.com"},{"title":"Writing about Agentic Engineering Patterns","source":"simonwillison.net"},{"title":"AINews: Anthropic accuses DeepSeek, Moonshot, and MiniMax","source":"latent.space"}];
-  const TOOLS = [{"name":"AgentBudget","snippet":"- **AgentBudget** — Real-time hard dollar limits for any AI agent session. Wraps OpenAI/Anthropic SDKs with a single `agentbudget.init(\"$5.00\")` call. Circuit breaker, loop detection, soft/hard limits, full cost report per session. - 🔗 https://github.com/sahiljagtap08/agentbudget - **Try it:** Install via `pip install agentbudget`. Wrap one Cockpit session with a €5 hard limit. Check the report a"},{"name":"enveil","snippet":"- **enveil** — Encrypts `.env` secrets so AI coding tools (Cursor, Claude Code, Copilot) cannot read them from disk. Real values live in an AES-256-GCM encrypted local store; only symbolic references (`ev://key_name`) exist in `.env`. - 🔗 https://github.com/GreatScott/enveil - **Try it:** Run `enveil init` in your Sweden Odyssey or RenPy project directory. Use `enveil import` to convert your exis"}];
+  const ARTICLES = [{"title":"Stop Using /init for AGENTS.md","source":"addyosmani.com"},{"title":"Writing about Agentic Engineering Patterns","source":"simonwillison.net"},{"title":"Ladybird adopts Rust, with help from AI","source":"simonwillison.net"}];
+  const TOOLS = [{"name":"Try it:","snippet":"- **Try it:** Not recommended for you right now. You're settled on Cursor. File this for future reference if you ever want a minimal-footprint fallback cockpit."},{"name":"Relevance:","snippet":"- **Relevance:** Cockpit architecture thinking — worth understanding how others solve the harness problem"},{"name":"Signal:","snippet":"- **Signal:** HN front page, 24 Feb 2026 — first stable release v1.0.0 — community interest in editor-native Claude integration No other tools worth 30 minutes today. Quality over quantity. ---"}];
   const WORKER_URL = "https://prism-feedback.old-morning-a434.workers.dev";
   const FEEDBACK_SECRET = "prism-feedback-58367207b5410501";
   const DATE = "2026-02-24";

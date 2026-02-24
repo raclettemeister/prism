@@ -1,4 +1,4 @@
-<!-- PRISM Web Intelligence — 2026-02-24 — generated 2026-02-24T07:40:46.524Z -->
+<!-- PRISM Web Intelligence — 2026-02-24 — generated 2026-02-24T09:53:16.749Z -->
 
 # Proactive Web Intelligence — 2026-02-24
 
@@ -6,156 +6,170 @@
 
 
 
-## Query 1: Cursor Custom Modes Planner Executor setup 2026
+## Query 1: Cursor Custom Modes tool restrictions release notes February 2026
 
-Here is a concise, sourced summary of the most relevant recent findings:
+Based on my research, I can now provide a well-sourced summary. The search results are clear about what happened with Cursor Custom Modes and tool restrictions, particularly around February 2026. Let me compile the findings:
 
----
-
-**Cursor Custom Modes: Planner/Executor Setup**
-
-The most prominent real-world Planner/Executor setup for Cursor uses **custom modes** to separate planning from implementation — specifically, **Gemini 2.5 Pro** handles planning (leveraging its 1M token context window) and **Claude Sonnet 4** handles execution, with tailored system prompts for each role.
-
-The workflow works by switching to **Planner mode**, adding relevant files to context, and letting the model ask clarifying questions one at a time until a `plan.md` is produced with numbered, checkbox-tracked tasks. The user then switches to **Executor mode** and types `"go"` to have the agent autonomously work through each task sequentially — stopping and asking for help if something fails repeatedly (a built-in "circuit breaker").
-
-On the official Cursor side, **Plan Mode** was launched on **October 7, 2025**, giving the agent new tools to create and update plans with an interactive inline editor — and most new Cursor features now begin with the agent writing a plan.
-
-In **January 2026**, Cursor extended Plan and Ask modes to its **CLI**, with cloud handoffs and auth for external tools rolling out around **January 8 and 16, 2026**.
-
-**Key Sources:**
-- Carl Rannaberg's detailed Planner/Executor walkthrough (June 12, 2025): https://carlrannaberg.medium.com/my-current-ai-coding-workflow-f6bdc449df7f
-- Official Cursor Plan Mode announcement (Oct 7, 2025): https://cursor.com/blog/plan-mode
-- Cursor Custom Modes docs: https://docs.cursor.com/chat/custom-modes
-- January 2026 CLI update summary: https://www.theagencyjournal.com/cursors-cli-just-got-a-whole-lot-smarter-fresh-updates-from-last-week/
-
-## Query 2: Anthropic Claude distillation DeepSeek API enforcement update February 2026
-
-Here is a concise, factual summary based on the most recent search results:
+Here is a concise, factual summary of the most relevant findings:
 
 ---
 
-On **February 23, 2026**, Anthropic publicly accused three Chinese AI laboratories — **DeepSeek, Moonshot AI, and MiniMax** — of running industrial-scale "distillation" campaigns against its Claude models. Anthropic identified campaigns by these three labs to illicitly extract Claude's capabilities, in which they generated over **16 million exchanges** with Claude through approximately **24,000 fraudulent accounts**, in violation of Anthropic's terms of service and regional access restrictions. Anthropic said the labs "targeted Claude's most differentiated capabilities: agentic reasoning, tool use, and coding." According to Anthropic, DeepSeek alone generated more than **150,000 exchanges**, primarily targeting reasoning capabilities across diverse tasks.
+**Cursor Custom Modes & Tool Restrictions — Recent Release Notes**
 
-Separately, on approximately **February 20, 2026**, Anthropic revised its legal terms to clarify its policy forbidding the use of third-party harnesses with Claude subscriptions, as the company attempts to shore up its revenue model. The Consumer Terms of Service had forbidden such use since at least February 2024 under Section 3.7.
+The story of Custom Modes in Cursor involves a notable removal and community backlash, followed by evolution in how tool restrictions are handled:
+
+1. **Custom Modes Removed in v2.1 (November 2025):** Cursor 2.1 removed Custom Modes, which had been the core building block for custom agents — allowing users to control the model's tools and set custom prompts. This was a significant concern for compliance use cases, as the equivalent explicit safety controls (MCP per mode, file actions per mode) were not available in commands or adequately documented as replacements.
+
+2. **Tool/Sandbox Restrictions Added in v2.5 (February 17, 2026):** Rather than restoring Custom Modes directly, Cursor v2.5 introduced a new, finer-grained approach to tool and access restrictions. The sandbox now supports granular network access controls as well as controls for access to directories and files on your local filesystem, letting you define exactly which domains the agent is allowed to reach while running sandboxed commands. The sandbox supports three levels of network access: restrict to domains in your `sandbox.json`, restrict to your allowlist plus Cursor's built-in defaults, or allow all network access within the sandbox.
+
+3. **Enterprise-level enforcement:** Admins on the Enterprise plan can enforce network allowlists and denylists from the admin dashboard, ensuring organization-wide egress policies apply to all agent sandbox sessions.
+
+4. **Plugins as a Partial Replacement (v2.5, Feb 17, 2026):** Cursor 2.5 also introduced Plugins, which bundle skills, subagents, MCP servers, hooks, and rules into a single install, with launch partners including Amplitude, AWS, Figma, Linear, and Stripe — offering a new, composable way to extend agent behavior.
+
+**Key source URLs:**
+- Official v2.5 changelog: https://cursor.com/changelog/2-5
+- Community forum (Custom Modes removal discussion): https://forum.cursor.com/t/explicit-tool-and-mcp-permissions-for-custom-commands-custom-mode-removal-breaks-compliance/145187
+- February 2026 release timeline: https://releasebot.io/updates/cursor
+
+> **Note:** As of February 2026, Cursor has **not** restored the original Custom Modes feature with its per-mode tool toggles. The community has been vocal about the gap, and the v2.5 sandbox controls represent Cursor's current approach to restricting agent tool access.
+
+## Query 2: Anthropic third party harness policy Superpowers Cursor API terms update February 24 2026
+
+Here is a concise factual summary based on the most relevant recent findings:
+
+---
+
+**Anthropic Third-Party Harness Policy — Summary (Feb 2026)**
+
+Anthropic updated its documentation on **February 19, 2026** to formally clarify that using Claude subscription OAuth tokens with third-party tools violates their Terms of Service, disrupting developers who had been routing workflows through external harnesses. The Consumer Terms of Service had actually forbidden the use of third-party harnesses (except with specific authorization) since at least **February 2024**, with the core contractual language in **Section 3.7** remaining unchanged.
+
+The technical enforcement began silently on **January 9, 2026**, when Anthropic deployed server-side safeguards blocking subscription OAuth tokens from working outside their official Claude Code CLI — tools like OpenCode, Roo Code, Cline, and others received the error: *"This credential is only authorized for use with Claude Code and cannot be used for other API requests,"* with no advance notice. The economic motivation is clear: a $200/month Max subscription offers effectively unlimited tokens through Claude Code, while equivalent API usage could cost $1,000+, creating token arbitrage that third-party harnesses exploited.
+
+Regarding **Superpowers** specifically: Superpowers is an open-source agentic skills framework (GitHub: `obra/superpowers`) that accumulated 29,000+ GitHub stars and was **officially accepted into Anthropic's Claude plugins marketplace on January 15, 2026** — meaning it is an *authorized* Claude Code plugin, not a banned third-party harness. Anthropic's enforcement targets harnesses that pilot a user's web-based Claude account via OAuth to drive automated workflows — tools like OpenCode, OpenClaw, Cline, and Cursor used in unauthorized ways. Regarding Cursor and **xAI**: xAI developers lost access to Anthropic's Claude models accessed through the Cursor IDE, with Cursor citing Anthropic was enforcing a new policy for "all its major competitors," grounded in Commercial Terms of Service **Section D.4**.
+
+No specific "February 24, 2026" date or version number was found in any search result — the closest key dates are **January 9** (technical block), **January 15** (Superpowers marketplace approval), and **February 17–19** (formal documentation/ToS clarification).
 
 **Key sources:**
-- Anthropic official blog: https://www.anthropic.com/news/detecting-and-preventing-distillation-attacks
+- The Register (Feb 20, 2026): https://www.theregister.com/2026/02/20/anthropic_clarifies_ban_third_party_claude_access
+- Natural20 (Feb 19, 2026): https://natural20.com/coverage/anthropic-banned-openclaw-oauth-claude-code-third-party
+- VentureBeat (Jan 12, 2026): https://venturebeat.com/technology/anthropic-cracks-down-on-unauthorized-claude-usage-by-third-party-harnesses
+- Anthropic Claude plugins (Superpowers): https://claude.com/plugins/superpowers
+
+## Query 3: Cursor Superpowers extension update changelog February 2026
+
+Based on my research, I can now provide a well-sourced summary. The search results reveal a clear picture of the **obra/superpowers** plugin for Cursor (and Claude Code) and its February 2026 update activity.
+
+---
+
+Here is what the most recent findings show about the **obra/superpowers** plugin — the open-source agentic skills framework that integrates with Cursor IDE — and its February 2026 changelog:
+
+**Superpowers v4.3.0** was released on **February 12, 2026**, by Jesse Vincent (obra). The critical fix in this release addressed a broken `SessionStart` hook: it had been running **asynchronously**, which meant it silently dropped the `using-superpowers` bootstrap context before the agent's first turn — effectively making the entire skills system inert every session.
+
+The fix was straightforward: changing `"async": true` to `"async": false` in the hook configuration, ensuring the hook completes before the model sees the first message so the superpowers instructions are always in context from the start. The release also added an `EnterPlanMode` intercept to the `using-superpowers` workflow graph.
+
+According to the DeepWiki documentation (last indexed **February 20, 2026**, at commit `a0b9ec`), the async hook issue was specifically fixed in **v4.2.0**, with v4.3.0 reverting back to synchronous after discovering that async execution caused a race condition. The current Cursor plugin version listed in `plugin.json` is **v4.3.0**, authored by Jesse Vincent, with an MIT license and keywords covering TDD, debugging, collaboration, and best practices.
+
+A live bug as of late February 2026 has been reported on the Cursor Community Forum: on **Windows with Cursor 2.5.22**, the superpowers plugin (v4.3.0) `sessionStart` hook produces no output — the script is invoked but Cursor either fails to execute the `.sh` script or discards its stdout, though the same script works correctly when run manually with Git Bash.
+
+**Key sources:**
+- Blog post (v4.3.0 release): https://blog.fsck.com/releases/2026/02/12/superpowers-v4-3-0/
+- GitHub repo: https://github.com/obra/superpowers
+- DeepWiki (Cursor install docs, indexed Feb 20, 2026): https://deepwiki.com/obra/superpowers/2.2-installing-on-opencode
+- Windows bug report: https://forum.cursor.com/t/sessionstart-plugin-hook-produces-no-output-on-windows-superpowers-plugin-cursor-2-5-22/152629
+
+## Query 4: micro-SaaS founder AI cockpit workflow enforcement custom modes site:reddit.com OR site:x.com 2026
+
+Based on my extensive searching across Reddit, X.com, and broader web sources, I was unable to find content specifically matching the precise combination of "micro-SaaS founder AI cockpit workflow enforcement custom modes" as a defined concept or product discussion from 2025–2026. However, I did surface closely related and highly relevant findings. Here is an honest, sourced summary:
+
+---
+
+**Summary of Most Relevant Recent Findings**
+
+There is **no single, widely-discussed product or thread** on Reddit or X.com specifically using the exact phrase "AI cockpit with workflow enforcement custom modes for micro-SaaS founders" — this precise framing does not appear to be an established term or viral discussion as of mid-2026. However, several adjacent, concrete trends and discussions are active:
+
+1. On X.com, Klarna CEO Sebastian Siemiatkowski posted that Klarna "removed close to 1,500 micro SaaS services... not to save on licenses, but to give AI the cleanest possible context," highlighting how large companies are actively replacing fragmented micro-SaaS tool stacks with consolidated AI workflows — a dynamic that directly shapes the opportunity space for micro-SaaS founders building AI-native, single-workflow tools.
+
+2. The site greensighter.com (explicitly drawing on Reddit demand signals) identifies a clear pattern for 2026: "take a multi-step workflow that professionals repeat constantly, then build an AI agent that handles the entire process," framing these as "digital employees that never sleep." This is the closest publicly-surfaced framing to an "AI cockpit" concept for micro-SaaS.
+
+3. Freemius's 2025 State of Micro-SaaS report documents how solo founders are using AI, adaptive pricing, trials, and ecosystem growth to build profitable SaaS with small teams — but does not reference "cockpit" or "custom modes" as a product category.
+
+4. A January 2026 Medium post by Pallavi Pant notes that "the real winners for micro SaaS ideas for solopreneurs right now aren't 'all-in-one' platforms — they are tiny, focused tools that fix one annoying workflow."
+
+**Key takeaway:** The specific term "AI cockpit with workflow enforcement + custom modes for micro-SaaS founders" does not appear to be an established, named product, thread, or movement on Reddit or X.com as of 2026. It may reflect an emerging, not-yet-standardized concept, or a niche internal tool framing. The most relevant sources are:
+- https://x.com/klarnaseb/status/2020988556374921683
+- https://www.greensighter.com/blog/micro-saas-ideas
+- https://freemius.com/blog/state-of-micro-saas-2025/
+
+If you have a specific product, thread, or creator in mind behind this concept, sharing more context would help me locate it more precisely.
+
+## Query 5: specialty food shop Brussels acquisition buyer market Belgium 2026
+
+Based on the search results, here is a concise factual summary of the most relevant recent findings:
+
+---
+
+**Brussels / Belgium Specialty Food & Retail Market — Key Developments (2025–2026)**
+
+1. **Ratz Food Market — Brussels' Largest Food Hall Opens:** Ratz, a new food market presenting itself as the largest in Belgium, opened in the Brussels municipality of Ixelles. Located at 25 Rue Saint-Boniface, it officially opened on **19 February 2026 at 5:59 PM**, after 12 months of renovation of a former parking lot, and spans three floors and 3,000 square meters.
+
+2. **Carrefour Belgium — Potential Sale / "Non-Core" Exit:** Despite modest growth of 0.8% in 2025 and a "sustainable recovery in profitability," Carrefour CEO Alexandre Bompard no longer sees a major role for Carrefour Belgium in his new strategic plan. Carrefour says it will keep "all strategic options" open for Belgium as part of a new strategy concentrating primarily on France, Spain, and Brazil. Albert Heijn has been cited as having "already shown interest in the past." No confirmed buyer for Belgium has been announced as of this writing.
+
+3. **Carrefour Romania Sale — Precedent for Belgium:** Carrefour has agreed to sell its entire Romanian business to Paval Holding for **€823 million**, covering 478 stores across several formats that generated €3.2 billion in gross sales (~3.5% of Carrefour's total revenue); completion is expected in the near term.
+
+4. **Delhaize Expansion:** Delhaize is set to open seven new supermarkets across Belgium in **early 2026**, significantly expanding its presence in the Belgian retail market.
+
+**Key sources:**
+- RetailDetail EU (Ratz & Carrefour Belgium analysis): https://www.retaildetail.eu/news/food/brussels-to-get-belgiums-largest-food-market/ and https://www.retaildetail.eu/news/food/analysis-can-carrefour-belgium-avoid-a-sale/
+- Belga News Agency (Carrefour Belgium strategy): https://www.belganewsagency.eu/carrefour-keeps-all-strategic-options-open-for-belgium
+- Carrefour official newsroom (Romania sale, 12 Feb 2026): https://www.carrefour.com/en/newsroom
+
+## Query 6: Anthropic Claude distillation attack policy fallout third party wrappers February 24 2026
+
+Here is a concise factual summary based on the most relevant recent findings:
+
+---
+
+**Anthropic Claude: Distillation Attacks & Third-Party Wrapper Policy Fallout (Feb 2026)**
+
+Anthropic identified industrial-scale distillation attacks by three Chinese AI laboratories — **DeepSeek, Moonshot AI, and MiniMax** — which created over **24,000 fraudulent accounts** and generated over **16 million exchanges** with Claude to illicitly extract model capabilities. To circumvent Anthropic's commercial restrictions (Claude is not available in China), these labs used commercial proxy services and so-called "hydra cluster" architectures — sprawling networks of fraudulent accounts distributing traffic across the API and third-party cloud platforms.
+
+Separately but linked, on **January 9, 2026**, Anthropic deployed server-side safeguards blocking subscription OAuth tokens (Free, Pro, and Max) from working outside its official Claude Code CLI; third-party tools received the error: "This credential is only authorized for use with Claude Code." This impacted tools including **OpenCode, OpenClaw, Cline**, and even Anthropic's own Agent SDK, with no advance notice — developers woke up to broken workflows across dozens of tools.
+
+**Key sources:**
+- Anthropic's official blog: https://www.anthropic.com/news/detecting-and-preventing-distillation-attacks
 - TechCrunch (Feb 23, 2026): https://techcrunch.com/2026/02/23/anthropic-accuses-chinese-ai-labs-of-mining-claude-as-us-debates-ai-chip-exports/
+- VentureBeat (crackdown/fallout): https://venturebeat.com/technology/anthropic-cracks-down-on-unauthorized-claude-usage-by-third-party-harnesses
 - The Register (Feb 20, 2026): https://www.theregister.com/2026/02/20/anthropic_clarifies_ban_third_party_claude_access
 
-## Query 3: Claude Code hooks PreToolUse exit code 2 enforcement tutorial February 2026
+## Query 7: life weeks visualization workshop mortality salience design methodology 2026
 
-Here is a concise, source-backed summary of the most relevant recent findings:
-
----
-
-**Claude Code Hooks & `PreToolUse` Exit Code 2 Enforcement (Early 2026)**
-
-Claude Code hooks were **released in early 2026** and are user-defined commands, prompts, or agents that execute automatically at specific points in Claude Code's lifecycle, transforming best-practice guidelines into enforced rules that run every time Claude touches a codebase.
-
-**Exit code 2 is the key enforcement mechanism**: a `PreToolUse` hook that exits with code 2 stops the tool call entirely, while a `Stop` hook exiting with code 2 forces Claude to keep working. For the exit code behavior specifically: **Exit 0** = success (parse JSON from stdout); **Exit 2** = blocking error (stderr is fed back to Claude); **any other exit code** = non-blocking error (stderr shown only in verbose mode, execution continues).
-
-`PreToolUse` hooks can block **any** tool call by returning exit code 2 or outputting a JSON decision with `permissionDecision` set to `"deny"` — commonly used to prevent destructive commands like `rm -rf`, `DROP TABLE`, or force pushes. A real-world February 2026 example comes from a blog post at `blog.netnerds.net`, where a `PreToolUse` hook on the Bash tool is used to inspect commands and block them (via exit code 2, with the stderr message sent back to Claude) when they match unwanted patterns — in this case, preventing Claude Code from using PowerShell inline commands and redirecting it to write `.ps1` files instead.
-
-**Key sources:**
-- Official docs: https://code.claude.com/docs/en/hooks
-- February 2026 complete guide: https://smartscope.blog/en/generative-ai/claude/claude-code-hooks-guide/
-- 20+ examples tutorial: https://dev.to/lukaszfryc/claude-code-hooks-complete-guide-with-20-ready-to-use-examples-2026-dcg
-- Feb 2026 PowerShell real-world case: https://blog.netnerds.net/2026/02/claude-code-powershell-hooks/
-
-## Query 4: Cursor .mdc rules enforcement workaround February 2026
-
-Here is a concise, sourced summary of the most relevant recent findings on Cursor `.mdc` rules enforcement workarounds (circa early 2026):
+Based on the search results, there is **no specific workshop or publication** matching the exact combination of "life weeks visualization + workshop + mortality salience + design methodology + 2026" as a single distinct event or paper. Here is a factual summary of the most relevant findings across the related topics:
 
 ---
 
-**Summary:**
+**Summary of Most Relevant Recent Findings:**
 
-In Cursor's Agent mode, the legacy `.cursorrules` file is simply **not loaded** — it is ignored entirely. The confirmed workaround is to migrate rules to `.cursor/rules/*.mdc` files with `alwaysApply: true` set in the YAML frontmatter. Testing showed that switching to `.mdc` with `alwaysApply: true` achieved **100% rule compliance across 9/9 runs** on short, medium, and long files — something `.cursorrules` consistently failed to do in agent mode.
+1. **Life-in-Weeks Visualization Tools (Ongoing):** "Life in Weeks" visualizers use mortality awareness as a design principle, with research from Terror Management Theory showing that when people are gently reminded of their limited time, they tend to make more authentic, values-aligned decisions. The concept was popularized in 2014 by blogger Tim Urban, and tools like **lifeweeks.app** allow users to map their life as a grid of weekly boxes — "a powerful, concise way to visualize an entire human life."
 
-A commonly repeated piece of advice — that you should keep rules to "under 10" to ensure compliance — has been empirically debunked. Testing with up to **50 `.mdc` rules in Auto mode** showed 100% compliance at every rule count (1, 5, 10, 20, 30, and 50 rules).
+2. **Mortality Salience & Existential Psychology Research (2026):** The **International Society for the Science of Existential Psychology (ISSEP)** funded grant **ISSEP-2026-04** (announced January 17, 2026), awarded to Oklahoma City University's Jeff Sherwood, running **April 15, 2026 – April 15, 2027**, which examines whether AI salience evokes existential anxiety *similar* to mortality salience, using a 3-condition experiment (N=300). Source: https://www.issep.org/funded-research-grants/issep-2026-04
 
-A further enforcement hardening technique that has emerged is **CI linting of `.mdc` files**: the `cursor-lint` GitHub Action (via `cursorrulespacks/cursor-lint-action@v1`) checks every push/PR for broken frontmatter or missing `alwaysApply: true`, preventing broken rules from silently shipping in team repos.
+3. **Design & Mortality Salience (Recent PMC Study):** A peer-reviewed PMC study investigates the role of **anthropomorphic design** in alleviating consumer anxiety induced by mortality salience, exploring both emotional and non-emotional mechanisms, accepted November 2024. Source: https://pmc.ncbi.nlm.nih.gov/articles/PMC11591073/
 
-**Key sources:**
-- https://dev.to/nedcodes/cursor-agent-mode-ignores-cursorrules-use-mdc-instead-5flb *(~1 week ago)*
-- https://forum.cursor.com/t/psa-you-dont-need-to-keep-your-rules-under-10-tested-with-50-rules-auto-mode/152692 *(posted within the last day)*
-- https://dev.to/nedcodes/how-to-lint-your-cursor-rules-in-ci-so-broken-rules-dont-ship-2n7a *(3 days ago)*
+**Important caveat:** No single 2026 workshop specifically combining "life weeks visualization" with "design methodology" and "mortality salience" was found in current search results. The query may refer to an event not yet indexed, an internal/private workshop, or a combination of emerging concepts across separate communities. If you have a specific event name or organizer, a more targeted search may yield better results.
 
-## Query 5: micro-SaaS indie builder workflow AI cockpit published February 24 2026
+## Query 8: Notion Google Calendar sync Cloudflare Worker staffing automation issues February 2026
 
-Based on multiple searches, I was unable to find any article, post, or publication specifically matching the combination of **"micro-SaaS indie builder workflow AI cockpit"** published on **February 24, 2026**. Here is what the searches revealed:
+Based on the search results, I was unable to find any specific reports, incidents, or documented issues from **February 2026** relating to the exact combination of **Notion + Google Calendar sync + Cloudflare Worker + staffing automation**. This is a very narrow and specific intersection of tools, and no matching news, GitHub issues, blog posts, or community threads from that timeframe surfaced.
 
----
+Here is what the search results *do* confirm about the broader topic:
 
-**No exact match was found.** None of the search results returned an article, blog post, product launch, or publication specifically titled or described as a "micro-SaaS indie builder workflow AI cockpit" dated February 24, 2026. The specific phrase "AI cockpit" in combination with those exact terms did not surface in any indexed source across Medium, Substack, Indie Hackers, or general web results.
+- As of 2026, Notion Calendar supports Google, Outlook, and iCloud, allowing you to view external events within your workspace — but events created in Notion task databases don't automatically appear in your external calendar. It is not a full two-way sync by default.
 
-**What does exist in the broader topic space:**
+- A notable open-source project, **notion-google-tasks-worker** (github.com/aantipov/notion-google-tasks-worker), uses Cloudflare Workers and D1 to achieve two-way task syncing between Notion databases and Google Tasks, operating on a CRON schedule — though it requires manual deployment and log monitoring to catch issues.
 
-- A December 2025 Medium article covers 30 MicroSaaS niche ideas, including "a drag-and-drop builder specifically designed for internal AI workflows" where users can chain data sources, LLM calls, and output displays.
+- Community reports (as far back as December 2023 on Make Community) document recurring sync issues in automated Notion ↔ Google Calendar workflows, particularly around bidirectional edits causing conflicts or failed updates.
 
-- A January 15, 2026 BuilderDaily post curates 30 validated micro-SaaS ideas for indie hackers to build in 2026, covering tools like invoice automation (Next.js + Supabase + OpenAI Vision API, 2–3 week MVP, $2–5K MRR potential).
-
-- A Stack AI blog post (undated) surveys top AI agent and workflow builder platforms for 2026, referencing tools like Flowise, Langflow, and Dify.
-
-**Recommendation:** The query may refer to a very niche newsletter issue, a private community post (e.g., a paid Substack or Discord), or content that has not yet been indexed by search engines. If you have a specific source URL or author name, I can help narrow it down further.
-
-## Query 6: Lovable Bolt.new Windsurf update release February 24 2026
-
-Based on my research, I want to clarify an important point before presenting findings: **"February 24, 2026"** does not appear to exist as a specific coordinated release date across these three platforms. However, **February 24–25, 2025** was a highly significant moment for all three tools, largely driven by Anthropic's release of Claude 3.7 Sonnet on February 24, 2025. Here is a well-sourced summary:
-
----
-
-## Lovable, Bolt.new & Windsurf — Updates Around February 24–25, 2025
-
-The flurry of updates across all three platforms in this period was triggered primarily by Anthropic's launch of Claude 3.7 Sonnet on **February 24, 2025**.
-
-**Bolt.new** was among the fastest to respond. Bolt.new's agent was upgraded to run Claude 3.7 Sonnet, and the platform simultaneously introduced **Dynamic Reasoning** — described as "a first-of-its-kind feature that lets the AI choose how hard to 'think' when tackling complex problems." Bolt.new had also reached **$20 million in ARR** by early 2025.
-
-**Windsurf** (formerly Codeium) rolled out its Claude 3.7 Sonnet integration on **February 25, 2025** (version 1.3.104). Cascade gained Claude 3.7 Sonnet as a new premium model, costing 1.0 user prompt credits per message and 1.0 flow action credits per tool call, with Thinking mode available at a 1.5x credit cost multiplier.
-
-**Lovable** hit a major milestone around the same time: on **February 25, 2025**, Lovable announced it had raised **$15 million** in a pre-Series A led by Creandum, reached **$17 million ARR**, and converted **30,000 paying customers** — with 500,000 total users building over 25,000 new products daily. Lovable achieved these numbers with just $2M of its seed funds spent.
-
-**Key sources:**
-- Windsurf changelog: https://windsurf.com/changelog/windsurf-next
-- Bolt.new on X (Feb 24–26, 2025): https://x.com/boltdotnew/status/1894778779366785111
-- TechCrunch on Lovable: https://techcrunch.com/2025/02/25/swedens-lovable-an-app-building-ai-platform-rakes-in-16m-after-spectacular-growth/
-
-> ⚠️ **Note:** No specific events were found dated **February 24, 2026** for these platforms. If you meant **2025**, the above is accurate. If you are looking for updates from early 2026, please clarify and I can search again.
-
-## Query 7: Belgium Brussels specialty food retail acquisition chains 2026
-
-Here is a concise, sourced summary of the most relevant recent findings:
-
----
-
-**Belgium / Brussels Specialty Food Retail & Acquisition Chains — 2026**
-
-On **26 January 2026**, the Belgian Competition Authority (BCA) approved **Delhaize's acquisition of Delfood**, the owner of the **Louis Delhaize retail chain**, subject to conditions including the **divestment of a number of proximity stores and petrol station shops** in certain local markets where competition concerns were identified.
-
-The **Belgian Supermarkets & Grocery Stores industry** is valued at **€47.9 billion** in 2026. There are **8,437 businesses** in the sector, which has declined at a CAGR of **0.1%** between 2020 and 2025, while market size itself grew at a CAGR of **2.0%** over the same period.
-
-Belgium's grocery market is described as one of the **most competitive in Europe**, operating in a mature, high-pressure environment shaped by strong discounters, demanding shoppers, and well-developed private label strategies — a market that "often sets patterns seen later in nearby countries."
-
----
-
-**Key sources:**
-- 🔗 BCA / Delhaize–Delfood ruling (Jan 27, 2026): https://www.concurrences.com/en/bulletin/news-issues/january-2026/the-belgian-competition-authority-conditionally-approves-a-retail-grocery
-- 🔗 IBISWorld Belgium Grocery Market 2026: https://www.ibisworld.com/belgium/industry/supermarkets-grocery-stores/200577/
-
-## Query 8: Superpowers Cursor AI workflow chain enforcement multi-pass thinking February 2026
-
-Based on the search results, here is a concise factual summary:
-
----
-
-**Superpowers** is an open-source skill/workflow enforcement framework for AI coding agents (primarily Claude Code, with adaptability to Cursor and others), developed by **Jesse Vincent (obra)**. It tackles the problem of AI agents like Claude Code and Cursor skipping best practices when in a hurry, using persuasion principles drawn from Robert Cialdini's *Influence: The Psychology of Persuasion* — academically verified to also be effective on LLMs — to structurally "enforce skills" in agents.
-
-Superpowers enforces a strict **multi-pass chain**: brainstorming → planning → implementing, and places skill checks *before any response* to structurally prevent skipping steps. Concretely, this means: (1) a mandatory Socratic brainstorm phase before any code is written, (2) a written plan that must be reviewed and approved before implementation, and (3) a self-review cycle where one agent writes and another reviews against the original plan.
-
-As of early 2026, Superpowers has over **42,000 GitHub stars** and was officially accepted into the **Anthropic marketplace on January 15, 2026**. Separately, the biggest change to **Cursor AI** itself (tested February 2026) is the introduction of **Subagents**, which enable parallel task execution — shifting Cursor from a serial, single-agent model to what reviewers are calling a "Parallel Engineering Platform."
-
-**Key sources:**
-- https://yuv.ai/blog/superpowers *(January 13, 2026)*
-- https://dev.to/tumf/superpowers-the-technology-to-persuade-ai-agents-why-psychological-principles-change-code-quality-2d2f *(January 17, 2026)*
-- https://myaiverdict.com/cursor-ai-review/ *(Updated February 19, 2026)*
+**No specific February 2026 incident, version number, or staffing-automation-related outage** was found in any indexed source. It's possible this event is too recent to be indexed, too niche to have public documentation, or the query describes an internal/private workflow rather than a publicly reported issue. I'd recommend checking:
+- **community.make.com** or **community.zapier.com** for automation-specific bug threads
+- **GitHub Issues** for the notion-google-tasks-worker repo directly
+- **Cloudflare's status page** (cloudflarestatus.com) for any Worker-related incidents
