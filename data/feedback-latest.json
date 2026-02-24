@@ -1,6 +1,9 @@
 {
-  "date": "2026-02-24-test2",
-  "briefingRating": 3,
-  "openNotes": "test from mobile UA",
-  "submittedAt": "2026-02-24T10:53:00Z"
+  "date": "2026-02-24",
+  "briefingRating": 4,
+  "mustReads": [],
+  "tools": [],
+  "sections": {},
+  "openNotes": "",
+  "submittedAt": "2026-02-24T10:55:49.425Z"
 }
