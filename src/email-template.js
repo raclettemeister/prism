@@ -126,3 +126,37 @@ export function renderEmail(briefingMarkdown, date) {
 </body>
 </html>`;
 }
+
+/**
+ * Digest email: short summary + single portal link only.
+ * Used to avoid spam-filter rejection (no full briefing, no external links).
+ * Returns { html, text }.
+ */
+export function renderDigestEmail(liveUrl, dateStr, stats = {}) {
+  const t1 = stats.tier1Count ?? 0;
+  const t2 = stats.tier2Count ?? 0;
+  const t3 = stats.tier3Count ?? 0;
+  const n = stats.articlesAnalyzed ?? t1 + t2 + t3;
+  const conf = stats.confidence != null ? `${(stats.confidence * 100).toFixed(0)}%` : '—';
+  const line = n ? `${n} articles (T1: ${t1}, T2: ${t2}, T3: ${t3}). Confidence ${conf}.` : `Briefing ready. Confidence ${conf}.`;
+
+  const linkLine = liveUrl ? `Read the full briefing: ${liveUrl}` : 'Configure PRISM_PORTAL_URL for the live briefing link.';
+  const text = `PRISM briefing for ${dateStr} is ready.\n\n${line}\n\n${linkLine}`;
+
+  const linkHtml = liveUrl
+    ? `<a href="${liveUrl}" style="color:#2563eb;text-decoration:underline;">Read the full briefing</a>`
+    : '<span style="color:#6b7280;">Configure PRISM_PORTAL_URL for the link.</span>';
+  const html = `<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"></head>
+<body style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-size:15px;line-height:1.6;color:#1a1a1a;max-width:560px;margin:0 auto;padding:24px;">
+  <div style="font-size:18px;font-weight:700;margin-bottom:12px;">PRISM</div>
+  <p style="margin:0 0 12px;">Your briefing for ${dateStr} is ready.</p>
+  <p style="margin:0 0 16px;color:#4b5563;">${line}</p>
+  <p style="margin:0;">${linkHtml}</p>
+  <p style="margin:24px 0 0;font-size:12px;color:#9ca3af;">PRISM · ${dateStr}</p>
+</body>
+</html>`;
+
+  return { html, text };
+}

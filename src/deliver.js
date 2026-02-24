@@ -2,13 +2,13 @@
 // PRISM v4.0 Delivery — HTML email via Resend
 //
 // v4.0 changes:
-//   - Includes live page URL (PRISM Portal) in email header
-//   - "Read live + give feedback →" link at top of email
+//   - Digest-only email (short summary + single portal link) to avoid
+//     recipient spam filter "content rejected" on full briefing.
 //   - Subject unchanged (PRISM — Date, with ⚠️ for low confidence)
 // ============================================================
 
 import { format } from 'date-fns';
-import { renderEmail } from './email-template.js';
+import { renderDigestEmail } from './email-template.js';
 
 const RESEND_API_URL = 'https://api.resend.com/emails';
 
@@ -24,23 +24,12 @@ export default async function deliver(briefingMarkdown, stats) {
   const todayIso = format(new Date(), 'yyyy-MM-dd');
   console.log(`\n📧 DELIVERING briefing to staycreative@julien.care...`);
 
-  // Build live portal URL if configured
   const portalBase = process.env.PRISM_PORTAL_URL || '';
   const liveUrl = portalBase ? `${portalBase}/${todayIso}.html` : '';
 
-  // Inject portal link banner into markdown before rendering
-  const portalBanner = liveUrl
-    ? `> 🌐 **[Read live + react per article →](${liveUrl})** — opens the interactive briefing page\n\n`
-    : '';
+  // Digest only: short summary + single link. Full briefing stays on portal.
+  const { html, text } = renderDigestEmail(liveUrl, dateStr, stats);
 
-  const enrichedMarkdown = briefingMarkdown.replace(
-    /^(---\n\n# PRISM Morning Briefing[^\n]*\n)/m,
-    `$1\n${portalBanner}`
-  );
-
-  const htmlBody = renderEmail(enrichedMarkdown || briefingMarkdown, dateStr);
-
-  // Add warning emoji to subject when confidence is low
   const subject = stats.confidence && stats.confidence < 0.7
     ? `PRISM — ${dateStr} ⚠️`
     : `PRISM — ${dateStr}`;
@@ -49,8 +38,8 @@ export default async function deliver(briefingMarkdown, stats) {
     from: 'PRISM <prism@julien.care>',
     to: ['staycreative@julien.care'],
     subject,
-    html: htmlBody,
-    text: briefingMarkdown,
+    html,
+    text,
   };
 
   try {
