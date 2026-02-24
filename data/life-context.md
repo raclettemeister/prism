@@ -1,4 +1,4 @@
-<!-- PRISM Life Context — Auto-generated 2026-02-24T09:50:53.826Z -->
+<!-- PRISM Life Context — Auto-generated 2026-02-24T10:38:03.483Z -->
 <!-- Source: context-note.md + LOG (3d) + 13 recent files -->
 <!-- Model: claude-sonnet-4-6 -->
 # LIFE CONTEXT SNAPSHOT — Julien
@@ -8,126 +8,119 @@
 
 ## 1. Right Now
 
-Julien is consolidating his AI development cockpit around **Cursor + Superpowers skill set + custom skills/rules**, after a 48-hour sprint that produced the `cockpit-repass` skill and a leaner `cockpit-core.mdc`. His blog launch is delayed by a few days — he's fine with it. Energy is focused on tooling discipline and system architecture, not shipping product.
+Julien is consolidating his AI development cockpit around Cursor + Superpowers skill set + custom-built skills and rules. Blog launch is delayed by a few days — he's relaxed about it. Primary mental energy this week is on cockpit architecture: how to enforce multi-pass thinking and prevent the AI from skipping workflow steps.
 
 ---
 
 ## 2. This Week — Active Projects
 
-**The Cockpit (🔥 hottest)**
-- Settled on Cursor + Superpowers as the primary harness. Not switching for now.
-- Core problem identified: Superpowers chain (brainstorm → worktree → plan → TDD → review) doesn't hold — AI skips steps. `.mdc` rules alone don't enforce.
-- Built `cockpit-repass` skill: 3 challenge gates (Design Challenge, Plan Quality Check, Review Repass) with "push back once, then respect" rule.
+**The Cockpit (HOT — primary focus)**
+- Settled on Cursor + Superpowers as the core harness. Built `cockpit-repass` skill with 3 challenge gates (Design Challenge → Plan Quality Check → Review Repass).
 - Rewrote `cockpit-core.mdc` to 18 lines — lean, personalized.
-- **Next step:** Set up Custom Modes in Cursor (Cockpit Planner = read-only, Cockpit Executor = full access). Test full Superpowers chain with repass skill for one week.
-- Still looking for a better cockpit long-term. Multi-pass thinking on the same problem remains hard.
+- Key unsolved problem: .mdc rules aren't enforced. AI skips steps (proven in live session: brainstorming triggered, rest of chain skipped). Next step: set up Custom Modes in Cursor (Cockpit Planner = read-only, Cockpit Executor = full access) to mimic Roo Code's hard mode gates.
+- Roo Code abandoned due to cost (€60-70/day on Opus). Cursor is cheaper but chain discipline is weaker.
+- Still struggling with: getting the AI to do multiple passes on the same thinking — this is a known, named pain point.
 
-**julien.care Blog**
-- Launch delayed a few days. Julien explicitly relaxed about it ("it's fine").
-- Blog context files recently renamed (`blog-agent-context.md`, `blog-claude-context.md`) to prevent AI context contamination.
+**Blog — julien.care**
+- Launch delayed a few days. Julien is fine with this. Not the current focus.
 
-**MyLifeOS System Audit (just completed)**
-- 13 bugs found and fixed on 2026-02-22: dead links, stale status files, orphaned scripts, wrong version numbers.
-- Documentation foundation complete: 8 spec files created across Research Center, NightCrawler, Now Page Bot, Staffing Calendar, Automation 101.
-- NOW Page Bot v1.0 end-to-end working as of 2026-02-21 (Run #8). 7 output problems documented for next iteration.
+**Mixtapes Project (active this week)**
+- Active work 2026-02-23: four entries refined/created (jazz, Woodstock, Queen Live, Buena Vista Social Club). Moving steadily.
 
-**Mixtapes Project (active)**
-- Four entries created/refined in last 48h: Jazz Mess Around, Woodstock, Queen Live, Buena Vista Social Club.
-- Calibration file updated.
+**RenPy Game (postponed ~1 week)**
+- Chez Julien Simulator: finished and shipped.
+- Sweden Odyssey demo: finished.
+- Next RenPy project: paused. Good time to design the cockpit for game creation before starting.
 
-**Chez Julien Simulator — SHIPPED**
-- Finished and confirmed done.
+**Julien & Lucia — "All We Got Is Weeks"**
+- New project folder created. Workshop concept: participants view life as ~4,160-week grid, paint past in watercolor, decide what to color next. Concept captured, in early stage.
 
-**Sweden Odyssey (demo done)**
-- Demo finished. First real test of "learning to code properly, not vibing." Collaborative with friends.
+**Sales Data — Chez Julien**
+- New project: gathering and extrapolating shop sales data from business computer. Business intelligence for GPFC srl.
 
-**Julien & Lucia — All We Got Is Weeks**
-- New project folder created 2026-02-22.
-- Concept: workshop where participants visualize life as ~4,160 weeks, paint the past with watercolors, decide what to color next.
-- Captured in STATUS.md. Early stage.
+**Physical / 3D**
+- Interests active but not yet projectized: furniture building, new leash design for Poncho, 3D printing. Exploring AI-assisted physical design.
 
-**Renpy Game**
-- Postponed at least one week. Julien is using the pause to think about what cockpit to use when he starts.
-
-**Sales Data / Chez Julien Business Intelligence**
-- New project started: data gathering and extrapolation of shop sales from business computer.
-
-**Physical Products (background interest)**
-- Furniture building, new leash design for Poncho, 3D printers. No active work yet — exploratory.
-
-**Shop Sale Prospecting**
-- Planning a deep research session to find buyers: chains and centralized kitchens primarily. One multi-cheese place owner already interested.
+**Shop Prospecting (research phase)**
+- Planning deep research to find buyers for the retail shop — focus on chains and centralized kitchens. One multi-cheese place owner already interested.
 
 ---
 
 ## 3. Priorities & Struggles
 
-**What matters most:**
-- Getting the Cockpit to actually enforce the Superpowers chain (not just suggest it). Custom Modes in Cursor is the next concrete test.
-- Multi-pass thinking remains the hardest unsolved problem — Julien explicitly flags this. The AI still tends to execute after one pass rather than iterate.
-- Blog launch: low urgency this week, but not forgotten.
+**What matters most right now:**
+- Getting the cockpit to actually enforce workflow discipline — not just as documentation but as hard gates. Custom Modes in Cursor is the next concrete experiment.
+- The multi-pass problem: Julien explicitly named this. He wants the AI to challenge its own thinking across multiple passes before proceeding. The `cockpit-repass` skill addresses this but enforcement is still soft.
 
 **What's hard:**
-- AI skipping steps in the Superpowers chain even with `.mdc` rules in place. Proven failure caught live in a PRISM session.
-- Cost discipline: learned last week that Opus 4.6 burned €60-70 in one day on Roo Code. Cursor is cheaper but chain enforcement is weaker. This tradeoff is a live tension.
-- Orderliness (self-acknowledged weak point) — system audit and documentation blitz suggests he's actively compensating.
+- AI skipping steps in the Superpowers chain — brainstorming triggers, then the AI jumps straight to code. This is the core unsolved problem.
+- Asking for multiple passes on the same thinking remains difficult in current setup.
+- Cost discipline: Opus vs Sonnet decision-making is now part of the cockpit, not just a cost concern.
 
-**What he's avoiding / parked:**
-- Renpy game (deliberately delayed, not abandoned).
-- Physical products (interest level, no action yet).
-- Newsletter system, Lindy Hop Lab, Meditation App, julien.care app — all lower urgency.
+**What he's watching for:**
+- Better cockpit = better harness + environment + architecture + workflow. He's explicitly always scanning for improvements. Not locked in — Cursor is "for now."
+
+**Not on the plate this week:**
+- RenPy game creation (deliberately postponed).
+- Deep business operational work (though shop prospecting research is coming).
 
 ---
 
 ## 4. Business — Chez Julien
 
-**Strategic direction:** Operation Autonomy. Goal is shop running without Julien's daily involvement. Previous plan (Operation Exit / sell) is archived but not fully abandoned — Julien is now actively researching sale prospects (chains, centralized kitchens) in parallel. One interested buyer already identified.
+**Strategic direction shift:** Operation Autonomy is still the official frame in docs, but Julien is now actively researching selling the shop. He's looking for buyers — specifically chains and centralized kitchens. One prospect (multi-cheese place owner) already engaged. This is a significant real-world development not yet reflected in Business/ files (which still describe Operation Autonomy as current strategy).
 
 **Team:**
-- **Henry** — full-time, invested, wants manager path. Feb 4 team meeting gave him the soft manager pitch. Still 24, lacks structure, needs development regardless of outcome. Autonomy plan depends on him.
-- **Lucas** — part-time/questionable status. Good with customers. Asked to focus on sales and the floor.
-- Feb meeting framing: Lucia quitting May 1 used as concrete reason for Julien stepping back. Next big meeting planned for March (full role restructure).
+- Henry (full-time): development path toward manager role is documented. Monthly meetings established (Feb 4 meeting held — foundation-laying, not the big restructure yet). Big Meeting (full role restructure) targeted for March 2026.
+- Lucas (part-time/variable): sales focus. Reliability concerns noted in docs.
 
-**Operations:**
-- Staffing Calendar System: Google Calendar ↔ Notion sync built and deployed. Worker running on 30-minute cron. Red day alerts via ntfy. System appears live and functional.
-- Sales data project just started — business intelligence from shop computer.
+**Staffing system:** Google Calendar ↔ Notion staffing sync is built and deployed (Cloudflare Worker). Test run docs exist. Status unclear — not mentioned in recent activity.
 
-**Financials:** P&L and balance sheet files exist. No new financial data points surfaced this week.
+**Financials:** Sales data project just started. Raw data exists; analysis is the new work.
+
+**Key tension:** Business docs describe Operation Autonomy as active strategy, but Julien's own words indicate he's now in sell-prospecting mode. Trust his words.
 
 ---
 
 ## 5. Tools & Stack
 
-| Layer | Tool |
+| Layer | Current choice |
 |---|---|
-| Primary AI harness | Cursor + Superpowers extension |
-| Custom enforcement | `cockpit-repass` skill (3 challenge gates), `cockpit-core.mdc` (18-line lean rules) |
-| Models in use | Claude (primary); Opus for architecture/complex decisions, Sonnet for implementation |
-| Automation / logging | NightCrawler (auto-logs vault activity) |
-| Now Page | Now Page Bot v1.0 (GitHub Actions → vault → deploy) |
-| Business ops | Cloudflare Worker + Notion + Google Calendar + ntfy |
-| Previously used | Roo Code (best enforcement, hard gates, but €60-100+/day — abandoned for cost) |
-| Looking for | Better cockpit: harness + environment + architecture + workflow that enforces chain without burning budget |
+| Primary IDE/harness | Cursor |
+| Skill framework | Superpowers (14 skills, chain-based) |
+| Custom enforcement | `cockpit-repass` skill + `cockpit-core.mdc` (18 lines) |
+| Planned next | Custom Modes in Cursor (Planner/Executor split) |
+| Previous harness (abandoned) | Roo Code — best enforcement, but €60-100+/day |
+| Models | Mix of Opus (architecture) and Sonnet (implementation) — cost discipline is part of the cockpit |
+| Vault/OS | MyLifeOS (markdown, Cursor as primary interface) |
+| Automation | NightCrawler (auto-logging), Now Page Bot (deployed, 7 known output issues), Cloudflare Workers (staffing sync) |
+| AI briefing | PRISM (this system) |
 
-**Key insight active in his mind:** Roo Code had perfect hard-gate enforcement (Architect mode → Code mode, no skipping). Cursor is cheaper but soft. Custom Modes (tool restriction per mode) are the closest Cursor equivalent. This is the experiment for the coming week.
+**Cockpit philosophy:** Not vibe-prompting an LLM. Sequences matter. Like a helicopter pre-flight — specific steps in specific order to get good output. Always scanning for a better cockpit.
 
 ---
 
 ## 6. Life
 
 **Lucia:**
-- Quitting her job May 1, 2026. Julien explicitly committed to supporting her with time and money.
-- "Julien & Lucia" creative project folder just created — first collaborative concept (All We Got Is Weeks workshop) captured.
-- Meeting anniversary: 27th of each month (next: 2026-02-27, in 3 days).
+- Quitting her job May 1, 2026 to go self-employed (art teaching + selling her own art). This is a near-term life milestone — Julien needs to support her financially and with time during the transition.
+- New collaborative project folder created ("Julien & Lucia"). "All We Got Is Weeks" workshop is the first project inside.
+- Meeting anniversary: 27th of each month.
 
-**Poncho:** No specific notes this week. Leash redesign is a background interest.
+**Poncho:**
+- Australian Shepherd, ~2.5 years old. New leash design is on Julien's physical-products radar.
 
-**Health/energy:** No explicit signals this week. No restorative menu mentions. Activity log shows late-night work sessions (10pm-midnight range consistently).
+**Energy/mood:**
+- Relaxed about blog delay ("it's fine"). Engaged and productive on cockpit work. No stress signals in his words — tone is forward-leaning and curious.
 
-**Dancing:** Dancing session skill exists and is well-developed (Lindy Hop coaching, spaced repetition, LOG tracking). Not explicitly mentioned in recent activity — may be running quietly in background.
+**Dancing:**
+- Dancing session skill exists and is actively maintained. Lindy Hop practice is a keystone habit (community, discipline). Not mentioned as active this week but infrastructure is live.
 
-**Guitar:** Guitar coach skill exists. Not mentioned in recent 3-day log.
+**Guitar:**
+- Guitar coach skill exists and maintained. Not mentioned as active this week.
 
 ---
 
-*Snapshot confidence: HIGH on Cockpit/tooling state, HIGH on business direction, MEDIUM on energy/mood (no explicit signals). Blog delay explicitly downplayed by Julien — treat as resolved.*
+## Summary for AI Analyst
+
+Julien is deep in cockpit engineering — the meta-problem of how to make AI do disciplined, multi-step thinking without skipping steps. He has a working solution (Cursor + Superpowers + cockpit-repass skill) but enforcement is still soft. The next concrete experiment is Custom Modes in Cursor. Parallel to this: blog launches imminently, Mixtapes project is moving quietly, and shop-selling prospecting is beginning. The business strategy has quietly shifted from autonomy-building to sale-prospecting — his words are the ground truth here. Lucia's May transition is the major life horizon. Mood: calm, focused, experimenting.
