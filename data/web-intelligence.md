@@ -1,165 +1,160 @@
-<!-- PRISM Web Intelligence — 2026-02-24 — generated 2026-02-24T11:16:13.690Z -->
+<!-- PRISM Web Intelligence — 2026-02-25 — generated 2026-02-25T06:45:31.152Z -->
 
-# Proactive Web Intelligence — 2026-02-24
+# Proactive Web Intelligence — 2026-02-25
 
 *8 of 8 searches returned results*
 
 
 
-## Query 1: Cursor custom modes feature release February 2026
+## Query 1: Cursor custom modes planner executor setup 2026
 
-Based on the search results, here is a concise factual summary:
-
----
-
-**Cursor Custom Modes — Key Facts**
-
-Cursor's custom modes feature was introduced as a **beta** in **version 0.48**, released on **March 23, 2025** (not February 2026). The release — titled *"Chat Tabs, Custom Modes & Faster Indexing"* — redesigned the modes system and introduced the ability to compose new, user-defined modes with custom tools and prompts.
-
-Custom modes can be enabled via **Settings → Features → Chat → Custom modes**, and users can also set a default mode from the same settings panel.
-
-In v0.48, users can create their own modes, choose the tools, settings, custom instructions, and even specify the model for each mode — giving full control over how AI assistance behaves.
-
-Notably, in a later release (**Cursor 2.1.0**), custom modes were reportedly **removed**, with an 'Export' feature added so users could retrieve their old prompts and instructions.
+Here is a concise summary based on the most relevant recent findings:
 
 ---
 
-**⚠️ Important caveat:** No search results confirm a specific "Custom Modes feature release" tied to **February 2026** specifically. The custom modes feature originally launched in **March 2025 (v0.48)**. If you're looking for a February 2026 update specifically, it may refer to broader agent/subagent enhancements in Cursor's 2.x series. The most authoritative source is the official changelog:
-👉 **https://cursor.com/changelog/0-48-x**
+**Cursor Custom Modes: Planner/Executor Setup**
 
-## Query 2: Anthropic Claude API OAuth enforcement third-party tools update February 24 2026
+Inspired by Cline, developer Carl Rannaberg replicated separate **Planner** and **Executor** modes in Cursor using custom modes, each with distinct prompts and tool access. For planning, he uses **Gemini 2.5 Pro** (for its long context window and multi-turn clarification), and for execution, **Claude Sonnet 4** (for speed and iterative debugging reliability).
 
-Here is a concise, sourced summary of the most relevant findings:
+The Planner mode understands requirements and reads code *without* modifying it, while the Executor mode precisely follows plans without second-guessing them.
 
----
+Custom modes are currently **in beta** and can be enabled via **Cursor Settings → Chat → Custom Modes**. To add one, use the shortcut **⌘.** or click the current mode at the bottom of the AI pane, then scroll to "Add custom mode."
 
-**Anthropic Claude OAuth Enforcement — Third-Party Tools (Feb 2026)**
-
-Anthropic updated its documentation on **February 19, 2026**, to clarify that using OAuth tokens with third-party tools violates their Terms of Service. The company's Claude Code documentation now states explicitly: "Using OAuth tokens obtained through Claude Free, Pro, or Max accounts in any other product, tool, or service — including the Agent SDK — is not permitted and constitutes a violation of the Consumer Terms of Service," and Anthropic is enforcing this with **server-side blocks and account bans**.
-
-The updated docs draw a hard line: OAuth authentication is "intended exclusively for Claude Code and Claude.ai," and everything else requires **API keys** through the Claude Console or a supported cloud provider. Notably, while the written policy is new, enforcement actually began earlier — on **January 9, 2026**, when Anthropic deployed server-side safeguards blocking subscription OAuth tokens from working outside their official Claude Code CLI.
+Cursor also shipped a native **Plan Mode** (announced October 7, 2025), accessible via **Shift + Tab** in the agent input, which lets the agent research the codebase, ask clarifying questions, and produce an editable Markdown plan before executing.
 
 **Key sources:**
-- The Register (Feb 20, 2026): https://www.theregister.com/2026/02/20/anthropic_clarifies_ban_third_party_claude_access
-- Awesome Agents (Feb 18, 2026): https://awesomeagents.ai/news/claude-code-oauth-policy-third-party-crackdown/
-- OpenClaw.rocks blog: https://openclaw.rocks/blog/anthropic-oauth-ban
+- Carl Rannaberg's workflow (June 12, 2025): https://carlrannaberg.medium.com/my-current-ai-coding-workflow-f6bdc449df7f
+- Cursor official Plan Mode blog (Oct 7, 2025): https://cursor.com/blog/plan-mode
+- Cursor Custom Modes docs: https://docs.cursor.com/chat/custom-modes
 
-> **Note:** My knowledge cutoff is early 2025, and the date you specified (February 24, 2026) is beyond it — the above is based entirely on live web search results. No specific February 24 event was found; the major policy update occurred on **February 18–20, 2026**.
+## Query 2: Simon Willison agentic engineering patterns chapter 3 February 2026
 
-## Query 3: Simon Willison agentic engineering patterns chapter 3 February 2026
-
-Based on my research, I can now provide a well-sourced summary. Note that as of the search results (dated ~February 23–24, 2026), Willison had published **two** chapters, not yet a dedicated "Chapter 3." Here's what the evidence shows:
+Based on the search results, I can now provide a well-sourced summary. Note that the search results consistently show the guide launched with **two** chapters on February 23, 2026 — there is **no evidence of a specific "Chapter 3"** having been published as of the search results available. Here's what the sources do confirm:
 
 ---
 
 **Summary:**
 
-On **February 23, 2026**, Simon Willison launched *Agentic Engineering Patterns*, a new guide collecting coding practices and patterns to help get the best results out of coding agents like **Claude Code** and **OpenAI Codex**. At launch, he published the **first two chapters** of the guide.
+Simon Willison launched *Agentic Engineering Patterns* on **February 23, 2026**, publishing the first two chapters as a new type of content on his site called a "guide." The guide is described as "a structured, book-shaped collection of coding practices for professional software engineers using AI coding agents like Claude Code and OpenAI Codex," and explicitly distinguishes *agentic engineering* (experts augmenting their skills) from "vibe coding" (non-programmers fully delegating to LLMs). Each chapter is "effectively a blog post with a less prominent date that's designed to be updated over time, not frozen at the point of first publication," and Willison planned to add chapters at a rate of 1–2 per week. The first two chapters were titled **"Writing code is cheap now"** and **"Red/green TDD"** (simonwillison.net/guides/agentic-engineering-patterns/).
 
-Chapter 1, **"Writing code is cheap now"**, addresses the central challenge of agentic engineering: the cost to produce working code has dropped to almost nothing, and how that disrupts existing intuitions about how developers work individually and as a team. Chapter 2, **"Red/green TDD"**, describes how test-first development helps agents write more succinct and reliable code with minimal extra prompting. Willison noted he planned to add more chapters at a rate of **1–2 per week**.
+> ⚠️ **Note:** No specific "Chapter 3" of this guide appeared in the search results. The guide may have grown beyond two chapters since launch, but Chapter 3 as a discrete, titled publication was not found in current indexed sources. If you need Chapter 3 specifically, check the live guide index at **https://simonwillison.net/guides/agentic-engineering-patterns/** directly.
 
-The guide is structured as a "guide" — a new content format on his blog where chapters are designed to be updated over time rather than frozen at first publication — distinguishing *Agentic Engineering* (professional developers using agents to amplify their expertise) from "vibe coding" (non-programmers using LLMs with no attention to the code).
+## Query 3: Cursor IDE update changelog February 25 2026
 
-> **Important caveat:** As of the search results (retrieved ~February 24, 2026), only **two chapters** had been published. There is **no evidence of a "Chapter 3"** yet. It may not exist at the time of this search, or it may be at a URL not yet indexed.
-
-**Key source:** [https://simonwillison.net/2026/Feb/23/agentic-engineering-patterns/](https://simonwillison.net/2026/Feb/23/agentic-engineering-patterns/)  
-**Guide index:** [https://simonwillison.net/guides/agentic-engineering-patterns/](https://simonwillison.net/guides/agentic-engineering-patterns/)
-
-## Query 4: Cursor IDE changelog update February 24 2026
-
-Based on the search results, there is **no specific Cursor IDE changelog entry dated February 24, 2026**. The closest available updates are from February 12 and February 18, 2026. Here is a summary of the most relevant recent findings:
+Based on the search results, here is a concise factual summary of the most relevant findings around the February 25, 2026 timeframe for Cursor IDE:
 
 ---
 
-The **February 18, 2026** Cursor release introduced the ability to hand off plans from the CLI to the cloud, in-line rendering of ASCII diagrams, and quality-of-life improvements, including a persistent decision menu when a plan is generated.
+The closest release to February 25, 2026 was **Cursor version 2.5.25**, released on **2026-02-24** (February 24, 2026). There does not appear to be a specific release dated exactly February 25, 2026.
 
-The **February 12, 2026** release launched **long-running agents**, enabling Cursor to work autonomously over longer horizons on larger, more complex tasks — planning first and completing difficult work without human intervention. This feature is available at cursor.com/agents for **Ultra, Teams, and Enterprise plans**.
+The **February 18, 2026** changelog entry (part of the 2.5.x series) introduced the ability to hand off plans from the CLI to the cloud, in-line rendering of ASCII diagrams, and quality-of-life improvements — including a persistent decision menu shown when a plan is generated in the CLI.
 
-Also in February, Cursor expanded usage by adding two pools — **Auto+Composer** and **API** — and boosted limits for Auto and Composer 1.5 across all individual plans, with a limited-time **6x boost** (through February 16). A new usage-visibility page was added to track both pools and API credits.
+Earlier in February, on **February 12, 2026**, Cursor introduced **long-running agents** capable of working autonomously over longer horizons to complete larger, more complex tasks; these agents plan before executing and are available at cursor.com/agents for **Ultra, Teams, and Enterprise plans**.
 
 **Key sources:**
-- Official Cursor Changelog: https://cursor.com/changelog
-- Releasebot February 2026 summary: https://releasebot.io/updates/cursor
+- Official changelog: https://cursor.com/changelog
+- Version history & download links: https://github.com/oslook/cursor-ai-downloads
 
-> ⚠️ Note: No changelog entry specifically dated **February 24, 2026** was found in any source. The date may be in the future relative to available data, or no update was released on that exact date. The February 18 entry is the most recent available as of now.
+> **Note:** No changelog entry is specifically dated February 25, 2026. The nearest release is v2.5.25 (Feb 24, 2026), though its detailed patch notes were not publicly itemized in the available sources.
 
-## Query 5: micro-SaaS founder methodology AI cockpit workflow published February 2026
+## Query 4: selling specialty food retail shop Belgium Brussels chain buyer 2026
 
-I was not able to find any source specifically titled or focused on a **"micro-SaaS founder methodology AI cockpit workflow"** published in February 2026. The closest relevant February 2026 content found is the Medium article by NAJEEB and related pieces on micro-SaaS for solo founders — none of which use the specific "AI cockpit" framing. Here is what the search results do confirm:
-
----
-
-The most relevant February 2026 publication found is **"From 0 to $2,500: My 6-Step Framework for Building Micro SaaS as a Solo Founder"** by NAJEEB, published in *Write A Catalyst* on Medium in February 2026 (URL: https://medium.com/write-a-catalyst/from-0-to-2-500-my-6-step-framework-for-building-micro-saas-as-a-solo-founder-fba5d545b97c). It argues that building and exiting a Micro SaaS is a game a solo founder can win, contrasting it with traditional IT companies that require massive teams, huge capital, and endless bureaucracy. A companion piece from January 2026 by the same author covers building three Micro-SaaS blueprints using the n8n workflow automation tool, framing the opportunity around "Vertical SaaS" — solving a very specific problem for a very specific industry.
-
-**However**, no source using the specific phrase **"AI cockpit workflow"** as a named micro-SaaS founder methodology published in February 2026 was found across multiple search queries. This exact term may refer to a paywalled article, a niche newsletter, a private community post, or it may not exist under that precise title. I'd recommend searching directly on platforms like **Substack**, **Indie Hackers**, or **Product Hunt** for that specific phrase, or verifying the original source where you encountered it.
-
-## Query 6: Belgium Brussels specialty food shop acquisition buyer market February 2026
-
-Based on the search results, there are two distinct and newsworthy stories from February 2026. Here is a concise summary of the most relevant findings:
+The most relevant and specific recent finding matching your query is the **Delhaize / Delfood acquisition** in Belgium. Here is a concise factual summary:
 
 ---
 
-**1. Delhaize Belgium Completes Acquisition of Delfood (February 2, 2026)**
+On **February 2, 2026**, Ahold Delhaize announced that its Belgian brand **Delhaize** completed the acquisition of **Delfood NV**, comprising **303 stores** in Belgium — including all *louis delhaize* stores and those supplied through Delfood — as well as logistics services and the Belgian headquarters.
 
-On **February 2, 2026**, Ahold Delhaize announced that its Belgian brand Delhaize had completed the acquisition of **Delfood NV**, comprising **303 stores** in Belgium — all *louis delhaize* stores and those supplied through Delfood — along with logistics services and Delfood's Belgian headquarters. Delfood will remain a separate legal entity within Delhaize, and the *louis delhaize* brand will continue to exist; the acquisition brings Delhaize's total network to **1,109 stores** across Belgium and Luxembourg. Financial terms of the deal were not disclosed.
+The Belgian Competition Authority (**BCA**) approved the deal on **January 26, 2026**, subject to conditions including the **divestment of a number of proximity stores and petrol station shops** in certain local markets. Specifically, six Delfood stores — in Zaffelare, Antwerp Nassau, **Franklin Roosevelt in Brussels**, Alma, Messancy, and Sint Maria Oudenhove — plus a Delhaize Shop&Go at Antwerp Central Station were required to be sold to a third-party operator.
 
-- 📎 Source: [newsroom.aholddelhaize.com](https://newsroom.aholddelhaize.com/ahold-delhaize-announces-that-delhaize-belgium-completes-its-acquisition-of-delfood/) | [retail-insight-network.com](https://www.retail-insight-network.com/news/delhaize-belgium-completes-delfood-acquisition/)
-
----
-
-**2. Belgium's Largest Food Market Opens in Brussels (February 19, 2026)**
-
-**Ratz**, a new food market billing itself as the largest in Belgium, opened in the Brussels municipality of **Ixelles** (25 Rue Saint-Boniface) on **February 19, 2026**, occupying a former parking structure of **3,000 square meters** spread across three floors. The market features **fourteen food stalls**, with an emphasis on Middle Eastern and Asian cuisines.
-
-- 📎 Source: [retaildetail.eu](https://www.retaildetail.eu/news/food/brussels-to-get-belgiums-largest-food-market/)
-
-## Query 7: Superpowers Cursor skill framework update February 2026
-
-Based on the search results, here is a concise, factual summary:
+With this acquisition, **Delhaize is strengthening its position in the convenience segment** of the Belgian market.
 
 ---
-
-**Superpowers Agentic Skills Framework — Cursor Integration (February 2026)**
-
-The **obra/superpowers** repository — an agentic skills framework and software development methodology — was last indexed on **20 February 2026** (commit `a0b9ec`), with official documentation covering installation on Claude Code, Cursor, OpenCode, and Codex. On **January 15, 2026**, Superpowers was officially accepted into the Anthropic marketplace, and as of late February 2026, the project has over **55,000 GitHub stars**.
-
-A dedicated Cursor adaptation — **`chauchakching/superpowers-cursor`** — ports the framework to Cursor, featuring a `sessionStart` hook that automatically injects the `using-superpowers` skill at the start of every conversation, along with **14 skills** covering brainstorming, plan writing, TDD, systematic debugging, subagent-driven development, and more. An alternative installation method uses `prpm` (`npm install -g prpm` → `prpm install collections/superpowers`), which leverages the OpenSkills library and progressive disclosure via `AGENTS.md` to allow Cursor to load skills as needed.
 
 **Key sources:**
-- GitHub (main repo): https://github.com/obra/superpowers
-- Cursor-specific fork: https://github.com/chauchakching/superpowers-cursor
-- DeepWiki docs (indexed Feb 20, 2026): https://deepwiki.com/obra/superpowers
+- Ahold Delhaize official newsroom: https://newsroom.aholddelhaize.com/ahold-delhaize-announces-that-delhaize-belgium-completes-its-acquisition-of-delfood/
+- RetailDetail EU: https://www.retaildetail.eu/news/food/delhaize-receives-green-light-for-delfood-acquisition-but-must-sell-some-stores/
+- Concurrences (BCA ruling detail): https://www.concurrences.com/en/bulletin/news-issues/january-2026/the-belgian-competition-authority-conditionally-approves-a-retail-grocery
 
-## Query 8: Claude Code Windsurf Lovable release notes February 24 2026
+## Query 5: micro-SaaS founder selling small business exit process Belgium
 
-Now I have comprehensive information. Let me compile the summary.I now have all the information needed to provide a comprehensive, well-cited summary. Let me compile the findings.
-
-Here is a concise, well-sourced summary of the most relevant recent release notes for **Claude Code**, **Windsurf**, and **Lovable** around late February 2026:
+Here is a concise, factual summary of the most relevant recent findings on the micro-SaaS founder exit/selling process, with the most important sources noted:
 
 ---
 
-## 🔷 Claude Code (Anthropic)
+**Summary:**
 
-The headline development for Claude Code in this period is a major agent isolation feature. Claude Code v2.1.49 (February 19) and v2.1.50 (February 20) bring native worktree management for agents, six memory leak fixes, and new enterprise hooks. Specifically, v2.1.50 added a `--worktree (-w)` flag to start Claude in an isolated git worktree, added `WorktreeCreate` and `WorktreeRemove` hook events enabling custom VCS setup and teardown, and added support for `isolation: worktree` in agent definitions so agents can declaratively run in isolated git worktrees. The `CLAUDE_CODE_SIMPLE` mode now also disables MCP tools, attachments, hooks, and `CLAUDE.md` file loading for a fully minimal experience.
+Micro SaaS businesses — small, often bootstrapped SaaS companies run by solo founders or tiny teams — are attractively positioned for exits due to low operating costs and high margins, drawing buyers from private equity firms to strategic acquirers. According to a 2024 MicroAcquire report, the average micro SaaS business sells for 3–5× its ARR, with top performers fetching up to 8×; for a business generating $100,000 ARR, that's a potential payout of $300,000–$800,000. The most common sale route is online acquisition marketplaces, where the process is standardized — listings are reviewed, metrics verified, and due diligence conducted — with many deals closing within 60–120 days, depending on documentation quality and financial clarity. One documented micro SaaS exit on Empire Flippers achieved the 2nd highest-ever valuation multiplier for a SaaS business on that platform, reaching a ×57 monthly net profit multiplier, illustrating that exceptional businesses can far exceed the average range.
 
-**Key sources:** [releasebot.io/updates/anthropic/claude-code](https://releasebot.io/updates/anthropic/claude-code) · [github.com/anthropics/claude-code/releases](https://github.com/anthropics/claude-code/releases)
+**Key sources:**
+- BSO Invest (May 11, 2025): https://bsoinvest.com/business-strategies/exit-strategy-planning-for-micro-saas-founders/
+- Bookman Capital (Nov 27, 2025): https://bookmancapital.io/micro-saas-exit-how-to-maximize-the-sale-in-2026/
+- Rick Blyth / Micro SaaS Handbook: https://www.rickblyth.com/selling-and-exiting-your-micro-saas
 
----
+> **Note on Belgium specifically:** The search did not surface any Belgium-specific micro-SaaS exit guides, legal frameworks, or founder case studies. If you're looking for Belgium-specific legal/tax considerations for selling a small business (e.g., asset vs. share sale, Belgian capital gains treatment), that would warrant a more targeted search on Belgian M&A or SME exit law.
 
-## 🌊 Windsurf
+## Query 6: Superpowers Cursor skill framework update February 2026
 
-On February 17, 2026, Claude Sonnet 4.6 became available in Windsurf with limited-time promotional pricing for self-serve users: no thinking at 2x credits, with thinking at 3x credits. Two additional new models also launched at the same time — GLM-5 from Zhipu AI at 0.75x credits and Minimax M2.5 at 0.25x credits — both included in Arena Mode's Frontier Arena and Hybrid Arena battle groups. On February 12, 2026 (v1.9552.21), Plan Mode gained automatic switching back to Code Mode when a user starts implementing a plan, support for reading skills from the `.agents/skills` directory was added, and full Linux ARM64 support was introduced.
-
-**Key source:** [windsurf.com/changelog](https://windsurf.com/changelog)
-
----
-
-## 💜 Lovable
-
-Lovable added support for GPT-5.2 and Gemini 3 Flash, with Gemini 3 Flash becoming the default model for building and iterating. Lovable also introduced cross-project referencing, enabling Lovable to access and reuse implementations from other projects in a workspace via `@` mentions in chat. User profiles were redesigned to be more expressive and customizable, available at `lovable.dev/@yourusername`, laying groundwork for future community and publishing features.
-
-**Key source:** [docs.lovable.dev/changelog](https://docs.lovable.dev/changelog)
+Based on the search results, here is a concise factual summary:
 
 ---
 
-**Bottom line:** The ~February 24, 2026 window saw Claude Code ship two rapid-fire v2.1.49/v2.1.50 releases focused on multi-agent git worktree isolation; Windsurf rolled out Claude Sonnet 4.6, GLM-5, and Minimax M2.5 with promotional credit pricing; and Lovable upgraded its underlying models to GPT-5.2/Gemini 3 Flash while adding cross-project referencing for agents.
+**Superpowers (`obra/superpowers`) — Cursor Integration & February 2026 Status**
+
+**Superpowers** (GitHub: `obra/superpowers`) is an open-source agentic skills framework and software development methodology. Notably, **both Claude Code and Cursor now have built-in plugin marketplaces** for it, while Codex and OpenCode require manual setup.
+
+A community-documented method to use Superpowers in Cursor involves the `prpm` package manager: running `npm install -g prpm` followed by `prpm install collections/superpowers`, which uses the openskills library and progressive disclosure via `AGENTS.md` to allow Cursor to load skills as needed.
+
+According to DeepWiki (last indexed **20 February 2026**, commit `a0b9ec`), the Cursor plugin integrates via Cursor's hook system — specifically a `SessionStart` hook — to inject skill context at session start, and "unlike platforms requiring manual git clones, Cursor handles plugin distribution automatically through its marketplace."
+
+As of **January 15, 2026**, Superpowers was officially accepted into the **Anthropic Claude Code plugin marketplace**. The project is free and open-source under the MIT license, created by Jesse Vincent (`obra`) — not by Anthropic.
+
+**Key sources:**
+- GitHub repo: https://github.com/obra/superpowers
+- DeepWiki (indexed Feb 20, 2026): https://deepwiki.com/obra/superpowers
+- Cursor installation guide: https://deepwiki.com/obra/superpowers/2.2-installing-on-cursor
+
+> ⚠️ **Note:** No *official* Superpowers-specific release notes explicitly dated "February 2026" were found. The February 2026 reference comes from DeepWiki's indexing date of the repo (commit `a0b9ec`), not a named versioned release. If you're looking for a specific changelog entry, checking the [RELEASE-NOTES.md](https://github.com/obra/superpowers) directly on GitHub would be the most reliable source.
+
+## Query 7: All We Got Is Weeks life visualization workshop concept similar projects
+
+The search did not return any results for a specific project called **"All We Got Is Weeks"** as a named workshop or branded product. However, the concept is a well-established genre with several closely related projects. Here is a summary of the most relevant findings:
+
+---
+
+**"All We Got Is Weeks"** does not appear to correspond to a distinct, widely-documented workshop or product under that exact name. The concept it describes — **visualizing one's entire life as a grid of weeks** — is a well-known genre pioneered by Tim Urban. Tim Urban's 2014 Wait But Why post "Your Life in Weeks" popularized the idea of showing all the weeks of a human life on a single chart, and it has since spawned numerous tools and projects.
+
+The most active recent similar projects include:
+
+- **loggd.life** (updated ~1 week ago as of now) offers a free Life in Weeks Visualizer that lets users see their entire life as a grid of weeks and adjust life expectancy based on lifestyle factors, with no signup required.
+- **4K Weeks** (4kweeks.com) bills itself as "the original life calendar," offering interactive posters that help people visualize how scarce each week is, with a community focused on motivating purposeful action.
+- **lifecalendar.io** allows users to capture significant life milestones, career events, goals, and travels in a weekly grid format.
+
+**Key sources:**
+- https://loggd.life/tools/life-in-weeks
+- https://waitbutwhy.com/2014/05/life-weeks.html
+- https://4kweeks.com/
+
+If "All We Got Is Weeks" refers to a very new, niche, or local workshop, it may not yet be indexed. Could you provide more context (e.g., an organizer name or website) for a more targeted search?
+
+## Query 8: Cloudflare Workers Google Calendar sync integration outage February 2026
+
+Based on the search results, I can provide a clear and accurate summary. Notably, there is **no evidence** of a specific "Cloudflare Workers + Google Calendar sync integration" outage in February 2026 — but there *was* a significant, well-documented Cloudflare outage on February 20, 2026, which would have affected any Workers-based integrations (including Google Calendar sync tools built on Workers). Here is what the sources actually report:
+
+---
+
+**Summary of Findings:**
+
+On **February 20, 2026, at 17:48 UTC**, Cloudflare experienced a service outage when a subset of customers using its **Bring Your Own IP (BYOIP)** service had their routes to the Internet withdrawn via BGP (Border Gateway Protocol), caused by an internal change to how Cloudflare manages IP addresses — not a cyberattack.
+
+Out of 6,500 total advertised prefixes, **25% of BYOIP prefixes were unintentionally withdrawn** between 17:56 and 18:46 UTC, making affected customers' services and applications unreachable from the Internet and causing timeouts and connection failures.
+
+The total disruption lasted approximately **6 hours**, and Cloudflare publicly apologized, acknowledging that the outage "undermined its core promise of delivering a highly resilient network."
+
+Secondary effects included **HTTP 403 errors** on Cloudflare's 1.1.1.1 DNS resolver landing page and **HTTP 429 rate-limit spikes** in Workers AI, meaning Cloudflare Workers-based applications (such as custom Google Calendar sync integrations) would have been among the affected services.
+
+---
+
+**⚠️ Important caveat:** No search results describe a named or distinct *"Cloudflare Workers + Google Calendar sync integration outage"* as a standalone incident. The disruption to any such integration in February 2026 would have been a downstream consequence of the broader BYOIP/BGP outage described above.
+
+**Primary source:** [https://blog.cloudflare.com/cloudflare-outage-february-20-2026/](https://blog.cloudflare.com/cloudflare-outage-february-20-2026/)
