@@ -350,6 +350,7 @@ function assembleBriefing(callAOutput, callBOutput, date, articleCount, webSearc
     { key: 'signal',    pattern: '## 🔴 THE SIGNAL' },
     { key: 'mustreads', pattern: '## 📚 MUST-READ LIST' },
     { key: 'builder',   pattern: '## 🧱 BUILDER INTELLIGENCE' },
+    { key: 'gamedev',   pattern: '## 🎮 GAME DEV INTELLIGENCE' },
     { key: 'pioneer',   pattern: '## 📊 PIONEER ADVANTAGE CHECK' },
     { key: 'tools',     pattern: '## 🛠️ TOOLS TO TRY' },
     { key: 'buildwatch',pattern: '## 🏗️ BUILD WATCH' },
@@ -497,6 +498,7 @@ async function writeFeedbackTemplate(briefing, date) {
       SIGNAL: null,
       MUST_READ_LIST: null,
       BUILDER_INTELLIGENCE: null,
+      GAME_DEV_INTELLIGENCE: null,
       PIONEER_ADVANTAGE: null,
       TOOLS_TO_TRY: null,
       BUILD_WATCH: null,
@@ -532,6 +534,7 @@ ${articles.map(a => `### ${a.title} (${a.source})\n- [ ] Love  [ ] OK  [ ] Skip`
 
 ## Section Ratings
 - 🧱 BUILDER INTELLIGENCE: [ ] Love  [ ] OK  [ ] Skip
+- 🎮 GAME DEV INTELLIGENCE: [ ] Love  [ ] OK  [ ] Skip
 - 📊 PIONEER ADVANTAGE: [ ] Love  [ ] OK  [ ] Skip
 - 🛠️ TOOLS TO TRY: [ ] Love  [ ] OK  [ ] Skip
 - 🌍 WORLD LENS: [ ] Love  [ ] OK  [ ] Skip

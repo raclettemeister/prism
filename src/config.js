@@ -59,6 +59,8 @@ export const TRUST_TIERS = {
       'economist.com',       // The Economist — world context, analytical lens
       'adamtooze',           // Adam Tooze — macro/geopolitics for Brussels founder
       'noahpinion',          // Noah Smith — economic forces, global shifts
+      // Game dev AI
+      '80.lv',               // 80 Level — game dev tech & AI tools coverage
     ],
   },
   tier2: {
@@ -207,6 +209,19 @@ export const FEED_CATEGORIES = {
       'https://www.gamesindustry.biz/feed/news',
       'https://itch.io/games/new-and-popular.xml',
       'https://godotengine.org/rss.xml',
+    ],
+  },
+
+  // =====================================================
+  // Category 7b: Game Dev AI — Tools, Engines & Solo Dev Leverage
+  // Focused on AI-assisted game development. 80.lv is Tier 1 (via
+  // TRUST_TIERS pattern). Web intelligence handles broad discovery.
+  // =====================================================
+  gamedev_ai: {
+    weight: 0.9,
+    feeds: [
+      'https://80.lv/feed',                          // 80 Level — game dev tech, AI tools coverage
+      'https://blog.unity.com/feed',                  // Unity — AI-powered features, ML Agents
     ],
   },
 
@@ -438,8 +453,10 @@ export const SCORING = {
     'European Commission', 'European Parliament', 'von der Leyen', 'Macron', 'Scholz',
     'think tank', 'policy', 'reform', 'infrastructure', 'industrial',
     'indie', 'bootstrap', 'maker', 'build in public',
-    // Game dev
+    // Game dev & AI game dev
     'Godot', 'game dev', 'indie game',
+    'game engine', 'procedural generation', 'game AI', '3D rendering',
+    'asset generation', 'vibe game', 'solo game dev', 'AI game',
   ],
   crossFeedBonusThreshold: 3,
   crossFeedBonus: 2,
@@ -451,7 +468,7 @@ export const LIMITS = {
   maxArticleAge: 48,
   analysisMaxTokens: 16384,
   synthesisMaxTokens: 32768,
-  builderCallMaxTokens: 8000,   // v4.0: Call A — Builder Intelligence
+  builderCallMaxTokens: 8500,   // v4.0: Call A — Builder Intelligence (bumped for Game Dev section)
   worldCallMaxTokens: 6000,     // v4.0: Call B — World Context
   webIntelMaxTokens: 1024,      // v4.0: Query generation only (tiny)
   tier1MaxPerSource: 2,         // v4.0: max Tier 1 articles per source per night
@@ -475,6 +492,7 @@ Focus on:
 3. Topics tracked all week — what is the latest development?
 4. Micro-SaaS / builder methodology — what are practitioners publishing today?
 5. Brussels / Belgium business context — anything relevant to a specialty food shop or founder?
+6. AI-powered game development — new engines, procedural generation tools, AI-assisted 3D/asset creation, vibe-coding for games, solo dev game toolchains
 
 Rules:
 - Be specific. "Claude Code changelog February 2026" not "AI news".
@@ -594,6 +612,16 @@ Changes to Cursor, Windsurf, Lovable, Bolt.new, Claude Code, or v0 that affect h
 **API Economics:**
 New services, integrations, or infrastructure worth knowing about. Supabase, Stripe, Resend, Cloudflare, Neon — anything changed? New connective tissue worth knowing.
 [If nothing: "Nothing new in the API landscape."]
+
+## 🎮 GAME DEV INTELLIGENCE
+
+**AI-Powered Tools & Engines:**
+New game engines, AI-assisted 3D tools, procedural generation platforms, or vibe-coding tools adapted for games. What shipped, what updated, what's usable today for a solo dev?
+[If nothing relevant: "No game dev tool updates today."]
+
+**Solo Dev Leverage:**
+Anything that lowers the barrier for a solo developer to ship a game — new workflows, AI-assisted asset pipelines, one-person-team success patterns.
+[If nothing: "No solo dev signals today."]
 
 ## ⏪ ACTION AUDIT
 {action_audit}

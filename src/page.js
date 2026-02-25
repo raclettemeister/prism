@@ -133,6 +133,7 @@ function buildPage(markdown, date, articleCount, articles, tools, workerUrl, fee
   const sections = [
     { id: 'SIGNAL', emoji: '🔴', label: 'THE SIGNAL' },
     { id: 'BUILDER_INTELLIGENCE', emoji: '🧱', label: 'BUILDER INTELLIGENCE' },
+    { id: 'GAME_DEV_INTELLIGENCE', emoji: '🎮', label: 'GAME DEV INTELLIGENCE' },
     { id: 'PIONEER_ADVANTAGE', emoji: '📊', label: 'PIONEER ADVANTAGE CHECK' },
     { id: 'TOOLS_TO_TRY', emoji: '🛠️', label: 'TOOLS TO TRY' },
     { id: 'BUILD_WATCH', emoji: '🏗️', label: 'BUILD WATCH' },
@@ -596,7 +597,7 @@ function buildPage(markdown, date, articleCount, articles, tools, workerUrl, fee
  * @returns {Promise<string>} Path to the generated HTML file
  */
 export default async function generatePage(markdown, date, articleCount = 0) {
-  const workerUrl = process.env.FEEDBACK_WORKER_URL || '';
+  const workerUrl = '/api/feedback';
   const feedbackSecret = process.env.PRISM_FEEDBACK_SECRET || '';
   const articles = extractMustReads(markdown);
   const tools = extractTools(markdown);
