@@ -31,7 +31,7 @@ jobs:
           mkdir -p data
           if [ -n "$MYLIFEOS_PAT" ] && [ -n "$MYLIFEOS_REPO" ]; then
             curl -sf -H "Authorization: token $MYLIFEOS_PAT" \
-              "https://raw.githubusercontent.com/$MYLIFEOS_REPO/main/Projects/Research%20Center/NEWS-INTERESTS.md" \
+              "https://raw.githubusercontent.com/$MYLIFEOS_REPO/main/Projects/Software/Research%20Center/NEWS-INTERESTS.md" \
               -o data/news-interests.md || echo "⚠️ Could not fetch news interests — using existing"
           else
             echo "⚠️ No MylifeOS credentials — using existing news interests file"

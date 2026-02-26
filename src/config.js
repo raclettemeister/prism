@@ -803,7 +803,7 @@ Create today's morning briefing. Follow this EXACT structure:
 
 # PRISM Morning Briefing — {date}
 
-> ⚙️ **This briefing is shaped by your preferences.** If something feels off — wrong topics, missing coverage, too much noise — edit **NEWS-INTERESTS.md** in Obsidian (Projects/Research Center/). PRISM reads it every morning. You are the editor-in-chief.
+> ⚙️ **This briefing is shaped by your preferences.** If something feels off — wrong topics, missing coverage, too much noise — edit **NEWS-INTERESTS.md** in Obsidian (Projects/Software/Research Center/). PRISM reads it every morning. You are the editor-in-chief.
 
 ## 🔴 THE SIGNAL
 The single most important development today. 2-3 sentences. Must cite the source URL. Prioritize cross-feed signal.
@@ -865,7 +865,7 @@ If Julien left feedback, respond to it here:
 ---
 
 > 🔧 **Not loving what you're reading?** Two files control everything:
-> - **NEWS-INTERESTS.md** → what topics matter, what to ignore, your worldview (Projects/Research Center/)
+> - **NEWS-INTERESTS.md** → what topics matter, what to ignore, your worldview (Projects/Software/Research Center/)
 > - **prism-feedback.md** → quick reactions: 👍 👎 and follow-up requests (Journal/)
 > Both live in Obsidian. Edit them, and tomorrow's briefing adapts.
 
