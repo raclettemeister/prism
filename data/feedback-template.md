@@ -1,4 +1,4 @@
-# PRISM Feedback — 2026-02-25
+# PRISM Feedback — 2026-02-26
 
 Edit this file in Obsidian OR react via the PRISM Portal.
 PRISM reads this before the next run. Delete sections you don't care about.
@@ -16,6 +16,7 @@ PRISM reads this before the next run. Delete sections you don't care about.
 
 ## Section Ratings
 - 🧱 BUILDER INTELLIGENCE: [ ] Love  [ ] OK  [ ] Skip
+- 🎮 GAME DEV INTELLIGENCE: [ ] Love  [ ] OK  [ ] Skip
 - 📊 PIONEER ADVANTAGE: [ ] Love  [ ] OK  [ ] Skip
 - 🛠️ TOOLS TO TRY: [ ] Love  [ ] OK  [ ] Skip
 - 🌍 WORLD LENS: [ ] Love  [ ] OK  [ ] Skip

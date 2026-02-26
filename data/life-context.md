@@ -1,138 +1,134 @@
-<!-- PRISM Life Context — Auto-generated 2026-02-25T06:43:52.380Z -->
+<!-- PRISM Life Context — Auto-generated 2026-02-26T06:14:53.163Z -->
 <!-- Source: context-note.md + LOG (3d) + 13 recent files -->
 <!-- Model: claude-sonnet-4-6 -->
 # LIFE CONTEXT SNAPSHOT — Julien
-**Generated:** 2026-02-25 | **Next update:** when context changes
+**Generated:** 2026-02-26
 
 ---
 
 ## 1. Right Now
 
-Quiet day — no major sessions logged, no new files. Julien is in a consolidation mode after an intense 2-3 days of system-building. His primary focus is The Cockpit: settling on Cursor + Superpowers + custom skills as his dev workflow harness, with active awareness of its limitations (AI can skip the chain, multi-pass discipline is hard to enforce). Energy is calm; blog delay is noted and accepted without stress.
+Julien is in a quiet, consolidation mode today — no major changes, no new sessions logged. His primary mental focus is on **The Cockpit**: his settled working environment of Cursor + Superpowers skill set + custom skills and rules. He's satisfied with it as a current solution but remains actively hunting for improvements. Mood is calm and pragmatic — the blog delay is a non-issue for him.
 
 ---
 
-## 2. This Week — Active Projects
+## 2. This Week — Active Projects & Status
 
-**The Cockpit (HOT)**
-- Settled on: Cursor + Superpowers skill set + custom-built skills and rules
-- Key limitation acknowledged: `.mdc` rules aren't hard enforcement — AI can skip the Superpowers chain (brainstorming → worktree → plan → TDD → review)
-- Built `cockpit-repass` skill: 3 challenge gates (Design Challenge, Plan Quality Check, Review Repass) with "push back once, then respect" rule
-- Rewrote `cockpit-core.mdc` to 18 lean lines
-- Next step: set up Custom Modes in Cursor (Cockpit Planner = read-only, Cockpit Executor = full access) to mimic Roo Code's hard mode gates
-- Still looking for a better cockpit — this is ongoing search, not final answer
+**🛠️ The Cockpit (HOT)**
+- Settled on: Cursor + Superpowers + custom skills/rules as his AI working environment
+- Known friction points: some things still get implemented automatically without his control; hard to run multiple passes on the same reasoning chain
+- Actively watching for a better architecture — framing it explicitly as a "cockpit" (helicopter analogy: correct sequences → good output, not just vibing with an LLM)
+- Recent file activity (Feb 23): Cursor config README, first-week cheatsheet, superpowers-vs-cockpit comparison doc all refined
 
-**Mixtapes (WARM)**
-- Active entries: jazz mess around, Woodstock, Queen Live, Buena Vista Social Club
-- All 4 entries refined + STATUS.md updated on 2026-02-23
-- Nature of project unclear from logs but consistently touched
+**📝 Blog — julien.care (WARM, DELAYED)**
+- Launch delayed by a few days — Julien is fine with it, no stress
+- Not the active focus this week
 
-**Julien & Lucia — Creative Projects (NEW)**
-- New project folder created 2026-02-22
-- First project: **All We Got Is Weeks** — workshop where participants visualize life as ~4,160 weeks, paint past with watercolors, decide what to color next
-- Early-stage concept, captured in STATUS.md
+**🎮 RenPy Game (WARM, POSTPONED)**
+- Exciting but explicitly postponed for at least a week
+- Current thinking: use the pause to design the right cockpit/workflow *before* touching RenPy — not jumping in blind
+- No files touched this week
 
-**Chez Julien Simulator (DONE)**
-- Shipped. Complete. Not active.
+**🎵 Mixtapes Project (ACTIVE — last touched Feb 23)**
+- Four entries refined Feb 23: Jazz Mess Around, Woodstock, Queen Live, Buena Vista Social Club
+- STATUS.md updated — this is quietly moving
 
-**Sweden Odyssey (DONE — demo phase)**
-- Demo finished. First real test of "learning to code properly." Collaborative project with friends. Not currently active.
+**💃 Dancing / Lindy Hop (INFRASTRUCTURE ACTIVE)**
+- Dancing session skill (`.cursor/skills/dancing-session/SKILL.md`) recently modified — full coaching system built and refined
+- No session logged this week yet, but the system is ready and maintained
 
-**Sales Data / Chez Julien BI (NEW)**
-- Data gathering and extrapolation of shop sales started 2026-02-22
-- Business intelligence for GPFC srl on business computer
+**🎸 Guitar Coach (INFRASTRUCTURE ACTIVE)**
+- Guitar coach skill recently modified — full system built
+- No session noted this week
 
-**Renpy Game (PARKED — 1 week)**
-- Exciting but postponed. Julien is using the pause to think about what his Renpy cockpit will look like before starting. Not active this week.
+**🏪 Shop Sale Research (UPCOMING)**
+- Julien plans a deep research push to find prospects for selling the retail shop
+- Focus: chains and centralized kitchens
+- One warm lead already: a multi-cheese place owner is interested
+- Not started yet — flagged as upcoming work
 
-**Blog — julien.care (DELAYED)**
-- Launch delayed by a few days. Julien is fine with it. Not a crisis.
-
-**Physical Products (EXPLORATORY)**
-- Interest in furniture building, new leash design for Poncho, 3D printers
-- No active project yet — ideation phase
-
-**Shop Sale Research (UPCOMING)**
-- Julien plans a deep research session to find prospects for selling the retail shop
-- Target: chains and centralized kitchens
-- One multi-cheese place owner already interested
-- Not started yet — flagged as next action
+**🪑 Physical Products / Making (INTEREST-LEVEL)**
+- Furniture building, new leash design for Poncho
+- Exploring how AI can assist physical design + 3D printing
+- No active files — exploratory thinking only
 
 ---
 
 ## 3. Priorities & Struggles
 
-**What matters most right now:**
-- Locking in The Cockpit as a reliable, disciplined dev workflow — not vibe-coding, but structured sequences (like helicopter pre-flight)
-- The core insight: a cockpit is a harness + environment + architecture + workflow. Cursor alone isn't enough; the chain must hold.
+**What matters most this week:**
+- Maintaining and refining The Cockpit — it's his core productivity lever
+- Thinking through the RenPy game cockpit *before* building (meta-work before object-level work)
+- Beginning prospect research for shop sale
 
 **What's hard:**
-- Multi-pass thinking is difficult to enforce. AI tends to skip chain steps and jump to execution.
-- Asking for multiple passes on the same problem is unnatural / hard to maintain discipline on.
-- Some things still implemented automatically (`.mdc` rules not fully deterministic)
+- The Cockpit still has automation he didn't ask for (things getting implemented without explicit approval)
+- Can't easily run multiple reasoning passes on the same problem inside Cursor — single-pass thinking is the current ceiling
+- This is a known limitation he's living with while watching for better solutions
 
-**What he's watching:**
-- Better cockpit alternatives — always on the lookout. Current stack is "good enough, not perfect."
-- Cost-efficiency as cockpit dimension: Roo Code was best for enforcement but burned €60-70/day on Opus. Cursor is cheaper but chain discipline is weaker.
-
-**What he's avoiding / deferring:**
-- Renpy game (intentional 1-week pause)
-- Blog launch pressure (relaxed about the delay)
+**What he's NOT doing this week:**
+- RenPy game creation (explicitly postponed)
+- Blog launch (delayed, not urgent)
+- No deep business operations work flagged
 
 ---
 
 ## 4. Business — Chez Julien
 
-**Strategic direction:** Operation Autonomy — push shop toward full autonomy, develop Henry as manager. Parallel track emerging: Julien is now also researching selling to chains/centralized kitchens. One prospect (multi-cheese place owner) already engaged. This is a real strategic fork: autonomy vs. exit.
+**Strategic direction: Operation Autonomy** (push shop to run without Julien → passive income while he pursues other things). Previous plan was Operation Exit (sell); current plan is autonomy-first, with sale as fallback.
+
+**Shop sale parallel track:** Julien is now also actively pursuing a sale — running both tracks simultaneously. Deep prospect research coming soon. Warm lead exists (multi-cheese place owner).
 
 **Team:**
-- **Henry** — 24 years old, full-time, invested, wants manager path. Soft manager pitch made at Feb 4 team meeting. Training and progressive responsibility handoff ongoing. Still lacks experience and structure.
-- **Lucas** — part-time/full-time (ambiguous). Good with customers. Feb 4 meeting framed him as sales focus; creative future hook offered to retain engagement.
+- **Henry** (full-time) — being developed toward managing/operating role. Key person for autonomy strategy. 24 years old, invested but needs structure and experience.
+- **Lucas** (part-time/quasi-full-time) — good with customers, sales focus. Relationship dynamic being managed carefully.
+- Feb 4 team meeting happened — foundation-laying meeting, soft manager pitch to Henry, fair-deal framing for Lucas. Big Meeting (full role restructure) planned for ~March 2026.
 
-**Feb 4 meeting outcome:** Foundation-laying meeting completed. Big Meeting (full role restructure) scheduled for March 2026.
+**Software tools:** Staffing Calendar System is built and deployed (Cloudflare Worker + Notion + Google Calendar). Setup guide and test-run docs exist. System syncs Julien's availability, detects red days, sends ntfy alerts. Status: deployed, likely operational — no active dev work flagged this week.
 
-**Staffing Calendar System:** Cloudflare Worker + Google Calendar + Notion integration built and documented (setup guide + test run doc exist). Automated sync every 30 minutes. Status of live deployment unclear from recent logs — may be operational.
-
-**Sales data project:** New BI initiative started 2026-02-22. Julien is extracting and analyzing shop sales data.
-
-**Financial note:** Building ownership (48% of building, 18-year loan) is a factor in any sale/autonomy decision.
+**Operation Autonomy status:** Setup & Planning phase, started February 2026. Several expected subfolders (01_Strategy, 02_Henry_Development, 04_Processes, 06_Metrics) may not exist yet per the reference file's own flags.
 
 ---
 
 ## 5. Tools & Stack
 
-| Layer | Tool | Status |
-|---|---|---|
-| Primary IDE | Cursor | Active — settled |
-| Skill framework | Superpowers (14-skill chain) | Active — integrated |
-| Custom skills | cockpit-repass, dancing-session, guitar-coach, update-business-status, weekly-business-plan, value-plan-review | Built and in use |
-| Enforcement attempt | Custom Modes (Planner/Executor) | Planned — not yet set up |
-| Previous harness | Roo Code | Abandoned — too expensive (€60-70/day on Opus) |
-| Model preference | Claude (Sonnet for implementation, Opus for architecture/decisions) | Cost-efficiency now a cockpit discipline |
-| OS / vault | MylifeOS (Markdown, Cursor-native) | Stable |
-| Business ops | Notion | Shop operations and staffing |
-| Staffing infra | Cloudflare Workers + Google Calendar API | Built |
-| Intel briefing | PRISM (automated morning briefing) | Running |
+| Layer | Current Choice |
+|---|---|
+| **Primary AI cockpit** | Cursor + Superpowers extension |
+| **Skill/rules system** | Custom `.cursor/skills/` — Julien-authored skills (dancing, guitar, business status, value plan, weekly business plan) |
+| **Business backend** | Notion (staffing database) + Cloudflare Workers (staffing sync) + Google Calendar |
+| **Notifications** | ntfy (`mylifeos-business` topic) |
+| **Life OS** | MyLifeOS — markdown files, CLAUDE.md / CURRENT.md / LOG.md architecture |
+| **AI approach** | LLM as execution; Julien as direction + judgment. Cockpit metaphor = structured sequences, not vibe prompting |
+
+**Known cockpit weaknesses being tolerated:**
+- Auto-implementation without confirmation
+- Single-pass reasoning ceiling
+- Actively evaluating alternatives (always on the lookout)
 
 ---
 
 ## 6. Life
 
 **Lucia:**
-- Quitting her job May 1, 2026 to go self-employed (art teaching + selling own art)
-- Julien's role: support with time and money so she can bloom
-- Joint creative projects starting: "Julien & Lucia" project folder created, first project is All We Got Is Weeks workshop
-- Meeting anniversary: 27th of each month; yearly anniversary April 27
+- Quitting her job May 1, 2026 to go self-employed (art teaching + selling her art)
+- Julien explicitly committed to supporting her with time and money through this transition
+- This is a major life context shaping everything — it's part of why autonomy/sale of the shop matters
 
-**Poncho:** Australian Shepherd, 2.5 years old. New leash design on Julien's physical products interest list.
+**Poncho:**
+- Australian Shepherd, ~2.5 years old
+- New leash design is one of Julien's physical product interests (hobby-level, not urgent)
 
-**Energy/mood:** Calm. Quiet day. No stress signals. Consolidating after an intense build week.
+**Energy/mood today:**
+- Quiet. Settled. Not in high-output mode.
+- No stress signals. Blog delay = fine. RenPy delay = intentional.
+- Feels like a thinking/consolidation day, not a building day.
 
-**Upcoming relevant dates:**
-- Lucia's job ends: May 1, 2026
-- March 2026: The Big Meeting (Henry/Lucas role restructure)
-- Blog launch: imminent (days away)
+**Upcoming dates of note:**
+- Lucia's job exit: May 1, 2026
+- Big Team Meeting (Henry/Lucas restructure): ~March 2026
+- Monthly anniversary with Lucia: 27th of each month (next: Feb 27 — tomorrow)
 
 ---
 
-*Snapshot confidence: HIGH on Cockpit status and direction. MEDIUM on business strategic fork (autonomy vs. sell — both tracks active simultaneously). LOW on Renpy and physical products (too early to read).*
+*Snapshot generated for PRISM. Ground truth: Julien's own words. Activity log and file modifications used to fill detail. CLAUDE.md used for stable identity only.*

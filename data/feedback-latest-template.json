@@ -1,11 +1,12 @@
 {
-  "date": "2026-02-25",
+  "date": "2026-02-26",
   "briefingRating": null,
   "mustReads": [],
   "sections": {
     "SIGNAL": null,
     "MUST_READ_LIST": null,
     "BUILDER_INTELLIGENCE": null,
+    "GAME_DEV_INTELLIGENCE": null,
     "PIONEER_ADVANTAGE": null,
     "TOOLS_TO_TRY": null,
     "BUILD_WATCH": null,
