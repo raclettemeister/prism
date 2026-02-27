@@ -1,166 +1,196 @@
-<!-- PRISM Web Intelligence — 2026-02-26 — generated 2026-02-26T06:16:56.948Z -->
+<!-- PRISM Web Intelligence — 2026-02-27 — generated 2026-02-27T06:11:29.427Z -->
 
-# Proactive Web Intelligence — 2026-02-26
+# Proactive Web Intelligence — 2026-02-27
 
 *8 of 8 searches returned results*
 
 
 
-## Query 1: Cursor agent video demo feature update February 2026
+## Query 1: Cursor Cloud Agents update February 27 2026
 
-Here is a concise summary of the most relevant recent findings:
-
----
-
-**Cursor Cloud Agents — February 24, 2026 Update**
-
-On **February 24, 2026**, Cursor launched **Cloud Agents** — fully autonomous AI coding agents running on isolated virtual machines that can build software, test it themselves, **record video demos of their work**, and produce merge-ready pull requests. Each agent runs in its own isolated VM with a full development environment and produces merge-ready PRs with artifacts including **videos, screenshots, and logs** to make it easy to quickly review their changes.
-
-Developers can hand off complex tasks to Cursor's updated agents, and those agents can test and iterate on features until they are complete, allowing developers to spend less time editing files and more time focusing on questions of taste and judgment. Cloud agents are accessible anywhere you use Cursor, including **web, desktop, mobile, Slack, and GitHub**.
-
-Notably, **30% of Cursor's own merged pull requests** are now created by these agents.
-
-**Key sources:**
-- Cursor official blog/announcement: https://cursor.com/blog/agent-computer-use
-- Cursor Changelog: https://cursor.com/changelog
-- CNBC coverage: https://www.cnbc.com/2026/02/24/cursor-announces-major-update-as-ai-coding-agent-battle-heats-up.html
-
-## Query 2: Claude Code remote control Max plan changelog February 26 2026
-
-Here is a concise summary of the most relevant recent findings:
+Here is a concise factual summary of the most relevant findings:
 
 ---
 
-Anthropic introduced a new Claude Code feature called **Remote Control**, which allows developers to continue a local coding session from a phone, tablet, or any web browser. The feature is rolling out as a **research preview to Max users**.
+**Cursor Cloud Agents — "Computer Use" Update (February 24, 2026)**
 
-It was announced on **February 24, 2026**, via Claude's official account, with the core capability being: kick off a task in your terminal and pick it up from your phone while you take a walk or join a meeting — Claude keeps running on your machine, and you control the session from the Claude app or claude.ai/code. The command to activate it is `/remote-control`.
+On **February 24, 2026**, Cursor launched **Cloud Agents with Computer Use** — each agent runs in its own isolated VM with a full development environment, and can now use the software it creates to test changes and demo its work. Cloud agents are accessible from anywhere — including the web, mobile, desktop app, Slack, and GitHub — and onboard themselves onto your codebase, producing merge-ready PRs with artifacts (videos, screenshots, and logs) to demo their changes.
 
-The Remote Control feature became available in research preview for **Max users starting February 25, 2026**, with availability for Pro users expected to follow.
-
-Alongside Remote Control, the February 2026 changelog also included reliability upgrades such as a new `claude remote-control` subcommand for external builds, an increase to the plugin marketplace git timeout (from 30s to 120s), support for custom npm registries and version pinning, and improved BashTool performance by skipping the login shell by default when a shell snapshot is available.
-
-**Key sources:**
-- Official Claude Code Docs: https://code.claude.com/docs/en/remote-control
-- Help Net Security: https://www.helpnetsecurity.com/2026/02/25/anthropic-remote-control-claude-code-feature/
-- Releasebot Changelog: https://releasebot.io/updates/anthropic/claude-code
-- Gigazine: https://gigazine.net/gsc_news/en/20260225-claude-code-remote-control/
-
-## Query 3: Simon Willison agentic engineering patterns chapter 3 February 2026
-
-Based on the search results, here is a factual summary of Simon Willison's *Agentic Engineering Patterns* guide, with a focus on Chapter 3 ("First run the tests"):
-
----
-
-Simon Willison launched *Agentic Engineering Patterns* — a living, book-shaped guide of coding practices for professional software engineers using AI coding agents like Claude Code and OpenAI Codex — publishing it on his site on **23 February 2026**. He plans to add chapters at a rate of 1–2 per week, with a policy of not publishing AI-generated writing under his own name.
-
-The **third pattern** in the series — titled **"First run the tests"** — advises starting every new agent session against an existing project with the prompt "First run the tests" (or a project-specific variant like "Run `uv run pytest`"). This four-word prompt simultaneously forces the agent to discover the test suite, learn how to run it, and establish a baseline before any changes are made. Willison's argument is that automated tests "are no longer optional when working with coding agents," since they are vital for ensuring AI-generated code actually does what it claims to do.
-
-The guide's structure as of late February 2026 includes four published chapters: "Writing code is cheap now," "Red/green TDD," "First run the tests," and "Linear walkthroughs."
-
-**Key source:** [https://simonwillison.net/guides/agentic-engineering-patterns/first-run-the-tests/](https://simonwillison.net/guides/agentic-engineering-patterns/first-run-the-tests/)
-**Introduction post:** [https://simonwillison.net/2026/Feb/23/agentic-engineering-patterns/](https://simonwillison.net/2026/Feb/23/agentic-engineering-patterns/)
-
-## Query 4: Cursor Superpowers extension update February 2026
-
-Here is a concise summary of the most relevant recent findings:
-
----
-
-**obra/superpowers Framework — Cursor Integration (as of February 2026)**
-
-The **obra/superpowers** agentic skills framework was last indexed on **20 February 2026** (commit `a0b9ec`), with documented support for installing on Cursor. The agent automatically checks for relevant skills before responding to any request, following a mandatory first-response protocol established by a bootstrap context.
-
-There is active community discussion on the Cursor forum about achieving full "Superpowers" support within Cursor, with users noting it currently works most seamlessly with Claude but seeking deeper integration for paid Cursor users. A workaround using `prpm` (a package manager) allows Cursor users to install the superpowers skill collection via `npm install -g prpm` followed by `prpm install collections/superpowers`, enabling progressive skill loading through an `AGENTS.md` file.
-
-**Separately**, for general Cursor IDE updates in February 2026: Cursor launched **cloud agents** accessible from web, mobile, Slack, and GitHub — agents run in isolated VMs, auto-create PRs with artifacts, and allow remote editing. Cursor also expanded usage limits, giving Composer 1.5 **3x** the usage of Composer 1, with a **6x** limited-time boost through **February 16**.
+The $29.3 billion AI coding startup's agents can build software, run it, and self-validate — each agent runs in its own isolated VM, removing the need to compete for local resources on a developer's laptop. Notably, 30% of Cursor's own merged pull requests are now created autonomously by cloud agents, a figure cited as evidence of real-world production viability.
 
 ---
 
 **Key Sources:**
-- obra/superpowers on DeepWiki (last indexed Feb 20, 2026): https://deepwiki.com/obra/superpowers/2.2-installing-on-cursor
-- Cursor Feb 2026 Release Notes (Releasebot): https://releasebot.io/updates/cursor
-- Cursor Community Forum discussion: https://forum.cursor.com/t/how-can-the-cursor-perfectly-support-superpowers-https-github-com-obra-superpowers/151285
+- 🔗 Official Cursor blog post: https://cursor.com/blog/agent-computer-use
+- 🔗 Official changelog: https://cursor.com/changelog/02-24-26
+- 🔗 CNBC coverage: https://www.cnbc.com/2026/02/24/cursor-announces-major-update-as-ai-coding-agent-battle-heats-up.html
 
-> ⚠️ **Note:** There is no single product called a "Cursor Superpowers *extension*" — the term refers to the open-source **obra/superpowers** skill framework being adapted for use within Cursor IDE, alongside separate Cursor platform capability updates.
+> **Note:** The specific date of **February 27, 2026** does not correspond to a distinct Cursor release — the major Cloud Agents update was officially announced on **February 24, 2026**. A secondary article dated Feb 27 on digitalapplied.com summarizes the same feature launch.
 
-## Query 5: RenPy visual novel AI workflow solo dev tools February 2026
+## Query 2: Claude Code new features release February 27 2026
 
-Here is a concise, source-backed summary of the most relevant recent findings:
-
----
-
-**Ren'Py Engine (as of early 2026):**
-
-The latest official release of Ren'Py 8 is **8.5.2 "In Good Health,"** released on **January 3, 2026**. Ren'Py 8 is recommended for all projects. Major changes in the Ren'Py 8.5 release include Live2D model support on the Web platform and Unicode 17/expanded emoji support. The engine remains **free and open-source**.
-🔗 https://www.renpy.org/ | https://lemmasoft.renai.us/forums/viewtopic.php?t=70458
+I now have solid, sourced information about the Claude Code release(s) around February 26–27, 2026. Here is a concise, cited summary:
 
 ---
 
-**AI Workflow Tools for Solo Devs:**
+## Claude Code — February 2026 Release Summary
 
-The **Ren'Py Visual Novel Assistant** is a GPT (offered by cybrix.ai) designed to help users create visual novels on the Ren'Py platform, serving as an interactive aid across all stages of the novel creation process, including formatting. Separately, a GitHub plugin called **RenPy-AutoScriptPlugin** integrates ChatGPT directly into Ren'Py to automate game dialogues and provide advanced narration tools for dynamic storytelling.
+The most significant recent Claude Code release is **v2.1.59**, tagged on **February 26, 2026**. According to the official GitHub Releases page, v2.1.59 was published on Feb 26 at 00:59 UTC by `ashwin-ant`.
+
+The key new features in v2.1.59 include: **automatic memory saving** — Claude now automatically saves useful context to auto-memory, manageable via `/memory` — and a new **`/copy` command** that shows an interactive picker when code blocks are present, allowing selection of individual code blocks or the full response.
+
+The release also improved **"always allow" prefix suggestions** for compound bash commands (e.g., `cd /tmp && git fetch && git push`) to compute smarter per-subcommand prefixes, and improved **memory usage in multi-agent sessions** by releasing completed subagent task state.
+
+On the stability side, the update also fixes an **MCP OAuth token refresh race condition** when running multiple Claude Code instances simultaneously.
+
+**Key sources:**
+- GitHub official releases: https://github.com/anthropics/claude-code/releases
+- Gradually.ai changelog: https://www.gradually.ai/en/changelogs/claude-code/
+- Releasebot tracker: https://releasebot.io/updates/anthropic/claude-code
+
+> **Note:** Your query asked about "February 27, 2026." The closest verified release is **v2.1.59 on February 26, 2026**; no distinct release specifically dated February 27, 2026 was found in public changelogs as of this search.
+
+## Query 3: RenPy alternative AI game development tools 2026
+
+I now have enough information for a well-cited, accurate summary. Let me compile the answer.
+
+Here is a concise, factual summary of the most relevant recent findings on Ren'Py alternative AI game development tools heading into 2026:
 
 ---
 
-**Practical Solo Dev AI Workflow:**
+**Context: Ren'Py's Current Standing**
 
-One documented solo-dev approach (February 2024, still widely referenced) pairs **RenPy with Google Sheets and generative AI** for a no-code/no-art-department pipeline — embracing AI-generated visuals, a checkbox system for story/character traits, and keeping QA integrated with production.
-🔗 https://marcin-rybicki.medium.com/no-code-game-dev-with-google-sheet-and-no-art-department-no-code-no-art-232ccecc85be
-
----
-
-**Key caveat:** No dedicated "February 2026" RenPy-specific AI workflow announcements were found. The most current engine news is **Ren'Py 8.5.2 (Jan 3, 2026)**, and the AI tooling ecosystem around it (GPT assistants, ChatGPT plugins, AI art pipelines) continues to evolve but without a single major new tool launching specifically in February 2026.
-
-## Query 6: selling specialty food retail shop Belgium Brussels 2026 acquisition
-
-Here is a concise, factual summary of the most relevant recent findings:
+As of July 2025, almost 23,000 visual novels made with Ren'Py were cataloged on VNDB, making it the most popular engine for indie, English-language visual novels. However, the latest official release of Ren'Py 8 is **8.5.2 "In Good Health"**, released on **January 3, 2026**. Ren'Py 8 is recommended for all projects. Ren'Py remains free and open source for commercial use.
 
 ---
 
-**Delhaize / Delfood Acquisition — Belgium, 2026**
+**Top AI-Powered Alternatives**
 
-On **26 January 2026**, the Belgian Competition Authority (BCA) approved the acquisition by **Delhaize** of **Delfood**, the owner of the **Louis Delhaize** retail chain, subject to conditions including the divestment of a number of proximity stores and petrol station shops in certain local markets.
+1. **Dream Novel** — Dream Novel is an AI-powered visual novel platform where every story adapts to your choices, enabling dynamic, branching narratives with evolving characters and immersive worlds. It requires no coding — you just write, and the AI helps build everything right in your browser. It is listed as free and proprietary.
 
-The acquisition covers all Louis Delhaize stores and other stores supplied by Delfood — **303 stores in total** — plus logistics services and headquarters in Belgium, strengthening Delhaize's position in the convenience segment of the Belgian market.
+2. **mangobox.ai** — A visual novel maker powered by AI, available on a freemium model, with a Pro plan at **$9.00/month** (unlimited stories, chat, and images). The latest product to identify Ren'Py as a direct competitor is mangobox.ai.
 
-As a condition of approval, **six Delfood convenience stores** (including one at **Franklin Roosevelt, Brussels**) and **one Shop&Go Delhaize store** (Antwerp Central Station) must be transferred to a different operator, and other affiliated stores are granted greater contractual autonomy to compete more freely with Delhaize-owned outlets. This regulatory clearance paved the way for the **official sale to be finalised by the end of January 2026**.
+3. **Pixi'VN** — Pixi'VN is described as a very versatile and powerful visual novel/2D game engine; it is based on JavaScript/TypeScript and uses the PixiJS library for rendering, enabling developers to build with their favorite JS frameworks.
+
+4. **WebGAL** — WebGAL is a powerful, free visual novel engine that allows users to create interactive stories with a user-friendly visual editor and customizable scripting, supporting cross-platform development and offering Pixi.js effects.
+
+---
+
+**Broader AI Game Dev Landscape (2026)**
+
+For broader AI game development, Unity ML-Agents leads for intelligent NPC behavior, while Ludo.ai excels at market research and asset generation. AI game development capabilities are no longer optional for competitive success — studios that embrace these tools ship faster, iterate quicker, and compete better.
 
 ---
 
 **Key Sources:**
-- RetailDetail EU: https://www.retaildetail.eu/news/food/delhaize-receives-green-light-for-delfood-acquisition-but-must-sell-some-stores/
-- ESM Magazine: https://www.esmmagazine.com/retail/delhaizes-delfood-deal-approved-by-belgian-competition-authority-304876
-- Concurrences: https://www.concurrences.com/en/bulletin/news-issues/january-2026/the-belgian-competition-authority-conditionally-approves-a-retail-grocery
+- Ren'Py official: https://www.renpy.org/
+- AlternativeTo (Ren'Py alternatives): https://alternativeto.net/software/renpy/
+- SaaSHub (mangobox.ai pricing): https://www.saashub.com/best-visual-novel-engine-software
+- VNDev Wiki (engine market stats): https://vndev.wiki/Visual_novel_engine
+- Elsner AI Game Dev Tools 2026 (Dec 30, 2025): https://www.elsner.com/ai-game-development-tools/
 
-## Query 7: micro-SaaS builder solo founder published February 26 2026
+**Bottom line:** Ren'Py remains dominant and actively maintained (v8.5.2, Jan 2026), but AI-native no-code alternatives like Dream Novel and mangobox.ai ($9/month Pro) are gaining significant traction, particularly for creators who want to skip scripting entirely.
 
-The search result for the most relevant article (result [0]) has very limited content available beyond the excerpt. Let me check if the page age aligns more precisely with February 26, 2026.The most relevant result matching your query is the following:
+## Query 4: Windsurf Lovable Bolt.new update release February 27 2026
+
+I now have enough data to provide a well-sourced summary. Let me compile the findings.Here is a concise, sourced summary of the most relevant updates for **Windsurf**, **Lovable**, and **Bolt.new** around **February 27, 2025** (note: no major releases appear to have been specifically dated February 27, 2026, as that date is in the future):
 
 ---
 
-**"From 0 to $2,500: My 6-Step Framework for Building Micro SaaS as a Solo Founder"** was published in February 2026 (approximately 3 weeks ago) by an author named **NAJEEB** in the *Write A Catalyst* publication on Medium. The author draws on over ten years of experience in software development to outline a 6-step framework for solo founders looking to build and monetize a micro-SaaS product — specifically documenting a path from $0 to **$2,500 in revenue**.
+### 🌊 Windsurf (Codeium)
 
-**Source:** [https://medium.com/write-a-catalyst/from-0-to-2-500-my-6-step-framework-for-building-micro-saas-as-a-solo-founder-fba5d545b97c](https://medium.com/write-a-catalyst/from-0-to-2-500-my-6-step-framework-for-building-micro-saas-as-a-solo-founder-fba5d545b97c)
+On **February 25, 2025**, Windsurf Editor **v1.3.9** added Claude 3.7 Sonnet as a new premium model for Cascade, costing 1.0 user prompt credits per message and 1.0 flow action credits per tool call, with Thinking mode available at a 1.5x credit multiplier. On **February 28, 2025**, **v1.3.10** followed with improvements to Cascade credit usage for Claude 3.7 Sonnet, MCP fixes for incorrectly formatted JSON tools, better MCP error handling, and an option for Cascade to view/edit `.gitignore` files.
+📎 Source: [windsurf.com/changelog](https://windsurf.com/changelog)
 
-> **Note:** The search result confirms a February 2026 publication date, consistent with your query's target date of February 26, 2026, but I cannot independently verify the exact day (the 26th) from available metadata. The article content retrieved was limited to the teaser excerpt (it's behind Medium's paywall), so further detail on the 6 steps themselves was not accessible.
+---
 
-## Query 8: AI assisted 3D asset generation game dev tools February 2026
+### ⚡ Bolt.new
+
+Around the same period, **Bolt.new** upgraded its agent to run **Claude 3.7 Sonnet** and introduced **Dynamic Reasoning** — a feature that lets the AI dynamically choose how hard to "think" when tackling complex problems. Claude 3.7 Sonnet launched live on all projects, while Dynamic Reasoning entered preview and could be enabled via **Settings > Feature Previews**, though it initially only supported smaller projects.
+📎 Source: [x.com/boltdotnew](https://x.com/boltdotnew/status/1894778779366785111) | [rivalsense.co (Feb 28)](https://rivalsense.co/intel/bolt-new-latest-news-updates-feb-28-2025-release/)
+
+---
+
+### 💜 Lovable
+
+Lovable's changelog around this period highlighted a major agentic upgrade — describing the platform as "a truly agentic partner" capable of interpreting requests, understanding codebases, executing complex multi-step edits across files, integrating with external tools, and **reducing errors by 91%**. An earlier update on **January 28, 2025** had launched a Builder.io + Figma integration enabling seamless design-to-app workflows.
+📎 Source: [docs.lovable.dev/changelog](https://docs.lovable.dev/changelog) | [feedback.lovable.dev/changelog](https://feedback.lovable.dev/changelog)
+
+---
+
+**Key theme across all three platforms around late February 2025:** The integration of **Claude 3.7 Sonnet** (released by Anthropic ~Feb 24–25, 2025) was the dominant catalyst, with Windsurf and Bolt.new both racing to adopt it within days of its release.
+
+## Query 5: micro-SaaS solo founder build methodology published February 2026
+
+Based on my research, here is a concise, factual summary of the most relevant recent findings on **micro-SaaS solo founder build methodology published in February 2026**:
+
+---
+
+The most directly relevant piece published in **February 2026** is by a developer writing under the name NAJEEB in the *Write A Catalyst* publication on Medium. Titled *"From 0 to $2,500: My 6-Step Framework for Building Micro SaaS as a Solo Founder,"* it was published in February 2026 and draws on the author's 10+ years in software development and experience launching three Micro SaaS products that "started generating profits almost instantly on autopilot." The framework's core premise is that "building and exiting a Micro SaaS is a completely different story" from traditional IT companies — one that a solo founder can actually win — and it positions itself explicitly as a practical roadmap, not theory, used to go "from zero to thousands in monthly revenue." A key philosophical pillar of the methodology is to avoid the trap of seeking a unique idea: "The first mistake most founders make is wasting months looking for a unique idea. You must stop this immediately. Just start."
+
+A companion piece by the same author, also from **February 2026**, is titled *"5 Profitable Micro SaaS Ideas You Can Build in 2026,"* which identifies five specific Micro SaaS opportunities with the potential to hit **$15,000 MRR within one year**, emphasizing that "the secret is not to invent a new market but to find expensive problems that businesses are already desperate to solve."
+
+**Source URLs:**
+- 🔗 [From 0 to $2,500: My 6-Step Framework (Feb 2026)](https://medium.com/write-a-catalyst/from-0-to-2-500-my-6-step-framework-for-building-micro-saas-as-a-solo-founder-fba5d545b97c)
+- 🔗 [5 Profitable Micro SaaS Ideas for 2026 (Feb 2026)](https://medium.com/write-a-catalyst/5-profitable-micro-saas-ideas-you-can-build-in-2026-80f3aeb97e49)
+
+> ⚠️ **Important caveat:** The 6-step framework article is behind Medium's paywall for non-members, so the specific names of all six steps were not fully retrievable via search. I was able to confirm the article's existence, publication date (February 2026), and its top-level methodology — but I cannot verify every granular step without direct access. I recommend visiting the URLs above for the complete, authoritative detail.
+
+## Query 6: Belgium specialty food retail acquisition chains centralized kitchen buyers 2026
 
 Here is a concise, sourced summary of the most relevant recent findings:
 
 ---
 
-**AI-Assisted 3D Asset Generation for Game Dev — Early 2026**
+**Belgium Specialty Food Retail, Acquisitions & Centralized Kitchen Buyers — 2026**
 
-By early 2026, AI adoption in game development has moved from speculation to pragmatic industrial integration. Approximately **50% of studios** have actively deployed AI in their development pipelines, with nearly **97% of developers** leveraging AI-assisted tools for some form of asset creation.
+The most significant recent development is Delhaize Belgium's major chain consolidation. On **February 2, 2026**, Ahold Delhaize announced that Delhaize Belgium completed the acquisition of **Delfood NV**, comprising **303 stores** in Belgium (all *Louis Delhaize* stores and those supplied through Delfood), plus logistics services and the Belgian headquarters — expanding Delhaize's network to a total of **1,109 stores** across Belgium and Luxembourg. The Belgian Competition Authority (BCA) granted conditional approval, clearing the deal by end of January 2026.
 
-However, a critical distinction has emerged between "generation" and "assistance" — the dream of a text-to-world button remains technically unfeasible for high-end production. Instead, the industry has adopted a **hybrid workflow** where AI serves as an accelerator for specific, labor-intensive sub-tasks such as retopology, texture upscaling, and set dressing, evaluated against engines like **Unreal Engine 5.7**.
+On the **centralized kitchen / specialty food** side, **BON** (Juice & Lunch Bar, backed by Colruyt Group with a 45.65% stake acquired in September 2024) is expanding its **central kitchen in Sint-Lambrechts-Woluwe to 1,500 m²**, supplying its own stores as well as all *Okay City* stores and fifty *Okay* stores of Colruyt Group, plus B2B customers — with three new BON locations planned for 2026.
 
-For indie developers, leading tools in February 2026 include **Tripo AI**, which stands out as one of the fastest and most comprehensive tools for game-ready 3D assets — handling modeling, texturing, retopology, and rigging all in one pipeline from simple text or image prompts. Competing platforms like **Meshy** support batch generation (e.g., 50 props in ~2 hours vs. 2 weeks of manual modeling), while **Rodin** is favored for hero asset quality.
-
-On January 29, 2026, **Ludo.ai** launched its API and Model Context Protocol (MCP) integration, enabling AI-powered game asset creation — including 2D-to-3D model conversion, sprite animation, and sound generation — directly within developer workflows.
+For specialty food buyers and exporters, trade shows like **Tavola** are highlighted as particularly effective for reaching Belgian buyers of premium, artisanal, and differentiated specialty food products, with Belgian buyers noted for moving fast post-show on pricing, specs, and samples.
 
 **Key sources:**
-- 📄 *The State of AI in AAA Game Production* (Feb 2026, Medium): https://davidasmith.medium.com/the-state-of-ai-in-aaa-game-production-b7d949df4daa
-- 📄 *Top 5 AI Tools for 3D Modeling and Indie Game Dev* (Feb 2026, Medium): https://medium.com/activated-thinker/top-5-ai-tools-for-3d-modeling-and-indie-game-development-761571d43162
-- 📄 *Ludo.ai API & MCP Launch* (Jan 29, 2026): https://ludo.ai
+- Ahold Delhaize press release (Feb 2, 2026): https://newsroom.aholddelhaize.com/ahold-delhaize-announces-that-delhaize-belgium-completes-its-acquisition-of-delfood/
+- RetailDetail EU (Jan 13, 2026): https://www.retaildetail.eu/news/food/lunch-chain-bon-continues-to-grow-with-the-support-of-colruyt-group/
+- Grocery Trade News Belgium: https://www.grocerytradenews.com/trade-shows-in-belgium-2025-2026/
+
+## Query 7: AI assisted 3D asset generation game dev tools solo developer February 2026
+
+Here is a concise summary of the most relevant recent findings:
+
+---
+
+**AI-Assisted 3D Asset Generation for Solo Game Developers — Early 2026**
+
+The landscape of 3D content creation is undergoing a major shift driven by generative AI — tools like **Tencent's Hunyuan3D** (open-source, supports text-to-3D and image-to-3D, available for local deployment) and **Sloyd** (procedural + AI, optimized for game-ready hard-surface assets like weapons and furniture) are standout options in February 2026.
+
+Platforms such as **3DAIStudio** highlight a practical solo-dev pipeline: use **Tripo** models for characters (clean quad topology, auto-rigging), **Meshy** for props/environment objects, and **Rodin** for hero assets — all under one subscription covering the entire asset pipeline, with generation times of 30–60 seconds per asset.
+
+A documented two-week solo game-demo sprint using **Tripo 2.5** + Unreal Engine found that feeding Midjourney concept art into Tripo auto-retopologizes and converts 2D art into a textured 3D mesh in minutes; combined with Character Creator's **AccuRIG** and **iClone 8** for animation, a process normally taking weeks was completed in days.
+
+**Ludo.ai** launched its API and Model Context Protocol (MCP) integration on **January 29, 2026**, enabling automated game asset workflows; a February 24, 2026 case study showed indie studio FireBrick Games used it to generate and animate an entire enemy cast for a roguelite deckbuilder, with each sprite animation taking just 2–3 minutes.
+
+**Key sources:**
+- https://www.3daistudio.com/3d-generator-ai-comparison-alternatives-guide/best-3d-generation-tools-2026/10-ai-3d-tools-game-devs-text-to-playable-assets-2026
+- https://medium.com/echo3d/10-generative-ai-tools-for-3d-asset-creation-57eae3a5c323
+- https://www.tripo3d.ai/blog/two-week-solo-game-dev
+- https://ludo.ai/
+
+## Query 8: Substack API publish script Python breaking change 2026
+
+Based on my research, here is a concise, factual summary of the most relevant findings:
+
+---
+
+**Summary:**
+
+On **March 2, 2025**, Nick Hagar announced the **1.0 release** of his `substack-api` Python package, describing it as "a significant overhaul from the previous 0.1 version, transforming it from a collection of functions into a full-fledged, object-oriented library." The latest release on PyPI is dated **November 3, 2025**, and requires **Python ≥ 3.12**.
+
+The most significant real-world **breaking change** affecting all Substack API publish scripts is an **authentication shift**: Substack's default access method is now via email address with a **"magic link"** sent to the user's inbox — removing the password entirely. Passwords are still possible for users who signed up before 2023, but in 2026, users must actively choose to create one. This means older Python scripts that passed `email=` and `password=` credentials directly to `Api()` may silently fail for newer accounts, and the recommended workaround is now **cookie-based authentication** (`cookies_path` or `cookies_string`). Both the GitHub repo and PyPI package for `substack_api` explicitly warn that "APIs may change without notice, potentially breaking functionality."
+
+**Key sources:**
+- Nick Hagar's v1.0 release post (March 2, 2025): https://attentionmarkets.substack.com/p/new-release-substack-api-python-package
+- `substack-api` on PyPI (v released Nov 3, 2025, Python ≥3.12): https://pypi.org/project/substack-api/
+- `python-substack` on PyPI (cookie auth workaround): https://pypi.org/project/python-substack/
+- Substack magic-link auth context: https://www.csoonline.com/article/4128287/substack-data-breach-leaks-users-email-addresses-and-phone-numbers.html
