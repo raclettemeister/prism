@@ -1,115 +1,119 @@
-<!-- PRISM Life Context — Auto-generated 2026-02-27T06:07:22.751Z -->
+<!-- PRISM Life Context — Auto-generated 2026-02-28T04:13:58.619Z -->
 <!-- Source: context-note.md + LOG (3d) + 15 recent files -->
 <!-- Model: claude-sonnet-4-6 -->
-# LIFE CONTEXT SNAPSHOT — Julien
-**Generated:** 2026-02-27
+# LIFE CONTEXT SNAPSHOT — PRISM
+**Generated:** 2026-02-28 | **For:** AI Intelligence Briefing
 
 ---
 
-## 1. Right Now
+## 1. RIGHT NOW
 
-Julien is in a post-build consolidation phase. A major sprint just landed: the full 5-skill blog pipeline (brainstorm → extract → draft → review → publish) is complete and operational in Cursor, including a working Substack publish script for The Dishwasher Generation. The Projects/ folder was reorganized into 7 categories. The Sale Intelligence suite (12 files, full valuation and prospect kit) is complete. Blog launch is delayed by a few days — he's noted it explicitly and is fine with it. Energy reads as calm and stable, not urgent.
-
----
-
-## 2. This Week — Active Projects
-
-**Blog Pipeline (Dishwasher Generation + julien.care)**
-- All 5 skills built and live in `.cursor/skills/`: blog-1-brainstorm through blog-5-publish
-- Substack publish script operational (`substack_publish.py`) with auth, create, push, and frontmatter write-back
-- Blog launch delayed a few days — acknowledged, no stress
-- Next step: actually run a post through the pipeline end-to-end
-
-**Cockpit / AI Workflow**
-- Settled on: **Cursor + Superpowers skill set + custom skills and rules**
-- Known limitations: still implements things automatically sometimes; hard to request multiple passes on the same thinking
-- Actively watching for a better cockpit — defines "cockpit" as the harness + environment + architecture + workflow (not just prompting an LLM)
-- This framing is stable; not changing tools imminently
-
-**Sale Intelligence Suite**
-- Complete: 12 files, full valuation + prospect kit
-- Julien is planning deep research to find prospects for selling the retail shop — focus on chains and centralized kitchens
-- Already has a multi-cheese place owner interested
-- Status: kit ready, prospecting research next
-
-**RenPy Game**
-- Postponed at least one week
-- Julien is using the pause to think through what his cockpit for game creation will look like before starting
-- Not dead — deliberately parked
-
-**Physical Products / Making**
-- Active interest: furniture building, new leash design for Poncho
-- Exploring how AI can assist physical design and fabrication
-- Thinking about 3D printers
-- No concrete project started yet — ideation phase
-
-**System Maintenance (2026-02-26)**
-- Full coherence audit done: LOG.md, CURRENT.md, NOW.md, Projects/README.md, Business/README.md, all STATUS files
-- Found stale entries across the board (statuses frozen at Feb 22, 3-day log gap, NOW.md 8 days behind)
-- Fixed: stale project statuses, NOW.md updated, Business/README.md cleaned
-- CURRENT.md queued for rewrite — not yet done
+Julien is in a state of self-diagnosed obsession — his own word. He knows he's out of balance, knows he's missing life, and hasn't yet resolved what to do about it. Today was a heavy system-building day: Mac Mini → MacBook Pro migration scripts, documentation standards, a game project setup plan. He's layering complexity and delegating execution to AI — this is the mode he's in, and he's questioning whether it's the right one.
 
 ---
 
-## 3. Priorities & Struggles
+## 2. THIS WEEK — ACTIVE PROJECTS
 
-**What matters most right now:**
-- Getting the blog actually launched (pipeline is built, delay is fine, but publishing is the real goal)
-- Prospecting for the shop sale — deep research into chains and centralized kitchens
-- Maintaining the cockpit: Cursor + custom skills is working, keep refining
+**System / Infrastructure (HOT — most activity this week)**
+- Mac migration: designed the migration script architecture, wrote implementation plan, added MANUAL-STEPS.md and TROUBLESHOOTING.md, updated README.md. This is a real hardware transition, not a hobby project.
+- Documentation standard: updated today. He's codifying how the system works, not just using it.
+- NightCrawler (automated vault logging): running daily, generating reports. Infrastructure is live.
 
-**What's hard:**
-- Cursor still auto-implements sometimes without being asked
-- Difficult to get multiple passes on the same reasoning — single-pass LLM limitation he hasn't solved yet
-- He's watching for a better cockpit but hasn't found one
+**Game Project (NEW — appeared today)**
+- `Projects/Game Project/SETUP PLAN.md` created today. No prior activity in the log. This is fresh — possibly an impulsive start, possibly a deliberate new direction. Unknown scope.
 
-**What's parked (intentionally):**
-- RenPy game — one week minimum
-- Physical products — ideation only
+**Blog Pipeline (ACTIVE — files modified this week)**
+- 5-skill pipeline is fully built and documented: brainstorm → extract → draft → review → publish.
+- Substack publish automation (blog-5) is live with Python script and cookie auth.
+- Two platforms: `julien.care` (personal, friend energy) and `The Dishwasher Generation` (builder/Substack).
+- No evidence of a post actually being written this week — the pipeline exists, content production unclear.
 
-**What's NOT mentioned / likely backgrounded:**
-- Guitar, dancing — skills exist in the vault but no recent session logged
-- Operation Autonomy / Henry development — no recent activity in log
+**System Coherence (COMPLETED this week)**
+- Feb 26: full audit of LOG.md, CURRENT.md, NOW.md, Projects/README.md, Business/README.md, all STATUS files. Found everything stale (3-day gap, NOW.md 8 days behind, statuses frozen at Feb 22). Fixed. System is now current.
 
----
-
-## 4. Business — Chez Julien
-
-**Strategic direction:** Dual-track. Operation Autonomy is the official frame (build toward shop running without Julien). But the Sale Intelligence suite being complete and the prospect research planned signals the sell path is actively being explored in parallel — not archived.
-
-**Sale prospecting:** Julien is preparing to do deep research for selling the shop. Target buyers: chains, centralized kitchens. One warm lead already exists (multi-cheese place owner). The prospect kit is ready.
-
-**Team:** No team updates in the last 3-day log. Last substantive team context is the February 4 meeting (Henry soft-pitched on manager path; Lucas asked to focus on sales/floor). Henry development and the "Big Meeting" (originally March 2026) are presumably coming but not actively in focus this week.
-
-**Operation Autonomy:** Structurally set up (folder exists, strategy documented) but no active work logged recently. The autonomy push and the sell prep are running in parallel — Julien has noted this is fine since the work is the same either way.
+**Dancing / Guitar / Creative (PARKED this week)**
+- Skills exist (dancing-session, guitar-coach). No log activity this week. Not the focus.
 
 ---
 
-## 5. Tools & Stack
+## 3. PRIORITIES & STRUGGLES
 
-| Layer | What he's using |
-|---|---|
-| **Primary cockpit** | Cursor + Superpowers skill set + custom skills + custom rules |
-| **Skills built** | blog-1 through blog-5, dancing-session, guitar-coach, update-business-status, value-plan-review, weekly-business-plan |
-| **Publishing** | Substack (The Dishwasher Generation) via `substack_publish.py` |
-| **Vault** | MyLifeOS — markdown files, local |
-| **Automation** | NightCrawler (auto-logs context notes, nightly reports) |
-| **Intelligence** | PRISM (morning AI briefing system) |
-| **Known friction** | Auto-implementation, single-pass reasoning limits in Cursor |
-| **Watching for** | Better cockpit — harness + environment + architecture + workflow |
+**What he said (his words, exact):**
+> "It's all about leverage, layers of complexity, handling more complex, giving AI more work."
+> "I'm not balanced enough. I'm obsessed. That's not good."
+> "While I'm obsessed I'm missing out on life."
+> "So what's the plan?"
+
+**What this means:**
+- He's in deep builder mode — the Mac migration, the game project, the documentation standards, the blog pipeline. All of this is systems work and infrastructure. It energizes him. It also consumes him.
+- He knows the obsession is a problem. He's not in denial. But he doesn't yet have a plan to correct it.
+- The 50/50 rule (half life, half investment) is almost certainly violated this week. Investment is dominating.
+- The "what's the plan?" is an open question — he's asking it of himself, not answering it. This is the live tension as of Feb 28.
+
+**Patterns to flag:**
+- His own CLAUDE.md flags this: "I tend to overinvest in creative projects (Tier 1) while undertending life and relationships." This week confirms the pattern.
+- He also notes: "I sometimes avoid simple human conversations by building automated systems instead." The Mac migration and documentation work could be a form of this.
+- The game project appearing today — new project started while already imbalanced — fits his known founder pattern: build the machine, not operate it, and start new machines before old ones are running.
+
+**What he's avoiding (inferred):**
+- The Value Plan review / weekly reflection (no evidence it happened this week).
+- Life — Lucia, Poncho, presence. No mention in the log.
+- The business operational work (see below).
 
 ---
 
-## 6. Life
+## 4. BUSINESS — CHEZ JULIEN / OPERATION AUTONOMY
 
-**Lucia:** Quitting her job May 1, 2026 to go self-employed (art teaching + selling her art). Julien is financially and emotionally supporting this transition. Today is the 27th — their monthly meeting anniversary.
+**Status: Strategically clear, operationally quiet this week.**
 
-**Poncho:** Australian Shepherd, 2.5 years old. New leash design is one of Julien's physical product interests.
+- Operation Autonomy is the frame: make Chez Julien run without Julien. Henry → manager track. Lucas → sales focus. More student staff for simple tasks.
+- The Feb 4 team meeting happened. Julien told them about Lucia quitting in May, framed it as an exciting transition, soft-pitched Henry on the manager path, asked Lucas for sales focus. The "big meeting" (Option 2 — full role restructure) is scheduled for March 2026.
+- **This week: zero business activity in the log.** No meeting notes, no STATUS updates, no Operation Autonomy work. Business/STATUS.md freshness is unknown but likely stale given the Feb 26 coherence audit found everything stale.
+- Henry: doing well, invested, 24 years old, lacks structure, needs training. Key person for autonomy.
+- Lucas: questionable, good with customers, tendency to grab cognitive tasks he shouldn't.
+- Lucia quitting May 1 is the hard deadline shaping everything — Julien needs the shop more autonomous by then, and needs bandwidth to support her transition.
 
-**Energy/mood:** Reads as calm and grounded. Recent sprint (blog pipeline, project reorganization, Sale Intelligence suite) was a big day — now in a quieter phase. Blog delay noted without distress. No urgency signals in recent words.
-
-**Upcoming relevant date:** Lucia's job transition — May 1, 2026. No immediate personal deadlines flagged.
+**Recommendation for briefing:** Flag that the March "big meeting" is approaching and no visible prep work is in the log this week.
 
 ---
 
-*Snapshot confidence: HIGH on current projects and stack. MEDIUM on business/team state (no fresh data this week). LOW on health/energy metrics (not mentioned).*
+## 5. TOOLS & STACK
+
+**Hardware (in transition):**
+- Mac Mini → MacBook Pro migration is the current hardware project. Scripts being written. Not yet complete.
+
+**AI / Software:**
+- PRISM: automated morning intelligence briefing (this system).
+- NightCrawler: automated nightly vault logging. Running daily (confirmed by 05:41 log entry today).
+- Cursor: primary IDE for vault/code work. Skills system (.cursor/skills/) is active and expanding.
+- Substack Python automation: live for The Dishwasher Generation publishing.
+- MyLifeOS: Obsidian-style markdown vault. The operating system for his life.
+
+**Models / Platforms:**
+- Not specified in recent files. PRISM and Cursor are the primary AI surfaces.
+
+---
+
+## 6. LIFE
+
+**Lucia:**
+- Quitting her job May 1, 2026 to go self-employed (art teaching + selling). This is 61 days away.
+- Julien needs to support her financially and with his presence. Currently, the obsession mode is pulling in the opposite direction of presence.
+- Meeting anniversary: 27th of each month (next: March 27).
+
+**Poncho:**
+- Australian Shepherd, 2.5 years old. No mentions in this week's log. Likely being walked but not a focus.
+
+**Energy / health:**
+- No explicit data this week. The obsession self-diagnosis suggests high cognitive load, possibly low restorative activity (no dancing, no guitar sessions logged).
+- His own system: when tired, use the Restorative Menu, not screens. No evidence this is happening.
+
+**Key upcoming pressure:**
+- March 2026: "The Big Meeting" with Henry and Lucas — full role restructure conversation.
+- May 1, 2026: Lucia quits. Hard deadline for financial and presence bandwidth.
+
+---
+
+## SIGNAL FOR BRIEFING AI
+
+Julien is in a high-output, low-balance week. He's building well (migration, documentation, game project, pipeline). He knows it. The live question he's holding is: *what's the plan to correct the imbalance?* The briefing should not flatter the productivity — it should surface the tension he named and help him think about the plan he's asking for. He's 31, obsession-prone, excellent at building machines, poor at operating in steady-state. The correction isn't to stop building — it's to build the life structure with the same rigor he brings to the tech stack.

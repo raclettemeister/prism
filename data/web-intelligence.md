@@ -1,196 +1,171 @@
-<!-- PRISM Web Intelligence — 2026-02-27 — generated 2026-02-27T06:11:29.427Z -->
+<!-- PRISM Web Intelligence — 2026-02-28 — generated 2026-02-28T04:20:27.052Z -->
 
-# Proactive Web Intelligence — 2026-02-27
+# Proactive Web Intelligence — 2026-02-28
 
 *8 of 8 searches returned results*
 
 
 
-## Query 1: Cursor Cloud Agents update February 27 2026
+## Query 1: Cursor Cloud Agents update February 28 2026
 
-Here is a concise factual summary of the most relevant findings:
+Here is a concise summary of the most relevant findings around the **Cursor Cloud Agents** update near February 28, 2026:
 
 ---
 
-**Cursor Cloud Agents — "Computer Use" Update (February 24, 2026)**
+**Cursor Cloud Agents with Computer Use — February 24, 2026**
 
-On **February 24, 2026**, Cursor launched **Cloud Agents with Computer Use** — each agent runs in its own isolated VM with a full development environment, and can now use the software it creates to test changes and demo its work. Cloud agents are accessible from anywhere — including the web, mobile, desktop app, Slack, and GitHub — and onboard themselves onto your codebase, producing merge-ready PRs with artifacts (videos, screenshots, and logs) to demo their changes.
+On **February 24, 2026**, Cursor launched **Cloud Agents with Computer Use** — fully autonomous AI coding agents running on isolated virtual machines that can build software, test it themselves, record video demos of their work, and produce merge-ready pull requests.
 
-The $29.3 billion AI coding startup's agents can build software, run it, and self-validate — each agent runs in its own isolated VM, removing the need to compete for local resources on a developer's laptop. Notably, 30% of Cursor's own merged pull requests are now created autonomously by cloud agents, a figure cited as evidence of real-world production viability.
+Each agent can build software, test it by navigating the UI in a browser, record video proof of its work, and produce a merge-ready pull request with artifacts attached. Cloud agents are available anywhere you use Cursor, including web, desktop, mobile, Slack, and GitHub.
+
+The standout metric: **35% of Cursor's internal merged pull requests** are now created by these agents operating autonomously in cloud sandboxes — not a demo figure, but production code shipping to millions of users.
+
+This followed an earlier rollout on **February 12, 2026**, when Cursor launched long-running agents for Ultra, Teams, and Enterprise users — agents capable of running autonomously for **25 to 52+ hours**.
 
 ---
 
 **Key Sources:**
-- 🔗 Official Cursor blog post: https://cursor.com/blog/agent-computer-use
-- 🔗 Official changelog: https://cursor.com/changelog/02-24-26
-- 🔗 CNBC coverage: https://www.cnbc.com/2026/02/24/cursor-announces-major-update-as-ai-coding-agent-battle-heats-up.html
+- 📄 Official Changelog: https://cursor.com/changelog/02-24-26
+- 📰 DevOps.com (Feb 28, 2026): https://devops.com/cursor-cloud-agents-get-their-own-computers-and-35-of-internal-prs-to-prove-it/
+- 📰 NxCode deep-dive: https://www.nxcode.io/resources/news/cursor-cloud-agents-virtual-machines-autonomous-coding-guide-2026
 
-> **Note:** The specific date of **February 27, 2026** does not correspond to a distinct Cursor release — the major Cloud Agents update was officially announced on **February 24, 2026**. A secondary article dated Feb 27 on digitalapplied.com summarizes the same feature launch.
+## Query 2: Claude Code release changelog February 28 2026
 
-## Query 2: Claude Code new features release February 27 2026
-
-I now have solid, sourced information about the Claude Code release(s) around February 26–27, 2026. Here is a concise, cited summary:
+Based on the search results, here is a concise factual summary of the most relevant findings:
 
 ---
 
-## Claude Code — February 2026 Release Summary
+The most recent Claude Code release around late February 2026 is **v2.1.59**, dated **February 26, 2026**. The latest version as of that date is v2.1.59 (out of 48 total releases tracked from the GitHub source), released on February 26, 2026.
 
-The most significant recent Claude Code release is **v2.1.59**, tagged on **February 26, 2026**. According to the official GitHub Releases page, v2.1.59 was published on Feb 26 at 00:59 UTC by `ashwin-ant`.
+Key new features in this release include: Claude automatically saving useful context to auto-memory (manageable via `/memory`), a new `/copy` command with an interactive picker for selecting individual code blocks or full responses, and smarter "always allow" prefix suggestions for compound bash commands (e.g., `cd /tmp && git fetch && git push`) that compute per-subcommand prefixes instead of treating the whole command as one.
 
-The key new features in v2.1.59 include: **automatic memory saving** — Claude now automatically saves useful context to auto-memory, manageable via `/memory` — and a new **`/copy` command** that shows an interactive picker when code blocks are present, allowing selection of individual code blocks or the full response.
-
-The release also improved **"always allow" prefix suggestions** for compound bash commands (e.g., `cd /tmp && git fetch && git push`) to compute smarter per-subcommand prefixes, and improved **memory usage in multi-agent sessions** by releasing completed subagent task state.
-
-On the stability side, the update also fixes an **MCP OAuth token refresh race condition** when running multiple Claude Code instances simultaneously.
+On the bug fix side, the release addressed an MCP OAuth token refresh race condition when running multiple Claude Code instances simultaneously, and fixed shell commands not showing a clear error message when the working directory has been deleted.
 
 **Key sources:**
-- GitHub official releases: https://github.com/anthropics/claude-code/releases
-- Gradually.ai changelog: https://www.gradually.ai/en/changelogs/claude-code/
-- Releasebot tracker: https://releasebot.io/updates/anthropic/claude-code
+- Official GitHub Releases: https://github.com/anthropics/claude-code/releases
+- Official CHANGELOG.md: https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md
+- Aggregator summary: https://www.gradually.ai/en/changelogs/claude-code/
 
-> **Note:** Your query asked about "February 27, 2026." The closest verified release is **v2.1.59 on February 26, 2026**; no distinct release specifically dated February 27, 2026 was found in public changelogs as of this search.
+> **Note:** February 28, 2026 is still in the future relative to my knowledge cutoff, and no release specifically dated February 28, 2026 appeared in the search results. The closest confirmed release is **v2.1.59 on February 26, 2026**.
 
-## Query 3: RenPy alternative AI game development tools 2026
+## Query 3: Windsurf Lovable Bolt.new update release February 2026
 
-I now have enough information for a well-cited, accurate summary. Let me compile the answer.
-
-Here is a concise, factual summary of the most relevant recent findings on Ren'Py alternative AI game development tools heading into 2026:
+Here is a concise, fact-based summary of the most relevant recent findings for **Windsurf, Lovable, and Bolt.new** as of February 2026:
 
 ---
 
-**Context: Ren'Py's Current Standing**
-
-As of July 2025, almost 23,000 visual novels made with Ren'Py were cataloged on VNDB, making it the most popular engine for indie, English-language visual novels. However, the latest official release of Ren'Py 8 is **8.5.2 "In Good Health"**, released on **January 3, 2026**. Ren'Py 8 is recommended for all projects. Ren'Py remains free and open source for commercial use.
-
----
-
-**Top AI-Powered Alternatives**
-
-1. **Dream Novel** — Dream Novel is an AI-powered visual novel platform where every story adapts to your choices, enabling dynamic, branching narratives with evolving characters and immersive worlds. It requires no coding — you just write, and the AI helps build everything right in your browser. It is listed as free and proprietary.
-
-2. **mangobox.ai** — A visual novel maker powered by AI, available on a freemium model, with a Pro plan at **$9.00/month** (unlimited stories, chat, and images). The latest product to identify Ren'Py as a direct competitor is mangobox.ai.
-
-3. **Pixi'VN** — Pixi'VN is described as a very versatile and powerful visual novel/2D game engine; it is based on JavaScript/TypeScript and uses the PixiJS library for rendering, enabling developers to build with their favorite JS frameworks.
-
-4. **WebGAL** — WebGAL is a powerful, free visual novel engine that allows users to create interactive stories with a user-friendly visual editor and customizable scripting, supporting cross-platform development and offering Pixi.js effects.
+### Windsurf (February 2026 Updates)
+Windsurf's Next changelog shows a flurry of February 2026 releases: on **February 19 (v1.9552.1021)**, **Gemini 3.1 Pro** was added with limited-time promotional pricing (Low Thinking: 0.5x credits, High Thinking: 1x credits); on **February 17**, **Claude Sonnet 4.6** was added (No thinking: 2x credits, With thinking: 3x credits), along with two new models — **GLM-5** (Zhipu AI, 0.75x credits) and **Minimax M2.5** (0.25x credits). The **February 12 (v1.9552.1021)** update added full **Linux ARM64** client support (deb and rpm packaging), Plan Mode auto-switching back to Code Mode, and Cloud Configuration for Cascade Hooks for enterprise teams. A **February 21 (v1.9552.1025)** patch fixed compatibility with the GitHub Pull Requests extension.
 
 ---
 
-**Broader AI Game Dev Landscape (2026)**
-
-For broader AI game development, Unity ML-Agents leads for intelligent NPC behavior, while Ludo.ai excels at market research and asset generation. AI game development capabilities are no longer optional for competitive success — studios that embrace these tools ship faster, iterate quicker, and compete better.
-
----
-
-**Key Sources:**
-- Ren'Py official: https://www.renpy.org/
-- AlternativeTo (Ren'Py alternatives): https://alternativeto.net/software/renpy/
-- SaaSHub (mangobox.ai pricing): https://www.saashub.com/best-visual-novel-engine-software
-- VNDev Wiki (engine market stats): https://vndev.wiki/Visual_novel_engine
-- Elsner AI Game Dev Tools 2026 (Dec 30, 2025): https://www.elsner.com/ai-game-development-tools/
-
-**Bottom line:** Ren'Py remains dominant and actively maintained (v8.5.2, Jan 2026), but AI-native no-code alternatives like Dream Novel and mangobox.ai ($9/month Pro) are gaining significant traction, particularly for creators who want to skip scripting entirely.
-
-## Query 4: Windsurf Lovable Bolt.new update release February 27 2026
-
-I now have enough data to provide a well-sourced summary. Let me compile the findings.Here is a concise, sourced summary of the most relevant updates for **Windsurf**, **Lovable**, and **Bolt.new** around **February 27, 2025** (note: no major releases appear to have been specifically dated February 27, 2026, as that date is in the future):
+### Lovable (Early 2026 Updates)
+Lovable launched **Visual Edits** (a sketch UI + AI logic hybrid feature) in **January 2026**, and added **GPT-5.2 and Gemini 3 Flash** multi-model support also in January 2026. Lovable's paid plans cost **$20–25/month** for full access, with a restrictive free tier.
 
 ---
 
-### 🌊 Windsurf (Codeium)
-
-On **February 25, 2025**, Windsurf Editor **v1.3.9** added Claude 3.7 Sonnet as a new premium model for Cascade, costing 1.0 user prompt credits per message and 1.0 flow action credits per tool call, with Thinking mode available at a 1.5x credit multiplier. On **February 28, 2025**, **v1.3.10** followed with improvements to Cascade credit usage for Claude 3.7 Sonnet, MCP fixes for incorrectly formatted JSON tools, better MCP error handling, and an option for Cascade to view/edit `.gitignore` files.
-📎 Source: [windsurf.com/changelog](https://windsurf.com/changelog)
+### Bolt.new & Broader Landscape
+Bolt.new similarly carries a **$20–25/month** price tag for full access, with a restrictive free tier, and is noted for being among the most accessible browser-based prototyping tools alongside Lovable. A February 20, 2026 comparison concludes the 2026 vibe coding landscape is not winner-takes-all, with many teams using tools in combination — e.g., Lovable for prototypes and Cursor for production.
 
 ---
 
-### ⚡ Bolt.new
+**Key sources:**
+- Windsurf Changelog: https://windsurf.com/changelog/windsurf-next
+- Taskade Blog (Feb 2026 tool comparison): https://www.taskade.com/blog/best-vibe-coding-tools
+- Till Freitag comparison (Feb 20, 2026): https://till-freitag.com/en/blog/vibe-coding-tools-comparison
 
-Around the same period, **Bolt.new** upgraded its agent to run **Claude 3.7 Sonnet** and introduced **Dynamic Reasoning** — a feature that lets the AI dynamically choose how hard to "think" when tackling complex problems. Claude 3.7 Sonnet launched live on all projects, while Dynamic Reasoning entered preview and could be enabled via **Settings > Feature Previews**, though it initially only supported smaller projects.
-📎 Source: [x.com/boltdotnew](https://x.com/boltdotnew/status/1894778779366785111) | [rivalsense.co (Feb 28)](https://rivalsense.co/intel/bolt-new-latest-news-updates-feb-28-2025-release/)
-
----
-
-### 💜 Lovable
-
-Lovable's changelog around this period highlighted a major agentic upgrade — describing the platform as "a truly agentic partner" capable of interpreting requests, understanding codebases, executing complex multi-step edits across files, integrating with external tools, and **reducing errors by 91%**. An earlier update on **January 28, 2025** had launched a Builder.io + Figma integration enabling seamless design-to-app workflows.
-📎 Source: [docs.lovable.dev/changelog](https://docs.lovable.dev/changelog) | [feedback.lovable.dev/changelog](https://feedback.lovable.dev/changelog)
-
----
-
-**Key theme across all three platforms around late February 2025:** The integration of **Claude 3.7 Sonnet** (released by Anthropic ~Feb 24–25, 2025) was the dominant catalyst, with Windsurf and Bolt.new both racing to adopt it within days of its release.
-
-## Query 5: micro-SaaS solo founder build methodology published February 2026
-
-Based on my research, here is a concise, factual summary of the most relevant recent findings on **micro-SaaS solo founder build methodology published in February 2026**:
-
----
-
-The most directly relevant piece published in **February 2026** is by a developer writing under the name NAJEEB in the *Write A Catalyst* publication on Medium. Titled *"From 0 to $2,500: My 6-Step Framework for Building Micro SaaS as a Solo Founder,"* it was published in February 2026 and draws on the author's 10+ years in software development and experience launching three Micro SaaS products that "started generating profits almost instantly on autopilot." The framework's core premise is that "building and exiting a Micro SaaS is a completely different story" from traditional IT companies — one that a solo founder can actually win — and it positions itself explicitly as a practical roadmap, not theory, used to go "from zero to thousands in monthly revenue." A key philosophical pillar of the methodology is to avoid the trap of seeking a unique idea: "The first mistake most founders make is wasting months looking for a unique idea. You must stop this immediately. Just start."
-
-A companion piece by the same author, also from **February 2026**, is titled *"5 Profitable Micro SaaS Ideas You Can Build in 2026,"* which identifies five specific Micro SaaS opportunities with the potential to hit **$15,000 MRR within one year**, emphasizing that "the secret is not to invent a new market but to find expensive problems that businesses are already desperate to solve."
-
-**Source URLs:**
-- 🔗 [From 0 to $2,500: My 6-Step Framework (Feb 2026)](https://medium.com/write-a-catalyst/from-0-to-2-500-my-6-step-framework-for-building-micro-saas-as-a-solo-founder-fba5d545b97c)
-- 🔗 [5 Profitable Micro SaaS Ideas for 2026 (Feb 2026)](https://medium.com/write-a-catalyst/5-profitable-micro-saas-ideas-you-can-build-in-2026-80f3aeb97e49)
-
-> ⚠️ **Important caveat:** The 6-step framework article is behind Medium's paywall for non-members, so the specific names of all six steps were not fully retrievable via search. I was able to confirm the article's existence, publication date (February 2026), and its top-level methodology — but I cannot verify every granular step without direct access. I recommend visiting the URLs above for the complete, authoritative detail.
-
-## Query 6: Belgium specialty food retail acquisition chains centralized kitchen buyers 2026
+## Query 4: AI game development solo dev vibe coding tools February 2026
 
 Here is a concise, sourced summary of the most relevant recent findings:
 
 ---
 
-**Belgium Specialty Food Retail, Acquisitions & Centralized Kitchen Buyers — 2026**
+**AI Game Dev & "Vibe Coding" Tools — Early 2026**
 
-The most significant recent development is Delhaize Belgium's major chain consolidation. On **February 2, 2026**, Ahold Delhaize announced that Delhaize Belgium completed the acquisition of **Delfood NV**, comprising **303 stores** in Belgium (all *Louis Delhaize* stores and those supplied through Delfood), plus logistics services and the Belgian headquarters — expanding Delhaize's network to a total of **1,109 stores** across Belgium and Luxembourg. The Belgian Competition Authority (BCA) granted conditional approval, clearing the deal by end of January 2026.
+Vibe coding tools are redefining how both non-developers and experienced developers build software in 2026, with AI-powered models allowing anyone to create full-stack applications using simple natural language prompts — without deep coding expertise. For solo game developers specifically, tools like **Rosebud AI** and **Ludo.ai** enable complete game prototyping without extensive programming knowledge, with Rosebud notably tackling multiple parts of development — generating code, assets, and animations from text prompts — making it a top pick for rapid prototyping and game jam participants.
 
-On the **centralized kitchen / specialty food** side, **BON** (Juice & Lunch Bar, backed by Colruyt Group with a 45.65% stake acquired in September 2024) is expanding its **central kitchen in Sint-Lambrechts-Woluwe to 1,500 m²**, supplying its own stores as well as all *Okay City* stores and fifty *Okay* stores of Colruyt Group, plus B2B customers — with three new BON locations planned for 2026.
+Leading general vibe coding platforms as of early 2026 include **Cursor**, **Replit Agent**, **Lovable**, and **Bolt.new**, where users describe their app idea and the system generates a working prototype. Microsoft reports AI now writes roughly 30% of its code, and Google says more than a quarter of its code is AI-generated; however, MIT CSAIL research has flagged that AI-generated code can hallucinate — producing plausible-looking but non-functional or insecure output.
 
-For specialty food buyers and exporters, trade shows like **Tavola** are highlighted as particularly effective for reaching Belgian buyers of premium, artisanal, and differentiated specialty food products, with Belgian buyers noted for moving fast post-show on pricing, specs, and samples.
+According to Y Combinator, 25% of their Winter 2025 batch had codebases that were 95%+ AI-generated — a trend now moving into the game development industry.
 
 **Key sources:**
-- Ahold Delhaize press release (Feb 2, 2026): https://newsroom.aholddelhaize.com/ahold-delhaize-announces-that-delhaize-belgium-completes-its-acquisition-of-delfood/
-- RetailDetail EU (Jan 13, 2026): https://www.retaildetail.eu/news/food/lunch-chain-bon-continues-to-grow-with-the-support-of-colruyt-group/
-- Grocery Trade News Belgium: https://www.grocerytradenews.com/trade-shows-in-belgium-2025-2026/
+- Emergent.sh vibe coding tools roundup (Jan 2026): https://emergent.sh/learn/best-vibe-coding-tools
+- NeuralStackly vibe coding overview (Feb 2026): https://www.neuralstackly.com/blog/vibe-coding-ai-apps-2026
+- Elsner AI game dev tools (Dec 30, 2025): https://www.elsner.com/ai-game-development-tools/
+- DEV.to: Best AI models for agentic vibe coding in VS Code (Feb 2026): https://dev.to/danishashko/best-ai-models-for-agentic-vibe-coding-in-vs-code-december-2025-3bkd
 
-## Query 7: AI assisted 3D asset generation game dev tools solo developer February 2026
+## Query 5: procedural generation AI asset creation indie game 2026
 
-Here is a concise summary of the most relevant recent findings:
+Here is a concise, sourced summary of the most relevant recent findings:
 
 ---
 
-**AI-Assisted 3D Asset Generation for Solo Game Developers — Early 2026**
+**AI & Procedural Generation for Indie Game Development (2026)**
 
-The landscape of 3D content creation is undergoing a major shift driven by generative AI — tools like **Tencent's Hunyuan3D** (open-source, supports text-to-3D and image-to-3D, available for local deployment) and **Sloyd** (procedural + AI, optimized for game-ready hard-surface assets like weapons and furniture) are standout options in February 2026.
+The AI-in-gaming market reached **$4.54 billion in 2025** and is projected to surge to **$81.19 billion by 2035** (CAGR of 33.57%), with the AI game generator segment specifically — focused on automated asset and content creation — growing from **$1.94 billion in 2026** to **$32.48 billion by 2035** at a 31.19% CAGR.
 
-Platforms such as **3DAIStudio** highlight a practical solo-dev pipeline: use **Tripo** models for characters (clean quad topology, auto-rigging), **Meshy** for props/environment objects, and **Rodin** for hero assets — all under one subscription covering the entire asset pipeline, with generation times of 30–60 seconds per asset.
+On the production side, platforms like SEELE can generate a **2D sprite in 5–10 seconds**, a **3D model in 30–60 seconds**, and a **complete 2D game in 2–5 minutes**, with AI-generated code achieving a **94% unit test pass rate on first generation** and a **65% reduction in development time**.
 
-A documented two-week solo game-demo sprint using **Tripo 2.5** + Unreal Engine found that feeding Midjourney concept art into Tripo auto-retopologizes and converts 2D art into a textured 3D mesh in minutes; combined with Character Creator's **AccuRIG** and **iClone 8** for animation, a process normally taking weeks was completed in days.
-
-**Ludo.ai** launched its API and Model Context Protocol (MCP) integration on **January 29, 2026**, enabling automated game asset workflows; a February 24, 2026 case study showed indie studio FireBrick Games used it to generate and animate an entire enemy cast for a roguelite deckbuilder, with each sprite animation taking just 2–3 minutes.
+However, a 2026 study found that indie games using **100% AI art** struggled with Steam's AI disclosure requirements and player backlash, while games blending AI drafts with human refinement saw no negative sentiment. This tension is echoed by the **GDC 2026 State of the Game Industry Report**, which reveals that **52% of game professionals now view generative AI negatively** — up sharply from 30% in 2025.
 
 **Key sources:**
-- https://www.3daistudio.com/3d-generator-ai-comparison-alternatives-guide/best-3d-generation-tools-2026/10-ai-3d-tools-game-devs-text-to-playable-assets-2026
-- https://medium.com/echo3d/10-generative-ai-tools-for-3d-asset-creation-57eae3a5c323
-- https://www.tripo3d.ai/blog/two-week-solo-game-dev
-- https://ludo.ai/
+- https://www.jenova.ai/en/resources/ai-game-generator
+- https://www.elsner.com/ai-game-development-tools/
+- https://www.browse-ai.tools/blog/top-ai-tools-for-indie-devs-in-2026-beyond-the-ai-bubble
+- https://bix-tech.com/ai-in-game-development-in-2026-whats-actually-production-ready-and-whats-still-hype/
 
-## Query 8: Substack API publish script Python breaking change 2026
+## Query 6: micro-SaaS builder methodology published February 28 2026
 
-Based on my research, here is a concise, factual summary of the most relevant findings:
+I was unable to find any content specifically published on **February 28, 2026**, matching "micro-SaaS builder methodology." However, I can share what the most relevant recent findings actually show — and I want to be transparent with you about the search results.
+
+---
+
+No content matching a "micro-SaaS builder methodology published February 28, 2026" was found across multiple searches. That exact publication does not appear to exist in indexed web results. The closest relevant recent content includes:
+
+- A Medium article published in **February 2026** by NAJEEB titled *"From 0 to $2,500: My 6-Step Framework for Building Micro SaaS as a Solo Founder"* describes a personal framework developed after studying successful case studies and launching three Micro SaaS products that generated profits "almost instantly on autopilot." Source: [medium.com/write-a-catalyst/...](https://medium.com/write-a-catalyst/from-0-to-2-500-my-6-step-framework-for-building-micro-saas-as-a-solo-founder-fba5d545b97c)
+
+- The Lovable guide for solopreneurs references **Rob Walling's MicroConf methodology**, which recommends evaluating micro-SaaS ideas across five criteria: product (can you build a solution?), price (will customers pay enough?), and profitable unit economics, with a Weeks 1–2 plan to create a landing page and drive targeted traffic. Source: [lovable.dev/guides/micro-saas-ideas-for-solopreneurs-2026](https://lovable.dev/guides/micro-saas-ideas-for-solopreneurs-2026)
+
+- The site **buildamicrosaas.com** outlines an execution-first methodology, emphasizing that "most builders do not fail because they lack tools — they fail because they spend weeks building before validating," and recommends following a structured order of validation, focused MVP, then launch. Source: [buildamicrosaas.com](https://www.buildamicrosaas.com/)
+
+**Bottom line:** There is no verifiable publication specifically titled or dated "micro-SaaS builder methodology, February 28, 2026" in current search indexes. The date you specified may be in the future (relative to available indexed content), may refer to a paywalled/private resource, or the publication may not exist. I'd recommend verifying the source directly.
+
+## Query 7: Brussels Belgium founder startup food business news February 2026
+
+Based on the research, here is a concise summary of the most relevant recent findings on Brussels/Belgium founder startup food business news around February 2026:
 
 ---
 
 **Summary:**
 
-On **March 2, 2025**, Nick Hagar announced the **1.0 release** of his `substack-api` Python package, describing it as "a significant overhaul from the previous 0.1 version, transforming it from a collection of functions into a full-fledged, object-oriented library." The latest release on PyPI is dated **November 3, 2025**, and requires **Python ≥ 3.12**.
+**Bolder Foods**, a Belgian foodtech startup specializing in alternative dairy ingredients, announced it has shut down after failing to raise sufficient capital. Co-founder and CEO Ilana Taub confirmed the closure via LinkedIn, stating: "We didn't close the round we needed." The company had developed **MycoVeg**, a mycelium-based ingredient for plant-based cheese using submerged biomass fermentation.
 
-The most significant real-world **breaking change** affecting all Substack API publish scripts is an **authentication shift**: Substack's default access method is now via email address with a **"magic link"** sent to the user's inbox — removing the password entirely. Passwords are still possible for users who signed up before 2023, but in 2026, users must actively choose to create one. This means older Python scripts that passed `email=` and `password=` credentials directly to `Api()` may silently fail for newer accounts, and the recommended workaround is now **cookie-based authentication** (`cookies_path` or `cookies_string`). Both the GitHub repo and PyPI package for `substack_api` explicitly warn that "APIs may change without notice, potentially breaking functionality."
+As of February 2026, Belgium is home to **3 unicorn startups**, with the Food and Agriculture Tech sector accounting for one of them. The latest unicorn entrant was Deliverect, which joined the club on January 24, 2022, and no new Belgian unicorns have emerged in 2026 so far.
+
+EIT Food awarded **€600,000** in 2025 Tech Validation Funding to 18 AgriFoodTech startups across Europe at the **Next Bite 2025 event in Brussels**, aimed at helping them validate their technologies and scale toward market adoption.
 
 **Key sources:**
-- Nick Hagar's v1.0 release post (March 2, 2025): https://attentionmarkets.substack.com/p/new-release-substack-api-python-package
-- `substack-api` on PyPI (v released Nov 3, 2025, Python ≥3.12): https://pypi.org/project/substack-api/
-- `python-substack` on PyPI (cookie auth workaround): https://pypi.org/project/python-substack/
-- Substack magic-link auth context: https://www.csoonline.com/article/4128287/substack-data-breach-leaks-users-email-addresses-and-phone-numbers.html
+- Vegconomist (Bolder Foods closure & Belgium food news): https://vegconomist.com/region/europe/belgium/
+- Tracxn (Belgium unicorn data, Feb 2026): https://tracxn.com/d/unicorns/unicorns-in-belgium/
+- EU-Startups (Belgian startups to watch in 2026): https://www.eu-startups.com/2026/01/10-belgian-startups-to-watch-in-2026-and-beyond/
+
+## Query 8: Mac Mini MacBook Pro migration Apple Silicon February 2026
+
+Here is a concise summary of the most relevant recent findings:
+
+---
+
+**Mac Mini U.S. Manufacturing (February 24, 2026)**
+
+Apple announced it will move part of its Mac Mini production from Asia to the U.S., with the initiative set to begin later in 2026 at a **Foxconn facility in north Houston, Texas**. As part of this broader effort, Apple is on track to purchase well over **100 million advanced chips** produced by TSMC at its Arizona facility in 2026 — a significant increase from 2025. The move is intended to help Apple offset tariff pressures, though local production will focus on select configurations rather than a full manufacturing shift and won't dramatically alter Apple's global supply chain footprint.
+
+**Upcoming M5 Mac Mini (2026 Roadmap)**
+
+Bloomberg's Mark Gurman reported in November 2025 that Mac mini models with **M5 and M5 Pro chips** are on Apple's product roadmap for 2026, with a possible spring 2026 arrival, focusing on internal performance upgrades rather than design changes. The M5 chip is expected to offer **45% faster GPU performance** and **3.5x faster AI task** performance compared to M4, while maintaining the current 5-by-5-inch enclosure design. Pricing remains uncertain given the manufacturing shift and tariff environment.
+
+---
+
+**Key Sources:**
+- Apple Newsroom (Feb 24, 2026): https://www.apple.com/newsroom/2026/02/apple-accelerates-us-manufacturing-with-mac-mini-production/
+- MacRumors (Feb 24, 2026): https://www.macrumors.com/2026/02/23/mac-mini-us-manufacturing/
+- Macworld (M5 roundup): https://www.macworld.com/article/2964754/2026-mac-mini-m5-pro-design-specs-release-date.html
