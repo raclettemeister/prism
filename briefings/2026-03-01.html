@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PRISM — 2026-03-01</title>
+  <style>
+    :root {
+      --bg: #0f0f0f;
+      --bg-card: #1a1a1a;
+      --bg-hover: #222;
+      --text: #e5e5e5;
+      --text-muted: #888;
+      --accent: #e8743b;
+      --accent-hover: #ff8c4a;
+      --border: #2a2a2a;
+      --success: #4caf50;
+      --love: #e74c3c;
+      --ok: #3498db;
+      --skip: #666;
+      --font: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--font);
+      font-size: 16px;
+      line-height: 1.7;
+      padding: 0;
+    }
+    .container {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 40px 24px 100px;
+    }
+    /* Typography */
+    h1 { font-size: 1.6rem; font-weight: 700; color: var(--text); margin-bottom: 8px; line-height: 1.3; }
+    h2 { font-size: 1.15rem; font-weight: 600; color: var(--text); margin: 36px 0 16px; padding-bottom: 8px; border-bottom: 1px solid var(--border); }
+    h3 { font-size: 1rem; font-weight: 600; margin: 20px 0 8px; }
+    p { margin-bottom: 14px; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { color: var(--accent-hover); text-decoration: underline; }
+    ul, ol { margin: 0 0 14px 24px; }
+    li { margin-bottom: 8px; }
+    strong { font-weight: 600; color: #f0f0f0; }
+    em { color: var(--text-muted); }
+    code { background: var(--bg-card); padding: 2px 6px; border-radius: 4px; font-size: 0.9em; font-family: 'SF Mono', 'Fira Code', monospace; }
+    pre { background: var(--bg-card); padding: 16px; border-radius: 8px; overflow-x: auto; margin: 0 0 14px; }
+    blockquote { border-left: 3px solid var(--accent); padding-left: 16px; color: var(--text-muted); margin: 0 0 14px; }
+    hr { border: none; border-top: 1px solid var(--border); margin: 32px 0; }
+    table { width: 100%; border-collapse: collapse; margin-bottom: 16px; font-size: 0.9em; }
+    th { background: var(--bg-card); padding: 8px 12px; text-align: left; border-bottom: 1px solid var(--border); font-weight: 600; }
+    td { padding: 8px 12px; border-bottom: 1px solid var(--border); }
+    tr:hover td { background: var(--bg-hover); }
+    /* PRISM header */
+    .prism-header {
+      background: linear-gradient(135deg, #1a1a1a, #0f0f0f);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 24px;
+      margin-bottom: 32px;
+    }
+    .prism-header .meta { color: var(--text-muted); font-size: 0.85rem; margin-top: 6px; }
+    .prism-header .meta span { margin-right: 16px; }
+    /* Article feedback widgets */
+    .article-feedback {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 10px 14px;
+      margin: 8px 0 20px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .article-feedback::before { content: 'React: '; color: var(--text-muted); font-size: 0.85rem; }
+    .reaction-buttons { display: flex; gap: 6px; }
+    .reaction-btn {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      color: var(--text-muted);
+      padding: 4px 12px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-size: 0.85rem;
+      transition: all 0.15s ease;
+    }
+    .reaction-btn:hover { background: var(--bg-hover); color: var(--text); }
+    .reaction-btn.active-love { background: rgba(231,76,60,0.15); border-color: var(--love); color: var(--love); }
+    .reaction-btn.active-ok { background: rgba(52,152,219,0.15); border-color: var(--ok); color: var(--ok); }
+    .reaction-btn.active-skip { background: rgba(102,102,102,0.15); border-color: #666; color: #888; }
+    /* Tool feedback widgets (per tool in TOOLS TO TRY) */
+    .tool-feedback {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      margin: 8px 0 12px 0;
+      padding: 6px 10px;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      font-size: 0.9rem;
+    }
+    .tool-feedback-label { color: var(--text-muted); margin-right: 4px; }
+    .tool-reaction-btn {
+      background: transparent;
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 4px 8px;
+      cursor: pointer;
+      opacity: 0.7;
+      font-size: 1rem;
+    }
+    .tool-reaction-btn:hover { opacity: 1; }
+    .tool-reaction-btn.active-love { opacity: 1; border-color: var(--love); background: rgba(231,76,60,0.15); }
+    .tool-reaction-btn.active-ok { opacity: 1; border-color: var(--accent); background: rgba(232,117,59,0.15); }
+    .tool-reaction-btn.active-skip { opacity: 1; border-color: var(--text-muted); background: rgba(136,136,136,0.15); }
+
+    /* Section feedback widgets */
+    .section-feedback {
+      display: inline-flex;
+      gap: 4px;
+      margin-left: 10px;
+      vertical-align: middle;
+    }
+    .section-btn {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 2px 8px;
+      cursor: pointer;
+      font-size: 0.8rem;
+      opacity: 0.5;
+      transition: all 0.15s ease;
+    }
+    .section-btn:hover { opacity: 1; }
+    .section-btn.active { opacity: 1; background: var(--bg-hover); border-color: var(--accent); }
+    /* Feedback panel */
+    .feedback-panel {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 28px;
+      margin-top: 48px;
+    }
+    .feedback-panel h2 { border: none; margin-top: 0; font-size: 1.2rem; }
+    .feedback-panel .subtitle { color: var(--text-muted); font-size: 0.9rem; margin-bottom: 24px; }
+    .overall-rating { margin-bottom: 24px; }
+    .overall-rating label { display: block; font-size: 0.9rem; color: var(--text-muted); margin-bottom: 10px; }
+    .star-buttons { display: flex; gap: 8px; }
+    .star-btn {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      color: var(--text-muted);
+      width: 44px; height: 44px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1.1rem;
+      font-weight: 700;
+      transition: all 0.15s ease;
+    }
+    .star-btn:hover { background: var(--bg-hover); color: var(--text); }
+    .star-btn.active { background: rgba(232,116,59,0.15); border-color: var(--accent); color: var(--accent); }
+    .notes-area { margin-bottom: 24px; }
+    .notes-area label { display: block; font-size: 0.9rem; color: var(--text-muted); margin-bottom: 8px; }
+    textarea {
+      width: 100%;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      color: var(--text);
+      border-radius: 8px;
+      padding: 12px 14px;
+      font-family: var(--font);
+      font-size: 0.95rem;
+      resize: vertical;
+      min-height: 90px;
+    }
+    textarea:focus { outline: none; border-color: var(--accent); }
+    .submit-area { display: flex; gap: 12px; align-items: center; }
+    #submit-btn {
+      background: var(--accent);
+      color: white;
+      border: none;
+      padding: 12px 28px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1rem;
+      font-weight: 600;
+      transition: all 0.15s ease;
+    }
+    #submit-btn:hover { background: var(--accent-hover); }
+    #submit-btn:disabled { opacity: 0.5; cursor: not-allowed; }
+    #submit-status { font-size: 0.9rem; }
+    .status-success { color: var(--success); }
+    .status-error { color: #e74c3c; }
+    .status-info { color: var(--text-muted); }
+    /* Sticky submit bar */
+    .sticky-bar {
+      position: fixed;
+      bottom: 0; left: 0; right: 0;
+      background: rgba(15,15,15,0.95);
+      border-top: 1px solid var(--border);
+      backdrop-filter: blur(10px);
+      padding: 12px 24px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 16px;
+      font-size: 0.9rem;
+      z-index: 100;
+      transform: translateY(100%);
+      transition: transform 0.3s ease;
+    }
+    .sticky-bar.visible { transform: translateY(0); }
+    .sticky-bar button {
+      background: var(--accent);
+      color: white;
+      border: none;
+      padding: 8px 20px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 0.9rem;
+    }
+    /* Footer */
+    .prism-footer { color: var(--text-muted); font-size: 0.8rem; text-align: center; margin-top: 40px; padding-top: 24px; border-top: 1px solid var(--border); }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <div class="prism-header">
+    <h1>PRISM Morning Briefing</h1>
+    <div class="meta">
+      <span>📅 2026-03-01</span>
+      <span>📰 22 articles analyzed</span>
+      <span>🤖 PRISM v4.0</span>
+    </div>
+  </div>
+
+  <div id="briefing-content">
+    <h1>PRISM Morning Briefing — March 1, 2026</h1>
+<blockquote>
+<p>⚙️ <strong>Read the live briefing and react per article:</strong> <a href="https://prism.julien.care//2026-03-01.html">https://prism.julien.care//2026-03-01.html</a>
+Or edit <strong>NEWS-INTERESTS.md</strong> in Obsidian to adjust coverage.</p>
+</blockquote>
+<hr>
+<h2>🔴 THE SIGNAL</h2>
+<div class="section-feedback" data-section="SIGNAL">
+  <button class="section-btn" data-value="love" onclick="setSectionRating('SIGNAL', 'love', this)">❤️</button>
+  <button class="section-btn" data-value="ok" onclick="setSectionRating('SIGNAL', 'ok', this)">👍</button>
+  <button class="section-btn" data-value="skip" onclick="setSectionRating('SIGNAL', 'skip', this)">👎</button>
+</div>
+<p>OpenAI closed a $110B raise from Amazon, NVIDIA, and SoftBank at an $840B post-money valuation — the largest startup fundraise in history. The number that matters for builders isn&#39;t the valuation: Claude Code&#39;s share of GitHub commits jumped from 2% to 4% in a single month — a signal that AI-assisted coding is hitting real escape velocity, not just hype. If you&#39;re building micro-software, the platform you build <em>on</em> is consolidating fast.</p>
+<p>Source: <a href="https://www.latent.space/p/ainews-openai-closes-110b-raise-from">https://www.latent.space/p/ainews-openai-closes-110b-raise-from</a></p>
+<hr>
+<h2>📚 MUST-READ LIST</h2>
+<ul>
+<li><p><strong>&quot;Agentic Engineering Patterns: Interactive Explanations&quot;</strong> by Simon Willison — simonwillison.net (<a href="https://simonwillison.net/guides/agentic-engineering-patterns/interactive-explanations/#atom-everything">link</a>)</p>
+<ul>
+<li>Why read it: Willison introduces a concrete technique for combating the specific problem you will hit as your Cursor-built projects grow — you stop understanding what the agent wrote. He calls it cognitive debt, and this chapter shows how to pay it down using animated, interactive walkthroughs generated on demand.</li>
+<li>Cross-fed by: simonwillison.net (Tier 1)</li>
+<li>Conversation value: Decide whether to add an &quot;explain this&quot; step to your Cursor skill workflow before your projects get complex enough that you can&#39;t reason about them anymore.</li>
+</ul>
+</li>
+<li><p><strong>&quot;[AINews] OpenAI closes $110B raise&quot;</strong> — Latent Space (<a href="https://www.latent.space/p/ainews-openai-closes-110b-raise-from">link</a>)</p>
+<ul>
+<li>Why read it: The Anthropic vs. US Department of Defense saga buried in this issue is the more important story for builders — Anthropic publicly refused to enable mass domestic surveillance and autonomous weapons. This is a values + market-positioning moment that affects which tools you want to be dependent on.</li>
+<li>Cross-fed by: latent.space (Tier 1)</li>
+<li>Conversation value: Form a view on builder platform risk. If Anthropic gets supply-chain-designated, what does that mean for your Cursor setup and Claude Code dependency?</li>
+</ul>
+</li>
+<li><p><strong>&quot;Dylan Patel on $200B AI CapEx and Why Google Might Have No Profits in 2027&quot;</strong> — Latent Space (<a href="https://www.latent.space/p/dylanpatel-cooking">link</a>)</p>
+<ul>
+<li>Why read it: Dylan Patel argues that coding agents are the first real trillion-dollar unlock — and he&#39;s the analyst hyperscalers and hedge funds actually call. This is the macro frame for your 6-month horizon decision.</li>
+<li>Cross-fed by: latent.space (Tier 1)</li>
+<li>Conversation value: If the coding agent market is genuinely the first trillion-dollar AI unlock, what does that mean for a micro-software builder who already lives in Cursor? You&#39;re already positioned. The question is what to build <em>on top of</em> that wave.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2>🧱 BUILDER INTELLIGENCE</h2>
+<div class="section-feedback" data-section="BUILDER_INTELLIGENCE">
+  <button class="section-btn" data-value="love" onclick="setSectionRating('BUILDER_INTELLIGENCE', 'love', this)">❤️</button>
+  <button class="section-btn" data-value="ok" onclick="setSectionRating('BUILDER_INTELLIGENCE', 'ok', this)">👍</button>
+  <button class="section-btn" data-value="skip" onclick="setSectionRating('BUILDER_INTELLIGENCE', 'skip', this)">👎</button>
+</div>
+<p><strong>Methodology beat:</strong></p>
+<p>Simon Willison&#39;s new chapter on agentic engineering patterns names the problem clearly: when we lose track of how code written by our agents works, we take on cognitive debt — and if the core of an application becomes a black box we don&#39;t fully understand, we can no longer confidently reason about it, which makes planning new features harder and eventually slows progress in the same way that accumulated technical debt does.</p>
+<p>His solution — building animated, interactive explanations of agent-written code on demand — is directly applicable to your Cursor skill system. He used Claude Opus 4.6 to build an animated, interactive HTML walkthrough with a frame-by-frame slider, which made the algorithm click in a way that reading the code alone didn&#39;t. This isn&#39;t about documentation. It&#39;s about staying the architect of your own system as agent-written code accumulates.</p>
+<p>Separately: US productivity data for 2025 shows a 2.7% increase — nearly double the prior decade&#39;s average — happening alongside a 16% decline in entry-level hiring in AI-exposed sectors. The productivity J-curve is being debated, but the micro-level signal is real: AI is doing entry-level cognitive work now. As a solo builder, this is your structural tailwind.</p>
+<p><strong>Micro-SaaS Radar:</strong></p>
+<p>The Indie Hackers 2026 State of SaaS Report landed January 28, covering industry research, insights from thought leaders, and stories behind leading SaaS products. Worth pulling as context for your 6-month horizon scan — not actionable today, but useful background reading.</p>
+<p>No sharp new pain-point signals from today&#39;s sources specifically. The Anthropic/DoD story (above) suggests a niche worth watching: <strong>compliance tooling for AI-dependent businesses</strong> — as regulatory risk around which AI providers you can use becomes real, someone will build a switching layer. Too early to build, but worth flagging.</p>
+<p><strong>Tool &amp; Stack Updates:</strong></p>
+<p>Cursor version 2.5.26 (February 26) launched <strong>Bugbot Autofix</strong> — cloud agents that automatically fix issues found in pull requests, running on their own machines and proposing fixes directly on the PR, with over 35% of those fixes already being merged.</p>
+<p>Claude Code gained <strong>auto-memory</strong> as of February 26, automatically saving useful context across sessions (manageable via <code>/memory</code>), plus a new <code>/copy</code> command with an interactive block picker. This is directly relevant to your Cursor/Claude setup — persistent context across sessions is something you&#39;ve been engineering manually through your vault. Now it&#39;s native.</p>
+<p>Bolt.new added support for Claude Sonnet 4.6 as of February 17. Windsurf added Gemini 3.1 Pro with promotional pricing and also supports Claude Sonnet 4.6. No breaking changes. No pricing surprises today.</p>
+<p><strong>API Economics:</strong></p>
+<p>Lovable added new connectors for ElevenLabs, Perplexity, Firecrawl, and Miro — free for Lovable users through April 2026 when using managed credentials. If you ever spin up a Lovable prototype that needs voice or search, the free window is live now.</p>
+<p>Nothing new from Supabase, Stripe, Resend, or Cloudflare in today&#39;s sources.</p>
+<hr>
+<h2>🎮 GAME DEV INTELLIGENCE</h2>
+<div class="section-feedback" data-section="GAME_DEV_INTELLIGENCE">
+  <button class="section-btn" data-value="love" onclick="setSectionRating('GAME_DEV_INTELLIGENCE', 'love', this)">❤️</button>
+  <button class="section-btn" data-value="ok" onclick="setSectionRating('GAME_DEV_INTELLIGENCE', 'ok', this)">👍</button>
+  <button class="section-btn" data-value="skip" onclick="setSectionRating('GAME_DEV_INTELLIGENCE', 'skip', this)">👎</button>
+</div>
+<p><strong>AI-Powered Tools &amp; Engines:</strong></p>
+<p>Sony announced an AI-powered upgrade to its PlayStation Spectral Super Resolution (PSSR) technology for PS5 Pro, with the first game using it being Capcom&#39;s Resident Evil: Requiem. The update builds on Sony&#39;s work with AMD under Project Amethyst, introducing a more advanced neural network and reconstruction algorithm with roughly six additional months of refinement. Directionally relevant: AI upscaling is becoming a standard rendering layer even on fixed console hardware. For a solo dev, this signals that AI-assisted visual quality is moving from PC-only to everywhere.</p>
+<p>On the vibe-coding-for-games front: <strong>Rosebud AI</strong> offers a free online vibe-coding tool that generates complete 2D, 3D, VR, and multiplayer games from natural language prompts, powered by Three.js and React — including a built-in AI asset generator requiring no design skills. <strong>Gambo</strong> bills itself as the world&#39;s first game vibe coding agent, creating complete playable and monetized games from a single prompt with built-in ad network monetization. Both are worth a 20-minute test given your current game project setup.</p>
+<p><strong>Solo Dev Leverage:</strong></p>
+<p>For solo RPG-style development in 2026, a practical AI toolchain combines Scenario (sprites), Leonardo AI (textures), Inworld AI (NPC dialogue with real-time reactive brains), Replica Studios (voices), AIVA (soundtrack), and Meshy (text-to-3D) — with Meshy specifically addressing what has historically been the slowest part of the pipeline.</p>
+<p>The pattern shift to note: AI agents are now capable of playtesting games, finding bugs, and suggesting design improvements automatically. For your game project in early setup, this means the asset and QA bottlenecks that would normally kill a solo project are genuinely solvable with current tooling.</p>
+<hr>
+<h2>📊 PIONEER ADVANTAGE CHECK</h2>
+<div class="section-feedback" data-section="PIONEER_ADVANTAGE">
+  <button class="section-btn" data-value="love" onclick="setSectionRating('PIONEER_ADVANTAGE', 'love', this)">❤️</button>
+  <button class="section-btn" data-value="ok" onclick="setSectionRating('PIONEER_ADVANTAGE', 'ok', this)">👍</button>
+  <button class="section-btn" data-value="skip" onclick="setSectionRating('PIONEER_ADVANTAGE', 'skip', this)">👎</button>
+</div>
+<table>
+<thead>
+<tr>
+<th>Development</th>
+<th>Your Edge</th>
+<th>Window</th>
+<th>Real or Hype?</th>
+<th>Builder Impact?</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Agent constraint enforcement</strong> (SpecLock, EmCogni)</td>
+<td>Solo builder who runs a structured skills system already has the mental model — you understand why constraints matter across sessions</td>
+<td>30–60 days before this becomes table stakes</td>
+<td>Real</td>
+<td>Drop SpecLock or EmCogni into your Cursor workflow today; your <code>.cursor/skills/</code> system is exactly the pattern these tools are designed to reinforce</td>
+</tr>
+<tr>
+<td><strong>Bugbot Autofix</strong> (Cursor 2.5.26)</td>
+<td>You already use Cursor as your primary environment — this is a zero-setup upgrade to your existing cockpit</td>
+<td>Now — it shipped Feb 26</td>
+<td>Real</td>
+<td>PRs auto-fixed before you see them; directly relevant to your game project setup where catching regressions early saves context-switching cost</td>
+</tr>
+<tr>
+<td><strong>Long-running Cursor agents</strong> (Cursor 2.5, Feb 17)</td>
+<td>Non-technical founders who can write clear specs get disproportionate returns — the agent plans first, executes longer</td>
+<td>Now — already live</td>
+<td>Real</td>
+<td>The February 28 briefing covered Cloud Agents; Composer 1.5 is the quieter complement: good specs = longer autonomous runs without babysitting</td>
+</tr>
+<tr>
+<td><strong>Vibe-coding game engines</strong> (Rosebud, Gambo)</td>
+<td>Game project is live right now; you have a SETUP PLAN.md open this week</td>
+<td>60–90 days before crowded</td>
+<td>Partial Hype</td>
+<td>Worth one 30-minute session with Rosebud to see if it collapses your setup timeline — but these tools produce rough output, not shippable product</td>
+</tr>
+<tr>
+<td><strong>Belgium artist self-employed transition</strong> (Lucia, May 1)</td>
+<td>You have two months lead time on understanding the tax and social security structure</td>
+<td>Now — the transition is in 60 days</td>
+<td>Real (life, not tech)</td>
+<td>VAT increase on entertainment services (6% → 12%) and mandatory e-invoicing via Peppol affect Lucia&#39;s freelance art teaching setup from day one</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>🛠️ TOOLS TO TRY</h2>
+<div class="section-feedback" data-section="TOOLS_TO_TRY">
+  <button class="section-btn" data-value="love" onclick="setSectionRating('TOOLS_TO_TRY', 'love', this)">❤️</button>
+  <button class="section-btn" data-value="ok" onclick="setSectionRating('TOOLS_TO_TRY', 'ok', this)">👍</button>
+  <button class="section-btn" data-value="skip" onclick="setSectionRating('TOOLS_TO_TRY', 'skip', this)">👎</button>
+</div>
+<ul>
+<li><strong>SpecLock</strong> — Active constraint enforcement for AI coding agents; when you say &quot;never touch auth files,&quot; it actually stops the agent three sessions later instead of just remembering and ignoring. MCP-native, works with Cursor and Claude Code. <a href="https://github.com/sgroy10/speclock">github.com/sgroy10/speclock</a><ul>
+<li>Try it: Install via <code>npx speclock setup</code>, lock two constraints in your game project (e.g., &quot;never modify the core game loop file&quot;), then intentionally ask the agent to touch it. Observe the conflict warning.</li>
+<li>Relevance: Your Cursor skills system is already constraint-aware in spirit — SpecLock adds enforcement teeth. Directly useful for the game project where scope creep via agent is a real risk.</li>
+<li>Signal: HN Show HN, Score 9/10 in today&#39;s feed, semantic conflict detection is a genuine differentiator from CLAUDE.md approaches.</li>
+</ul>
+</li>
+</ul>
+<div class="tool-feedback" data-tool="0" data-name="SpecLock"><span class="tool-feedback-label">React:</span> <button class="tool-reaction-btn" data-value="love" onclick="setToolReaction(0, 'love', this)">❤️</button> <button class="tool-reaction-btn" data-value="ok" onclick="setToolReaction(0, 'ok', this)">👍</button> <button class="tool-reaction-btn" data-value="skip" onclick="setToolReaction(0, 'skip', this)">👎</button></div>
+
+<ul>
+<li><strong>EmCogni Code</strong> — Local CLI that captures the <em>why</em> behind architectural decisions and surfaces them to your coding agent via MCP. Free, local, no account. <a href="https://www.emcogni.com/">emcogni.com</a><ul>
+<li>Try it: Install in 30 seconds (<code>curl -fsSL https://emcogni.com/install.sh | sh</code>), then capture three decisions from your blog pipeline build (&quot;why Python for Substack publish script,&quot; &quot;why cookie auth&quot;). Ask your agent a question that touches those decisions. See if it reads them.</li>
+<li>Relevance: You&#39;ve built a sophisticated vault system — EmCogni is the equivalent for your coding environment. Decisions made during blog pipeline or game project setup won&#39;t evaporate between sessions.</li>
+<li>Signal: HN Show HN, Score 8/10, multiple senior engineer testimonials confirm the core use case is real.</li>
+</ul>
+</li>
+</ul>
+<div class="tool-feedback" data-tool="1" data-name="EmCogni Code"><span class="tool-feedback-label">React:</span> <button class="tool-reaction-btn" data-value="love" onclick="setToolReaction(1, 'love', this)">❤️</button> <button class="tool-reaction-btn" data-value="ok" onclick="setToolReaction(1, 'ok', this)">👍</button> <button class="tool-reaction-btn" data-value="skip" onclick="setToolReaction(1, 'skip', this)">👎</button></div>
+
+<ul>
+<li><strong>Superpowers</strong> (obra/superpowers) — A complete structured workflow for Claude Code and Cursor: brainstorm → spec → plan → subagent execution → TDD → review → merge. Installs as a plugin in one command. <a href="https://github.com/obra/superpowers">github.com/obra/superpowers</a><ul>
+<li>Try it: In Claude Code, run <code>/plugin marketplace add obra/superpowers-marketplace</code> then <code>/plugin install superpowers</code>. Fire up a new game feature task. Observe whether the agent now stops to spec before coding.</li>
+<li>Relevance: Your skills system already encodes this philosophy — Superpowers is a more opinionated, community-maintained version of the same thing. Worth comparing against your own <code>.cursor/skills/</code> setup to see what it adds or teaches.</li>
+<li>Signal: HN-endorsed, Score 7.7/10, specifically designed for solo developers using subagent workflows.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<div class="tool-feedback" data-tool="2" data-name="Superpowers"><span class="tool-feedback-label">React:</span> <button class="tool-reaction-btn" data-value="love" onclick="setToolReaction(2, 'love', this)">❤️</button> <button class="tool-reaction-btn" data-value="ok" onclick="setToolReaction(2, 'ok', this)">👍</button> <button class="tool-reaction-btn" data-value="skip" onclick="setToolReaction(2, 'skip', this)">👎</button></div>
+## 🏗️ BUILD WATCH
+
+<p><strong>The agent memory and constraint layer is crystallizing into a real product category.</strong> In a single overnight HN window, four independent tools shipped addressing the same core problem: AI agents forget decisions, override constraints, and re-litigate solved problems. SpecLock, EmCogni, Memctl, and Decision Guardian all attack this from different angles — enforcement, local context capture, shared team memory, and PR-level decision surfacing respectively. This is a market forming in real time.</p>
+<p>The trajectory worth watching: the next 60–90 days will reveal whether this settles into one or two winners, or whether it gets absorbed into Cursor/Claude Code natively (Claude Code&#39;s auto-memory shipped Feb 26 — the incumbents are already moving into this space). For a solo builder, the useful insight is that the problem is now validated by multiple independent builders hitting the same wall simultaneously. If you&#39;re building anything that involves repeated AI-assisted sessions on a single codebase, solving this problem for a specific vertical (not general-purpose) is a legitimate micro-SaaS angle.</p>
+<p><strong>Rosebud and Gambo</strong> represent a more speculative trajectory: vibe-coding for games is real but the output quality gap between &quot;playable demo&quot; and &quot;shippable product&quot; remains wide. The AI gaming market numbers ($4.54B in 2025, projected $81B by 2035) are market-research-firm projections — treat as directional, not precise. What is real: the toolchain for a solo non-technical game builder in 2026 is meaningfully better than 2024.</p>
+<hr>
+<h2>⏪ ACTION AUDIT</h2>
+<p>No previous actions to track.</p>
+<hr>
+<h2>🎯 TODAY&#39;S PRIORITIES</h2>
+<p><strong>1. Prepare for The Big Meeting (March 2026 — imminent)</strong>
+This is your highest-stakes near-term deliverable. Henry and Lucas role restructure. PREP.md exists. Review it today, specifically: is Henry&#39;s &quot;soft training&quot; narrative consistent with what you&#39;re about to ask him to step into? The meeting defines Operation Autonomy&#39;s next chapter — don&#39;t let the migration work or game setup crowd it out.</p>
+<p><strong>2. Read the Willison &quot;Interactive Explanations&quot; chapter and decide on one upgrade to your Cursor skill workflow</strong>
+Cognitive debt is the silent tax on your MyLifeOS build. As your skills system matures, the gap between what the agent wrote and what you understand will compound. Today is a cheap time to add an &quot;explain this interactively&quot; pattern — before the system is too complex to audit.</p>
+<p><strong>3. 20-minute test: Rosebud or Gambo for your game project</strong>
+Your game is in early setup (SETUP PLAN.md added Feb 28). Before you invest more hours in architecture, spend 20 minutes generating a rough prototype with one of these vibe-coding game tools. Not to ship it — to validate what your game actually feels like as a playable thing, fast and cheaply. It either confirms your direction or saves you weeks.</p>
+<h2>🌍 WORLD LENS</h2>
+<div class="section-feedback" data-section="WORLD_LENS">
+  <button class="section-btn" data-value="love" onclick="setSectionRating('WORLD_LENS', 'love', this)">❤️</button>
+  <button class="section-btn" data-value="ok" onclick="setSectionRating('WORLD_LENS', 'ok', this)">👍</button>
+  <button class="section-btn" data-value="skip" onclick="setSectionRating('WORLD_LENS', 'skip', this)">👎</button>
+</div>
+<p><strong>The OpenAI-Department of War agreement is the structural story, not the headline.</strong></p>
+<p>The agreement — OpenAI formally contracting to deploy models in classified US military networks — is not a surprise in isolation. What matters structurally is the signal it sends about where the frontier AI companies are positioning themselves in the geopolitical order. This is not a neutral technology company selling a commodity service. It is a US national security asset, governed by US export controls, increasingly embedded in US government infrastructure.</p>
+<p>For a Brussels-based founder, this has a specific implication that most European commentary will understate: the AI stack you build on — whether OpenAI, Anthropic, or Google — is increasingly a US government-adjacent infrastructure. The EU AI Act was designed partly to create regulatory distance from exactly this dynamic. The tension between Brussels-based deployment and Washington-adjacent AI providers is not yet a practical blocker, but the direction is clear. European founders building AI-dependent products on American API infrastructure carry a regulatory and geopolitical concentration risk that their American counterparts do not.</p>
+<p>The more immediate European angle: <strong>US-Israel strikes on Iran</strong> introduce a new variable in energy markets. Iran is not a direct European gas supplier, but Middle East instability has historically transmitted through oil prices, which transmit through European energy costs, which transmit through Belgian consumer confidence and input costs for food and hospitality businesses. Chez Julien runs on electricity and logistics — any sustained energy price shock is a margin story, not an existential one, but worth tracking over the next two to four weeks as the situation develops.</p>
+<p>For the specialty food retail sector specifically: Brussels consumers in the upper-income demographic that shops at specialty food retailers tend to be relatively insulated from short-term energy price shocks compared to mass-market retail. Consumer confidence risk is real but lagged. The more direct risk is import cost on specialty food products sourced from regions affected by shipping route disruptions.</p>
+<hr>
+<h2>🇪🇺 EUROPE TECH</h2>
+<div class="section-feedback" data-section="EUROPE_TECH">
+  <button class="section-btn" data-value="love" onclick="setSectionRating('EUROPE_TECH', 'love', this)">❤️</button>
+  <button class="section-btn" data-value="ok" onclick="setSectionRating('EUROPE_TECH', 'ok', this)">👍</button>
+  <button class="section-btn" data-value="skip" onclick="setSectionRating('EUROPE_TECH', 'skip', this)">👎</button>
+</div>
+<p><strong>Belgium&#39;s startup ecosystem is producing hardware and climate tech, not software.</strong> The two Belgian stories surfaced in today&#39;s web intelligence — Dripl (smart water dispensers, €4M raised) and Sirona Technologies (direct air capture CO₂) — are both physical-world bets. This is consistent with a broader Belgian pattern: deep tech, biotech, and climate hardware, not consumer software or micro-SaaS. The implication for Julien is that the local founder community is not his peer group for micro-software businesses. His ecosystem is effectively London, Amsterdam, and the global English-language indie hacker internet — not Brussels.</p>
+<p>No EU AI Act enforcement news surfaced today. The mandatory e-invoicing via Peppol, effective 2026, is the sleeper regulatory story for Belgian self-employed founders — including potentially Lucia. Every Belgian VAT-registered freelancer is now required to issue B2B invoices through the Peppol network. This is not a blocker but it is an onboarding cost that Lucia will need to address before May 1.</p>
+<hr>
+<h2>📈 TREND TRACKER</h2>
+<div class="section-feedback" data-section="TREND_TRACKER">
+  <button class="section-btn" data-value="love" onclick="setSectionRating('TREND_TRACKER', 'love', this)">❤️</button>
+  <button class="section-btn" data-value="ok" onclick="setSectionRating('TREND_TRACKER', 'ok', this)">👍</button>
+  <button class="section-btn" data-value="skip" onclick="setSectionRating('TREND_TRACKER', 'skip', this)">👎</button>
+</div>
+<p><strong>Agent infrastructure is the dominant theme of the week.</strong> What began Feb 24–26 as a story about Cursor Cloud Agents and autonomous PR creation has, by March 1, spawned a secondary wave of tooling built <em>on top of</em> that new reality: constraint enforcement, persistent memory, decision surfacing, prompt injection defense. The sequence is classically how platform shifts propagate — the platform move happens, then the tooling ecosystem responds within days.</p>
+<p><strong>What accelerated this week:</strong></p>
+<ul>
+<li>Autonomous agent capability (Cursor Bugbot Autofix, Composer 1.5, Claude Code auto-memory) — each shipped independently, each pushes the same direction</li>
+<li>The agent security and trust layer — SpecLock, mcp-safe-fetch, NanoClaw all shipped or surfaced in the same window; prompt injection is now a recognized threat model, not a theoretical one</li>
+</ul>
+<p><strong>What is new today vs. prior briefings:</strong></p>
+<ul>
+<li>Feb 26–27 briefings covered <em>capability</em> expansion (agents that build, test, record). Today&#39;s signal is the <em>infrastructure layer</em> that makes those capabilities safe and persistent. The cockpit is expanding; now people are building the cockpit&#39;s safety systems.</li>
+<li>The cognitive debt framing (Article 2, &quot;What AI coding costs you&quot;) is a counterweight to the capability hype — worth reading as a calibration. The Shen-Tamkin study finding that AI-assisted developers scored 17% lower on debugging skills is the kind of empirical anchor that survives the hype cycle.</li>
+</ul>
+<p><strong>What disappeared:</strong> Nothing from prior briefings has been contradicted or resolved this week. The Andrej Karpathy signal from Feb 26 (&quot;basically work since December&quot;) continues to be the load-bearing assertion underneath everything else.</p>
+<p><strong>For Julien&#39;s builder mission:</strong> The meta-pattern is that solo founders who invest in their agent <em>infrastructure</em> — memory, constraints, decision capture — will compound faster than those who treat each session as stateless. Your vault and skills system is ahead of most. The new tools (SpecLock, EmCogni) are worth evaluating as infrastructure additions, not novelties.</p>
+<hr>
+<h2>🚮 SLOP FILTER</h2>
+<p><strong>4 of 13 articles were noise today.</strong></p>
+<ul>
+<li><strong>Article 4</strong> (California OS age verification law) — US regulatory news with no European relevance, no founder implication. Filtered.</li>
+<li><strong>Article 5</strong> (OpenAI/Dept. of War Twitter link) — Twitter/X rendered a blank page; no content retrievable. The substance is covered by Article 1 from a real source. Filtered as duplicate/broken.</li>
+<li><strong>Article 6</strong> (US-Israel strikes on Iran, NYT live blog) — The event matters geopolitically and is covered in the World Lens, but the article itself is a live blog link with no extractable analysis. Filtered as source, surfaced as topic.</li>
+<li><strong>Article 9</strong> (ClaudeTerminal) — Functional tool, but Windows-primary with macOS described as &quot;less tested.&quot; Julien is on MacBook Pro. Filtered for platform mismatch.</li>
+</ul>
+<hr>
+<h2>🔄 FEED HEALTH REPORT</h2>
+<ul>
+<li><strong>KEEP</strong>: HN RSS — delivered 9 of today&#39;s 13 articles, including all four Show HN tools worth evaluating. High signal-to-noise on the infrastructure/tooling beat. The overnight HN window is consistently the best source for new tools at launch.</li>
+<li><strong>KEEP</strong>: simonwillison.net — not in today&#39;s direct feed but cross-referenced in the last three briefings consistently. Remains Tier 1.</li>
+<li><strong>WATCH</strong>: mshibanami.github.io — sourced the Superpowers article (Article 11), which was high-quality, but the source is opaque. Unable to assess feed reliability from a single article. Monitor for two more runs before trusting as a consistent signal source.</li>
+<li><strong>CONSIDER ADDING</strong>: Anthropic&#39;s official GitHub releases page (github.com/anthropics/claude-code/releases) — surfaced in web intelligence as the authoritative source for Claude Code changelog. Currently not in the primary feed; this is a Tier 1 source for your primary tool that should be monitored directly.</li>
+<li><strong>CONSIDER ADDING</strong>: accountable.eu/en-be — surfaced Belgian self-employment tax and e-invoicing updates that are directly relevant to Lucia&#39;s May 1 transition. A Brussels founder running or supporting a freelance operation should have this in the feed.</li>
+<li><strong>CONSIDER REMOVING</strong>: Nothing has clearly failed three consecutive runs. The feed is young enough that removing sources is premature.</li>
+</ul>
+<hr>
+<h2>💬 FEEDBACK RESPONSE</h2>
+<p>Julien&#39;s last feedback (Feb 24, 5/5): <em>&quot;Better signal, actionable, not like the one I got about China stealing US models that made me give a 3.&quot;</em></p>
+<p>Acknowledged and locked in as the calibration standard. Today&#39;s briefing applied the same filter:</p>
+<ul>
+<li>The OpenAI/Department of War story was covered analytically in the World Lens rather than as a standalone must-read — it&#39;s geopolitical context, not actionable signal for your builder work.</li>
+<li>The US-Israel/Iran strikes were filtered from the article list but carried forward as economic context in World Lens, which is the right frame for a Brussels shop owner.</li>
+<li>Every tool in 🛠️ has a specific 30-minute action tied to your current active projects (game setup, Cursor workflow, blog pipeline). No &quot;interesting but irrelevant&quot; tools made the list today.</li>
+</ul>
+<p>React to today&#39;s articles at <a href="https://prism.julien.care//2026-03-01.html">https://prism.julien.care//2026-03-01.html</a></p>
+<hr>
+<p><em>PRISM v4.0 — 22 articles analyzed, 0 web searches, ~$0.26</em></p>
+
+  </div>
+
+  <div class="feedback-panel" id="feedback-panel">
+    <h2>📬 React to today's briefing</h2>
+    <p class="subtitle">Your reactions train PRISM to improve every night.</p>
+
+    <div class="overall-rating">
+      <label>Overall rating:</label>
+      <div class="star-buttons">
+        <button class="star-btn" onclick="setOverallRating(1, this)">1</button><button class="star-btn" onclick="setOverallRating(2, this)">2</button><button class="star-btn" onclick="setOverallRating(3, this)">3</button><button class="star-btn" onclick="setOverallRating(4, this)">4</button><button class="star-btn" onclick="setOverallRating(5, this)">5</button>
+      </div>
+    </div>
+
+    <div class="notes-area">
+      <label>Notes for PRISM (optional):</label>
+      <textarea id="feedback-notes" placeholder="Too much geopolitics? Loved that Builder Intelligence section? Want more micro-SaaS radar? Write anything here."></textarea>
+    </div>
+
+    <div class="submit-area">
+      <button id="submit-btn" onclick="submitFeedback()">Submit Feedback →</button>
+      <span id="submit-status" class="status-info"></span>
+    </div>
+  </div>
+
+  <div class="prism-footer">
+    PRISM v4.0 — Personal Research Intelligence System
+  </div>
+
+</div>
+
+<!-- Sticky submit bar (appears after first interaction) -->
+<div class="sticky-bar" id="sticky-bar">
+  <span id="sticky-count">0 reactions recorded</span>
+  <button onclick="submitFeedback()">Submit Feedback →</button>
+</div>
+
+<script>
+  // ── State ────────────────────────────────────────────────
+  const ARTICLES = [{"title":"Agentic Engineering Patterns: Interactive Explanations","source":"simonwillison.net"},{"title":"Dylan Patel on $200B AI CapEx and Why Google Might Have No Profits in 2027","source":"Latent Space"}];
+  const TOOLS = [{"name":"SpecLock","snippet":"- **SpecLock** — Active constraint enforcement for AI coding agents; when you say \"never touch auth files,\" it actually stops the agent three sessions later instead of just remembering and ignoring. MCP-native, works with Cursor and Claude Code. [github.com/sgroy10/speclock](https://github.com/sgroy10/speclock) - Try it: Install via `npx speclock setup`, lock two constraints in your game project ("},{"name":"EmCogni Code","snippet":"- **EmCogni Code** — Local CLI that captures the *why* behind architectural decisions and surfaces them to your coding agent via MCP. Free, local, no account. [emcogni.com](https://www.emcogni.com/) - Try it: Install in 30 seconds (`curl -fsSL https://emcogni.com/install.sh | sh`), then capture three decisions from your blog pipeline build (\"why Python for Substack publish script,\" \"why cookie aut"},{"name":"Superpowers","snippet":"- **Superpowers** (obra/superpowers) — A complete structured workflow for Claude Code and Cursor: brainstorm → spec → plan → subagent execution → TDD → review → merge. Installs as a plugin in one command. [github.com/obra/superpowers](https://github.com/obra/superpowers) - Try it: In Claude Code, run `/plugin marketplace add obra/superpowers-marketplace` then `/plugin install superpowers`. Fire up"}];
+  const WORKER_URL = "/api/feedback";
+  const FEEDBACK_SECRET = "prism-feedback-58367207b5410501";
+  const DATE = "2026-03-01";
+
+  const state = {
+    overallRating: null,
+    articleReactions: {},    // index → 'love' | 'ok' | 'skip'
+    toolReactions: {},       // index → 'love' | 'ok' | 'skip'
+    sectionRatings: {},      // sectionId → 'love' | 'ok' | 'skip'
+    notes: '',
+    totalInteractions: 0,
+  };
+
+  // ── Reaction Setters ─────────────────────────────────────
+  function setArticleReaction(index, value, btn) {
+    const prev = state.articleReactions[index];
+    if (prev === value) {
+      // Toggle off
+      delete state.articleReactions[index];
+      btn.parentElement.querySelectorAll('.reaction-btn').forEach(b => b.classList.remove('active-love', 'active-ok', 'active-skip'));
+    } else {
+      state.articleReactions[index] = value;
+      btn.parentElement.querySelectorAll('.reaction-btn').forEach(b => {
+        b.classList.remove('active-love', 'active-ok', 'active-skip');
+      });
+      btn.classList.add('active-' + value);
+    }
+    updateInteractionCount();
+  }
+
+  function setSectionRating(sectionId, value, btn) {
+    const prev = state.sectionRatings[sectionId];
+    if (prev === value) {
+      delete state.sectionRatings[sectionId];
+      btn.parentElement.querySelectorAll('.section-btn').forEach(b => b.classList.remove('active'));
+    } else {
+      state.sectionRatings[sectionId] = value;
+      btn.parentElement.querySelectorAll('.section-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+    }
+    updateInteractionCount();
+  }
+
+  function setOverallRating(value, btn) {
+    state.overallRating = state.overallRating === value ? null : value;
+    document.querySelectorAll('.star-btn').forEach(b => b.classList.remove('active'));
+    if (state.overallRating) btn.classList.add('active');
+    updateInteractionCount();
+  }
+
+  function updateInteractionCount() {
+    const count = Object.keys(state.articleReactions).length +
+                  Object.keys(state.toolReactions).length +
+                  Object.keys(state.sectionRatings).length +
+                  (state.overallRating ? 1 : 0);
+    state.totalInteractions = count;
+    document.getElementById('sticky-count').textContent = count + ' reaction' + (count !== 1 ? 's' : '') + ' recorded';
+    const bar = document.getElementById('sticky-bar');
+    if (count > 0) {
+      bar.classList.add('visible');
+    }
+  }
+
+  // ── Submit ───────────────────────────────────────────────
+  async function submitFeedback() {
+    const notes = document.getElementById('feedback-notes').value.trim();
+    state.notes = notes;
+
+    const payload = {
+      date: DATE,
+      briefingRating: state.overallRating,
+      mustReads: ARTICLES.map((article, i) => ({
+        title: article.title,
+        source: article.source,
+        rating: state.articleReactions[i] || null,
+      })).filter(a => a.rating !== null),
+      tools: TOOLS.map((tool, i) => ({
+        name: tool.name,
+        rating: state.toolReactions[i] || null,
+      })).filter(t => t.rating !== null),
+      sections: state.sectionRatings,
+      openNotes: notes,
+      submittedAt: new Date().toISOString(),
+    };
+
+    const btn = document.getElementById('submit-btn');
+    const status = document.getElementById('submit-status');
+
+    btn.disabled = true;
+    status.className = 'status-info';
+    status.textContent = 'Sending...';
+
+    if (!WORKER_URL) {
+      // No worker configured — download the JSON for manual submission
+      const blob = new Blob([JSON.stringify(payload, null, 2)], { type: 'application/json' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'prism-feedback-' + DATE + '.json';
+      a.click();
+      status.className = 'status-info';
+      status.textContent = '📥 Downloaded feedback JSON (no worker configured — place in data/feedback-latest.json)';
+      btn.disabled = false;
+      return;
+    }
+
+    try {
+      const headers = { 'Content-Type': 'application/json' };
+      if (FEEDBACK_SECRET) headers['X-PRISM-Secret'] = FEEDBACK_SECRET;
+      const res = await fetch(WORKER_URL, {
+        method: 'POST',
+        headers,
+        body: JSON.stringify(payload),
+      });
+
+      if (res.ok) {
+        status.className = 'status-success';
+        status.textContent = '✅ Feedback sent! PRISM will adjust tomorrow night.';
+        document.getElementById('sticky-bar').innerHTML = '<span style="color:#4caf50">✅ Feedback received — see you tomorrow morning</span>';
+      } else {
+        const text = await res.text();
+        throw new Error(text || 'Worker returned ' + res.status);
+      }
+    } catch (err) {
+      status.className = 'status-error';
+      status.textContent = '❌ Failed: ' + err.message + ' — try downloading instead.';
+      btn.disabled = false;
+    }
+  }
+
+  // ── Init ─────────────────────────────────────────────────
+  document.addEventListener('DOMContentLoaded', () => {
+    // Track notes textarea changes
+    document.getElementById('feedback-notes').addEventListener('input', () => {
+      updateInteractionCount();
+    });
+  });
+</script>
+</body>
+</html>

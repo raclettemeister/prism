@@ -1,4 +1,4 @@
-# PRISM Feedback — 2026-02-28
+# PRISM Feedback — 2026-03-01
 
 Edit this file in Obsidian OR react via the PRISM Portal.
 PRISM reads this before the next run. Delete sections you don't care about.
