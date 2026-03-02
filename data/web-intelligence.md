@@ -1,170 +1,187 @@
-<!-- PRISM Web Intelligence — 2026-03-01 — generated 2026-03-01T04:55:13.199Z -->
+<!-- PRISM Web Intelligence — 2026-03-02 — generated 2026-03-02T04:51:01.010Z -->
 
-# Proactive Web Intelligence — 2026-03-01
+# Proactive Web Intelligence — 2026-03-02
 
 *8 of 8 searches returned results*
 
 
 
-## Query 1: Cursor IDE changelog update March 2026
+## Query 1: Cursor changelog March 2026
 
-Based on the search results, here is a summary of the most recent Cursor IDE changelog activity. Note that as of the search date, the **most recent confirmed updates are from late February 2026**, with no March 2026 changelog entries yet published.
-
----
-
-**Cursor IDE — Latest Changelog Summary (as of late February 2026)**
-
-The most recent release listed in the official Cursor changelog is **version 2.5.26, dated February 26, 2026**. On that date, **Bugbot Autofix** launched, enabling cloud agents to automatically fix issues found in pull requests — running on their own machines and proposing fixes directly on your PR, with over 35% of Bugbot Autofix changes already being merged into base PRs.
-
-On **February 24, 2026** (version 2.5.25), cloud agents gained the ability to use the software they create to test changes and demo their work, running in isolated VMs and producing merge-ready PRs with artifacts such as videos, screenshots, and logs.
-
-**Cursor 2.5**, released **February 17, 2026**, introduced **long-running agents** and **Composer 1.5** — allowing Cursor to work autonomously over longer horizons to complete larger, more complex tasks, with agents that plan first and finish more difficult work without human intervention.
-
-**No March 2026 changelog entries have been published yet** at the time of this search. For the latest updates as they are released, monitor the official changelog directly:
-👉 **https://cursor.com/changelog**
-
-## Query 2: Claude Code new features release February March 2026
-
-Based on the search results — primarily from Anthropic's official GitHub releases page, the official Claude Help Center, and tracking sites like releasebot.io and claudelog.com — here is a summary of the most notable recent Claude Code updates:
+Based on the search results, here is a concise, factual summary:
 
 ---
 
-**Claude Code: Key New Features (February–March 2026)**
+**Cursor Changelog — Latest Updates (as of early March 2026)**
 
-As of **February 26, 2026**, Claude Code gained **auto-memory**, automatically saving useful context across sessions (manageable via `/memory`), and a new `/copy` command that shows an interactive picker when code blocks are present, letting users select individual blocks or the full response.
+As of early March 2026, the most recent official Cursor changelog entries are from **February 2026**, with **no March 2026 releases yet publicly documented**. The latest confirmed releases are:
 
-On **February 21, 2026**, a significant update introduced a `--worktree (-w)` flag to start Claude in an **isolated git worktree**, subagent support for worktree isolation, and a `Ctrl+F` keybinding to kill background agents (with a two-press confirmation). The same update also added a `ConfigChange` hook event, allowed simple mode (`CLAUDE_CODE_SIMPLE`) to include the file edit tool (not just Bash), and improved startup performance by removing eager loading of session history.
+- **Cursor 2.5 (February 17, 2026):** This release introduces **Plugins** on the Cursor Marketplace, **Sandbox Access Controls**, and **Async Subagents**. Plugins bundle capabilities like MCP servers, skills, subagents, rules, and hooks, with launch partners including Amplitude, AWS, Figma, Linear, and Stripe. Subagents can now run asynchronously, allowing the parent agent to continue working while subagents run in the background, and subagents can even spawn their own subagents — enabling a tree of coordinated work.
 
-Other recent additions include **HTTP hooks** (POSTing JSON to a URL and receiving JSON back instead of running a shell command), new account environment variables (`CLAUDE_CODE_ACCOUNT_UUID`, `CLAUDE_CODE_USER_EMAIL`, `CLAUDE_CODE_ORGANIZATION_UUID`), and an upgraded `/model` picker showing human-readable labels instead of raw model IDs.
+- **Bugbot Autofix (February 26, 2026):** Bugbot can now automatically fix issues it finds in pull requests; Autofix runs cloud agents on their own machines to test and propose fixes directly on your PR. Over 35% of Bugbot Autofix changes are merged into the base PR.
 
-On the model side, **Claude Sonnet 4.6** launched with full upgrades across coding, computer use, long-context reasoning, and agent planning, including a **1M token context window in beta**.
+- **Cursor 2.4 (January 22, 2026):** Version 2.4 introduced Subagents — independent agents specialized to handle discrete parts of a parent agent's task, running in parallel with their own context, and configurable with custom prompts, tool access, and models.
+
+There is **no specific "March 2026" Cursor changelog entry** available in search results at this time, suggesting no major release has been announced yet for that month.
 
 **Key sources:**
-- GitHub official releases: https://github.com/anthropics/claude-code/releases
-- Releasebot (Claude Code): https://releasebot.io/updates/anthropic/claude-code
-- ClaudeLog changelog: https://claudelog.com/claude-code-changelog/
+- Official changelog: https://cursor.com/changelog
+- Cursor 2.5 release: https://cursor.com/changelog/2-5
+- Community forum: https://forum.cursor.com/t/cursor-2-5-plugins-sandbox-access-controls-and-async-subagents/152123
 
-> ⚠️ Note: One result (claude5.ai) claimed a "Claude Code 2.0" launch — this appears to be an **unofficial/speculative site** and is not confirmed by Anthropic's official channels.
+## Query 2: Claude Code update March 2026 site:anthropic.com OR site:github.com
 
-## Query 3: AI game development procedural generation tools solo dev March 2026
-
-Here is a concise summary of the most relevant recent findings on AI game development procedural generation tools for solo devs, as of early 2026:
+Based on the search results, here is what I found. Note that **no results specifically dated "March 2026" appeared** from `anthropic.com` or `github.com` — the most recent confirmed updates are from **February 2026** and the live CHANGELOG/Releases pages (which are continuously updated). Here is an accurate, source-backed summary:
 
 ---
 
-For solo developers in 2026, a practical AI toolchain for an RPG combines **Scenario** (sprite generation), **Leonardo AI** (textures), **Inworld AI** (NPC dialogue), **Replica Studios** (voices), **AIVA** (soundtrack), and **Cascadeur** (animation). Leonardo.ai has evolved beyond simple image generation into specialized, seamless tileable texture mapping, while Inworld AI enables NPCs with real-time reactive "brains" — making static dialogue trees increasingly obsolete. **Meshy** (text-to-3D modeling) is also highlighted as a key tool, addressing what has historically been the slowest part of the pipeline — generating high-quality 3D assets from text prompts. The broader AI-in-gaming market reached **$4.54 billion in 2025** and is projected to grow to **$81.19 billion by 2035** at a CAGR of 33.57%, with the AI game generator/asset creation segment expanding even faster.
+**Claude Code: Most Recent Updates (as of late February / early March 2026)**
 
-**Key sources:**
-- https://cognitivefuture.ai/best-ai-tools-for-game-development/ *(January 15, 2026)*
-- https://dev.to/del_rosario/game-development-tools-for-2026-13of *(December 19, 2025)*
-- https://www.jenova.ai/en/resources/ai-game-generator *(~March 2026)*
+The official Claude Code CHANGELOG on GitHub (`github.com/anthropics/claude-code`) is the primary source for ongoing release notes. Recent updates include fixes for crashes in plan mode when project config was missing default fields, `temperatureOverride` being silently ignored in streaming API paths, and LSP shutdown/exit compatibility issues with strict language servers.
 
-> **Note:** No single article specifically dated **March 2026** surfaced; the most current results are from January–March 2026. For the latest procedural generation breakthroughs (e.g., specific version releases or pricing changes in tools like Meshy or Scenario), checking those tools' changelogs directly would give the most precise data.
+Other recent improvements include better system prompt guidance to steer the model toward dedicated tools (Read, Edit, Glob, Grep) instead of bash equivalents like `cat`, `sed`, and `find` to reduce unnecessary bash usage, along with clearer PDF and request size error messages showing actual limits (100 pages, 20MB).
 
-## Query 4: Lovable Bolt.new Windsurf update release March 1 2026
+On the broader platform side, Anthropic's API release notes confirm the launch of **Claude Sonnet 4.6**, a balanced model with improved agentic search performance, lower token consumption, extended thinking support, and a **1M token context window (beta)**. Additionally, API code execution is now **free when used with web search or web fetch**, and sandboxed code execution improves model capability and token efficiency.
 
-Based on my thorough research, I can now provide an informed summary. There are **no specific major announcements or releases dated March 1, 2026** for any of these three platforms — the most recent verified updates are from **late February 2026** or earlier. Here is what the latest available information shows:
+An Anthropic blog post ("Enabling Claude Code to work more autonomously") highlights a **checkpointing feature** and a refreshed terminal interface with improved status visibility and searchable prompt history (`Ctrl+R`), while the **Claude Agent SDK** (formerly the Claude Code SDK) now supports subagents and hooks for custom agentic workflows.
 
----
+> **No results with an exact "March 2026" datestamp were found** on `anthropic.com` or `github.com` at the time of this search — the CHANGELOG and Releases pages are rolling/undated. For the very latest, check:
+> - 🔗 https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md
+> - 🔗 https://docs.anthropic.com/en/release-notes/overview
 
-## Recent Updates: Lovable, Bolt.new & Windsurf (as of ~late February/early March 2026)
+## Query 3: Windsurf Lovable Bolt.new release update March 2 2026
 
-**Important note:** No specific releases dated **March 1, 2026** were found for any of these three platforms as of the time of this search. The most recent confirmed updates are from late February 2026. Here is a factual summary of what has been documented:
-
-### 🟣 Lovable
-The most recent Lovable announcements include new connectors for ElevenLabs, Perplexity, Firecrawl, and Miro — which are free for Lovable users through **April 2026** when choosing managed credentials. Additional recent features include cross-project referencing (allowing Lovable to access and reuse implementations from other projects in your workspace), faster TypeScript code intelligence, and publishing improvements with built-in "Try to fix" actions for failures. The most recent blog posts are dated **February 5, 2026**, covering more autonomous builds.
-🔗 Source: [docs.lovable.dev/changelog](https://docs.lovable.dev/changelog)
-
-### 🔵 Bolt.new
-As of **February 17, 2026**, Bolt added support for Anthropic's Claude Sonnet 4.6 model. Other recent updates include a dedicated Pricing page, subscription management moved from StackBlitz into Bolt, a renamed "Publish" button with better status visibility, and the permanent adoption of the Sonnet 4 model for a larger context window.
-🔗 Source: [support.bolt.new/release-notes](https://support.bolt.new/release-notes)
-
-### 🟢 Windsurf
-As of **February 19, 2026**, Windsurf added Gemini 3.1 Pro with limited-time promotional pricing (Low Thinking: 0.5x credits, High Thinking: 1x credits), and on **February 17, 2026**, Claude Sonnet 4.6 was made available. Earlier, on **January 30, 2026**, Windsurf launched Arena Mode — running two Cascade agents side-by-side with hidden model identities — and Plan Mode, a new Cascade mode for smarter task planning. Notably, Cognition (maker of AI coding agent Devin) signed a definitive agreement to acquire Windsurf, including its IP, product, trademark, brand, and business operations, though that deal was announced in **July 2025** and the integration is ongoing.
-🔗 Source: [windsurf.com/changelog](https://windsurf.com/changelog)
-
-> ⚠️ **No specific "March 1, 2026" release** was found for any of these three tools. If you saw a specific announcement tied to that date, it may be behind a login, on a social platform (X/Twitter), or not yet indexed publicly at the time of this search.
-
-## Query 5: vibe coding game engine AI asset generation 2026
-
-Here is a concise, well-sourced summary of the most relevant recent findings:
+I now have comprehensive data across all three platforms. Let me compile the summary.Based on my research, here is a concise, factual summary of the most recent updates across Windsurf, Lovable, and Bolt.new as of early March 2026. Note that no major events were specifically dated **March 2, 2026** — the most relevant recent updates are from late February and January 2026.
 
 ---
 
-**Vibe Coding + Game Engines + AI Asset Generation (2025–2026)**
+## Windsurf, Lovable & Bolt.new — Recent Updates (Early March 2026)
 
-Several "vibecoding-first" platforms have emerged — including **Jabali**, **Rosebud**, and **Kitbash** — in which game code is mostly generative, paired with either imported assets or GenAI-generated assets. Third Point Ventures notes that copilots and vibe coding are expected "to take over most of the programming tasks of an engine in the very immediate future."
+### 🌊 Windsurf
+On **February 25, 2026**, Windsurf released version **1.9566.9**, introducing a new **Model Picker** that groups models by family with a hovercard for toggling variants like reasoning effort and speed, plus **Cascade Hooks** for logging/blocking policy-violating user prompts. The February 26 JetBrains plugin update (v2.12.13) added **Gemini 3.1 Pro** at promotional pricing (Low Thinking: 0.5x credits, High Thinking: 1x credits) and **GPT-5.3-Codex** support across four reasoning tiers, described as "OpenAI's latest model designed for agentic coding." Windsurf is now owned by **Cognition** (makers of Devin), following an acquisition that transferred Windsurf's IP, product, trademark, brand, and ~350 enterprise customers — with $82M ARR at time of deal.
+- 🔗 https://windsurf.com/changelog
 
-**Rosebud AI** offers a free, online vibe-coding tool that generates complete 2D, 3D, VR, and multiplayer games from natural language prompts, powered by Three.js and React — including a built-in AI asset generator for professional 2D and 3D game assets requiring no design skills.
+---
 
-**Gambo** bills itself as "the world's first game vibe coding agent," creating complete, playable, and monetized games from a single prompt in minutes — with all game assets AI-made, organized, and ready to use, plus built-in ad network monetization requiring no extra setup.
+### 💜 Lovable
+Around **January 28, 2026**, Lovable launched a major update claiming to be **71% better at solving complex tasks**, introducing four key features: (1) **Plan Mode** (upgraded from "Chat mode") for structured pre-build planning, (2) **Prompt Queuing** to stack multiple prompts while Lovable works, (3) **Automated browser testing** to catch and fix bugs before shipping, and (4) **one-prompt Google Sign-In** integration. More recently, Lovable's changelog also notes ElevenLabs (voice/speech), Perplexity (AI research), and new shared workspace connectors free through April 2026 for managed credential users.
+- 🔗 https://docs.lovable.dev/changelog
 
-A January 8, 2026 post on the **Vibeforge Blog** describes AI now generating complete game systems (movement controllers, inventory systems, dialogue trees) from descriptions, with AI agents capable of playtesting games, finding bugs, and suggesting design improvements automatically.
+---
 
-**Key sources:**
-- Third Point Ventures (AI Gaming/Media Tooling): https://www.thirdpointventures.com/currents/AI-impact-on-gaming-and-media-tooling/
-- Rosebud AI: https://lab.rosebud.ai/vibe-coding-tool
-- Gambo: https://www.gambo.ai
-- Vibeforge Blog (Jan 8, 2026): https://vibeforge.vibecord.dev/blog/ai-game-development-2026-what-to-expect
+### ⚡ Bolt.new (Bolt v2)
+**Bolt v2** launched with **Claude Agent** as the default LLM, unlimited built-in databases created automatically per project, and an all-in-one **Bolt Cloud** covering hosting, authentication, edge functions, storage, and secrets — eliminating the need for external services. Recent Bolt release notes highlight **visual Version History** (browse, preview, and restore prior project versions), **Team Templates** for standardizing project structure, and **Claude Opus 4.6** now available as a selectable model alongside Haiku 4.5 and Sonnet 4.5.
+- 🔗 https://support.bolt.new/release-notes | https://bolt.new/blog/bolt-v2
 
-## Query 6: micro-SaaS builder indie hacker publish March 2026
+---
+
+> ⚠️ **Note:** No specific major releases were pinpointed to exactly **March 2, 2026**. The search cutoff for available data appears to be approximately February 26, 2026. These are the most current documented updates immediately preceding your query date.
+
+## Query 4: AI game development solo dev procedural generation tools March 2026
+
+Here is a concise, source-backed summary of the most relevant recent findings:
+
+---
+
+**AI Tools for Solo Dev & Procedural Generation (Early 2026)**
+
+In 2026, **Cursor** has emerged as a leading agentic coding tool for indie developers — unlike traditional autocomplete, it analyzes entire codebases and understands relationships between game systems. Specifically for procedural generation, if you're building a roguelike and need to adjust procedural logic across multiple scripts, Cursor can propose and implement those changes autonomously while explaining trade-offs.
+
+**Google AI Studio** has also become a go-to prototyping tool for indie devs thanks to its generous free tier (1,500 requests/day for Gemini 1.5 Pro) with no recurring subscription fees — making it especially practical for bootstrapped solo developers.
+
+For solo devs building full games, a common 2026 tool stack combines **Scenario** (sprite generation), **Leonardo AI** (textures), **Inworld AI** (NPC dialogue), **Replica Studios** (voices), **AIVA** (soundtrack), and **Cascadeur** (animation).
+
+On the adoption side, while **47.1% of developers use AI tools daily**, only **30% use AI for core development tasks** in game studios — far below the 58% adoption seen in publishing and marketing roles — and 45.7% still distrust AI output.
+
+**Key Sources:**
+- https://www.browse-ai.tools/blog/top-ai-tools-for-indie-devs-in-2026-beyond-the-ai-bubble (Jan 15, 2026)
+- https://cognitivefuture.ai/best-ai-tools-for-game-development/ (Jan 15, 2026)
+- https://thedatascientist.com/top-10-ai-tools-revolutionizing-game-development-in-2026/ (2 days ago, ~March 2026)
+
+## Query 5: micro-SaaS builder indie hacker published March 2 2026
+
+I was unable to find any article, post, or publication specifically dated **March 2, 2026** matching the query "micro-SaaS builder indie hacker." My knowledge cutoff and current search results do not surface a document with that exact publication date. Here is what the most relevant recent findings (through late January/early February 2026) do show:
+
+---
+
+The micro-SaaS market is projected to grow from **$15.7B to $59.6B by 2030** (~30% annual growth), with solo founders routinely targeting the **$5K–$50K+ MRR** sweet spot by building hyper-specialized, AI-powered tools — a trend heavily covered in the indie hacker community in early 2026.
+
+A **January 28, 2026** Superframeworks roundup of micro-SaaS ideas for solopreneurs highlights that **most founders spend under $1K before first revenue** thanks to no-code tools and free tiers, with opportunity having shifted from generic tools to niche, AI-powered solutions. (Source: https://superframeworks.com/articles/best-micro-saas-ideas-solopreneurs)
+
+A **January 27, 2026** NxCode guide lists 50 profitable micro-SaaS ideas for 2026 that can be built and launched **without coding**, with one creator reportedly getting their first 10 paying customers within 48 hours of a weekend build. (Source: https://www.nxcode.io/resources/news/micro-saas-ideas-2026)
+
+A Superframeworks article from approximately **one month ago** also covered **YC's Spring 2026 Request for Startups**, identifying 8 ideas indie hackers can realistically build, including focused AI tools priced at **$50–$100/month** that undercut enterprise incumbents. (Source: https://superframeworks.com/articles/yc-rfs-startup-ideas-indie-hackers-2026)
+
+---
+
+> ⚠️ **No article or post specifically published on March 2, 2026** was found matching this query. If you have a specific title, author, or source in mind, please share more details and I can search more precisely.
+
+## Query 6: Belgium Brussels small business employment law March 2026
+
+Here is a concise, sourced summary of the most relevant recent findings on Belgium/Brussels small business employment law changes around March 2026:
+
+---
+
+**Belgium Employment Law: Key Changes for Small Businesses in 2026**
+
+Several important changes to Belgian employment law entered into force on **1 January 2026**, with additional reforms expected to take effect later in 2026. Employers should prioritise immediate compliance actions, particularly updates to internal work regulations, sick-leave and reintegration processes, and payroll systems.
+
+Notably for small businesses: The **Federal Learning Account (FLA) reporting obligation has been formally abolished** — employers are no longer required to register training via a federal platform. Additionally, **regardless of company size**, internal work regulations must now include a procedure for maintaining contact with employees on sick leave.
+
+A **new employer solidarity contribution for primary incapacity for work** applies as of 1 January 2026, though it is **payable only by employers with 50+ employees** (calculated quarterly at 30% of primary incapacity benefits paid for a two-month period). The existing employer accountability contribution for incapacity is being phased out, with its legal basis repealed on **1 April 2026**.
+
+On **wages**, Belgium is introducing a cap: full automatic indexation will only apply to the **first €4,000 of gross monthly salary**, with the portion above that threshold not indexed — though the required legislation was unlikely to be in force before January 2026, meaning many salaries may still be fully indexed during the next major index round. Starting in 2026, Belgium also intends to **progressively reduce the length of unemployment benefits** to encourage quicker reintegration into the labour market, introduced gradually starting with the longest-unemployed, with certain groups remaining protected.
+
+---
+
+**Key Sources:**
+- **Lexgo.be** (3 days ago): https://www.lexgo.be/en/news-and-articles/14612-belgium-employment-law-key-changes-as-of-1-january-2026-and-upcoming-reforms
+- **Baker McKenzie** (Jan 2026): https://www.bakermckenzie.com/en/insight/publications/2026/01/belgium-the-employment-law-landscape-in-2026
+- **L&E Global** (1 month ago): https://leglobal.law/countries/belgium/belgium-2026-looking-ahead/
+- **Parakar**: https://parakar.eu/knowledge/be/employment-law-updates-for-2026-belgium
+
+## Query 7: Substack API changes authentication March 2026
+
+Based on my thorough search across multiple queries, I was unable to find any specific, verified announcements or documented changes related to **Substack API authentication changes in March 2026**. Here is what the search results do reveal:
+
+---
+
+**What Is Currently Known About Substack's API & Authentication:**
+
+- Substack does have a **Developer API** that allows users who have agreed to its Terms of Use to retrieve public information on Substack profiles by querying a creator's public LinkedIn handle. To help ensure data quality and reduce spam, not all profiles are queryable — only those that have met certain platform authenticity thresholds. This is the **official** but limited public API, documented at: `https://support.substack.com/hc/en-us/articles/45099095296916-Substack-Developer-API`
+
+- For broader access, developers have relied on unofficial/reverse-engineered approaches. There is no official Substack API or documentation for developers covering general use cases, a fact that has frustrated many users.
+
+- Unofficial libraries use **cookie-based authentication**: the TypeScript `substack-api` library uses secure authentication via `substack.sid` cookies, and the Python equivalent works similarly.
+
+- As of the last update to Substack's own support page, they stated: "At this time, we don't have a public API and we don't have a timeline for when/if this would become available."
+
+---
+
+**Bottom Line:** No specific Substack API authentication changes tied to **March 2026** were found in any search results, official announcements, changelogs, or developer community sources. This topic may refer to something that has not yet been publicly announced, is based on speculation/rumor, or may not exist. I'd recommend checking:
+- **Substack's official support articles**: https://support.substack.com
+- **The API Changelog newsletter**: https://apichangelog.substack.com (which tracks broad API industry news)
+
+If you have a specific source or context for this claim, sharing it would help narrow down the search.
+
+## Query 8: vibe coding game engine AI asset generation 2026 site:reddit.com OR site:ycombinator.com
 
 Here is a concise summary of the most relevant recent findings:
 
 ---
 
-**BuilderDaily** published a curated guide on **January 15, 2026** titled *"30 Micro-SaaS Ideas for 2026 (With Tech Stacks)"*, featuring 30 validated ideas that indie hackers can build in 2026 — with example projects like an AI invoice scanner (Next.js + Supabase + OpenAI Vision API, 2–3 week MVP, $2–5K MRR potential) and a competitor price monitor (Next.js + PostgreSQL + Puppeteer, 3–4 week MVP, $5–10K MRR potential).
-🔗 https://www.builderdaily.dev/blog/30-micro-saas-ideas-2026
+**Vibe Coding, Game Engines & AI Asset Generation (2025–2026)**
 
-**Superframeworks** published a complementary piece on **January 28, 2026** targeting solopreneurs and indie hackers, recommending micro-SaaS ideas like a failed-payment recovery tool built on Next.js, Stripe API, Resend, Vercel Cron, and Supabase — with an estimated infrastructure cost of just **$30–$50/month** at MVP stage.
-🔗 https://superframeworks.com/articles/best-micro-saas-ideas-solopreneurs
+A 3D game engine explicitly designed for vibe coding with an AI-powered creator interface was discussed on Hacker News in **October 2025**, with community feedback noting it is "limited to already built components and fails on new tasks," but could be improved over time with an asset library and expanded capabilities.
 
-Also on **January 28, 2026**, **Indie Hackers** released its *2026 State of SaaS Report*, covering industry research, insights from thought leaders, and stories behind leading SaaS products.
-🔗 https://www.indiehackers.com/post/saas-market-report-2026-get-your-copy-b6ed1ec0c2
+As of **September 2025**, Hacker News users debating the best game engine for vibe coding found that AI models like **Gemini Pro 2.5** "utterly failed" with the Python engine Ursina, and performed "even harder" failures on Panda3D, highlighting significant limitations in AI-driven game development workflows.
 
-**Note:** No results specifically dated **March 2026** were found — the most recent relevant publications are from **late January 2026**. If you're looking for something published specifically in March 2026, it may not yet be indexed or may require a more specific query (e.g., a product name or founder handle).
+A satirical/incremental browser game called **"Vibe Coding Simulator 2026"** appeared on Hacker News approximately **two weeks ago** (circa mid-2025), created by a developer who noted that AI coding and incremental clicker games "feel so similar" — reflecting the cultural moment around AI-assisted development.
 
-## Query 7: Belgium Brussels founder startup news March 2026
+A more concrete success story from **July 9, 2025** documented a full AI-coded tower defense game built and published on itch.io, with all code and prompts shared on GitHub — though art assets still relied on free itch.io artists rather than AI generation, underscoring that AI asset generation remains a gap in the pipeline.
 
-Here is a concise summary of the most relevant recent findings on Belgium/Brussels founder and startup news around early 2026:
-
----
-
-**Brussels & Belgium Startup Scene – Early 2026 Highlights**
-
-Brussels-based **Dripl**, the developer of smart water dispensers, raised **€4 million** in a funding round in January 2026. The round was led by Abacus Investments, with participation from Spadel, Faraday Venture Partners, and the Meert Family, and will be used to expand beyond the 500 companies already converted in the Benelux, scale up its Leuven production facility, and launch across more European regions.
-
-Belgium's startup ecosystem — spanning Leuven, Ghent, Antwerp, and Brussels — is increasingly attracting international attention and investment, with founders active across deep tech, biotech, climate technology, and enterprise software. Brussels-based **Sirona Technologies**, highlighted as one of the top Belgian startups to watch in 2026, is developing direct air capture technology to remove CO₂ from the atmosphere, with a focus on simplicity, low capital costs, and scalability.
-
-**Key sources:**
-- Dripl funding round (January 19, 2026): https://www.eu-startups.com/2026/01/from-spare-coca-cola-machine-parts-to-a-e4-million-funding-round-the-journey-of-belgian-startup-dripl
-- 10 Belgian Startups to Watch in 2026 (January 5, 2026): https://www.eu-startups.com/2026/01/10-belgian-startups-to-watch-in-2026-and-beyond/
-
-> **Note:** No specific breaking news from **March 2026** was indexed in the search results — the most recent dated articles are from January 2026. If you're looking for news from a specific event or company in March 2026, please let me know and I can refine the search.
-
-## Query 8: Lucia self-employed artist freelance Belgium tax social security 2026
-
-Here is a concise, well-sourced summary of the most relevant findings for a self-employed/freelance artist in Belgium in 2026:
-
----
-
-**Belgium: Self-Employed Freelance Artist — Key Facts for 2026**
-
-**Social Security Contributions:**
-Each quarter, self-employed individuals must pay **20.5% of their net taxable income** (after deduction of business expenses) in social security contributions. The minimum quarterly payment for student entrepreneurs in 2026 is **€98.51**, and self-employed students earning less than €8,687.04 net can request an exemption.
-
-**Income Tax Brackets (2026, on 2025 income):**
-Belgium applies four progressive income tax brackets — **25%, 40%, 45%, and 50%** — on the net taxable amount remaining after VAT, professional expenses, and social security contributions are deducted. The tax-free allowance in 2026 (for 2025 income) is **€10,910**; if your net taxable income is below this, no income tax is owed.
-
-**Key 2026 Policy Updates (including for creatives):**
-The government had promised a gradual increase of the tax-free allowance from €10,910 (2025) to €15,300 by 2029, but this has been **postponed until 2030** — bad news for low-income starters who would have been exempt. Additionally, from January 2026, **VAT on certain "entertainment" services** increases from 6% to 12%, which may affect artists depending on their activity type. Starting in 2026, a few changes also affect **creative entrepreneurs specifically**: IT professionals can invoice under the copyright scheme again, but **flat-rate cost deductions may be abolished** (official confirmation still pending).
-
-**Mandatory e-Invoicing from 2026:**
-From 2026, **e-invoicing via Peppol is mandatory** for all B2B invoicing between Belgian VAT-registered self-employed professionals, including part-time self-employed and small businesses.
-
----
-
-**Key sources:**
-- 📄 Accountable – *Key updates for Belgium's self-employed in 2026* (Dec 9, 2025): https://www.accountable.eu/en-be/blog/key-updates-2026/
-- 📄 Accountable – *Tax brackets Belgium 2026*: https://www.accountable.eu/en-be/blog/progressive-tax-brackets/
-- 📄 Expatica – *Freelance and self-employed tax in Belgium 2026* (Jan 16, 2026): https://www.expatica.com/be/finance/taxes/freelance-taxes-belgium-471589/
+**Key Sources:**
+- https://news.ycombinator.com/item?id=45666818 (3D vibe coding engine, Oct 2025)
+- https://news.ycombinator.com/item?id=45246488 (Best engine for vibe coding, Sept 2025)
+- https://news.ycombinator.com/item?id=47052876 (Vibe Coding Simulator 2026, ~2 weeks ago)
+- https://news.ycombinator.com/item?id=44463967 (AI tower defense game, July 2025)

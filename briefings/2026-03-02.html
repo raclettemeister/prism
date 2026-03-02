@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PRISM — 2026-03-02</title>
+  <style>
+    :root {
+      --bg: #0f0f0f;
+      --bg-card: #1a1a1a;
+      --bg-hover: #222;
+      --text: #e5e5e5;
+      --text-muted: #888;
+      --accent: #e8743b;
+      --accent-hover: #ff8c4a;
+      --border: #2a2a2a;
+      --success: #4caf50;
+      --love: #e74c3c;
+      --ok: #3498db;
+      --skip: #666;
+      --font: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--font);
+      font-size: 16px;
+      line-height: 1.7;
+      padding: 0;
+    }
+    .container {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 40px 24px 100px;
+    }
+    /* Typography */
+    h1 { font-size: 1.6rem; font-weight: 700; color: var(--text); margin-bottom: 8px; line-height: 1.3; }
+    h2 { font-size: 1.15rem; font-weight: 600; color: var(--text); margin: 36px 0 16px; padding-bottom: 8px; border-bottom: 1px solid var(--border); }
+    h3 { font-size: 1rem; font-weight: 600; margin: 20px 0 8px; }
+    p { margin-bottom: 14px; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { color: var(--accent-hover); text-decoration: underline; }
+    ul, ol { margin: 0 0 14px 24px; }
+    li { margin-bottom: 8px; }
+    strong { font-weight: 600; color: #f0f0f0; }
+    em { color: var(--text-muted); }
+    code { background: var(--bg-card); padding: 2px 6px; border-radius: 4px; font-size: 0.9em; font-family: 'SF Mono', 'Fira Code', monospace; }
+    pre { background: var(--bg-card); padding: 16px; border-radius: 8px; overflow-x: auto; margin: 0 0 14px; }
+    blockquote { border-left: 3px solid var(--accent); padding-left: 16px; color: var(--text-muted); margin: 0 0 14px; }
+    hr { border: none; border-top: 1px solid var(--border); margin: 32px 0; }
+    table { width: 100%; border-collapse: collapse; margin-bottom: 16px; font-size: 0.9em; }
+    th { background: var(--bg-card); padding: 8px 12px; text-align: left; border-bottom: 1px solid var(--border); font-weight: 600; }
+    td { padding: 8px 12px; border-bottom: 1px solid var(--border); }
+    tr:hover td { background: var(--bg-hover); }
+    /* PRISM header */
+    .prism-header {
+      background: linear-gradient(135deg, #1a1a1a, #0f0f0f);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 24px;
+      margin-bottom: 32px;
+    }
+    .prism-header .meta { color: var(--text-muted); font-size: 0.85rem; margin-top: 6px; }
+    .prism-header .meta span { margin-right: 16px; }
+    /* Article feedback widgets */
+    .article-feedback {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 10px 14px;
+      margin: 8px 0 20px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .article-feedback::before { content: 'React: '; color: var(--text-muted); font-size: 0.85rem; }
+    .reaction-buttons { display: flex; gap: 6px; }
+    .reaction-btn {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      color: var(--text-muted);
+      padding: 4px 12px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-size: 0.85rem;
+      transition: all 0.15s ease;
+    }
+    .reaction-btn:hover { background: var(--bg-hover); color: var(--text); }
+    .reaction-btn.active-love { background: rgba(231,76,60,0.15); border-color: var(--love); color: var(--love); }
+    .reaction-btn.active-ok { background: rgba(52,152,219,0.15); border-color: var(--ok); color: var(--ok); }
+    .reaction-btn.active-skip { background: rgba(102,102,102,0.15); border-color: #666; color: #888; }
+    /* Tool feedback widgets (per tool in TOOLS TO TRY) */
+    .tool-feedback {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      margin: 8px 0 12px 0;
+      padding: 6px 10px;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      font-size: 0.9rem;
+    }
+    .tool-feedback-label { color: var(--text-muted); margin-right: 4px; }
+    .tool-reaction-btn {
+      background: transparent;
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 4px 8px;
+      cursor: pointer;
+      opacity: 0.7;
+      font-size: 1rem;
+    }
+    .tool-reaction-btn:hover { opacity: 1; }
+    .tool-reaction-btn.active-love { opacity: 1; border-color: var(--love); background: rgba(231,76,60,0.15); }
+    .tool-reaction-btn.active-ok { opacity: 1; border-color: var(--accent); background: rgba(232,117,59,0.15); }
+    .tool-reaction-btn.active-skip { opacity: 1; border-color: var(--text-muted); background: rgba(136,136,136,0.15); }
+
+    /* Section feedback widgets */
+    .section-feedback {
+      display: inline-flex;
+      gap: 4px;
+      margin-left: 10px;
+      vertical-align: middle;
+    }
+    .section-btn {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 2px 8px;
+      cursor: pointer;
+      font-size: 0.8rem;
+      opacity: 0.5;
+      transition: all 0.15s ease;
+    }
+    .section-btn:hover { opacity: 1; }
+    .section-btn.active { opacity: 1; background: var(--bg-hover); border-color: var(--accent); }
+    /* Feedback panel */
+    .feedback-panel {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 28px;
+      margin-top: 48px;
+    }
+    .feedback-panel h2 { border: none; margin-top: 0; font-size: 1.2rem; }
+    .feedback-panel .subtitle { color: var(--text-muted); font-size: 0.9rem; margin-bottom: 24px; }
+    .overall-rating { margin-bottom: 24px; }
+    .overall-rating label { display: block; font-size: 0.9rem; color: var(--text-muted); margin-bottom: 10px; }
+    .star-buttons { display: flex; gap: 8px; }
+    .star-btn {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      color: var(--text-muted);
+      width: 44px; height: 44px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1.1rem;
+      font-weight: 700;
+      transition: all 0.15s ease;
+    }
+    .star-btn:hover { background: var(--bg-hover); color: var(--text); }
+    .star-btn.active { background: rgba(232,116,59,0.15); border-color: var(--accent); color: var(--accent); }
+    .notes-area { margin-bottom: 24px; }
+    .notes-area label { display: block; font-size: 0.9rem; color: var(--text-muted); margin-bottom: 8px; }
+    textarea {
+      width: 100%;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      color: var(--text);
+      border-radius: 8px;
+      padding: 12px 14px;
+      font-family: var(--font);
+      font-size: 0.95rem;
+      resize: vertical;
+      min-height: 90px;
+    }
+    textarea:focus { outline: none; border-color: var(--accent); }
+    .submit-area { display: flex; gap: 12px; align-items: center; }
+    #submit-btn {
+      background: var(--accent);
+      color: white;
+      border: none;
+      padding: 12px 28px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1rem;
+      font-weight: 600;
+      transition: all 0.15s ease;
+    }
+    #submit-btn:hover { background: var(--accent-hover); }
+    #submit-btn:disabled { opacity: 0.5; cursor: not-allowed; }
+    #submit-status { font-size: 0.9rem; }
+    .status-success { color: var(--success); }
+    .status-error { color: #e74c3c; }
+    .status-info { color: var(--text-muted); }
+    /* Sticky submit bar */
+    .sticky-bar {
+      position: fixed;
+      bottom: 0; left: 0; right: 0;
+      background: rgba(15,15,15,0.95);
+      border-top: 1px solid var(--border);
+      backdrop-filter: blur(10px);
+      padding: 12px 24px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 16px;
+      font-size: 0.9rem;
+      z-index: 100;
+      transform: translateY(100%);
+      transition: transform 0.3s ease;
+    }
+    .sticky-bar.visible { transform: translateY(0); }
+    .sticky-bar button {
+      background: var(--accent);
+      color: white;
+      border: none;
+      padding: 8px 20px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 0.9rem;
+    }
+    /* Footer */
+    .prism-footer { color: var(--text-muted); font-size: 0.8rem; text-align: center; margin-top: 40px; padding-top: 24px; border-top: 1px solid var(--border); }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <div class="prism-header">
+    <h1>PRISM Morning Briefing</h1>
+    <div class="meta">
+      <span>📅 2026-03-02</span>
+      <span>📰 21 articles analyzed</span>
+      <span>🤖 PRISM v4.0</span>
+    </div>
+  </div>
+
+  <div id="briefing-content">
+    <blockquote>
+<p>⚠️ <strong>Low-confidence briefing</strong> — Some sections may contain unverified claims. PRISM confidence: 61%</p>
+</blockquote>
+<h1>PRISM Morning Briefing — March 2, 2026</h1>
+<blockquote>
+<p>⚙️ <strong>Read the live briefing and react per article:</strong> <a href="https://prism.julien.care//2026-03-02.html">https://prism.julien.care//2026-03-02.html</a>
+Or edit <strong>NEWS-INTERESTS.md</strong> in Obsidian to adjust coverage.</p>
+</blockquote>
+<hr>
+<h2>🔴 THE SIGNAL</h2>
+<div class="section-feedback" data-section="SIGNAL">
+  <button class="section-btn" data-value="love" onclick="setSectionRating('SIGNAL', 'love', this)">❤️</button>
+  <button class="section-btn" data-value="ok" onclick="setSectionRating('SIGNAL', 'ok', this)">👍</button>
+  <button class="section-btn" data-value="skip" onclick="setSectionRating('SIGNAL', 'skip', this)">👎</button>
+</div>
+<p>OpenAI closed a $110B raise from Amazon, NVIDIA, and SoftBank at an $840B post-money valuation — the largest startup fundraise in history. This matters to you not because of OpenAI specifically, but because of what it signals about the infrastructure race underneath your stack: AWS becomes the exclusive third-party cloud provider for OpenAI Frontier, with 2 gigawatts of Trainium capacity through AWS infrastructure. The compute layer is consolidating fast. The tools you build on are being locked into massive infrastructure deals — worth knowing as you evaluate stack dependencies over the next 6 months.</p>
+<p>Source: <a href="https://www.latent.space/p/ainews-openai-closes-110b-raise-from">https://www.latent.space/p/ainews-openai-closes-110b-raise-from</a></p>
+<hr>
+<h2>📚 MUST-READ LIST</h2>
+<ul>
+<li><p><strong>&quot;Interactive Explanations&quot;</strong> by Simon Willison — simonwillison.net (<a href="https://simonwillison.net/guides/agentic-engineering-patterns/interactive-explanations/#atom-everything">link</a>)</p>
+<ul>
+<li>Why read it: Willison shows a concrete method for fighting the biggest non-technical risk in AI-assisted building — you ship code you don&#39;t understand, then can&#39;t debug or extend it. This is the problem you&#39;ll hit when your game project grows.</li>
+<li>Cross-fed by: simonwillison.net (Tier 1 feed)</li>
+<li>Conversation value: Ask yourself: do you have a practice for understanding code your agents write, or are you accumulating a black box? This piece gives you a lightweight answer.</li>
+</ul>
+</li>
+<li><p><strong>&quot;Why Donald Trump Gambled in Iran&quot;</strong> — The Economist (<a href="https://www.economist.com/leaders/2026/03/01/why-donald-trump-gambled-in-iran">link</a>)</p>
+<ul>
+<li>Why read it: Geopolitical context that will affect European business environment, supply chains, and the financial backdrop for Lucia&#39;s May transition. Not a builder read — a citizen read.</li>
+<li>Cross-fed by: economist.com + noahpinion.blog (two independent Tier 1 feeds)</li>
+<li>Conversation value: Worth having an opinion on before it dominates every dinner table conversation this week.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2>🧱 BUILDER INTELLIGENCE</h2>
+<div class="section-feedback" data-section="BUILDER_INTELLIGENCE">
+  <button class="section-btn" data-value="love" onclick="setSectionRating('BUILDER_INTELLIGENCE', 'love', this)">❤️</button>
+  <button class="section-btn" data-value="ok" onclick="setSectionRating('BUILDER_INTELLIGENCE', 'ok', this)">👍</button>
+  <button class="section-btn" data-value="skip" onclick="setSectionRating('BUILDER_INTELLIGENCE', 'skip', this)">👎</button>
+</div>
+<p><strong>Methodology beat:</strong></p>
+<p>Simon Willison published a sharp framework this week for a problem every AI-assisted builder hits but rarely names: when we lose track of how code written by our agents works, we take on &quot;cognitive debt&quot; — and if the core of an application becomes a black box we don&#39;t fully understand, we can no longer confidently reason about it, which makes planning new features harder and eventually slows progress in the same way that accumulated technical debt does.</p>
+<p>His proposed solution: build interactive, animated explanations of your own codebase on demand — using Claude Opus 4.6 to generate animated HTML walkthroughs that make algorithms visually legible. This is directly applicable to your game project: as you vibe-code game systems, the cognitive debt accumulates silently. Requesting animated explanations before moving to the next system is a zero-cost habit.</p>
+<p><strong>Micro-SaaS Radar:</strong></p>
+<p>The micro-SaaS market is projected to grow from $15.7B to $59.6B by 2030 (~30% annual growth), with solo founders routinely targeting the $5K–$50K+ MRR sweet spot by building hyper-specialized, AI-powered tools. No specific new pain point surfaced from today&#39;s sources worth flagging above existing signals. The opportunity window is open — no urgency trigger today.</p>
+<p>The more concrete signal: most founders spend under $1K before first revenue thanks to no-code tools and free tiers, with opportunity having shifted from generic tools to niche, AI-powered solutions. Your blog pipeline infrastructure is already at this level of readiness. That&#39;s leverage you&#39;re not yet using.</p>
+<p><strong>Tool &amp; Stack Updates:</strong></p>
+<p>Cursor 2.5 introduced Plugins on the Cursor Marketplace, Sandbox Access Controls, and Async Subagents — with plugins bundling MCP servers, skills, subagents, rules, and hooks, and launch partners including Amplitude, AWS, Figma, Linear, and Stripe. This is directly relevant to your <code>.cursor/skills/</code> setup: the new plugin format is the formalized version of exactly what you&#39;ve been building manually. Worth checking if your existing skills map to this structure.</p>
+<p>Bugbot Autofix can now automatically fix issues it finds in pull requests, with over 35% of Bugbot Autofix changes merged into the base PR.</p>
+<p>Bolt v2 launched with Claude Agent as the default LLM, unlimited built-in databases created automatically per project, and an all-in-one Bolt Cloud covering hosting, authentication, edge functions, storage, and secrets — eliminating the need for external services. If you prototype a micro-SaaS concept this quarter, Bolt v2 is now a more complete zero-infrastructure starting point than it was last month.</p>
+<p><strong>API Economics:</strong></p>
+<p>Anthropic&#39;s API now offers code execution free when used with web search or web fetch, and sandboxed code execution improves model capability and token efficiency. If your Substack publish script or any future tools use Claude API calls, this is a direct cost reduction — no action needed, just awareness.</p>
+<p>No changes detected to Substack&#39;s cookie-auth API. Your existing Python publish script should remain operational.</p>
+<hr>
+<h2>🎮 GAME DEV INTELLIGENCE</h2>
+<div class="section-feedback" data-section="GAME_DEV_INTELLIGENCE">
+  <button class="section-btn" data-value="love" onclick="setSectionRating('GAME_DEV_INTELLIGENCE', 'love', this)">❤️</button>
+  <button class="section-btn" data-value="ok" onclick="setSectionRating('GAME_DEV_INTELLIGENCE', 'ok', this)">👍</button>
+  <button class="section-btn" data-value="skip" onclick="setSectionRating('GAME_DEV_INTELLIGENCE', 'skip', this)">👎</button>
+</div>
+<p><strong>AI-Powered Tools &amp; Engines:</strong></p>
+<p>Sony announced an AI-powered upgrade to its PlayStation Spectral Super Resolution (PSSR) technology for PS5 Pro, introducing a more advanced neural network and reconstruction algorithm with roughly six additional months of refinement since the PS5 Pro launched. Not directly actionable for solo dev — but signals that AI upscaling is becoming a standard rendering layer even on fixed hardware. Relevant context if your game targets visual quality on limited specs.</p>
+<p>For vibe-coding game workflows: a full AI-coded tower defense game was built and published on itch.io, with all code and prompts shared on GitHub — though art assets still relied on free itch.io artists rather than AI generation, underscoring that AI asset generation remains a gap in the pipeline. The asset gap is the real constraint for solo dev right now. Plan for it in your game setup.</p>
+<p><strong>Solo Dev Leverage:</strong></p>
+<p>Cursor has emerged as a leading agentic coding tool for indie developers — unlike traditional autocomplete, it analyzes entire codebases and understands relationships between game systems. For procedural generation specifically, if you&#39;re building a roguelike and need to adjust logic across multiple scripts, Cursor can propose and implement those changes autonomously while explaining trade-offs. You already use Cursor. The leverage is there — it&#39;s a workflow discipline question, not a tool acquisition question.</p>
+<hr>
+<h2>📊 PIONEER ADVANTAGE CHECK</h2>
+<div class="section-feedback" data-section="PIONEER_ADVANTAGE">
+  <button class="section-btn" data-value="love" onclick="setSectionRating('PIONEER_ADVANTAGE', 'love', this)">❤️</button>
+  <button class="section-btn" data-value="ok" onclick="setSectionRating('PIONEER_ADVANTAGE', 'ok', this)">👍</button>
+  <button class="section-btn" data-value="skip" onclick="setSectionRating('PIONEER_ADVANTAGE', 'skip', this)">👎</button>
+</div>
+<table>
+<thead>
+<tr>
+<th>Development</th>
+<th>Your Edge</th>
+<th>Window</th>
+<th>Real or Hype?</th>
+<th>Builder Impact?</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Context Mode MCP — 98% context reduction in Claude Code</strong> (mksg.lu)</td>
+<td>First-mover on sessions that run 3h instead of 30min; directly extends what your Cursor/Claude Code workflows can accomplish before hitting walls</td>
+<td>30–60 days before mainstream adoption</td>
+<td><strong>Real</strong> — validated across 11 scenarios with hard numbers</td>
+<td>Install today. Your blog pipeline and future micro-software builds will hit context limits. This is infrastructure, not a toy.</td>
+</tr>
+<tr>
+<td><strong>Cursor 2.5 Plugins + Async Subagents</strong> (cursor.com/changelog/2-5)</td>
+<td>Plugins bundle MCP servers + skills + rules into distributable units; your <code>.cursor/skills/</code> system is already the right mental model</td>
+<td>60–90 days before skill marketplaces commoditise this</td>
+<td><strong>Real</strong> — Amplitude, AWS, Figma as launch partners signal enterprise traction</td>
+<td>Your existing skill architecture is now on the right side of a platform bet. No rewrite needed — you&#39;re building in the right direction.</td>
+</tr>
+<tr>
+<td><strong>Bolt v2 — Claude Agent as default + Bolt Cloud</strong> (bolt.new)</td>
+<td>One-prompt deploy with auth, storage, edge functions, Stripe-ready; non-technical founder&#39;s fastest path from idea to paying customer</td>
+<td>30 days — this is live now</td>
+<td><strong>Real</strong> — but crowded; Lovable and Bolt are converging fast</td>
+<td>Lowest-friction prototyping stack for your 6-month reconnaissance phase. Build a micro-SaaS proof-of-concept in a weekend without writing infrastructure code.</td>
+</tr>
+<tr>
+<td><strong>Lovable Plan Mode + automated browser testing</strong> (docs.lovable.dev)</td>
+<td>Pre-build planning + auto-QA before shipping; addresses the &quot;it looks right but isn&#39;t&quot; failure mode of vibe-coded apps</td>
+<td>Open now</td>
+<td><strong>Real</strong> — but incremental over Bolt v2</td>
+<td>Marginal improvement over your current stack unless you&#39;re shipping to real users. File and revisit in 60 days.</td>
+</tr>
+<tr>
+<td><strong>Claude memory import</strong> (claude.com/import-memory)</td>
+<td>Seamless context transfer from ChatGPT → Claude; Claude learns your preferences across conversations</td>
+<td>Open now, no window</td>
+<td><strong>Real</strong> — but convenience, not competitive advantage</td>
+<td>If you&#39;re on a paid Claude plan, 15 minutes to import your context. Immediate quality-of-life gain for daily AI interactions.</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>🛠️ TOOLS TO TRY</h2>
+<div class="section-feedback" data-section="TOOLS_TO_TRY">
+  <button class="section-btn" data-value="love" onclick="setSectionRating('TOOLS_TO_TRY', 'love', this)">❤️</button>
+  <button class="section-btn" data-value="ok" onclick="setSectionRating('TOOLS_TO_TRY', 'ok', this)">👍</button>
+  <button class="section-btn" data-value="skip" onclick="setSectionRating('TOOLS_TO_TRY', 'skip', this)">👎</button>
+</div>
+<ul>
+<li><strong>Context Mode MCP</strong> — Compresses Claude Code tool outputs by 98%, extending productive session time from ~30 minutes to ~3 hours before context degradation. <a href="https://mksg.lu/blog/context-mode">mksg.lu/blog/context-mode</a><ul>
+<li>Try it: <code>claude mcp add context-mode -- npx -y context-mode</code>, then run your blog pipeline end-to-end and check how much context remains after a full run.</li>
+<li>Relevance: Directly extends your Substack publishing pipeline&#39;s ceiling. As you add more skills and chain more steps, context exhaustion becomes your bottleneck. This delays that wall significantly.</li>
+<li>Signal: HN-endorsed, cross-feed score 6/10, technically validated with published benchmarks across 11 real scenarios.</li>
+</ul>
+</li>
+</ul>
+<div class="tool-feedback" data-tool="0" data-name="Context Mode MCP"><span class="tool-feedback-label">React:</span> <button class="tool-reaction-btn" data-value="love" onclick="setToolReaction(0, 'love', this)">❤️</button> <button class="tool-reaction-btn" data-value="ok" onclick="setToolReaction(0, 'ok', this)">👍</button> <button class="tool-reaction-btn" data-value="skip" onclick="setToolReaction(0, 'skip', this)">👎</button></div>
+
+<ul>
+<li><strong>Bolt v2</strong> — Full-stack app builder with Claude Agent as default model, automatic database provisioning, and Bolt Cloud (hosting + auth + storage + Stripe) in one deploy. <a href="https://bolt.new">bolt.new</a><ul>
+<li>Try it: Take one of your micro-software ideas from the reconnaissance list and describe it in a single prompt. Measure time-to-live-link.</li>
+<li>Relevance: Reconnaissance phase. You need fast evidence on which ideas have legs before March 2027. Bolt v2 compresses the prototype-to-signal cycle to hours.</li>
+<li>Signal: Web intelligence confirmed, Bolt v2 launch documented with Claude Opus 4.6 as selectable model.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<div class="tool-feedback" data-tool="1" data-name="Bolt v2"><span class="tool-feedback-label">React:</span> <button class="tool-reaction-btn" data-value="love" onclick="setToolReaction(1, 'love', this)">❤️</button> <button class="tool-reaction-btn" data-value="ok" onclick="setToolReaction(1, 'ok', this)">👍</button> <button class="tool-reaction-btn" data-value="skip" onclick="setToolReaction(1, 'skip', this)">👎</button></div>
+## 🏗️ BUILD WATCH
+
+<p><strong>The context window is becoming a first-class engineering constraint.</strong> Two independent signals this week: Context Mode MCP (Article 1) attacking the output side of the problem, and Cloudflare&#39;s earlier Code Mode attacking the definition side. The pattern is clear — as agentic sessions grow longer and tool chains deeper, context management becomes its own discipline. For a non-technical founder building longer automation chains, this is worth tracking not as a curiosity but as a capability gate. The founders who learn to manage context well will ship more, faster.</p>
+<p><strong>The &quot;autonomous agent while offline&quot; pattern is commercialising — and mostly noise.</strong> Article 12 (Show HN: AI agent works while offline) is a $37 PDF guide built around OpenClaw. The underlying concept — persistent memory, scheduled tasks, Telegram notifications — is real and is essentially what your NightCrawler already does. The commercial wrapper is thin. Worth noting: the market for &quot;teach people to build autonomous AI workers&quot; is crowding fast. If you were to productise your PRISM/NightCrawler stack, the window for that specific product is compressing.</p>
+<p><strong>AI game development with vibe coding remains genuinely hard.</strong> HN evidence (Articles 8 from web intel) shows that even Gemini Pro 2.5 &quot;utterly failed&quot; on established Python game engines. Your game project sits squarely in the zone where AI tools are weakest — novel creative systems, not CRUD. Adjust expectations accordingly: the game is a learning vehicle, not a product candidate, and that is fine given your stated framing.</p>
+<p><strong>macOS automation via MCP is opening up.</strong> Action Relay (Article 13) exposes every App Intents-enabled app as an MCP tool — Notes, UTM, and any other app with AppIntents support. Research-quality, not production-ready (requires SIP disabled), but the direction is clear: macOS is becoming a scriptable AI substrate. Apple&#39;s native MCP integration in App Intents is confirmed on their roadmap. This matters in 12–18 months, not today.</p>
+<hr>
+<h2>⏪ ACTION AUDIT</h2>
+<p>No previous actions to track. First briefing baseline established today.</p>
+<hr>
+<h2>🎯 TODAY&#39;S PRIORITIES</h2>
+<p><strong>1. Run the March monthly admin checklist (triggered March 1 — already late by 1 day)</strong>
+Fiddel, Liantis, budget review. This is Tier 1 business hygiene. It takes 30–60 minutes and failing to do it compounds. Do it before anything else today.</p>
+<p><strong>2. Confirm or schedule The Big Meeting with Henry and Lucas</strong>
+Your March window for the role restructure conversation is open. No signal it&#39;s happened yet. Either confirm it&#39;s done or put a date on the calendar today. The longer this floats, the more the February momentum from the &quot;door is open&quot; conversation dissipates. Henry needs a timeline, not an open invitation.</p>
+<p><strong>3. Map your existing <code>.cursor/skills/</code> to Cursor 2.5 Plugin format</strong>
+Your blog pipeline and publish skill are production-ready infrastructure. Cursor 2.5 Plugins formalize exactly what you&#39;ve built manually — skills, subagents, rules, hooks bundled together. Spend 20 minutes reading the <a href="https://cursor.com/changelog/2-5">Cursor 2.5 changelog</a> and assess whether restructuring one skill as a plugin gives you more capability. Low effort, potentially high leverage for the 6-month serious push.</p>
+<h2>🌍 WORLD LENS</h2>
+<div class="section-feedback" data-section="WORLD_LENS">
+  <button class="section-btn" data-value="love" onclick="setSectionRating('WORLD_LENS', 'love', this)">❤️</button>
+  <button class="section-btn" data-value="ok" onclick="setSectionRating('WORLD_LENS', 'ok', this)">👍</button>
+  <button class="section-btn" data-value="skip" onclick="setSectionRating('WORLD_LENS', 'skip', this)">👎</button>
+</div>
+<p><strong>The Iran question and European energy exposure.</strong>
+Two FT pieces (Articles 8 and 9, paywalled) signal that the Iran situation is live enough to warrant front-page coverage. The structural read for a Brussels founder: Belgium sources roughly a third of its natural gas through interconnectors tied to global LNG markets. Any disruption to Persian Gulf shipping lanes — even a containable one — produces an immediate energy price spike that flows through to Belgian SME operating costs within one to two billing cycles. For Chez Julien specifically: the shop&#39;s energy bill, delivery logistics costs, and the purchasing power of its customer base (upper-middle Brussels professionals) are all mildly exposed. Not panic-level, but worth noting that the risk environment is elevated, not stable.</p>
+<p><strong>Belgian employment law: the quiet January 2026 changes now in force.</strong>
+The web intelligence on Belgian employment law (Query 6) is the most operationally relevant geopolitical item today. Two changes deserve attention at Chez Julien&#39;s scale:</p>
+<ol>
+<li><p>The <strong>Federal Learning Account reporting obligation has been abolished</strong>. Previously mandatory training registration via the federal platform is gone. This is a small administrative relief — but if Henry&#39;s development plan included any training component tied to FLA compliance, that constraint is lifted.</p>
+</li>
+<li><p>A <strong>new employer solidarity contribution for primary incapacity</strong> applies as of January 1, 2026 — but only for employers with <strong>50+ employees</strong>. Chez Julien is well below this threshold. No action required.</p>
+</li>
+<li><p>The <strong>employer accountability contribution for incapacity is being phased out</strong>, with its legal basis repealed on <strong>April 1, 2026</strong>. Worth flagging to Serge (accountant) at the next interaction — this is a payroll-level change.</p>
+</li>
+<li><p>The <strong>full automatic wage indexation above €4,000 gross/month</strong> is being capped. Henry and Lucas are almost certainly below this threshold, so direct impact is minimal. But it signals the direction of Belgian labour cost policy: cost containment, gradually.</p>
+</li>
+</ol>
+<p>The structural read: Belgium is making small, employer-friendly adjustments at the margins. Nothing dramatic. But the April 1 contribution change is a concrete date to track for payroll accuracy.</p>
+<p><strong>Trump&#39;s Middle East gamble — indirect European exposure.</strong>
+The FT&#39;s Trump/Middle East coverage (Articles 7, 9) is paywalled, limiting direct analysis. The structural inference: any US military entanglement in Iran creates immediate oil price volatility, which the ECB must then factor into rate decisions. For a Brussels founder in a high-ownership position (48% building, 18-year loan), euro interest rate stability matters more than most. Current trajectory: ECB cutting cautiously. Escalation in the Gulf would complicate that. Not an immediate threat, but a second-order risk on a 6–18 month horizon.</p>
+<hr>
+<h2>🇪🇺 EUROPE TECH</h2>
+<div class="section-feedback" data-section="EUROPE_TECH">
+  <button class="section-btn" data-value="love" onclick="setSectionRating('EUROPE_TECH', 'love', this)">❤️</button>
+  <button class="section-btn" data-value="ok" onclick="setSectionRating('EUROPE_TECH', 'ok', this)">👍</button>
+  <button class="section-btn" data-value="skip" onclick="setSectionRating('EUROPE_TECH', 'skip', this)">👎</button>
+</div>
+<p><strong>Nothing directly surfaced today from EU-specific tech policy or Brussels startup news.</strong> The web intelligence focused on Belgian employment law (relevant) and global AI tooling (relevant). EU AI Act implementation timeline — which will eventually matter for any micro-SaaS Julien ships to European customers — did not surface in today&#39;s feeds.</p>
+<p><strong>The Britain-as-cautionary-tale signal.</strong> The FT piece on &quot;Britain&#39;s rising tax on ambition&quot; (Article 10, paywalled) is directionally useful even without full text: it reflects a recurring European debate about whether tax policy is pricing out entrepreneurial risk-taking. Belgium&#39;s own social security structure for self-employed founders remains one of the more expensive in the EU — Lucia&#39;s transition to self-employment in May will hit this directly. Worth a targeted conversation with Serge before May 1 to map the actual cost structure of her new status.</p>
+<hr>
+<h2>📈 TREND TRACKER</h2>
+<div class="section-feedback" data-section="TREND_TRACKER">
+  <button class="section-btn" data-value="love" onclick="setSectionRating('TREND_TRACKER', 'love', this)">❤️</button>
+  <button class="section-btn" data-value="ok" onclick="setSectionRating('TREND_TRACKER', 'ok', this)">👍</button>
+  <button class="section-btn" data-value="skip" onclick="setSectionRating('TREND_TRACKER', 'skip', this)">👎</button>
+</div>
+<p><strong>Accelerating:</strong></p>
+<ul>
+<li><strong>Context management as a discipline</strong> — Day 1 of tracking. Context Mode MCP is the first tool to attack the output side of context exhaustion. Expect more this week.</li>
+<li><strong>Bolt/Lovable convergence</strong> — Both platforms now offer Plan Mode, automated testing, and one-click cloud deploy. The gap between them is narrowing to UX preference. (Feb 28 → Mar 2: consistent signal, third consecutive briefing)</li>
+<li><strong>AI coding productivity paradox</strong> — Two strong articles (Articles 2 and 3) this week documenting that AI raises output <em>and</em> raises expectations simultaneously, producing burnout at 62% of associates. This is the &quot;dark flow&quot; problem. For a solo founder, the paradox is inverted: you have no manager raising your baseline, which means you capture the full upside without the institutional pressure distortion. This is a structural solo founder advantage worth internalising.</li>
+</ul>
+<p><strong>Stable:</strong></p>
+<ul>
+<li><strong>Cursor as primary coding environment</strong> — Cursor 2.5 with Plugins cements its position. No reason to switch stacks. Your <code>.cursor/skills/</code> architecture is on the right side of the platform bet.</li>
+<li><strong>Anthropic&#39;s values positioning</strong> — The &quot;Anthropic refused DoD surveillance&quot; story (Article 5, from March 1 briefing) reinforces a consistent pattern. Anthropic is differentiating on values as well as capability. For a founder choosing which AI infrastructure to depend on, this is relevant context.</li>
+</ul>
+<p><strong>New this week:</strong></p>
+<ul>
+<li><strong>macOS as AI automation substrate</strong> — Action Relay is research-grade today, but Apple&#39;s native MCP integration in App Intents is confirmed on their roadmap. First appearance in feeds. Watch.</li>
+<li><strong>Belgian employment law changes now in force</strong> — January 1, 2026 changes are live. April 1, 2026 date flagged. New to tracking.</li>
+</ul>
+<p><strong>Disappeared:</strong></p>
+<ul>
+<li><strong>Gemini 3.1 Flash</strong> — Dominated two briefings (Feb 27, Feb 28). No new signal today. Likely absorbed into the baseline.</li>
+</ul>
+<hr>
+<h2>🚮 SLOP FILTER</h2>
+<p><strong>7 of 13 Tier 2 articles were noise today.</strong></p>
+<ul>
+<li><strong>Articles 7, 8, 9 (FT — Iran/Middle East/Trump):</strong> Paywalled. Zero extractable content. Structural inference included in World Lens is drawn from prior knowledge, not article content. Flagged accordingly.</li>
+<li><strong>Article 10 (FT — Britain&#39;s tax on ambition):</strong> Paywalled. Minimal Brussels relevance. One inference drawn, clearly labelled.</li>
+<li><strong>Article 11 (CMU AI course):</strong> A university course syllabus. Zero actionability for a non-technical founder in reconnaissance mode. Filtered.</li>
+<li><strong>Article 12 (Show HN: AI agent while offline — $37 PDF):</strong> Thin commercial wrapper on concepts Julien already operates (NightCrawler, PRISM). The underlying idea is real; the product is not worth $37 to someone already running a more sophisticated version.</li>
+<li><strong>Article 5 (Anthropic/OpenAI supply chain tweet):</strong> JavaScript-disabled Twitter page. No extractable content. Dead link in practice.</li>
+</ul>
+<p><strong>High-signal articles today:</strong> Articles 1 (Context Mode MCP), 2 (AI coding costs), 3 (Engineering harder), 4 (Claude memory import), 6 (NanoClaw security model), 13 (Action Relay).</p>
+<hr>
+<h2>🔄 FEED HEALTH REPORT</h2>
+<ul>
+<li><p><strong>KEEP:</strong></p>
+<ul>
+<li><code>hnrss.org</code> — Delivered 5 of the 6 highest-signal articles today. Consistent. The feed is working.</li>
+<li><code>mksg.lu</code> (via HN) — Single article, but the Context Mode piece is the most actionable technical find this week.</li>
+<li>Web intelligence queries (Belgium employment law, Cursor changelog, Bolt/Lovable) — High return rate. 8/8 queries returned usable data.</li>
+</ul>
+</li>
+<li><p><strong>WATCH:</strong></p>
+<ul>
+<li><code>ft.com</code> — 4 articles, all paywalled, zero extractable content. The FT feed is generating titles and metadata but no substance. Either the scraper needs a workaround or the FT slot should be replaced with a source that delivers readable content.</li>
+</ul>
+</li>
+<li><p><strong>CONSIDER ADDING:</strong></p>
+<ul>
+<li><strong>Belgian/EU founder-specific sources</strong> — Today&#39;s most operationally relevant item (Belgian employment law) came from a targeted web search, not from feeds. A feed covering Belgian SME regulatory updates (e.g., Lexgo.be, UNIZO, UCM) would surface this automatically.</li>
+<li><strong>Lovable changelog / Bolt release notes</strong> — Both are highly relevant and currently require manual web intelligence queries. Direct RSS or changelog feeds would reduce dependency on query-based retrieval.</li>
+</ul>
+</li>
+<li><p><strong>CONSIDER REMOVING:</strong></p>
+<ul>
+<li><code>ft.com</code> — If paywall status does not improve within 3 consecutive runs, the feed slot is consuming ranking capacity without delivering content. Remove or replace with a European business outlet with open access (e.g., Euractiv for EU policy, Politico Europe for Brussels-specific).</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2>💬 FEEDBACK RESPONSE</h2>
+<p><strong>Julien&#39;s last feedback (Feb 24, 5/5):</strong> &quot;Better signal, actionable, not like the one I got about China stealing US models that made me give a 3.&quot;</p>
+<p>Acknowledged and holding the standard. The filter logic applied today: geopolitical items that don&#39;t connect to Julien&#39;s building mission, Belgian operating reality, or 6-month reconnaissance window were either excluded or clearly labelled as background context rather than signal. The China/IP theft pattern — world event, no builder hook — stays in the slop filter.</p>
+<p>Today&#39;s World Lens went harder on the Belgian employment law changes specifically because they have a concrete date (April 1), a named person (Serge), and a named event (Lucia&#39;s May 1 transition) that create real action items. That is the model: geopolitics earns its place by connecting to something you can actually do or decide.</p>
+<p>React to today&#39;s articles at: <strong><a href="https://prism.julien.care//2026-03-02.html">https://prism.julien.care//2026-03-02.html</a></strong></p>
+<hr>
+<p><em>PRISM v4.0 — 21 articles analyzed, 0 web searches, ~$0.24</em></p>
+
+  </div>
+
+  <div class="feedback-panel" id="feedback-panel">
+    <h2>📬 React to today's briefing</h2>
+    <p class="subtitle">Your reactions train PRISM to improve every night.</p>
+
+    <div class="overall-rating">
+      <label>Overall rating:</label>
+      <div class="star-buttons">
+        <button class="star-btn" onclick="setOverallRating(1, this)">1</button><button class="star-btn" onclick="setOverallRating(2, this)">2</button><button class="star-btn" onclick="setOverallRating(3, this)">3</button><button class="star-btn" onclick="setOverallRating(4, this)">4</button><button class="star-btn" onclick="setOverallRating(5, this)">5</button>
+      </div>
+    </div>
+
+    <div class="notes-area">
+      <label>Notes for PRISM (optional):</label>
+      <textarea id="feedback-notes" placeholder="Too much geopolitics? Loved that Builder Intelligence section? Want more micro-SaaS radar? Write anything here."></textarea>
+    </div>
+
+    <div class="submit-area">
+      <button id="submit-btn" onclick="submitFeedback()">Submit Feedback →</button>
+      <span id="submit-status" class="status-info"></span>
+    </div>
+  </div>
+
+  <div class="prism-footer">
+    PRISM v4.0 — Personal Research Intelligence System
+  </div>
+
+</div>
+
+<!-- Sticky submit bar (appears after first interaction) -->
+<div class="sticky-bar" id="sticky-bar">
+  <span id="sticky-count">0 reactions recorded</span>
+  <button onclick="submitFeedback()">Submit Feedback →</button>
+</div>
+
+<script>
+  // ── State ────────────────────────────────────────────────
+  const ARTICLES = [{"title":"Interactive Explanations","source":"simonwillison.net"},{"title":"Why Donald Trump Gambled in Iran","source":"The Economist"}];
+  const TOOLS = [{"name":"Context Mode MCP","snippet":"- **Context Mode MCP** — Compresses Claude Code tool outputs by 98%, extending productive session time from ~30 minutes to ~3 hours before context degradation. [mksg.lu/blog/context-mode](https://mksg.lu/blog/context-mode) - Try it: `claude mcp add context-mode -- npx -y context-mode`, then run your blog pipeline end-to-end and check how much context remains after a full run. - Relevance: Directly"},{"name":"Bolt v2","snippet":"- **Bolt v2** — Full-stack app builder with Claude Agent as default model, automatic database provisioning, and Bolt Cloud (hosting + auth + storage + Stripe) in one deploy. [bolt.new](https://bolt.new) - Try it: Take one of your micro-software ideas from the reconnaissance list and describe it in a single prompt. Measure time-to-live-link. - Relevance: Reconnaissance phase. You need fast evidence"}];
+  const WORKER_URL = "/api/feedback";
+  const FEEDBACK_SECRET = "prism-feedback-58367207b5410501";
+  const DATE = "2026-03-02";
+
+  const state = {
+    overallRating: null,
+    articleReactions: {},    // index → 'love' | 'ok' | 'skip'
+    toolReactions: {},       // index → 'love' | 'ok' | 'skip'
+    sectionRatings: {},      // sectionId → 'love' | 'ok' | 'skip'
+    notes: '',
+    totalInteractions: 0,
+  };
+
+  // ── Reaction Setters ─────────────────────────────────────
+  function setArticleReaction(index, value, btn) {
+    const prev = state.articleReactions[index];
+    if (prev === value) {
+      // Toggle off
+      delete state.articleReactions[index];
+      btn.parentElement.querySelectorAll('.reaction-btn').forEach(b => b.classList.remove('active-love', 'active-ok', 'active-skip'));
+    } else {
+      state.articleReactions[index] = value;
+      btn.parentElement.querySelectorAll('.reaction-btn').forEach(b => {
+        b.classList.remove('active-love', 'active-ok', 'active-skip');
+      });
+      btn.classList.add('active-' + value);
+    }
+    updateInteractionCount();
+  }
+
+  function setSectionRating(sectionId, value, btn) {
+    const prev = state.sectionRatings[sectionId];
+    if (prev === value) {
+      delete state.sectionRatings[sectionId];
+      btn.parentElement.querySelectorAll('.section-btn').forEach(b => b.classList.remove('active'));
+    } else {
+      state.sectionRatings[sectionId] = value;
+      btn.parentElement.querySelectorAll('.section-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+    }
+    updateInteractionCount();
+  }
+
+  function setOverallRating(value, btn) {
+    state.overallRating = state.overallRating === value ? null : value;
+    document.querySelectorAll('.star-btn').forEach(b => b.classList.remove('active'));
+    if (state.overallRating) btn.classList.add('active');
+    updateInteractionCount();
+  }
+
+  function updateInteractionCount() {
+    const count = Object.keys(state.articleReactions).length +
+                  Object.keys(state.toolReactions).length +
+                  Object.keys(state.sectionRatings).length +
+                  (state.overallRating ? 1 : 0);
+    state.totalInteractions = count;
+    document.getElementById('sticky-count').textContent = count + ' reaction' + (count !== 1 ? 's' : '') + ' recorded';
+    const bar = document.getElementById('sticky-bar');
+    if (count > 0) {
+      bar.classList.add('visible');
+    }
+  }
+
+  // ── Submit ───────────────────────────────────────────────
+  async function submitFeedback() {
+    const notes = document.getElementById('feedback-notes').value.trim();
+    state.notes = notes;
+
+    const payload = {
+      date: DATE,
+      briefingRating: state.overallRating,
+      mustReads: ARTICLES.map((article, i) => ({
+        title: article.title,
+        source: article.source,
+        rating: state.articleReactions[i] || null,
+      })).filter(a => a.rating !== null),
+      tools: TOOLS.map((tool, i) => ({
+        name: tool.name,
+        rating: state.toolReactions[i] || null,
+      })).filter(t => t.rating !== null),
+      sections: state.sectionRatings,
+      openNotes: notes,
+      submittedAt: new Date().toISOString(),
+    };
+
+    const btn = document.getElementById('submit-btn');
+    const status = document.getElementById('submit-status');
+
+    btn.disabled = true;
+    status.className = 'status-info';
+    status.textContent = 'Sending...';
+
+    if (!WORKER_URL) {
+      // No worker configured — download the JSON for manual submission
+      const blob = new Blob([JSON.stringify(payload, null, 2)], { type: 'application/json' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'prism-feedback-' + DATE + '.json';
+      a.click();
+      status.className = 'status-info';
+      status.textContent = '📥 Downloaded feedback JSON (no worker configured — place in data/feedback-latest.json)';
+      btn.disabled = false;
+      return;
+    }
+
+    try {
+      const headers = { 'Content-Type': 'application/json' };
+      if (FEEDBACK_SECRET) headers['X-PRISM-Secret'] = FEEDBACK_SECRET;
+      const res = await fetch(WORKER_URL, {
+        method: 'POST',
+        headers,
+        body: JSON.stringify(payload),
+      });
+
+      if (res.ok) {
+        status.className = 'status-success';
+        status.textContent = '✅ Feedback sent! PRISM will adjust tomorrow night.';
+        document.getElementById('sticky-bar').innerHTML = '<span style="color:#4caf50">✅ Feedback received — see you tomorrow morning</span>';
+      } else {
+        const text = await res.text();
+        throw new Error(text || 'Worker returned ' + res.status);
+      }
+    } catch (err) {
+      status.className = 'status-error';
+      status.textContent = '❌ Failed: ' + err.message + ' — try downloading instead.';
+      btn.disabled = false;
+    }
+  }
+
+  // ── Init ─────────────────────────────────────────────────
+  document.addEventListener('DOMContentLoaded', () => {
+    // Track notes textarea changes
+    document.getElementById('feedback-notes').addEventListener('input', () => {
+      updateInteractionCount();
+    });
+  });
+</script>
+</body>
+</html>
