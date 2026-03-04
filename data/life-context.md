@@ -1,87 +1,88 @@
-<!-- PRISM Life Context — Auto-generated 2026-03-03T04:43:48.376Z -->
+<!-- PRISM Life Context — Auto-generated 2026-03-04T04:26:58.894Z -->
 <!-- Source: context-note.md + LOG (3d) + 15 recent files -->
 <!-- Model: claude-sonnet-4-6 -->
 # LIFE CONTEXT SNAPSHOT — PRISM
-**Generated:** 2026-03-03 | **For:** AI analyst, intelligence briefing personalization
+**Generated:** 2026-03-04 | **Subject:** Julien (31, Brussels)
 
 ---
 
 ## 1. RIGHT NOW
 
-Julien is in a deliberate pre-commitment phase — not building toward today's output, but scanning for what deserves serious effort starting in ~6 months. His own words are explicit: the games he develops now, the dozens of projects in motion — none of it is the point. The point is understanding what's worth pursuing. He has no answer yet, and he knows it. He's running at the edge on purpose. Today (March 3) was active: he rewrote Values.md with a Renaissance Man framework, created a March 2026 action plan, updated his weekly business and value plans, and logged progress on a 10k running project.
+Julien is in an explicit **orientation phase** — not an execution phase. By his own words, the current mission is to understand what's worth pursuing before committing seriously to anything, roughly 6 months from now. He's deliberately running many parallel experiments (games, projects, blog, business) not to advance them, but to find the signal. March 3 was a high-output day of intentional planning: he rewrote Values.md with a Renaissance Man framework, built a March 2026 action plan, and created weekly business and value plans. Energy appears sharp and directed. March 2 was a quiet reset day — no commits, no journal, NightCrawler ran alone.
 
 ---
 
 ## 2. THIS WEEK
 
 **Active and moving:**
-- **March 2026 action plan** — Created today. Signals a reset/reframe moment. Paired with a rewrite of Values.md around a "Renaissance Man" framework — this is a meaningful identity-level edit, not routine maintenance.
-- **Weekly planning cycle** — Both value plan and business plan updated for the week of March 2. System is running.
-- **10k running project** — Notes updated today. Physical discipline is live.
-- **Mac setup / migration** — mac-setup MANUAL-STEPS updated today and extensively documented Feb 28 (MANUAL-STEPS.md, TROUBLESHOOTING.md, README.md). Likely a Mac Mini → MacBook Pro migration in progress or recently completed.
-- **Blog pipeline** — Four-stage blog skill system (brainstorm → extract → draft → review → publish to Substack) is fully built and recently active in `.cursor/skills/`. The Dishwasher Generation (Substack) is the active publishing platform.
-- **Dancing (Lindy Hop)** — Dedicated skill system exists with LOG, STATUS, song library, jazz steps. Keystone habit per values system.
-- **Guitar coaching** — Full skill system built. Country ballad songwriter/singer as north star. Active in `.cursor/skills/`.
-- **Game project** — SETUP PLAN.md created Feb 28. Low-priority per his own words ("not about the games I develop today") but infrastructure is being laid.
+- **Values.md / Renaissance Man framework** — Rewrote on March 3. This is a live document, not a filed one. Direction-setting work.
+- **March 2026 Action Plan** — Created March 3. Operative planning artifact for the month.
+- **Weekly Business Plan (2026-03-02)** — Created March 3. Chez Julien weekly ops planning.
+- **Weekly Value Plan (2026-03-02)** — Created March 3. Personal roles and 50/50 alignment.
+- **10K Running Project** — Updated notes March 3. Active physical goal in motion.
+- **mac-setup / MANUAL-STEPS documentation** — Updated March 3. System hygiene / tooling work.
+- **Blog pipeline (skills 1–5)** — Recently modified skill files covering brainstorm → extract → draft → review → Substack publish. The pipeline is built and operational; unclear if a post is actively in-draft right now, but the infrastructure is current.
+- **Dancing (Lindy Hop)** — Skill file active. Daily practice is a Tier 1 discipline / keystone habit.
+- **Guitar Coach** — Skill file active. Country ballad songwriter/singer track. Regular practice cadence.
 
-**Parked / background:**
-- Operation Autonomy / Chez Julien autonomy work — ongoing but not the week's edge.
-- Examine Your Life app, Lindy Hop Lab, Events with Lucia — product pipeline exists but no recent touches logged.
+**Parked / no recent signal:**
+- Chez Julien Simulator, Examine Your Life app, Lindy Hop Lab — no activity in the 3-day window.
+- The Dishwasher Generation (Substack) — pipeline infrastructure updated, no new post in progress visible.
 
 ---
 
 ## 3. PRIORITIES & STRUGGLES
 
-**What he said matters most (his own words, highest trust):**
-- Not current projects. Not current games. The question is: *what is worth starting seriously in 6 months?*
-- Right now = understanding, not executing. Scanning, not committing.
-- "I need to be at the edge." This is the operating mode: try many things, stay exposed to new ideas, avoid premature convergence.
-- He has no answer yet — and he's comfortable enough with that uncertainty to name it directly.
+**What he said matters most (his own words — ground truth):**
+> "It's not about the games I develop today. It's not about any of my dozens of projects. It's about what I'm going to start doing seriously in 6 months. Right now, it's only about understanding what's happening, understanding what's worth pursuing and what is not. I have no idea. That's why I'm trying so many things. I need to be at the edge."
+
+This is the operating thesis. **Everything is a probe, not a commitment.** The March planning work (action plan, values rewrite, weekly plans) is not contradiction — it's the scaffolding for the orientation process, not premature execution.
 
 **What's hard:**
-- The uncertainty is real, not performed. He genuinely doesn't know what to pursue seriously. The breadth of projects (games, blog, guitar, dancing, business, running, mac setup, AI skills) reflects active exploration, not scattered distraction — but it's also cognitively expensive.
-- His self-identified pattern: overinvests in creative projects (Tier 3), undertends life and relationships (Tier 1). The Renaissance Man rewrite of Values.md today may be an attempt to reconcile this.
-- Low orderliness is a known liability. Multiple parallel systems (MyLifeOS, Cursor skills, NightCrawler automation) exist partly to compensate.
+- He explicitly doesn't know what to pursue. High uncertainty is the current condition, not a problem to solve immediately.
+- Known self-pattern: overinvests in Tier 3 creative projects, undertends Tier 1 life/relationships. The Renaissance Man rewrite and 50/50 rule are corrective structures.
+- Low orderliness is his most supervised weakness — planning systems (NightCrawler, weekly plans, LOG) are compensatory infrastructure.
+- Cognitive debt risk: vibe-coding across many projects simultaneously is an identified drain pattern. Currently in explore mode, which makes this risk live.
 
-**What he's likely avoiding:**
-- Premature commitment to any single direction.
-- Possibly: the harder business conversations (Henry development, Lucas situation) — no meeting notes or updates logged since the Feb 4 team meeting.
+**What the planning burst signals:**
+- The March 3 output (Values.md, action plan, two weekly plans, running notes, mac setup) looks like a system-tightening move — getting structure in place before the 6-month horizon arrives.
 
 ---
 
 ## 4. BUSINESS
 
-**Chez Julien / Operation Autonomy:**
-- No new business activity logged this week beyond routine weekly business plan update.
-- Last substantive business event: team meeting Feb 4, 2026 — Julien signaled he's stepping back, floated Henry as soft manager candidate, asked Lucas to focus on sales/floor. The "Big Meeting" (full role restructure) was planned for March 2026 but no evidence it has happened yet.
-- Henry: 24, full-time, invested, wants manager role. Still needs training and structure. Key person for autonomy.
-- Lucas: part-time/uncertain status, good with customers, questionable engagement.
-- Financial state: ~€500K annual sales, high profitability. 48% building ownership. Accountant: Serge.
-- Operation Autonomy is in "Setup & Planning" phase (started February 2026). Several expected folders (Strategy, Henry Development, Processes, Metrics) may not yet be populated.
-- **The March Big Meeting may be overdue.** No log entry confirms it happened.
+**Chez Julien / GPFC srl:**
+- Strategic direction: **Operation Autonomy** — push the shop to run without Julien operationally. Started February 2026. Phase: Setup & Planning.
+- **Henry** (full-time): Performing well, invested. Being positioned for a soft manager role. Needs mentoring and structure; 24 years old, not yet reliable independently. The February 4 team meeting introduced the frame without fully executing the role restructure — "Big Meeting" (full role conversation) was deferred to March 2026.
+- **Lucas** (between part-time and full-time): Status described as "questionable." Good with customers, customer-facing strength. The concern is cognitive task-grabbing behavior that crowds Henry out. The March meeting was supposed to be the "Option 2" full conversation on roles.
+- **March team meeting** — per the February 4 meeting notes, March 2026 is when the full role restructure conversation ("The Big Meeting") was scheduled. This may be imminent or overdue this week.
+- Weekly business plan was created March 3, suggesting Julien is engaged with shop planning this week.
+- Operation Autonomy folders 01 (Strategy), 02 (Henry Development), 04 (Processes), 06 (Metrics) are defined but may not exist yet — flagged as gaps in the system architecture.
 
 ---
 
 ## 5. TOOLS & STACK
 
-- **MyLifeOS** — Obsidian vault. Markdown-native. NightCrawler runs automated nightly updates (CURRENT.md, nightcrawler-report.md, LOG.md).
-- **Cursor** — Primary AI coding/writing environment. Skill system fully built: blog pipeline (5 skills), dancing coach, guitar coach, business status updater, weekly business plan, value plan review. These are active, tested systems.
-- **PRISM** — Automated morning intelligence briefing (this system).
-- **Substack** — The Dishwasher Generation. blog-5-publish skill connects vault directly to Substack via `substack_publish.py` + cookie auth.
-- **Mac setup** — Migration documentation suggests recent hardware change (Mac Mini → MacBook Pro).
-- **Hardware:** Brussels-based, Europe/Brussels timezone.
+- **PRISM** — his personal AI research/briefing system (this document's consumer).
+- **NightCrawler** — automated nightly logging agent. Auto-logs all file activity to LOG.md and generates nightly reports. Ran on March 2 (only activity that day).
+- **Cursor** — primary AI coding/writing environment. All `.cursor/skills/` files are active Cursor skills.
+- **Obsidian / MyLifeOS vault** — markdown-based life OS. All files live here. Folder structure: CLAUDE.md, CURRENT.md, AGENT.md, LOG.md, System/, Journal/, Business/, Projects/, Personal/, Books/, Media/, _Archive/.
+- **Active Cursor skills (recently modified):** blog-1-brainstorm through blog-5-publish (full pipeline), dancing-session, guitar-coach, update-business-status, value-plan-review, weekly-business-plan. All appear current and operational.
+- **Substack** — The Dishwasher Generation (builder/maker publication). Publish pipeline operational via `substack_publish.py` with cookie-based auth.
+- **julien.care** — personal blog. "Friend energy" register. Part of the product pipeline.
 
 ---
 
 ## 6. LIFE
 
-- **Lucia** — Girlfriend. Artist. Quitting her job May 1, 2026 to go self-employed (art teaching + selling art). This is a live countdown: ~2 months out. Julien has committed to supporting her financially and with time. They have joint business ideas. Meeting anniversary: 27th of each month. This date is structurally important to track.
-- **Poncho** — Australian Shepherd, 2.5 years old. Keystone habit loop: dancing → community; Poncho → grounded man role.
-- **Running** — 10k project active, notes updated today. Physical health is in the plan.
-- **Energy/mood** — March 2 was described as "quiet night, nothing from me." March 3 was productive (action plan, values rewrite, multiple updates). Reset energy after a quiet day.
-- **Reynolds Mode** — Shutdown ritual enforces work/presence separation for Lucia time. Structural non-negotiable.
-- **Upcoming:** Lucia's transition (May 1) is the nearest life-altering date. No other immediate personal dates flagged in recent logs.
+- **Lucia** — girlfriend, artist. Currently employed at International Yehudi Menuhin Foundation. **Quitting May 1, 2026** to go self-employed (art teaching + selling own work). This is a major near-term life event — Julien has committed to supporting her financially and with time. Shared business ideas in the pipeline. Meeting anniversary: 27th of each month; yearly anniversary April 27.
+- **Poncho** — Australian Shepherd, 2.5 years old. Daily presence in the routine.
+- **Physical health:** 10K running project is active and being updated. Running is in the plan.
+- **Dancing:** Lindy Hop daily practice is Tier 1 / keystone habit. Skill infrastructure is current. Community connection anchor.
+- **Guitar:** Country ballad songwriter path. Regular practice cadence via guitar-coach skill.
+- **Energy read:** March 3 was a high-focus, high-output day. Mood appears oriented and intentional, not scattered — despite being in acknowledged uncertainty about the 6-month direction.
+- **Upcoming pressure point:** Lucia's May 1 transition is ~8 weeks away. Financial and emotional support planning is implicitly live.
 
 ---
 
-**Snapshot confidence:** High on current focus and identity framing (his own words). Medium on business status (last hard data point is Feb 4 meeting). Low on financial specifics (no recent P&L referenced).
+*Snapshot confidence: HIGH on current focus and mood (direct words + activity log alignment). MEDIUM on business details (STATUS.md not directly read; inferred from meeting notes and Operation Autonomy docs). LOW on specific project statuses beyond the 3-day window.*

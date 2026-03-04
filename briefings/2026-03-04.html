@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PRISM — 2026-03-04</title>
+  <style>
+    :root {
+      --bg: #0f0f0f;
+      --bg-card: #1a1a1a;
+      --bg-hover: #222;
+      --text: #e5e5e5;
+      --text-muted: #888;
+      --accent: #e8743b;
+      --accent-hover: #ff8c4a;
+      --border: #2a2a2a;
+      --success: #4caf50;
+      --love: #e74c3c;
+      --ok: #3498db;
+      --skip: #666;
+      --font: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--font);
+      font-size: 16px;
+      line-height: 1.7;
+      padding: 0;
+    }
+    .container {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 40px 24px 100px;
+    }
+    /* Typography */
+    h1 { font-size: 1.6rem; font-weight: 700; color: var(--text); margin-bottom: 8px; line-height: 1.3; }
+    h2 { font-size: 1.15rem; font-weight: 600; color: var(--text); margin: 36px 0 16px; padding-bottom: 8px; border-bottom: 1px solid var(--border); }
+    h3 { font-size: 1rem; font-weight: 600; margin: 20px 0 8px; }
+    p { margin-bottom: 14px; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { color: var(--accent-hover); text-decoration: underline; }
+    ul, ol { margin: 0 0 14px 24px; }
+    li { margin-bottom: 8px; }
+    strong { font-weight: 600; color: #f0f0f0; }
+    em { color: var(--text-muted); }
+    code { background: var(--bg-card); padding: 2px 6px; border-radius: 4px; font-size: 0.9em; font-family: 'SF Mono', 'Fira Code', monospace; }
+    pre { background: var(--bg-card); padding: 16px; border-radius: 8px; overflow-x: auto; margin: 0 0 14px; }
+    blockquote { border-left: 3px solid var(--accent); padding-left: 16px; color: var(--text-muted); margin: 0 0 14px; }
+    hr { border: none; border-top: 1px solid var(--border); margin: 32px 0; }
+    table { width: 100%; border-collapse: collapse; margin-bottom: 16px; font-size: 0.9em; }
+    th { background: var(--bg-card); padding: 8px 12px; text-align: left; border-bottom: 1px solid var(--border); font-weight: 600; }
+    td { padding: 8px 12px; border-bottom: 1px solid var(--border); }
+    tr:hover td { background: var(--bg-hover); }
+    /* PRISM header */
+    .prism-header {
+      background: linear-gradient(135deg, #1a1a1a, #0f0f0f);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 24px;
+      margin-bottom: 32px;
+    }
+    .prism-header .meta { color: var(--text-muted); font-size: 0.85rem; margin-top: 6px; }
+    .prism-header .meta span { margin-right: 16px; }
+    /* Article feedback widgets */
+    .article-feedback {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 10px 14px;
+      margin: 8px 0 20px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .article-feedback::before { content: 'React: '; color: var(--text-muted); font-size: 0.85rem; }
+    .reaction-buttons { display: flex; gap: 6px; }
+    .reaction-btn {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      color: var(--text-muted);
+      padding: 4px 12px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-size: 0.85rem;
+      transition: all 0.15s ease;
+    }
+    .reaction-btn:hover { background: var(--bg-hover); color: var(--text); }
+    .reaction-btn.active-love { background: rgba(231,76,60,0.15); border-color: var(--love); color: var(--love); }
+    .reaction-btn.active-ok { background: rgba(52,152,219,0.15); border-color: var(--ok); color: var(--ok); }
+    .reaction-btn.active-skip { background: rgba(102,102,102,0.15); border-color: #666; color: #888; }
+    /* Tool feedback widgets (per tool in TOOLS TO TRY) */
+    .tool-feedback {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      margin: 8px 0 12px 0;
+      padding: 6px 10px;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      font-size: 0.9rem;
+    }
+    .tool-feedback-label { color: var(--text-muted); margin-right: 4px; }
+    .tool-reaction-btn {
+      background: transparent;
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 4px 8px;
+      cursor: pointer;
+      opacity: 0.7;
+      font-size: 1rem;
+    }
+    .tool-reaction-btn:hover { opacity: 1; }
+    .tool-reaction-btn.active-love { opacity: 1; border-color: var(--love); background: rgba(231,76,60,0.15); }
+    .tool-reaction-btn.active-ok { opacity: 1; border-color: var(--accent); background: rgba(232,117,59,0.15); }
+    .tool-reaction-btn.active-skip { opacity: 1; border-color: var(--text-muted); background: rgba(136,136,136,0.15); }
+
+    /* Section feedback widgets */
+    .section-feedback {
+      display: inline-flex;
+      gap: 4px;
+      margin-left: 10px;
+      vertical-align: middle;
+    }
+    .section-btn {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 2px 8px;
+      cursor: pointer;
+      font-size: 0.8rem;
+      opacity: 0.5;
+      transition: all 0.15s ease;
+    }
+    .section-btn:hover { opacity: 1; }
+    .section-btn.active { opacity: 1; background: var(--bg-hover); border-color: var(--accent); }
+    /* Feedback panel */
+    .feedback-panel {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 28px;
+      margin-top: 48px;
+    }
+    .feedback-panel h2 { border: none; margin-top: 0; font-size: 1.2rem; }
+    .feedback-panel .subtitle { color: var(--text-muted); font-size: 0.9rem; margin-bottom: 24px; }
+    .overall-rating { margin-bottom: 24px; }
+    .overall-rating label { display: block; font-size: 0.9rem; color: var(--text-muted); margin-bottom: 10px; }
+    .star-buttons { display: flex; gap: 8px; }
+    .star-btn {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      color: var(--text-muted);
+      width: 44px; height: 44px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1.1rem;
+      font-weight: 700;
+      transition: all 0.15s ease;
+    }
+    .star-btn:hover { background: var(--bg-hover); color: var(--text); }
+    .star-btn.active { background: rgba(232,116,59,0.15); border-color: var(--accent); color: var(--accent); }
+    .notes-area { margin-bottom: 24px; }
+    .notes-area label { display: block; font-size: 0.9rem; color: var(--text-muted); margin-bottom: 8px; }
+    textarea {
+      width: 100%;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      color: var(--text);
+      border-radius: 8px;
+      padding: 12px 14px;
+      font-family: var(--font);
+      font-size: 0.95rem;
+      resize: vertical;
+      min-height: 90px;
+    }
+    textarea:focus { outline: none; border-color: var(--accent); }
+    .submit-area { display: flex; gap: 12px; align-items: center; }
+    #submit-btn {
+      background: var(--accent);
+      color: white;
+      border: none;
+      padding: 12px 28px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1rem;
+      font-weight: 600;
+      transition: all 0.15s ease;
+    }
+    #submit-btn:hover { background: var(--accent-hover); }
+    #submit-btn:disabled { opacity: 0.5; cursor: not-allowed; }
+    #submit-status { font-size: 0.9rem; }
+    .status-success { color: var(--success); }
+    .status-error { color: #e74c3c; }
+    .status-info { color: var(--text-muted); }
+    /* Sticky submit bar */
+    .sticky-bar {
+      position: fixed;
+      bottom: 0; left: 0; right: 0;
+      background: rgba(15,15,15,0.95);
+      border-top: 1px solid var(--border);
+      backdrop-filter: blur(10px);
+      padding: 12px 24px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 16px;
+      font-size: 0.9rem;
+      z-index: 100;
+      transform: translateY(100%);
+      transition: transform 0.3s ease;
+    }
+    .sticky-bar.visible { transform: translateY(0); }
+    .sticky-bar button {
+      background: var(--accent);
+      color: white;
+      border: none;
+      padding: 8px 20px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 0.9rem;
+    }
+    /* Footer */
+    .prism-footer { color: var(--text-muted); font-size: 0.8rem; text-align: center; margin-top: 40px; padding-top: 24px; border-top: 1px solid var(--border); }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <div class="prism-header">
+    <h1>PRISM Morning Briefing</h1>
+    <div class="meta">
+      <span>📅 2026-03-04</span>
+      <span>📰 21 articles analyzed</span>
+      <span>🤖 PRISM v4.0</span>
+    </div>
+  </div>
+
+  <div id="briefing-content">
+    <h1>PRISM Morning Briefing — March 4, 2026</h1>
+<blockquote>
+<p>⚙️ <strong>Read the live briefing and react per article:</strong> <a href="https://prism.julien.care//2026-03-04.html">https://prism.julien.care//2026-03-04.html</a>
+Or edit <strong>NEWS-INTERESTS.md</strong> in Obsidian to adjust coverage.</p>
+</blockquote>
+<hr>
+<h2>🔴 THE SIGNAL</h2>
+<div class="section-feedback" data-section="SIGNAL">
+  <button class="section-btn" data-value="love" onclick="setSectionRating('SIGNAL', 'love', this)">❤️</button>
+  <button class="section-btn" data-value="ok" onclick="setSectionRating('SIGNAL', 'ok', this)">👍</button>
+  <button class="section-btn" data-value="skip" onclick="setSectionRating('SIGNAL', 'skip', this)">👎</button>
+</div>
+<p>Anthropic has confirmed $19B ARR — putting it within striking distance of OpenAI&#39;s $20B. Simultaneously, Claude Opus 4.6 solved an open math problem that Donald Knuth had been working on for several weeks, prompting Knuth to write that he&#39;ll &quot;have to revise my opinions about generative AI.&quot; The model you build with every day just crossed a threshold that the inventor of computer science couldn&#39;t ignore. That matters for how seriously you take AI-assisted building right now.</p>
+<p>Sources: <a href="https://www.latent.space/p/ainews-anthropic-19b-arr-qwen-team">Latent Space AINews</a> | <a href="https://simonwillison.net/2026/Mar/3/donald-knuth/#atom-everything">Simon Willison quoting Knuth</a></p>
+<hr>
+<h2>📚 MUST-READ LIST</h2>
+<ul>
+<li><p><strong>[AINews] Anthropic @ $19B ARR, Qwen team leaves, Gemini and GPT bump up fast models</strong> by Latent Space — latent.space (<a href="https://www.latent.space/p/ainews-anthropic-19b-arr-qwen-team">link</a>)</p>
+<ul>
+<li>Why read it: The mass departures of Qwen&#39;s technical leadership are being described as a major blow to open source — many engineers view Qwen as critical infrastructure for the open model ecosystem, and there&#39;s genuine uncertainty about whether its open-weights cadence will slow. If you care about which AI layer to build on, this shifts the landscape.</li>
+<li>Cross-fed by: Latent Space (primary), referenced across AINews ecosystem</li>
+<li>Conversation value: Is open-source AI infrastructure now more fragile than it looked 30 days ago? Form a view before it becomes consensus.</li>
+</ul>
+</li>
+<li><p><strong>[AINews] Truth in the time of Artifice</strong> by Latent Space — latent.space (<a href="https://www.latent.space/p/ainews-truth-in-the-time-of-artifice">link</a>)</p>
+<ul>
+<li>Why read it: A reported Codex study across 10 repos and 124 PRs found that AGENTS.md reduced median agent runtime ~28.6% and tokens ~16.6%, mostly by reducing worst-case thrashing rather than uniform gains. This is directly applicable to your NightCrawler and any agent work you run.</li>
+<li>Cross-fed by: Latent Space, referenced by omarsar0</li>
+<li>Conversation value: Are your Cursor skills and agent prompts structured to reduce thrashing — or are they adding to it?</li>
+</ul>
+</li>
+<li><p><strong>Superintelligence is already here, today</strong> by Noah Smith — noahpinion.blog (<a href="https://www.noahpinion.blog/p/superintelligence-is-already-here">link</a>)</p>
+<ul>
+<li>Why read it: AI can already read an entire scientific literature in minutes and extract basic conclusions — no human can do that. A single human can be expert in one or two complex subjects; an AI can be expert in all of them at once. This is a sharp argument for <em>why</em> the orientation phase you&#39;re in right now is the right call — the question of what&#39;s worth pursuing looks different when your tools have already crossed this line.</li>
+<li>Cross-fed by: Noah Pinion (independent signal)</li>
+<li>Conversation value: Does this change what a &quot;competitive advantage&quot; looks like for a solo micro-SaaS builder in 2026?</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2>🧱 BUILDER INTELLIGENCE</h2>
+<div class="section-feedback" data-section="BUILDER_INTELLIGENCE">
+  <button class="section-btn" data-value="love" onclick="setSectionRating('BUILDER_INTELLIGENCE', 'love', this)">❤️</button>
+  <button class="section-btn" data-value="ok" onclick="setSectionRating('BUILDER_INTELLIGENCE', 'ok', this)">👍</button>
+  <button class="section-btn" data-value="skip" onclick="setSectionRating('BUILDER_INTELLIGENCE', 'skip', this)">👎</button>
+</div>
+<p><strong>Methodology beat:</strong></p>
+<p>A Carnegie Mellon-style loop is emerging for SKILL.md improvement in production: &quot;log → evaluate → monitor → improve,&quot; with an open-source PR review bot as a concrete example. This maps directly to how you should be iterating your Cursor skills — especially <code>blog-1-brainstorm</code> through <code>blog-5-publish</code>. You have the pipeline; the question is whether you have the feedback loop.</p>
+<p>A viral datapoint claims &quot;80%+ of all code deployed [at Anthropic] is written by Claude Code,&quot; paired with concern that speed may be coming with reliability regressions. Separate threads discuss Claude Code adoption inside major companies with &quot;supervision&quot; replacing manual coding. The frame is shifting: you&#39;re not a coder using AI, you&#39;re a supervisor running an AI coder. Internalize that.</p>
+<p>Agent reliability is now a cross-functional problem — you can&#39;t &quot;engineer&quot; your way out of bad eval criteria; domain experts must own the success definitions. Practical advice: define success before building; start with deterministic graders; use LLM judges for style; grade the produced artifact, not the path.</p>
+<p><strong>Micro-SaaS Radar:</strong></p>
+<p>The micro-SaaS landscape in early 2026 centers on small, focused products serving specific niches — with AI capabilities that once required enterprise budgets now fitting within a solo founder&#39;s toolkit. The prevailing framework: find 100 customers paying $50/month, not build the next Salesforce, and run a 30-day validation sprint before committing to build.</p>
+<p>One unbuilt surface worth noting: agent observability and evaluation is becoming a first-class problem — &quot;since we&#39;re all agent managers now, what&#39;s your favourite way to get observability?&quot; is a live practitioner question with no dominant answer yet. A lightweight agent observability dashboard built for solo devs running Cursor/Claude Code is a gap no one has cleanly filled.</p>
+<p><strong>Tool &amp; Stack Updates:</strong></p>
+<p>Bolt v2 launched, positioning itself as &quot;the first professional vibe coding tool&quot; addressing endless error loops, infrastructure headaches, and projects collapsing under their own weight. It features all-in-one infrastructure covering databases, hosting, authentication, payments, and SEO — all automatically managed — and uses an &quot;agents-of-agents&quot; architecture that always selects the best available AI model starting with Claude Agent.</p>
+<p>Lovable rolled out MCP server support, allowing users to connect work tools like Atlassian, Notion, Linear, and n8n — pulling in PRDs, tickets, and wireframes directly into builds. A new Design view was also launched with visual editing tools, updated themes, and AI image generation.</p>
+<p>Cursor 2.6 shipped on March 3, introducing MCP Apps and Team Marketplaces for Plugins. If you&#39;re using Cursor daily, check the changelog — plugin marketplace changes affect how you can extend your workflow.</p>
+<p>Gemini 3.1 Flash-Lite launched at $0.25/million tokens input and $1.50/million output — one-eighth the price of Gemini 3.1 Pro — with four different thinking levels. Useful to know for any API-backed tool you prototype; this is now a serious cheap-inference option.</p>
+<p><strong>API Economics:</strong></p>
+<p>Nothing new in the API landscape from today&#39;s sources beyond model pricing above.</p>
+<hr>
+<h2>🎮 GAME DEV INTELLIGENCE</h2>
+<div class="section-feedback" data-section="GAME_DEV_INTELLIGENCE">
+  <button class="section-btn" data-value="love" onclick="setSectionRating('GAME_DEV_INTELLIGENCE', 'love', this)">❤️</button>
+  <button class="section-btn" data-value="ok" onclick="setSectionRating('GAME_DEV_INTELLIGENCE', 'ok', this)">👍</button>
+  <button class="section-btn" data-value="skip" onclick="setSectionRating('GAME_DEV_INTELLIGENCE', 'skip', this)">👎</button>
+</div>
+<p><strong>AI-Powered Tools &amp; Engines:</strong></p>
+<p>A recommended solo dev workflow for RPGs in 2026 involves Scenario for sprite generation, Leonardo AI for textures, Inworld AI for NPC dialogue, Replica Studios for voices, AIVA for the soundtrack, and Cascadeur for animation. No single tool shipped today, but this stack is worth noting as the reference configuration.</p>
+<p>Bezi, a project-aware AI assistant that integrates directly with Unity, was actively showcased at GDC 2026 (March 9–13) — next week. Worth watching for announcements if game dev stays on your radar as a probe.</p>
+<p><strong>Solo Dev Leverage:</strong></p>
+<p>Walk the Frog — a cozy indie game with drag-and-drop puzzle mechanics set in a world drawn on sticky notes — offers intuitive puzzles and a 2D-style world with calm soundtrack, without stress or pressure. Why this matters: a one-mechanic, hand-drawn aesthetic game is shipping and getting press. The surface area of &quot;viable solo indie game&quot; is smaller than you think. Your Chez Julien Simulator concept sits in this zone.</p>
+<hr>
+<h2>📊 PIONEER ADVANTAGE CHECK</h2>
+<div class="section-feedback" data-section="PIONEER_ADVANTAGE">
+  <button class="section-btn" data-value="love" onclick="setSectionRating('PIONEER_ADVANTAGE', 'love', this)">❤️</button>
+  <button class="section-btn" data-value="ok" onclick="setSectionRating('PIONEER_ADVANTAGE', 'ok', this)">👍</button>
+  <button class="section-btn" data-value="skip" onclick="setSectionRating('PIONEER_ADVANTAGE', 'skip', this)">👎</button>
+</div>
+<table>
+<thead>
+<tr>
+<th>Development</th>
+<th>Your Edge</th>
+<th>Window</th>
+<th>Real or Hype?</th>
+<th>Builder Impact?</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Bolt v2 launch</strong> — &quot;professional vibe coding&quot; with autonomous agents, built-in auth/payments/hosting</td>
+<td>Non-technical founders can now ship full-stack products without touching infrastructure</td>
+<td><strong>Now — 60 days</strong> before market normalizes</td>
+<td><strong>Real</strong> (verified changelog: bolt.new/blog/bolt-v2)</td>
+<td>Directly removes the biggest blocker for a solo non-technical builder: backend complexity. Worth one 30-min session this week to assess if it replaces your current Cursor + manual deploy workflow</td>
+</tr>
+<tr>
+<td><strong>Lovable MCP integrations</strong> — Notion, Linear, n8n (400+ apps), Design view, all paid plans</td>
+<td>Connect product specs directly to builds; no developer handoff needed</td>
+<td><strong>Now</strong></td>
+<td><strong>Real</strong> (docs.lovable.dev/changelog)</td>
+<td>If you ever build a tool for a specific business workflow (e.g., something for Chez Julien ops), Lovable&#39;s n8n/Notion connectors compress the integration layer dramatically</td>
+</tr>
+<tr>
+<td><strong>Cursor 2.6 MCP Apps + Team Marketplaces</strong></td>
+<td>You already use Cursor daily — new plugin ecosystem means extending it without code</td>
+<td><strong>Now</strong></td>
+<td><strong>Real</strong> (cursor.com/changelog, March 3, 2026)</td>
+<td>Low-friction: you&#39;re already in this tool. New MCP apps may slot directly into your existing <code>.cursor/skills/</code> infrastructure</td>
+</tr>
+<tr>
+<td><strong>Micro-SaaS 100-customers-at-$50/month framework</strong></td>
+<td>Brussels-based, orientation phase = ideal moment to validate before committing</td>
+<td><strong>6-month window aligns with your own timeline</strong></td>
+<td><strong>Partially Hype</strong> — the framework is sound, the &quot;$2,500 on autopilot&quot; claims are marketing</td>
+<td>The 30-day validation sprint concept is actionable and maps cleanly onto your current probe-not-commit operating mode</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>🛠️ TOOLS TO TRY</h2>
+<div class="section-feedback" data-section="TOOLS_TO_TRY">
+  <button class="section-btn" data-value="love" onclick="setSectionRating('TOOLS_TO_TRY', 'love', this)">❤️</button>
+  <button class="section-btn" data-value="ok" onclick="setSectionRating('TOOLS_TO_TRY', 'ok', this)">👍</button>
+  <button class="section-btn" data-value="skip" onclick="setSectionRating('TOOLS_TO_TRY', 'skip', this)">👎</button>
+</div>
+<ul>
+<li><strong>OpenCovibe</strong> — Local-first desktop UI wrapping Claude Code. Adds visual diffs, session history, multi-provider switching (DeepSeek, Ollama, OpenRouter, etc.), usage analytics, and a plugin marketplace — without a cloud backend. All data stored at <code>~/.opencovibe/</code>.<ul>
+<li><strong>Link:</strong> <a href="https://github.com/AnyiWang/OpenCovibe">https://github.com/AnyiWang/OpenCovibe</a></li>
+<li><strong>Try it:</strong> Download the macOS <code>.dmg</code>, run the setup wizard, replay one of your recent Claude Code sessions through the visual interface. Check if the per-model cost tracking changes how you use API credits.</li>
+<li><strong>Relevance:</strong> Directly complements your Cursor + Claude Code stack. If you&#39;re running multiple micro-software probes simultaneously, session history and cost analytics become genuinely useful — not vanity features.</li>
+<li><strong>Signal:</strong> HN-endorsed (Show HN), cross-feed count: 1. Early-stage but technically serious (680+ tests, CI on every commit, BSD licensed).</li>
+<li><strong>Caveat:</strong> macOS-first; Windows/Linux incomplete. You&#39;re on Mac — this is fine.</li>
+</ul>
+</li>
+</ul>
+<div class="tool-feedback" data-tool="0" data-name="OpenCovibe"><span class="tool-feedback-label">React:</span> <button class="tool-reaction-btn" data-value="love" onclick="setToolReaction(0, 'love', this)">❤️</button> <button class="tool-reaction-btn" data-value="ok" onclick="setToolReaction(0, 'ok', this)">👍</button> <button class="tool-reaction-btn" data-value="skip" onclick="setToolReaction(0, 'skip', this)">👎</button></div>
+
+<ul>
+<li><strong>term-cli</strong> — Single-file Python tool (tmux-backed) that lets AI agents run interactive terminal programs without blocking — dev servers, debuggers, REPLs, SSH sessions, package installers.<ul>
+<li><strong>Link:</strong> <a href="https://github.com/EliasOenal/term-cli">https://github.com/EliasOenal/term-cli</a></li>
+<li><strong>Try it:</strong> Install via the one-liner curl script, install the Claude Code skill file (<code>~/.claude/skills/</code>), then have Claude Code spin up a dev server and tail its output — without the agent hanging.</li>
+<li><strong>Relevance:</strong> Addresses a concrete friction point if your Cursor/Claude Code sessions block on interactive processes. Less relevant today (orientation phase), but worth bookmarking for when you move into execution.</li>
+<li><strong>Signal:</strong> HN-endorsed (Show HN), cross-feed count: 1. Lightweight dependency profile (just tmux + Python 3.8+).</li>
+</ul>
+</li>
+</ul>
+<hr>
+<div class="tool-feedback" data-tool="1" data-name="term-cli"><span class="tool-feedback-label">React:</span> <button class="tool-reaction-btn" data-value="love" onclick="setToolReaction(1, 'love', this)">❤️</button> <button class="tool-reaction-btn" data-value="ok" onclick="setToolReaction(1, 'ok', this)">👍</button> <button class="tool-reaction-btn" data-value="skip" onclick="setToolReaction(1, 'skip', this)">👎</button></div>
+## 🏗️ BUILD WATCH
+
+<p><strong>Voice agents are becoming infrastructure, not experiments.</strong> A builder spent one day and ~$100 in API credits to construct a voice agent achieving ~400ms end-to-end latency — outperforming off-the-shelf platforms like Vapi by 2× on latency. The underlying stack (Deepgram Flux for turn detection, streaming STT/LLM/TTS pipeline) is now assembler-grade accessible. This matters less as a &quot;build this now&quot; signal and more as a structural marker: voice interfaces are exiting the specialist tier. For a non-technical founder in your 6-month scanning window, the question isn&#39;t whether to build a voice agent — it&#39;s whether any of your probe projects has a natural voice interface that was previously too complex to attempt.</p>
+<p><strong>The Claude Code ecosystem is generating its own gravity.</strong> OpenCovibe, term-cli, and a growing MCP plugin layer are all third-party infrastructure being built <em>around</em> Claude Code — not by Anthropic. This is the classic platform emergence pattern. Your existing investment in <code>.cursor/skills/</code> and Claude Code workflows is accruing ecosystem value you didn&#39;t pay for.</p>
+<p><strong>Bolt v2&#39;s &quot;agents-of-agents&quot; architecture</strong> deserves watching. The claim that it always selects the best available model and autonomously plans, iterates, and fixes is significant if true at production scale. Verify against a real project before trusting the marketing — but the architectural direction (meta-agents orchestrating specialist agents) is the correct one, and Bolt is betting the company on it.</p>
+<hr>
+<h2>⏪ ACTION AUDIT</h2>
+<p>No previous actions to track — first briefing of the cycle.</p>
+<hr>
+<h2>🎯 TODAY&#39;S PRIORITIES</h2>
+<p><strong>1. Hold the March team meeting at Chez Julien (URGENT — may be overdue)</strong>
+You scheduled &quot;The Big Meeting&quot; on roles — Henry&#39;s soft manager promotion, Lucas&#39;s task-crowding behavior — for March 2026. You&#39;re now in March. This conversation doesn&#39;t get better with delay. Henry is 24 and needs structure to grow into the role you need him to fill before Operation Autonomy can work. Do it this week, not this month.</p>
+<p><strong>2. Apply the AGENTS.md / SKILL.md feedback loop to one active Cursor skill</strong>
+The evidence is in: structured agent files reduce thrashing by ~28% and token use by ~16%. You have a live blog pipeline (skills 1–5) that you built but may not be iterating. Pick one skill — start with <code>blog-2-extract</code> or <code>blog-3-draft</code> — and run the &quot;log → evaluate → improve&quot; loop on it. One hour. You&#39;ll feel the difference immediately.</p>
+<p><strong>3. Capture one orientation signal from today&#39;s reading</strong>
+Your operating thesis is that everything right now is a probe. The Knuth/Claude Opus story and Noah Smith&#39;s superintelligence piece both point at the same thing: the tools crossed a threshold. Before you close your laptop today, write one sentence in your LOG or Journal: <em>&quot;What does this mean for what&#39;s worth building in 6 months?&quot;</em> Not an answer — a sharper question. That&#39;s the work of the orientation phase.</p>
+<h2>🌍 WORLD LENS</h2>
+<div class="section-feedback" data-section="WORLD_LENS">
+  <button class="section-btn" data-value="love" onclick="setSectionRating('WORLD_LENS', 'love', this)">❤️</button>
+  <button class="section-btn" data-value="ok" onclick="setSectionRating('WORLD_LENS', 'ok', this)">👍</button>
+  <button class="section-btn" data-value="skip" onclick="setSectionRating('WORLD_LENS', 'skip', this)">👎</button>
+</div>
+<p><strong>Iran, oil, and the European cost floor.</strong>
+China is moving to lean on Russian oil as the Iran crisis chokes supply — a geopolitical displacement that ripples through energy markets in ways that are directly material to a Brussels food retailer. The mechanism is indirect but reliable: when Middle East supply tightens, European refiners face pressure on feedstock costs; when Chinese demand shifts toward Russian crude, it reconfigures global oil price dynamics. Belgium imports virtually all its energy. A sustained Iran disruption does not produce a single dramatic price spike — it produces a slow, grinding elevation of the cost floor for heating, refrigeration, and logistics that squeezes thin-margin food retail over quarters, not weeks.</p>
+<p>For Chez Julien specifically: the more immediate concern is that consumer confidence in Brussels tends to track energy price anxiety. A household watching its heating bill climb spends less on specialty food. This is not a crisis scenario — it is a slow-squeeze backdrop that makes Operation Autonomy&#39;s efficiency goals more urgent, not less.</p>
+<p><strong>Belgium VAT: still in flux, still material.</strong>
+Shortly before the end of 2025, the Belgian federal government reached an agreement introducing significant changes to several reduced VAT rates, primarily affecting hospitality, catering, leisure, and food sectors, with all VAT changes initially applying from 1 March 2026. However, as of 13 February 2026, Belgium&#39;s government delayed the planned 1 March 2026 reduced VAT rate rises — including from 6% to 12% on takeaway food — following a strongly critical advisory opinion from the Council of State.</p>
+<p>The delay does not mean the changes are dead — it means the timeline is uncertain. The structural pressure remains: Belgian fiscal consolidation will eventually extract revenue from the hospitality and food sector. For a specialty food shop owner, this is a planning variable that needs a confirmed date before it becomes an operational decision. Monitor official communications. Do not assume the delay is a reversal.</p>
+<hr>
+<h2>🇪🇺 EUROPE TECH</h2>
+<div class="section-feedback" data-section="EUROPE_TECH">
+  <button class="section-btn" data-value="love" onclick="setSectionRating('EUROPE_TECH', 'love', this)">❤️</button>
+  <button class="section-btn" data-value="ok" onclick="setSectionRating('EUROPE_TECH', 'ok', this)">👍</button>
+  <button class="section-btn" data-value="skip" onclick="setSectionRating('EUROPE_TECH', 'skip', this)">👎</button>
+</div>
+<p><strong>AI hallucination is now a judicial misconduct issue, not just a product problem.</strong>
+India&#39;s Supreme Court has threatened legal consequences after a judge was found to have adjudicated on a property dispute using fake judgements generated by artificial intelligence — calling the case a matter of &quot;institutional concern&quot; with a &quot;direct bearing on integrity of adjudicatory process.&quot; This is not a distant story. The EU AI Act&#39;s high-risk category explicitly covers AI use in legal proceedings, and European courts have been watching these cases carefully since the UK High Court&#39;s 2025 warning.</p>
+<p>The Ars Technica case compounds this: Ars Technica terminated its senior AI reporter after a retracted article was found to include &quot;fabricated quotations generated by an AI tool and attributed to a source who did not say them&quot; — characterised by the editor-in-chief as &quot;a serious failure of our standards.&quot;</p>
+<p><strong>For a Brussels founder:</strong> Two signals here. First, if you ever use AI to generate content involving named people or cited sources for your blog or Substack, the verification step is now a legal and reputational requirement, not optional hygiene. Second, the EU&#39;s AI liability framework will tighten around exactly these hallucination-in-high-stakes-contexts cases. Know which of your future products touch high-risk categories before you&#39;re surprised by compliance requirements.</p>
+<p><strong>Meta&#39;s smart glasses privacy crisis is a Brussels-relevant data story.</strong>
+Meta&#39;s Ray-Ban glasses are generating intimate, private footage — bathroom visits, undressing — that flows to data annotation workers without users&#39; apparent awareness. This story broke in Swedish press and will reach EU regulators. Brussels is home to the EU&#39;s primary data protection enforcement machinery. GDPR enforcement against ambient recording devices is a predictable next chapter. Not an immediate builder concern, but worth knowing as wearable + ambient AI enters the product design conversation.</p>
+<hr>
+<h2>📈 TREND TRACKER</h2>
+<div class="section-feedback" data-section="TREND_TRACKER">
+  <button class="section-btn" data-value="love" onclick="setSectionRating('TREND_TRACKER', 'love', this)">❤️</button>
+  <button class="section-btn" data-value="ok" onclick="setSectionRating('TREND_TRACKER', 'ok', this)">👍</button>
+  <button class="section-btn" data-value="skip" onclick="setSectionRating('TREND_TRACKER', 'skip', this)">👎</button>
+</div>
+<p><strong>Accelerating:</strong></p>
+<ul>
+<li><strong>Vibe coding maturing into &quot;professional&quot; tier.</strong> Bolt v2 is the clearest signal yet that the first generation of no-code AI builders (which produced throwaway prototypes) is being superseded by infrastructure-grade tools. The window for competitive differentiation via early adoption is compressing.</li>
+<li><strong>Claude Code ecosystem density.</strong> Third-party UIs, CLI tools, skill marketplaces, and MCP integrations are accumulating around Claude Code at increasing speed. This is what platform lock-in looks like from the inside — and you&#39;re already positioned in it.</li>
+<li><strong>AI hallucination accountability.</strong> Three separate incidents this week (Indian court, Ars Technica, ongoing UK warnings) suggest the &quot;error in good faith&quot; defence is closing. Institutional and legal tolerance for AI-generated misinformation is dropping.</li>
+</ul>
+<p><strong>New this week:</strong></p>
+<ul>
+<li><strong>Cursor 2.6 MCP Apps + Team Marketplaces</strong> (March 3) — plugin ecosystem now live.</li>
+<li><strong>Windsurf Phoenix Alpha</strong> — new stealth model in beta channel (March 3). No performance data yet.</li>
+<li><strong>GPT-5.3 Instant</strong> — system card published (March 3, openai.com). No content available in feeds to assess; worth a direct check.</li>
+<li><strong>iPad Air M4</strong> (March 2) — announced with iPadOS 26. Relevant only if you&#39;re evaluating a hardware refresh; otherwise noise.</li>
+</ul>
+<p><strong>Disappeared:</strong></p>
+<ul>
+<li>The OpenAI $110B raise dominated the last two briefings. Now absorbed into background. Compute consolidation is structural, not news.</li>
+</ul>
+<p><strong>What this week&#39;s pattern means for your builder mission:</strong>
+You are in an orientation phase during what may be the single fastest capability expansion in AI tooling to date. The risk is not that you miss a specific tool — it&#39;s that you mistake tooling excitement for signal about <em>what to build</em>. The 30-day validation sprint framework (from the micro-SaaS intelligence) is the correct antidote: tools are the how, not the what.</p>
+<hr>
+<h2>🚮 SLOP FILTER</h2>
+<p><strong>5 of 12 Tier 2 articles were noise today.</strong></p>
+<ul>
+<li><strong>Article 2 (Claude&#39;s Cycles PDF — Knuth):</strong> Binary PDF blob, unreadable in feed. Potentially interesting (Donald Knuth + Claude = mathematically significant), but zero extractable content. Filtered as unprocessable, not unimportant — worth a direct visit to the Stanford URL if curious.</li>
+<li><strong>Article 6 (FT — China/Russia oil):</strong> Paywalled. Headline extracted for WORLD LENS context; zero body content available. Counts as noise for briefing purposes.</li>
+<li><strong>Article 8 (Meta smart glasses — SVD):</strong> Swedish-language publication. Content partially rendered but the story is primarily a labour/privacy investigation with limited actionable builder relevance today. Noted in EUROPE TECH for regulatory signal only.</li>
+<li><strong>Article 9 (iPad Air M4):</strong> Apple press release. Hardware refresh. No builder relevance unless you&#39;re shopping for a new device.</li>
+<li><strong>Article 10 (NIST foreign scientists):</strong> US domestic science policy. Zero Brussels or European founder relevance. Pure noise for this briefing.</li>
+</ul>
+<hr>
+<h2>🔄 FEED HEALTH REPORT</h2>
+<ul>
+<li><p><strong>KEEP:</strong></p>
+<ul>
+<li><code>hnrss.org</code> — Delivered 5 of the 7 substantive articles today (voice agent build, term-cli, OpenCovibe, Claude Code issue, Ars Technica). High signal density, genuine builder relevance.</li>
+<li><code>openai.com</code> — GPT-5.3 Instant system card appeared. Low content today but the source is tier-1 for model release tracking.</li>
+<li><code>futurism.com</code> — Ars Technica/AI fabrication story was clean, well-sourced, and directly relevant to AI-assisted content workflows.</li>
+</ul>
+</li>
+<li><p><strong>WATCH:</strong></p>
+<ul>
+<li><code>feeds.bbci.co.uk</code> — India Supreme Court AI story was relevant, but BBC feeds have been running general tech-anxiety stories that rarely connect to builder context. Monitor for pattern.</li>
+<li><code>ft.com</code> — Paywalled content is appearing in the feed at increasing frequency. The signal is real (oil/Iran), but the content is inaccessible. Either acquire FT access or remove from feed rotation.</li>
+</ul>
+</li>
+<li><p><strong>CONSIDER ADDING:</strong></p>
+<ul>
+<li><strong>cursor.com/changelog</strong> (RSS if available) — Cursor 2.6 was confirmed via web intelligence, not the feed. This is your primary daily tool and its changelog should be a direct feed input.</li>
+<li><strong>lovable.dev/blog</strong> and <strong>bolt.new/blog</strong> — Both produced material news this week (MCP integrations, Bolt v2) that came via web intelligence rather than feed. Add both.</li>
+<li><strong>vatcalc.com</strong> or equivalent Belgian VAT tracker — The March 2026 VAT situation is live and directly material to Chez Julien. A regulatory feed for Belgian business would catch this earlier.</li>
+</ul>
+</li>
+<li><p><strong>CONSIDER REMOVING:</strong></p>
+<ul>
+<li>No feed has been consistently empty for 3+ consecutive briefings. No removals recommended today.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2>💬 FEEDBACK RESPONSE</h2>
+<p>Julien&#39;s last recorded feedback (Feb 24, 5/5): <em>&quot;Better signal, actionable, not like the one I got about China stealing US models.&quot;</em></p>
+<p><strong>Acknowledged and applied:</strong></p>
+<p>The China/US model theft story that earned a 3/5 was filtered today — Article 6 (China/Russia oil) made it into WORLD LENS only because it has a direct, traceable effect on your energy costs and consumer confidence in Brussels. The framing is structural (&quot;what does this mean for your shop&#39;s cost floor&quot;) not geopolitical spectacle. That&#39;s the filter being applied: geopolitics earns space only when it connects to a specific operational or financial mechanism that touches your life.</p>
+<p>The Ars Technica/AI fabrication story was kept because it has a concrete implication for your Substack workflow — not because AI-in-media is inherently interesting.</p>
+<p>The India court hallucination story made the cut because EU regulatory trajectory follows these cases, and you will eventually build products that touch EU compliance territory.</p>
+<p>React to today&#39;s articles at <a href="https://prism.julien.care//2026-03-04.html">https://prism.julien.care//2026-03-04.html</a></p>
+<hr>
+<p><em>PRISM v4.0 — 21 articles analyzed, 0 web searches, ~$0.27</em></p>
+
+  </div>
+
+  <div class="feedback-panel" id="feedback-panel">
+    <h2>📬 React to today's briefing</h2>
+    <p class="subtitle">Your reactions train PRISM to improve every night.</p>
+
+    <div class="overall-rating">
+      <label>Overall rating:</label>
+      <div class="star-buttons">
+        <button class="star-btn" onclick="setOverallRating(1, this)">1</button><button class="star-btn" onclick="setOverallRating(2, this)">2</button><button class="star-btn" onclick="setOverallRating(3, this)">3</button><button class="star-btn" onclick="setOverallRating(4, this)">4</button><button class="star-btn" onclick="setOverallRating(5, this)">5</button>
+      </div>
+    </div>
+
+    <div class="notes-area">
+      <label>Notes for PRISM (optional):</label>
+      <textarea id="feedback-notes" placeholder="Too much geopolitics? Loved that Builder Intelligence section? Want more micro-SaaS radar? Write anything here."></textarea>
+    </div>
+
+    <div class="submit-area">
+      <button id="submit-btn" onclick="submitFeedback()">Submit Feedback →</button>
+      <span id="submit-status" class="status-info"></span>
+    </div>
+  </div>
+
+  <div class="prism-footer">
+    PRISM v4.0 — Personal Research Intelligence System
+  </div>
+
+</div>
+
+<!-- Sticky submit bar (appears after first interaction) -->
+<div class="sticky-bar" id="sticky-bar">
+  <span id="sticky-count">0 reactions recorded</span>
+  <button onclick="submitFeedback()">Submit Feedback →</button>
+</div>
+
+<script>
+  // ── State ────────────────────────────────────────────────
+  const ARTICLES = [];
+  const TOOLS = [{"name":"OpenCovibe","snippet":"- **OpenCovibe** — Local-first desktop UI wrapping Claude Code. Adds visual diffs, session history, multi-provider switching (DeepSeek, Ollama, OpenRouter, etc.), usage analytics, and a plugin marketplace — without a cloud backend. All data stored at `~/.opencovibe/`. - **Link:** https://github.com/AnyiWang/OpenCovibe - **Try it:** Download the macOS `.dmg`, run the setup wizard, replay one of you"},{"name":"term-cli","snippet":"- **term-cli** — Single-file Python tool (tmux-backed) that lets AI agents run interactive terminal programs without blocking — dev servers, debuggers, REPLs, SSH sessions, package installers. - **Link:** https://github.com/EliasOenal/term-cli - **Try it:** Install via the one-liner curl script, install the Claude Code skill file (`~/.claude/skills/`), then have Claude Code spin up a dev server an"}];
+  const WORKER_URL = "/api/feedback";
+  const FEEDBACK_SECRET = "prism-feedback-58367207b5410501";
+  const DATE = "2026-03-04";
+
+  const state = {
+    overallRating: null,
+    articleReactions: {},    // index → 'love' | 'ok' | 'skip'
+    toolReactions: {},       // index → 'love' | 'ok' | 'skip'
+    sectionRatings: {},      // sectionId → 'love' | 'ok' | 'skip'
+    notes: '',
+    totalInteractions: 0,
+  };
+
+  // ── Reaction Setters ─────────────────────────────────────
+  function setArticleReaction(index, value, btn) {
+    const prev = state.articleReactions[index];
+    if (prev === value) {
+      // Toggle off
+      delete state.articleReactions[index];
+      btn.parentElement.querySelectorAll('.reaction-btn').forEach(b => b.classList.remove('active-love', 'active-ok', 'active-skip'));
+    } else {
+      state.articleReactions[index] = value;
+      btn.parentElement.querySelectorAll('.reaction-btn').forEach(b => {
+        b.classList.remove('active-love', 'active-ok', 'active-skip');
+      });
+      btn.classList.add('active-' + value);
+    }
+    updateInteractionCount();
+  }
+
+  function setSectionRating(sectionId, value, btn) {
+    const prev = state.sectionRatings[sectionId];
+    if (prev === value) {
+      delete state.sectionRatings[sectionId];
+      btn.parentElement.querySelectorAll('.section-btn').forEach(b => b.classList.remove('active'));
+    } else {
+      state.sectionRatings[sectionId] = value;
+      btn.parentElement.querySelectorAll('.section-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+    }
+    updateInteractionCount();
+  }
+
+  function setOverallRating(value, btn) {
+    state.overallRating = state.overallRating === value ? null : value;
+    document.querySelectorAll('.star-btn').forEach(b => b.classList.remove('active'));
+    if (state.overallRating) btn.classList.add('active');
+    updateInteractionCount();
+  }
+
+  function updateInteractionCount() {
+    const count = Object.keys(state.articleReactions).length +
+                  Object.keys(state.toolReactions).length +
+                  Object.keys(state.sectionRatings).length +
+                  (state.overallRating ? 1 : 0);
+    state.totalInteractions = count;
+    document.getElementById('sticky-count').textContent = count + ' reaction' + (count !== 1 ? 's' : '') + ' recorded';
+    const bar = document.getElementById('sticky-bar');
+    if (count > 0) {
+      bar.classList.add('visible');
+    }
+  }
+
+  // ── Submit ───────────────────────────────────────────────
+  async function submitFeedback() {
+    const notes = document.getElementById('feedback-notes').value.trim();
+    state.notes = notes;
+
+    const payload = {
+      date: DATE,
+      briefingRating: state.overallRating,
+      mustReads: ARTICLES.map((article, i) => ({
+        title: article.title,
+        source: article.source,
+        rating: state.articleReactions[i] || null,
+      })).filter(a => a.rating !== null),
+      tools: TOOLS.map((tool, i) => ({
+        name: tool.name,
+        rating: state.toolReactions[i] || null,
+      })).filter(t => t.rating !== null),
+      sections: state.sectionRatings,
+      openNotes: notes,
+      submittedAt: new Date().toISOString(),
+    };
+
+    const btn = document.getElementById('submit-btn');
+    const status = document.getElementById('submit-status');
+
+    btn.disabled = true;
+    status.className = 'status-info';
+    status.textContent = 'Sending...';
+
+    if (!WORKER_URL) {
+      // No worker configured — download the JSON for manual submission
+      const blob = new Blob([JSON.stringify(payload, null, 2)], { type: 'application/json' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'prism-feedback-' + DATE + '.json';
+      a.click();
+      status.className = 'status-info';
+      status.textContent = '📥 Downloaded feedback JSON (no worker configured — place in data/feedback-latest.json)';
+      btn.disabled = false;
+      return;
+    }
+
+    try {
+      const headers = { 'Content-Type': 'application/json' };
+      if (FEEDBACK_SECRET) headers['X-PRISM-Secret'] = FEEDBACK_SECRET;
+      const res = await fetch(WORKER_URL, {
+        method: 'POST',
+        headers,
+        body: JSON.stringify(payload),
+      });
+
+      if (res.ok) {
+        status.className = 'status-success';
+        status.textContent = '✅ Feedback sent! PRISM will adjust tomorrow night.';
+        document.getElementById('sticky-bar').innerHTML = '<span style="color:#4caf50">✅ Feedback received — see you tomorrow morning</span>';
+      } else {
+        const text = await res.text();
+        throw new Error(text || 'Worker returned ' + res.status);
+      }
+    } catch (err) {
+      status.className = 'status-error';
+      status.textContent = '❌ Failed: ' + err.message + ' — try downloading instead.';
+      btn.disabled = false;
+    }
+  }
+
+  // ── Init ─────────────────────────────────────────────────
+  document.addEventListener('DOMContentLoaded', () => {
+    // Track notes textarea changes
+    document.getElementById('feedback-notes').addEventListener('input', () => {
+      updateInteractionCount();
+    });
+  });
+</script>
+</body>
+</html>
