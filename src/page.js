@@ -72,6 +72,26 @@ function extractTools(markdown) {
 }
 
 /**
+ * Extract scout catch names/descriptions from the GRASSROOT RADAR section.
+ */
+function extractScoutCatches(markdown) {
+  const sectionMatch = markdown.match(/## 🌱 GRASSROOT RADAR([\s\S]*?)(?=\n## |$)/);
+  if (!sectionMatch) return [];
+
+  const sectionText = sectionMatch[1];
+  const catches = [];
+  const regex = /\*\*\[?([^\]*]+)\]?\*\*\s*—\s*([^\n]+)/g;
+  let match;
+  while ((match = regex.exec(sectionText)) !== null) {
+    catches.push({
+      name: match[1].trim(),
+      description: match[2].trim().substring(0, 200),
+    });
+  }
+  return catches.slice(0, 10);
+}
+
+/**
  * Inject tool feedback HTML into the TOOLS TO TRY section (before marked parse).
  * Inserts a widget after each tool block so the page can collect per-tool reactions.
  */
@@ -101,7 +121,7 @@ function injectToolWidgetsInMarkdown(markdown, tools) {
 
 // ── HTML Builder ─────────────────────────────────────────────
 
-function buildPage(markdown, date, articleCount, articles, tools, workerUrl, feedbackSecret) {
+function buildPage(markdown, date, articleCount, articles, tools, scoutCatches, workerUrl, feedbackSecret) {
   let md = markdown;
   if (tools.length > 0) {
     md = injectToolWidgetsInMarkdown(markdown, tools);
@@ -134,6 +154,7 @@ function buildPage(markdown, date, articleCount, articles, tools, workerUrl, fee
     { id: 'SIGNAL', emoji: '🔴', label: 'THE SIGNAL' },
     { id: 'BUILDER_INTELLIGENCE', emoji: '🧱', label: 'BUILDER INTELLIGENCE' },
     { id: 'GAME_DEV_INTELLIGENCE', emoji: '🎮', label: 'GAME DEV INTELLIGENCE' },
+    { id: 'GRASSROOT_RADAR', emoji: '🌱', label: 'GRASSROOT RADAR' },
     { id: 'PIONEER_ADVANTAGE', emoji: '📊', label: 'PIONEER ADVANTAGE CHECK' },
     { id: 'TOOLS_TO_TRY', emoji: '🛠️', label: 'TOOLS TO TRY' },
     { id: 'BUILD_WATCH', emoji: '🏗️', label: 'BUILD WATCH' },
@@ -159,6 +180,7 @@ function buildPage(markdown, date, articleCount, articles, tools, workerUrl, fee
 
   const articlesJson = JSON.stringify(articles);
   const toolsJson = JSON.stringify(tools);
+  const scoutCatchesJson = JSON.stringify(scoutCatches);
 
   return `<!DOCTYPE html>
 <html lang="en">
@@ -443,6 +465,7 @@ function buildPage(markdown, date, articleCount, articles, tools, workerUrl, fee
   // ── State ────────────────────────────────────────────────
   const ARTICLES = ${articlesJson};
   const TOOLS = ${toolsJson};
+  const SCOUT_CATCHES = ${scoutCatchesJson};
   const WORKER_URL = ${JSON.stringify(workerUrl || '')};
   const FEEDBACK_SECRET = ${JSON.stringify(feedbackSecret || '')};
   const DATE = ${JSON.stringify(date)};
@@ -451,6 +474,7 @@ function buildPage(markdown, date, articleCount, articles, tools, workerUrl, fee
     overallRating: null,
     articleReactions: {},    // index → 'love' | 'ok' | 'skip'
     toolReactions: {},       // index → 'love' | 'ok' | 'skip'
+    scoutReactions: {},      // index → 'love' | 'ok' | 'skip'
     sectionRatings: {},      // sectionId → 'love' | 'ok' | 'skip'
     notes: '',
     totalInteractions: 0,
@@ -486,6 +510,19 @@ function buildPage(markdown, date, articleCount, articles, tools, workerUrl, fee
     updateInteractionCount();
   }
 
+  function setScoutReaction(index, value, btn) {
+    const prev = state.scoutReactions[index];
+    if (prev === value) {
+      delete state.scoutReactions[index];
+      btn.parentElement.querySelectorAll('.reaction-btn').forEach(b => b.classList.remove('active-love', 'active-ok', 'active-skip'));
+    } else {
+      state.scoutReactions[index] = value;
+      btn.parentElement.querySelectorAll('.reaction-btn').forEach(b => b.classList.remove('active-love', 'active-ok', 'active-skip'));
+      btn.classList.add('active-' + value);
+    }
+    updateInteractionCount();
+  }
+
   function setOverallRating(value, btn) {
     state.overallRating = state.overallRating === value ? null : value;
     document.querySelectorAll('.star-btn').forEach(b => b.classList.remove('active'));
@@ -496,6 +533,7 @@ function buildPage(markdown, date, articleCount, articles, tools, workerUrl, fee
   function updateInteractionCount() {
     const count = Object.keys(state.articleReactions).length +
                   Object.keys(state.toolReactions).length +
+                  Object.keys(state.scoutReactions).length +
                   Object.keys(state.sectionRatings).length +
                   (state.overallRating ? 1 : 0);
     state.totalInteractions = count;
@@ -523,6 +561,10 @@ function buildPage(markdown, date, articleCount, articles, tools, workerUrl, fee
         name: tool.name,
         rating: state.toolReactions[i] || null,
       })).filter(t => t.rating !== null),
+      scoutCatches: SCOUT_CATCHES.map((c, i) => ({
+        name: c.name,
+        rating: state.scoutReactions[i] || null,
+      })).filter(c => c.rating !== null),
       sections: state.sectionRatings,
       openNotes: notes,
       submittedAt: new Date().toISOString(),
@@ -601,13 +643,14 @@ export default async function generatePage(markdown, date, articleCount = 0) {
   const feedbackSecret = process.env.PRISM_FEEDBACK_SECRET || '';
   const articles = extractMustReads(markdown);
   const tools = extractTools(markdown);
+  const scoutCatches = extractScoutCatches(markdown);
 
-  const html = buildPage(markdown, date, articleCount, articles, tools, workerUrl, feedbackSecret);
+  const html = buildPage(markdown, date, articleCount, articles, tools, scoutCatches, workerUrl, feedbackSecret);
 
   await mkdir(BRIEFINGS_DIR, { recursive: true });
   const filepath = `${BRIEFINGS_DIR}/${date}.html`;
   await writeFile(filepath, html, 'utf-8');
 
-  console.log(`\n📄 PAGE — ${filepath} (${articles.length} article widgets, ${tools.length} tool widgets, ${workerUrl ? 'worker configured' : 'no worker — download fallback'})`);
+  console.log(`\n📄 PAGE — ${filepath} (${articles.length} article widgets, ${tools.length} tool widgets, ${scoutCatches.length} scout catches, ${workerUrl ? 'worker configured' : 'no worker — download fallback'})`);
   return filepath;
 }
