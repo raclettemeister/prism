@@ -110,6 +110,7 @@ export default async function collect() {
           date: item.pubDate || item.isoDate || new Date().toISOString(),
           author: item.creator || item.author || '',
           feedUrl,
+          scoutOnly: !!(FEED_CATEGORIES[category]?.scoutOnly),
         }));
 
       feedResults[feedUrl] = { success: true, count: items.length };
