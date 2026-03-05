@@ -234,14 +234,14 @@
     <h1>PRISM Morning Briefing</h1>
     <div class="meta">
       <span>📅 2026-03-05</span>
-      <span>📰 20 articles analyzed</span>
+      <span>📰 21 articles analyzed</span>
       <span>🤖 PRISM v4.0</span>
     </div>
   </div>
 
   <div id="briefing-content">
     <blockquote>
-<p>⚠️ <strong>Low-confidence briefing</strong> — Some sections may contain unverified claims. PRISM confidence: 41%</p>
+<p>⚠️ <strong>Low-confidence briefing</strong> — Some sections may contain unverified claims. PRISM confidence: 61%</p>
 </blockquote>
 <h1>PRISM Morning Briefing — March 5, 2026</h1>
 <blockquote>
@@ -255,30 +255,30 @@ Or edit <strong>NEWS-INTERESTS.md</strong> in Obsidian to adjust coverage.</p>
   <button class="section-btn" data-value="ok" onclick="setSectionRating('SIGNAL', 'ok', this)">👍</button>
   <button class="section-btn" data-value="skip" onclick="setSectionRating('SIGNAL', 'skip', this)">👎</button>
 </div>
-<p>The Qwen open-source AI team is in freefall. Junyang Lin — lead researcher and public face of Alibaba&#39;s Qwen project — announced his resignation yesterday, followed by several other core contributors including the leads for Qwen Code, Qwen post-training, and Qwen 3.5. This matters to you because enterprises relying on Apache 2.0-licensed Qwen models now face the possibility that future flagships will be locked behind paid, proprietary APIs. The best open-source model family just became strategically uncertain overnight.</p>
+<p>The Qwen open-source AI team — arguably the most productive open-weight model lab in the world — is imploding. Lead researcher Junyang Lin announced his resignation, followed by several other core contributors including Binyuan Hui, Bowen Yu, and Kaixin Li. This appears to have been triggered by a Alibaba reorganization where a new researcher hired from Google&#39;s Gemini team was put in charge of Qwen. This matters to you because Qwen 3.5&#39;s small models (2B–35B) are the backbone of lean, local AI stacks — the exact kind of compute that makes micro-software viable without cloud API costs.</p>
 <p>Source: <a href="https://simonwillison.net/2026/Mar/4/qwen/">https://simonwillison.net/2026/Mar/4/qwen/</a></p>
 <hr>
 <h2>📚 MUST-READ LIST</h2>
 <ul>
-<li><p><strong>&quot;Something is afoot in the land of Qwen&quot;</strong> by Simon Willison — simonwillison.net (<a href="https://simonwillison.net/2026/Mar/4/qwen/">link</a>)</p>
+<li><p><strong>&quot;Something is afoot in the land of Qwen&quot;</strong> by Simon Willison — simonwillison.net (<a href="https://simonwillison.net/2026/Mar/4/qwen/#atom-everything">link</a>)</p>
 <ul>
-<li>Why read it: The open-weight model you may rely on for cost-efficient local AI just lost its entire leadership. Willison is the clearest thinker on what this means practically.</li>
-<li>Cross-fed by: Web Intelligence Query 4 + Tier 1 Article 8</li>
-<li>Conversation value: Decide now whether your stack has a dependency on Qwen-family models — and whether that changes your model diversification posture.</li>
+<li>Why read it: The Qwen 3.5 models are exceptional — the 2B model is just 4.57GB (or 1.27GB quantized) and is a full reasoning and multi-modal vision model. If the team disbands, this generation of models may be the last. You need to know what you might lose access to — and soon.</li>
+<li>Cross-fed by: simonwillison.net + web intelligence (Query 5)</li>
+<li>Conversation value: <strong>Decide now</strong> whether any of your Grassroot Hopper or blog pipeline tooling should be stress-tested against a local Qwen model before the team goes dark.</li>
 </ul>
 </li>
-<li><p><strong>&quot;Agentic Engineering Patterns&quot;</strong> by Simon Willison — simonwillison.net (<a href="https://simonwillison.net/guides/agentic-engineering-patterns/">link</a>)</p>
+<li><p><strong>&quot;Agentic Engineering Patterns — Anti-patterns: things to avoid&quot;</strong> by Simon Willison — simonwillison.net (<a href="https://simonwillison.net/guides/agentic-engineering-patterns/anti-patterns/">link</a>)</p>
 <ul>
-<li>Why read it: This is a living guide on patterns for getting the best results out of coding agents like Claude Code and OpenAI Codex. As a non-technical CEO building with AI, this is your ops manual — not theory.</li>
-<li>Cross-fed by: Tier 1 Articles 7 + 10</li>
-<li>Conversation value: Pick one anti-pattern from the guide that you&#39;re currently guilty of. Fix it in your Cursor workflow this week.</li>
+<li>Why read it: The central anti-pattern called out is filing pull requests with code you haven&#39;t reviewed yourself — delegating your actual job to others. As someone building skills and pipelines in Cursor, this is the professional standard you&#39;re working toward — or away from. Five minutes that will sharpen how you think about your own AI-assisted output.</li>
+<li>Cross-fed by: simonwillison.net (Tier 1) + hnrss.org</li>
+<li>Conversation value: <strong>Form an opinion</strong> on where your current blog pipeline skills sit on the &quot;vibe code vs. professional AI-assisted engineering&quot; spectrum.</li>
 </ul>
 </li>
-<li><p><strong>&quot;[AINews] Is Harness Engineering Real?&quot;</strong> — latent.space (<a href="https://www.latent.space/p/ainews-is-harness-engineering-real">link</a>)</p>
+<li><p><strong>&quot;Is Harness Engineering real?&quot;</strong> — Latent Space (<a href="https://www.latent.space/p/ainews-is-harness-engineering-real">link</a>)</p>
 <ul>
-<li>Why read it: The central debate: is the value in the model or in the scaffolding around it? Claude Code&#39;s creators say their tool is &quot;the thinnest possible wrapper&quot; and &quot;all the secret sauce is in the model.&quot; Meanwhile, Big Harness advocates argue the scaffolding is everything. This debate directly shapes how you should invest your time learning to prompt vs. build systems.</li>
-<li>Cross-fed by: Tier 1 Article 5</li>
-<li>Conversation value: For a non-technical builder, this resolves a real decision: stop optimizing the harness and trust the model more.</li>
+<li>Why read it: The Claude Code team&#39;s Boris Cherny explicitly says &quot;all the secret sauce is in the model — this is the thinnest possible wrapper&quot; while Harness Engineering advocates argue that optimizing the scaffold around the model drives dramatic performance improvements. This debate determines whether your PRISM/NightCrawler approach — building thin custom pipelines around Claude — is ahead of the curve or redundant.</li>
+<li>Cross-fed by: latent.space (Tier 1)</li>
+<li>Conversation value: <strong>Confirm your bet.</strong> You&#39;re building harnesses. Is that still the right move in 2026?</li>
 </ul>
 </li>
 </ul>
@@ -290,17 +290,17 @@ Or edit <strong>NEWS-INTERESTS.md</strong> in Obsidian to adjust coverage.</p>
   <button class="section-btn" data-value="skip" onclick="setSectionRating('BUILDER_INTELLIGENCE', 'skip', this)">👎</button>
 </div>
 <p><strong>Methodology beat:</strong></p>
-<p>Simon Willison published a sharp anti-pattern: don&#39;t file pull requests with code you haven&#39;t reviewed yourself. If you open a PR with hundreds of lines of agent-generated code you haven&#39;t verified, you&#39;re delegating the actual work to others. For you as a non-technical CEO supervising AI-generated code: <strong>you are the reviewer</strong>. If you&#39;re shipping Cursor output you haven&#39;t read, this is your blind spot.</p>
-<p>The Harness Engineering debate from Latent Space adds a useful frame: Noam Brown of OpenAI argues that before reasoning models, engineers built complex agentic scaffolds — but reasoning models have replaced the need for most of that scaffolding, and the remaining scaffolds will also be replaced as models improve. Translation for you: <strong>don&#39;t over-engineer your prompting systems. The model is getting smarter faster than your scaffolding can.</strong></p>
-<p>Cursor is now valued at $50B — a data point from the Latent Space piece confirming that the tool you use daily is now a tier-1 infrastructure company, not a startup experiment.</p>
+<p>Simon Willison published a living guide on Agentic Engineering Patterns, and the anti-patterns chapter is the sharpest piece of builder methodology to land in the last 24h. The core rule: a good agentic engineering pull request requires that the code works and you are confident it works — your job is to deliver code that works, not to farm out review to others. The implication for solo builders: every Cursor session needs an owner review pass before it&#39;s &quot;done.&quot; Your blog pipeline skills are a good place to apply this discipline.</p>
+<p>Separately, Noam Brown of OpenAI argues that complex agent scaffolding is being made redundant by reasoning models — you give the reasoning model the same question without any scaffolding, and it just does it. This is the Big Model vs. Big Harness debate in one sentence, and it&#39;s live.</p>
 <p><strong>Micro-SaaS Radar:</strong></p>
-<p>The &quot;give an agent a box&quot; pattern — isolated sandboxes for agents with managed file permissions and identity — is described as &quot;one of the single hottest areas in AI infrastructure growing 100% MoM.&quot; The insight for micro-SaaS: products that give AI agents clean, permissioned access to a vertical&#39;s files and data are still wide open. Box is doing it for enterprise. Nobody is doing it well for specialty retail, restaurant ops, or small business contexts.</p>
-<p>Box CEO Aaron Levie argues that all enterprise files — contracts, research, memos, marketing material — that previously sat dormant are now active raw material for agents. The new value isn&#39;t storing files; it&#39;s making them queryable and actionable by agents. Micro-SaaS angle: a shop owner&#39;s operational docs, supplier contacts, and staff notes are the same problem at a smaller scale. An agent that knows your shop&#39;s files is a real product.</p>
+<p>Document automation is flagged as an underexplored niche — indie hackers are largely ignoring it as an infrastructure layer despite strong demand from analysts and consultants. Worth a note given your blog pipeline work — that pipeline <em>is</em> document automation. You may have already built the prototype of something people would pay for.</p>
+<p>A community-first validation framework is circulating: find 10–20 people actively discussing a problem across Reddit, X, and Indie Hackers forums <em>before</em> building. This maps directly to how Grassroot Hopper should be validated — find the conversation first, then confirm the product.</p>
 <p><strong>Tool &amp; Stack Updates:</strong></p>
-<p>Cursor version 2.6 (released March 3, 2026) introduced interactive UIs in agent chats and a way for teams to share private plugins, alongside improvements to Debug mode. If you&#39;re using Cursor daily for PRISM or Grassroot Hopper, check whether the private plugins feature changes how you manage your <code>.cursor/skills/</code> files — this could be the right moment to modularize them.</p>
-<p>Windsurf&#39;s most recent release (March 3, 2026, version 1.9566.1015) made Phoenix Alpha available in the Windsurf Next channel. No action needed unless you&#39;re evaluating alternatives to Cursor.</p>
+<p>Cursor 2.6 was released on March 3, 2026, introducing interactive UIs in agent chats, a way for teams to share private plugins, and improvements to Debug mode. Your primary tool just updated — check what broke.</p>
+<p>Lovable celebrated its one-year anniversary with $200M in ARR. MCP servers went live, with Lovable now integrating with Linear, Jira, Confluence, n8n, and Notion — allowing a Linear ticket to become a working prototype in one click. If Grassroot Hopper ever needs a clickable prototype fast, Lovable + Linear is now a one-click path.</p>
+<p>Claude Code made Opus 4.6 the new default model for Max and Team subscribers, re-introduced the &quot;ultrathink&quot; keyword for high-effort turns, and added auto-memory — Claude now automatically saves useful context, manageable via <code>/memory</code>. Also added: a <code>/copy</code> command for grabbing individual code blocks. Update your Claude Code if you haven&#39;t.</p>
 <p><strong>API Economics:</strong></p>
-<p>Nothing new in the API landscape from today&#39;s sources.</p>
+<p>Nothing new in the API landscape today.</p>
 <hr>
 <h2>🎮 GAME DEV INTELLIGENCE</h2>
 <div class="section-feedback" data-section="GAME_DEV_INTELLIGENCE">
@@ -309,11 +309,38 @@ Or edit <strong>NEWS-INTERESTS.md</strong> in Obsidian to adjust coverage.</p>
   <button class="section-btn" data-value="skip" onclick="setSectionRating('GAME_DEV_INTELLIGENCE', 'skip', this)">👎</button>
 </div>
 <p><strong>AI-Powered Tools &amp; Engines:</strong></p>
-<p>CyanPuppets — a 1-billion-parameter AI motion model — converts video footage into real-time 3D motion data, compatible with Blender and Unreal Engine. Its core team comes from Tencent and international AI labs. If Grassroot Hopper has any game or interactive component, this is a zero-cost mocap pipeline worth bookmarking: camera → video → 3D animation, no suit required.</p>
-<p>GDC 2026 runs March 9–13. Bezi (Unity-integrated AI assistant targeting solo developers) is being showcased there. Watch for announcements next week.</p>
+<p>CyanPuppets — a 1-billion-parameter motion model built on AI, computer vision, and kinematics — converts video footage into real-time 3D motion data, compatible with Blender and Unreal Engine. For a solo dev building games, this is markerless mocap from a phone camera. Worth bookmarking if any Grassroot Hopper direction involves characters or animation.</p>
+<p>Bezi, a Unity-integrated AI assistant featured at GDC 2026 (March 9–13), lets solo developers prototype, debug, and automate repetitive work by real-time indexing the full Unity project — scripts, assets, scenes, and external design docs. GDC is next week. Watch for the coverage.</p>
 <p><strong>Solo Dev Leverage:</strong></p>
-<p>Market data from 2026 shows 34% of indie developers now use AI tools regularly, with AI-assisted prototyping delivering an average 92% reduction in prototype development costs and an 87% reduction in time-to-first-playable. You are already on the right side of this curve. The window to have a structural advantage over non-AI solo devs is narrowing — but still open.</p>
+<p>34% of indie developers now use AI tools regularly, with a reported median 87% reduction in time-to-first-playable and a 3.2x increase in solo-developed commercial releases between 2024 and 2026. The window for solo game dev advantage is open and widening — but it&#39;s not permanent.</p>
 <hr>
+<h2>🌱 GRASSROOT RADAR</h2>
+<div class="section-feedback" data-section="GRASSROOT_RADAR">
+  <button class="section-btn" data-value="love" onclick="setSectionRating('GRASSROOT_RADAR', 'love', this)">❤️</button>
+  <button class="section-btn" data-value="ok" onclick="setSectionRating('GRASSROOT_RADAR', 'ok', this)">👍</button>
+  <button class="section-btn" data-value="skip" onclick="setSectionRating('GRASSROOT_RADAR', 'skip', this)">👎</button>
+</div>
+<p><strong>5 catches today</strong> · Brussels ×3 · EU-wide ×2</p>
+<hr>
+<ol>
+<li><p><strong>Innoviris — Prove Your Social Innovation (PYSI)</strong> — Brussels-Capital Region&#39;s public funder offers up to €100,000 (100% coverage) for social entrepreneurs building innovative products or services, directly accessible to solo founders and cooperative-structured projects with zero prior scale required.
+→ <a href="https://www.innoviris.brussels/program/prove-your-social-innovation">https://www.innoviris.brussels/program/prove-your-social-innovation</a></p>
+</li>
+<li><p><strong>Open Collective Europe</strong> — A Brussels-registered nonprofit providing fiscal hosting (legal entity + budget infrastructure) for unincorporated open-source and community collectives across Europe, enabling solo devs to receive grants and public subsidies without incorporating a company.
+→ <a href="https://opencollective.com/europe">https://opencollective.com/europe</a></p>
+</li>
+<li><p><strong>Medispring (Coopérative)</strong> — A Belgian doctor-owned cooperative building open-source electronic health records software, designed by practitioners to guarantee IT independence from extractive proprietary vendors — a textbook cooperative-owned digital infrastructure model.
+→ <a href="https://www.medispring.be/">https://www.medispring.be/</a></p>
+</li>
+<li><p><strong>NGI Zero Commons Fund — 12th Open Call (NLnet)</strong> — EU-backed cascade grants of €5k–€50k+ for individuals and small orgs building free/open-source technology commons improving openness, resilience and user autonomy; 12th call open until 1 April 2026.
+→ <a href="https://nlnet.nl/commonsfund/">https://nlnet.nl/commonsfund/</a></p>
+</li>
+<li><p><strong>CoopCycle</strong> — An open-source, copyleft-licensed platform cooperative reserving its software exclusively for worker co-ops, actively deployed across Belgium and six other European countries, covering 70 cooperatives and 200–300 platform workers.
+→ <a href="https://coopcycle.org">https://coopcycle.org</a></p>
+</li>
+</ol>
+<hr>
+<p>📡 Sources checked: Brussels open-source startup search · Belgian solo developer / social impact search · Innoviris 2026 calls · NLnet/NGI0 grantees 2026 · European social innovation incubators · Horizon Europe digital commons · Cooperative platform software · Indie Hackers cooperative thread · RSS scout feeds (reddit/belgium, reddit/cooperatives, reddit/opensource, dev.to, lwn.net, lobste.rs, itsfoss.com)</p>
 <h2>📊 PIONEER ADVANTAGE CHECK</h2>
 <div class="section-feedback" data-section="PIONEER_ADVANTAGE">
   <button class="section-btn" data-value="love" onclick="setSectionRating('PIONEER_ADVANTAGE', 'love', this)">❤️</button>
@@ -331,39 +358,39 @@ Or edit <strong>NEWS-INTERESTS.md</strong> in Obsidian to adjust coverage.</p>
 </tr>
 </thead>
 <tbody><tr>
-<td><strong>Claude Opus 4.6 &quot;agent teams&quot;</strong> — multi-agent task splitting now GA</td>
-<td>Non-technical founders can orchestrate complex builds by describing outcomes, not writing code; agent teams handle segmented execution</td>
-<td>3–6 months before this is table-stakes UX</td>
-<td><strong>Real</strong> — verified GA Feb 5, 2026</td>
-<td>Directly lowers the ceiling on what requires a technical co-founder. Spec clearly → ship faster. Test this in Cursor for Grassroot Hopper&#39;s most complex workflow.</td>
+<td>Lovable.dev hits $200M ARR + MCP integrations live (Linear → prototype in one click)</td>
+<td>Non-technical founders can now ship Linear ticket → working app with zero engineering</td>
+<td>Now — ecosystem forming</td>
+<td><strong>Real</strong></td>
+<td>Grassroot Hopper&#39;s spec/roadmap workflow could be wired directly into Lovable via MCP; no developer needed for prototyping</td>
 </tr>
 <tr>
-<td><strong>Windsurf Phoenix Alpha</strong> (March 3 release)</td>
-<td>Early access to next-gen IDE capabilities before mainstream adoption</td>
-<td>4–8 weeks</td>
-<td><strong>Real but uncertain</strong> — changelog confirmed, capabilities unspecified</td>
-<td>If you&#39;re already in Cursor, low urgency. Worth a 30-min install to benchmark against your current setup.</td>
+<td>Cursor 2.6: agent users now 2x tab users — usage tipping point confirmed</td>
+<td>Agentic building is no longer experimental; it&#39;s the default mode</td>
+<td>Now</td>
+<td><strong>Real</strong></td>
+<td>Your Cursor workflow should be agent-first. If you&#39;re still autocompleting line-by-line, you&#39;re using 2024&#39;s tool in 2026</td>
 </tr>
 <tr>
-<td><strong>Awesome-Claude-md templates</strong> (HN, today)</td>
-<td>Ready-made CLAUDE.md files for 20 stacks — copy, paste, ship better AI output immediately</td>
-<td>Now — zero ramp time</td>
-<td><strong>Real, no hype</strong></td>
-<td>Immediate. If your Cursor workflow uses CLAUDE.md, grab the <code>saas-fullstack</code> or <code>nextjs</code> template today. Costs 15 minutes, yields better AI consistency across every future build session.</td>
+<td>HiTank: Claude Code skill manager (gem install hitank; skills for Stripe, Notion, Sheets, Slack, Linear)</td>
+<td>Plug-and-play integrations for Claude Code — zero dependency hell</td>
+<td>30 days</td>
+<td><strong>Real</strong></td>
+<td>Grassroot Hopper or any future micro-SaaS can connect to payments, CRM, email in minutes. Non-technical founder&#39;s dream stack addition</td>
 </tr>
 <tr>
-<td><strong>Qwen team exodus → open model fragility</strong></td>
-<td>Window to evaluate and lock in your inference strategy <em>before</em> the open-weight ecosystem fragments further</td>
-<td>30–60 days</td>
-<td><strong>Real risk</strong> — verified March 3, multiple sources</td>
-<td>If any future micro-SaaS uses local or cheap inference (e.g., for Grassroot Hopper&#39;s AI layer), form a model strategy now. Don&#39;t build dependencies on Qwen assuming the open cadence continues.</td>
+<td>Document automation identified as &quot;underexplored niche&quot; by indie hackers</td>
+<td>Solo founders are ignoring it; demand from analysts/consultants is strong</td>
+<td>3–6 months</td>
+<td><strong>Real (early)</strong></td>
+<td>If Grassroot Hopper touches document or workflow automation, this is a positioning lever worth noting now</td>
 </tr>
 <tr>
-<td><strong>CodeDrift — AI-code static analysis CLI</strong> (HN, today)</td>
-<td>First-mover awareness of a tool that catches AI-specific bugs before they reach users</td>
-<td>Now — tool is live on npm</td>
-<td><strong>Real, early-stage</strong> — 4 HN points, small signal</td>
-<td>Low priority for a non-technical founder unless you&#39;re shipping code to paying users. Flag for when Grassroot Hopper reaches production-readiness.</td>
+<td>Windsurf Wave 13: parallel Cascade agent sessions + SWE-1.5 Free for 3 months</td>
+<td>Free access to frontier-grade coding agent</td>
+<td>Now — 3 month window</td>
+<td><strong>Real</strong></td>
+<td>Test Windsurf against Cursor on your next Grassroot Hopper build sprint. Free trial de-risks the comparison</td>
 </tr>
 </tbody></table>
 <hr>
@@ -374,54 +401,51 @@ Or edit <strong>NEWS-INTERESTS.md</strong> in Obsidian to adjust coverage.</p>
   <button class="section-btn" data-value="skip" onclick="setSectionRating('TOOLS_TO_TRY', 'skip', this)">👎</button>
 </div>
 <ul>
-<li><strong>Awesome-Claude-md</strong> — 20 production-ready CLAUDE.md templates for every major stack (Next.js, SaaS fullstack, FastAPI, etc.)<ul>
-<li><strong>Try it:</strong> <code>cat templates/saas-fullstack/CLAUDE.md</code> — copy it into your active Cursor project root, replace the <code>[PLACEHOLDERS]</code> with your project specifics. Done in 15 minutes.</li>
-<li><strong>Relevance:</strong> Any active Cursor session — Grassroot Hopper, blog essay tooling, Staffing Calendar System. Better CLAUDE.md = better AI output on every session.</li>
-<li><strong>Signal:</strong> HN today; directly extends the AGENTS.md insight from the March 4 briefing (AGENTS.md reduced agent runtime ~28.6%). Same principle, applied to your stack.</li>
-<li>🔗 <a href="https://github.com/sx4im/awesome-claude-md">https://github.com/sx4im/awesome-claude-md</a></li>
+<li><strong>HiTank</strong> — A Ruby-based Claude Code skill manager. One command (<code>hitank add stripe</code>) installs pre-built integrations for Stripe, Notion, Google Sheets, Slack, Linear, Shopify, and more — with zero extra dependencies. <a href="https://github.com/alanalvestech/hitank">github.com/alanalvestech/hitank</a><ul>
+<li>Try it: Install the gem, run <code>hitank list</code>, then add the <code>notion</code> and <code>stripe</code> skills. Open Claude Code and test one real workflow — e.g., &quot;create a new Notion page for Grassroot Hopper launch checklist.&quot;</li>
+<li>Relevance: Directly accelerates Grassroot Hopper build. Any micro-SaaS you ship will need payments (Stripe) and content/ops (Notion) — this pre-wires both into your AI coding environment.</li>
+<li>Signal: HN Show HN post, 2 sources endorsing MCP-as-integration-layer this week.</li>
 </ul>
 </li>
 </ul>
-<div class="tool-feedback" data-tool="0" data-name="Awesome-Claude-md"><span class="tool-feedback-label">React:</span> <button class="tool-reaction-btn" data-value="love" onclick="setToolReaction(0, 'love', this)">❤️</button> <button class="tool-reaction-btn" data-value="ok" onclick="setToolReaction(0, 'ok', this)">👍</button> <button class="tool-reaction-btn" data-value="skip" onclick="setToolReaction(0, 'skip', this)">👎</button></div>
+<div class="tool-feedback" data-tool="0" data-name="HiTank"><span class="tool-feedback-label">React:</span> <button class="tool-reaction-btn" data-value="love" onclick="setToolReaction(0, 'love', this)">❤️</button> <button class="tool-reaction-btn" data-value="ok" onclick="setToolReaction(0, 'ok', this)">👍</button> <button class="tool-reaction-btn" data-value="skip" onclick="setToolReaction(0, 'skip', this)">👎</button></div>
 
 <ul>
-<li><strong>CodeDrift</strong> — CLI static analysis tool catching AI-specific bugs (async forEach, IDOR vulnerabilities, hallucinated dependencies) that pass ESLint and human review<ul>
-<li><strong>Try it:</strong> <code>npx codedrift</code> in any project directory where AI-generated code has been merged. Takes under 10 minutes to run.</li>
-<li><strong>Relevance:</strong> Any codebase built with Cursor. Most useful once Grassroot Hopper or the Staffing Calendar System has live users.</li>
-<li><strong>Signal:</strong> HN today, 4 points — very early, but the problem it solves is real and growing (see Article 3 on verification gap).</li>
-<li>🔗 <a href="https://www.npmjs.com/package/codedrift">https://www.npmjs.com/package/codedrift</a></li>
+<li><strong>Arbor</strong> — A local CLI that builds a semantic dependency graph of your codebase and tells you what breaks before you refactor. Integrates with Claude/Cursor via MCP. <a href="https://github.com/Anandb71/arbor">github.com/Anandb71/arbor</a><ul>
+<li>Try it: Run <code>cargo install arbor-graph-cli</code>, index a Grassroot Hopper project directory, then ask <code>arbor refactor &lt;a key function&gt;</code> to see blast radius. Takes 20 minutes.</li>
+<li>Relevance: As Grassroot Hopper&#39;s codebase grows and AI agents generate more of it, understanding what touches what becomes the human&#39;s primary job. This is your verification layer.</li>
+<li>Signal: HN Show HN, MCP-integrated, listed on Glama directory.</li>
 </ul>
 </li>
 </ul>
 <hr>
-<div class="tool-feedback" data-tool="1" data-name="CodeDrift"><span class="tool-feedback-label">React:</span> <button class="tool-reaction-btn" data-value="love" onclick="setToolReaction(1, 'love', this)">❤️</button> <button class="tool-reaction-btn" data-value="ok" onclick="setToolReaction(1, 'ok', this)">👍</button> <button class="tool-reaction-btn" data-value="skip" onclick="setToolReaction(1, 'skip', this)">👎</button></div>
+<div class="tool-feedback" data-tool="1" data-name="Arbor"><span class="tool-feedback-label">React:</span> <button class="tool-reaction-btn" data-value="love" onclick="setToolReaction(1, 'love', this)">❤️</button> <button class="tool-reaction-btn" data-value="ok" onclick="setToolReaction(1, 'ok', this)">👍</button> <button class="tool-reaction-btn" data-value="skip" onclick="setToolReaction(1, 'skip', this)">👎</button></div>
 ## 🏗️ BUILD WATCH
 
-<p><strong>The verification gap is widening, not closing.</strong> Leonardo de Moura&#39;s essay (HN, cross-fed) documents what happens when AI writes code faster than humans can verify it: Heartbleed-class vulnerabilities at AI speed, across every layer of the stack. The emergence of CodeDrift today is the first concrete tool response to this structural problem — someone building a safety layer specifically for AI-generated code. Worth watching as a product category: <em>AI output auditing tools</em> are becoming their own micro-SaaS vertical.</p>
-<p><strong>Lovable crossed $6.6B valuation in under a year.</strong> The no-code/vibe-coding platform tier is now demonstrably venture-scale. This is not builder news — it&#39;s market-validation news. The tools Julien uses to build are themselves becoming billion-dollar companies. The insight: the <em>distribution layer</em> (who helps non-technical founders ship) is where value is concentrating, not the models themselves.</p>
-<p><strong>GPT-5.3 Instant launched</strong> (OpenAI, March 3, HN 391 points). No content surfaced beyond the title and HN engagement, but 391 points suggests a significant release. The inference-speed race between OpenAI, Anthropic, and Google continues compressing the cost of building AI-native products. Each cycle makes the barrier to ship lower.</p>
-<p><strong>Nvidia halts China H200 production</strong> and reallocates capacity to Vera Rubin. The supply chain for cutting-edge AI compute is tightening around Western clients. This does not affect Julien&#39;s build stack directly — but it signals that AI infrastructure costs will remain structurally high for frontier models, reinforcing the strategic value of small, efficient open-weight models (the same ones now at risk from the Qwen exodus).</p>
+<p><strong>The MCP layer is hardening fast.</strong> Three separate signals this week point to the same trajectory: Lovable integrates MCP servers for Linear, Jira, Confluence, Notion, and n8n; HiTank ships MCP-compatible Claude Code skills for a dozen SaaS APIs; Arbor lists itself on the Glama MCP directory. The Model Context Protocol is becoming the nervous system connecting AI coding agents to the real-world software stack. This is infrastructure consolidating in real time. For a solo builder, the implication is structural: your competitive surface is no longer &quot;can you build it&quot; but &quot;can you wire it together faster than anyone else.&quot;</p>
+<p><strong>Agent memory is an unsolved problem getting serious tooling.</strong> CtxVault (Show HN today) builds vault-based memory isolation for multi-agent systems — separate directories with server-side access control, fully local, MCP-compatible. Too early and too technical for immediate use, but the problem it solves (agents writing context autonomously with no visibility or control) is the exact failure mode that will bite non-technical builders first. Worth watching as the &quot;agent ops&quot; category forms.</p>
+<p><strong>Verification is becoming the next frontier after generation.</strong> The Leo de Moura essay (HN Tier 2, Article 4) makes a structural argument: AI generates code at 1000x speed, but verification hasn&#39;t scaled. Nearly half of AI-generated code fails basic security tests. The gap between generation and correctness is widening, not closing. For a non-technical founder, this is not a technical problem today — but it is a hiring/trust signal for the 6-month horizon. The builders who win won&#39;t just ship fast; they&#39;ll ship verifiably.</p>
 <hr>
 <h2>⏪ ACTION AUDIT</h2>
-<p>No previous actions to track.</p>
+<p>No previous actions to track — this is your first logged briefing cycle.</p>
 <hr>
 <h2>🎯 TODAY&#39;S PRIORITIES</h2>
-<p><strong>1. Do the Big Meeting with Henry and Lucas — today if not done.</strong>
-This is your most time-sensitive real-world obligation. Lucia quits May 1. That&#39;s 57 days. Operation Autonomy requires Henry to be in position before that clock runs out. If the March meeting hasn&#39;t happened yet, it is now overdue. Nothing in your project output replaces this.</p>
-<p><strong>2. Write one paragraph in your journal today.</strong>
-You haven&#39;t journaled in 3 days during your highest-output week in months. The Grassroot Hopper explosion, the values rewrite, the essay — these are worth narrating while the energy is still live. One paragraph. Not a full entry. Just enough to remember what this week felt like.</p>
-<p><strong>3. Before you open Cursor today, read Simon Willison&#39;s anti-patterns piece (5 min).</strong>
-You&#39;re in a creative burst on Grassroot Hopper. That&#39;s the moment unreviewed AI output quietly accumulates. Read the anti-patterns chapter, identify one habit to correct, and write it into your <code>.cursor/skills/</code> files before the session starts.</p>
+<p><strong>1. Finish the blog essay draft — today.</strong>
+You have research done, a SPEC, a STATUS tracker, and a draft in motion. The pipeline is built. The bottleneck is you. Ship the draft to review-ready state by end of day. This is the clearest &quot;nearly done&quot; item in your vault right now, and completing it gives you a full pipeline cycle to learn from.</p>
+<p><strong>2. Write one concrete validation question for Grassroot Hopper.</strong>
+The Qwen story is a reminder that open-source ecosystems can evaporate fast. The Lovable + MCP news shows that the builder landscape is compressing timelines. Before you write another SPEC or speech, write down: <em>&quot;Who specifically is already talking about the problem Grassroot Hopper solves, and where?&quot;</em> Find that conversation — Reddit, X, Discord — or acknowledge you haven&#39;t yet. This is your probe move for today.</p>
+<p><strong>3. Update Cursor after the 2.6 release.</strong>
+Not glamorous, but your primary building tool just shipped a new version with interactive UI changes in agent chats. Five minutes now prevents a mystery bug mid-session later. While you&#39;re in it, test the new <code>/memory</code> command in Claude Code — auto-memory is exactly the kind of context persistence your PRISM system is built around. See if it overlaps or complements.</p>
 <h2>🌍 WORLD LENS</h2>
 <div class="section-feedback" data-section="WORLD_LENS">
   <button class="section-btn" data-value="love" onclick="setSectionRating('WORLD_LENS', 'love', this)">❤️</button>
   <button class="section-btn" data-value="ok" onclick="setSectionRating('WORLD_LENS', 'ok', this)">👍</button>
   <button class="section-btn" data-value="skip" onclick="setSectionRating('WORLD_LENS', 'skip', this)">👎</button>
 </div>
-<p><strong>The US-Israeli military operation against Iran is the new macro risk variable for European founders.</strong> The FT&#39;s Free Lunch newsletter (today) frames it correctly: this is economically a replay of prior energy shocks — military conflict driving up natural gas prices, which means European inflation, industrial slowdowns, and the possibility of renewed monetary tightening. Belgium is not insulated. As a net energy importer in a gas-dependent industrial economy, a sustained gas price shock raises operating costs across the supply chain.</p>
-<p>For a specialty food shop in Brussels, the transmission mechanism is indirect but real: energy costs affect food production, cold-chain logistics, and supplier margins before they reach the retail price tag. Consumers feeling squeezed on energy bills reduce discretionary food spending. The FT specifically flags that gold, not US Treasuries, is absorbing safe-haven flows — a sign that dollar-denominated financial trust is eroding, which historically strengthens the euro against the dollar but complicates trade dynamics for businesses importing dollar-priced goods.</p>
-<p><strong>Belgium&#39;s VAT reform on food is live as of March 1, 2026.</strong> This is the most direct and immediate business risk from today&#39;s intelligence. Changes to VAT rates on ready-to-eat food, beverages, and hospitality are in effect now, following a late-2025 federal budget agreement. According to Bird &amp; Bird and EY Belgium, affected businesses were advised to revise pricing strategies. If the shop has any ready-to-eat product lines or hospitality-adjacent offerings, pricing review is overdue. This is not theoretical — it is in force.</p>
-<p><strong>The Xi-Trump meeting at end of March</strong> is the one geopolitical event with a binary outcome for AI infrastructure costs globally. If chip export controls loosen, Nvidia floods the Chinese market, supply tightens for Western buyers, and compute prices for frontier models tick up. If controls tighten further, Chinese AI development accelerates on domestic chips, increasing competition from models outside the Western IP stack. Either outcome affects the long-term cost of the AI tools Julien builds on.</p>
+<p><strong>Nvidia stops producing China-targeted chips.</strong> The FT reports Nvidia has halted production of chips designed for the Chinese market following tightened US export controls. This is not a business story — it is a geopolitical inflection point. The world&#39;s semiconductor supply chain is now formally bifurcated: one stack for the West, one for China. For Brussels, the second-order effects are more relevant than the headline. European manufacturers with Chinese suppliers or customers face renewed uncertainty about component availability and technology access. The EU&#39;s own chip ambitions (the European Chips Act) take on fresh urgency, but Brussels is still years from meaningful production capacity.</p>
+<p>For Chez Julien specifically: the consumer electronics imported from Asian supply chains — including the devices your staff uses daily — face long-run cost pressure. Nothing immediate, but a structural drift toward more expensive hardware over the next 18–24 months.</p>
+<p><strong>Belgian shoppers seeking stability, not aspiration.</strong> Data from United Brands Association (March 3, 2026) confirms Belgian consumers are navigating economic tension and rising mental pressure — seeking &quot;stability and accessible self-reward&quot; rather than premium aspiration. For a specialty food shop in Brussels, this is an actionable frame: position around reliability, familiarity, and affordable indulgence rather than novelty or luxury. The consumer who was trading up in 2023 is now trading sideways and looking for control.</p>
+<p><strong>The e-invoicing mandate is live and non-negotiable.</strong> As of January 1, 2026, all VAT-liable Belgian companies must exchange invoices in structured electronic format. Sending a PDF by email is no longer compliant. This is not theoretical — it is an active compliance obligation. If March admin at Chez Julien hasn&#39;t addressed this, it should be on the list for this week&#39;s business review.</p>
 <hr>
 <h2>🇪🇺 EUROPE TECH</h2>
 <div class="section-feedback" data-section="EUROPE_TECH">
@@ -429,8 +453,8 @@ You&#39;re in a creative burst on Grassroot Hopper. That&#39;s the moment unrevi
   <button class="section-btn" data-value="ok" onclick="setSectionRating('EUROPE_TECH', 'ok', this)">👍</button>
   <button class="section-btn" data-value="skip" onclick="setSectionRating('EUROPE_TECH', 'skip', this)">👎</button>
 </div>
-<p><strong>Nothing specific to EU tech policy or European AI regulation surfaced in today&#39;s intelligence.</strong> The Qwen story (covered in The Signal, March 4–5) has European implications — open-weight models are disproportionately used by European developers who avoid US API dependency for GDPR and cost reasons. If the open-weight cadence from Alibaba slows, European builders lose one of their main routes to affordable, locally-hostable inference. This is structural, not a one-day story.</p>
-<p><strong>Tavola specialty food trade show runs March 15–17 in Belgium.</strong> Not a tech story — but noted for the shop. If supplier relationships or product scouting are part of Operation Autonomy&#39;s setup, this is a relevant date for Henry or Lucas to have on their radar, not Julien&#39;s.</p>
+<p><strong>Qwen implosion has direct European open-source consequences.</strong> Three briefings in a row have tracked the Qwen leadership departure, but the European angle deserves explicit treatment. The EU AI Act&#39;s tiered approach to open-weight vs. proprietary models means that regulatory exemptions and compliance pathways differ depending on whether a model is open. Alibaba&#39;s apparent shift toward proprietary deployment of Qwen-family models — if confirmed — narrows the set of frontier open-weight options available to European developers and startups who need to demonstrate model auditability. The open-source ecosystem just got thinner, and that matters more in Brussels than in San Francisco.</p>
+<p><strong>MacBook Neo.</strong> Apple launched a new entry-level MacBook (dubbed &quot;MacBook Neo&quot; on Product Hunt) today, positioned as &quot;an amazing Mac at a surprising price.&quot; No material implication for Julien&#39;s stack, but if the machine holds up, it&#39;s a relevant hardware consideration for Lucia&#39;s upcoming self-employment setup or for team hardware at Chez Julien.</p>
 <hr>
 <h2>📈 TREND TRACKER</h2>
 <div class="section-feedback" data-section="TREND_TRACKER">
@@ -438,47 +462,44 @@ You&#39;re in a creative burst on Grassroot Hopper. That&#39;s the moment unrevi
   <button class="section-btn" data-value="ok" onclick="setSectionRating('TREND_TRACKER', 'ok', this)">👍</button>
   <button class="section-btn" data-value="skip" onclick="setSectionRating('TREND_TRACKER', 'skip', this)">👎</button>
 </div>
-<p><strong>AI code verification</strong> — Day 3 of this theme. March 3: &quot;code review is dying as a human practice&quot; (Latent Space). March 4: AGENTS.md reduces agent runtime 28.6%. March 5: CodeDrift ships as a static analysis layer for AI-generated code. The arc is clear — the gap between AI code generation speed and human verification capacity is spawning an entirely new tooling category. For Julien: the upstream role (spec, intent, constraints) continues to strengthen as the human bottleneck in AI-assisted development.</p>
-<p><strong>Qwen exodus</strong> — Day 3. Still no resolution. The story has moved from personnel news to structural concern: will future Qwen flagships be open-weight or proprietary-API? No answer yet. Watch for Alibaba&#39;s next model announcement as the signal.</p>
-<p><strong>Open-source AI fragility</strong> — Accelerating. Two consecutive weeks of signals suggesting the open-weight ecosystem is more fragile than it appeared in January 2026. Qwen departures, Nvidia&#39;s China pivot, and the concentration of frontier compute demand among a handful of US hyperscalers all point the same direction: the &quot;open AI for solo builders&quot; thesis is under quiet pressure.</p>
-<p><strong>Vibe-coding platform valuations</strong> — New this week. Lovable at $6.6B validates the entire non-technical founder market. This is a rising tide. No action needed — just note that the tools available to Julien are now being treated as infrastructure-scale bets by venture capital.</p>
-<p><strong>Belgian VAT food reform</strong> — New today, but the clock started March 1. Not a trend — a discrete regulatory event that requires a one-time pricing review.</p>
+<p><strong>Qwen / Open-Source Model Risk</strong> — Day 3 of coverage. Confirmed: leadership departed, reorganization underway, shares down 5.3% in Hong Kong. The consensus is hardening that Qwen&#39;s open-weights cadence will slow or stop. What was an &quot;emerging signal&quot; on March 3 is now a structural shift. <em>Implication for Julien: if any future product depends on open-weight models for cost efficiency, the menu of reliable options just shrank. This is a 6-month planning consideration, not a tomorrow problem.</em></p>
+<p><strong>MCP as integration standard</strong> — Accelerating. Lovable, HiTank, Arbor, and CtxVault all shipped MCP integrations this week. Three weeks ago this was a niche developer protocol. It is now the connective tissue of the AI tool ecosystem. <em>Watch for: Cursor native MCP integration becoming the default workflow.</em></p>
+<p><strong>Agentic &gt; autocomplete tipping point</strong> — Confirmed this week by Cursor&#39;s own data (2x more agent users than tab users, flipped from 1 year ago). This is no longer a prediction — it&#39;s a reported fact. <em>Implication: briefings should now assume agentic workflows as baseline, not as advanced technique.</em></p>
+<p><strong>Document automation as underexplored niche</strong> — New signal, Day 1. Two independent sources (DEV Community, Calmops) flag this in the same week. <em>Too early to act on, but worth one hour of deliberate research if Grassroot Hopper has any document-adjacent angle.</em></p>
+<p><strong>Verification gap widening</strong> — New signal, Day 1. De Moura essay and Karpathy reference both point to the same structural problem: AI generates faster than humans can verify. <em>Low urgency for now, but this is the thesis behind a future micro-SaaS category: &quot;trust and verification tooling for AI-generated software.&quot;</em></p>
 <hr>
 <h2>🚮 SLOP FILTER</h2>
-<p><strong>4 of 10 Tier 2 articles were noise today.</strong></p>
+<p><strong>5 of 11 Tier 2 articles were noise today.</strong></p>
 <ul>
-<li><strong>Article 5 (MacBook Neo scroll effect)</strong> — A Show HN for a visual UI trick. Technically interesting to a front-end developer; zero relevance to a solo non-technical founder or micro-SaaS context.</li>
-<li><strong>Article 6 (RFC 9849 — TLS Encrypted Client Hello)</strong> — An IETF standards document. Relevant to infrastructure engineers and browser vendors. Not actionable for Julien&#39;s build context in any near-term horizon.</li>
-<li><strong>Article 7 (FirstFT: Pentagon / Iran drones)</strong> — Paywalled. No extractable content. The Iran/energy angle was better covered by Article 1 (FT Free Lunch).</li>
-<li><strong>Article 8 (Lenovo ThinkPad 10/10 repairability)</strong> — Genuinely interesting consumer hardware news, but irrelevant to a Brussels software founder. No connection to Julien&#39;s stack, business, or projects.</li>
+<li><strong>Article 1 (FT — &quot;The economic question we forget to ask about AI&quot;)</strong> — Paywalled. Zero content retrievable. Scored 6.8 but delivered nothing actionable.</li>
+<li><strong>Article 3 (FT — Nvidia China chips)</strong> — Paywalled, but headline alone carries geopolitical signal. Included in World Lens with appropriate caveat.</li>
+<li><strong>Article 6 (RFC 9849 — TLS Encrypted Client Hello)</strong> — Technically significant internet standard, zero relevance to a non-technical founder building micro-SaaS. Pure infrastructure noise for this briefing.</li>
+<li><strong>Article 7 (FT — Pentagon/Ukrainian drones)</strong> — Geopolitically interesting but has no pathway to Brussels founder relevance. Filtered.</li>
+<li><strong>Article 8 (Lenovo ThinkPad repairability)</strong> — Genuinely good product news, but hardware repairability has no bearing on Julien&#39;s build or business decisions this week.</li>
 </ul>
-<p><strong>6 of 10 were signal.</strong> Above-average day for article quality. Articles 1, 2, 3, 4, 9, and 10 all contributed directly to at least one section of this briefing.</p>
+<p><strong>6 of 11 delivered real signal:</strong> Articles 2 (GPT-5.3 Instant), 4 (verification gap), 5 (MacBook Neo), 9 (CtxVault), 10 (Arbor), 11 (HiTank).</p>
 <hr>
 <h2>🔄 FEED HEALTH REPORT</h2>
 <ul>
-<li><p><strong>KEEP:</strong> <code>ft.com</code> — Article 1 (FT Free Lunch on AI economics) was the best analytical piece in today&#39;s set. Economist-grade structural thinking, directly applicable to Julien&#39;s world lens. <code>hnrss.org</code> — High variance but delivered two actionable tools (Articles 9, 10) and the verification gap essay (Article 3).</p>
-</li>
-<li><p><strong>WATCH:</strong> <code>hnrss.org</code> — Signal-to-noise is 50/50 on any given day. Today was better than average, but Articles 5 and 6 were pure technical noise with no founder relevance. The feed earns its place on good days; on bad days it inflates slop counts.</p>
-</li>
-<li><p><strong>CONSIDER ADDING:</strong> A dedicated Belgian/EU regulatory feed (e.g., EY Belgium tax alerts, Bird &amp; Bird Belgium). The VAT reform story came through web intelligence, not the article feed — meaning Julien would have missed it without the proactive search. That&#39;s a structural gap for a Brussels-based business owner. Also consider: a micro-SaaS / indie hacker feed (Indie Hackers, Calmops, Superframeworks) — today&#39;s web intelligence on the micro-SaaS launch strategy landscape was richer than anything in the article feed.</p>
-</li>
-<li><p><strong>CONSIDER REMOVING:</strong> Nothing warrants removal after a single below-average run. Monitor <code>hnrss.org</code> for another two cycles — if the noise rate stays above 40%, consider filtering to HN posts above a points threshold (e.g., &gt;100 points only).</p>
-</li>
+<li><strong>KEEP</strong>: <strong>Hacker News RSS</strong> — 4 of 6 HN articles delivered signal today (HiTank, Arbor, CtxVault, verification essay). The Show HN category is consistently high-quality for tool discovery.</li>
+<li><strong>KEEP</strong>: <strong>Latent Space / Simon Willison</strong> — Driving the most consequential signals across 3 consecutive briefings (Qwen, agentic patterns, Knuth/Claude). Non-negotiable feed.</li>
+<li><strong>WATCH</strong>: <strong>FT.com</strong> — 3 articles in today&#39;s tier, 2 fully paywalled with zero content returned, 1 geopolitically relevant but Brussels-filtered. The FT feed is generating titles without substance. Either a paid API key is needed, or the FT feed should be deprioritized.</li>
+<li><strong>CONSIDER ADDING</strong>: <strong>Lovable.dev blog / changelog</strong> — Surfaced via web intelligence but absent from feeds. Given Lovable&#39;s direct relevance to non-technical founder workflows and today&#39;s $200M ARR + MCP milestone, this changelog belongs in the feed.</li>
+<li><strong>CONSIDER ADDING</strong>: <strong>Windsurf changelog</strong> (windsurf.com/changelog) — Same pattern. Major Wave 13 release surfaced only through web intelligence, not feed. High relevance for Julien&#39;s tool stack.</li>
+<li><strong>CONSIDER REMOVING</strong>: No feed has been noise for 3+ consecutive runs. FT is on watch but not yet at removal threshold.</li>
 </ul>
 <hr>
 <h2>💬 FEEDBACK RESPONSE</h2>
-<p><strong>Julien&#39;s last feedback (Feb 24): 5/5 — &quot;Better signal, actionable, not like the one I got about China stealing US models.&quot;</strong></p>
-<p>Noted and locked in as the calibration standard. What earned the 5: signal that was specific, traceable, and actionable within Julien&#39;s actual build context — not geopolitical noise dressed up as founder relevance.</p>
-<p>Today&#39;s application of that standard:</p>
+<p><strong>Your last feedback (Feb 24, 5/5):</strong> &quot;Better signal, actionable, not like the one I got about China stealing US models that made me give a 3.&quot;</p>
+<p>Acknowledged and locked in as standing calibration:</p>
 <ul>
-<li>The China chip story (Article 4) was included in World Lens but explicitly framed through its indirect effect on compute costs and open-model strategy — not as a geopolitical spectacle.</li>
-<li>The VAT reform was surfaced and connected directly to the shop&#39;s pricing review, not left as an abstract regulatory update.</li>
-<li>The Iran/energy story was treated structurally (energy costs → food supply chain → consumer confidence) rather than as breaking news.</li>
+<li><strong>What earned the 5</strong>: Actionable intelligence, direct Brussels/founder lens, no geopolitical noise for its own sake. This briefing maintains that posture.</li>
+<li><strong>What got the 3</strong>: Geopolitical spectacle without a clear pathway to &quot;what does this mean for me.&quot; The Nvidia China chip story today was included only because it has a structural European supply-chain angle — not for the drama. The Pentagon/Ukraine drone story was filtered entirely for the same reason.</li>
+<li><strong>Ongoing adjustment</strong>: World Lens section now defaults to The Economist register — structural and economic, not headline-chasing. If a geopolitical story has no Belgian or European founder relevance within two inferential steps, it gets dropped.</li>
 </ul>
-<p>The test I apply: <em>would this paragraph prompt Julien to do something, think something new, or update a prior belief?</em> If the answer is no, it goes to the slop filter.</p>
-<p>React to today&#39;s articles at <a href="https://prism.julien.care//2026-03-05.html">https://prism.julien.care//2026-03-05.html</a></p>
+<p>React to today&#39;s articles at <strong><a href="https://prism.julien.care//2026-03-05.html">https://prism.julien.care//2026-03-05.html</a></strong></p>
 <hr>
-<p><em>PRISM v4.0 — 20 articles analyzed, 0 web searches, ~$0.23</em></p>
+<p><em>PRISM v4.0 — 21 articles analyzed, 0 web searches, ~$0.34</em></p>
 
   </div>
 
@@ -518,8 +539,9 @@ You&#39;re in a creative burst on Grassroot Hopper. That&#39;s the moment unrevi
 
 <script>
   // ── State ────────────────────────────────────────────────
-  const ARTICLES = [{"title":"Something is afoot in the land of Qwen","source":"simonwillison.net"},{"title":"Agentic Engineering Patterns","source":"simonwillison.net"}];
-  const TOOLS = [{"name":"Awesome-Claude-md","snippet":"- **Awesome-Claude-md** — 20 production-ready CLAUDE.md templates for every major stack (Next.js, SaaS fullstack, FastAPI, etc.) - **Try it:** `cat templates/saas-fullstack/CLAUDE.md` — copy it into your active Cursor project root, replace the `[PLACEHOLDERS]` with your project specifics. Done in 15 minutes. - **Relevance:** Any active Cursor session — Grassroot Hopper, blog essay tooling, Staffin"},{"name":"CodeDrift","snippet":"- **CodeDrift** — CLI static analysis tool catching AI-specific bugs (async forEach, IDOR vulnerabilities, hallucinated dependencies) that pass ESLint and human review - **Try it:** `npx codedrift` in any project directory where AI-generated code has been merged. Takes under 10 minutes to run. - **Relevance:** Any codebase built with Cursor. Most useful once Grassroot Hopper or the Staffing Calend"}];
+  const ARTICLES = [{"title":"Something is afoot in the land of Qwen","source":"simonwillison.net"},{"title":"Agentic Engineering Patterns — Anti-patterns: things to avoid","source":"simonwillison.net"},{"title":"Is Harness Engineering real?","source":"Latent Space"}];
+  const TOOLS = [{"name":"HiTank","snippet":"- **HiTank** — A Ruby-based Claude Code skill manager. One command (`hitank add stripe`) installs pre-built integrations for Stripe, Notion, Google Sheets, Slack, Linear, Shopify, and more — with zero extra dependencies. [github.com/alanalvestech/hitank](https://github.com/alanalvestech/hitank) - Try it: Install the gem, run `hitank list`, then add the `notion` and `stripe` skills. Open Claude Cod"},{"name":"Arbor","snippet":"- **Arbor** — A local CLI that builds a semantic dependency graph of your codebase and tells you what breaks before you refactor. Integrates with Claude/Cursor via MCP. [github.com/Anandb71/arbor](https://github.com/Anandb71/arbor) - Try it: Run `cargo install arbor-graph-cli`, index a Grassroot Hopper project directory, then ask `arbor refactor <a key function>` to see blast radius. Takes 20 minu"}];
+  const SCOUT_CATCHES = [{"name":"Innoviris — Prove Your Social Innovation (PYSI)","description":"Brussels-Capital Region's public funder offers up to €100,000 (100% coverage) for social entrepreneurs building innovative products or services, directly accessible to solo founders and cooperative-st"},{"name":"Open Collective Europe","description":"A Brussels-registered nonprofit providing fiscal hosting (legal entity + budget infrastructure) for unincorporated open-source and community collectives across Europe, enabling solo devs to receive gr"},{"name":"Medispring (Coopérative)","description":"A Belgian doctor-owned cooperative building open-source electronic health records software, designed by practitioners to guarantee IT independence from extractive proprietary vendors — a textbook coop"},{"name":"NGI Zero Commons Fund — 12th Open Call (NLnet)","description":"EU-backed cascade grants of €5k–€50k+ for individuals and small orgs building free/open-source technology commons improving openness, resilience and user autonomy; 12th call open until 1 April 2026."},{"name":"CoopCycle","description":"An open-source, copyleft-licensed platform cooperative reserving its software exclusively for worker co-ops, actively deployed across Belgium and six other European countries, covering 70 cooperatives"}];
   const WORKER_URL = "/api/feedback";
   const FEEDBACK_SECRET = "prism-feedback-58367207b5410501";
   const DATE = "2026-03-05";
@@ -528,6 +550,7 @@ You&#39;re in a creative burst on Grassroot Hopper. That&#39;s the moment unrevi
     overallRating: null,
     articleReactions: {},    // index → 'love' | 'ok' | 'skip'
     toolReactions: {},       // index → 'love' | 'ok' | 'skip'
+    scoutReactions: {},      // index → 'love' | 'ok' | 'skip'
     sectionRatings: {},      // sectionId → 'love' | 'ok' | 'skip'
     notes: '',
     totalInteractions: 0,
@@ -563,6 +586,19 @@ You&#39;re in a creative burst on Grassroot Hopper. That&#39;s the moment unrevi
     updateInteractionCount();
   }
 
+  function setScoutReaction(index, value, btn) {
+    const prev = state.scoutReactions[index];
+    if (prev === value) {
+      delete state.scoutReactions[index];
+      btn.parentElement.querySelectorAll('.reaction-btn').forEach(b => b.classList.remove('active-love', 'active-ok', 'active-skip'));
+    } else {
+      state.scoutReactions[index] = value;
+      btn.parentElement.querySelectorAll('.reaction-btn').forEach(b => b.classList.remove('active-love', 'active-ok', 'active-skip'));
+      btn.classList.add('active-' + value);
+    }
+    updateInteractionCount();
+  }
+
   function setOverallRating(value, btn) {
     state.overallRating = state.overallRating === value ? null : value;
     document.querySelectorAll('.star-btn').forEach(b => b.classList.remove('active'));
@@ -573,6 +609,7 @@ You&#39;re in a creative burst on Grassroot Hopper. That&#39;s the moment unrevi
   function updateInteractionCount() {
     const count = Object.keys(state.articleReactions).length +
                   Object.keys(state.toolReactions).length +
+                  Object.keys(state.scoutReactions).length +
                   Object.keys(state.sectionRatings).length +
                   (state.overallRating ? 1 : 0);
     state.totalInteractions = count;
@@ -600,6 +637,10 @@ You&#39;re in a creative burst on Grassroot Hopper. That&#39;s the moment unrevi
         name: tool.name,
         rating: state.toolReactions[i] || null,
       })).filter(t => t.rating !== null),
+      scoutCatches: SCOUT_CATCHES.map((c, i) => ({
+        name: c.name,
+        rating: state.scoutReactions[i] || null,
+      })).filter(c => c.rating !== null),
       sections: state.sectionRatings,
       openNotes: notes,
       submittedAt: new Date().toISOString(),

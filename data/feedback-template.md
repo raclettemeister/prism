@@ -19,6 +19,7 @@ PRISM reads this before the next run. Delete sections you don't care about.
 - 🎮 GAME DEV INTELLIGENCE: [ ] Love  [ ] OK  [ ] Skip
 - 📊 PIONEER ADVANTAGE: [ ] Love  [ ] OK  [ ] Skip
 - 🛠️ TOOLS TO TRY: [ ] Love  [ ] OK  [ ] Skip
+- 🌱 GRASSROOT RADAR: [ ] Love  [ ] OK  [ ] Skip
 - 🌍 WORLD LENS: [ ] Love  [ ] OK  [ ] Skip
 - 🇪🇺 EUROPE TECH: [ ] Love  [ ] OK  [ ] Skip
 

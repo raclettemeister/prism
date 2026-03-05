@@ -1,4 +1,4 @@
-<!-- PRISM Web Intelligence — 2026-03-05 — generated 2026-03-05T12:58:40.834Z -->
+<!-- PRISM Web Intelligence — 2026-03-05 — generated 2026-03-05T13:21:22.976Z -->
 
 # Proactive Web Intelligence — 2026-03-05
 
@@ -6,112 +6,126 @@
 
 
 
-## Query 1: Grassroot Hopper launch community platform March 2026
+## Query 1: Grassroot Hopper community platform launch 2026
 
-I was unable to find any search results specifically about a "Grassroot Hopper launch community platform" scheduled for or announced around March 2026. The search returned results for unrelated entities such as the **Grace Hopper Celebration** (a women-in-tech conference by AnitaB.org), **Grassroots International** (a philanthropy organization), and the **Grassroot Platform** (an open-source community organizing tool on GitHub), but none of these match the specific product or event you described.
+I was unable to find any results specifically about a "Grassroot Hopper community platform launch 2026." The search returned results for related but different topics — such as the **Grace Hopper Celebration 2026** (a tech conference by AnitaB.org), **Grassroots International** (a philanthropy organization), and **Grassroots** (an employee experience app) — but none of these match a product or platform specifically called "Grassroot Hopper."
 
-It's possible that:
-- **"Grassroot Hopper"** may be a very niche, emerging, or not-yet-publicly-indexed product/organization with limited web presence.
-- The name may be slightly different from what is publicly listed online.
-- It may be an internal project or announcement not yet covered by indexed sources.
+**It's possible that:**
+- The name "Grassroot Hopper" may be slightly misspelled, misremembered, or a very niche/emerging project not yet indexed by major search engines.
+- It may not yet have a significant public web presence.
 
-**Recommendations:**
-1. Double-check the exact name or spelling of the platform/organization.
-2. Try searching directly on platforms like LinkedIn, Product Hunt, or Crunchbase for "Grassroot Hopper."
-3. If you have a source or link already, I can help you analyze it directly.
+**Closest relevant findings:**
+- The **Grace Hopper Celebration 2026** is scheduled for **October 27–30, 2026**, in Anaheim, California, hosted by AnitaB.org (https://ghc.anitab.org/).
+- **Grassroots International** is planning a 2026 launch of a *Solidarity Philanthropy Toolkit* — a guide for funders, donors, and movements — at https://grassrootsonline.org/.
 
-I want to be transparent: I cannot provide a factual summary with citations when no verified, relevant search results exist, as doing so would risk fabricating information.
+**Recommendation:** Could you double-check the name or provide more context (e.g., the industry, country, or a source where you saw it mentioned)? That would help me search more precisely.
 
-## Query 2: Cursor AI coding assistant update changelog March 5 2026
+## Query 2: Claude Code update March 5 2026
 
-Based on the search results, here is a factual summary. Note that **no specific Cursor changelog entry dated exactly March 5, 2026 was found** — the closest releases cluster around early March 2026:
+Here is a concise summary of the most relevant recent findings around Claude Code updates near March 5, 2026:
 
 ---
 
-The most recent Cursor release near that date is **version 2.6**, released **March 3, 2026**, which introduced interactive UIs in agent chats, a way for teams to share private plugins, and improvements to core capabilities like Debug mode.
+**Claude Code — March 2026 Updates**
 
-According to the official download tracker, the latest confirmed build is **version 2.6.11**, dated **2026-03-03**, available for Windows, macOS, and Linux.
+A March 2026 update to Claude Code (first seen March 4, 2026) made **Opus 4.6 the new default model** for Max and Team subscribers, set at "medium effort" as the default thinking level. The "ultrathink" keyword was re-introduced to enable high effort for the next turn, and **Opus 4 and 4.1 were removed** from Claude Code on the first-party API — users with those models pinned were automatically migrated to Opus 4.6.
 
-The prior notable update (Feb 26, 2026) added **BugBot Autofix**, which runs cloud agents in isolated VMs to automatically fix issues found in pull requests and propose fixes directly on the PR — with over 35% of Autofix changes being merged.
+The same update batch also introduced **auto-memory** (Claude automatically saves useful context, manageable via `/memory`), a new `/copy` command providing an interactive picker for selecting individual code blocks or full responses, smarter per-subcommand bash prefix suggestions for compound commands (e.g. `cd /tmp && git fetch && git push`), and fixes for an MCP OAuth token refresh race condition and a config file corruption bug that could wipe authentication when multiple Claude Code instances ran simultaneously.
 
-On Feb 24, 2026, Cursor also launched **cloud agents** that can use the software they create to test changes and demo their work, running in isolated VMs with full development environments and producing merge-ready PRs with video, screenshot, and log artifacts.
-
-No changelog entry specifically dated **March 5, 2026** appears in available sources as of this search. The most relevant sources are:
-- **Official changelog:** https://cursor.com/changelog
-- **Version download tracker:** https://github.com/oslook/cursor-ai-downloads
-
-## Query 3: Anthropic Claude Opus 4.6 new capabilities release March 2026
-
-Here is a concise, sourced summary based on the most relevant search results:
-
----
-
-**Claude Opus 4.6** is Anthropic's most capable model to date, building on the intelligence of Opus 4.5 and bringing new levels of reliability and precision to coding, agents, and enterprise workflows. It was launched on **February 5, 2026**, with Anthropic announcing improvements in planning, code review, debugging, and operating reliably within large codebases.
-
-The most notable new feature is **"agent teams"** — teams of AI agents that can split larger tasks into segmented jobs. As of February 20, 2026, it holds the record for the longest task-completion time horizon as estimated by METR, with a **50% time horizon of 14 hours and 30 minutes** and an 80% time horizon of 1 hour and 3 minutes.
-
-On the same release date (February 5, 2026), Claude Opus 4.6 became **generally available for GitHub Copilot**, excelling in agentic coding — particularly hard tasks requiring planning and tool calling — for Copilot Pro, Pro+, Business, and Enterprise users.
-
----
+Other nearby changelog entries also include a new `claude remote-control` subcommand for external builds, updated git timeout (30s → 120s), custom npm registries and version pinning, and a security fix for hook commands executing without workspace trust.
 
 **Key sources:**
-- Anthropic official announcement: https://www.anthropic.com/news/claude-opus-4-6
-- TechCrunch: https://techcrunch.com/2026/02/05/anthropic-releases-opus-4-6-with-new-agent-teams/
-- GitHub Changelog: https://github.blog/changelog/2026-02-05-claude-opus-4-6-is-now-generally-available-for-github-copilot/
+- https://releasebot.io/updates/anthropic/claude-code
+- https://github.com/anthropics/claude-code/releases
+- https://claudefa.st/blog/guide/changelog
 
-> **Note:** The search results indicate the release was in **February 2026**, not March 2026 as specified in your query. No distinct "March 2026" release of Opus 4.6 was found — the major launch occurred on **February 5, 2026**.
+## Query 3: Cursor AI editor update changelog March 2026
 
-## Query 4: Qwen team departure impact open source models replacement March 2026
-
-Here is a concise, factual summary of the most relevant recent findings:
+Here is a concise, well-sourced summary of the most relevant findings:
 
 ---
 
-On **March 3, 2026**, **Junyang Lin** — the tech lead and public face of Alibaba's Qwen open-source AI project — announced his departure in a brief post on X: "me stepping down. bye my beloved qwen." The exit came just 24 hours after the Qwen team shipped the **Qwen 3.5 small model series**, and colleague reactions strongly suggest the departure was not voluntary.
+**Cursor 2.6** was released on **March 3, 2026**. This release introduces **interactive UIs in agent chats**, a way for teams to **share private plugins**, and improvements to core capabilities like **Debug mode**.
 
-At least two other core contributors also confirmed exits: **Binyuan Hui** (lead of Qwen Code, who reportedly left in January 2026 and joined Meta) and **Lin Kaixin**, a contributor to Qwen 3.5, VL, and Coder. **Yu Bowen**, who led Qwen's post-training efforts, also left; his replacement is **Zhou Hao**, a former senior staff DeepMind researcher and Gemini 3.0 contributor.
+Leading up to 2.6, on **February 26, 2026**, Cursor launched **Bugbot Autofix**, which runs cloud agents on their own machines to test changes and propose fixes directly on pull requests — with over **35% of Bugbot Autofix changes** being merged into the base PR. Additionally, on **February 24, 2026**, cloud agents gained the ability to use software they create to test changes and demo their work, with each agent running in its own isolated VM and producing **merge-ready PRs with artifacts** (videos, screenshots, and logs).
 
-Alibaba is reportedly reorganizing the Qwen team and broader Tongyi AI Lab, moving away from a vertically integrated, startup-like operation toward a more fragmented structure that separates pre-training, post-training, text, and multimodality into distinct teams — a change that reportedly didn't align with Lin's philosophy.
+A notable usage shift has also occurred: in March 2025, Cursor had roughly 2.5x as many Tab users as agent users, but that ratio has now flipped — there are now **2x as many agent users as Tab users**, driven by model improvements including Opus 4.6, Codex 5.3, and Composer 1.5.
 
-Analysts warn that as Alibaba pushes to meet investor demands for revenue growth, the "open" in Qwen's open-weight models may become a secondary priority, and enterprises relying on Apache 2.0-licensed Qwen models now face the possibility that future flagships — such as the rumored **Qwen3.5-Max** — will be locked behind paid, proprietary APIs.
+**Key source:** [https://cursor.com/changelog](https://cursor.com/changelog)
 
-**Key sources:**
-- VentureBeat: https://venturebeat.com/technology/did-alibaba-just-kneecap-its-powerful-qwen-ai-team-key-figures-depart-in
+## Query 4: Lovable.dev Bolt.new Windsurf release update March 5 2026
+
+Here is a concise, sourced summary of the most relevant recent updates for all three platforms around early March 2026:
+
+---
+
+### 🟣 Lovable.dev
+
+Lovable celebrated its one-year anniversary, announcing it has reached **$200M in ARR**. As part of a major product release, MCP servers went live, with Lovable now integrating with Linear, Jira, Confluence, n8n, and Notion — allowing a Linear ticket to become a working prototype in one click, or a Notion PRD to scaffold an entire app. Additionally, custom MCP servers are now available on all paid plans (not just Business and Enterprise), accessible via Settings → Connectors → Personal Connectors.
+
+**Source:** https://lovable.dev/blog/one-year-of-lovable | https://docs.lovable.dev/changelog
+
+---
+
+### 🔵 Windsurf (Codeium)
+
+Windsurf's **Wave 13** release delivers parallel Cascade agent sessions, Git worktree branch isolation, and a new multi-pane layout. The model SWE-1.5 Free — with the full intelligence of SWE-1.5 — is available for free to all users for the next 3 months, replacing SWE-1 as the default model. Separately, on **March 3, 2026**, Windsurf Next (version 1.9566.1015) released **Phoenix Alpha**, the most recent Windsurf Next build near the March 5 date.
+
+**Source:** https://windsurf.com/changelog | https://windsurf.com/changelog/windsurf-next
+
+---
+
+### 🟠 Bolt.new
+
+Bolt added a **visual Version History** feature that lets users browse previous project versions, preview them, and restore with a click. It also added quick access to Project Settings via a cog wheel icon. **Claude Sonnet 4.6** is now available in Bolt, offering speed, cost, and reasoning depth for everyday building tasks, and is suitable as a reliable default for most projects.
+
+**Source:** https://support.bolt.new/release-notes
+
+---
+
+> ⚠️ **Note:** The exact date of **March 5, 2026** does not correspond to a single specific major launch for all three platforms simultaneously. The updates above are the most recent and relevant releases from each tool *around* that date based on available search data.
+
+## Query 5: Qwen open source future leadership replacement March 2026
+
+Here is a concise summary of the most relevant recent findings:
+
+---
+
+**Qwen Leadership Shakeup — March 2026**
+
+On **March 3, 2026**, Junyang Lin — the tech lead and public face of Alibaba's Qwen open-source AI project — announced his departure in a brief post on X: *"me stepping down. bye my beloved qwen."* The exit came just 24 hours after the Qwen team shipped the **Qwen 3.5 small model series**, and colleague reactions strongly suggest the departure was not voluntary.
+
+At least two other core contributors — **Binyuan Hui** and **Kaixin Li** — also confirmed their exits. Hui Binyuan, the lead of Qwen Code, had reportedly left as early as January 2026 and joined **Meta**.
+
+Reports suggest Alibaba is reorganizing its Qwen team and the broader Tongyi AI Lab, moving away from a vertically integrated, startup-like operation toward a more fragmented structure that separates pre-training, post-training, text, and multimodality into distinct teams. **Hao Zhou** is taking the reins as the new leadership, with the world watching to see if Qwen remains a "model for the world" or becomes merely a component in Alibaba's corporate bottom line.
+
+Alibaba's shares slid as much as **5.3% in Hong Kong** — their biggest intraday loss since October — in part because of investor reaction to the news.
+
+---
+
+**Key Sources:**
 - TechCrunch: https://techcrunch.com/2026/03/03/alibabas-qwen-tech-lead-steps-down-after-major-ai-push/
-- NYU Shanghai RITS: https://rits.shanghai.nyu.edu/ai/junyang-lin-steps-down-as-qwen-tech-lead-in-abrupt-departure
+- Bloomberg: https://www.bloomberg.com/news/articles/2026-03-04/alibaba-qwen-head-who-warned-of-openai-gap-steps-down
+- VentureBeat: https://venturebeat.com/technology/did-alibaba-just-kneecap-its-powerful-qwen-ai-team-key-figures-depart-in
 
-## Query 5: micro-SaaS solo founder launch strategy March 2026
+## Query 6: indie hacker micro-SaaS launch community platform March 2026
 
-Here is a concise summary of the most relevant recent findings on **micro-SaaS solo founder launch strategy** as of early 2026:
+Here is a concise summary of the most relevant recent findings:
 
----
+As of **March 2026**, resources for indie hackers in the micro-SaaS space are actively being updated — for example, TLDL.io has published an **"Indie Hacker SaaS Stack 2026: Build & Launch for $0 (Complete Toolkit)"** and an **"AI Startup Launch Guide"** covering platforms and distribution channels including Product Hunt, BetaList, directories, and communities to acquire first users.
 
-The micro-SaaS market is projected to grow from **$15.7B to $59.6B by 2030** (~30% annual growth), with most founders spending **under $1,000** before first revenue, thanks to no-code tools and free tiers. The dominant launch strategy in early 2026 centers on a **30-day validation framework**: build a landing page, target **20+ email signups** as a go/no-go signal, and only then begin building — avoiding the #1 mistake of building before validating. Recommended B2C pricing benchmarks include a **free tier** for manual features and **~$4/month** for automated, API-connected tiers (e.g., via Plaid for fintech tools), with a typical stack of Next.js/React Native + Supabase. A 6-step framework published in **February 2026** on Medium documented a solo founder scaling to **$2,500 MRR** across three micro-SaaS products, emphasizing near-instant profitability on autopilot as a key differentiator from traditional software businesses.
+A highly recent post on **DEV Community (published 2 days ago)** titled *"The Next Generation of Actually Useful Micro-SaaS Ideas (2026 Edition)"* highlights that document automation is an underexplored niche, noting that indie hackers are largely ignoring it as an infrastructure layer despite strong demand from analysts and consultants.
 
----
+Published just **4 days ago**, Calmops' *"Micro-SaaS Ideas 2026: 50+ Profitable Opportunities for Solo Founders"* emphasizes a community-first validation framework: finding 10–20 people actively discussing a problem across Reddit, X (Twitter), Indie Hackers forums, and industry-specific communities before building.
 
-**Key sources:**
-- Superframeworks (Jan 28, 2026): https://superframeworks.com/articles/best-micro-saas-ideas-solopreneurs
-- GenAI Labs (Feb 1, 2026): https://www.genailabs.agency/blog/b2c-micro-saas-ideas-solo-founders-2026
-- Calmops (March 2026, ~4 days ago): https://calmops.com/indie-hackers/micro-saas-ideas-2026/
-- Medium/NAJEEB (Feb 2026): https://medium.com/write-a-catalyst/from-0-to-2-500-my-6-step-framework-for-building-micro-saas-as-a-solo-founder-fba5d545b97c
-
-## Query 6: Belgium Brussels specialty food retail business news March 2026
-
-Here is a concise, sourced summary of the most relevant findings:
-
----
-
-**Belgium / Brussels Specialty Food Retail — March 2026**
-
-The most significant development is a Belgian federal VAT reform directly affecting food and specialty retail. The Belgian government agreed on a reform of VAT rates applicable to **ready-to-eat food and beverages**, entertainment facilities, short-term accommodation, and specific agricultural products, with changes expected to be introduced as of **1 March 2026**; affected businesses are advised to revise their pricing strategies. This followed a late-2025 federal budget agreement for 2026–2029; the measures were originally set for 1 January 2026 but were postponed to give sectors additional time to prepare.
-
-On the trade show front, **Tavola**, a premium curated exhibition focused on fine food and value-added products, has its next confirmed biennial edition taking place **March 15–17, 2026** in Belgium — a key event for specialty food retailers and suppliers.
+Separately, **Superframeworks** (updated January 28, 2026) advises founders to "launch on communities first — Indie Hackers, Reddit, Product Hunt," start with a single flat pricing tier, and iterate on pricing only after acquiring paying customers — all within the context of a SaaS industry projected to hit **$375 billion in 2026**.
 
 **Key sources:**
-- Bird & Bird (VAT detail): https://www.twobirds.com/en/insights/2026/belgium/belgium-increases-vat-in-the-hospitality,-food-and-leisure-sectors-as-of-march-2026
-- EY Belgium (VAT/pricing strategy): https://www.ey.com/en_be/technical/tax/tax-alerts/2026/belgian-vat-rates-changes-coming-up-focus-on-food-sales-entertainment-and-hospitality
-- Grocery Trade News (Tavola show): https://www.grocerytradenews.com/trade-shows-in-belgium-2025-2026/
+- https://www.tldl.io/resources/ai-saas-business-ideas-2026 *(Updated March 2026)*
+- https://calmops.com/indie-hackers/micro-saas-ideas-2026/ *(4 days ago)*
+- https://dev.to/kesimo/the-next-generation-of-actually-useful-micro-saas-ideas-2026-edition-j23 *(2 days ago)*
+
+> ⚠️ **Note:** No single flagship "platform launch" event specifically dated to March 2026 emerged from results. The findings above reflect the current state of the indie hacker/micro-SaaS ecosystem as of March 2026. If you're looking for a specific product or event launch, feel free to provide more details and I can refine the search.
 
 ## Query 7: AI game development procedural generation solo dev tools March 2026
 
@@ -119,43 +133,39 @@ Here is a concise summary of the most relevant recent findings on AI game develo
 
 ---
 
-**AI & Procedural Generation Tools for Solo/Indie Game Devs — March 2026**
+**AI Tools for Solo & Indie Game Developers (March 2026)**
 
-**Bezi**, a Unity-integrated AI assistant, was actively showcased at **GDC 2026 (March 9–13)**. It is a project-aware assistant that integrates with Unity to prototype, debug, and automate repetitive work — explicitly targeting solo developers as well as studios.
+Market data from early 2026 indicates that **34% of indie developers now use AI tools regularly**, with a reported median **87% reduction in time-to-first-playable** and a **3.2x increase in solo-developed commercial releases** between 2024 and 2026.
 
-On the procedural animation front, **Motorica.ai** generates procedural full-body animation from minimal input, while **AnimationGPT** (open source) generates BVH motion files from text descriptions and is specifically trained on game combat and action moves. **Leonardo AI** has become a leading indie favorite, offering 150 free daily generations across 150+ specialized models.
+For procedural generation and animation specifically, **Motorica.ai** generates procedural full-body animation from minimal input, while **AnimationGPT** (open-source) generates BVH motion files from text descriptions and is specifically trained on game combat and action moves.
 
-Market data from 2026 indicates that **34% of indie developers now use AI tools regularly**, with AI-assisted prototyping delivering an average **92% reduction in prototype development costs** and an **87% reduction in time-to-first-playable**.
+A recommended solo dev stack for an RPG combines multiple tools: **Scenario** for sprites, **Leonardo AI** for textures, **Inworld AI** for NPC dialogue, **Replica Studios** for voices, **AIVA** for the soundtrack, and **Cascadeur** for animation. Leonardo AI in particular has become an indie favorite, offering **150 free daily generations** and **150+ specialized models**.
 
-For solo RPG developers specifically, a recommended combined stack includes **Scenario** for sprites, **Leonardo AI** for textures, **Inworld AI** for NPC dialogue, **Replica Studios** for voices, **AIVA** for soundtrack, and **Cascadeur** for animation.
-
----
+**Bezi**, a Unity-integrated AI assistant featured at **GDC 2026 (March 9–13)**, lets solo developers prototype, debug, and automate repetitive work by real-time indexing the full Unity project — scripts, assets, scenes, and external design docs — and can generate scripts, shaders, and editor tools directly within Unity.
 
 **Key Sources:**
-- Bezi (GDC 2026): https://www.bezi.com/
 - GameDev AI Hub (Jan 31, 2026): https://gamedevaihub.com/best-ai-tools-for-indie-game-developers/
-- CognitiveFuture (Jan 15, 2026): https://cognitivefuture.ai/best-ai-tools-for-game-development/
-- SEELE AI (~Feb 2026): https://www.seeles.ai/resources/blogs/ai-game-maker-make-games-with-ai.html
+- Cognitive Future (Jan 15, 2026): https://cognitivefuture.ai/best-ai-tools-for-game-development/
+- Bezi / GDC 2026: https://www.bezi.com/
+- The Data Scientist (6 days ago): https://thedatascientist.com/top-10-ai-tools-revolutionizing-game-development-in-2026/
 
-## Query 8: Lovable Bolt.new Windsurf update release March 5 2026
+## Query 8: Belgium Brussels small retail shop management autonomy tips 2026
 
-Based on my extensive research, here is what I found. Note that there is **no specific major joint release or announcement** from Lovable, Bolt.new, and Windsurf dated exactly March 5, 2026 — rather, these are three separate competing tools with their own individual update cadences. Here is what the most current sources show for each around that date:
+Here is a concise, evidence-based summary of the most relevant recent findings:
 
 ---
 
-**Summary of Recent Updates (as of early March 2026):**
+**Belgium/Brussels Small Retail Shop Management & Autonomy – 2026 Summary**
 
-The AI app builder landscape in early 2026 is dominated by platforms including Lovable, Bolt.new, and Windsurf, with Lovable having reached a **$6.6 billion valuation** in under a year.
+One of the most critical compliance tips for small retail shop owners in Belgium in 2026 is the mandatory switch to **structured electronic invoicing (e-invoicing)**: from **1 January 2026**, all VAT-liable companies must exchange invoices directly between software systems in a structured format — sending PDF invoices by email is **no longer compliant**. This obligation does not apply to invoices sent solely to private individuals.
 
-**Windsurf:** Windsurf's most recent changelog entry (as of the search date) is version **1.9566.1015 on March 3, 2026**, which made **Phoenix Alpha** available in the Windsurf Next channel. The prior release, **1.9566.1011 on February 26, 2026**, fixed extension installation version selection. An earlier February 24, 2026 release introduced a **new model picker** that groups models by family and adds a hovercard with toggles for specific variants like reasoning effort and speed, along with the ability to pin models.
+On the retail model side, cooperative/franchise structures — such as Intermarché — are noted as a practical template for small shop owners seeking **operational autonomy**: their model gives store owners independence within a shared framework, with a mainstream, value-focused positioning supported by group resources.
 
-**Bolt.new:** Bolt.new's release notes show recent additions including support for selecting from three Anthropic models — **Haiku 4.5, Sonnet 4.5 (default), or Opus 4.5** — when working with Claude Agent, plus the ability to copy or export row data from databases, subdomain support as primary domains, and team admins being able to manage which third-party integrations team members can use.
+From a management culture perspective, Belgian business norms favor **autonomy and task-focused work relationships**, with management centered on individuals and an expectation of recognition for one's work — a key consideration for small shop owners managing staff in Brussels.
 
-**Lovable:** Lovable's changelog highlights cross-project referencing — allowing the Lovable agent to access and reuse implementations from other projects in the same workspace — along with one-time bonuses (5 credits) for adding a custom domain or inviting a collaborator, available to users registered from January 15, 2026.
-
-⚠️ **Important caveat:** No specific coordinated release or announcement was found dated exactly **March 5, 2026** across these three tools. My knowledge cutoff and search results suggest this date may be slightly in the future relative to available indexed content, or no single notable joint event occurred on that date. The most current verifiable Windsurf changelog is **March 3, 2026**.
+For 2026 consumer strategy, Belgian shoppers are navigating economic tension and rising mental pressure, with consumers seeking ways to regain a sense of control — meaning small retailers should position their offer around **stability and accessible self-reward**.
 
 **Key sources:**
-- Windsurf Changelog: https://windsurf.com/changelog/windsurf-next
-- Bolt.new Release Notes: https://support.bolt.new/release-notes
-- Lovable Changelog: https://docs.lovable.dev/changelog
+- 🔗 Belgium.be (e-invoicing mandate): https://www.belgium.be/en/economy/business/creation/important_steps
+- 🔗 United Brands Association – Belgian Shopper Trends 2026 (March 3, 2026): https://www.ubabelgium.be/en/knowledge-hub/item/2026/03/03/belgian-shopper-trends-2026-how-shoppers-seek-stability-yet-still-treat-themselves-in-uncertain-times
+- 🔗 Grocery Trade News – Supermarkets in Belgium 2025 (Dec 16, 2025): https://www.grocerytradenews.com/supermarkets-in-belgium-in-2025/
