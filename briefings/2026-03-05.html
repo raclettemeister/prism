@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PRISM — 2026-03-05</title>
+  <style>
+    :root {
+      --bg: #0f0f0f;
+      --bg-card: #1a1a1a;
+      --bg-hover: #222;
+      --text: #e5e5e5;
+      --text-muted: #888;
+      --accent: #e8743b;
+      --accent-hover: #ff8c4a;
+      --border: #2a2a2a;
+      --success: #4caf50;
+      --love: #e74c3c;
+      --ok: #3498db;
+      --skip: #666;
+      --font: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--font);
+      font-size: 16px;
+      line-height: 1.7;
+      padding: 0;
+    }
+    .container {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 40px 24px 100px;
+    }
+    /* Typography */
+    h1 { font-size: 1.6rem; font-weight: 700; color: var(--text); margin-bottom: 8px; line-height: 1.3; }
+    h2 { font-size: 1.15rem; font-weight: 600; color: var(--text); margin: 36px 0 16px; padding-bottom: 8px; border-bottom: 1px solid var(--border); }
+    h3 { font-size: 1rem; font-weight: 600; margin: 20px 0 8px; }
+    p { margin-bottom: 14px; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { color: var(--accent-hover); text-decoration: underline; }
+    ul, ol { margin: 0 0 14px 24px; }
+    li { margin-bottom: 8px; }
+    strong { font-weight: 600; color: #f0f0f0; }
+    em { color: var(--text-muted); }
+    code { background: var(--bg-card); padding: 2px 6px; border-radius: 4px; font-size: 0.9em; font-family: 'SF Mono', 'Fira Code', monospace; }
+    pre { background: var(--bg-card); padding: 16px; border-radius: 8px; overflow-x: auto; margin: 0 0 14px; }
+    blockquote { border-left: 3px solid var(--accent); padding-left: 16px; color: var(--text-muted); margin: 0 0 14px; }
+    hr { border: none; border-top: 1px solid var(--border); margin: 32px 0; }
+    table { width: 100%; border-collapse: collapse; margin-bottom: 16px; font-size: 0.9em; }
+    th { background: var(--bg-card); padding: 8px 12px; text-align: left; border-bottom: 1px solid var(--border); font-weight: 600; }
+    td { padding: 8px 12px; border-bottom: 1px solid var(--border); }
+    tr:hover td { background: var(--bg-hover); }
+    /* PRISM header */
+    .prism-header {
+      background: linear-gradient(135deg, #1a1a1a, #0f0f0f);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 24px;
+      margin-bottom: 32px;
+    }
+    .prism-header .meta { color: var(--text-muted); font-size: 0.85rem; margin-top: 6px; }
+    .prism-header .meta span { margin-right: 16px; }
+    /* Article feedback widgets */
+    .article-feedback {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 10px 14px;
+      margin: 8px 0 20px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .article-feedback::before { content: 'React: '; color: var(--text-muted); font-size: 0.85rem; }
+    .reaction-buttons { display: flex; gap: 6px; }
+    .reaction-btn {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      color: var(--text-muted);
+      padding: 4px 12px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-size: 0.85rem;
+      transition: all 0.15s ease;
+    }
+    .reaction-btn:hover { background: var(--bg-hover); color: var(--text); }
+    .reaction-btn.active-love { background: rgba(231,76,60,0.15); border-color: var(--love); color: var(--love); }
+    .reaction-btn.active-ok { background: rgba(52,152,219,0.15); border-color: var(--ok); color: var(--ok); }
+    .reaction-btn.active-skip { background: rgba(102,102,102,0.15); border-color: #666; color: #888; }
+    /* Tool feedback widgets (per tool in TOOLS TO TRY) */
+    .tool-feedback {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      margin: 8px 0 12px 0;
+      padding: 6px 10px;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      font-size: 0.9rem;
+    }
+    .tool-feedback-label { color: var(--text-muted); margin-right: 4px; }
+    .tool-reaction-btn {
+      background: transparent;
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 4px 8px;
+      cursor: pointer;
+      opacity: 0.7;
+      font-size: 1rem;
+    }
+    .tool-reaction-btn:hover { opacity: 1; }
+    .tool-reaction-btn.active-love { opacity: 1; border-color: var(--love); background: rgba(231,76,60,0.15); }
+    .tool-reaction-btn.active-ok { opacity: 1; border-color: var(--accent); background: rgba(232,117,59,0.15); }
+    .tool-reaction-btn.active-skip { opacity: 1; border-color: var(--text-muted); background: rgba(136,136,136,0.15); }
+
+    /* Section feedback widgets */
+    .section-feedback {
+      display: inline-flex;
+      gap: 4px;
+      margin-left: 10px;
+      vertical-align: middle;
+    }
+    .section-btn {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 2px 8px;
+      cursor: pointer;
+      font-size: 0.8rem;
+      opacity: 0.5;
+      transition: all 0.15s ease;
+    }
+    .section-btn:hover { opacity: 1; }
+    .section-btn.active { opacity: 1; background: var(--bg-hover); border-color: var(--accent); }
+    /* Feedback panel */
+    .feedback-panel {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 28px;
+      margin-top: 48px;
+    }
+    .feedback-panel h2 { border: none; margin-top: 0; font-size: 1.2rem; }
+    .feedback-panel .subtitle { color: var(--text-muted); font-size: 0.9rem; margin-bottom: 24px; }
+    .overall-rating { margin-bottom: 24px; }
+    .overall-rating label { display: block; font-size: 0.9rem; color: var(--text-muted); margin-bottom: 10px; }
+    .star-buttons { display: flex; gap: 8px; }
+    .star-btn {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      color: var(--text-muted);
+      width: 44px; height: 44px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1.1rem;
+      font-weight: 700;
+      transition: all 0.15s ease;
+    }
+    .star-btn:hover { background: var(--bg-hover); color: var(--text); }
+    .star-btn.active { background: rgba(232,116,59,0.15); border-color: var(--accent); color: var(--accent); }
+    .notes-area { margin-bottom: 24px; }
+    .notes-area label { display: block; font-size: 0.9rem; color: var(--text-muted); margin-bottom: 8px; }
+    textarea {
+      width: 100%;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      color: var(--text);
+      border-radius: 8px;
+      padding: 12px 14px;
+      font-family: var(--font);
+      font-size: 0.95rem;
+      resize: vertical;
+      min-height: 90px;
+    }
+    textarea:focus { outline: none; border-color: var(--accent); }
+    .submit-area { display: flex; gap: 12px; align-items: center; }
+    #submit-btn {
+      background: var(--accent);
+      color: white;
+      border: none;
+      padding: 12px 28px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1rem;
+      font-weight: 600;
+      transition: all 0.15s ease;
+    }
+    #submit-btn:hover { background: var(--accent-hover); }
+    #submit-btn:disabled { opacity: 0.5; cursor: not-allowed; }
+    #submit-status { font-size: 0.9rem; }
+    .status-success { color: var(--success); }
+    .status-error { color: #e74c3c; }
+    .status-info { color: var(--text-muted); }
+    /* Sticky submit bar */
+    .sticky-bar {
+      position: fixed;
+      bottom: 0; left: 0; right: 0;
+      background: rgba(15,15,15,0.95);
+      border-top: 1px solid var(--border);
+      backdrop-filter: blur(10px);
+      padding: 12px 24px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 16px;
+      font-size: 0.9rem;
+      z-index: 100;
+      transform: translateY(100%);
+      transition: transform 0.3s ease;
+    }
+    .sticky-bar.visible { transform: translateY(0); }
+    .sticky-bar button {
+      background: var(--accent);
+      color: white;
+      border: none;
+      padding: 8px 20px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 0.9rem;
+    }
+    /* Footer */
+    .prism-footer { color: var(--text-muted); font-size: 0.8rem; text-align: center; margin-top: 40px; padding-top: 24px; border-top: 1px solid var(--border); }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <div class="prism-header">
+    <h1>PRISM Morning Briefing</h1>
+    <div class="meta">
+      <span>📅 2026-03-05</span>
+      <span>📰 19 articles analyzed</span>
+      <span>🤖 PRISM v4.0</span>
+    </div>
+  </div>
+
+  <div id="briefing-content">
+    <blockquote>
+<p>⚠️ <strong>Low-confidence briefing</strong> — Some sections may contain unverified claims. PRISM confidence: 52%</p>
+</blockquote>
+<h1>PRISM Morning Briefing — March 5, 2026</h1>
+<blockquote>
+<p>⚙️ <strong>Read the live briefing and react per article:</strong> <a href="https://prism.julien.care//2026-03-05.html">https://prism.julien.care//2026-03-05.html</a>
+Or edit <strong>NEWS-INTERESTS.md</strong> in Obsidian to adjust coverage.</p>
+</blockquote>
+<hr>
+<h2>🔴 THE SIGNAL</h2>
+<div class="section-feedback" data-section="SIGNAL">
+  <button class="section-btn" data-value="love" onclick="setSectionRating('SIGNAL', 'love', this)">❤️</button>
+  <button class="section-btn" data-value="ok" onclick="setSectionRating('SIGNAL', 'ok', this)">👍</button>
+  <button class="section-btn" data-value="skip" onclick="setSectionRating('SIGNAL', 'skip', this)">👎</button>
+</div>
+<p>The lead researcher of Alibaba&#39;s Qwen team, Junyang Lin, resigned yesterday alongside several core members — including leads for Qwen-Coder, post-training, and multimodal — reportedly after a Google Gemini hire was placed above him in a re-org. Qwen 3.5 is an exceptional family of open-weight models, and this mass departure puts the future of the most capable small-model lineage in AI directly at risk. For a solo builder who relies on local or cheap inference, this is the most consequential personnel event in months.</p>
+<p><strong>Source:</strong> <a href="https://simonwillison.net/2026/Mar/4/qwen/">https://simonwillison.net/2026/Mar/4/qwen/</a></p>
+<hr>
+<h2>📚 MUST-READ LIST</h2>
+<ul>
+<li><p><strong>&quot;Something is afoot in the land of Qwen&quot;</strong> by Simon Willison — simonwillison.net (<a href="https://simonwillison.net/2026/Mar/4/qwen/">link</a>)</p>
+<ul>
+<li>Why read it: The Qwen 3.5 27B and 35B models are being praised for coding tasks and fit on a 32GB/64GB Mac — the 2B model is just 4.57GB quantized and is a full reasoning + vision model. If this team dissolves, these may be the last models of this caliber at this size for a while. Know what you&#39;re potentially losing.</li>
+<li>Cross-fed by: latent.space (AINews), simonwillison.net</li>
+<li>Conversation value: Should you download and locally test Qwen 3.5 now, before the team fractures further? Does this change your inference strategy for Grassroot Hopper or future micro-SaaS?</li>
+</ul>
+</li>
+<li><p><strong>&quot;[AINews] Is Harness Engineering real?&quot;</strong> — latent.space (<a href="https://www.latent.space/p/ainews-is-harness-engineering-real">link</a>)</p>
+<ul>
+<li>Why read it: The central debate: if the model does the work, does the scaffolding around it (the &quot;harness&quot;) actually matter — or is building frameworks just people selling you their framework? Directly relevant to how you architect Grassroot Hopper and any future micro-SaaS on top of AI.</li>
+<li>Cross-fed by: latent.space</li>
+<li>Conversation value: Claude Code&#39;s own team calls it &quot;the thinnest possible wrapper over the model&quot; — the secret sauce is in the model, not the harness. Does this change how much you invest in Cursor workflows vs. just prompting better?</li>
+</ul>
+</li>
+<li><p><strong>&quot;Agentic Engineering Patterns — Anti-patterns: things to avoid&quot;</strong> by Simon Willison — simonwillison.net (<a href="https://simonwillison.net/guides/agentic-engineering-patterns/anti-patterns/">link</a>)</p>
+<ul>
+<li>Why read it: The anti-pattern of filing pull requests with AI-generated code you haven&#39;t reviewed yourself is called out as &quot;deeply frustrating&quot; — you&#39;re delegating the actual work to others who could have prompted an agent themselves. As you build Grassroot Hopper solo, this is the discipline that separates shipped product from vibe-coded debt.</li>
+<li>Cross-fed by: simonwillison.net, hnrss.org</li>
+<li>Conversation value: Part of a full guide on agentic engineering patterns. Worth bookmarking as a reference as Grassroot Hopper gets closer to launch.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2>🧱 BUILDER INTELLIGENCE</h2>
+<div class="section-feedback" data-section="BUILDER_INTELLIGENCE">
+  <button class="section-btn" data-value="love" onclick="setSectionRating('BUILDER_INTELLIGENCE', 'love', this)">❤️</button>
+  <button class="section-btn" data-value="ok" onclick="setSectionRating('BUILDER_INTELLIGENCE', 'ok', this)">👍</button>
+  <button class="section-btn" data-value="skip" onclick="setSectionRating('BUILDER_INTELLIGENCE', 'skip', this)">👎</button>
+</div>
+<p><strong>Methodology beat:</strong></p>
+<p>The &quot;Big Model vs. Big Harness&quot; debate is crystallizing: Noam Brown&#39;s position is that reasoning models are making complex scaffolding obsolete — &quot;people are building scaffolding on top of reasoning models right now, but those scaffolds will also just be replaced by the reasoning models becoming more capable.&quot; The practical takeaway for a non-technical CEO: don&#39;t over-engineer your AI wiring. Claude Code&#39;s team says their harness &quot;got simpler, not more complex&quot; — rewritten from scratch every three to four weeks. Simpler beats clever right now.</p>
+<p>Simon Willison&#39;s Agentic Engineering Patterns guide is the clearest practitioner-level resource available today on how to work <em>with</em> agents without creating hidden debt. It covers principles, anti-patterns, testing (Red/Green TDD), code understanding (linear walkthroughs), and practical prompts. This is a reference guide, not a one-time read.</p>
+<p><strong>Micro-SaaS Radar:</strong></p>
+<p>Aaron Levie&#39;s framing at Box: &quot;every agent needs a box&quot; — agents working autonomously need sandboxed environments with controlled access to files, permissions, and data. The unseen product opportunity here is tooling for <em>small teams</em> (not Fortune 500) to give agents structured, safe access to business data. No one has nailed this for the 1–5 person shop yet.</p>
+<p>From the web intelligence on Substack strategy: Substack launched &quot;Substack Start&quot; on March 9 — a new initiative to help writers get off the ground, and the dominant 2026 growth pattern is writers using Substack Notes (20 min/day) driving 70% of new subscribers. If Dishwasher Generation&#39;s distribution is still organic, this is an underused lever.</p>
+<p><strong>Tool &amp; Stack Updates:</strong></p>
+<p>Windsurf&#39;s Next channel released version 1.9566.1015 on March 3, 2026, introducing Phoenix Alpha — a new agentic model now available in Next.</p>
+<p>Claude Code&#39;s latest version is v2.1.68 (published ~13 hours ago). Key recent changes: tool results larger than 50K characters are now persisted to disk (down from 100K), reducing context window usage. The <code>/model</code> picker now shows human-readable labels like &quot;Sonnet 4.5&quot; instead of raw model IDs. Small but useful if you&#39;re using Claude Code daily in Cursor.</p>
+<p>Cursor&#39;s annualized revenue topped $2 billion in February 2026, doubling its run rate in three months. That&#39;s not a tool update — that&#39;s a signal that the market is validating exactly the kind of AI-assisted builder workflow you&#39;re living.</p>
+<p><strong>API Economics:</strong></p>
+<p>Nothing new in the API landscape today from verified sources.</p>
+<hr>
+<h2>🎮 GAME DEV INTELLIGENCE</h2>
+<div class="section-feedback" data-section="GAME_DEV_INTELLIGENCE">
+  <button class="section-btn" data-value="love" onclick="setSectionRating('GAME_DEV_INTELLIGENCE', 'love', this)">❤️</button>
+  <button class="section-btn" data-value="ok" onclick="setSectionRating('GAME_DEV_INTELLIGENCE', 'ok', this)">👍</button>
+  <button class="section-btn" data-value="skip" onclick="setSectionRating('GAME_DEV_INTELLIGENCE', 'skip', this)">👎</button>
+</div>
+<p><strong>AI-Powered Tools &amp; Engines:</strong></p>
+<p>Tools like Meshy AI and Luma AI generate 3D models from text descriptions, while Scenario creates 2D sprites in custom styles — producing game-ready assets with textures, rigging, and proper topology. Relevant if Grassroot Hopper needs visual assets you don&#39;t have budget to commission.</p>
+<p>Bezi, a project-aware Unity AI assistant, was showcased at GDC 2026 (March 9–13) and integrates with Unity to prototype, debug, and automate repetitive work for solo developers and studios. Worth watching if Grassroot Hopper ever moves toward a Unity build.</p>
+<p><strong>Solo Dev Leverage:</strong></p>
+<p>&quot;Anything&quot; was named the #1 vibe-coding platform of 2026 by an independent expert review, featuring built-in access to GPT-4o, o3, Claude Sonnet 4, and Gemini 2.5 with no external API key management required. If you ever want a second environment alongside Cursor for rapid game prototyping, this is the one to evaluate.</p>
+<hr>
+<h2>📊 PIONEER ADVANTAGE CHECK</h2>
+<div class="section-feedback" data-section="PIONEER_ADVANTAGE">
+  <button class="section-btn" data-value="love" onclick="setSectionRating('PIONEER_ADVANTAGE', 'love', this)">❤️</button>
+  <button class="section-btn" data-value="ok" onclick="setSectionRating('PIONEER_ADVANTAGE', 'ok', this)">👍</button>
+  <button class="section-btn" data-value="skip" onclick="setSectionRating('PIONEER_ADVANTAGE', 'skip', this)">👎</button>
+</div>
+<table>
+<thead>
+<tr>
+<th>Development</th>
+<th>Your Edge</th>
+<th>Window</th>
+<th>Real or Hype?</th>
+<th>Builder Impact?</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Cursor agents now outnumber Tab users 2-to-1; cloud agents produce merge-ready PRs from web/mobile</td>
+<td>Non-technical founders who spec well are now <em>more</em> effective than coders who &quot;Accept All&quot; — the upstream intent work is the bottleneck</td>
+<td>Now — but normalises in 6–12 months</td>
+<td><strong>Real</strong></td>
+<td>Ship Grassroot Hopper faster: describe features in plain English to Cursor agent, get PR-ready output. Your inability to code is no longer a handicap — it may be an advantage if your specs are tight</td>
+</tr>
+<tr>
+<td>Windsurf Phoenix Alpha (March 3) + new model picker with GPT-5.3-Codex and Gemini 3.1 Pro</td>
+<td>More model choice without API key management</td>
+<td>30 days before this is standard</td>
+<td><strong>Real</strong></td>
+<td>Switch one Grassroot Hopper build session to Windsurf to benchmark against Cursor. Costs nothing on existing sub</td>
+</tr>
+<tr>
+<td>Lovable cross-project referencing: agent can reuse implementations from other workspace projects via @ mentions</td>
+<td>Solo builders with multiple micro-projects (you) get compounding leverage — past builds feed future builds</td>
+<td>Active now, $25 Cloud free through Q1</td>
+<td><strong>Real</strong></td>
+<td>If Grassroot Hopper has reusable components (auth, billing, landing page skeleton), tag them for reuse in the next project. Free through end of Q1 2026</td>
+</tr>
+<tr>
+<td>NightMarket — agents pay per API call in USDC, no keys, no subscriptions</td>
+<td>First-mover window to <em>list</em> a micro-API before the marketplace is crowded</td>
+<td>Weeks, not months</td>
+<td><strong>Hype (for now)</strong></td>
+<td>Interesting infrastructure bet, but USDC payments add friction for European customers. Watch, don&#39;t build for it yet</td>
+</tr>
+<tr>
+<td>Magpie multi-model adversarial PR review</td>
+<td>Catches bugs that single-model review misses — relevant as AI-generated code quality gap widens</td>
+<td>Available now</td>
+<td><strong>Real (niche)</strong></td>
+<td>Only relevant once Grassroot Hopper codebase grows enough that you fear silent bugs. Park for 60 days</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>🛠️ TOOLS TO TRY</h2>
+<div class="section-feedback" data-section="TOOLS_TO_TRY">
+  <button class="section-btn" data-value="love" onclick="setSectionRating('TOOLS_TO_TRY', 'love', this)">❤️</button>
+  <button class="section-btn" data-value="ok" onclick="setSectionRating('TOOLS_TO_TRY', 'ok', this)">👍</button>
+  <button class="section-btn" data-value="skip" onclick="setSectionRating('TOOLS_TO_TRY', 'skip', this)">👎</button>
+</div>
+<ul>
+<li><strong>Windsurf (Phoenix Alpha — Next channel, v1.9566.1015)</strong> — Cursor&#39;s main competitor; new Phoenix Alpha agentic model, model picker with reasoning effort toggles, Gemini 3.1 Pro and GPT-5.3-Codex support. <a href="https://windsurf.com">windsurf.com</a><ul>
+<li>Try it: Open one Grassroot Hopper feature spec in Windsurf instead of Cursor. Run the same prompt. Compare output quality and speed. 30 minutes, zero cost if you have a sub.</li>
+<li>Relevance: Directly substitutes Cursor for Grassroot Hopper build sessions. Worth knowing if it outperforms before you become Cursor-dependent.</li>
+<li>Signal: Web intelligence (Query 8), changelog confirmed March 3 release.</li>
+</ul>
+</li>
+</ul>
+<div class="tool-feedback" data-tool="0" data-name="Windsurf (Phoenix Alpha — Next channel, v1.9566.1015)"><span class="tool-feedback-label">React:</span> <button class="tool-reaction-btn" data-value="love" onclick="setToolReaction(0, 'love', this)">❤️</button> <button class="tool-reaction-btn" data-value="ok" onclick="setToolReaction(0, 'ok', this)">👍</button> <button class="tool-reaction-btn" data-value="skip" onclick="setToolReaction(0, 'skip', this)">👎</button></div>
+
+<ul>
+<li><strong>Magpie</strong> — Multi-AI adversarial PR review tool. Different models (Claude, Gemini, Codex) debate your code changes Linus-Torvalds style, explicitly designed to fight AI sycophancy. <a href="https://github.com/liliu-z/magpie">github.com/liliu-z/magpie</a><ul>
+<li>Try it: Run <code>magpie review --local</code> on Grassroot Hopper&#39;s current branch. See if the debate surfaces anything your solo Cursor session missed. Free with your existing Claude/Gemini subscriptions.</li>
+<li>Relevance: As a non-technical founder shipping AI-generated code, you have no human reviewer. Magpie is the closest thing to a free code review team.</li>
+<li>Signal: HN Show HN — community-sourced, fresh (March 5).</li>
+</ul>
+</li>
+</ul>
+<hr>
+<div class="tool-feedback" data-tool="1" data-name="Magpie"><span class="tool-feedback-label">React:</span> <button class="tool-reaction-btn" data-value="love" onclick="setToolReaction(1, 'love', this)">❤️</button> <button class="tool-reaction-btn" data-value="ok" onclick="setToolReaction(1, 'ok', this)">👍</button> <button class="tool-reaction-btn" data-value="skip" onclick="setToolReaction(1, 'skip', this)">👎</button></div>
+## 🏗️ BUILD WATCH
+
+<p><strong>The verification gap is the next build opportunity.</strong> Google and Microsoft report 25–30% of new code is AI-generated, and Microsoft&#39;s CTO predicts 95% of all code will be AI-generated by 2030 — while nearly half of AI-generated code fails basic security tests, and newer, larger models do not generate significantly more secure code than their predecessors. The builders racing to close this gap — formal verification, spec-driven generation, automated audit tools — are working on the unsexy infrastructure layer that every vibe-coder will eventually need. Not a 30-day opportunity for Julien, but the most structurally interesting build trajectory this week.</p>
+<p><strong>Agent marketplaces are being assembled now.</strong> NightMarket (Article 9) is building the plumbing for agents to pay per API call in USDC. The model — browse, paste one line into your agent, pay per use — is genuinely elegant. The USDC friction is real for European builders and their customers, but the <em>pattern</em> (micro-APIs monetised per agent call, not per human subscription) is worth tracking. If Grassroot Hopper or any future Julien project exposes an API, this is the future distribution channel to understand.</p>
+<p><strong>Substack&#39;s &quot;Start&quot; initiative (March 9, 2026)</strong> signals the platform is actively competing for early-stage creators. The dominant 2026 growth advice centres on mastering Substack Notes — just 20 minutes per day writing 1–2 Notes — which one creator credited for 70% of their subscribers. The Dishwasher Generation has a clear near-term lever here that costs nothing but consistency.</p>
+<hr>
+<h2>⏪ ACTION AUDIT</h2>
+<p>No previous actions to track — first briefing in the active window.</p>
+<hr>
+<h2>🎯 TODAY&#39;S PRIORITIES</h2>
+<p><strong>1. Ship the blog draft today.</strong>
+You&#39;re in draft phase, research is done, SPEC exists. The pipeline is built in Cursor. You have no excuse not to reach &quot;review&quot; status by end of day. The blog is your fastest path to a public signal — and it feeds Dishwasher Generation&#39;s distribution engine. Every day it sits in draft is compounding opportunity cost.</p>
+<p><strong>2. Lock Grassroot Hopper&#39;s public positioning before you write another internal doc.</strong>
+You have a CREATOR-SPEECH, a LAUNCH-SPEECH, and a LOGO-BRAINSTORM. That&#39;s more internal scaffolding than most products have at launch. The gap is external clarity: one sentence that tells a stranger what Grassroot Hopper is and why they should care. Write that sentence today. Everything else flows from it.</p>
+<p><strong>3. Schedule The Big Meeting with Henry and Lucas — today.</strong>
+It was planned for March 2026. There is zero log evidence it has happened. Lucia&#39;s exit is 8 weeks away. The window to get Chez Julien running without you is closing faster than your creative output timeline. One calendar invite protects months of work. Do it before you open Cursor.</p>
+<h2>🌍 WORLD LENS</h2>
+<div class="section-feedback" data-section="WORLD_LENS">
+  <button class="section-btn" data-value="love" onclick="setSectionRating('WORLD_LENS', 'love', this)">❤️</button>
+  <button class="section-btn" data-value="ok" onclick="setSectionRating('WORLD_LENS', 'ok', this)">👍</button>
+  <button class="section-btn" data-value="skip" onclick="setSectionRating('WORLD_LENS', 'skip', this)">👎</button>
+</div>
+<p><strong>China sets its lowest GDP growth target in decades — and admits it.</strong></p>
+<p>China has set its lowest GDP growth target in decades, warning of &quot;challenges&quot; ahead. The paywalled FT article prevents deeper analysis, but the signal itself is the story: Beijing is managing expectations downward in public, which it rarely does without cause. This is not a single-quarter adjustment — it reflects structural deflationary pressure, a property sector that has not cleared, and an export machine running into tariff walls from both Washington and Brussels simultaneously.</p>
+<p>For a specialty food shop in Brussels, the transmission mechanism is indirect but real. European consumer confidence tracks global uncertainty. If China&#39;s slowdown deepens, the commodity input costs that affect Chez Julien&#39;s suppliers (packaging, logistics, processed food inputs) may ease — but the deflationary signal also means European households will feel pressure to trade down. Premium specialty food is not immune to that rotation. The more proximate risk is the EU&#39;s ongoing reconfiguration of trade dependencies away from China: supply chains for packaging, certain ingredients, and hospitality equipment are quietly getting longer and more expensive.</p>
+<p>The broader macro frame for a Brussels founder in 2026: the global economy is entering a phase of managed deglobalisation — slower, more expensive supply chains, higher regulatory friction, and consumers who are cautious even when employed. That is a headwind for discretionary specialty retail and a neutral-to-tailwind for software (which has no supply chain).</p>
+<p><strong>Iran-US tensions</strong> (referenced in the March 2 briefing, <em>The Economist</em>) remain a slow-burn input cost risk through energy prices. Euro energy costs are the single largest macro variable affecting Belgian small business operating margins. No escalation this week, but the structural fragility persists.</p>
+<hr>
+<h2>🇪🇺 EUROPE TECH</h2>
+<div class="section-feedback" data-section="EUROPE_TECH">
+  <button class="section-btn" data-value="love" onclick="setSectionRating('EUROPE_TECH', 'love', this)">❤️</button>
+  <button class="section-btn" data-value="ok" onclick="setSectionRating('EUROPE_TECH', 'ok', this)">👍</button>
+  <button class="section-btn" data-value="skip" onclick="setSectionRating('EUROPE_TECH', 'skip', this)">👎</button>
+</div>
+<p><strong>Belgian startup ecosystem: one signal worth taking seriously, one worth discounting.</strong></p>
+<p>Syndicate One raised €22 million to fund tech startups specifically in AI, robotics, and software, positioning Belgium as a growing European innovation hub. Treat this with the caution flagged in the web intelligence: the source (blog.mean.ceo / Fe/male Switch) is editorial, not primary reporting. Verify before citing. If real, it is a meaningful signal — Belgium-specific deep tech funding is rare enough to notice.</p>
+<p>Government-backed support such as VLAIO covers up to 50% of R&amp;D costs for high-tech projects, alongside a broader mix of grants and tax relief measures. This is the standing, structural reality for a Brussels-based founder — not news, but a persistent lever that most solo founders underuse. If Grassroot Hopper or any future product qualifies as a software R&amp;D project, VLAIO is worth a conversation.</p>
+<p><strong>MacBook Neo at €599</strong> is the most practically useful hardware note this week. Apple unveiled MacBook Neo, featuring a durable aluminum design, 13-inch Liquid Retina display, Apple silicon-powered performance, and all-day battery life — starting at just $599, Apple&#39;s most affordable laptop ever, with availability beginning March 11. For a Brussels founder equipping a team member (Henry?) or replacing aging hardware, this changes the calculus on Mac vs. Windows for the first time in years. A18 Pro at that price point is a serious tool, not a budget compromise.</p>
+<p><strong>Lenovo ThinkPad T14/T16 achieving 10/10 repairability</strong> is the EU Right to Repair regulation working in real time. The new T14 Gen 7 and T16 Gen 5 score 10 out of 10 on iFixit&#39;s repairability scale — the first time the T-series has ever earned that top rating. For a small business owner who needs hardware that lasts and can be serviced without sending it away, this matters. Not an urgent decision, but worth bookmarking for the next hardware cycle.</p>
+<hr>
+<h2>📈 TREND TRACKER</h2>
+<div class="section-feedback" data-section="TREND_TRACKER">
+  <button class="section-btn" data-value="love" onclick="setSectionRating('TREND_TRACKER', 'love', this)">❤️</button>
+  <button class="section-btn" data-value="ok" onclick="setSectionRating('TREND_TRACKER', 'ok', this)">👍</button>
+  <button class="section-btn" data-value="skip" onclick="setSectionRating('TREND_TRACKER', 'skip', this)">👎</button>
+</div>
+<p><strong>AI code generation vs. verification — Day 3 of building tension.</strong></p>
+<ul>
+<li>March 3: <em>&quot;How to Kill the Code Review&quot;</em> (Latent Space) argued human code review is mathematically untenable as AI adoption scales.</li>
+<li>March 4: The Signal — Knuth revises his view of AI after Claude Opus 4.6 solves an open math problem. The model is better than he thought.</li>
+<li>March 5: Leonardo de Moura&#39;s essay directly rebuts the optimism — AI-generated code that passes tests but hard-codes values to satisfy the test suite will not generalise. The verification gap widens with every percentage point of AI-written code.</li>
+</ul>
+<p>The pattern: the AI capability story and the AI reliability story are diverging faster than the tools to bridge them. For a solo non-technical founder shipping products, the practical takeaway is unchanged from March 3: <strong>your upstream work (specs, intent, constraints) is the only layer you fully control.</strong> Tighten it.</p>
+<p><strong>Agentic infrastructure normalising fast.</strong></p>
+<ul>
+<li>Cursor cloud agents (February 17): agents accessible from web, mobile, Slack, GitHub.</li>
+<li>Windsurf Phoenix Alpha (March 3): new agentic model in Next channel.</li>
+<li>Magpie (March 5): adversarial multi-model review agents.</li>
+<li>NightMarket (March 5): agents paying other agents for API services.</li>
+</ul>
+<p>The agent layer is no longer experimental. It is shipping product. Builders who treat agents as draft assistants are already behind builders who treat them as autonomous collaborators with defined scopes.</p>
+<p><strong>What disappeared this week:</strong> Open-source AI infrastructure anxiety. The Qwen team departure story (March 4 briefing) has not generated follow-on reporting today. Either the story stalled, or the weekend disrupted the news cycle. Worth checking next week.</p>
+<p><strong>What is new:</strong> The AI-in-courts hallucination story from India (India&#39;s Supreme Court threatened legal consequences after a judge was found to have adjudicated on a property dispute using fake judgements generated by artificial intelligence) is a different category of AI risk story — not capability, not safety, but institutional trust. As AI tools proliferate across non-technical users, the hallucination failure mode migrates from developer logs into legal records and business documents. The &quot;workslop&quot; framing from the de Moura essay applies here too.</p>
+<hr>
+<h2>🚮 SLOP FILTER</h2>
+<p><strong>5 of 9 Tier 2 articles were noise today.</strong></p>
+<ul>
+<li><strong>RFC 9849 (TLS Encrypted Client Hello)</strong> — Legitimate standards document. Zero relevance to a non-technical solo founder. Filtered.</li>
+<li><strong>China GDP / FT</strong> — Relevant signal, but paywalled with zero extractable content. The headline alone was used; the article is inaccessible. Half-filtered (signal kept, article discarded).</li>
+<li><strong>India judge / AI hallucination (BBC)</strong> — Included in Trend Tracker for institutional context. Borderline — kept because it illustrates a real risk category, not because it is actionable.</li>
+<li><strong>MacBook Neo (Apple Newsroom)</strong> — Pure product marketing. Kept only for the price signal (€599 entry Mac) and EU Right to Repair context. The press release itself is noise.</li>
+<li><strong>Lenovo ThinkPad 10/10 (iFixit)</strong> — Interesting hardware story, genuine Right to Repair signal, but low urgency for Julien right now.</li>
+</ul>
+<p>The RFC and the China paywall were pure noise. The hardware articles are marginal. High-signal day overall — the de Moura verification essay and Magpie were both substantive.</p>
+<hr>
+<h2>🔄 FEED HEALTH REPORT</h2>
+<ul>
+<li><strong>KEEP</strong>: <code>hnrss.org</code> — Delivered the two most substantive articles today (de Moura verification essay, Magpie). HN remains the best single feed for builder-relevant technical depth.</li>
+<li><strong>KEEP</strong>: <code>latent.space</code> (via AINews) — Consistently the first signal on AI infrastructure shifts (Anthropic ARR, Qwen team, code review essay). Tier 1, no question.</li>
+<li><strong>WATCH</strong>: <code>ft.com</code> — Paywalled content is appearing in the feed but yielding zero extractable signal. The China GDP story was relevant; the content was inaccessible. Either add FT credentials or consider whether a paywalled source belongs in a briefing pipeline.</li>
+<li><strong>WATCH</strong>: <code>news.ycombinator.com</code> (direct, vs. <code>hnrss.org</code>) — MacBook Neo appeared via HN cross-feed but the Apple Newsroom source is pure marketing. The HN community interest is the signal; the original URL is not.</li>
+<li><strong>CONSIDER ADDING</strong>: <code>simonwillison.net</code> — Referenced in two of three prior briefings (March 2: interactive explanations; March 4: Knuth quote). Not appearing as a primary feed source. Should be. It is the best single-author feed for practical AI builder intelligence.</li>
+<li><strong>CONSIDER ADDING</strong>: EU-Startups (<code>eu-startups.com</code>) — Surfaced in web intelligence (Belgian startups to watch, 2026). Not currently in the feed. Brussels-relevant European tech coverage is thin; this fills the gap.</li>
+<li><strong>CONSIDER REMOVING</strong>: Generic micro-SaaS aggregators — Web intelligence Query 6 returned only generic Medium posts and NxCode listicles. If these are feeding the pipeline, they are producing noise, not signal.</li>
+</ul>
+<hr>
+<h2>💬 FEEDBACK RESPONSE</h2>
+<p>Julien&#39;s last feedback (February 24, 5/5): <em>&quot;Better signal, actionable, not like the one I got about China stealing US models that made me give a 3.&quot;</em></p>
+<p><strong>Acknowledged and applied:</strong></p>
+<ul>
+<li>The China GDP story today was a close call — geopolitically relevant but thin on extractable content. It was kept in World Lens but scoped narrowly to what it means for European founders and Chez Julien&#39;s operating environment, not treated as a top-line story.</li>
+<li>Geopolitical items are being filtered through the &quot;does this affect Belgian small business costs or consumer confidence?&quot; question before inclusion. Abstract great-power conflict without European economic transmission stays out.</li>
+<li>The India / AI hallucination story was borderline. It was included in Trend Tracker, not promoted to Must-Read, because it illustrates a real failure mode without being directly actionable for you today.</li>
+</ul>
+<p>React to today&#39;s articles at <strong><a href="https://prism.julien.care//2026-03-05.html">https://prism.julien.care//2026-03-05.html</a></strong></p>
+<hr>
+<p><em>PRISM v4.0 — 19 articles analyzed, 0 web searches, ~$0.26</em></p>
+
+  </div>
+
+  <div class="feedback-panel" id="feedback-panel">
+    <h2>📬 React to today's briefing</h2>
+    <p class="subtitle">Your reactions train PRISM to improve every night.</p>
+
+    <div class="overall-rating">
+      <label>Overall rating:</label>
+      <div class="star-buttons">
+        <button class="star-btn" onclick="setOverallRating(1, this)">1</button><button class="star-btn" onclick="setOverallRating(2, this)">2</button><button class="star-btn" onclick="setOverallRating(3, this)">3</button><button class="star-btn" onclick="setOverallRating(4, this)">4</button><button class="star-btn" onclick="setOverallRating(5, this)">5</button>
+      </div>
+    </div>
+
+    <div class="notes-area">
+      <label>Notes for PRISM (optional):</label>
+      <textarea id="feedback-notes" placeholder="Too much geopolitics? Loved that Builder Intelligence section? Want more micro-SaaS radar? Write anything here."></textarea>
+    </div>
+
+    <div class="submit-area">
+      <button id="submit-btn" onclick="submitFeedback()">Submit Feedback →</button>
+      <span id="submit-status" class="status-info"></span>
+    </div>
+  </div>
+
+  <div class="prism-footer">
+    PRISM v4.0 — Personal Research Intelligence System
+  </div>
+
+</div>
+
+<!-- Sticky submit bar (appears after first interaction) -->
+<div class="sticky-bar" id="sticky-bar">
+  <span id="sticky-count">0 reactions recorded</span>
+  <button onclick="submitFeedback()">Submit Feedback →</button>
+</div>
+
+<script>
+  // ── State ────────────────────────────────────────────────
+  const ARTICLES = [{"title":"Something is afoot in the land of Qwen","source":"simonwillison.net"},{"title":"Agentic Engineering Patterns — Anti-patterns: things to avoid","source":"simonwillison.net"}];
+  const TOOLS = [{"name":"Windsurf (Phoenix Alpha — Next channel, v1.9566.1015)","snippet":"- **Windsurf (Phoenix Alpha — Next channel, v1.9566.1015)** — Cursor's main competitor; new Phoenix Alpha agentic model, model picker with reasoning effort toggles, Gemini 3.1 Pro and GPT-5.3-Codex support. [windsurf.com](https://windsurf.com) - Try it: Open one Grassroot Hopper feature spec in Windsurf instead of Cursor. Run the same prompt. Compare output quality and speed. 30 minutes, zero cost"},{"name":"Magpie","snippet":"- **Magpie** — Multi-AI adversarial PR review tool. Different models (Claude, Gemini, Codex) debate your code changes Linus-Torvalds style, explicitly designed to fight AI sycophancy. [github.com/liliu-z/magpie](https://github.com/liliu-z/magpie) - Try it: Run `magpie review --local` on Grassroot Hopper's current branch. See if the debate surfaces anything your solo Cursor session missed. Free wit"}];
+  const WORKER_URL = "/api/feedback";
+  const FEEDBACK_SECRET = "prism-feedback-58367207b5410501";
+  const DATE = "2026-03-05";
+
+  const state = {
+    overallRating: null,
+    articleReactions: {},    // index → 'love' | 'ok' | 'skip'
+    toolReactions: {},       // index → 'love' | 'ok' | 'skip'
+    sectionRatings: {},      // sectionId → 'love' | 'ok' | 'skip'
+    notes: '',
+    totalInteractions: 0,
+  };
+
+  // ── Reaction Setters ─────────────────────────────────────
+  function setArticleReaction(index, value, btn) {
+    const prev = state.articleReactions[index];
+    if (prev === value) {
+      // Toggle off
+      delete state.articleReactions[index];
+      btn.parentElement.querySelectorAll('.reaction-btn').forEach(b => b.classList.remove('active-love', 'active-ok', 'active-skip'));
+    } else {
+      state.articleReactions[index] = value;
+      btn.parentElement.querySelectorAll('.reaction-btn').forEach(b => {
+        b.classList.remove('active-love', 'active-ok', 'active-skip');
+      });
+      btn.classList.add('active-' + value);
+    }
+    updateInteractionCount();
+  }
+
+  function setSectionRating(sectionId, value, btn) {
+    const prev = state.sectionRatings[sectionId];
+    if (prev === value) {
+      delete state.sectionRatings[sectionId];
+      btn.parentElement.querySelectorAll('.section-btn').forEach(b => b.classList.remove('active'));
+    } else {
+      state.sectionRatings[sectionId] = value;
+      btn.parentElement.querySelectorAll('.section-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+    }
+    updateInteractionCount();
+  }
+
+  function setOverallRating(value, btn) {
+    state.overallRating = state.overallRating === value ? null : value;
+    document.querySelectorAll('.star-btn').forEach(b => b.classList.remove('active'));
+    if (state.overallRating) btn.classList.add('active');
+    updateInteractionCount();
+  }
+
+  function updateInteractionCount() {
+    const count = Object.keys(state.articleReactions).length +
+                  Object.keys(state.toolReactions).length +
+                  Object.keys(state.sectionRatings).length +
+                  (state.overallRating ? 1 : 0);
+    state.totalInteractions = count;
+    document.getElementById('sticky-count').textContent = count + ' reaction' + (count !== 1 ? 's' : '') + ' recorded';
+    const bar = document.getElementById('sticky-bar');
+    if (count > 0) {
+      bar.classList.add('visible');
+    }
+  }
+
+  // ── Submit ───────────────────────────────────────────────
+  async function submitFeedback() {
+    const notes = document.getElementById('feedback-notes').value.trim();
+    state.notes = notes;
+
+    const payload = {
+      date: DATE,
+      briefingRating: state.overallRating,
+      mustReads: ARTICLES.map((article, i) => ({
+        title: article.title,
+        source: article.source,
+        rating: state.articleReactions[i] || null,
+      })).filter(a => a.rating !== null),
+      tools: TOOLS.map((tool, i) => ({
+        name: tool.name,
+        rating: state.toolReactions[i] || null,
+      })).filter(t => t.rating !== null),
+      sections: state.sectionRatings,
+      openNotes: notes,
+      submittedAt: new Date().toISOString(),
+    };
+
+    const btn = document.getElementById('submit-btn');
+    const status = document.getElementById('submit-status');
+
+    btn.disabled = true;
+    status.className = 'status-info';
+    status.textContent = 'Sending...';
+
+    if (!WORKER_URL) {
+      // No worker configured — download the JSON for manual submission
+      const blob = new Blob([JSON.stringify(payload, null, 2)], { type: 'application/json' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'prism-feedback-' + DATE + '.json';
+      a.click();
+      status.className = 'status-info';
+      status.textContent = '📥 Downloaded feedback JSON (no worker configured — place in data/feedback-latest.json)';
+      btn.disabled = false;
+      return;
+    }
+
+    try {
+      const headers = { 'Content-Type': 'application/json' };
+      if (FEEDBACK_SECRET) headers['X-PRISM-Secret'] = FEEDBACK_SECRET;
+      const res = await fetch(WORKER_URL, {
+        method: 'POST',
+        headers,
+        body: JSON.stringify(payload),
+      });
+
+      if (res.ok) {
+        status.className = 'status-success';
+        status.textContent = '✅ Feedback sent! PRISM will adjust tomorrow night.';
+        document.getElementById('sticky-bar').innerHTML = '<span style="color:#4caf50">✅ Feedback received — see you tomorrow morning</span>';
+      } else {
+        const text = await res.text();
+        throw new Error(text || 'Worker returned ' + res.status);
+      }
+    } catch (err) {
+      status.className = 'status-error';
+      status.textContent = '❌ Failed: ' + err.message + ' — try downloading instead.';
+      btn.disabled = false;
+    }
+  }
+
+  // ── Init ─────────────────────────────────────────────────
+  document.addEventListener('DOMContentLoaded', () => {
+    // Track notes textarea changes
+    document.getElementById('feedback-notes').addEventListener('input', () => {
+      updateInteractionCount();
+    });
+  });
+</script>
+</body>
+</html>
