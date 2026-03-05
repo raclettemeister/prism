@@ -398,6 +398,34 @@ export const FEED_CATEGORIES = {
       'https://daringfireball.net/feeds/main',
     ],
   },
+
+  // =====================================================
+  // Category 20: Grassroot Scout — cooperative/social/environmental tech
+  // scoutOnly: true — articles feed the scout radar, not the main briefing.
+  // =====================================================
+  grassroot_scout: {
+    weight: 1.0,
+    scoutOnly: true,
+    feeds: [
+      'https://lobste.rs/t/practices.rss',
+      'https://lobste.rs/t/culture.rss',
+      'https://www.reddit.com/r/opensource/.rss',
+      'https://www.reddit.com/r/selfhosted/.rss',
+      'https://www.reddit.com/r/belgium/.rss',
+      'https://www.reddit.com/r/cooperatives/.rss',
+      'https://www.reddit.com/r/SideProject/.rss',
+      'https://itsfoss.com/feed/',
+      'https://lwn.net/headlines/rss',
+      'https://fosdem.org/2026/news/atom',
+      'https://blog.opencollective.com/rss/',
+      'https://nlnet.nl/feed.atom',
+      'https://bonfire.cafe/blog/feed',
+      'https://decidim.org/blog/feed.xml',
+      'https://coopyleft.coopcycle.org/en/feed.xml',
+      'https://dev.to/feed/tag/opensource',
+      'https://dev.to/feed/tag/socialimpact',
+    ],
+  },
 };
 
 // --- Models (v4.0: ALL Sonnet 4.6) ---
@@ -423,6 +451,7 @@ export const MEMORY_FILE = 'data/memory.json';
 export const BRIEFINGS_DIR = 'briefings';
 export const WEBINTEL_FILE = 'data/web-intelligence.md';  // v4.0: proactive web intel output
 export const FEEDBACK_FILE = 'data/feedback-latest.json'; // v4.0: structured feedback (replaces .md)
+export const SCOUT_MEMORY_FILE = 'data/scout-memory.json';
 
 // --- Scoring (v4.0: adjusted for Trust Tier architecture) ---
 export const SCORING = {
@@ -457,6 +486,11 @@ export const SCORING = {
     'Godot', 'game dev', 'indie game',
     'game engine', 'procedural generation', 'game AI', '3D rendering',
     'asset generation', 'vibe game', 'solo game dev', 'AI game',
+    // Grassroot scout keywords
+    'cooperative', 'community-owned', 'social impact', 'environmental',
+    'incubator', 'subsidy', 'grant', 'NLnet', 'Innoviris', 'NGI0',
+    'Transition Towns', 'CoopCycle', 'Decidim', 'Bonfire', 'fediverse',
+    'cooperative platform', 'open-source alternative',
   ],
   crossFeedBonusThreshold: 3,
   crossFeedBonus: 2,
@@ -475,6 +509,10 @@ export const LIMITS = {
   tier2MaxArticles: 20,         // v4.0: max Tier 2 articles after scoring
   tier3MaxArticles: 10,         // v4.0: max Tier 3 articles (only if budget allows)
   readTargetArticles: 30,       // v4.0: total articles to fetch full text (down from 80)
+  scoutCallMaxTokens: 4000,
+  scoutMaxCatches: 5,
+  scoutMaxRawCatches: 15,
+  scoutMemoryDays: 30,
 };
 
 // ============================================================
@@ -502,6 +540,84 @@ Rules:
 
 Return ONLY a JSON array of query strings:
 ["query 1", "query 2", ...]`;
+
+// --- SCOUT_QUERY_POOL: rotating web search queries for Grassroot Radar ---
+export const SCOUT_QUERY_POOL = [
+  // Brussels/Belgium — run every night
+  { query: 'Brussels open source startup 2026', bucket: 'brussels', priority: 'always' },
+  { query: 'Belgian solo developer social impact project', bucket: 'brussels', priority: 'always' },
+  { query: 'Innoviris new call open 2026', bucket: 'subsidies', priority: 'always' },
+  // EU subsidies & incubators — rotate
+  { query: 'NLnet NGI0 grantees 2026', bucket: 'subsidies', priority: 'rotate' },
+  { query: 'European incubator social innovation open call 2026', bucket: 'subsidies', priority: 'rotate' },
+  { query: 'Horizon Europe digital commons call 2026', bucket: 'subsidies', priority: 'rotate' },
+  // Cooperative/community tech — rotate
+  { query: 'cooperative platform software launch 2026', bucket: 'coop', priority: 'rotate' },
+  { query: 'community-owned alternative to platform launch', bucket: 'coop', priority: 'rotate' },
+  { query: 'site:indiehackers.com cooperative community platform', bucket: 'indie', priority: 'rotate' },
+  // Environmental open source — rotate
+  { query: 'open source environmental monitoring tool new', bucket: 'environment', priority: 'rotate' },
+  { query: 'climate tech indie developer open source project 2026', bucket: 'environment', priority: 'rotate' },
+  // GitHub trending — rotate
+  { query: 'trending GitHub repo cooperative technology community', bucket: 'github', priority: 'rotate' },
+  { query: 'new GitHub project community platform open source 2026', bucket: 'github', priority: 'rotate' },
+  // Fediverse/indie — rotate
+  { query: 'Mastodon #opensource social impact new project', bucket: 'fediverse', priority: 'rotate' },
+  { query: 'indie hacker community platform launch 2026', bucket: 'indie', priority: 'rotate' },
+  // Reference model activity — rotate
+  { query: 'CoopCycle new city launch 2026', bucket: 'reference', priority: 'rotate' },
+  { query: 'Decidim new deployment city 2026', bucket: 'reference', priority: 'rotate' },
+  { query: 'Bonfire social network release update', bucket: 'reference', priority: 'rotate' },
+  // AlternativeTo / Product Hunt — rotate
+  { query: 'site:alternativeto.net cooperative open source community', bucket: 'alternatives', priority: 'rotate' },
+  { query: 'Product Hunt cooperative community social impact launch', bucket: 'alternatives', priority: 'rotate' },
+];
+
+// --- SCOUT_PROMPT: synthesis prompt for Grassroot Radar section ---
+export const SCOUT_PROMPT = `You are PRISM's Grassroot Radar — a scout for the Grassroot Hopper movement.
+
+Your mission: From the raw catches below, select the top 3-5 that are most relevant to the Grassroot Hopper movement. Rank by geographic proximity (Brussels > Belgium > Europe > World) and alignment strength.
+
+For each selected catch, produce EXACTLY this format:
+- **[Name or Org]** — One sentence: what they're building and why it matters to the movement
+  → [URL]
+
+ALIGNMENT CRITERIA (from the Grassroot Hopper manifesto):
+- Solo devs and small companies tackling social or environmental problems
+- Open-source cooperative platforms and tools
+- Community-owned alternatives to extractive platforms
+- Incubators, accelerators, or EU funding programs for social/environmental tech
+- People building with the same thesis: the technical barrier to software is collapsing
+- Brussels/Belgium/European focus strongly preferred
+- GitHub repos gaining traction in cooperative/community/social/environmental tech
+- Subsidy announcements: Innoviris, NLnet, NGI0, Horizon Europe, national cooperative programs
+
+GEOGRAPHIC RANKING:
+- Brussels/Belgium: always include if even moderately aligned
+- Europe: include if clearly aligned with the movement
+- Rest of world: only if exceptionally aligned
+
+ANTI-HALLUCINATION RULES:
+1. Every catch MUST come from the raw catches data below — do NOT invent entries
+2. Every URL must come from the input data
+3. If fewer than 3 catches are genuinely relevant, output fewer — never pad with weak matches
+4. If nothing is relevant: "No catches today. Sources checked: [list sources]"
+
+===== GRASSROOT HOPPER CONTEXT =====
+{grassroot_spec}
+
+===== RAW CATCHES ({catch_count} items) =====
+{raw_catches}
+
+Write EXACTLY this section. Start immediately with the header:
+
+## 🌱 GRASSROOT RADAR
+
+**{selected_count} catches today** · [geographic breakdown]
+
+[numbered catches]
+
+📡 Sources checked: [list which source types produced results today]`;
 
 // --- CLASSIFY_PROMPT: Tier 2 selective scoring (replaces SCORING_PROMPT) ---
 export const CLASSIFY_PROMPT = `You are the scoring engine for PRISM v4.0.
