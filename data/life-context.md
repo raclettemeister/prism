@@ -1,116 +1,128 @@
-<!-- PRISM Life Context — Auto-generated 2026-03-05T04:41:59.447Z -->
+<!-- PRISM Life Context — Auto-generated 2026-03-05T12:55:52.133Z -->
 <!-- Source: context-note.md + LOG (3d) + 15 recent files -->
 <!-- Model: claude-sonnet-4-6 -->
-# LIFE CONTEXT SNAPSHOT — Julien
-**Generated:** 2026-03-05 | **System:** PRISM
+# LIFE CONTEXT SNAPSHOT — PRISM
+**Generated:** 2026-03-05 | **Subject:** Julien
 
 ---
 
-## 1. Right Now
+## 1. RIGHT NOW
 
-Julien is in an intense creative output phase. Today (March 5) he put in a heavy session on **Grassroot Hopper** — adding CREATOR-SPEECH, LAUNCH-SPEECH, LOGO-BRAINSTORM, updating SPEC and ROADMAP — alongside parallel progress on a **blog essay** (research done, SPEC created, draft in progress). Energy is high and productive. No journal entries recently; the file commits are the signal.
+Julien is in an intense burst of exploratory output across two tracks: **Grassroot Hopper** (a new project that exploded yesterday with creator speech, launch speech, logo brainstorm, and spec/roadmap updates) and a **blog essay** (research complete, spec created, draft in progress). Energy is high and generative. His own framing: this period is not about what he builds today — it's about understanding what's worth pursuing in 6 months. He's deliberately at the edge, running many things in parallel to find signal.
 
 ---
 
-## 2. This Week — Active Projects
+## 2. THIS WEEK
 
-**Grassroot Hopper** *(HOT — exploded March 5)*
-- Added: CREATOR-SPEECH.md, LAUNCH-SPEECH.md, LOGO-BRAINSTORM.md
-- Updated: SPEC.md, ROADMAP.md
-- Built a website skeleton
-- Status: moving fast — launch preparation underway. Speech files suggest public-facing reveal is being planned.
+**Grassroot Hopper** *(hottest project)*
+- Erupted 2026-03-05 with major file additions: CREATOR-SPEECH.md, LAUNCH-SPEECH.md, LOGO-BRAINSTORM.md
+- SPEC.md and ROADMAP.md updated same day
+- Website skeleton built
+- Nature of project unclear from files alone — Julien's words suggest it's a creative/community venture with a launch framing
 
-**Blog** *(HOT — March 5)*
-- Research phase complete (perplexity-research-results.md added)
-- SPEC created (blog-essay-draft-SPEC.md)
-- Draft in progress (blog-essay-draft.md modified, STATUS.md added)
-- Platform unknown from logs — likely julien.care or Dishwasher Generation
-- Pipeline: brainstorm → extract → draft → review. Currently in draft phase.
+**Blog Essay** *(active)*
+- Research phase complete: perplexity-research-results.md added
+- SPEC created: blog-essay-draft-SPEC.md
+- Draft in progress: blog-essay-draft.md modified today
+- STATUS.md added — essay is being tracked as a project
+- Platform (julien.care vs Dishwasher Generation) not specified in available data
 
-**Values.md / Renaissance Man Framework** *(March 3 — cooling)*
-- Major rewrite completed March 3
+**Values & Planning** *(2026-03-03 — just done)*
+- Values.md fully rewritten using the **Renaissance Man framework**
 - March 2026 action plan created
-- Weekly business and value plans built out
-- Direction and priorities described as "getting sharper" — this was a clarifying session, not ongoing daily work
+- Weekly business plan and weekly value plan both written for week of 2026-03-02
+- 10k running project notes updated
+- Julien described this as a day of sharp intentional thinking — direction and priorities crystallizing
 
-**10k Running Project** *(March 3 — touched)*
-- Notes updated. Active personal project alongside creative work.
+**NightCrawler / System**
+- 2026-03-02 was a zero-output day — NightCrawler ran, nothing from Julien
+- CURRENT.md updated 2026-03-02 ~05:28 (automated)
+- mac-setup MANUAL-STEPS documentation updated 2026-03-03
 
-**MyLifeOS / mac-setup** *(March 3 — minor)*
-- MANUAL-STEPS documentation updated. Housekeeping, not a focus.
-
----
-
-## 3. Priorities & Struggles
-
-**What he said matters most (his own words, verbatim trust):**
-> "It's not about the games I develop today. It's not about any of my dozens of projects. It's about what I'm going to start doing seriously in 6 months. Right now, it's only about understanding what's happening, understanding what's worth pursuing and what is not."
-
-This is the meta-priority. Grassroot Hopper, the blog, the Renaissance Man rewrite — these are all **exploration vehicles**, not endpoints. He has no idea yet what the main thing will be. He knows he needs to be at the edge. He is deliberately casting wide.
-
-**Tensions to track:**
-- High output (dozens of projects, multiple heavy days) vs. deep uncertainty about direction
-- He identifies as someone who overinvests in creative Tier 3 projects — this week is almost entirely Tier 3
-- No journal entries in this window — self-reflection is thin relative to output volume
-- The 6-month horizon is real: something shifts around September 2026. Current work is reconnaissance, not commitment.
-
-**What he's not doing this week:**
-- No Chez Julien / business work visible in the log
-- No dancing, guitar, or physical logs visible
-- No Lucia-related entries
-- The 50/50 rule (life vs. investment) appears skewed hard toward investment this week
+**Parked / Not touched this week:**
+- Dancing, Guitar, Blog pipeline skills (present in vault but no recent activity)
+- Staffing Calendar System — no recent commits visible
+- Examine Your Life, Lindy Hop Lab, julien.care — no activity this week
 
 ---
 
-## 4. Business — Chez Julien / Operation Autonomy
+## 3. PRIORITIES & STRUGGLES
 
-**Low signal this week.** No business commits or journal entries in the last 3 days. Last substantive business activity was the February 4 team meeting (Henry + Lucas).
+**What he said matters most:**
+> "It's not about the games I develop today. It's not about any of my dozens of projects. It's about what I'm going to start doing seriously in 6 months."
 
-**Standing context:**
-- Operation Autonomy is the active strategy: make Chez Julien run without Julien operationally
-- Henry (24, full-time) is the key person — being developed toward managing/operating officer role. Not reliable yet, needs structure and training
-- Lucas — part-time/full-time blur, good with customers, questionable otherwise
-- February meeting planted the seed: soft pitch to Henry for manager path, Lucas asked to focus on sales
-- "The Big Meeting" (full role restructure conversation) was planned for March 2026 — **no log evidence it has happened yet**
-- Lucia quitting May 1, 2026 is the household financial trigger point — increases pressure on shop autonomy timeline
+The current phase is **deliberate exploration and signal-finding** — not execution toward a known goal. He's running many projects to understand what's worth pursuing. He explicitly says he has no idea yet, and that's intentional. He needs to be at the edge.
 
-**What's missing:** No STATUS.md update, no weekly business plan visible this week. Business may be running on autopilot while Julien is heads-down on creative work.
+**What's driving him:**
+- Renaissance Man framework now anchors his values — suggests he's leaning into breadth as a feature, not a bug
+- March 2026 action plan and weekly plans suggest he has structured the exploration, not just vibed into it
+- Grassroot Hopper's sudden explosion is consistent with his founder pattern: rapid, intense setup bursts
 
----
+**What's hard / what to watch:**
+- His known pattern: overinvests in creative Tier 3 projects while undertending life/relationships (Tier 1)
+- The "dozens of projects" problem is self-aware — he's using it as a search strategy, but cognitive debt risk is real
+- No journal entry for the last 3 days — files are speaking, Julien isn't narrating (he noted this himself: "no journal, but the files speak for themselves")
+- Low orderliness is his stated Achilles heel — the burst-then-drop pattern is structurally expected
 
-## 5. Tools & Stack
-
-- **MyLifeOS** — Obsidian-based markdown vault, active and well-maintained
-- **PRISM** — This system. Morning intelligence briefing, automated via NightCrawler
-- **NightCrawler** — Auto-logging agent. Running nightly (confirmed March 2 report). All file activity auto-captured
-- **Cursor** — Primary AI coding/writing environment. Full skills pipeline visible (.cursor/skills/): blog pipeline (brainstorm → extract → draft → review → publish), dancing-session, guitar-coach, weekly-business-plan, value-plan-review, update-business-status
-- **Perplexity** — Used for blog research (perplexity-prompt-vision-research.md, perplexity-research-results.md created today)
-- **Substack** — Publishing target for The Dishwasher Generation. blog-5-publish skill handles push via substack.sid cookie auth
-- **Python** — substack_publish.py script in use for Substack API integration
-- **GitHub / file commits** — NightCrawler tracks all changes; commits are the activity log when journal is silent
+**What he's not doing right now:**
+- Not touching the shop operationally this week (no business meetings, no team notes)
+- Not running his daily disciplines visibly (dancing, guitar — no log activity)
 
 ---
 
-## 6. Life
+## 4. BUSINESS
+
+**Low activity this week.** No shop-related commits in the last 3 days.
+
+**Recent context (from files):**
+- February 4, 2026 team meeting held with Henry and Lucas — foundation-laying meeting, not the big conversation
+- **Henry**: pitched soft manager path, door opened. He's 24, invested, wants the managing role, but still needs training and structure
+- **Lucas**: asked to focus on sales/floor; his tendency to grab cognitive tasks over Henry remains unresolved — the "big meeting" (Option 2) was scheduled for March 2026
+- **The Big Meeting** (March 2026) was supposed to address full role restructure — unclear if it's happened yet; no meeting notes in recent activity
+
+**Operation Autonomy status:**
+- Phase: Setup & Planning (started February 2026)
+- Goal: shop runs without Julien's daily involvement; Henry as autonomous manager
+- Software tools (Staffing Calendar System) in progress but not touched this week
+- Lucia quitting May 1, 2026 is the real deadline creating urgency — Julien needs passive income headroom by then
+
+**Financial:** ~500K annual sales, high profitability. Building owned 48%. No new financial data this week.
+
+---
+
+## 5. TOOLS & STACK
+
+- **PRISM** — automated morning intelligence briefing (this system)
+- **NightCrawler** — automated nightly activity logger, running nightly (confirmed active 2026-03-02, 2026-03-05)
+- **Cursor** — primary AI coding/writing environment; skill files (.cursor/skills/) are actively maintained
+- **Perplexity** — used for blog essay research (perplexity-prompt-vision-research.md, perplexity-research-results.md added today)
+- **Substack** — The Dishwasher Generation (blog-5-publish skill with API integration built and maintained)
+- **MyLifeOS** — Obsidian-based markdown vault; the system Julien operates in
+- **AI models in use:** Not specified in recent data; Cursor implies Claude or GPT-4-class models
+
+---
+
+## 6. LIFE
 
 **Lucia:**
-- Quitting her job May 1, 2026 — 8 weeks away. Major household transition incoming
-- No Lucia-specific entries this week; Julien appears fully in work/project mode
-- Reynolds Mode (shutdown ritual, full presence) — no evidence it's been activated this week
+- Still at International Yehudi Menuhin Foundation; quitting May 1, 2026 — 57 days out
+- This is the household's biggest near-term transition; Julien explicitly needs to support her financially and with time
+- No recent activity suggesting tension or specific plans this week
 
-**Health & Energy:**
-- 10k running project active and updated March 3 — physical training is on
-- No dancing or guitar session logs this week despite both being keystone habits
-- High creative output suggests strong cognitive energy but potentially at cost of Tier 1 disciplines
+**Health / physical:**
+- 10k running project notes updated 2026-03-03 — he's tracking it, suggesting the project is alive
+- No dancing or guitar log activity this week — disciplines may be slipping during the creative burst
+- Energy reads as high this week (two explosive output days: 03-03 and 03-05)
 
-**Key upcoming dates:**
-- May 1, 2026 — Lucia goes self-employed. Financial and life structure shifts
-- ~September 2026 — Julien's own self-described inflection point: "what I'm going to start doing seriously in 6 months"
-- March 2026 — The Big Meeting with Henry/Lucas was planned for this month (status unknown)
-- Meeting anniversary with Lucia: 27th of each month (March 27 coming)
+**Rhythm:**
+- No journal entries this week — Julien acknowledged this; files are the record
+- The 50/50 rule (half life, half investment) is likely skewed toward investment this week
+- Reynolds Mode / shutdown ritual — no data, but the absence of journaling and high project output suggests the life/presence side may be underserved
+
+**Upcoming relevant date:**
+- Monthly anniversary with Lucia: 27th of each month — 2026-03-27 is ~3 weeks out
+- Lucia quit date: May 1, 2026 — ~57 days
 
 ---
 
-## Summary Signal for AI Analyst
-
-Julien is in a **wide-net exploration phase** with high output and genuine directional uncertainty. Grassroot Hopper is the hottest active project right now. The blog essay is close behind. Both should be treated as experiments, not commitments — he has said explicitly that the real thing starts in 6 months and he doesn't know what it is yet. Business is quiet this week; watch for The Big Meeting (March 2026, Henry/Lucas role restructure) as an unresolved near-term item. Lucia's May transition is the most significant life event on the horizon.
+*Snapshot confidence: HIGH on projects (direct file activity + Julien's own words). MEDIUM on business (last known data is February; no this-week updates). LOW on daily life/disciplines (no journal, no log entries for personal habits).*
