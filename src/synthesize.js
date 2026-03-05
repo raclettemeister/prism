@@ -20,6 +20,7 @@
 // ============================================================
 
 import { writeFile, readFile, mkdir, readdir } from 'fs/promises';
+import { createHash } from 'crypto';
 import { format } from 'date-fns';
 import Anthropic from '@anthropic-ai/sdk';
 import {
@@ -34,6 +35,8 @@ import {
   FEEDBACK_FILE,
   BUILDER_PROMPT,
   WORLD_PROMPT,
+  SCOUT_PROMPT,
+  SCOUT_MEMORY_FILE,
 } from './config.js';
 
 const client = new Anthropic();
@@ -318,6 +321,62 @@ async function callWorldSynth(tier2Articles, webIntelligence, lifeContext, lastB
   };
 }
 
+/**
+ * Call S — Grassroot Radar (runs in parallel with A and B)
+ * Produces: GRASSROOT RADAR section
+ */
+async function callScoutSynth(scoutResult) {
+  if (!scoutResult || !scoutResult.rawCatches) {
+    return {
+      output: '## 🌱 GRASSROOT RADAR\n\n*Scout not available this run.*',
+      tokens: { input: 0, output: 0 },
+      webSearches: 0,
+    };
+  }
+
+  let grassrootSpec;
+  try {
+    grassrootSpec = await readFile('Grassroot Hopper/movement/SPEC.md', 'utf-8');
+    grassrootSpec = grassrootSpec.substring(0, 6000);
+  } catch {
+    grassrootSpec = 'Grassroot Hopper: cooperative, community-owned digital infrastructure movement. Brussels-based. Open source, social/environmental focus. The Transition Towns of technology.';
+  }
+
+  const prompt = SCOUT_PROMPT
+    .replace('{grassroot_spec}', grassrootSpec)
+    .replace('{catch_count}', String(scoutResult.catchCount))
+    .replace('{raw_catches}', scoutResult.rawCatches)
+    .replace('{selected_count}', String(LIMITS.scoutMaxCatches))
+    .replace('{selected_count}', String(LIMITS.scoutMaxCatches));
+
+  console.log(`  Call S (Scout): ~${Math.round(prompt.length / 4).toLocaleString()} tokens input, ${scoutResult.catchCount} raw catches...`);
+
+  const stream = client.beta.messages.stream({
+    model: MODELS.synthesizer,
+    max_tokens: LIMITS.scoutCallMaxTokens,
+    betas: SONNET_46_BETAS,
+    tools: [{ type: 'web_search_20260209', name: 'web_search' }],
+    messages: [{ role: 'user', content: prompt }],
+  });
+  const response = await stream.finalMessage();
+
+  let output = '';
+  let webSearchCount = 0;
+  for (const block of response.content) {
+    if (block.type === 'text') output += block.text;
+    if (block.type === 'server_tool_use' && block.name === 'web_search') webSearchCount++;
+  }
+
+  return {
+    output: output.trim(),
+    tokens: {
+      input: response.usage.input_tokens,
+      output: response.usage.output_tokens,
+    },
+    webSearches: webSearchCount,
+  };
+}
+
 // ── Assembly ─────────────────────────────────────────────────
 
 /**
@@ -334,7 +393,7 @@ function extractSection(text, headerPattern) {
  * Assemble the final briefing from Call A and Call B outputs.
  * Extracts sections by header and reorders them into the canonical section order.
  */
-function assembleBriefing(callAOutput, callBOutput, date, articleCount, webSearchTotal, totalCost) {
+function assembleBriefing(callAOutput, callBOutput, callSOutput, date, articleCount, webSearchTotal, totalCost) {
   // Extract header (everything before first ## section in Call A)
   const headerMatch = callAOutput.match(/^([\s\S]*?)(?=\n## 🔴|\n## THE SIGNAL|$)/);
   const header = headerMatch ? headerMatch[1].trim() : `# PRISM Morning Briefing — ${date}`;
@@ -343,7 +402,7 @@ function assembleBriefing(callAOutput, callBOutput, date, articleCount, webSearc
   // The model sometimes generates its own header (occasionally with the wrong date).
   // Call A's header is the canonical one — Call B's is always discarded.
   const callBStripped = callBOutput.replace(/^#+\s*PRISM[^\n]*\n+/i, '').trim();
-  const combined = callAOutput + '\n\n' + callBStripped;
+  const combined = callAOutput + '\n\n' + callSOutput + '\n\n' + callBStripped;
 
   // Extract sections in canonical order
   const sectionPatterns = [
@@ -351,6 +410,7 @@ function assembleBriefing(callAOutput, callBOutput, date, articleCount, webSearc
     { key: 'mustreads', pattern: '## 📚 MUST-READ LIST' },
     { key: 'builder',   pattern: '## 🧱 BUILDER INTELLIGENCE' },
     { key: 'gamedev',   pattern: '## 🎮 GAME DEV INTELLIGENCE' },
+    { key: 'scout',     pattern: '## 🌱 GRASSROOT RADAR' },
     { key: 'pioneer',   pattern: '## 📊 PIONEER ADVANTAGE CHECK' },
     { key: 'tools',     pattern: '## 🛠️ TOOLS TO TRY' },
     { key: 'buildwatch',pattern: '## 🏗️ BUILD WATCH' },
@@ -506,6 +566,7 @@ async function writeFeedbackTemplate(briefing, date) {
       TODAYS_PRIORITIES: null,
       WORLD_LENS: null,
       EUROPE_TECH: null,
+      GRASSROOT_RADAR: null,
       TREND_TRACKER: null,
     },
     openNotes: '',
@@ -537,6 +598,7 @@ ${articles.map(a => `### ${a.title} (${a.source})\n- [ ] Love  [ ] OK  [ ] Skip`
 - 🎮 GAME DEV INTELLIGENCE: [ ] Love  [ ] OK  [ ] Skip
 - 📊 PIONEER ADVANTAGE: [ ] Love  [ ] OK  [ ] Skip
 - 🛠️ TOOLS TO TRY: [ ] Love  [ ] OK  [ ] Skip
+- 🌱 GRASSROOT RADAR: [ ] Love  [ ] OK  [ ] Skip
 - 🌍 WORLD LENS: [ ] Love  [ ] OK  [ ] Skip
 - 🇪🇺 EUROPE TECH: [ ] Love  [ ] OK  [ ] Skip
 
@@ -558,9 +620,10 @@ ${articles.map(a => `### ${a.title} (${a.source})\n- [ ] Love  [ ] OK  [ ] Skip`
  * @param {object[]} articles - Articles with full text from read.js (includes tier property)
  * @param {object|null} classified - Original { tier1, tier2, tier3 } from classify.js
  * @param {object|null} deepDiveReport - Optional deep dive (unchanged from v3.x)
+ * @param {object|null} scoutResult - Scout collection result from scout.js
  * @returns {{ briefing, filepath, tokens, webSearches }}
  */
-export default async function synthesize(articles, classified = null, deepDiveReport = null) {
+export default async function synthesize(articles, classified = null, deepDiveReport = null, scoutResult = null) {
   const today = format(new Date(), 'yyyy-MM-dd');
   const dateFormatted = format(new Date(), 'MMMM d, yyyy');
   const portalUrl = buildPortalUrl(today);
@@ -629,19 +692,30 @@ export default async function synthesize(articles, classified = null, deepDiveRe
       return callBResult;
     });
 
-  const [callA, callB] = await Promise.all([callAPromise, callBPromise]);
+  const callSPromise = callScoutSynth(scoutResult)
+    .catch(err => {
+      console.log(`  ⚠️ Call S (Scout) failed: ${err.message}`);
+      return {
+        output: '## 🌱 GRASSROOT RADAR\n\n*Scout synthesis unavailable this run.*',
+        tokens: { input: 0, output: 0 },
+        webSearches: 0,
+      };
+    });
 
-  const totalWebSearches = callA.webSearches + callB.webSearches;
-  const totalInputTokens = callA.tokens.input + callB.tokens.input;
-  const totalOutputTokens = callA.tokens.output + callB.tokens.output;
+  const [callA, callB, callS] = await Promise.all([callAPromise, callBPromise, callSPromise]);
+
+  const totalWebSearches = callA.webSearches + callB.webSearches + callS.webSearches;
+  const totalInputTokens = callA.tokens.input + callB.tokens.input + callS.tokens.input;
+  const totalOutputTokens = callA.tokens.output + callB.tokens.output + callS.tokens.output;
   const totalCost = estimateCost(totalInputTokens, totalOutputTokens);
 
   console.log(`  Call A: ${callA.tokens.input.toLocaleString()} in / ${callA.tokens.output.toLocaleString()} out, ${callA.webSearches} searches`);
   console.log(`  Call B: ${callB.tokens.input.toLocaleString()} in / ${callB.tokens.output.toLocaleString()} out, ${callB.webSearches} searches`);
+  console.log(`  Call S: ${callS.tokens.input.toLocaleString()} in / ${callS.tokens.output.toLocaleString()} out, ${callS.webSearches} searches`);
   console.log(`  Total web searches: ${totalWebSearches}`);
 
   // ── Assembly ─────────────────────────────────────────────────
-  let briefing = assembleBriefing(callA.output, callB.output, dateFormatted, articles.length, totalWebSearches, totalCost);
+  let briefing = assembleBriefing(callA.output, callB.output, callS.output, dateFormatted, articles.length, totalWebSearches, totalCost);
 
   // Insert deep dive sections if present
   if (deepDiveReport?.deepDives?.length > 0) {
@@ -665,6 +739,30 @@ export default async function synthesize(articles, classified = null, deepDiveRe
   // ── Update memory and write feedback template ────────────────
   await updateMemory(today, memory, briefing, articles, feedback.structured);
   await writeFeedbackTemplate(briefing, today);
+
+  // ── Update scout memory with surfaced catches ─────────────────
+  if (scoutResult?.memory) {
+    const radarMatch = callS.output.match(/→\s*(https?:\/\/[^\s)]+)/g);
+    if (radarMatch) {
+      for (const urlMatch of radarMatch) {
+        const url = urlMatch.replace('→ ', '').trim();
+        scoutResult.memory.catches.push({
+          url_hash: createHash('sha256').update(url.toLowerCase()).digest('hex').slice(0, 16),
+          title: url,
+          surfaced_date: today,
+          source: 'synthesis',
+          geography: 'unknown',
+          feedback: null,
+        });
+      }
+    }
+    const cutoff = Date.now() - (LIMITS.scoutMemoryDays || 30) * 86400000;
+    scoutResult.memory.catches = scoutResult.memory.catches.filter(
+      c => new Date(c.surfaced_date).getTime() > cutoff
+    );
+    await mkdir('data', { recursive: true });
+    await writeFile(SCOUT_MEMORY_FILE, JSON.stringify(scoutResult.memory, null, 2), 'utf-8');
+  }
 
   return {
     briefing,
