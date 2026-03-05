@@ -19,6 +19,7 @@ import deepdive from './deepdive.js';
 import collect from './collect.js';
 import classify from './classify.js';
 import webintel from './webintel.js';
+import scout from './scout.js';
 import read from './read.js';
 import synthesize from './synthesize.js';
 import validate from './validate.js';
@@ -66,11 +67,15 @@ async function main() {
     // Trust Tier classification and proactive web intelligence run concurrently.
     // classify.js assigns tiers — Tier 1 expert sources bypass scoring entirely.
     // webintel.js generates and executes targeted searches before synthesis.
-    console.log('\n⚡ Running classify + webintel in parallel...');
+    console.log('\n⚡ Running classify + webintel + scout in parallel...');
 
-    const [classified, webIntelContent] = await Promise.all([
-      classify(articles),
+    const scoutArticles = articles.filter(a => a.scoutOnly);
+    const classifyArticles = articles.filter(a => !a.scoutOnly);
+
+    const [classified, webIntelContent, scoutResult] = await Promise.all([
+      classify(classifyArticles.length > 0 ? classifyArticles : articles),
       webintel(),
+      scout(scoutArticles),
     ]);
 
     totalInputTokens += classified.tokens.input;
@@ -104,7 +109,8 @@ async function main() {
     const { briefing, filepath, tokens: synthTokens, webSearches } = await synthesize(
       articlesToAnalyze,
       classified,
-      deepDiveReport
+      deepDiveReport,
+      scoutResult
     );
     totalInputTokens += synthTokens.input_tokens;
     totalOutputTokens += synthTokens.output_tokens;
@@ -148,6 +154,7 @@ async function main() {
     console.log(`  Confidence:   ${(confidence * 100).toFixed(0)}%`);
     console.log(`  Articles:     ${articles.length} collected → T1:${t1Read} T2:${t2Read} T3:${t3Read} → ${articlesToAnalyze.length} read`);
     console.log(`  Web searches: ${webSearches || 0} (webintel) + synthesis`);
+    console.log(`  Scout:        ${scoutResult?.searchCount || 0} searches, ${scoutResult?.catchCount || 0} raw catches`);
     console.log(`  Tokens:       ${totalInputTokens.toLocaleString()} in / ${totalOutputTokens.toLocaleString()} out`);
     console.log(`  Cost:         ~$${finalCost}`);
     console.log(`  Time:         ${elapsed}s`);
