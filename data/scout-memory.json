@@ -40,13 +40,53 @@
       "source": "synthesis",
       "geography": "unknown",
       "feedback": null
+    },
+    {
+      "url_hash": "d6b52c31a35bc9d5",
+      "title": "https://coopcity.be/",
+      "surfaced_date": "2026-03-06",
+      "source": "synthesis",
+      "geography": "unknown",
+      "feedback": null
+    },
+    {
+      "url_hash": "fe15168042c904a5",
+      "title": "https://www.innoviris.brussels/program/prove-your-social-innovation",
+      "surfaced_date": "2026-03-06",
+      "source": "synthesis",
+      "geography": "unknown",
+      "feedback": null
+    },
+    {
+      "url_hash": "7cfd65054a72c11a",
+      "title": "https://openknowledge.be/",
+      "surfaced_date": "2026-03-06",
+      "source": "synthesis",
+      "geography": "unknown",
+      "feedback": null
+    },
+    {
+      "url_hash": "b8e1cec7dd69f071",
+      "title": "https://joinmastodon.org/",
+      "surfaced_date": "2026-03-06",
+      "source": "synthesis",
+      "geography": "unknown",
+      "feedback": null
+    },
+    {
+      "url_hash": "67caaa454fd8f067",
+      "title": "https://nlnet.nl/fediversity/",
+      "surfaced_date": "2026-03-06",
+      "source": "synthesis",
+      "geography": "unknown",
+      "feedback": null
     }
   ],
   "query_performance": {
     "Innoviris new call open 2026": {
-      "times_used": 1,
+      "times_used": 2,
       "catches_produced": 0,
-      "last_used": "2026-03-05"
+      "last_used": "2026-03-06"
     },
     "site:indiehackers.com cooperative community platform": {
       "times_used": 1,
@@ -64,14 +104,14 @@
       "last_used": "2026-03-05"
     },
     "Brussels open source startup 2026": {
-      "times_used": 1,
+      "times_used": 2,
       "catches_produced": 0,
-      "last_used": "2026-03-05"
+      "last_used": "2026-03-06"
     },
     "Belgian solo developer social impact project": {
-      "times_used": 1,
+      "times_used": 2,
       "catches_produced": 0,
-      "last_used": "2026-03-05"
+      "last_used": "2026-03-06"
     },
     "European incubator social innovation open call 2026": {
       "times_used": 1,
@@ -82,6 +122,31 @@
       "times_used": 1,
       "catches_produced": 0,
       "last_used": "2026-03-05"
+    },
+    "trending GitHub repo cooperative technology community": {
+      "times_used": 1,
+      "catches_produced": 0,
+      "last_used": "2026-03-06"
+    },
+    "Mastodon #opensource social impact new project": {
+      "times_used": 1,
+      "catches_produced": 0,
+      "last_used": "2026-03-06"
+    },
+    "open source environmental monitoring tool new": {
+      "times_used": 1,
+      "catches_produced": 0,
+      "last_used": "2026-03-06"
+    },
+    "community-owned alternative to platform launch": {
+      "times_used": 1,
+      "catches_produced": 0,
+      "last_used": "2026-03-06"
+    },
+    "climate tech indie developer open source project 2026": {
+      "times_used": 1,
+      "catches_produced": 0,
+      "last_used": "2026-03-06"
     }
   },
   "source_performance": {}
