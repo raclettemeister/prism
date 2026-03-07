@@ -84,9 +84,9 @@
   ],
   "query_performance": {
     "Innoviris new call open 2026": {
-      "times_used": 2,
+      "times_used": 3,
       "catches_produced": 0,
-      "last_used": "2026-03-06"
+      "last_used": "2026-03-07"
     },
     "site:indiehackers.com cooperative community platform": {
       "times_used": 1,
@@ -104,14 +104,14 @@
       "last_used": "2026-03-05"
     },
     "Brussels open source startup 2026": {
-      "times_used": 2,
+      "times_used": 3,
       "catches_produced": 0,
-      "last_used": "2026-03-06"
+      "last_used": "2026-03-07"
     },
     "Belgian solo developer social impact project": {
-      "times_used": 2,
+      "times_used": 3,
       "catches_produced": 0,
-      "last_used": "2026-03-06"
+      "last_used": "2026-03-07"
     },
     "European incubator social innovation open call 2026": {
       "times_used": 1,
@@ -147,6 +147,31 @@
       "times_used": 1,
       "catches_produced": 0,
       "last_used": "2026-03-06"
+    },
+    "indie hacker community platform launch 2026": {
+      "times_used": 1,
+      "catches_produced": 0,
+      "last_used": "2026-03-07"
+    },
+    "new GitHub project community platform open source 2026": {
+      "times_used": 1,
+      "catches_produced": 0,
+      "last_used": "2026-03-07"
+    },
+    "site:alternativeto.net cooperative open source community": {
+      "times_used": 1,
+      "catches_produced": 0,
+      "last_used": "2026-03-07"
+    },
+    "CoopCycle new city launch 2026": {
+      "times_used": 1,
+      "catches_produced": 0,
+      "last_used": "2026-03-07"
+    },
+    "Decidim new deployment city 2026": {
+      "times_used": 1,
+      "catches_produced": 0,
+      "last_used": "2026-03-07"
     }
   },
   "source_performance": {}
