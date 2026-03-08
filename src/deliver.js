@@ -2,9 +2,7 @@
 // PRISM v4.0 Delivery — HTML email via Resend
 //
 // v4.0 changes:
-//   - Digest-only email (short summary + single portal link) to avoid
-//     recipient spam filter "content rejected" on full briefing.
-//   - Subject unchanged (PRISM — Date, with ⚠️ for low confidence)
+//   - Self-contained digest email: the email is now the primary reading surface.
 // ============================================================
 
 import { format } from 'date-fns';
@@ -21,14 +19,9 @@ export default async function deliver(briefingMarkdown, stats) {
   }
 
   const dateStr = format(new Date(), 'MMMM d, yyyy');
-  const todayIso = format(new Date(), 'yyyy-MM-dd');
   console.log(`\n📧 DELIVERING briefing to staycreative@julien.care...`);
 
-  const portalBase = process.env.PRISM_PORTAL_URL || '';
-  const liveUrl = portalBase ? `${portalBase}/${todayIso}.html` : '';
-
-  // Digest only: short summary + single link. Full briefing stays on portal.
-  const { html, text } = renderDigestEmail(liveUrl, dateStr, stats);
+  const { html, text } = renderDigestEmail(briefingMarkdown, dateStr, stats);
 
   const subject = stats.confidence && stats.confidence < 0.7
     ? `PRISM — ${dateStr} ⚠️`
@@ -61,7 +54,6 @@ export default async function deliver(briefingMarkdown, stats) {
     if (response.ok) {
       console.log(`  ✅ Email sent (id: ${result.id})`);
       console.log(`  📊 Stats: ${stats.webSearches || 0} web searches, confidence ${((stats.confidence || 0) * 100).toFixed(0)}%`);
-      if (liveUrl) console.log(`  🌐 Live page: ${liveUrl}`);
       return { sent: true, id: result.id };
     } else {
       console.log(`  ❌ Email failed: ${JSON.stringify(result)}`);

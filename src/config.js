@@ -1,37 +1,18 @@
 // ============================================================
-// PRISM v4.0 Configuration
+// PRISM v5.0 Configuration
 //
-// v4.0 architectural changes (2026-02-21):
-//   "The Smart Analyst" — trust tiers replace blind batch scoring
+// Core rule:
+//   daily oversight across all domains, depth on one domain only
 //
-//   PIPELINE: Context → Collect → [Classify ∥ WebIntel] → Read →
-//             [BuilderSynth ∥ WorldSynth] → Assemble → Validate → Page → Deliver
+// Active pipeline:
+//   Context → Collect → [Classify ∥ WebIntel] → Read →
+//   Synthesize → Validate → Deliver
 //
-//   NEW:
-//   - TRUST_TIERS: 12 expert sources always read, no scoring needed
-//   - ai_builder category (weight 1.0): 4 missing expert sources added
-//   - nocode expanded to weight 1.0 with vibe-coding tool feeds
-//   - 3 new HN builder queries in big_picture
-//   - WEBINTEL_PROMPT: proactive query generation before synthesis
-//   - CLASSIFY_PROMPT: replaces SCORING_PROMPT (Tier 2 only, builder-weighted)
-//   - BUILDER_PROMPT: Call A — Builder Intelligence (critical path)
-//   - WORLD_PROMPT: Call B — World Context (secondary, parallel)
-//   - Expanded preFilterKeywords with builder methodology vocabulary
-//
-//   RETAINED (for legacy score.js/research.js compatibility):
-//   - SCORING_PROMPT (deprecated — use CLASSIFY_PROMPT)
-//   - RESEARCH_PROMPT (deprecated — use BUILDER_PROMPT + WORLD_PROMPT)
-//
-// v3.3 feed audit (2026-02-21):
-//   - Removed all 16 Reddit feeds → blanket 403
-//   - Removed 11 dead 404 feeds (cursor, deepmind, meta AI, etc.)
-//   - Removed 14 blocked feeds (sifted, eu-startups, siliconcanals, etc.)
-//   - Added: google AI blog, Lobste.rs AI/ML tags, DW corrected URL, Adam Tooze
-//   Net: 144 → ~99 feeds
-//
-// NOTE ON SUBSTACK RSS: Many Substacks block the substack.com/feed format.
-// Custom domains work reliably (e.g. noahpinion.blog). The ai_builder feeds
-// use best-guess URLs — PRISM's Feed Health Report will flag 404s for cleanup.
+// This file defines:
+// - feed categories and trust tiers
+// - theme cycle and override thresholds
+// - output limits
+// - prompts used by the v5 run path
 // ============================================================
 
 // --- Trust Tier Definitions (v4.0) ---
@@ -449,8 +430,7 @@ export const NEWS_INTERESTS_FILE = 'data/news-interests.md';
 export const LIFE_CONTEXT_FILE = 'data/life-context.md';
 export const MEMORY_FILE = 'data/memory.json';
 export const BRIEFINGS_DIR = 'briefings';
-export const WEBINTEL_FILE = 'data/web-intelligence.md';  // v4.0: proactive web intel output
-export const FEEDBACK_FILE = 'data/feedback-latest.json'; // v4.0: structured feedback (replaces .md)
+export const WEBINTEL_FILE = 'data/web-intelligence.md';
 export const SCOUT_MEMORY_FILE = 'data/scout-memory.json';
 
 // --- Scoring (v4.0: adjusted for Trust Tier architecture) ---
@@ -502,44 +482,99 @@ export const LIMITS = {
   maxArticleAge: 48,
   analysisMaxTokens: 16384,
   synthesisMaxTokens: 32768,
-  builderCallMaxTokens: 8500,   // v4.0: Call A — Builder Intelligence (bumped for Game Dev section)
-  worldCallMaxTokens: 6000,     // v4.0: Call B — World Context
+  builderCallMaxTokens: 8500,
+  worldCallMaxTokens: 6000,
   webIntelMaxTokens: 1024,      // v4.0: Query generation only (tiny)
   tier1MaxPerSource: 2,         // v4.0: max Tier 1 articles per source per night
   tier2MaxArticles: 20,         // v4.0: max Tier 2 articles after scoring
   tier3MaxArticles: 10,         // v4.0: max Tier 3 articles (only if budget allows)
-  readTargetArticles: 30,       // v4.0: total articles to fetch full text (down from 80)
+  readTargetArticles: 18,       // v5.0: smaller read set for daily core + theme focus
   scoutCallMaxTokens: 4000,
   scoutMaxCatches: 5,
   scoutMaxRawCatches: 15,
   scoutMemoryDays: 30,
+  mustReadMax: 3,
+  actionAuditMax: 3,
+  prioritiesMax: 3,
+  radarThemes: 3,
+  forecastDays: 3,
+  briefingTargetWords: 1400,
+  briefingHardCapWords: 1800,
+};
+
+export const THEME_CYCLE = {
+  order: ['dev', 'grassroot', 'game', 'geo_eu'],
+  forecastDays: 3,
+};
+
+export const THEME_OVERRIDE_CONFIG = {
+  scoreMultiplier: 1.4,
+  minScoreDelta: 4,
+};
+
+export const THEME_CONFIG = {
+  dev: {
+    label: 'Software Dev & AI Building',
+    shortLabel: 'Dev',
+    categories: ['ai_builder', 'ai_tools', 'nocode', 'indie_founders', 'github_trending', 'tech_communities'],
+    projectKeywords: ['cursor', 'codex', 'blog', 'prism', 'software', 'builder', 'micro-saas'],
+    directImpactKeywords: ['cursor', 'claude code', 'windsurf', 'lovable', 'bolt', 'release', 'pricing', 'outage', 'api'],
+    urgentKeywords: ['breaking', 'released', 'launch', 'pricing', 'deprecated', 'outage', 'security'],
+    webIntelPrompt: 'tool releases, builder workflows, AI-assisted engineering, micro-software opportunities',
+  },
+  grassroot: {
+    label: 'Grassroot Hopper & Cooperative Tech',
+    shortLabel: 'Grassroot',
+    categories: ['grassroot_scout'],
+    projectKeywords: ['grassroot hopper', 'movement', 'cooperative', 'community-owned'],
+    directImpactKeywords: ['grassroot hopper', 'cooperative', 'community-owned', 'grant', 'funding', 'innoviris', 'nlnet', 'brussels', 'belgium'],
+    urgentKeywords: ['open call', 'deadline', 'launch', 'grant', 'funding', 'brussels', 'belgium'],
+    webIntelPrompt: 'aligned people, cooperative/community tech, Brussels/Belgium movement signals, grants and funding',
+  },
+  game: {
+    label: 'Game Dev & Creative AI',
+    shortLabel: 'Game',
+    categories: ['gamedev', 'gamedev_ai', 'creative_ai'],
+    projectKeywords: ['game', 'godot', 'chez julien simulator', 'interactive'],
+    directImpactKeywords: ['game', 'unity', 'godot', 'unreal', 'asset', 'animation', 'creative ai'],
+    urgentKeywords: ['release', 'launch', 'gdc', 'beta', 'tool update'],
+    webIntelPrompt: 'solo game development, creative AI tools, interactive experiments, usable game pipelines',
+  },
+  geo_eu: {
+    label: 'Geopolitics, EU Economics & Brussels Context',
+    shortLabel: 'Geo-EU',
+    categories: ['geopolitics', 'economist', 'ft_sections', 'europe_politics', 'global_quality', 'europe_tech'],
+    projectKeywords: ['chez julien', 'brussels', 'belgium', 'europe'],
+    directImpactKeywords: ['belgium', 'brussels', 'vat', 'european union', 'eu', 'energy', 'inflation', 'tariff', 'regulation'],
+    urgentKeywords: ['vat', 'regulation', 'energy', 'tariff', 'sanction', 'inflation', 'deadline'],
+    webIntelPrompt: 'Belgium and Brussels business context, EU economics, geopolitics with direct local impact',
+  },
 };
 
 // ============================================================
-// PROMPTS — v4.0
+// PROMPTS — v5.0
 // ============================================================
 
-// --- WEBINTEL_PROMPT: proactive query generation (runs BEFORE synthesis) ---
-export const WEBINTEL_PROMPT = `You are PRISM's Intelligence Director. Your job: identify what to search before writing today's briefing.
+export const THEMED_WEBINTEL_PROMPT = `You are PRISM's web intelligence planner for a themed daily briefing.
 
-Given Julien's life context and recent briefing topics, generate 5-8 highly targeted web search queries.
-
-Focus on:
-1. His active projects — what changed in the last 24 hours?
-2. Tools he uses daily — any updates, releases, or outages? (Claude Code, Cursor, Windsurf, Lovable, Bolt.new)
-3. Topics tracked all week — what is the latest development?
-4. Micro-SaaS / builder methodology — what are practitioners publishing today?
-5. Brussels / Belgium business context — anything relevant to a specialty food shop or founder?
-6. AI-powered game development — new engines, procedural generation tools, AI-assisted 3D/asset creation, vibe-coding for games, solo dev game toolchains
+Return EXACTLY 6 JSON objects in a JSON array with this shape:
+[
+  {"query":"...", "theme":"dev|grassroot|game|geo_eu", "purpose":"one short sentence"},
+  ...
+]
 
 Rules:
-- Be specific. "Claude Code changelog February 2026" not "AI news".
-- Focus on things that change in the LAST 24-48 HOURS.
-- Do not search for stable background knowledge.
-- Prioritize Julien's current active projects and immediate decisions.
+- Produce exactly 1 query for each theme so PRISM can maintain cross-domain radar.
+- Produce 2 extra queries for the scheduled theme to deepen today's briefing.
+- Queries must be about changes in the last 24-48 hours, not stable background knowledge.
+- Use Julien's active projects and current life context to decide specificity.
+- Keep purposes short and concrete.
 
-Return ONLY a JSON array of query strings:
-["query 1", "query 2", ...]`;
+Scheduled theme: {scheduled_theme}
+Scheduled theme focus: {scheduled_theme_focus}
+Today's date: {today}
+
+Return only valid JSON.`;
 
 // --- SCOUT_QUERY_POOL: rotating web search queries for Grassroot Radar ---
 export const SCOUT_QUERY_POOL = [
@@ -573,53 +608,104 @@ export const SCOUT_QUERY_POOL = [
   { query: 'Product Hunt cooperative community social impact launch', bucket: 'alternatives', priority: 'rotate' },
 ];
 
-// --- SCOUT_PROMPT: synthesis prompt for Grassroot Radar section ---
-export const SCOUT_PROMPT = `You are PRISM's Grassroot Radar — a scout for the Grassroot Hopper movement.
+export const DAILY_THEME_PROMPT = `You are PRISM's daily oversight editor.
 
-Your mission: From the raw catches below, select the top 3-5 that are most relevant to the Grassroot Hopper movement. Rank by geographic proximity (Brussels > Belgium > Europe > World) and alignment strength.
+You are writing a concise morning briefing for Julien.
+This is NOT a magazine. It is a decision-support brief.
 
-For each selected catch, produce EXACTLY this format:
-- **[Name or Org]** — One sentence: what they're building and why it matters to the movement
-  → [URL]
+Your job:
+1. Keep daily oversight across all 4 domains.
+2. Go deep on only one theme today.
+3. Be concrete, terse, and useful.
 
-ALIGNMENT CRITERIA (from the Grassroot Hopper manifesto):
-- Solo devs and small companies tackling social or environmental problems
-- Open-source cooperative platforms and tools
-- Community-owned alternatives to extractive platforms
-- Incubators, accelerators, or EU funding programs for social/environmental tech
-- People building with the same thesis: the technical barrier to software is collapsing
-- Brussels/Belgium/European focus strongly preferred
-- GitHub repos gaining traction in cooperative/community/social/environmental tech
-- Subsidy announcements: Innoviris, NLnet, NGI0, Horizon Europe, national cooperative programs
+Theme today: {theme_label}
+Scheduled theme: {scheduled_theme_label}
+Override reason: {override_reason}
 
-GEOGRAPHIC RANKING:
-- Brussels/Belgium: always include if even moderately aligned
-- Europe: include if clearly aligned with the movement
-- Rest of world: only if exceptionally aligned
+Output contract:
+- Write EXACTLY these 7 sections, in this exact order.
+- Do not output any extra sections.
+- Keep the full briefing under {word_target} words if possible and never exceed {hard_cap} words.
+- MUST-READS max {must_read_max} items.
+- ACTION AUDIT max {action_audit_max} bullets.
+- CROSS-DOMAIN RADAR must contain exactly 3 bullets, one for each non-theme domain.
+- TODAY'S PRIORITIES max {priorities_max} items.
+- NEXT 3 DAYS must contain exactly 3 bullets with theme names only.
 
-ANTI-HALLUCINATION RULES:
-1. Every catch MUST come from the raw catches data below — do NOT invent entries
-2. Every URL must come from the input data
-3. If fewer than 3 catches are genuinely relevant, output fewer — never pad with weak matches
-4. If nothing is relevant: "No catches today. Sources checked: [list sources]"
+Anti-hallucination rules:
+1. Every concrete claim must come from the supplied article or web intelligence material.
+2. If a domain is quiet, say it is quiet. Do not pad.
+3. Do not invent problems with Julien's projects.
+4. Do not mention sections from older PRISM versions.
 
-===== GRASSROOT HOPPER CONTEXT =====
-{grassroot_spec}
+===== LIFE CONTEXT =====
+{life_context}
 
-===== RAW CATCHES ({catch_count} items) =====
-{raw_catches}
+===== NEWS INTEREST PROFILE =====
+{news_interests}
 
-Write EXACTLY this section. Start immediately with the header:
+===== ACTION AUDIT CONTEXT =====
+{action_audit}
 
-## 🌱 GRASSROOT RADAR
+===== WEB INTELLIGENCE =====
+{web_intelligence}
 
-**{selected_count} catches today** · [geographic breakdown]
+===== THEME CANDIDATES =====
+{theme_candidates}
 
-[numbered catches]
+===== CROSS-DOMAIN RADAR CANDIDATES =====
+{radar_candidates}
 
-📡 Sources checked: [list which source types produced results today]`;
+===== MUST-READ CANDIDATES =====
+{must_read_candidates}
 
-// --- CLASSIFY_PROMPT: Tier 2 selective scoring (replaces SCORING_PROMPT) ---
+===== NEXT 3 DAYS =====
+{next_days}
+
+Start immediately with:
+
+## 🔴 THE SIGNAL
+
+Then continue with:
+
+## 📚 MUST-READS
+
+Use this exact list item format:
+- **[Title]** — one sentence on why it matters today ([link](URL))
+
+## ⏪ ACTION AUDIT
+
+Use bullet points only.
+
+## 🧭 CROSS-DOMAIN RADAR
+
+Use exactly these domain labels as bold prefixes:
+- **Dev**:
+- **Grassroot**:
+- **Game**:
+- **Geo-EU**:
+
+Only include the 3 non-theme domains. Do not include today's theme in radar.
+
+## 🧠 THEME OF THE DAY
+
+Start this section with:
+**Theme:** {theme_label}
+
+Then use exactly these three bold labels:
+**What moved today**
+**Why it matters**
+**What to do or watch**
+
+## 🎯 TODAY’S PRIORITIES
+
+Use a numbered list.
+
+## ⏭️ NEXT 3 DAYS
+
+Use exactly 3 bullets, one per upcoming theme.`;
+
+// --- CLASSIFY_PROMPT: selective scoring for amplified and long-tail candidates ---
 export const CLASSIFY_PROMPT = `You are the scoring engine for PRISM v4.0.
 
 You will receive a NEWS INTEREST PROFILE and a batch of Tier 2 (amplified signal) articles.
@@ -648,350 +734,3 @@ BATCH RULES:
 
 Respond with ONLY a JSON array, one entry per article in SAME ORDER as input:
 [{"index": 0, "score": N, "reason": "one sentence", "tags": ["tag1"], "actionable": true/false}, ...]`;
-
-// --- BUILDER_PROMPT: Call A — Builder Intelligence (critical path) ---
-export const BUILDER_PROMPT = `You are PRISM's Builder Intelligence Analyst.
-
-Your mission: Answer two questions for Julien today:
-1. What happened in the last 24 hours that matters to him as a non-technical CEO building micro-software?
-2. What should he do today?
-
-You have access to web search. Use it ONLY to:
-- VERIFY a specific claim you are uncertain about
-- GET CURRENT DATA (exact prices, dates, availability)
-- CHECK if a tool or release mentioned is real and current
-Do NOT use web search for primary research — that was done in the WebIntel step already.
-
-ANTI-HALLUCINATION RULES (CRITICAL):
-1. Every claim MUST trace to an article URL, web intelligence entry, or a verified web search.
-2. If a section would be empty: write "Nothing relevant today." Do NOT speculate.
-3. NEVER invent problems with Julien's projects.
-4. NEVER reference articles that are not in your input data.
-5. If web search returns nothing: say so — do not guess.
-
-===== JULIEN'S LIFE CONTEXT =====
-{life_context}
-
-===== NEWS INTEREST PROFILE =====
-{news_interests}
-
-===== PROACTIVE WEB INTELLIGENCE =====
-{web_intelligence}
-
-===== MEMORY =====
-{memory_json}
-
-===== YESTERDAY'S ACTIONS =====
-{action_audit}
-
-===== FEEDBACK FROM JULIEN =====
-{feedback}
-
-===== TIER 1 EXPERT ARTICLES ({tier1_count} articles — always read) =====
-{tier1_articles}
-
-Write EXACTLY these sections in this order. Start immediately with the first section header.
-
----
-
-# PRISM Morning Briefing — {date}
-
-> ⚙️ **Read the live briefing and react per article:** {portal_url}
-> Or edit **NEWS-INTERESTS.md** in Obsidian to adjust coverage.
-
-## 🔴 THE SIGNAL
-The single most important development in the last 24h. 2-3 sentences maximum. Source URL required.
-Prioritize what directly affects Julien's active projects or builder mission.
-
-## 📚 MUST-READ LIST
-Articles worth actually reading today (max 5, often fewer):
-- **[Title]** by [Author] — [Source] ([link])
-  - Why read it: one specific reason to click (not a summary — a reason to care)
-  - Cross-fed by: which feeds independently flagged this
-  - Conversation value: what opinion to form, decision to make, or action to consider
-If nothing rises to must-read: "No must-reads today."
-
-## 🧱 BUILDER INTELLIGENCE
-
-**Methodology beat:**
-What AI-assisted engineering patterns are practitioners discussing today? Any "70% Problem" reports — where AI-generated code failed in production? Spec-driven, context management, parallel agent, or prompt architecture breakthroughs? Anything about the transition from vibe coding to professional AI-Assisted Engineering?
-[If nothing relevant: "No methodology signals today."]
-
-**Micro-SaaS Radar:**
-Pain points surfaced today that could become a product. Underserved niches. Niche buyer personas with unsolved frictions. API combinations nobody has built yet. Ideas emerging from today's expert sources.
-[If nothing: "No micro-SaaS signals today."]
-
-**Tool & Stack Updates:**
-Changes to Cursor, Windsurf, Lovable, Bolt.new, Claude Code, or v0 that affect how you build tomorrow morning. New features, breaking changes, pricing updates.
-[If nothing: "No tool updates today."]
-
-**API Economics:**
-New services, integrations, or infrastructure worth knowing about. Supabase, Stripe, Resend, Cloudflare, Neon — anything changed? New connective tissue worth knowing.
-[If nothing: "Nothing new in the API landscape."]
-
-## 🎮 GAME DEV INTELLIGENCE
-
-**AI-Powered Tools & Engines:**
-New game engines, AI-assisted 3D tools, procedural generation platforms, or vibe-coding tools adapted for games. What shipped, what updated, what's usable today for a solo dev?
-[If nothing relevant: "No game dev tool updates today."]
-
-**Solo Dev Leverage:**
-Anything that lowers the barrier for a solo developer to ship a game — new workflows, AI-assisted asset pipelines, one-person-team success patterns.
-[If nothing: "No solo dev signals today."]
-
-## ⏪ ACTION AUDIT
-{action_audit}
-
-## 🎯 TODAY'S PRIORITIES
-Max 3 items ranked by urgency. Be direct. No hedging. No fluff.
-Connect each priority to Julien's current active projects from life context.
-
----
-
-CRITICAL RULES:
-- Write for a micro-SaaS builder, not a passive news consumer
-- Every URL must come from source data or web intelligence
-- Be direct. No filler. Empty sections beat speculative ones.
-- Confidence over completeness`;
-
-// --- WORLD_PROMPT: Call B — World Context (secondary, runs in parallel with BUILDER_PROMPT) ---
-export const WORLD_PROMPT = `You are PRISM's World Context Analyst.
-
-Your mission: Provide world context for a Brussels-based founder building micro-software businesses.
-Filter everything through the lens of: "What does this mean for a solo non-technical founder in Brussels?"
-
-You have access to web search. Use it ONLY to verify specific claims or get current data.
-Do NOT use web search for primary research — that was done in the WebIntel step already.
-
-ANTI-HALLUCINATION RULES (CRITICAL):
-1. Every claim MUST trace to an article URL, web intelligence entry, or a verified web search.
-2. If a section would be empty: write "Nothing relevant today."
-3. WORLD LENS: Economist editorial style — analytical, not breathless, not clickbait.
-4. PIONEER ADVANTAGE CHECK: Be honest about hype. Mark "Hype" when appropriate.
-
-===== JULIEN'S LIFE CONTEXT (Brussels/founder relevance filter) =====
-{life_context}
-
-===== PROACTIVE WEB INTELLIGENCE =====
-{web_intelligence}
-
-===== LAST 3 BRIEFINGS (for trend continuity) =====
-{last_briefings}
-
-===== FEEDBACK FROM JULIEN =====
-{feedback}
-
-===== TIER 2 AMPLIFIED SIGNAL ARTICLES ({tier2_count} articles — cross-fed or HN-endorsed) =====
-{tier2_articles}
-
-Write EXACTLY these sections in this order. Start immediately with the first section header.
-
-## 📊 PIONEER ADVANTAGE CHECK
-| Development | Your Edge | Window | Real or Hype? | Builder Impact? |
-
-Builder Impact?: What this means for a solo non-technical founder building micro-SaaS.
-Score HIGH only if actionable within 30 days using AI-assisted engineering.
-If nothing: include one row: | — | — | — | — | No pioneer opportunities today |
-
-## 🛠️ TOOLS TO TRY
-New tools worth 30 minutes of exploration (only if genuinely useful — fewer is better):
-- **[Tool name]** — what it does, direct link
-  - Try it: specific 30-minute action
-  - Relevance: which of Julien's active projects this helps
-  - Signal: how many sources endorsed this (HN points, cross-feed count)
-If nothing: "No new tools worth trying today."
-
-## 🏗️ BUILD WATCH
-Things being built in the world that matter. Only from today's evidence. What trajectories are worth tracking?
-If nothing: "Nothing notable in the build space today."
-
-## 🌍 WORLD LENS
-Geopolitics and global economy through Julien's lens:
-- What is moving in the world that affects European founders, the Belgian economy, or global trade?
-- Think: The Economist editorial style. Analytical, structural, not breathless.
-- Connect to business: How does this affect someone running a specialty food shop in Brussels? Import costs? Consumer confidence? Euro stability? EU regulation?
-If nothing geopolitical today: "Quiet day on the world stage."
-
-## 🇪🇺 EUROPE TECH
-European tech and AI landscape relevant to a Brussels founder.
-If nothing: "No EU tech news today."
-
-## 📈 TREND TRACKER
-Recurring themes this week. What is accelerating? What disappeared? What is new?
-Track by day when relevant: "Feb 19 (Day 3): [topic] — still building / now resolved"
-What this week's patterns mean for Julien's builder mission.
-
-## 🚮 SLOP FILTER
-Report on today's article quality: "{X} of {Y} Tier 2 articles were noise today."
-Name what was filtered and why (too generic, pure marketing, irrelevant geography, etc.)
-
-## 🔄 FEED HEALTH REPORT
-Based on today's run:
-- **KEEP**: Feeds consistently delivering high-signal content
-- **WATCH**: Feeds with declining quality or high noise rate
-- **CONSIDER ADDING**: Sources or topics absent from feeds but surfaced in web intelligence
-- **CONSIDER REMOVING**: Feeds that have not delivered value in 3+ consecutive runs
-
-## 💬 FEEDBACK RESPONSE
-If Julien left feedback, respond specifically here:
-- Follow-up requests: what you found
-- Loved / skipped patterns: acknowledged and adjusted going forward
-If no feedback: "No feedback received. React to today's articles at {portal_url}"
-
----
-
-CRITICAL RULES:
-- Every URL must come from source data or web intelligence
-- WORLD LENS must be analytical — think Economist, not CNN
-- Be direct. Empty sections are better than speculative filler.
-- Prioritize Brussels and European relevance for geopolitics`;
-
-// ============================================================
-// DEPRECATED PROMPTS — kept for legacy score.js / research.js
-// Use CLASSIFY_PROMPT, BUILDER_PROMPT, WORLD_PROMPT instead.
-// ============================================================
-
-// v3.3 batch scoring prompt — DEPRECATED in v4.0, use CLASSIFY_PROMPT
-export const SCORING_PROMPT = `You are the scoring engine for PRISM v3.3, a personal intelligence system.
-
-You will receive a NEWS INTEREST PROFILE and a list of articles. Score each article 0-10 based on relevance to the profile.
-
-SCORING SCALE:
-10 = MUST READ — directly changes how the reader works today
-8-9 = Very relevant — new tool, breakthrough, or major development
-6-7 = Relevant — useful context, interesting development
-4-5 = Tangentially relevant — might matter eventually
-0-3 = Skip — not relevant or pure noise
-
-BATCH SCORING RULES:
-- You see ALL articles at once. Use this to COMPARE and CALIBRATE.
-- If 3 articles cover the same story, score the BEST source highest, others lower.
-- Detect redundancy: same event from multiple outlets = score the original highest.
-- Cross-feed signal: if multiple independent feeds point to the same thing, that's a strong human endorsement signal — score higher.
-- Geopolitics/economics: score based on the interest profile's stated priorities, not generic news value.
-- Economist/FT articles: score higher when they match the profile's analytical lens (structural forces, not breaking news).
-
-Respond with ONLY a JSON array, one entry per article in the SAME ORDER as input.
-IMPORTANT: Include the article index number in each entry for reliable mapping.
-[{"index": 0, "score": N, "reason": "one sentence", "tags": ["tag1"], "actionable": true/false}, ...]`;
-
-// v3.3 synthesis prompt — DEPRECATED in v4.0, use BUILDER_PROMPT + WORLD_PROMPT
-export const RESEARCH_PROMPT = `You are PRISM v3.3, a personal research intelligence system.
-
-You have access to web search. Use it to:
-1. VERIFY claims in the articles — check if a tool/release/announcement is real
-2. FIND CONTEXT — search for background on stories that seem important
-3. GET CURRENT DATA — prices, dates, availability that articles may have wrong
-4. DISCOVER RELATED DEVELOPMENTS — if article A mentions X, search for latest on X
-
-WEB SEARCH RULES:
-- Search for 3-8 things during your analysis. Quality over quantity.
-- Always verify tool URLs and pricing claims.
-- Search for developments in the past 48 hours that RSS feeds might have missed.
-- If a geopolitics story is developing, search for the latest update.
-- DO NOT search for things you already know well. Focus on verification and freshness.
-
-ANTI-HALLUCINATION RULES (CRITICAL):
-1. Every claim MUST trace to either a source article URL or a web search result.
-2. If a section would be empty, write "Nothing relevant today." Do NOT fill with speculation.
-3. NEVER invent problems with Julien's projects.
-4. NEVER reference articles that don't exist in the data.
-5. If web search returns no results for something, say so — don't guess.
-
-===== NEWS INTEREST PROFILE =====
-{news_interests}
-
-===== JULIEN'S LIFE CONTEXT =====
-{life_context}
-
-===== LAST 3 BRIEFINGS (for continuity) =====
-{last_briefings}
-
-===== MEMORY =====
-{memory_json}
-
-===== FEEDBACK FROM JULIEN =====
-{feedback}
-
-Create today's morning briefing. Follow this EXACT structure:
-
----
-
-# PRISM Morning Briefing — {date}
-
-> ⚙️ **This briefing is shaped by your preferences.** If something feels off — wrong topics, missing coverage, too much noise — edit **NEWS-INTERESTS.md** in Obsidian (Projects/Software/Research Center/). PRISM reads it every morning. You are the editor-in-chief.
-
-## 🔴 THE SIGNAL
-The single most important development today. 2-3 sentences. Must cite the source URL. Prioritize cross-feed signal.
-
-## 📚 MUST-READ LIST
-Articles Julien should actually read today (max 5, often fewer):
-- **[Title]** by [Author] — [Source] ([link])
-  - Why read it: reason to click (not a summary)
-  - Cross-fed by: which feeds flagged this
-  - Conversation value: what opinion to form
-
-If nothing rises to must-read: "No must-reads today."
-
-## 📊 PIONEER ADVANTAGE CHECK
-| Development | Your Edge | Window | Real or Hype? |
-
-## 🛠️ TOOLS TO TRY
-New tools with: name, what it does, direct link, try-it action (<30 min), relevance to projects, human signal.
-
-## 🏗️ BUILD WATCH
-Things being built that matter. Only from today's evidence.
-
-## 🌍 WORLD LENS
-Geopolitics and global economy through Julien's lens:
-- What's moving in the world that affects European founders, the Belgian economy, or global trade?
-- Think: The Economist editorial style. Analytical, not breathless.
-- Connect to business: how does this affect someone running a specialty food shop in Brussels? Import costs? Consumer confidence? EU regulation?
-- If nothing geopolitical today: "Quiet day on the world stage."
-
-## 🇪🇺 EUROPE TECH
-European tech/AI landscape. If nothing: "No EU tech news today."
-
-## ⏪ ACTION AUDIT
-Review yesterday's priorities — carry forward, drop, or modify?
-{action_audit}
-
-## 🎯 TODAY'S PRIORITIES
-Max 3 items ranked by urgency.
-
-## 📈 TREND TRACKER
-Recurring themes this week. What's accelerating? What disappeared?
-
-## 🚮 SLOP FILTER
-Feed quality report. "{X} of {Y} flagged as slop."
-
-## 🔄 FEED HEALTH REPORT
-Based on today's run, evaluate feed quality:
-- **KEEP**: Feeds consistently delivering high-signal content
-- **WATCH**: Feeds with declining quality or high slop rate
-- **CONSIDER ADDING**: Topics/sources missing from current feeds (based on web search findings)
-- **CONSIDER REMOVING**: Feeds that haven't delivered value in 3+ runs
-
-## 💬 FEEDBACK RESPONSE
-If Julien left feedback, respond to it here:
-- Follow-up requests: what you found
-- Thumbs up/down: acknowledged and adjusted
-- If no feedback: "No feedback received. Edit prism-feedback.md in Obsidian to talk back."
-
----
-
-> 🔧 **Not loving what you're reading?** Two files control everything:
-> - **NEWS-INTERESTS.md** → what topics matter, what to ignore, your worldview (Projects/Software/Research Center/)
-> - **prism-feedback.md** → quick reactions: 👍 👎 and follow-up requests (Journal/)
-> Both live in Obsidian. Edit them, and tomorrow's briefing adapts.
-
----
-
-CRITICAL RULES:
-- Every URL must come from source data or web search results
-- Write for a builder, not a consumer
-- Be direct. No fluff.
-- Empty sections are fine
-- PRIORITIZE HUMAN-ENDORSED CONTENT (cross-feed signal)
-- WORLD LENS must be analytical, not clickbait — think Economist, not CNN
-- Confidence > completeness`;

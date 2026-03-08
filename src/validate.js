@@ -8,18 +8,17 @@ import { MODELS } from './config.js';
 
 const client = new Anthropic();
 
-const VALIDATION_PROMPT = `You are a fact-checker for PRISM v3.0, a personal intelligence briefing.
+const VALIDATION_PROMPT = `You are a fact-checker for PRISM v5.0, a personal intelligence briefing.
 
 You will receive a briefing (markdown) that was generated from source articles and web search.
 
 Your job: check every factual claim in the briefing.
 
-For each section of the briefing, evaluate:
-- Are all URLs mentioned likely real (properly formatted, from known domains)?
-- Are there any invented problems or crises not supported by evidence?
-- Are there any sections that feel like filler (vague, unsourced, speculative)?
-- Does the WORLD LENS section maintain an analytical tone (not clickbait)?
-- Does the FEED HEALTH REPORT contain reasonable recommendations?
+For the briefing, evaluate:
+- Are the factual claims and URLs likely real and internally consistent?
+- Are there any invented problems or personal advice not grounded in supplied evidence?
+- Does the briefing respect the compact 7-section contract instead of drifting into legacy PRISM sections?
+- Are there filler paragraphs that should be cut?
 
 CRITICAL: Flag any instance where the briefing invents a problem with Julien's projects that isn't supported by the articles.
 

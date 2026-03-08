@@ -1,13 +1,14 @@
 {
   "name": "prism",
-  "version": "4.0.0",
-  "description": "Personal Research Intelligence System — v4.0 The Smart Analyst: Trust Tiers, WebIntel, Parallel Synthesis, HTML Feedback Portal",
+  "version": "5.0.0",
+  "description": "Personal Research Intelligence System — v5.0 Daily Core + Rolling Theme Cycle",
   "type": "module",
   "main": "src/index.js",
   "scripts": {
     "start": "node src/index.js",
     "collect": "node -e \"import('./src/collect.js').then(m => m.default().then(a => console.log(JSON.stringify(a, null, 2))))\"",
-    "test": "node src/index.js --dry-run"
+    "test": "node --test test/*.test.js",
+    "test:dry-run": "node src/index.js --dry-run"
   },
   "author": "Julien",
   "license": "UNLICENSED",

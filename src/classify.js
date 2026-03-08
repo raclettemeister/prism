@@ -1,15 +1,12 @@
 // ============================================================
-// PRISM v4.0 Classify — Trust Tier Classification
-// Replaces: score.js (blind batch scoring of all articles)
+// PRISM v5.0 Classify — trust tiers + selective scoring
 //
-// Architecture:
-//   Tier 1 (Expert Trusted):   always read, no scoring — guaranteed inclusion
-//   Tier 2 (Amplified Signal): cross-fed (3+) or HN Best — selectively scored
-//   Tier 3 (Long Tail):        everything else — scored only if budget allows
+// Tier 1 (Expert Trusted):   always read, no scoring
+// Tier 2 (Amplified Signal): cross-fed (3+) or HN Best, selectively scored
+// Tier 3 (Long Tail):        everything else, scored only if budget allows
 //
-// The key insight: Julien already knows who he trusts. The 12 expert sources
-// in TRUST_TIERS.tier1 bypass the algorithm entirely. No more Dan Shipper
-// being scored 3.2 because the article title was abstract.
+// Classification is now editorially configured, not learned from old
+// portal feedback data.
 // ============================================================
 
 import { readFile } from 'fs/promises';
@@ -22,7 +19,6 @@ import {
   LIMITS,
   FEED_CATEGORIES,
   NEWS_INTERESTS_FILE,
-  MEMORY_FILE,
 } from './config.js';
 
 const client = new Anthropic();
@@ -58,15 +54,6 @@ function isTier2Amplified(article) {
 }
 
 // ── Data Loaders ─────────────────────────────────────────────
-
-async function loadMemory() {
-  try {
-    const raw = await readFile(MEMORY_FILE, 'utf-8');
-    return JSON.parse(raw);
-  } catch {
-    return {};
-  }
-}
 
 async function loadNewsInterests() {
   try {
@@ -177,10 +164,6 @@ async function batchScore(articles, newsInterests) {
 export default async function classify(articles) {
   console.log(`\n🏷️  CLASSIFY — ${articles.length} articles into Trust Tiers...`);
 
-  // Load memory for dynamic tier adjustments (learned source preferences)
-  const memory = await loadMemory();
-  const sourceRatings = memory.sourceRatings || {};
-
   // ── Tier Assignment ─────────────────────────────────────────
   const tier1Raw = [];
   const tier2Raw = [];
@@ -189,26 +172,12 @@ export default async function classify(articles) {
   for (const article of articles) {
     let assignedTier = null;
 
-    // Dynamic tier override: learned from cumulative feedback ratings
-    // A source consistently loved by Julien (avgScore >= 4.0, 10+ data points) → Tier 1
-    // A source consistently skipped (avgScore < 2.5, 8+ data points) → Tier 3
-    const ratingKey = article.source || '';
-    const rating = sourceRatings[ratingKey];
-    if (rating?.total >= 10 && rating.avgScore >= 4.0) {
-      assignedTier = 1; // Learned: consistently high-quality
-    } else if (rating?.total >= 8 && rating.avgScore < 2.5) {
-      assignedTier = 3; // Learned: consistently low-quality
-    }
-
-    // Static tier assignment (if no learned override)
-    if (!assignedTier) {
-      if (isTier1Source(article)) {
-        assignedTier = 1;
-      } else if (isTier2Amplified(article)) {
-        assignedTier = 2;
-      } else {
-        assignedTier = 3;
-      }
+    if (isTier1Source(article)) {
+      assignedTier = 1;
+    } else if (isTier2Amplified(article)) {
+      assignedTier = 2;
+    } else {
+      assignedTier = 3;
     }
 
     if (assignedTier === 1) tier1Raw.push({ ...article, tier: 1 });

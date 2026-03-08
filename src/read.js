@@ -1,13 +1,5 @@
 // ============================================================
-// PRISM v4.0 Read — Tier-aware article selection + full text fetch
-//
-// v4.0 changes:
-//   - Accepts { tier1, tier2, tier3, all } from classify.js (not flat scored list)
-//   - Target: 30 articles (down from 80) — higher quality, faster synthesis
-//   - Preserves tier assignment on each article for synthesize.js routing
-//   - Diversity algorithm unchanged; tier1 always included first
-//
-// v3.x: accepted flat scoredAll array from score.js, selected top 80
+// PRISM v5.0 Read — tier-aware article selection + full text fetch
 // ============================================================
 
 import * as cheerio from 'cheerio';
@@ -107,22 +99,15 @@ async function fetchFullText(url) {
 /**
  * Select top articles from classified tiers and fetch their full text.
  *
- * Accepts either:
- *   - v4.0: classified object { tier1, tier2, tier3 } from classify.js
- *   - v3.x: flat scored array from score.js (backward compatible)
- *
  * Returns articles with fullText / fullTextAvailable added,
  * tier property preserved for synthesize.js routing.
  *
- * @param {object[]|{tier1, tier2, tier3}} input - Articles from classify.js or score.js
+ * @param {{tier1, tier2, tier3}} input - Articles from classify.js
  * @param {number} [target=30] - Target article count
  * @returns {Promise<object[]>} Articles with full text
  */
 export default async function read(input, target = 30) {
-  // v3.x backward compat: if passed a flat array, wrap it
-  const classified = Array.isArray(input)
-    ? { tier1: [], tier2: input.filter(a => a.score >= 4), tier3: input.filter(a => a.score < 4) }
-    : input;
+  const classified = input;
 
   const selected = selectArticles(classified, target);
 

@@ -1,30 +1,22 @@
 // ============================================================
-// PRISM v3.0 Email Template — Section colors for new sections, v3.0 footer
+// PRISM v5.0 Email Templates
 // ============================================================
 
 import { marked } from 'marked';
+import { extractSection } from './briefing-format.js';
 
 const SECTION_BORDERS = {
   'the signal': '#dc2626',
   'must-read': '#9333ea',
-  'pioneer advantage': '#7c3aed',
-  'tools to try': '#2563eb',
-  'build watch': '#ea580c',
-  'world lens': '#0ea5e9',       // v3.0: sky blue — geopolitics
-  'europe lens': '#003399',
-  'europe tech': '#003399',      // v3.0: alias
   'action audit': '#f59e0b',
+  'cross-domain radar': '#2563eb',
+  'theme of the day': '#0f766e',
   "today's priorities": '#16a34a',
-  'trend tracker': '#6b7280',
-  'feed health': '#a855f7',      // v3.0: purple — feed management
-  'feedback response': '#14b8a6', // v3.0: teal — feedback
-  'slop filter': '#78716c',
-  'deep dive': '#4c1d95',
+  'next 3 days': '#6b7280',
 };
 const SECTION_BACKGROUNDS = {
-  'deep dive': '#f5f0ff',
-  'world lens': '#f0f9ff',
-  'feedback response': '#f0fdfa',
+  'theme of the day': '#f0fdfa',
+  'cross-domain radar': '#eff6ff',
 };
 
 function getSectionColor(headerText) {
@@ -44,8 +36,7 @@ function getSectionBackground(headerText) {
 }
 
 /**
- * Convert markdown briefing to HTML with section cards (left border accent).
- * All CSS inline for email client compatibility.
+ * Convert a full briefing markdown file to styled HTML with section cards.
  */
 export function renderEmail(briefingMarkdown, date) {
   const parts = briefingMarkdown.split(/\n(?=##\s)/);
@@ -121,42 +112,88 @@ export function renderEmail(briefingMarkdown, date) {
   ${headerBlock}
   ${sectionHtml}
   <div style="margin-top:32px;padding-top:16px;border-top:1px solid #e5e7eb;font-size:12px;color:#9ca3af;">
-    PRISM v3.0 — Built by Julien · Powered by Claude Sonnet 4.6 · ${date}
+    PRISM v5.0 · ${date}
   </div>
 </body>
 </html>`;
 }
 
 /**
- * Digest email: short summary + single portal link only.
- * Used to avoid spam-filter rejection (no full briefing, no external links).
+ * Digest email: self-contained summary of the 7-section v5 briefing.
  * Returns { html, text }.
  */
-export function renderDigestEmail(liveUrl, dateStr, stats = {}) {
-  const t1 = stats.tier1Count ?? 0;
-  const t2 = stats.tier2Count ?? 0;
-  const t3 = stats.tier3Count ?? 0;
-  const n = stats.articlesAnalyzed ?? t1 + t2 + t3;
+export function renderDigestEmail(briefingMarkdown, dateStr, stats = {}) {
+  const signal = sectionBody(briefingMarkdown, '## 🔴 THE SIGNAL');
+  const mustReads = sectionBody(briefingMarkdown, '## 📚 MUST-READS');
+  const priorities = sectionBody(briefingMarkdown, '## 🎯 TODAY’S PRIORITIES');
+  const theme = sectionBody(briefingMarkdown, '## 🧠 THEME OF THE DAY');
+  const nextDays = sectionBody(briefingMarkdown, '## ⏭️ NEXT 3 DAYS');
   const conf = stats.confidence != null ? `${(stats.confidence * 100).toFixed(0)}%` : '—';
-  const line = n ? `${n} articles (T1: ${t1}, T2: ${t2}, T3: ${t3}). Confidence ${conf}.` : `Briefing ready. Confidence ${conf}.`;
 
-  const linkLine = liveUrl ? `Read the full briefing: ${liveUrl}` : 'Configure PRISM_PORTAL_URL for the live briefing link.';
-  const text = `PRISM briefing for ${dateStr} is ready.\n\n${line}\n\n${linkLine}`;
+  const text = [
+    `PRISM briefing for ${dateStr}`,
+    '',
+    `Confidence: ${conf}`,
+    '',
+    'THE SIGNAL',
+    signal,
+    '',
+    'MUST-READS',
+    stripMarkdownBullets(mustReads),
+    '',
+    'THEME OF THE DAY',
+    stripMarkdownBullets(theme),
+    '',
+    'TODAY’S PRIORITIES',
+    stripMarkdownBullets(priorities),
+    '',
+    'NEXT 3 DAYS',
+    stripMarkdownBullets(nextDays),
+  ].join('\n');
 
-  const linkHtml = liveUrl
-    ? `<a href="${liveUrl}" style="color:#2563eb;text-decoration:underline;">Read the full briefing</a>`
-    : '<span style="color:#6b7280;">Configure PRISM_PORTAL_URL for the link.</span>';
   const html = `<!DOCTYPE html>
 <html>
 <head><meta charset="utf-8"></head>
 <body style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-size:15px;line-height:1.6;color:#1a1a1a;max-width:560px;margin:0 auto;padding:24px;">
   <div style="font-size:18px;font-weight:700;margin-bottom:12px;">PRISM</div>
   <p style="margin:0 0 12px;">Your briefing for ${dateStr} is ready.</p>
-  <p style="margin:0 0 16px;color:#4b5563;">${line}</p>
-  <p style="margin:0;">${linkHtml}</p>
+  <p style="margin:0 0 16px;color:#4b5563;">Confidence ${conf}.</p>
+  <div style="border-left:4px solid #dc2626;padding-left:12px;margin:16px 0;">
+    <div style="font-weight:700;margin-bottom:6px;">THE SIGNAL</div>
+    ${marked.parse(signal)}
+  </div>
+  <div style="margin:16px 0;">
+    <div style="font-weight:700;margin-bottom:6px;">MUST-READS</div>
+    ${marked.parse(mustReads)}
+  </div>
+  <div style="margin:16px 0;">
+    <div style="font-weight:700;margin-bottom:6px;">THEME OF THE DAY</div>
+    ${marked.parse(theme)}
+  </div>
+  <div style="margin:16px 0;">
+    <div style="font-weight:700;margin-bottom:6px;">TODAY’S PRIORITIES</div>
+    ${marked.parse(priorities)}
+  </div>
+  <div style="margin:16px 0;">
+    <div style="font-weight:700;margin-bottom:6px;">NEXT 3 DAYS</div>
+    ${marked.parse(nextDays)}
+  </div>
   <p style="margin:24px 0 0;font-size:12px;color:#9ca3af;">PRISM · ${dateStr}</p>
 </body>
 </html>`;
 
   return { html, text };
+}
+
+function sectionBody(markdown, header) {
+  const section = extractSection(markdown, header);
+  if (!section) return 'Nothing notable today.';
+  return section.replace(/^## .+\n+/m, '').trim() || 'Nothing notable today.';
+}
+
+function stripMarkdownBullets(text) {
+  return text
+    .replace(/\*\*/g, '')
+    .replace(/\[link\]\(([^)]+)\)/g, '$1')
+    .trim();
 }

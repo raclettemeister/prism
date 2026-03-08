@@ -11,7 +11,7 @@ on:
 jobs:
   run-prism:
     runs-on: ubuntu-latest
-    timeout-minutes: 35  # v4.0: parallel synthesis targets 11-21 min (was 22-40 min in v3.3)
+    timeout-minutes: 35
 
     steps:
       - name: Checkout repo
@@ -40,31 +40,6 @@ jobs:
           MYLIFEOS_PAT: ${{ secrets.MYLIFEOS_PAT }}
           MYLIFEOS_REPO: ${{ secrets.MYLIFEOS_REPO }}
 
-      - name: Copy feedback from MylifeOS
-        run: |
-          if [ -n "$MYLIFEOS_PAT" ] && [ -n "$MYLIFEOS_REPO" ]; then
-            # Normalize repo: raw.githubusercontent.com expects "owner/repo" without .git
-            REPO_NORM="${MYLIFEOS_REPO%.git}"
-            TMP=$(mktemp)
-            if curl -sf -H "Authorization: token $MYLIFEOS_PAT" \
-              "https://raw.githubusercontent.com/$REPO_NORM/main/Journal/prism-feedback.md" \
-              -o "$TMP"; then
-              # Do not overwrite with redirect or HTML error pages
-              if grep -q -e "Temporary Redirect" -e "Moved Permanently" -e "<!DOCTYPE" -e "<a href" "$TMP" 2>/dev/null; then
-                echo "⚠️ MylifeOS returned redirect/HTML — clearing feedback-latest.md (use Worker JSON or fix MylifeOS URL)"
-                printf '' > data/feedback-latest.md
-              else
-                mv "$TMP" data/feedback-latest.md
-              fi
-            else
-              echo "⚠️ No feedback file found — first run"
-            fi
-            rm -f "$TMP"
-          fi
-        env:
-          MYLIFEOS_PAT: ${{ secrets.MYLIFEOS_PAT }}
-          MYLIFEOS_REPO: ${{ secrets.MYLIFEOS_REPO }}
-
       - name: Run PRISM
         run: node src/index.js
         env:
@@ -72,55 +47,12 @@ jobs:
           RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
           MYLIFEOS_REPO: ${{ secrets.MYLIFEOS_REPO }}
           MYLIFEOS_PAT: ${{ secrets.MYLIFEOS_PAT }}
-          # v4.0: PRISM Portal + Feedback Worker
-          PRISM_PORTAL_URL: ${{ secrets.PRISM_PORTAL_URL }}
-          FEEDBACK_WORKER_URL: ${{ secrets.FEEDBACK_WORKER_URL }}
-          PRISM_FEEDBACK_SECRET: ${{ secrets.PRISM_FEEDBACK_SECRET }}
 
       - name: Commit briefing and data
         run: |
           git config user.name "PRISM Bot"
           git config user.email "prism@noreply.github.com"
           git add briefings/ data/
-          git diff --staged --quiet || git commit -m "📡 PRISM v4.0 briefing $(date +%Y-%m-%d)"
+          git diff --staged --quiet || git commit -m "📡 PRISM v5.0 briefing $(date +%Y-%m-%d)"
           git pull --rebase origin main
           git push
-
-      - name: Deploy briefing to Cloudflare Pages
-        if: env.CLOUDFLARE_API_TOKEN != '' && env.CLOUDFLARE_ACCOUNT_ID != ''
-        run: |
-          # Create the Pages project if it doesn't exist yet.
-          # (prism-portal was previously a Worker service — Pages is a separate product)
-          npx wrangler pages project create prism-portal --production-branch=main 2>/dev/null || true
-          npx wrangler pages deploy briefings --project-name=prism-portal --branch=main
-        env:
-          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-
-      - name: Push feedback template to MylifeOS
-        run: |
-          if [ -n "$MYLIFEOS_PAT" ] && [ -n "$MYLIFEOS_REPO" ] && [ -f "data/feedback-template.md" ]; then
-            # Get current file SHA (if exists) for update
-            SHA=$(curl -sf -H "Authorization: token $MYLIFEOS_PAT" \
-              "https://api.github.com/repos/$MYLIFEOS_REPO/contents/Journal/prism-feedback.md" \
-              | python3 -c "import sys,json; print(json.load(sys.stdin).get('sha',''))" 2>/dev/null || echo "")
-
-            CONTENT=$(base64 -w 0 data/feedback-template.md)
-
-            if [ -n "$SHA" ]; then
-              curl -sf -X PUT -H "Authorization: token $MYLIFEOS_PAT" \
-                "https://api.github.com/repos/$MYLIFEOS_REPO/contents/Journal/prism-feedback.md" \
-                -d "{\"message\":\"📡 PRISM feedback template $(date +%Y-%m-%d)\",\"content\":\"$CONTENT\",\"sha\":\"$SHA\"}" \
-                > /dev/null && echo "✅ Feedback template pushed to MylifeOS" || echo "⚠️ Failed to push feedback template"
-            else
-              curl -sf -X PUT -H "Authorization: token $MYLIFEOS_PAT" \
-                "https://api.github.com/repos/$MYLIFEOS_REPO/contents/Journal/prism-feedback.md" \
-                -d "{\"message\":\"📡 PRISM feedback template $(date +%Y-%m-%d)\",\"content\":\"$CONTENT\"}" \
-                > /dev/null && echo "✅ Feedback template pushed to MylifeOS" || echo "⚠️ Failed to push feedback template"
-            fi
-          else
-            echo "⚠️ No feedback template to push"
-          fi
-        env:
-          MYLIFEOS_PAT: ${{ secrets.MYLIFEOS_PAT }}
-          MYLIFEOS_REPO: ${{ secrets.MYLIFEOS_REPO }}

@@ -1,17 +1,17 @@
 #!/usr/bin/env node
 // ============================================================
-// PRISM v4.0 — Personal Research Intelligence System
+// PRISM v5.0 — Personal Research Intelligence System
 //
 // Pipeline: context → deepdive → collect →
 //           [classify ∥ webintel] → read →
-//           synthesize (A∥B) → validate → page → deliver
+//           themed synthesize → validate → deliver
 //
-// v4.0 changes vs v3.3:
-//   - classify.js replaces score.js (Trust Tier system)
-//   - webintel.js runs in parallel with classify (proactive web intel)
-//   - synthesize.js replaces research.js (parallel A+B calls)
-//   - page.js generates HTML briefing with feedback UI
-//   - Total runtime target: 11-21 min (was 22-40 min in v3.3)
+// v5.0 changes:
+//   - daily core + rolling theme cycle replaces all-sections-every-day
+//   - webintel guarantees one query per domain plus extra depth for today's theme
+//   - synthesize.js produces a single 7-section briefing contract
+//   - HTML portal/feedback loop removed from the run path
+//   - Total runtime target: faster and smaller than v4.0
 // ============================================================
 
 import generateContext from './context.js';
@@ -19,13 +19,12 @@ import deepdive from './deepdive.js';
 import collect from './collect.js';
 import classify from './classify.js';
 import webintel from './webintel.js';
-import scout from './scout.js';
 import read from './read.js';
 import synthesize from './synthesize.js';
 import validate from './validate.js';
-import generatePage from './page.js';
 import deliver from './deliver.js';
 import { format } from 'date-fns';
+import { LIMITS } from './config.js';
 
 const isDryRun = process.argv.includes('--dry-run');
 
@@ -33,7 +32,7 @@ async function main() {
   const startTime = Date.now();
 
   console.log('═══════════════════════════════════════════════');
-  console.log('  PRISM v4.0 — Personal Research Intelligence');
+  console.log('  PRISM v5.0 — Personal Research Intelligence');
   console.log(`  ${new Date().toISOString()}`);
   console.log('═══════════════════════════════════════════════');
 
@@ -64,18 +63,11 @@ async function main() {
     }
 
     // ── Steps 2+3: Classify + WebIntel (PARALLEL) ────────────
-    // Trust Tier classification and proactive web intelligence run concurrently.
-    // classify.js assigns tiers — Tier 1 expert sources bypass scoring entirely.
-    // webintel.js generates and executes targeted searches before synthesis.
-    console.log('\n⚡ Running classify + webintel + scout in parallel...');
+    console.log('\n⚡ Running classify + webintel in parallel...');
 
-    const scoutArticles = articles.filter(a => a.scoutOnly);
-    const classifyArticles = articles.filter(a => !a.scoutOnly);
-
-    const [classified, webIntelContent, scoutResult] = await Promise.all([
-      classify(classifyArticles.length > 0 ? classifyArticles : articles),
+    const [classified, webIntelData] = await Promise.all([
+      classify(articles),
       webintel(),
-      scout(scoutArticles),
     ]);
 
     totalInputTokens += classified.tokens.input;
@@ -85,7 +77,7 @@ async function main() {
     console.log(`\n  Tier summary: T1=${tier1.length} T2=${tier2.length} T3=${tier3.length}`);
 
     // ── Step 4: Read (select 30, fetch full text) ─────────────
-    const articlesToAnalyze = await read(classified, 30);
+    const articlesToAnalyze = await read(classified, LIMITS.readTargetArticles);
     if (articlesToAnalyze.length === 0) {
       console.log('\n⚠️ No articles to analyze. Exiting.');
       process.exit(1);
@@ -104,13 +96,13 @@ async function main() {
       console.log(`  ... and ${articlesToAnalyze.length - 8} more`);
     }
 
-    // ── Step 5: Synthesize (Call A ∥ Call B) ──────────────────
-    // Call A (Builder Intelligence) + Call B (World Context) run in parallel.
+    // ── Step 5: Synthesize — daily core + rolling theme ───────
     const { briefing, filepath, tokens: synthTokens, webSearches } = await synthesize(
       articlesToAnalyze,
       classified,
       deepDiveReport,
-      scoutResult
+      articles,
+      webIntelData
     );
     totalInputTokens += synthTokens.input_tokens;
     totalOutputTokens += synthTokens.output_tokens;
@@ -120,11 +112,9 @@ async function main() {
     totalInputTokens += valTokens.input_tokens;
     totalOutputTokens += valTokens.output_tokens;
 
-    // ── Step 7: Generate HTML page ───────────────────────────
+    // ── Step 7: Deliver ──────────────────────────────────────
     const today = format(new Date(), 'yyyy-MM-dd');
-    const pageFilepath = await generatePage(validatedBriefing, today, articlesToAnalyze.length);
-
-    // ── Step 8: Deliver ──────────────────────────────────────
+    const totalWebSearches = (webIntelData?.results?.length || 0) + (webSearches || 0);
     const finalStats = {
       articlesScored: articles.length,
       articlesAnalyzed: articlesToAnalyze.length,
@@ -134,27 +124,22 @@ async function main() {
       totalTokens: totalInputTokens + totalOutputTokens,
       estimatedCost: estimateCost(totalInputTokens, totalOutputTokens),
       confidence,
-      webSearches: webSearches || 0,
+      webSearches: totalWebSearches,
     };
     const emailResult = await deliver(validatedBriefing, finalStats);
 
     // ── Done ─────────────────────────────────────────────────
     const elapsed = ((Date.now() - startTime) / 1000).toFixed(1);
     const finalCost = estimateCost(totalInputTokens, totalOutputTokens);
-    const portalBase = process.env.PRISM_PORTAL_URL || '';
-    const liveUrl = portalBase ? `${portalBase}/${today}.html` : pageFilepath;
-
     console.log('\n═══════════════════════════════════════════════');
-    console.log('  PRISM v4.0 RUN COMPLETE');
+    console.log('  PRISM v5.0 RUN COMPLETE');
     console.log('═══════════════════════════════════════════════');
     console.log(`  Context:      ${contextResult.generated ? '✅ Fresh (' + contextResult.filesRead + ' files)' : '⏭️  ' + contextResult.reason}`);
     console.log(`  Briefing:     ${filepath}`);
-    console.log(`  Live page:    ${liveUrl}`);
     console.log(`  Email:        ${emailResult.sent ? '✅ Sent' : '❌ ' + emailResult.reason}`);
     console.log(`  Confidence:   ${(confidence * 100).toFixed(0)}%`);
     console.log(`  Articles:     ${articles.length} collected → T1:${t1Read} T2:${t2Read} T3:${t3Read} → ${articlesToAnalyze.length} read`);
-    console.log(`  Web searches: ${webSearches || 0} (webintel) + synthesis`);
-    console.log(`  Scout:        ${scoutResult?.searchCount || 0} searches, ${scoutResult?.catchCount || 0} raw catches`);
+    console.log(`  Web searches: ${totalWebSearches} (webintel + conditional scout)`);
     console.log(`  Tokens:       ${totalInputTokens.toLocaleString()} in / ${totalOutputTokens.toLocaleString()} out`);
     console.log(`  Cost:         ~$${finalCost}`);
     console.log(`  Time:         ${elapsed}s`);

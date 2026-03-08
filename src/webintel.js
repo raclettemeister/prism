@@ -1,16 +1,9 @@
 // ============================================================
-// PRISM v4.0 WebIntel — Proactive Web Intelligence
-// NEW module. Runs in parallel with classify.js, BEFORE synthesis.
+// PRISM v5.0 WebIntel — cross-domain radar + themed depth
 //
-// Two-step process:
-//   Step 1: Generate 5-8 targeted search queries from life context
-//           (fast Claude call, no web search, ~30 seconds)
-//   Step 2: Execute all queries in parallel via Claude web search
-//           (2-3 minutes total, all queries concurrent)
-//
-// Output saved to data/web-intelligence.md
-// Both synthesis calls (Builder + World) receive this pre-built intelligence.
-// Web search during synthesis becomes verification-only — not primary research.
+// Each run generates:
+// - 1 query per theme (for daily oversight)
+// - 2 extra queries for the scheduled theme (for today's deep section)
 // ============================================================
 
 import { readFile, writeFile, mkdir, readdir } from 'fs/promises';
@@ -18,46 +11,48 @@ import Anthropic from '@anthropic-ai/sdk';
 import {
   MODELS,
   SONNET_46_BETAS,
-  WEBINTEL_PROMPT,
   LIMITS,
   LIFE_CONTEXT_FILE,
   BRIEFINGS_DIR,
   WEBINTEL_FILE,
+  MEMORY_FILE,
+  THEME_CONFIG,
+  THEMED_WEBINTEL_PROMPT,
 } from './config.js';
+import { ensureThemeCycle, getScheduledTheme, themeLabel } from './themes.js';
 
 const client = new Anthropic();
-
-// ── Data Loaders ─────────────────────────────────────────────
 
 async function loadLifeContext() {
   try {
     return await readFile(LIFE_CONTEXT_FILE, 'utf-8');
   } catch {
-    return 'Julien — Brussels-based founder. Building micro-SaaS with AI. Runs Chez Julien specialty food shop.';
+    return 'Julien — Brussels-based founder. Building micro-software with AI.';
   }
 }
 
 async function loadLastBriefings(maxCount = 2) {
   try {
     const files = await readdir(BRIEFINGS_DIR);
-    const md = files.filter(f => f.endsWith('.md')).sort().reverse().slice(0, maxCount);
+    const md = files.filter((file) => file.endsWith('.md')).sort().reverse().slice(0, maxCount);
     const contents = await Promise.all(
-      md.map(f =>
-        readFile(`${BRIEFINGS_DIR}/${f}`, 'utf-8')
-          .then(c => `--- ${f} ---\n${c.substring(0, 1500)}`)
-      )
+      md.map((file) => readFile(`${BRIEFINGS_DIR}/${file}`, 'utf-8').then((content) => `--- ${file} ---\n${content.substring(0, 1200)}`))
     );
-    return contents.length ? contents.join('\n\n') : 'No previous briefings yet.';
+    return contents.join('\n\n') || 'No previous briefings yet.';
   } catch {
     return 'No previous briefings yet.';
   }
 }
 
-// ── Query Generation ─────────────────────────────────────────
+async function loadMemory() {
+  try {
+    const raw = await readFile(MEMORY_FILE, 'utf-8');
+    return JSON.parse(raw);
+  } catch {
+    return {};
+  }
+}
 
-/**
- * Robustly extract a JSON array from model response.
- */
 function extractJsonArray(text) {
   const stripped = text.replace(/```json\n?/g, '').replace(/```\n?/g, '').trim();
   try {
@@ -66,68 +61,111 @@ function extractJsonArray(text) {
   } catch { /* fall through */ }
 
   const match = text.match(/\[[\s\S]*\]/);
-  if (match) {
-    try {
-      const parsed = JSON.parse(match[0]);
-      if (Array.isArray(parsed)) return parsed;
-    } catch { /* fall through */ }
+  if (!match) return null;
+
+  try {
+    const parsed = JSON.parse(match[0]);
+    return Array.isArray(parsed) ? parsed : null;
+  } catch {
+    return null;
   }
-  return null;
 }
 
-/**
- * Generate targeted search queries based on life context and recent briefings.
- * Fast, cheap call — no web search, just reasoning about what to look for today.
- */
-async function generateQueries(lifeContext, lastBriefings) {
+async function generateQueries({ scheduledTheme, lifeContext, lastBriefings }) {
   const today = new Date().toISOString().slice(0, 10);
-
-  const prompt = `${WEBINTEL_PROMPT}
-
-===== TODAY'S DATE =====
-${today}
-
-===== JULIEN'S LIFE CONTEXT =====
-${lifeContext}
-
-===== RECENT BRIEFING TOPICS (to avoid re-searching yesterday's covered topics) =====
-${lastBriefings}
-
-Generate 5-8 targeted search queries now. Return ONLY the JSON array, no other text.`;
+  const prompt = THEMED_WEBINTEL_PROMPT
+    .replace('{scheduled_theme}', scheduledTheme)
+    .replace('{scheduled_theme_focus}', THEME_CONFIG[scheduledTheme]?.webIntelPrompt || themeLabel(scheduledTheme))
+    .replace('{today}', today);
 
   const response = await client.messages.create({
     model: MODELS.analyzer,
     max_tokens: LIMITS.webIntelMaxTokens,
-    messages: [{ role: 'user', content: prompt }],
+    messages: [{
+      role: 'user',
+      content: `${prompt}\n\n===== LIFE CONTEXT =====\n${lifeContext}\n\n===== RECENT BRIEFINGS =====\n${lastBriefings}`,
+    }],
   });
 
   const text = response.content[0].text.trim();
-  const queries = extractJsonArray(text);
+  const parsed = extractJsonArray(text);
+  if (!parsed || parsed.length === 0) return null;
 
-  if (!queries || queries.length === 0) {
-    console.log('  ⚠️ Query generation returned no valid JSON — using fallback queries');
-    return null;
-  }
-
-  return queries.filter(q => typeof q === 'string' && q.trim().length > 0);
+  return normalizeQueries(parsed, scheduledTheme);
 }
 
-// ── Search Execution ─────────────────────────────────────────
+function normalizeQueries(entries, scheduledTheme) {
+  const normalized = [];
+  for (const entry of entries) {
+    if (!entry || typeof entry !== 'object') continue;
+    const query = String(entry.query || '').trim();
+    const theme = THEME_CONFIG[entry.theme] ? entry.theme : scheduledTheme;
+    const purpose = String(entry.purpose || '').trim() || `Daily ${themeLabel(theme)} check`;
+    if (!query) continue;
+    normalized.push({ query, theme, purpose });
+  }
 
-/**
- * Execute a single web search via Claude with web_search tool.
- * Returns a concise text summary with key facts and URLs.
- */
-async function executeSearch(query) {
+  return normalized.slice(0, 6);
+}
+
+function buildFallbackQueries(scheduledTheme) {
+  const monthYear = new Date().toLocaleDateString('en-US', { month: 'long', year: 'numeric' });
+  const baseQueries = {
+    dev: `Cursor Claude Code Windsurf Lovable Bolt release ${monthYear}`,
+    grassroot: `Brussels Belgium cooperative tech funding grant ${new Date().getFullYear()}`,
+    game: `solo game dev AI tools release ${monthYear}`,
+    geo_eu: `Belgium EU business regulation VAT energy ${monthYear}`,
+  };
+
+  const extras = {
+    dev: [
+      `AI-assisted engineering workflow updates ${monthYear}`,
+      `micro-SaaS builder tool pricing release ${monthYear}`,
+    ],
+    grassroot: [
+      `Grassroot Hopper aligned people startups Brussels ${monthYear}`,
+      `Innoviris NLnet open call cooperative technology ${new Date().getFullYear()}`,
+    ],
+    game: [
+      `creative AI game pipeline update ${monthYear}`,
+      `Unity Godot Unreal solo dev AI update ${monthYear}`,
+    ],
+    geo_eu: [
+      `Belgium Brussels SME policy update ${monthYear}`,
+      `EU economic policy founder impact ${monthYear}`,
+    ],
+  };
+
+  return [
+    { query: baseQueries.dev, theme: 'dev', purpose: 'Daily dev radar' },
+    { query: baseQueries.grassroot, theme: 'grassroot', purpose: 'Daily grassroot radar' },
+    { query: baseQueries.game, theme: 'game', purpose: 'Daily game radar' },
+    { query: baseQueries.geo_eu, theme: 'geo_eu', purpose: 'Daily geo-EU radar' },
+    ...extras[scheduledTheme].map((query) => ({
+      query,
+      theme: scheduledTheme,
+      purpose: `Deepen ${themeLabel(scheduledTheme)} day`,
+    })),
+  ];
+}
+
+async function executeSearch({ query, theme, purpose }) {
   try {
     const response = await client.beta.messages.create({
       model: MODELS.analyzer,
-      max_tokens: 2048,
+      max_tokens: 1400,
       betas: SONNET_46_BETAS,
       tools: [{ type: 'web_search_20260209', name: 'web_search' }],
       messages: [{
         role: 'user',
-        content: `Search for and summarize: ${query}\n\nProvide a concise 2-4 sentence factual summary of the most relevant recent findings. Include the most important source URL(s). Be specific — exact dates, version numbers, prices matter.`,
+        content: `Search for recent, factual updates on: ${query}
+
+Return a concise summary with:
+- what changed
+- why it matters
+- the most important source URL(s)
+
+Keep it short and concrete. Include dates when available.`,
       }],
     });
 
@@ -136,89 +174,81 @@ async function executeSearch(query) {
       if (block.type === 'text') result += block.text;
     }
 
-    const trimmed = result.trim();
-    return trimmed || 'No relevant results found for this query.';
+    return {
+      query,
+      theme,
+      purpose,
+      result: result.trim() || 'No relevant results found.',
+    };
   } catch (err) {
-    if (err.message?.includes('overloaded') || err.message?.includes('529')) {
-      return `Search temporarily unavailable (API overloaded). Try again in next run.`;
-    }
-    return `Search failed: ${err.message}`;
+    return {
+      query,
+      theme,
+      purpose,
+      result: `Search failed: ${err.message}`,
+    };
   }
 }
 
-// ── Main Export ──────────────────────────────────────────────
+function formatMarkdown({ scheduledTheme, queries, results }) {
+  const today = new Date().toISOString().slice(0, 10);
+  const lines = [
+    `<!-- PRISM Web Intelligence — ${today} -->`,
+    `# Web Intelligence — ${today}`,
+    `*Scheduled theme: ${themeLabel(scheduledTheme)}*`,
+    '',
+  ];
 
-/**
- * Run proactive web intelligence gathering.
- * Generates queries from life context, executes in parallel, saves to disk.
- *
- * @returns {Promise<string>} The full web intelligence content (also saved to WEBINTEL_FILE)
- */
-export default async function webintel() {
-  console.log('\n🔍 WEBINTEL — Proactive web intelligence...');
+  for (const result of results) {
+    lines.push(`## [${result.theme}] ${result.query}`);
+    lines.push('');
+    lines.push(`Purpose: ${result.purpose}`);
+    lines.push('');
+    lines.push(result.result);
+    lines.push('');
+  }
 
-  const [lifeContext, lastBriefings] = await Promise.all([
+  return lines.join('\n');
+}
+
+export default async function webintel(themeKey = null) {
+  console.log('\n🔍 WEBINTEL — cross-domain radar + themed depth...');
+
+  const [lifeContext, lastBriefings, memory] = await Promise.all([
     loadLifeContext(),
     loadLastBriefings(2),
+    loadMemory(),
   ]);
 
-  // ── Step 1: Generate targeted queries ───────────────────────
+  ensureThemeCycle(memory);
+  const scheduledTheme = themeKey || getScheduledTheme(memory);
+
   let queries;
   try {
-    queries = await generateQueries(lifeContext, lastBriefings);
+    queries = await generateQueries({ scheduledTheme, lifeContext, lastBriefings });
   } catch (err) {
     console.log(`  ⚠️ Query generation failed: ${err.message}`);
     queries = null;
   }
 
-  // Fallback queries if generation failed
-  const fallbackQueries = [
-    `Claude Code updates ${new Date().toLocaleDateString('en-US', { month: 'long', year: 'numeric' })}`,
-    'micro-SaaS product launches this week',
-    'Cursor vs Windsurf AI coding tools 2026',
-    'vibe coding AI-assisted engineering news',
-    `Belgium tech startup news ${new Date().getFullYear()}`,
-  ];
+  queries = queries || buildFallbackQueries(scheduledTheme);
 
-  queries = queries || fallbackQueries;
+  console.log(`  Scheduled theme: ${themeLabel(scheduledTheme)}`);
+  queries.forEach((item, index) => {
+    console.log(`    ${index + 1}. [${item.theme}] ${item.query}`);
+  });
 
-  console.log(`  Generated ${queries.length} search queries:`);
-  queries.forEach((q, i) => console.log(`    ${i + 1}. ${q}`));
-
-  // ── Step 2: Execute all searches in parallel ─────────────────
-  console.log(`  Executing ${queries.length} searches in parallel...`);
-  const startTime = Date.now();
-
-  const results = await Promise.all(
-    queries.map(async (query, i) => {
-      const result = await executeSearch(query);
-      return { query, result, index: i + 1 };
-    })
-  );
-
-  const elapsed = ((Date.now() - startTime) / 1000).toFixed(1);
-  const successCount = results.filter(r => !r.result.startsWith('Search failed') && !r.result.startsWith('Search temporarily')).length;
-  console.log(`  ✅ ${successCount}/${results.length} searches completed in ${elapsed}s`);
-
-  // ── Step 3: Format and save ──────────────────────────────────
-  const today = new Date().toISOString().slice(0, 10);
-  const timestamp = new Date().toISOString();
-
-  const content = [
-    `<!-- PRISM Web Intelligence — ${today} — generated ${timestamp} -->`,
-    `# Proactive Web Intelligence — ${today}`,
-    `*${successCount} of ${queries.length} searches returned results*`,
-    '',
-    ...results.map(r => [
-      `## Query ${r.index}: ${r.query}`,
-      '',
-      r.result,
-    ].join('\n')),
-  ].join('\n\n');
+  const results = await Promise.all(queries.map((query) => executeSearch(query)));
+  const content = formatMarkdown({ scheduledTheme, queries, results });
 
   await mkdir('data', { recursive: true });
   await writeFile(WEBINTEL_FILE, content, 'utf-8');
   console.log(`  Saved to ${WEBINTEL_FILE}`);
 
-  return content;
+  return {
+    scheduledTheme,
+    queries,
+    results,
+    markdown: content,
+  };
 }

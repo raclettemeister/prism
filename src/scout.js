@@ -7,7 +7,6 @@ import {
   LIMITS,
   SCOUT_MEMORY_FILE,
   SCOUT_QUERY_POOL,
-  SCOUT_PROMPT,
 } from './config.js';
 
 const client = new Anthropic();

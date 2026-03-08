@@ -6,6 +6,7 @@
 import Parser from 'rss-parser';
 import { readFile, writeFile, mkdir } from 'fs/promises';
 import { FEED_CATEGORIES, LIMITS, MEMORY_FILE } from './config.js';
+import { themeForCategory } from './themes.js';
 
 const parser = new Parser({
   timeout: 10000, // 10s per feed — one slow feed doesn't block the pipeline
@@ -106,6 +107,7 @@ export default async function collect() {
           content: cleanContent(item.contentSnippet || item.content || item.summary || ''),
           source: getHostname(feedUrl),
           category,
+          primaryTheme: themeForCategory(category),
           weight,
           date: item.pubDate || item.isoDate || new Date().toISOString(),
           author: item.creator || item.author || '',
