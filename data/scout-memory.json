@@ -80,13 +80,53 @@
       "source": "synthesis",
       "geography": "unknown",
       "feedback": null
+    },
+    {
+      "url_hash": "b9829e1d06d6b912",
+      "title": "https://coopiteasy.be",
+      "surfaced_date": "2026-03-08",
+      "source": "synthesis",
+      "geography": "unknown",
+      "feedback": null
+    },
+    {
+      "url_hash": "e1f96387fe8c4e05",
+      "title": "https://www.innoviris.brussels/program/co-create",
+      "surfaced_date": "2026-03-08",
+      "source": "synthesis",
+      "geography": "unknown",
+      "feedback": null
+    },
+    {
+      "url_hash": "89de30994f7f67d8",
+      "title": "https://coopcity.be",
+      "surfaced_date": "2026-03-08",
+      "source": "synthesis",
+      "geography": "unknown",
+      "feedback": null
+    },
+    {
+      "url_hash": "55bf66f9177a5d58",
+      "title": "https://bonfirenetworks.org",
+      "surfaced_date": "2026-03-08",
+      "source": "synthesis",
+      "geography": "unknown",
+      "feedback": null
+    },
+    {
+      "url_hash": "c62c74aae875cbb3",
+      "title": "https://nlnet.nl/commonsfund/",
+      "surfaced_date": "2026-03-08",
+      "source": "synthesis",
+      "geography": "unknown",
+      "feedback": null
     }
   ],
   "query_performance": {
     "Innoviris new call open 2026": {
-      "times_used": 3,
+      "times_used": 4,
       "catches_produced": 0,
-      "last_used": "2026-03-07"
+      "last_used": "2026-03-08"
     },
     "site:indiehackers.com cooperative community platform": {
       "times_used": 1,
@@ -99,29 +139,29 @@
       "last_used": "2026-03-05"
     },
     "cooperative platform software launch 2026": {
-      "times_used": 1,
+      "times_used": 2,
       "catches_produced": 0,
-      "last_used": "2026-03-05"
+      "last_used": "2026-03-08"
     },
     "Brussels open source startup 2026": {
-      "times_used": 3,
+      "times_used": 4,
       "catches_produced": 0,
-      "last_used": "2026-03-07"
+      "last_used": "2026-03-08"
     },
     "Belgian solo developer social impact project": {
-      "times_used": 3,
+      "times_used": 4,
       "catches_produced": 0,
-      "last_used": "2026-03-07"
+      "last_used": "2026-03-08"
     },
     "European incubator social innovation open call 2026": {
-      "times_used": 1,
+      "times_used": 2,
       "catches_produced": 0,
-      "last_used": "2026-03-05"
+      "last_used": "2026-03-08"
     },
     "NLnet NGI0 grantees 2026": {
-      "times_used": 1,
+      "times_used": 2,
       "catches_produced": 0,
-      "last_used": "2026-03-05"
+      "last_used": "2026-03-08"
     },
     "trending GitHub repo cooperative technology community": {
       "times_used": 1,
@@ -172,6 +212,16 @@
       "times_used": 1,
       "catches_produced": 0,
       "last_used": "2026-03-07"
+    },
+    "Bonfire social network release update": {
+      "times_used": 1,
+      "catches_produced": 0,
+      "last_used": "2026-03-08"
+    },
+    "Product Hunt cooperative community social impact launch": {
+      "times_used": 1,
+      "catches_produced": 0,
+      "last_used": "2026-03-08"
     }
   },
   "source_performance": {}
