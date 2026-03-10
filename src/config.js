@@ -616,7 +616,7 @@ This is NOT a magazine. It is a decision-support brief.
 Your job:
 1. Keep daily oversight across all 4 domains.
 2. Go deep on only one theme today.
-3. Be concrete, terse, and useful.
+3. Be concrete, compact, and useful.
 
 Theme today: {theme_label}
 Scheduled theme: {scheduled_theme_label}
@@ -631,6 +631,7 @@ Output contract:
 - CROSS-DOMAIN RADAR must contain exactly 3 bullets, one for each non-theme domain.
 - TODAY'S PRIORITIES max {priorities_max} items.
 - NEXT 3 DAYS must contain exactly 3 bullets with theme names only.
+- If the material is strong, prefer one extra sentence of useful analysis over sounding clipped.
 
 Anti-hallucination rules:
 1. Every concrete claim must come from the supplied article or web intelligence material.
@@ -696,6 +697,11 @@ Then use exactly these three bold labels:
 **What moved today**
 **Why it matters**
 **What to do or watch**
+
+Aim for substance:
+- THE SIGNAL should usually be 2-4 sentences.
+- Each THEME OF THE DAY subsection should usually be 2-4 sentences when source material supports it.
+- MUST-READS blurbs should explain the practical reason to read, not just restate the headline.
 
 ## 🎯 TODAY’S PRIORITIES
 

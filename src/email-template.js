@@ -125,21 +125,33 @@ export function renderEmail(briefingMarkdown, date) {
 export function renderDigestEmail(briefingMarkdown, dateStr, stats = {}) {
   const signal = sectionBody(briefingMarkdown, '## 🔴 THE SIGNAL');
   const mustReads = sectionBody(briefingMarkdown, '## 📚 MUST-READS');
+  const actionAudit = sectionBody(briefingMarkdown, '## ⏪ ACTION AUDIT');
+  const radar = sectionBody(briefingMarkdown, '## 🧭 CROSS-DOMAIN RADAR');
   const priorities = sectionBody(briefingMarkdown, '## 🎯 TODAY’S PRIORITIES');
   const theme = sectionBody(briefingMarkdown, '## 🧠 THEME OF THE DAY');
   const nextDays = sectionBody(briefingMarkdown, '## ⏭️ NEXT 3 DAYS');
   const conf = stats.confidence != null ? `${(stats.confidence * 100).toFixed(0)}%` : '—';
+  const cost = stats.estimatedCost != null ? `~$${stats.estimatedCost}` : '—';
+  const analyzed = stats.articlesAnalyzed != null ? String(stats.articlesAnalyzed) : '—';
+  const webSearches = stats.webSearches != null ? String(stats.webSearches) : '—';
+  const statsLine = `Confidence ${conf} · Cost ${cost} · ${analyzed} articles analyzed · ${webSearches} web searches`;
 
   const text = [
     `PRISM briefing for ${dateStr}`,
     '',
-    `Confidence: ${conf}`,
+    statsLine,
     '',
     'THE SIGNAL',
     signal,
     '',
     'MUST-READS',
     stripMarkdownBullets(mustReads),
+    '',
+    'ACTION AUDIT',
+    stripMarkdownBullets(actionAudit),
+    '',
+    'CROSS-DOMAIN RADAR',
+    stripMarkdownBullets(radar),
     '',
     'THEME OF THE DAY',
     stripMarkdownBullets(theme),
@@ -157,7 +169,8 @@ export function renderDigestEmail(briefingMarkdown, dateStr, stats = {}) {
 <body style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;font-size:15px;line-height:1.6;color:#1a1a1a;max-width:560px;margin:0 auto;padding:24px;">
   <div style="font-size:18px;font-weight:700;margin-bottom:12px;">PRISM</div>
   <p style="margin:0 0 12px;">Your briefing for ${dateStr} is ready.</p>
-  <p style="margin:0 0 16px;color:#4b5563;">Confidence ${conf}.</p>
+  <p style="margin:0 0 6px;color:#4b5563;">Confidence ${conf}.</p>
+  <p style="margin:0 0 16px;color:#6b7280;font-size:13px;">Cost ${cost} · ${analyzed} articles analyzed · ${webSearches} web searches</p>
   <div style="border-left:4px solid #dc2626;padding-left:12px;margin:16px 0;">
     <div style="font-weight:700;margin-bottom:6px;">THE SIGNAL</div>
     ${marked.parse(signal)}
@@ -165,6 +178,14 @@ export function renderDigestEmail(briefingMarkdown, dateStr, stats = {}) {
   <div style="margin:16px 0;">
     <div style="font-weight:700;margin-bottom:6px;">MUST-READS</div>
     ${marked.parse(mustReads)}
+  </div>
+  <div style="margin:16px 0;">
+    <div style="font-weight:700;margin-bottom:6px;">ACTION AUDIT</div>
+    ${marked.parse(actionAudit)}
+  </div>
+  <div style="margin:16px 0;">
+    <div style="font-weight:700;margin-bottom:6px;">CROSS-DOMAIN RADAR</div>
+    ${marked.parse(radar)}
   </div>
   <div style="margin:16px 0;">
     <div style="font-weight:700;margin-bottom:6px;">THEME OF THE DAY</div>
