@@ -1,190 +1,157 @@
-<!-- PRISM Web Intelligence — 2026-03-09 — generated 2026-03-09T04:50:59.124Z -->
+<!-- PRISM Web Intelligence — 2026-03-10 — generated 2026-03-10T04:30:35.546Z -->
 
-# Proactive Web Intelligence — 2026-03-09
+# Proactive Web Intelligence — 2026-03-10
 
 *8 of 8 searches returned results*
 
 
 
-## Query 1: Claude Code update March 2026 changelog release
+## Query 1: Grassroot Hoppers specialty food Brussels retail software validation 2026
 
-Here is a concise summary of the most relevant recent findings on Claude Code's March 2026 updates:
+I was unable to find any results for "Grassroot Hoppers" as a specific entity across multiple targeted searches. Here is an honest summary of what the research found:
 
 ---
 
-**Claude Code — March 2026 Changelog Summary**
+**No results found for "Grassroot Hoppers."**
 
-In early March 2026, Claude Code shipped two notable updates: the **March 3** release added `/simplify` and `/batch` bundled slash commands, HTTP hooks, worktree config sharing, memory leak fixes, and VS Code session management improvements. The **March 7** release focused on third-party API proxy fixes and Windows stability.
+After conducting multiple web searches combining all elements of your query — *Grassroot Hoppers*, *specialty food*, *Brussels*, *retail software validation*, and *2026* — **zero results were returned for any entity by that name**. No company, product, software platform, or initiative matching "Grassroot Hoppers" appears in any indexed web source as of today.
 
-**Version 2.1.68** (March 4, 2026) made Opus 4.6 default to **medium effort** for Max and Team subscribers, re-introduced the `"ultrathink"` keyword for high-effort turns, and fixed an `API Error: 400` related to the effort parameter on custom Bedrock inference profiles. **Version 2.1.69** (March 5, 2026) added an optional name argument to `/remote-control` for custom session titles visible in claude.ai/code, and expanded Voice STT support to 10 new languages (20 total), including Russian, Polish, Turkish, Dutch, Ukrainian, Greek, Czech, Danish, Swedish, and Norwegian.
+**What the searches did surface (related but distinct topics):**
+- **x-hoppers** (unrelated) — an AI-powered retail communication platform based in Tallinn, Estonia, active in 2026 retail technology discussions.
+- **IPIFF (International Platform of Insects for Food and Feed)** — a Brussels-based EU non-profit representing the insect food/feed sector, but with no connection to the name "Grassroot Hoppers."
+- **NGA 2026 specialty foods trends** — a Las Vegas retail event covering wellness and global flavors, with no reference to your query.
 
-The official GitHub Releases page also notes performance improvements such as a **~74% reduction in prompt input re-renders** during turns and **~426KB less startup memory** for users without custom CA certificates, along with fixes for startup UI freezes, forked conversation plan file collisions, and false-positive permission prompts for compound bash commands.
+**My recommendation:** Please double-check the spelling or source of "Grassroot Hoppers." It's possible this is a very niche, newly formed, or unlisted entity, or the name may be slightly different (e.g., "Grassroots Hoppers," "GrassHopper Foods," etc.). If you can provide an alternative spelling, a URL, or additional context, I can search again with higher precision.
+
+## Query 2: Claude Code changelog release notes March 2026
+
+Here is a concise summary of the most relevant findings for **Claude Code's March 2026 release notes**:
+
+On **March 3, 2026**, Claude Code added new slash commands — `/simplify` and `/batch` — along with HTTP hooks and worktree config sharing, with memory leak fixes and VS Code session management improvements. On **March 7, 2026**, the update focused on third-party API proxy fixes, Windows stability improvements, and VS Code session management enhancements.
+
+The March 7 release specifically fixed API 400 errors when using `ANTHROPIC_BASE_URL` with a third-party gateway, and resolved issues where empty model responses occurred immediately after ToolSearch due to tool schemas being rendered with system-prompt-style tags at the prompt tail.
+
+Other notable March fixes (from the official GitHub releases page) include a startup UI freeze when many claude.ai proxy connectors refreshed an expired OAuth token simultaneously, and a bug where forked conversations (`/fork`) shared the same plan file, causing plan edits in one fork to overwrite the other.
+
+Additionally, a fix addressed a repeated "Model updated to Opus 4.6" notification triggered when a project's `.claude/settings.json` had a legacy Opus model string pinned.
 
 **Key sources:**
-- GitHub official changelog: https://github.com/anthropics/claude-code/releases
-- ClaudeLog tracker: https://claudelog.com/claude-code-changelog/
-- gradually.ai version history: https://www.gradually.ai/en/changelogs/claude-code/
+- Official GitHub Releases: https://github.com/anthropics/claude-code/releases
+- ClaudeLog (community changelog tracker): https://claudelog.com/claude-code-changelog/
+- Releasebot aggregator: https://releasebot.io/updates/anthropic/claude-code
 
-## Query 2: Cursor IDE update March 9 2026 new features
+## Query 3: Cursor IDE update release March 10 2026
 
-Based on my research, there does not appear to be a specific Cursor IDE release or update dated **March 9, 2026** — the nearest documented releases are version **2.6.13** (March 6) and **2.6.11** (March 3). Here is a summary of the most relevant and recent Cursor updates for March 2026:
+Based on the search results, here is a concise factual summary of the most relevant Cursor IDE updates around March 2026:
 
 ---
 
-**Cursor IDE – March 2026 Update Summary**
+The most significant Cursor release in early March 2026 was **version 2.6**, dated **March 3, 2026**. The changelog entry for version 2.6 (March 3, 2026) introduces interactive UIs in agent chats, a way for teams to share private plugins, and improvements to core capabilities like Debug mode.
 
-The most recent major release is **Cursor 2.6**, announced on **March 3, 2026**. This release introduces interactive UIs in agent chats, a way for teams to share private plugins, and improvements to core capabilities like Debug mode.
-
-A notable headline feature is JetBrains integration: Cursor is now available in IntelliJ IDEA, PyCharm, WebStorm, and other JetBrains IDEs through the Agent Client Protocol (ACP), allowing developers to use any frontier model from OpenAI, Anthropic, Google, and Cursor for agent-driven development. The Cursor ACP can be installed directly from the ACP Registry and authenticated with an existing Cursor account. The Cursor ACP is free for all users on paid plans.
-
-On the UI/plugin side, MCP Apps support interactive user interfaces like charts from Amplitude, diagrams from Figma, and whiteboards from tldraw directly inside Cursor. On Teams and Enterprise plans, admins can now create team marketplaces to share private plugins internally.
-
-In terms of patch versions, the latest build released was version **2.6.13** on **2026-03-06**, with **2.6.12** on 2026-03-05 and **2.6.11** on 2026-03-03. No specific **March 9** release was found in any official changelog or download registry at the time of this search.
+A major accompanying announcement was Cursor's expansion to JetBrains IDEs. Cursor is now available in IntelliJ IDEA, PyCharm, WebStorm, and other JetBrains IDEs through the Agent Client Protocol (ACP), allowing developers who rely on JetBrains for Java and multilanguage support to use any frontier model from OpenAI, Anthropic, Google, and Cursor for agent-driven development. The Cursor ACP is free for all users on paid plans.
 
 **Key sources:**
-- Official changelog: https://cursor.com/changelog
-- Version download history: https://github.com/oslook/cursor-ai-downloads
-- March 2026 release notes roundup: https://releasebot.io/updates/cursor
+- Official Cursor Changelog: https://cursor.com/changelog
+- Cursor blog (JetBrains ACP announcement): https://cursor.com/blog/jetbrains-acp
+- JetBrains AI Blog: https://blog.jetbrains.com/ai/2026/03/cursor-joined-the-acp-registry-and-is-now-live-in-your-jetbrains-ide/
 
-## Query 3: micro-SaaS validation wedge strategy solo founder March 2026
+> **Note:** No specific release was found dated exactly **March 10, 2026**. The closest and most significant release was **version 2.6 on March 3, 2026**, with the JetBrains ACP integration announced around the same period (~March 4–5, 2026). There may have been minor patch releases around March 10 not yet widely documented.
 
-Here is a concise, source-backed summary of the most relevant recent findings on micro-SaaS validation and wedge strategy for solo founders:
+## Query 4: micro-SaaS wedge validation indie founder March 2026
+
+Here is a concise summary of the most relevant recent findings on **micro-SaaS wedge validation for indie founders** as of early 2026:
 
 ---
 
-The dominant validation framework circulating in early 2026 centers on a tight, sequential "wedge-then-expand" approach. Calmops (published ~1 week ago) outlines a three-step pre-build validation process: **Search Validation** (find 10–20 people actively discussing the problem on Reddit, X, or Indie Hackers), **Payment Validation** (confirm those people have paid for similar tools), and **Competition Validation** (treat the absence of competitors as a red flag, not an opportunity). The wedge logic is explicit: the ideal micro-SaaS becomes embedded in customers' workflows, and "your first product should be a 'gateway drug' to more expensive offerings" — e.g., a simple time-tracking tool that expands into invoicing and financial reporting.
+Market signals from Indie Hackers and Reddit's r/SaaS show the opportunity has clearly shifted away from generalized tools toward hyper-specialized, AI-powered solutions — the micro-SaaS segment is projected to grow from $15.70 billion (2024) to $59.60 billion by 2030, a ~30% annual growth rate.
 
-A January 28, 2026 Superframeworks guide frames the validation timeline as 30 days: build a landing page, target 20+ email signups, and conduct 10–20 problem interviews before writing a single line of product code. Market context: the micro-SaaS market is projected to grow from $15.7B to $59.6B by 2030 (~30% annually), with most solo founders spending under $1,000 before first revenue thanks to no-code tools and free tiers.
+The leading validation framework recommends a **30-day sprint**: build a landing page targeting 20+ signups, conduct 10–20 problem interviews, and offer discounted beta access to measure real payment commitment.
 
-A practitioner-level case study published **February 2026** on Medium documents a solo founder going from $0 to $2,500 MRR across three products using this approach: after a decade in software development, the author concluded that "building and exiting a Micro SaaS is a completely different story — that is a game a solo founder can actually win," launching three products that "started generating profits almost instantly on autopilot."
+Calmops (published ~March 2026) outlines a three-step pre-build validation process — **Search Validation** (find 10–20 people actively discussing the problem on Reddit, X, or Indie Hackers), **Payment Validation** (confirm they've paid for similar tools), and **Competition Validation** (lack of any competition is itself a red flag, not a green light).
+
+On the **wedge/expansion strategy**, the consensus is that a micro-SaaS should first become deeply embedded in a customer's workflow to raise switching costs, with the initial product acting as a "gateway drug" to pricier offerings — e.g., a freelance time-tracker that later expands into invoicing and expense management.
 
 **Key sources:**
-- Calmops (updated ~March 2026): https://calmops.com/indie-hackers/micro-saas-ideas-2026/
-- Superframeworks (Jan 28, 2026): https://superframeworks.com/articles/best-micro-saas-ideas-solopreneurs
-- Medium/Write A Catalyst (Feb 2026): https://medium.com/write-a-catalyst/from-0-to-2-500-my-6-step-framework-for-building-micro-saas-as-a-solo-founder-fba5d545b97c
+- 🔗 https://calmops.com/indie-hackers/micro-saas-ideas-2026/ *(~1 week old as of search date)*
+- 🔗 https://superframeworks.com/articles/best-micro-saas-ideas-solopreneurs *(January 28, 2026)*
 
-> **Note:** The specific term "wedge strategy" was not used verbatim in any retrieved article as of March 2026, but the underlying concept — launching a narrow, high-retention tool as an entry point to a broader product suite — is the consensus playbook described across all major sources found.
+> **Note:** No single authoritative article specifically dated **March 2026** with that exact phrase combination was found — the results above represent the most current and relevant coverage available matching those themes.
 
-## Query 4: AGPL open source SaaS monetization small business toolkit 2026
+## Query 5: Belgium specialty food retail regulation news March 2026
 
-Here is a concise summary of the most relevant recent findings:
+Here is a concise, well-sourced summary of the most relevant recent findings on Belgium specialty food retail regulation as of March 2026:
 
 ---
 
-**AGPL for Open Source SaaS Monetization (2025–2026)**
+**Belgium Food Retail & VAT Regulation — March 2026 Update**
 
-AGPL (Affero GPL) has emerged as a key monetization lever for open source SaaS founders: permissive licenses like MIT/Apache 2.0 accelerate adoption but reduce licensing revenue, while AGPL requires derivative works to share source code — creating leverage for commercial licensing. Companies like **OpenObserve** have switched to AGPL specifically to force enterprises into paid commercial licenses while keeping individual use free.
+The most significant development is a major VAT restructuring affecting food retail and hospitality. Belgium implemented VAT rate changes from 1 March 2026 under its 2026 federal budget, increasing the reduced VAT rate from 6% to 12% for accommodation, leisure activities, and takeaway services, while lowering VAT on non-alcoholic drinks in restaurants and cafés from 21% to 12%. However, there was a last-minute partial reversal: on 13 February 2026, Belgium's government delayed the planned 1 March 2026 VAT rises from 6% to 12% on **takeaway food**, cultural and sports events, following a strongly critical advisory opinion from the Council of State. However, the rise on hotel/short-term furnished accommodation, campsites, and pesticides did go ahead on 1 March 2026 (hotels: 6% → 12%; pesticides: 12% → 21%).
 
-The primary monetization strategies around AGPL-licensed tools include strong copyleft (preventing closed proprietary derivatives), marketplace models for ecosystem-heavy products, self-serve SaaS for fast time-to-value tools, and enterprise/professional services models for mission-critical software.
-
-For small business SaaS founders, the AGPL makes it difficult for competitors to use your code without also open-sourcing their modifications — a critical protection that MongoDB eventually found insufficient, moving from AGPL to the even more restrictive SSPL when cloud giants like AWS began offering MongoDB as a managed service.
-
-Recent 2025 license shifts (e.g., AlbumentationsX forking from MIT to AGPL with commercial licensing options) sparked community backlash but achieved their economic purpose — AGPL creates friction for cloud competitors and forces customers to choose between free on-premise use or buying a commercial license.
+On advertising regulation, Belgian food and retail companies committed to enforcing stricter self-regulatory advertising rules from 1 January 2026, raising the minimum age for marketing restrictions on unhealthy food from 13 to 16.
 
 **Key sources:**
-- 📄 [getmonetizely.com – AGPL vs MIT Decision Guide for Founders](https://www.getmonetizely.com/articles/should-you-license-your-open-source-saas-under-agpl-or-mit-a-decision-guide-for-founders) *(Nov 7, 2025)*
-- 📄 [reo.dev – How to Monetize Open Source Software: 7 Proven Strategies](https://www.reo.dev/blog/monetize-open-source-software) *(Jan 21, 2026)*
-- 📄 [ainewsinternational.com – How VCs Are Monetizing Open Source Licenses](https://www.ainewsinternational.com/the-business-of-open-source-how-vcs-are-monetizing-permissive-ai-licenses/) *(Dec 21, 2025)*
+- 🔗 Bird & Bird (detailed VAT breakdown): https://www.twobirds.com/en/insights/2026/belgium/belgium-increases-vat-in-the-hospitality,-food-and-leisure-sectors-as-of-march-2026
+- 🔗 VATCalc (updated 13 Feb 2026 with delay news): https://www.vatcalc.com/belgium/belgium-hotel-takeaway-meal-vat-rises-1-march-2026/
 
-> ⚠️ **Note:** No specific "small business AGPL toolkit" product with version numbers or pricing was found in results — the topic is currently dominated by licensing strategy guides and founder decision frameworks rather than a named toolkit or product.
+**Bottom line:** Specialty food retailers selling takeaway items in Belgium saw the planned VAT doubling (6% → 12%) on that category **postponed past 1 March 2026** due to the Council of State's opinion, while hotel/accommodation VAT increases did take effect on 1 March 2026 as scheduled.
 
-## Query 5: Brussels Belgium specialty food shop regulation March 2026
+## Query 6: Lovable Bolt.new Windsurf update outage March 2026
 
-Here is a concise factual summary based on the most relevant recent findings:
-
-The most prominent Belgium food regulation news connected to 2026 concerns **food advertising rules**, not a specialty shop-specific ordinance. No specific "Brussels specialty food shop regulation" dated March 2026 was found in search results. Here is what the evidence does show:
+Here is a concise, sourced summary of the most relevant findings for **Lovable, Bolt.new, and Windsurf** around March 2026:
 
 ---
 
-Starting **January 1, 2026**, Belgian food and retail companies began enforcing stricter advertising rules, raising the age limit for marketing unhealthy food to minors from 13 to **16 years old**. Products that do not meet defined nutritional criteria may no longer be promoted to children or young people under 16, according to the Belgian Food Industry Federation (Fevia).
+**Lovable** has been the most frequently disrupted of the three platforms. Lovable's most recent outage was on **March 9, 2026**, titled "Issues with Lovable Cloud Project Creation," and IsDown has tracked **89 incidents** since monitoring began in August 2025. Prior to that, a high error ratio affecting Lovable cloud project creation began at approximately **10:12 UTC on February 9, 2026**, and was fully resolved by **10:28 UTC** the same day. Throughout February 2026, Lovable also logged multiple warning periods, including one on **February 20** lasting 3 hours and 10 minutes.
 
-The advertising restrictions now also apply to **secondary schools** in addition to primary schools, and are effective within a **150-meter radius** around such establishments. The rules cover social media advertising and are codified in the new voluntary **Belgian Food Advertising Code**, preceded by the Belgian Pledge.
+**Bolt.new** has been more stable recently. As of March 3, 2026 at 8:43 PM UTC, bolt.new was operational, with the last officially acknowledged outage occurring on **February 26, 2026**.
 
-This voluntary code — introduced by industry organisations including **Comeos** (retail), **Fevia** (food industry), **UBA** (advertising sector), and the Belgian Advertising Council — addresses a legislative gap, as Belgium currently has no national law limiting food advertising to minors.
+**Windsurf** experienced repeated AI completion/Tab feature outages in early March. On both **March 4** and **March 5, 2026**, Windsurf investigated and resolved separate incidents where completions/Tab were not working, with fixes implemented and confirmed resolved by 20:54 UTC on March 4 and 17:46 UTC on March 5.
 
-Additionally, in March 2026, an informal deal was reached by EU co-legislators on measures to **reinforce farmers' positions in the food supply chain**, linked to a new regulation on cross-border cooperation in enforcement of the directive on unfair trading practices.
+**Key Sources:**
+- Lovable official status history: https://status.lovable.dev/history
+- Lovable via IsDown: https://isdown.app/status/lovable
+- Bolt.new via StatusGator: https://statusgator.com/services/boltnew
+- Windsurf official status: https://status.windsurf.com
 
----
-
-**Key sources:**
-- Food Ingredients First (May 30, 2025): https://www.foodingredientsfirst.com/news/belgium-food-ads-under-16.html
-- Belga News Agency (May 27, 2025): https://www.belganewsagency.eu/belgium-to-ban-junk-food-advertising-aimed-at-under-16s
-- The Belgium Times (March 2026): https://belgium-times.be/2026/03/deal-on-measures-to-reinforce-farmers-position-in-the-food-supply-chain-news/
-
-> ⚠️ **Note:** No specific regulation targeting *specialty food shops* in Brussels dated March 2026 surfaced in available search results. If you have a more specific context (e.g., a particular shop type, product category, or regulatory body), I can refine the search.
-
-## Query 6: AI game development vibe coding solo dev tools March 2026
+## Query 7: AI game development procedural generation solo dev tools March 2026
 
 Here is a concise, sourced summary of the most relevant recent findings:
 
 ---
 
-**AI "Vibe Coding" for Solo Game Developers — March 2026**
+**AI Procedural Generation & Solo Dev Tools — March 2026**
 
-AI is now generating complete game systems from plain-language descriptions, and the barrier between "game idea" and "playable game" is collapsing — enabling people who couldn't previously code to create games for the first time. According to Y Combinator, 25% of their Winter 2025 batch had codebases that were 95%+ AI-generated, and the game development industry is widely seen as the next major frontier for this shift.
+According to a February 2026 SEELE report, 34% of indie developers now regularly use AI tools, with AI game makers delivering a median **87% reduction in time-to-first-playable** and a **3.2x increase in solo developer success rates**.
 
-**Rosebud AI** stands out as a leading all-in-one vibe coding tool for solo devs and game jam participants, generating code, assets, and animations from text prompts — most AI tools only handle one part of the pipeline, but Rosebud tackles multiple parts simultaneously. **Ludo.ai** similarly lets solo developers turn ideas into interactive experiences via its Playable Generator, where you define mechanics, genre, or atmosphere — or upload assets — and the AI assembles a prototype, explicitly embracing the "vibe coding" approach.
+AI-driven procedural content generation is now capable of spawning vast environments where algorithms blend biomes, cities, and quests algorithmically — enabling one dev team to "rival a hundred" — with terrain that evolves based on player choices.
 
-For early-stage prototyping specifically, Rosebud AI allows creators to use simple language prompts — such as *"A 2D platformer with wall-jumping and pixel art enemies"* — to produce completely playable game structures and mechanics without writing any code, making it especially strong for solo devs on a tight timeline. Broader AI coding tools with significant adoption include **GitHub Copilot** (used by millions daily) and **Cursor** (the AI-native editor gaining rapid adoption in 2025–2026).
+**Bezi**, a project-aware Unity AI assistant highlighted at **GDC 2026 (March 9–13)**, real-time indexes your entire Unity project (scripts, assets, scenes, packages, GDDs, and spreadsheets) and can generate scripts, create shaders, build editor tools, fix bugs, and automate procedural tasks like level layouts — all with reviewable diffs before changes are applied.
+
+For solo devs on a budget, a lean free-to-low-cost stack is emerging as the practical standard: **GitHub Copilot** (~$10/month, free for students) or **Cursor** for code with strong Unity/Godot support, **Stable Diffusion** (local, no commercial restrictions) for 2D art, **Meshy** for quick 3D assets, and **ElevenLabs** for voice — enough to prototype an entire game at near-zero cost.
 
 **Key sources:**
-- Fgfactory — "Best AI Tools for Game Development in 2026" (published ~4 days ago): https://fgfactory.com/best-ai-tools-for-game-development
-- Vibeforge Blog — "AI Game Development in 2026: What to Expect" (Jan 8, 2026): https://vibeforge.vibecord.dev/blog/ai-game-development-2026-what-to-expect
-- Elsner — "AI Game Development Tools for 2026" (Dec 30, 2025): https://www.elsner.com/ai-game-development-tools/
+- SEELE AI (Feb 6, 2026): https://www.seeles.ai/resources/blogs/ai-game-maker-make-games-with-ai.html
+- Bezi / GDC 2026: https://www.bezi.com/
+- SlashSkill roundup (1 week ago): https://www.slashskill.com/best-ai-tools-for-game-development-in-2026-actually-useful/
+- Q99 Studio (1 week ago): https://www.q99studio.com/ai-game-development-2026/
 
-> ⚠️ **Note:** Specific version numbers and pricing for these tools were not surfaced in current search results. For the latest pricing (e.g., Rosebud AI, Ludo.ai subscription tiers), checking their official sites directly is recommended.
+## Query 8: Substack newsletter growth food niche Belgium founder March 2026
 
-## Query 7: Lovable Bolt.new Windsurf update release March 2026
-
-Based on the search results, here is a concise, factual summary of the most relevant recent findings for **Lovable**, **Bolt.new**, and **Windsurf** around early 2026:
+Based on my research, I was unable to find a specific news story, case study, or article published in **March 2026** about a Belgian founder growing a food-niche Substack newsletter. The search query appears to combine several specific parameters (Belgium + food + Substack + founder + March 2026) for which no single matching source exists in current search results. Here is what the available evidence does show:
 
 ---
 
-### Lovable
+**What the search results do reveal:**
 
-Lovable's pricing information as of March 2026 shows base plan prices have remained stable: Free, Pro at **$25/month**, and Business at **$50/month**. Lovable 2.0, announced around early 2026, introduced a chat mode agent, multiplayer collaboration, workspaces, a Security Scan feature, Dev Mode for direct code editing, visual style editing, and built-in domain purchasing. Pricing was simplified to a **Pro plan starting at $25/month** and a **Teams plan starting at $30/month**. On **March 8, 2026** (International Women's Day), Lovable ran its "SheBuilds" event: the platform was completely free for 24 hours, powered by Anthropic, with each participant receiving **$100 in Claude API credits** and **$250 in Stripe fee credits**, across 30+ in-person events in 17 countries.
+Substack's overall creator economy is growing strongly heading into 2026, with payout volumes exceeding **$600 million per annum** across all creators, and estimated platform valuation near **$700–800 million**, driven by increasing creator conversion rates and extended subscription durations.
 
-### Bolt.new
+In the food niche specifically, the largest food Substack is *A Newsletter* by **Alison Roman**, with over **300,000 free subscribers**; Substack estimates that a well-performing newsletter converts 5–10% of free subscribers to paid, suggesting she likely earns between **$75,000–$150,000/month** at $5/month.
 
-As of **February 17, 2026**, Bolt.new added the option to use Anthropic's model **Sonnet 4.6**, alongside other platform improvements detailed in its Release Notes. Bolt V2 also introduced native authentication with email flows, verification, and leaked password detection, plus automatic security checks and SOC 2 security for secrets. On pricing, unused tokens on paid plans roll over for one additional month on a first-in, first-out basis (e.g., unused January tokens are available through February but expire in March), while free plan tokens reset on the 1st of each month with no rollover.
+Regarding Belgium: search results surface **@tribu.newsletter.food**, described as a Brussels-based food newsletter founded by an Afro Food Guru "promoting Black and African food culture," but no subscriber counts or March 2026 growth milestones were publicly reported. The food innovation newsletter **Génération Food** by Sandra Lafargue covers European food startups and mentions Belgian expansions (e.g., Kipster farms), but Lafargue does not appear to be Belgium-based herself.
 
-### Windsurf
-
-Windsurf's changelog shows ongoing model additions including **Gemini 3 Pro** (preview for paid Trial, Pro, and Teams subscribers) and **GPT-5.1** (made the default model for one week, with free access for paid users during that period). Priority processing for GPT-5.1 costs **2x** the standard credit rate. Notably, OpenAI's $3 billion acquisition offer for Windsurf ultimately expired, after which Google hired Windsurf CEO Varun Mohan and co-founder Douglas Chen for **$2.4 billion**, with Cognition later signing a definitive agreement to acquire the remaining Windsurf assets.
-
----
+**Bottom line:** No specific article, interview, or data point matching *a Belgian founder growing a food-niche Substack newsletter in March 2026* could be found. The query may refer to a very niche or unpublicized story. If you have a specific newsletter name or founder in mind, I can search more precisely.
 
 **Key sources:**
-- Lovable changelog: https://docs.lovable.dev/changelog
-- Lovable SheBuilds event: https://www.adwaitx.com/lovable-goes-free-shebuilds-international-womens-day-2026/
-- Bolt.new Help Center / Release Notes: https://support.bolt.new/
-- Windsurf changelog: https://windsurf.com/changelog
-- Windsurf acquisition saga: https://www.saastr.com/did-windsurf-sell-too-cheap-the-wild-72-hour-saga-and-ai-coding-valuations/
-
-## Query 8: Lucia May 2026 freelance artist self-employed Belgium social security transition
-
-Based on my extensive research, I was unable to find any specific, well-defined news item, policy, regulation, or person specifically named **"Lucia"** in combination with "May 2026," "freelance artist," "self-employed," "Belgium," and "social security transition." The query appears to be a very niche or possibly ambiguous topic. However, I can share what **is** factually documented for Belgium's freelance/artist social security landscape heading into 2026:
-
----
-
-Here is what the search results reveal about **Belgium's freelance artist & self-employed social security landscape around 2026**, which is the closest factual match to your query:
-
-**Belgian Copyright Tax Regime Reform (February 2026):**
-A Programme Bill of **23 February 2026** (no. 1378/001) abolishes lump-sum cost deductions for all taxpayers who do **not** hold an ordinary or "plus" artwork certificate, while a separate Bill of 17 December 2025 (no. 1243/001) restores copyright regime access for software developers.
-
-**Impact on Self-Employed Artists:**
-As from 2026, the flat-rate cost deduction is abolished except for holders of an artist's certificate, meaning the effective tax burden on copyright income increases to **15% plus local surcharges**.
-
-**Artist Status & Unemployment Transition Risk:**
-According to a report in *L'Echo*, the reform of unemployment benefits proposed by the Ministry of Employment could mean the abolition of the artist status — putting thousands of Belgian artists' access to unemployment benefits at risk. However, according to the Belgian newspaper, the abolition of the artist's status is reportedly not part of the government agreement and is politically sensitive, as it appears difficult to accept for the Vooruit and CD&V parties in the governing coalition.
-
-**Unemployment Reform Timeline:**
-From **1 March 2026**, fully unemployed Belgian residents who meet eligibility conditions will be entitled to Belgian unemployment benefits for 12 months, with extended entitlement possible depending on work experience.
-
-> ⚠️ **No results were found** for a specific person, program, or policy specifically named **"Lucia"** in the context of Belgian freelance/artist social security transitions in May 2026. If "Lucia" refers to a specific individual, organization, or named legislation, please clarify, and I can search more precisely.
-
-**Key sources:**
-- https://conventuslaw.com/report/belgium-belgian-copyright-tax-regime-two-key-reform-proposals/ *(3 days old)*
-- https://www.twobirds.com/en/insights/2026/belgium/belgian-copyright-tax-regime-two-key-reform-proposals
-- https://creativesunite.eu/article/are-the-unemployment-benefits-of-thousands-of-belgian-artists-at-risk
-- https://grenzinfo.eu/en/reform-of-belgian-unemployment-legislation/
+- https://fueler.io/blog/substack-usage-revenue-valuation-growth-statistics
+- https://www.theclubb.co/blog/top-25-the-most-successful-food-substacks
+- https://generationfood.substack.com/

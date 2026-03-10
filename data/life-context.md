@@ -1,108 +1,119 @@
-<!-- PRISM Life Context — Auto-generated 2026-03-09T04:48:31.475Z -->
+<!-- PRISM Life Context — Auto-generated 2026-03-10T04:28:31.181Z -->
 <!-- Source: context-note.md + LOG (3d) + 15 recent files -->
 <!-- Model: claude-sonnet-4-6 -->
-# LIFE CONTEXT SNAPSHOT — Julien
-**Generated:** 2026-03-09 | **Next sprint:** March 9–13
+# LIFE CONTEXT SNAPSHOT — PRISM
+**Generated:** 2026-03-10 | **For:** AI analyst, intelligence briefing personalization
 
 ---
 
-## 1. Right Now
+## 1. RIGHT NOW
 
-Julien is entering the March 9–13 sprint — the first active work week after a full rest day on March 7 (confirmed by him; no commits, no files, nothing from him or the machines). The sprint has a single defined objective: **validate the David Toolkit wedge against real shop use**. Nothing else. Energy reads as focused and deliberate after a clean rest. The Grassroot Hoppers public launch landed on March 6, so the sprint starts from a shipped baseline, not from pre-launch tension.
-
----
-
-## 2. This Week
-
-**Grassroot Hoppers — David Toolkit (HOT)**
-- Repo split is live and public as of March 6. Two repos: `grassroothopper` (movement/umbrella, CC BY-SA) and `david-toolkit` (product, AGPL).
-- Demo UI is in French; repo/docs stay in English. This is a locked product requirement.
-- GitHub Pages deploy succeeded. Three live GitHub issues. Screenshot-backed README. Contributor docs. Cursor automations (BUGBOT, PR template, cursor ops).
-- Sprint goal (March 9–13): validate the wedge with real shop use cases. No feature creep. This is a focused validation sprint.
-- Hackathon devlog templates and launch playbook are in the umbrella repo.
-
-**Blog — Active Draft (WARM)**
-- A blog post is in progress (platform unconfirmed from available data, likely The Dishwasher Generation given the builder context).
-- Status as of March 6: research done, SPEC created, draft in progress. Not finished.
-- Blog pipeline is mature: 5 skills built (brainstorm → extract → draft → review → publish), including a working Substack publish script with cookie auth.
-
-**MyLifeOS — System Work (RECENT, COOLING)**
-- March 5: Rewrote `Values.md` with the Renaissance Man framework. Built full March 2026 action plan. Created weekly business and value plans. Updated 10k running project notes.
-- This was a big intentional planning day. The direction work is done for now — execution phase begins.
-
-**Dancing, Guitar (INFRASTRUCTURE EXISTS, ACTIVITY UNKNOWN THIS WEEK)**
-- Both have full AI-coached skill pipelines (session generation, logging, progression tracking).
-- No log evidence of recent sessions in the last 3 days. Rest day on March 7 explains the gap.
+Julien is in a quiet stretch after a heavy burst of activity. March 7 was a full rest day — no commits, no file changes, nothing from him or the machines. NightCrawler ran automatically at ~05:24 on March 10 but Julien himself has been silent. The sprint (March 9–13) is now live, with a single locked objective: validate the Grassroot Hoppers wedge against real shop use, nothing else.
 
 ---
 
-## 3. Priorities & Struggles
+## 2. THIS WEEK
 
-**What matters most (his words, verbatim priority):**
-> "Its not about the games I develop today, its not about any of my dozens projects. Its about what I'm going to start doing seriously in 6 months. Right now, its only about understanding what's happening, understand what's worth pursuing and what is not. And I have no idea. That's why I'm trying so many things. I need to be at the edge."
+**Grassroot Hoppers** — PRIMARY FOCUS
+- Repo split completed and went public. Two live repos: movement site + David Toolkit product repo.
+- Demo UI shipped in French; docs remain in English.
+- March 9–13 sprint is locked and narrow: validate the wedge against real shop use. No scope creep.
+- Recent heavy day included: CREATOR-SPEECH, LAUNCH-SPEECH, LOGO-BRAINSTORM, SPEC update, ROADMAP update, website skeleton built.
 
-This is the **real meta-context**. The Grassroot Hoppers sprint, the blog, the guitar, the dancing — all of these are exploration vehicles. He is in a **scouting phase**, not a commitment phase. The 6-month horizon is the actual target. Current projects are experiments that generate signal, not destinations.
+**Blog pipeline** — ACTIVE, IN PROGRESS
+- Skill pipeline fully built out (blog-1-brainstorm through blog-5-publish, all SKILL.md files recently modified).
+- A post was in progress: research done, SPEC created, draft in progress as of the last heavy day.
+- Blog-5 includes a working Substack publish script targeting *The Dishwasher Generation*.
+
+**Values & Personal Strategy** — RECENTLY UPDATED
+- Values.md rewritten with the Renaissance Man framework.
+- Full March 2026 action plan built.
+- Weekly business and value plan templates created.
+- 10k running project notes updated.
+- Direction and priorities described as "getting sharper."
+
+**Guitar / Dancing / Other creative skills** — SKILL FILES PRESENT
+- Cursor skill files exist for guitar-coach and dancing-session, recently modified.
+- No recent LOG entries showing active sessions — likely infrastructure work, not active practice.
+
+**Business tooling** — INFRASTRUCTURE MAINTAINED
+- update-business-status, weekly-business-plan, value-plan-review skills all recently modified.
+- These are AI coaching skills within PRISM/Cursor, not indicators of active business sessions this week.
+
+---
+
+## 3. PRIORITIES & STRUGGLES
+
+**What he said matters most (his own words, highest trust):**
+> "It's not about the games I develop today, not about any of my dozens of projects. It's about what I'm going to start doing seriously in 6 months. Right now, it's only about understanding what's happening, understanding what's worth pursuing and what is not. I have no idea. That's why I'm trying so many things. I need to be at the edge."
+
+This is the master frame. Everything else is exploration in service of a future decision not yet made. Grassroot Hoppers is the current live bet, but Julien is explicitly in a scouting phase — not a scaling phase.
 
 **What's hard:**
-- He doesn't know yet what to go all-in on. He's deliberately withholding full commitment while he gathers data.
-- The tension between his identity as a founder/builder and his operational role at Chez Julien remains structurally unresolved (Operation Autonomy is the long game).
-- His own pattern: overinvests in Tier 3 creative projects, undertends Tier 1 (life, relationships, health). The March 5 values rewrite was likely an attempt to correct this.
+- Navigating a portfolio of dozens of active projects while holding uncertainty about which one deserves serious commitment in 6 months.
+- The sprint discipline (one thing: validate wedge) is likely a conscious countermeasure to his known pattern of overinvesting in multiple creative Tier 3 projects simultaneously.
+- Low orderliness is a self-identified structural weakness — the locked sprint and single-objective week suggest active management of this.
 
-**What he's NOT doing this week (by design):**
-- The sprint is single-objective. David Toolkit validation only. Everything else waits.
-- March 7 was a conscious rest day. This is a pattern he's protecting.
-
----
-
-## 4. Business
-
-**Chez Julien / Operation Autonomy**
-- Status: ongoing background operation. No shop-specific activity in the last 3 days — consistent with Julien stepping back and the sprint focus being on software.
-- Henry is the key person for autonomy. Still in early development — 24 years old, invested, but needs structure and training. The February 4 team meeting planted the seed (soft manager pitch to Henry, sales focus ask to Lucas).
-- The Big Meeting (full role restructure conversation) was scheduled for March 2026. **This may be due this week** — no confirmation in recent activity that it happened.
-- Lucas: present, customer-facing strength, questionable reliability on cognitive tasks.
-- Operation Autonomy phase: Setup & Planning (started February 2026). The structural folders (Henry development, processes, metrics) are defined but not all populated.
-- Staffing Calendar System exists as a software project under Operation Autonomy.
-
-**Financial context:** ~500K annual sales, high profitability. 48% building ownership (18-year loan). No new financial data in recent files.
+**What he's avoiding / not doing this week:**
+- Explicitly NOT expanding scope beyond wedge validation for Grassroot Hoppers.
+- March 7 was a deliberate rest day — energy management is active.
 
 ---
 
-## 5. Tools & Stack
+## 4. BUSINESS — CHEZ JULIEN / OPERATION AUTONOMY
 
-**Active development environment:**
-- Cursor IDE with a mature skill system (`.cursor/skills/`) — at least 8 custom skills built and operational
-- MyLifeOS vault (Markdown-based, file-driven context system)
-- NightCrawler: automated nightly report agent (runs ~04:00, commits to vault)
-- PRISM: morning intelligence briefing system (AI analyst reading this snapshot)
-- GitHub: active — two public Grassroot Hoppers repos, Cursor automations (BUGBOT, PR template)
-- Substack publish pipeline: Python script with cookie auth, targets The Dishwasher Generation
+**Current strategic posture:** Operation Autonomy — push shop toward full autonomy, step back from daily operations, develop Henry into a managing role.
 
-**Blog pipeline (fully built):**
-- 5 sequential Cursor skills: brainstorm → extract → draft → review → publish
-- Substack API via `python-substack`, auth via `.env` + `substack.sid` cookie
+**Team:**
+- **Henry** — full-time, invested, doing well. Target: managing/operating officer. 24 years old, lacks experience and structure, not yet reliable independently. Soft manager pitch delivered Feb 4.
+- **Lucas** — part-time/ambiguous status, "questionable at the moment." Strong with customers. Fair deal framed Feb 4: focus on sales and floor in exchange for respect and future opportunity.
 
-**Languages/frameworks in use:** JavaScript/Node.js (`scripts/build-data.mjs` in david-toolkit), Python (Substack publish script), Markdown everywhere.
+**Feb 4 team meeting outcomes:**
+- Frame set: Lucia quitting May 1 gives concrete reason for Julien stepping back.
+- Henry given soft opening to manager path — no pressure, door open.
+- Lucas asked to focus on sales/floor.
+- "Big Meeting" (Option 2 — full role restructure conversation) deferred to March 2026. This may be imminent or already happened (no post-meeting notes visible).
+
+**Financials:** P&L and balance sheet files exist in Operation Autonomy/05_Financials/ but not parsed here. No specific numbers surfaced this week.
+
+**Relevance this week:** Business is background infrastructure, not active sprint focus. The Grassroot Hoppers sprint is itself a business-adjacent validation (testing against "real shop use"), suggesting some overlap.
 
 ---
 
-## 6. Life
+## 5. TOOLS & STACK
+
+- **PRISM** — Julien's personal AI research system (this briefing is its input).
+- **NightCrawler** — automated overnight agent; runs nightly, commits reports, logs activity. Confirmed running March 7 and March 10.
+- **Cursor** — primary AI coding/writing environment. All skill files (blog pipeline, dancing, guitar, business planning) are Cursor skills living in `.cursor/skills/`.
+- **MyLifeOS** — markdown-based life operating system. Obsidian vault structure. LOG.md, CURRENT.md, CLAUDE.md, Journal/Weekly/ are the live pulse points.
+- **Substack** — delivery channel for *The Dishwasher Generation*. blog-5-publish skill uses `substack_publish.py` with cookie-based auth.
+- **Models in use:** Not specified in available data. Cursor (likely Claude or GPT-4-class) for skill execution.
+- **Languages/infra:** Python (substack script, NightCrawler). Markdown-first vault.
+
+---
+
+## 6. LIFE
 
 **Lucia:**
-- Currently employed at the International Yehudi Menuhin Foundation (MUS-E). Quitting May 1, 2026 to go self-employed (art teaching + own art sales).
-- Julien is building financial and time runway to support her transition. This is a live, approaching deadline (~7 weeks out).
-- Monthly anniversary: March 27.
+- Artist, currently at International Yehudi Menuhin Foundation (MUS-E programme).
+- Quitting May 1, 2026 to go self-employed — teaching art, selling her own work.
+- Julien is financially and emotionally supporting this transition.
+- Relationship milestone: 27th of each month (meeting anniversary). April 27 = yearly anniversary.
+- Reynolds Mode active in evenings — work forbidden, full presence.
 
-**Health / Energy:**
-- March 7 was a deliberate rest day. No overextension signals in the log.
-- 10k running project is active (notes updated March 5).
-- Poncho (Australian Shepherd, 2.5 years) is part of daily rhythm.
+**Energy / Health:**
+- Rest day taken March 7 — deliberate, not a sign of problem.
+- 10k running project notes recently updated — physical baseline being maintained.
+- 50/50 rule (life vs investment) is the target; pattern risk is over-investing in Tier 3 creative projects at the expense of Tier 1 (presence, health, relationships).
 
-**Upcoming pressure:**
-- Lucia's employment ends May 1 — financial and emotional significance.
-- The Big Meeting at Chez Julien (March 2026) — may be this week or already passed without a logged outcome.
-- Sprint ends March 13. David Toolkit validation verdict due then.
+**Poncho:** Australian Shepherd, ~2.5 years old. Daily care is part of the baseline.
+
+**Upcoming relevance:**
+- Lucia's May 1 departure from employment is the next major life transition on the horizon (~7 weeks).
+- "Big Meeting" with Henry/Lucas was slated for March 2026 — may be this week or already past.
 
 ---
 
-**Snapshot confidence:** High on project status (Grassroot Hoppers), High on sprint objective, High on meta-positioning (6-month horizon, scouting phase), Medium on business/team (no recent shop activity logged), Low on blog platform and dancing/guitar current state.
+## ANALYST NOTES
+
+Julien is in a **deliberate exploration phase**, not a scaling phase. The correct frame for this briefing period is: *what's worth betting on in 6 months?* — not *how do I execute current projects faster?* Intelligence that helps him evaluate signal vs. noise across his project portfolio, identify emerging patterns in what's gaining traction (Grassroot Hoppers public launch), and understand what "being at the edge" looks like in his domains (AI tools, indie software, content, community) will be highest value. Execution tips for specific projects are secondary.
