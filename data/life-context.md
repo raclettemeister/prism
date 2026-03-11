@@ -1,106 +1,127 @@
-<!-- PRISM Life Context — Auto-generated 2026-03-10T14:36:26.334Z -->
+<!-- PRISM Life Context — Auto-generated 2026-03-11T04:29:10.240Z -->
 <!-- Source: context-note.md + LOG (3d) + 15 recent files -->
 <!-- Model: claude-sonnet-4-6 -->
 # LIFE CONTEXT SNAPSHOT — PRISM
-**Generated:** 2026-03-10 | **Next sprint:** March 9–13
+**Generated:** 2026-03-11 | **For:** AI analyst (intelligence briefing personalization)
 
 ---
 
 ## 1. Right Now
 
-Julien is in the opening days of a focused sprint (March 9–13) with a single locked objective: validate Grassroot Hoppers' wedge against real shop use. The public launch shipped — repo split live, movement site and David Toolkit product repo both deployed, demo UI in French, docs in English. Today appears quiet on the activity front; March 7 was a full rest day and NightCrawler shows no commits or file changes since then. Energy state unknown but the prior heavy day (March 8 or 9) was dense enough that rest was earned.
+Julien is in a quiet operational window. March 10 left no trace — no commits, no journal, no file changes beyond NightCrawler's automated cycle. Sprint week (March 9–13) is live but today starts clean. His energy is in holding pattern mode: the Grassroot Hoppers launch exploded earlier this week, the repo split shipped, and now the sprint has a single locked objective — validate the wedge against real shop use. No new fronts being opened.
 
 ---
 
 ## 2. This Week
 
-**Grassroot Hoppers** *(hot — just launched)*
-- Went fully public. Two repos live: movement site + David Toolkit product repo.
-- Demo UI shipped in French; docs remain English.
-- Sprint March 9–13 has one mandate: validate the wedge against real shop use. Nothing else.
-- Prior heavy day produced: CREATOR-SPEECH, LAUNCH-SPEECH, LOGO-BRAINSTORM, updated SPEC and ROADMAP, website skeleton.
+**Grassroot Hoppers (PRIMARY — sprint active)**
+- Sprint March 9–13 is locked with one objective: validate the wedge against real shop use
+- Repo split completed: movement site + David Toolkit product repo both live
+- Demo UI shipped in French; docs stay English
+- Focus is narrow by design — nothing else this sprint
 
-**Blog pipeline** *(moving)*
-- Research done, SPEC created, draft in progress — pushed forward on the same heavy day as the Grassroot Hoppers launch.
-- Blog infrastructure is mature: four-skill pipeline (brainstorm → extract → draft → review → publish to Substack) is fully built out in `.cursor/skills/`.
-- Active platform appears to be The Dishwasher Generation (Substack).
+**Blog pipeline (recently active)**
+- Four-stage blog pipeline skills fully built out (brainstorm → extract → draft → review → publish to Substack)
+- Blog 1 through 5 skills exist in `.cursor/skills/` — all modified in last 48h
+- Substack publish automation (blog-5) is live with `substack.sid` cookie auth
+- A blog essay was pushed forward recently (research done, SPEC created, draft in progress) — likely the "heavy day" entry from early in the week
 
-**System / Values work** *(recent, now stable)*
-- Values.md rewritten with the Renaissance Man framework.
-- Full March 2026 action plan built. Weekly business and value plans created.
-- 10k running project notes updated.
-- This was a distinct intentional-thinking day — direction work, not execution. Now feeds into the sprint.
+**Skill infrastructure (active build)**
+- `.cursor/skills/` folder is actively being built out: dancing-session, guitar-coach, update-business-status, value-plan-review, weekly-business-plan all present and recently touched
+- These are PRISM/Cursor-native skills — Julien is systematizing his own coaching loops (business, creative, personal)
 
-**Cursor skills** *(recently modified — infrastructure work)*
-- Blog pipeline skills (blog-1 through blog-5-publish) all recently touched.
-- Dancing session skill, guitar coach skill, update-business-status, value-plan-review, weekly-business-plan all present and maintained.
-- Suggests active use of PRISM/Cursor as operating system, not just tooling.
+**Values & personal direction (recent)**
+- Values.md rewritten with Renaissance Man framework
+- Full March 2026 action plan built
+- Weekly business and value plans created
+- 10k running project notes updated
+- This was a high-intentionality session, likely ~March 5–6
+
+**Blog essay (in progress)**
+- Research done, SPEC created, draft in progress — platform unclear from available data
 
 ---
 
 ## 3. Priorities & Struggles
 
-**What matters most (Julien's own words, highest trust):**
+**What he said matters most (his own words, highest trust):**
+> "It's not about the games I develop today, not about any of my dozens of projects. It's about what I'm going to start doing seriously in 6 months. Right now, it's only about understanding what's happening, understanding what's worth pursuing and what is not. I have no idea. That's why I'm trying so many things. I need to be at the edge."
 
-> "It's not about the games I develop today. It's not about any of my dozens of projects. It's about what I'm going to start doing seriously in 6 months. Right now, it's only about understanding what's happening, understanding what's worth pursuing and what is not. I have no idea. That's why I'm trying so many things. I need to be at the edge."
-
-This is the real frame. Everything else — Grassroot Hoppers, the blog, the sprint — is **exploration infrastructure**, not end goals. Julien is in a high-uncertainty, high-breadth phase deliberately. He is pattern-matching across projects to find the signal worth betting on in ~6 months.
+This is the master frame. Everything else is reconnaissance. Julien is in a deliberate exploration phase — not committing, sampling, watching signals. The sprint discipline (one objective, nothing else) and the skill infrastructure build suggest he's also trying to impose structure on the chaos without closing doors prematurely.
 
 **What's hard:**
-- Operating in genuine strategic uncertainty while still executing (sprints, launches, commits).
-- The tension between trying many things and the need to eventually converge.
-- His own self-knowledge: low orderliness is a known weakness; multi-project vibe-coding creates cognitive debt (per CLAUDE.md). The current phase structurally tempts both failure modes.
+- Low orderliness by self-diagnosis — the system infrastructure (skills, LOG, NightCrawler) is partly a compensatory mechanism
+- Tendency to overinvest in Tier 3 (creative projects) while undertending Tier 1 (life, relationships, health)
+- Dozens of parallel projects by design right now — cognitive load is real even if intentional
+- March 10 went dark entirely during a sprint week — either a rest day by choice or an energy dip
 
-**What he's not doing this week:**
-- The sprint is intentionally locked to one thing (Grassroot Hoppers wedge validation). Everything else is explicitly parked.
+**What he's avoiding / not doing:**
+- No journal entries recently
+- Not committing code himself (NightCrawler is the only mover on quiet days)
+- The "big meeting" with Lucas and Henry (planned for March 2026 per meeting notes) — status unknown
 
 ---
 
-## 4. Business — Chez Julien / Operation Autonomy
+## 4. Business
 
-**Status:** Active but not the sprint focus this week.
+**Chez Julien / Operation Autonomy**
+- Strategic direction: push shop toward full autonomy, develop Henry into manager
+- Operation Autonomy started February 2026 — currently in Setup & Planning phase
+- Henry (24): invested, doing well, wants managing role — but lacks structure and reliability; needs training
+- Lucas: good with customers, questionable commitment, tends to grab cognitive tasks that should go to Henry
+- The Big Meeting (role restructure conversation) was planned for March 2026 — no evidence it has happened yet
+- February 4 team meeting was a "foundation-laying" session, not the full role conversation
 
-**Operation Autonomy** is the standing strategic direction: transform Chez Julien into a fully autonomous business, transitioning Julien out of daily operations. Started February 2026.
+**Grassroot Hoppers connection to shop:**
+- The sprint objective — "validate the wedge against real shop use" — means Grassroot Hoppers is being tested against Chez Julien as the real-world shop context. This is where the two tracks intersect.
 
-**Henry** — Full-time, invested, wants a manager/operating officer path. 24 years old, lacks experience and structure, not yet reliable. Key person for autonomy. Monthly team meetings started (first: February 4, 2026 — foundation-laying, not the big conversation yet). The "Big Meeting" (full role restructure conversation) was scoped for March 2026 — unclear if it has happened yet; no meeting notes post-February in the provided files.
+**Staffing Calendar System:**
+- Referenced in `update-business-status` skill's reference file — a software project under `Projects/Software/Staffing Calendar System/` with STATUS.md and SPEC.md
+- Part of the software tools pillar of Operation Autonomy
 
-**Lucas** — Part-time to full-time, status described as "questionable." Strong with customers, weaker on operational reliability.
-
-**The February meeting** established the frame: Lucia quitting in May, Julien stepping back for creative projects, Henry gets soft manager pitch, Lucas gets respect + clear ask (sales focus). Creative agency future hook planted.
-
-**Grassroot Hoppers wedge validation** this week *is* business-relevant — the David Toolkit is explicitly aimed at shop use cases, making the sprint directly connected to Operation Autonomy's software pillar.
-
-**Monthly admin** (recurring, every 1st): Fiddel closure, budget review, Liantis hours encoding, strategic plan review. Status unknown for March.
+**Business infrastructure skill:**
+- `update-business-status` and `weekly-business-plan` skills are built and in `.cursor/skills/` — Julien has systematized his business review loop into Cursor
 
 ---
 
 ## 5. Tools & Stack
 
-- **PRISM / NightCrawler** — Automated morning intelligence briefing and nightly context logging. Running. Last NightCrawler run: ~05:24 March 10.
-- **Cursor** — Primary AI coding/writing environment. Skill system in `.cursor/skills/` is the operating layer for most workflows (blog, dancing, guitar, business planning, value review).
-- **Substack** — The Dishwasher Generation publication. Blog-5-publish skill handles push via `substack_publish.py` with cookie-based auth.
-- **Obsidian/Markdown vault** — MyLifeOS. Source of truth for all planning, logging, strategy.
-- **GitHub** — Repos for Grassroot Hoppers (movement site + David Toolkit) now public and split.
-- **Models in use:** Not specified in current context. PRISM briefing likely uses frontier model(s) — exact model unknown from available data.
+- **PRISM** — automated morning intelligence briefing (this system)
+- **NightCrawler** — automated nightly cycle; runs even on Julien's rest days; updates CURRENT.md and context notes
+- **Cursor** — primary AI coding/writing environment; `.cursor/skills/` folder is the active skill library
+- **Substack** — The Dishwasher Generation publication; blog-5-publish skill automates push via `substack.sid` cookie auth + `python-substack`
+- **MyLifeOS** — markdown vault; CLAUDE.md, CURRENT.md, LOG.md, Projects/, Business/, System/ as primary structure
+- **GitHub** — commits tracked; NightCrawler is the only active committer on quiet days
+- **Readwise + Substack** — AI intelligence feeds (Julien tracks AI field via feeds, not LLM recall)
 
 ---
 
 ## 6. Life
 
-**Lucia** — Quitting her job May 1, 2026 to go self-employed (art teaching + selling her own art). Julien explicitly committed to supporting her with time and money so she can bloom. This is a hard deadline that shapes the next ~7 weeks of financial and operational thinking. She is the primary reason the autonomy timeline has urgency.
+**Lucia:**
+- Quitting her job May 1, 2026 to go self-employed (teaching art, selling art)
+- Julien is actively planning to support her financially and with time during the transition
+- Reynolds Mode (shutdown ritual) is the mechanism for full presence — work forbidden after shutdown
+- Meeting anniversary: 27th of each month; yearly anniversary: April 27
 
-**Health / energy:** March 7 was a full rest day. Energy state today (March 10) not explicitly noted — quiet start to the day per NightCrawler. The heavy launch day before implies some recovery was appropriate.
+**Health / energy:**
+- 10k running project is in his notes and was recently updated — a physical commitment in the mix
+- March 7 was a full rest day (confirmed twice in context notes)
+- March 10 also left no trace during sprint week — possible energy management, not a problem signal
+- Self-knowledge: high neuroticism + high assertiveness = thrives in fast/unknown/high-stakes; low orderliness = the primary vulnerability
 
-**Running:** 10k project notes updated during the values/planning day. Active project, not stale.
+**Dancing:**
+- `dancing-session` skill is built and in active stack — Lindy Hop daily practice is a keystone habit and community entry point
+- Dancing is described as "fuel for community presence" — not optional in his system
 
-**Dancing:** Daily Lindy Hop practice is a keystone habit (community, energy, discipline). Dancing session skill is maintained and operational. No session data visible for this week yet.
+**Poncho:**
+- Australian Shepherd, 2.5 years old — see System/Poncho.md for care needs
 
-**Guitar:** Guitar coach skill active. Country ballad songwriter path. No session data visible this week.
-
-**Poncho:** Australian Shepherd, 2.5 years old. Ongoing daily presence.
-
-**Key upcoming date:** Lucia's employment ends May 1 (~7 weeks). Meeting anniversary with Lucia: March 27.
+**Key upcoming dates:**
+- Lucia quitting: May 1, 2026
+- Lucia birthday: January 13 (past)
+- Yearly anniversary: April 27
 
 ---
 
-*Snapshot confidence: HIGH on Grassroot Hoppers status and sprint focus. HIGH on strategic orientation (Julien's own words). MEDIUM on business/team (last meeting notes February 4; March Big Meeting status unknown). LOW on today's energy/mood (quiet day, no direct input).*
+**Snapshot confidence:** High on current sprint and Grassroot Hoppers state. Medium on business meeting status (The Big Meeting — no confirmation it happened). Low on blog essay specifics (platform, topic unknown from available data). March 10 silence is noted but not flagged as a concern given established rest day pattern.

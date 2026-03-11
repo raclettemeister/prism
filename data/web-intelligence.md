@@ -1,348 +1,333 @@
-<!-- PRISM Web Intelligence — 2026-03-10 -->
-# Web Intelligence — 2026-03-10
-*Scheduled theme: Software Dev & AI Building*
+<!-- PRISM Web Intelligence — 2026-03-11 -->
+# Web Intelligence — 2026-03-11
+*Scheduled theme: Grassroot Hopper & Cooperative Tech*
 
-## [dev] new developer tool releases or updates March 9-10 2026
+## [grassroot] cooperative technology platform grants Belgium Brussels 2026
 
-Purpose: Catch any tool drops in the last 48h relevant to Julien's builder stack.
+Purpose: Scan for new funding calls or grant announcements relevant to Grassroot Hoppers in the Belgian/Brussels cooperative ecosystem.
 
-Here is a concise, fact-based summary of developer tool releases and updates for **March 9–10, 2026**:
-
----
-
-## 🛠️ Developer Tool Updates: March 9–10, 2026
+Here is a concise, fact-based summary of recent updates on cooperative technology platform grants in Belgium/Brussels for 2026:
 
 ---
 
-### 1. 🍎 Apple: Xcode 26.4 Beta 3 — **March 9, 2026**
+## 🇧🇪 Belgium & Brussels: Cooperative Tech Platform Grants — 2026 Updates
 
-**What changed:**
-Xcode 26.4 Beta 3 (build 17E5179g) was released on March 9, 2026, alongside iOS, macOS, tvOS, watchOS, and visionOS 26.4 Beta 4. Key improvements include:
+### 1. 🔄 Brussels Digitalization Bonus (MyBEE Platform) — Key Change
+The **Digitalization Bonus** is now the main grant for digital projects in Brussels in 2026. In force since the decree of February 22, 2024, it **replaces the former Web Grant** and offers broader, more flexible coverage. It is managed by Brussels Economy and Employment via the **MyBEE platform**.
 
-- **Swift Testing** gains image attachment support for `CGImage`, `NSImage`, `UIImage`, and `CIImage` types.
-- **Instruments** adds a Run Comparison feature and new Top Functions mode for faster performance profiling.
-- The **String Catalog editor** now supports cut, copy, paste, duplicate, language removal, and pre-fill from existing translations.
+- The subsidy rate varies by company profile and can reach **up to 70%**, with a base rate of 25%.
+- Eligible projects include e-commerce platforms, ERP/CRM systems integration, cybersecurity, and **AI and automation** projects (chatbots, business process automation, productivity tools).
+- Approved **social enterprises** (cooperatives) can benefit from a **10% increase** on top of standard rates.
 
-**Why it matters:**
-Unlike Xcode 26.3, which introduced agentic coding with Claude Agent and OpenAI Codex via MCP, version 26.4 focuses entirely on workflow refinement — making it a more stable, polish-focused beta for developers preparing apps for the upcoming release cycle.
-
-📌 **Sources:** https://www.adwaitx.com/xcode-26-4-beta-3-release/ | https://developer.apple.com/news/releases/ | https://xcodereleases.com/alpha.html
+**Why it matters:** This is the primary cooperative-eligible tech grant in Brussels, now with a higher ceiling and wider scope than before.
+🔗 https://www.numinam.com/en/blog/grants-for-creating-a-website-in-brussels-in-2026-complete-guide-to-the-digitalization-grant-25-to-70-subsidy
 
 ---
 
-### 2. 🟦 VS Code 1.110 (February 2026 Release) — **Released March 4, 2026**
-*(The most recent VS Code release active during this window)*
+### 2. ⚠️ KMO-Portefeuille (Flanders): Advisory Scope Narrowed — Feb 1, 2026
+Since **February 1, 2026**, the advisory component of KMO-portefeuille has been **limited to cybersecurity only**. Digitalization advisory is no longer supported. Training services (including for digitalization and AI topics) remain available for all themes.
 
-**What changed:**
-VS Code 1.110 makes agents practical for longer-running and more complex tasks, with **agent plugins** (installable prepackaged bundles of skills, tools, and hooks), **agentic browser tools** (letting the agent drive the browser to interact with your app), **session memory** (persisting plans across conversation turns), and **context compaction** (manually compacting conversation history).
-
-The new **Agent Debug panel** gives developers deeper visibility into chat sessions and how agent customizations are loaded, showing chat events in real time — including system prompts, tool calls, and more.
-
-**Why it matters:** This positions VS Code as a hub for multi-agent development workflows, integrating Claude and Copilot CLI more deeply into the coding loop.
-
-📌 **Source:** https://code.visualstudio.com/updates/v1_110 | https://releasebot.io/updates/microsoft/visual-studio-code
+**Why it matters:** Cooperatives or tech platforms in Flanders that previously used KMO-portefeuille for digital advisory consulting can no longer do so — only cybersecurity qualifies now.
+🔗 https://flowful.ai/blog/fund-ai-project-belgium/
 
 ---
 
-### 3. 🤖 OpenAI Codex CLI — Ongoing March 2026 Updates
+### 3. 🤖 Brussels AI & Tech Grants: SustAIn.brussels & GENAI Program (Active 2026)
+The **Start AI voucher** gives Brussels-based SMEs access to an AI center of expertise through the **SustAIn.brussels Digital Innovation Hub**, with up to **€10,000 in funding** covering up to 75% of project costs.
 
-**What changed:**
-OpenAI added a built-in `request_permissions` tool so running turns can request additional permissions at runtime, with new TUI rendering for those approval calls. Plugin workflows were expanded with curated marketplace discovery, richer plugin/list metadata, install-time auth checks, and a `plugin/uninstall` endpoint.
+The **GENAI program** funds generative AI proof-of-concept projects with subsidies covering **15% to 70%** of project budgets up to €80,000 (grants up to ~€56,000).
 
-A separate update also introduced: **Fast mode** enabled by default, dynamic local JS imports, visible enabled plugins at session start, and structured MCP elicitation in app-server v2.
-
-**Why it matters:** These updates make the Codex CLI agentic experience more robust — giving developers runtime permission controls and a growing plugin ecosystem.
-
-📌 **Source:** https://developers.openai.com/codex/changelog/ | https://releasebot.io/updates/openai
+**Why it matters:** These are the most direct routes for cooperative tech platforms in Brussels building AI-enabled digital services.
 
 ---
 
-### 4. 🎨 Blender — Developer Weekly Update: **March 9, 2026**
+### 4. 📈 Broader Belgium Startup/Tech Ecosystem (March 2026)
+Notable March 2026 developments include **Syndicate One raising €22 million** to fund tech startups in AI, robotics, and software, and **Ghent joining Bloomberg Philanthropies' Mayors Challenge**, fostering civic tech collaboration. Belgium's VLAIO grants cover up to **50% of R&D costs** for high-tech projects.
 
-**What changed:**
-The Blender developer forum posted its weekly update for March 9, 2026, covering ongoing module meetings (Grease Pencil, Modeling, Render & Cycles, Sequencer, Animation & Rigging, Viewport & EEVEE) and new features and changes across modules.
-
-**Why it matters:** Blender's transparent, weekly developer communications help contributors and pipeline TDs track incremental progress in core rendering, animation, and tooling ahead of the next stable release.
-
-📌 **Source:** https://devtalk.blender.org/t/9-march-2026/44471
+🔗 https://blog.mean.ceo/startup-grants-belgium-news-march-2026/
 
 ---
 
-### TL;DR Table
+### Summary Table
 
-| Tool | Date | Key Change |
-|---|---|---|
-| **Xcode 26.4 Beta 3** | Mar 9, 2026 | Swift Testing image attachments, Instruments Run Comparison, String Catalog improvements |
-| **VS Code 1.110** | Mar 4, 2026 (active window) | Agent plugins, browser tools, session memory, Agent Debug panel |
-| **OpenAI Codex CLI** | March 2026 (rolling) | Runtime permission requests, plugin marketplace, Fast mode on by default |
-| **Blender** | Mar 9, 2026 | Weekly module dev update (Cycles, EEVEE, Animation, GP) |
+| Program | Change / Status | Max Grant | Date |
+|---|---|---|---|
+| Brussels Digitalization Bonus (MyBEE) | Replaced Web Grant; wider scope | Up to €10,000 / 70% | Active 2026 |
+| KMO-Portefeuille Advisory | Narrowed to cybersecurity only | — | Feb 1, 2026 |
+| Start AI Voucher (SustAIn.brussels) | Active | €10,000 / 75% | Active 2026 |
+| GENAI Program (Brussels) | Active | ~€56,000 / 70% | Active 2026 |
 
-## [dev] AI coding agent workflows builder productivity announcements March 2026
+## [grassroot] community tech tools small business cooperative launch movement March 2026
 
-Purpose: Deepen today's dev theme: track shifts in agent-assisted engineering patterns Julien should know before his 6-month bet.
+Purpose: Find aligned orgs or people launching cooperative shop tools this week that could be wedge validation signals or partnership leads.
 
-Here's a concise, fact-based summary of recent developments in **AI coding agent workflows, builder tools, and productivity** as of March 2026:
-
----
-
-## 🔧 AI Coding Agent Workflows & Builder Productivity — March 2026 Update
+Here is a concise, fact-based summary based on the search results. Note upfront: **there is no single unified "community tech tools small business cooperative launch movement" story from March 2026** — but here are the closest, most relevant verified developments:
 
 ---
 
-### 🆕 What Changed
+## 🔍 What's Actually Happening (March 2026)
 
-**1. Snowflake Launches Cortex Code (BUILD London 2026)**
-Snowflake unveiled **Cortex Code**, a data-native AI coding agent that automates and accelerates end-to-end enterprise development by deeply understanding and operating within enterprise data context. This was announced at **BUILD London 2026**.
-🔗 https://www.snowflake.com/en/news/press-releases/snowflake-unveils-cortex-code-an-ai-coding-agent-that-drastically-increases-productivity-by-understanding-your-enterprise-data-context/
+### 1. The Movement Cooperative × Action Network Partnership
+**Most directly relevant to your query.**
 
----
+The Movement Cooperative (TMC), a nonprofit that provides data and tech support to progressive groups, announced a partnership with the nonprofit tech platform Action Network to provide a suite of organizing and fundraising tools to its members.
 
-**2. Multi-Agent Protocols Moving to Production (IBM, Anthropic, Google — Jan 2026)**
-IBM's Kate Blair stated that 2026 is "the year where all multi-agent systems move into production," following 2025's proliferation of protocols like Anthropic's MCP, IBM's ACP, and Google's A2A. Blair leads IBM's BeeAI and Agent Stack initiatives, both contributed to the Linux Foundation.
+The partnership comes nearly a year after TMC began soliciting proposals for new voter data and contact systems, amid broader concerns in the progressive ecosystem that existing tech platforms haven't kept pace with the needs of the campaigns and organizations they serve.
 
-The Linux Foundation recently announced the formation of the **Agentic AI Foundation**, including Anthropic's contribution of MCP under open governance — which is expected to unlock more community-driven innovation.
-🔗 https://www.ibm.com/think/news/ai-tech-trends-predictions-2026
+TMC's CEO Julia Barnes said the collaboration gives members access to tools that are "responsive to movement needs," noting: "It's very rare in this space that data infrastructure providers are building meaningfully alongside the users in real time."
 
----
+Launched in 2012, Action Network bills itself as an open platform built in collaboration with movement-aligned activists and organizations like the AFL-CIO and MoveOn. The partnership gives TMC members access to Action Network's full suite — including email, fundraising, and event tools.
 
-**3. Agent-First IDE Landscape Solidifies (March 2026)**
-Essential AI coding tools for 2026 now include **Cursor** (for production), **Windsurf** (for large-scale refactors), and **Google Antigravity** (for agent-first task management).
-
-Repository-level agents like **Cursor, Claude Code, Aider, and Devin** now handle multi-file refactors, debugging loops, and scoped task execution across entire codebases.
-🔗 https://www.qodo.ai/blog/best-ai-coding-assistant-tools/
+📌 **Source:** [Campaigns & Elections](https://campaignsandelections.com/industry-news/progressive-nonprofits-partner-on-movement-aligned-tech/)
 
 ---
 
-**4. Enterprise Adoption Reaches a Tipping Point**
-A May 2025 PwC survey of 300 U.S. executives found **79% of organizations already run AI agents in production**, with **66% reporting measurable productivity gains**. Gartner projects that **40% of enterprise applications will embed task-specific agents** going forward.
-🔗 https://ekfrazo.com/resources/blogs/agentic-ai-in-enterprise-operations-how-ai-agents-are-replacing-manual-workflows-in-2026/
+### 2. SBDC Day — March 18, 2026
+SBDC Day, observed on the third Wednesday of March every year since its inception in 2017, recognizes the work of the nationwide network of Small Business Development Centers (SBDCs) and their collective accomplishments in helping America's small businesses succeed. With support from SBDCs, anyone looking to launch a business today has access to the guidance and resources needed to navigate challenges and thrive in the current market.
+
+📌 **Source:** [SBDCNet](https://www.sbdcnet.org/sbdc-national-blog/sbdc-day/)
 
 ---
 
-### 💡 Why It Matters
+### 3. AI Tools Now Mainstream for Small Businesses (2026 Trend)
+In 2026, AI automation for small businesses and startups is no longer optional — it's a critical component for efficiency, innovation, and staying competitive, transforming workflows from marketing to customer support.
 
-- **Agentic workflows are no longer experimental** — they are production infrastructure for the majority of large enterprises.
-- The standardization of agent protocols (MCP, A2A, ACP) under open governance is removing fragmentation, making cross-tool orchestration practical for builders.
-- Snowflake's Cortex Code signals a major platform play: cloud data warehouses are now competing directly in the AI dev tooling space.
-- The key shift in 2026 is **orchestration** — combining models, tools, and workflows — rather than raw model capability alone.
+The vendor community is also driving more SMBs toward the cloud and Software as a Service platforms, with most small/medium businesses adopting a hybrid on-prem and cloud environment.
 
----
-
-### 📅 Key Dates
-| Event | Date |
-|---|---|
-| IBM 2026 AI Trend Predictions published | Jan 1, 2026 |
-| Snowflake Cortex Code announced (BUILD London) | Early 2026 |
-| AI workflow automation enterprise report | ~Mar 2026 (1 week ago) |
-| QuantoSei AI Coding Guide published | Mar 9, 2026 |
-| Qodo Top 15 AI Coding Tools updated | ~Mar 2026 (1 week ago) |
-
-## [dev] micro-SaaS indie developer opportunity niches AI tools March 2026
-
-Purpose: Deepen today's dev theme: surface micro-software wedges that could inform Julien's signal-hunting across projects.
-
-Here's a concise, fact-based summary of what's happening in the micro-SaaS / indie dev AI niche space right now:
+📌 **Source:** [BizTech Magazine](https://biztechmagazine.com/article/2025/12/tech-trends-2026-heres-what-small-businesses-will-focus-new-year) | [eAmped](https://www.eamped.com/best-tech-tools-startups-small-businesses-2026/)
 
 ---
 
-## 🧩 Micro-SaaS + AI Tools: Key Updates (Early 2026)
+## ⚠️ Bottom Line
+The **TMC × Action Network deal** is the closest match to a "cooperative tech tool launch for community movements" in this timeframe. There is no single prominent "small business cooperative tech launch movement" event specifically tied to March 2026 — the broader trend is the **mainstreaming of AI and cloud tools** for small businesses, and **cooperative data/tech infrastructure** gaining traction in nonprofit/advocacy spaces.
 
-### 📌 What Changed
+## [grassroot] platform cooperativism solidarity economy news March 2026
 
-**1. The opportunity has shifted from generic to hyper-specialized tools.**
-Market signals from Indie Hackers and Reddit's r/SaaS are clear: the opportunity has moved away from generalized tools toward hyper-specialized, AI-powered solutions.
+Purpose: Catch any movement-level shifts in cooperative/solidarity economy discourse that could inform Grassroot Hoppers positioning.
 
-**2. The micro-SaaS market is growing fast — and it favors solo founders.**
-The micro-SaaS market is projected to grow from $15.7B to $59.6B by 2030 — roughly 30% annual growth. Most founders spend under $1K before first revenue thanks to no-code tools and free tiers. Solo founders routinely hit $5K–$50K+ MRR by targeting niche pain points.
-
-**3. Vertical SaaS is outpacing horizontal SaaS.**
-Vertical SaaS companies are outperforming their horizontal counterparts, with a median growth rate of 31% compared to 28% for horizontal players. Deep industry expertise creates a powerful competitive moat.
-
-**4. AI "wrappers" on boring B2B problems are the hot niche — not LLMs.**
-"The biggest opportunity in 2026 isn't building a better LLM. It's building a tiny, specialized wrapper that solves one boring, painful problem perfectly." Identified open gaps include: messy CSV data-cleaning tools for accountants, meeting intelligence summarizers, and content repurposing tools.
-
-**5. Validated niches gaining traction right now include:**
-- Micro-influencer campaign management tools (outreach, contract tracking, deliverable management) targeting specific platforms like Instagram or TikTok-only.
-- AI meeting assistants that integrate with Zoom, Google Meet, and Teams to automatically extract insights and track follow-ups. Content creator tools that turn one piece of content into multiple formats for different platforms.
+Here's a concise, fact-based summary of the most recent updates in platform cooperativism and the solidarity economy:
 
 ---
 
-### 📌 Why It Matters
+## 🔄 Platform Cooperativism & Solidarity Economy — Recent Updates (Early 2026)
 
-Bootstrapped micro-SaaS businesses typically achieve 70%+ profit margins since there's no VC pressure for hypergrowth and minimal overhead. For indie SaaS developers and startups, 2026 is a landscape of unprecedented opportunity and intense competition. The combination of cheap AI APIs, no-code build tools, and massive underserved verticals means the barrier to a profitable solo product has never been lower.
+### 1. 📅 Next Major Conference Announced: "Solidarity AI 2026" — Bangkok, Thailand
+The **12th Platform Cooperativism Consortium (PCC) Conference** will take place **November 12–15, 2026**, at Chulalongkorn University in Bangkok, Thailand, titled **"Solidarity AI."**
 
----
+The conference is co-convened by PCC Global and PCC Thailand, bringing together researchers, cooperative leaders, technologists, policymakers, and union organizers to strengthen **democratic approaches to AI infrastructure.**
 
-### 🔗 Most Important Sources
-
-| Source | URL | Date |
-|---|---|---|
-| Superframeworks – Best Micro SaaS Ideas 2026 | https://superframeworks.com/articles/best-micro-saas-ideas-solopreneurs | Jan 28, 2026 |
-| Calmops – 50+ Micro-SaaS Ideas 2026 | https://calmops.com/indie-hackers/micro-saas-ideas-2026/ | ~1 week ago |
-| Fungies.io – 2026 SaaS & AI Revolution Trends | https://fungies.io/the-2026-saas-and-ai-revolution-20-top-trends/ | Jan 10, 2026 |
-| Medium/Schroeder – 5 AI Micro-SaaS Weekend Ideas | https://medium.com/illumination/5-ai-micro-saas-ideas-you-can-build-this-weekend-that-actually-make-money-b6212674234b | Feb 2026 |
+**Why it matters:** This is the movement's flagship annual event, signaling that **AI governance and ownership** is now the central front for platform cooperativism.
 
 ---
 
-**Bottom line:** The playbook in early 2026 is clear — pick one narrow, painful B2B workflow problem, wrap an LLM around it, and ship fast. The macro tailwinds (market growth, cheap tooling, community validation loops) are all in the indie founder's favor.
+### 2. 🎓 ICDE Fellowship Program Open for Applications (2026–2027)
+The **Institute for the Cooperative Digital Economy (ICDE)** has opened applications for its **2026–2027 Fellowship Program** — a global, non-residential research fellowship for scholars examining cooperatives, unions, and solidarity-economy approaches to digital systems, including AI and data-intensive infrastructures.
 
-## [grassroot] grassroots small business software adoption trends March 2026
+Fellows are expected to produce substantial research (approximately 8,000–10,000 words) accessible to non-academic readers, and translate findings into forms that can be taken up by **cooperatives, worker organizations, unions, and federations.**
 
-Purpose: Monitor the shop-use landscape Grassroot Hoppers is validating against this sprint week.
-
-Here is a concise, fact-based summary of **small business software adoption trends heading into and through early 2026**, drawn from the most recent available sources:
-
----
-
-## 📊 Small Business Software Adoption Trends — Early 2026
-
-### 🔄 What Changed
-
-- **Tech spending is accelerating sharply.** Clutch research (December 2025) shows more than half (55%) of small businesses plan to increase tech spending in 2026, while only 5% expect cuts — reflecting how closely technology investments are now tied to business outcomes.
-
-- **AI is shifting from optional to essential.** Agentic AI is described as "particularly transformative," using historical data to predict customer needs, while the democratization of development tools is making advanced AI accessible across all business sizes — shifting AI from a novelty to a necessity.
-
-- **Top software investment priorities for 2026:** Web development (39%), mobile app development (38%), software development (37%), AI (32%), and IT infrastructure (31%) — with 36% of small businesses planning to increase spending on AI and automation to streamline workflows and reduce manual tasks.
-
-- **Software buying is getting harder and costlier.** Capterra's 2026 Software Buying Trends report (October 2025) notes that the outlook for 2026 shows software buying is increasingly complex and costly, especially for small and midsize businesses (SMBs). Only one in three software buyers is a "successful software adopter," and 89% of software buyers who regret their purchase experienced implementation disruptions.
-
-- **Grassroots/Main Street businesses face a divide.** Main Street America's February 2026 analysis found that AI adoption is higher among Main Street program directors than among Main Street businesses themselves, with most programs using it for capacity building rather than data collection, fundraising, or reporting.
-
-- **Financial resilience tools are growing.** In 2026, many small businesses are expected to sharpen their focus on financial resilience — not just growth — including increased interest in budgeting tools, forecasting software, and outsourced payroll services.
+**Why it matters:** It demonstrates an ongoing institutional push to bridge academic research and on-the-ground cooperative organizing.
 
 ---
 
-### ❗ Why It Matters
+### 3. 🌐 Movement Scale: 1.2M+ Workers in 53 Countries
+As of late 2025, **more than 1.2 million workers in 53 countries** are working in the cooperative digital economy — described as "a proof of concept that cooperation can grow."
 
-Small businesses are at an **inflection point**: customer expectations and competitive pressure are forcing software adoption faster than many operators are prepared to handle. The risk of poor implementation is high — the remaining third of buyers who succeed consistently follow five key habits that prevent disruption and regret. For grassroots businesses especially, the gap between early adopters and laggards is widening rapidly in 2026.
+In 2025, PCC's network spanned **more than 60 countries**, linking universities, cooperatives, unions, research institutes, and grassroots organizations.
+
+**Why it matters:** These figures establish a measurable baseline for the movement's global reach heading into 2026.
+
+---
+
+### 4. 📄 Research Reports Expected in Early 2026
+Reports from recent research initiatives are expected to be **published early in 2026.**
 
 ---
 
 ### 🔗 Most Important Source URLs
 
-| Source | Date | URL |
+| Source | URL |
+|---|---|
+| PCC 2025 Year-in-Review | https://platform.coop/blog/news-from-the-platform-cooperativism-consortium-2025/ |
+| Solidarity AI 2026 Call for Participation | https://platform.coop/blog/call-for-researchers-and-practitioners/ |
+| ICDE Fellowship Open Call | https://platform.coop/blog/open-call-for-applications-2026-2027/ |
+| "The Solidarity Stack" Keynote | https://platform.coop/blog/the-solidarity-stack/ |
+
+---
+
+**Bottom line:** The platform cooperativism movement is pivoting squarely toward **AI governance** as its defining 2026 issue, with a flagship Bangkok conference, a new research fellowship cohort, and growing global infrastructure — all centered on building democratic, worker-owned alternatives to extractive AI platforms.
+
+## [dev] AI coding agent documentation context window niche stack March 2026
+
+Purpose: Follow up on yesterday's signal about agents thriving on niche stacks — any new evidence or tools shipped in last 48h.
+
+Here's a concise, fact-based summary of what's new in the **AI coding agent / documentation / context window / niche stack** space as of **March 2026**:
+
+---
+
+## 🔑 Key Update: Context Hub — Solving "Agent Drift" in Coding Agents
+
+**Released: ~March 9–10, 2026** | **Source:** [MarkTechPost](https://www.marktechpost.com/2026/03/09/andrew-ngs-team-releases-context-hub-an-open-source-tool-that-gives-your-coding-agent-the-up-to-date-api-documentation-it-needs/)
+
+**What changed:**
+LLMs are frozen in time post-training, leading to a problem called **"Agent Drift"** — where models hallucinate deprecated endpoints, such as choosing legacy Chat Completions over the Responses API.
+
+To fix this, Andrew Ng's team released **Context Hub** (`chub` CLI), which coding agents like Claude Code can use to fetch versioned, up-to-date API documentation. It also supports **persistent memory** via `chub annotate` for specific library bugs (e.g., raw body webhook verification).
+
+A community feedback loop (`chub feedback`) lets developers crowdsource documentation accuracy and label entries as outdated.
+
+**Why it matters:** Coding agents working with rapidly-evolving APIs (e.g., OpenAI's GPT-5.x endpoints) were silently generating broken code using stale, post-training-cutoff parameters. Context Hub directly injects current, version-specific docs into the agent's context window.
+
+---
+
+## 🖥️ Context Engineering: How Coding Agents Manage Their Context Window
+
+**Source:** [Martin Fowler — Context Engineering for Coding Agents](https://martinfowler.com/articles/exploring-gen-ai/context-engineering-coding-agents.html)
+
+**What changed:**
+Claude Code's context configuration (as of January 2026) includes path-scoped rules (e.g., `*.sh` for all shell scripts), which are loaded **only when relevant**, keeping the always-loaded `CLAUDE.md` lean. More and more coding assistants like GitHub Copilot and Cursor are also adopting this path-based rules configuration.
+
+There are emerging attempts to standardize this as a universal `AGENTS.md` format across tools.
+
+---
+
+## 🏆 Niche Stack Winners (March 2026 Landscape)
+
+**Source:** [Faros AI — Best AI Coding Agents for 2026](https://www.faros.ai/blog/best-ai-coding-agents-2026) | [CSS Author — Senior Editor's Guide](https://cssauthor.com/best-ai-coding-agents/)
+
+- **Aider** continues to thrive in a specific niche: developers who want agentic behavior but prefer **git-native, CLI-based workflows** — recommended as one of the most reliable tools for structured refactors due to its fit with diffs, commits, and branches.
+
+- **Augment** wins the "Context War" for enterprise: its 200,000+ token "Context Engine" semantically indexes entire codebases and is the only tool reliably handling spaghetti code in massive enterprise monorepos (1M+ lines of code).
+
+- Despite Augment's technical strengths (speed, context retention), user sentiment has cooled due to pricing and credit model changes.
+
+---
+
+## 📌 Summary Table
+
+| Topic | Update | Date |
 |---|---|---|
-| Clutch / BusinessWire | Dec 16, 2025 | https://www.businesswire.com/news/home/20251216823520/en/Clutch-Report-55-of-Small-Businesses-Will-Accelerate-Tech-Adoption-in-2026-as-Customer-Demands-Rise |
-| Capterra 2026 Buying Trends | Oct 7, 2025 | https://www.capterra.com/resources/software-buying-trends-2026/ |
-| Main Street America | Feb 3, 2026 | https://mainstreet.org/the-latest/news/main-spotlight-eight-trends-for-small-businesses-in-2026 |
-| AT&T Small Business Blog | Jan 15, 2026 | https://about.att.com/blogs/2026/2026-small-business-trends.html |
+| Context Hub (chub CLI) | Fixes API drift in coding agents with live docs | Mar 9–10, 2026 |
+| Claude Code context config | Path-scoped rules, `AGENTS.md` standardization push | Jan–Mar 2026 |
+| Aider | Still dominant in git/CLI niche | Ongoing 2026 |
+| Augment | 200k+ token context engine for enterprise monorepos | 2026 |
 
 ---
 
-> ⚠️ **Note:** No sources used the specific phrase "grassroots small business software adoption" as a defined category. The above reflects the closest available factual reporting on ground-level/SMB software adoption as of early 2026.
+**Most important source URLs:**
+1. 🔗 https://www.marktechpost.com/2026/03/09/andrew-ngs-team-releases-context-hub-an-open-source-tool-that-gives-your-coding-agent-the-up-to-date-api-documentation-it-needs/
+2. 🔗 https://martinfowler.com/articles/exploring-gen-ai/context-engineering-coding-agents.html
+3. 🔗 https://www.faros.ai/blog/best-ai-coding-agents-2026
 
-## [game] indie game development tools or releases news March 9-10 2026
+## [game] indie game studio cooperative community funding model 2026
 
-Purpose: Maintain game domain radar for Julien's cross-domain pattern-matching.
+Purpose: Track whether cooperative or community-owned models are entering the indie game space as a cross-domain grassroot signal.
 
-Here's a concise, fact-based summary of the most relevant indie game dev news around **March 9–10, 2026**:
-
----
-
-## 🎮 Indie Game Dev News: March 9–10, 2026
-
----
-
-### 1. 🔧 Switch 2 Dev Kits Now More Accessible to Indies — But Nintendo Gatekeeping Remains
-**Date: March 8, 2026**
-
-New Blood Interactive CEO Dave Oshry confirmed in a recent interview that Switch 2 dev kits are now more attainable for indie studios. However, Nintendo — increasingly wary of eShop shovelware — could still reject games in development. The studio behind *Dusk* and *Blood West* is preparing to release its dungeon crawler *Dungeons of Dusk* on Switch 2, though the port is not yet guaranteed. Oshry described the dev kit process as "not much different than the Switch 1."
-
-**Why it matters:** This is a concrete signal that Nintendo's platform is more open to indie devs post-launch, but quality control friction persists — a key tension shaping indie platform strategy.
-
-🔗 **Source:** [NotebookCheck — March 8, 2026](https://www.notebookcheck.net/Indie-game-studio-says-Switch-2-dev-kits-are-more-accessible-but-Nintendo-fears-shovelware-slop.1244947.0.html)
+Here is a concise, source-backed summary of what's happening at the intersection of **indie game studios, cooperative/community models, and funding in 2026**:
 
 ---
 
-### 2. 🏆 GDC 2026 / Independent Games Festival — Awards & Industry Report
-**Ongoing — March 2026**
+## 🎮 Indie Game Studio: Cooperative & Community Funding — Key Updates
 
-The 28th annual Independent Games Festival is now accepting submissions, celebrating indie game innovation at GDC 2026 with awards across multiple categories. The 2026 *State of the Game Industry* report covers layoffs, generative AI, unionization, and platform trends. *Clair Obscur: Expedition 33* leads the Game Developers Choice Awards with eight nominations, including Game of the Year — winners to be revealed at GDC in San Francisco this March.
+### What Changed
 
-**Why it matters:** GDC is the industry's central gathering point; IGF submissions and GDCA finalists shape what tools, trends, and titles get funded and spotlighted next.
+**1. Developer Cooperatives Are Now a Real Strategy (2025–2026)**
+In 2025, laid-off AAA developers began forming cooperatives and collectives, sharing resources to reduce overhead while jointly pitching multiple projects — increasing the odds that at least one secures funding. This marks a structural shift away from solo-studio models.
 
-🔗 **Source:** [GDC News & Insights](https://gdconf.com/news-insights/)
+**2. Blue Ocean Games Launches $30M SAIL Fund with a Cohort/Community Model (April 2025)**
+Blue Ocean Games employs a distinctive investment instrument called SAIL (Structured Agreement for Indie Launch), providing developers with $100,000 per developer (up to $300,000 per team), disbursed over two years, with objective market-validation milestones rather than subjective checkpoints. Crucially, developers will be grouped in cohorts, creating a collaborative community that can share knowledge and resources. Developers also retain IP ownership under a hybrid equity/revenue-share structure.
 
----
+**3. NEOM "Level Up" Accelerator Hits Largest-Ever Cycle (January 7, 2026)**
+On January 7, 2026, NEOM announced five game studios selected to receive funding as part of its annual flagship gaming accelerator "Level Up," coupled with an initial mentorship phase supporting a further 18 studios — collectively making the most recent cycle Level Up's biggest yet.
 
-### 3. 🚀 Notable Indie Releases Around March 9–10, 2026
+**4. Epic MegaGrants Opens Next Submission Window (Mid-2026)**
+Epic MegaGrants — investments Epic Games makes specifically for smaller teams, solo developers, and innovators — have opened a new submission window running June 29 – September 4, 2026.
 
-**Slay the Spire 2** from Mega Crit launched in Early Access on **March 5, 2026** for PC. Built on a new engine, it introduces new slayers, enemies, events, and bosses.
-
-**RUBATO** released on **March 20** for PS5, Switch, and PC via Steam (demo available). **RACCOIN: Coin Pusher Roguelike** is set for **March 31** on PC via Steam.
-
-**Kena: Skies of Kosmora** was announced by Amber Lab for PS5 and PC, and **Console Archives: Nobunaga's Ambition** launched on **March 5** for PS5 and Switch 2.
-
-**Why it matters:** The early March window is dense with indie releases, signaling continued strong output on Steam and cross-platform storefronts heading into Q2 2026.
-
-🔗 **Sources:** [MonsterVine March 2026 Wrap-Up](https://monstervine.com/2026/03/march-2026-indie-games/) | [GamesRadar Upcoming Indies](https://www.gamesradar.com/upcoming-indie-games/)
+**5. Hybrid Funding Chains Are Now Standard Practice**
+A typical team might start by building a prototype on savings or a small arts grant, then run a Kickstarter to validate community interest, then negotiate a publishing deal using the Kickstarter success as leverage, or alternatively use Early Access revenues to finish the game.
 
 ---
 
-### ⚠️ Caveat
-No major **new game engine or dev tool releases** (e.g., Unity, Godot, GameMaker updates) were prominently reported specifically on March 9–10. The dominant dev-tooling story of this window remains the **Switch 2 dev kit accessibility** report above. If you need narrower tool-specific coverage (Godot, Unreal, etc.), I can run a more targeted search.
+### Why It Matters
 
-## [geo_eu] European tech regulation or startup policy news March 9-10 2026
-
-Purpose: Keep EU context live as Julien operates and potentially scales in a European market.
-
-Here is a concise, sourced summary of the most relevant European tech regulation and startup policy news around March 9–10, 2026:
+The cooperative/community model is maturing fast. Rather than lone studios competing for scarce VC money, developers are now **pooling risk in cohorts**, using **community crowdfunding as market validation leverage**, and accessing structured programs that combine mentorship, funding, and peer networks. This lowers the barrier to entry and diversifies funding away from traditional gatekeepers.
 
 ---
 
-## 🇪🇺 European Tech Regulation & Startup Policy — March 9–10, 2026
+### 📌 Most Important Source URLs
+
+| Source | Relevance |
+|---|---|
+| 🔗 [Blue Ocean Games / SAIL Fund](https://gaminglatest.com/threads/blue-ocean-games-announces-30m-fund-to-invest-in-indie-games-via-game-challenge.120926/) | Best example of the new cooperative cohort funding model |
+| 🔗 [Wardrome – Indie Funding Landscape 2025](https://wardrome.com/navigating-the-indie-game-funding-landscape-in-2025/) | Best overview of cooperative & hybrid funding trends (May 30, 2025) |
+| 🔗 [NEOM Level Up Accelerator – Jan 2026](https://www.neom.com/en-us/newsroom/NEOM-Gaming-Accelerator-Welcomes-Largest-Ever-Cycle-of-Startup-Studios) | Most recent dated (Jan 7, 2026) community accelerator announcement |
+| 🔗 [Epic MegaGrants 2026](https://www.unrealengine.com/en-US/megagrants) | Active grant window for indie/solo devs, mid-2026 |
+
+## [geo_eu] European Union digital sovereignty cooperative infrastructure policy March 2026
+
+Purpose: Monitor EU-level policy moves that could open funding or regulatory tailwinds for community tech projects like Grassroot Hoppers.
+
+Here is a concise, source-backed summary of the most recent updates on EU digital sovereignty and cooperative infrastructure policy as of March 2026:
 
 ---
 
-### 1. 🏢 EU Inc. ("28th Regime") — Legislative Proposal Imminent
-
-**What changed:** EU institutions have begun translating the "28th Regime" idea into concrete legislative steps. A formal legislative proposal from the Commission is expected by the end of March 2026.
-
-While the European Parliament's report proposes the name *Societas Europaea Unificata* (S.EU), the new legal form will presumably be called "EU Inc." — as indicated by Ursula von der Leyen in her speech at the 2026 World Economic Forum.
-
-Von der Leyen stated it will create "a single and simple set of rules that will apply seamlessly all over our Union," with entrepreneurs able to "register a company in any Member State within 48 hours – fully online."
-
-**Why it matters:** This would be the most significant structural change for European startups in a generation — a single, optional EU-wide company form that eliminates the need to navigate 27 different national legal systems.
-
-🔗 **Source:** [YPOG Briefing on EU Inc., Feb 2, 2026](https://www.ypog.law/en/insight/eu-inc-a-potential-turning-point-for-european-startups-and-growth-companies)
+## 🇪🇺 EU Digital Sovereignty & Infrastructure Policy — March 2026 Update
 
 ---
 
-### 2. 🤖 AI Regulation: Digital Omnibus & Enforcement Pressure
+### 1. EURO-3C: Europe's First Federated Telco-Edge-Cloud Infrastructure *(~1 week ago)*
 
-**What changed:** The European Commission is exploring a "Digital Omnibus" package to streamline and align aspects of existing EU digital laws, with potential areas including the GDPR, ePrivacy, the Data Act, artificial intelligence rules, and cybersecurity frameworks.
+**What changed:**
+At Mobile World Congress 2026, the European Commission unveiled EURO-3C, a €75 million project to develop Europe's first large-scale federated Telco-Edge-Cloud infrastructure, supported by Horizon Europe.
 
-The EU AI Act establishes a risk-based framework for trustworthy AI, and with guidance now available, market surveillance is expected to intensify through 2026.
+EURO-3C deploys a federated multi-telco and multi-vendor infrastructure in production environments, with more than 70 Edge and Cloud nodes distributed in more than 13 European countries.
 
-**Why it matters:** The Omnibus signals a potential regulatory simplification push — a response to startup and industry complaints that overlapping rules (GDPR, AI Act, Data Act) create excessive compliance burdens.
+This landmark project will showcase Europe's ability to deliver cutting-edge digital services entirely through its own connectivity infrastructure, reducing reliance on third-country providers.
 
-🔗 **Source:** [Reed Smith 2026 EU Tech Regulation Update, Jan 21, 2026](https://www.reedsmith.com/our-insights/blogs/viewpoints/102lyiv/2026-update-eu-regulations-for-tech-and-online-businesses/)
+Directly aligned with the goals of the proposed Digital Networks Act, the project opens the door to new opportunities that will strengthen Europe's single telecom market and increase technological sovereignty, while driving European innovation in 6G, AI, cybersecurity, and telecoms.
 
----
+**Why it matters:** This is the first concrete, production-scale cooperative infrastructure project combining telecoms, edge computing, and cloud — a direct move to reduce dependence on US hyperscalers and non-EU hardware.
 
-### 3. 💰 European AI Infrastructure: Nscale Raises $2B (March 9, 2026)
-
-**What changed:** European AI infrastructure startup Nscale raised $2 billion in a Series C round — one of the biggest fundraises yet for a European data center player tied directly to AI demand. Former Meta COO Sheryl Sandberg and Nick Clegg also joined the company's board.
-
-**Why it matters:** Europe has often lagged the U.S. in hyperscale infrastructure, so a raise of this size signals that investors see room for regional champions in the next phase of the AI stack.
-
-🔗 **Source:** [TechStartups.com, March 9, 2026](https://techstartups.com/2026/03/09/top-tech-news-today-march-9-2026/)
+🔗 **Source:** https://digital-strategy.ec.europa.eu/en/news/commission-announces-eu75-million-euro-3c-project-build-federated-telco-edge-cloud-infrastructure
 
 ---
 
-### 4. 🔐 Cybersecurity as Critical Infrastructure Policy
+### 2. Digital Networks Act (DNA): Harmonising EU Connectivity Rules
 
-**What changed:** Lawmakers are starting to treat cyber resilience as critical infrastructure policy, not just corporate compliance — particularly in healthcare, where a single attack can interrupt prescriptions, billing, care delivery, and hospital operations at national scale.
+**What changed:**
+The European Commission proposed the Digital Networks Act (DNA) to modernise, simplify, and harmonise EU rules on connectivity networks.
 
-**Why it matters:** Regulatory pressure around security for health tech and other critical sectors is rising across Europe, with enforcement expected to tighten through 2026.
+It seeks to harmonize rules across the bloc for fibre roll-out, 4G/5G mobile networks, and satellite services. However, the proposal stops short of creating a fully unified telecoms market or requiring Big Tech contributions to network costs.
+
+**Why it matters:** The DNA sets the regulatory backbone for projects like EURO-3C, but critics note it doesn't go far enough in addressing structural dependencies on non-EU platforms.
+
+🔗 **Source:** https://ec.europa.eu/commission/presscorner/detail/en/ip_26_107
 
 ---
 
-### Quick Summary Table
+### 3. Strategic Investment Shift: From Regulation to Capital *(January 2026)*
 
-| Topic | Status | Key Date |
-|---|---|---|
-| EU Inc. (28th Regime) | Legislative proposal pending | End of March 2026 |
-| Digital Omnibus (AI/GDPR streamlining) | Under exploration | Mid-2026 targets |
-| Nscale $2B AI infrastructure raise | Completed | March 9, 2026 |
-| Cybersecurity / NIS2 enforcement | Intensifying | Ongoing, 2026 |
+**What changed:**
+By 2026, the European Union has begun shifting from a predominantly regulator-led approach to one that combines regulation with large-scale strategic investment, including Chips Act 2.0 with public-private commitments approaching €80 billion.
+
+Digital sovereignty has become a defining strategic issue for Europe — control over data, compute capacity, and digital infrastructure increasingly shapes not only economic competitiveness but also democratic resilience and geopolitical autonomy.
+
+**Why it matters:** Europe is moving beyond rules-writing into direct industrial policy, acknowledging that regulation alone cannot close the gap with US and Chinese tech dominance.
+
+🔗 **Source:** https://www.netaxis.be/2026/01/19/the-issues-surrounding-digital-sovereignty-in-2026/
+
+---
+
+### 4. Cloud & AI Development Act (CADA): Still Pending *(Q1 2026)*
+
+**What changed:**
+The EU Cloud and AI Development Act (CADA) will attempt to address the EU's shortcomings in cloud and AI capacity by encouraging the permitting of new data centres and other infrastructure, and by establishing EU-wide eligibility requirements for cloud service providers along with harmonised procurement processes. It has reportedly been delayed until the first quarter of 2026 as the Commission considers the concept of "European effective control" as a way of supporting EU digital sovereignty.
+
+**Why it matters:** CADA could restrict non-EU (particularly US) cloud providers from public procurement, marking a significant shift toward "digital protectionism" — still controversial.
+
+🔗 **Source:** https://www.atlanticcouncil.org/in-depth-research-reports/report/digital-sovereignty-europes-declaration-of-independence/
+
+---
+
+### Bottom Line
+
+The defining story of March 2026 is **EURO-3C** — the EU's most concrete step yet toward cooperative, sovereign digital infrastructure. Combined with the DNA's regulatory harmonisation and the pending CADA, the EU is executing a dual strategy: **build its own infrastructure** while **tightening eligibility rules** for non-EU providers. The key tension remains insufficient capital (the Digital Europe Programme's €1 billion budget is widely seen as too small for the ambition).
