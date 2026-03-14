@@ -1,283 +1,306 @@
-<!-- PRISM Web Intelligence — 2026-03-13 -->
-# Web Intelligence — 2026-03-13
+<!-- PRISM Web Intelligence — 2026-03-14 -->
+# Web Intelligence — 2026-03-14
 *Scheduled theme: Grassroot Hopper & Cooperative Tech*
 
-## [grassroot] cooperative platform tech new tools launch March 2026
+## [grassroot] cooperative platform technology news Brussels Belgium March 2026
 
-Purpose: Scan for newly released cooperative or community tech tools that could inform David Toolkit positioning.
+Purpose: Scan Belgian cooperative/community tech scene for new signals aligned with Grassroot Hoppers positioning
 
-Here is a concise, factual summary of recent updates on **cooperative platform tech and new tools (March 2026)**:
+Here is a concise, factual summary of what the search results show. Note that the exact phrase **"cooperative platform technology"** doesn't correspond to a single named event or announcement in Brussels in March 2026 — but there are several closely related, well-sourced developments across three overlapping areas:
+
+---
+
+## 🔍 Cooperative Platform & Technology News — Brussels, Belgium — March 2026
+
+---
+
+### 1. 🤝 EU Digital Omnibus: Cooperative Regulatory Approach to Platform Governance
+*(Brussels Morning / EU Council — January–March 2026)*
+
+In Brussels in 2026, EU digital regulation has become a defining force in how European institutions oversee AI and major technology platforms. Policymakers are intensifying scrutiny of digital systems that shape information flows, economic activity, and public debate.
+
+This cooperative approach aims to ensure that rules remain both legally robust and technically informed.
+
+**What changed (March 11, 2026):** On 11 March 2026, the EU Council formally received an ECB opinion on a proposal for a Regulation amending multiple EU digital laws — including GDPR, the Data Act, and the AI Act — as part of the **Digital Omnibus** simplification package.
+
+**Why it matters:** The Digital Omnibus is the EU's most significant attempt to streamline and unify its fragmented digital rulebook — directly affecting how platforms operate across the single market.
+
+📎 **Source:** https://data.consilium.europa.eu/doc/document/ST-7244-2026-INIT/en/pdf
+
+---
+
+### 2. 🔐 EU Cyber Acts Conference — Brussels, March 24–26, 2026
+
+The EU Cyber Acts Conference 2026 is taking place March 24–26, 2026, in Brussels, Belgium, bringing together professionals to discuss how organizations can translate regulatory complexity into resilient, audit-ready cybersecurity programs.
+
+**Why it matters:** This is a key forum for cooperative implementation of the EU's Cyber Resilience Act (CRA) and NIS2 Directive — both of which impose new obligations on technology platforms and digital infrastructure providers.
+
+📎 **Source:** https://redspin.com/events/eu-cyber-acts-conference-march-24-26-2026-brussels-belgium/
+
+---
+
+### 3. 🏗️ Belgium Digital Infrastructure Expansion — March 11, 2026
+
+Belgium hosts around 36 existing data centers, with most rack capacity concentrated around Brussels. Upcoming power capacity additions will boost Belgium's digital infrastructure readiness for AI, HPC, and cloud workloads.
+
+**Why it matters:** Brussels is cementing its role as a northern European digital hub, underpinning the cooperative/shared infrastructure model that platform technology depends on.
+
+📎 **Source:** https://www.globenewswire.com/news-release/2026/03/11/3253782/28124/en/Belgium-Colocation-Data-Center-Portfolio-Analysis-Report-2026...
+
+---
+
+### 4. 🌐 Platform Cooperativism — Global Research Network Active in 2026
+
+The Platform Cooperativism Consortium (PCC) is a global research and organizing network advancing cooperative, worker-led, and solidarity-economy approaches to digital platforms. In 2025, PCC's network spanned more than 60 countries, linking universities, cooperatives, unions, research institutes, and grassroots organizations. Reports from the 2025 conference are expected to be published in early 2026.
+
+On a European scale, 18 months of exploration on cooperative platforms in Brussels, Barcelona, and Berlin was carried out by the SMART cooperative, in partnership with the Saw-B association and Facecoop.
+
+📎 **Source:** https://platform.coop/blog/news-from-the-platform-cooperativism-consortium-2025/
+
+---
+
+### ⚠️ Caveat
+No single event explicitly branded **"cooperative platform technology"** was found in Brussels in March 2026. The results above represent the **closest factual matches** across EU policy, cybersecurity, infrastructure, and platform cooperative research. If you have a specific organization or event name in mind, sharing it would help narrow the search further.
+
+## [grassroot] community shop tool cooperative grant funding Europe March 2026
+
+Purpose: Find fresh grant or funding announcements relevant to cooperative retail tools like David Toolkit
+
+Based on my research, I can now provide a clear, honest summary. There is no single "community shop tool cooperative grant" that is a distinct named programme in Europe with a March 2026 update — but there are several closely relevant, real funding developments I found. Here's what the evidence actually shows:
+
+---
+
+## 📋 Summary: Community/Tool Cooperative Grant Funding in Europe — Recent Updates
+
+> ⚠️ **Note:** No single programme exists under the exact name "community shop tool cooperative grant." Below are the **most relevant real funding developments** that match your query, each with verified sources and dates.
+
+---
+
+### 1. 🔧 Local Circular Economy Grant 2025 — Ireland (Deadline: 31 March 2026)
+
+**What changed:** The Waterford PPN Local Circular Economy Grant 2025 is now open, with a closing date of 5pm on 31 March 2026. The main focus this year is on repair, reuse, and sharing systems — explicitly including toy libraries, clothes swaps, repair events, and reuse via sharing systems such as "Circular Cups for Communities."
+
+**Why it matters:** This is a direct, active grant for community-based tool-sharing and cooperative reuse projects at the local level, with a March 2026 deadline.
+
+**Source:** [waterfordppn.ie](https://www.waterfordppn.ie/local-circular-economy-grant-2025-closing-date-5pm-31st-march-2026/)
+
+---
+
+### 2. 🌍 ECIV Open Call 1 — Circular Economy (Horizon Europe, Deadline: March 2026)
+
+**What changed:** The European Circular Innovation Valley (ECIV) Open Call 1 — funded under Horizon Europe — supports interregional innovation projects in the circular economy, with a total budget of €9.13 million and a submission deadline in March 2026. It targets consortia working on circular materials, processes, and business models, and is open to companies, research organisations, public authorities, and civil society actors.
+
+**Why it matters:** The ECIV brings together 18 partners from 8 countries with the shared objective of accelerating the transition towards circular, sustainable and competitive value chains. Cooperative and community entities are explicitly eligible.
+
+**Source:** [cascadefunding.eu](https://cascadefunding.eu/eciv-open-call-1-interregional-circular-innovation/) *(published February 4, 2026)*
+
+---
+
+### 3. 📚 The Europe Challenge 2025/26 — Libraries & Communities
+
+**What changed:** The Europe Challenge is an annual programme that brings together teams from libraries and communities across Europe to address pressing social, digital, and climate challenges, with funding of up to €10,000 per project. Project implementation runs from September 2025 to September 2026.
+
+**Why it matters:** The 2025/26 edition seeks initiatives that address social transitions — including strengthening social inclusion, active citizenship, and community wellbeing. Community tool/sharing cooperatives that work through libraries are a natural fit.
+
+**Source:** [digital-skills-jobs.europa.eu](https://digital-skills-jobs.europa.eu/en/opportunities/funding/europe-challenge-202526-libraries-communities-and-democracy)
+
+---
+
+### Bottom Line
+
+The most concrete match to your query — community-level, tool/sharing cooperative, grant, Europe, March 2026 — is the **Waterford Local Circular Economy Grant** (deadline 31 March 2026) and the **ECIV Horizon Europe Open Call 1** (deadline March 2026, €9.13M). If you have a specific programme or organisation in mind, feel free to share more details for a more targeted search.
+
+## [grassroot] local commerce solidarity economy movement news March 14 2026
+
+Purpose: Detect grassroot movement signals that could surface aligned people or early adopters for Grassroot Hoppers
+
+Here is a concise, factual summary of the most recent updates on the **local commerce & solidarity economy movement** as of mid-March 2026:
 
 ---
 
 ## 🔄 What Changed
 
-### 1. Platform Cooperativism Consortium (PCC) — Research & AI Focus
-The PCC is working on a forthcoming special journal issue, *Solidarity Tech*, for the *Journal of Co-operative Organization and Management*, examining the intersection of cooperative principles and digital technologies — set to launch in 2026. Additionally, the global course *AI Without Bosses* enrolled close to 200 participants from 33 countries, examining cooperative ownership of AI systems, data governance, and worker-led approaches to automation.
+**1. Shelterforce launches dedicated "Solidarity Corner" column (Feb 26, 2026)**
+A new *Solidarity Corner* column launched at Shelterforce, describing a "growing movement reshaping how people work and live together" and highlighting solidarity economy practices and why they matter. It frames the solidarity economy as a "bottom-up approach to systemic economic change" focused on equity, cooperation, democracy, sustainability, and pluralism — drawing on foundational work from the US Solidarity Economy Network.
 
-### 2. ICDE Fellowship Program (2026–2027) — New Cohort Open
-The Institute for the Cooperative Digital Economy (ICDE) at The New School opened applications for its 2026–2027 Fellowship Program, a global research initiative. Fellows will present work at the PCC Conference in Bangkok (Nov 12–15, 2026) and contribute public-facing outputs such as policy briefs, tools, and workshops for cooperative communities.
+**2. RIPESS amplifies SSE ahead of International Women's Day (March 5–8, 2026)**
+In the context of International Women's Day, the WSM/INSP!R, WIEGO, and RIPESS networks joined voices to affirm that the Social and Solidarity Economy (SSE) is "a concrete way to guarantee decent work, universal social protection and care for all," highlighting that millions of women — especially in the informal economy — are central to the movement.
 
-### 3. Cooperatives Europe — Practical Guide Launched Early 2026
-Cooperatives Europe announced the release of *From Aid to Ownership: The Cooperative Approach to International Development* in early 2026, introducing four concrete tools to support cooperative-based development work — covering partnership design, governance, and risk assessment.
+**3. RIPESS participates in ECOOVIDA 2026 / ICARRD+20, Cartagena (Feb 21–28, 2026)**
+From February 21–28, 2026, Cartagena de Indias hosted ECOOVIDA 2026, where the RIPESS delegation actively participated in the Forum of Peoples and Social Movements and ICARRD+20, contributing concrete proposals from the SSE.
 
-### 4. New Event Tech Tools — March 2026
-Several new event tech tools launched in March 2026, including Wordly's Workspaces for real-time translation, Navan's integration with BoomPop for venue sourcing and event planning, Connected Event Group's new Connected Apps division, and Jublia AI's shift toward event engagement intelligence.
+**4. EU Right to Food Initiative gains SSE backing (March 3, 2026)**
+A European Citizens' Initiative for the Right to Food, promoted by the GOOD FOOD FOR ALL movement, is pushing to place the right to adequate, safe, and nutritious food at the center of European public policies — with active SSE network support.
 
----
-
-## 💡 Why It Matters
-
-Platform cooperatives are positioned as an alternative to venture capital-funded platforms, putting stakeholders before shareholders through broad-based ownership, democratic governance, and co-design of technology — ensuring software grows out of workers' and users' needs. The recent wave of tools, fellowships, and publications reflects a maturing ecosystem trying to operationalize these principles at scale, especially as AI becomes central to platform work.
+**5. Black Solidarity Economy Fund (BSEF) set to reopen in 2026**
+The Black Solidarity Economy Rapid Response Fund, which has democratically distributed over $975,000 to Black-led solidarity economy organizing since 2020, is set to reopen in 2026.
 
 ---
 
-## 🔗 Most Important Source URLs
+## ❓ Why It Matters
 
-| Source | URL |
-|---|---|
-| PCC 2025 News | https://platform.coop/blog/news-from-the-platform-cooperativism-consortium-2025/ |
-| ICDE Fellowship 2026–2027 | https://platform.coop/blog/open-call-for-applications-2026-2027/ |
-| Cooperatives Europe Guide | https://coopseurope.coop/publication/teaser-new-practical-guide-on-international-cooperative-development-to-launch-in-january-2026/ |
-| Event Tech Tools March 2026 | https://nationaltoday.com/us/ca/san-francisco/news/2026/03/03/new-event-tech-tools-for-march-2026/ |
+The solidarity economy movement is gaining mainstream media visibility (Shelterforce column), international institutional presence (ECOOVIDA, ICARRD+20), and feminist framing — all at a moment of significant political and economic pressure on grassroots organizations in the U.S. and globally.
 
 ---
 
-> **Note:** No single major "cooperative platform tech launch" dominated March 2026. The updates are distributed across the cooperative research ecosystem (PCC/ICDE), policy tools (Cooperatives Europe), and adjacent event tech. If you're tracking a specific platform or organization, I can narrow the search further.
+## 🔗 Most Important Sources
 
-## [grassroot] Brussels Belgium community movement funding grants March 2026
+| Source | URL | Date |
+|---|---|---|
+| Shelterforce – Solidarity Corner | https://shelterforce.org/2026/02/26/what-is-the-solidarity-economy/ | Feb 26, 2026 |
+| RIPESS (SSE global network) | https://www.ripess.org/?lang=en | March 2026 |
+| New Economy Coalition – BSEF Fund | https://neweconomy.net/rapid-response-fund/ | 2025/2026 |
+| New Economy Coalition – NY Festival & Roundup | https://neweconomy.net/new-economy-roundup-solidarity-economy-in-ny-black-owned-farms-ecuador-says-no-speak-up-for-sudan-defending-neighbors-cop30/ | Nov 2025 |
 
-Purpose: Detect fresh grant announcements or movement signals in Julien's home city relevant to Grassroot Hoppers traction.
+> **Note:** No major breaking single-day event was found specifically on March 14, 2026. The above reflects the most current and relevant developments within the prior ~2–3 weeks as of that date.
 
-Here is a concise, fact-based summary of recent updates on Brussels community movement funding and grants around March 2026:
+## [dev] Cursor AI agent automation update March 2026
 
----
+Purpose: Track new Cursor Automations developments directly affecting Julien's sprint tooling
 
-## Brussels Community & Movement Funding — March 2026 Update
-
-### 1. 🏙️ City of Brussels: 'Equal Opportunities' Project Call 2026
-**Deadline: 22 March 2026**
-
-The City of Brussels is supporting local associations active in the field of equal opportunities through a project call, with applications due **no later than 22 March 2026**. This is an active, open grant round targeting nonprofits (asbl/vzw) working locally.
-
-**Why it matters:** The City of Brussels grants annual subsidies to non-profit associations active in the field of equal opportunities, with four recurring calls for projects. This is a reliable recurring funding channel for civil society groups.
-
-🔗 **Source:** https://www.brussels.be/equal-opportunities-subsidy
+Here's a concise, fact-based summary of the Cursor AI agent automation update from March 2026:
 
 ---
 
-### 2. 🎨 City of Brussels: Cultural Associations Operational Funding
-**Deadline: 31 March 2026**
+## 🤖 Cursor Automations — March 2026 Update
 
-Operational funding aims to support the activities and regular operations of an association working in the territory of the City of Brussels (Brussels-City, Laeken, Haren and Neder-Over-Heembeek), with complete files due by **31 March 2026**.
-
-**Why it matters:** This is a structural funding stream (not project-based) for cultural community groups, making it particularly valuable for ongoing operations.
-
-🔗 **Source:** https://www.brussels.be/cultural-associations
-
----
-
-### 3. 🌟 Creative Bruxsels Fund: Community Innovation Projects
-**Open call, projects starting in 2026**
-
-Each year, the Creative Bruxsels Fund launches a call for projects with a total funding envelope of **€10,000**. Selected projects receive financial support to develop and implement creative ideas within the Brussels-Capital Region. All proposed projects must take place in Brussels and are expected to start in 2026.
-
-**Why it matters:** Supported projects must be innovative, creative, and community-oriented, demonstrating a clear benefit to general interest or social cohesion, and adopting an alternative or original approach that aligns with the spirit of Brussels.
-
-🔗 **Source:** https://www2.fundsforngos.org/community-development/creative-bruxsels-fund-call-for-innovative-community-projects-belgium/
-
----
-
-### 4. 🤝 SENSE Foundation Brussels: Reopening in March 2026
-
-The SENSE Foundation Brussels will be **accepting applications again in March 2026**. Inclusion, Equality and Diversity are important values for the Foundation; projects carried by or benefiting women and/or minorities will receive particular focus. The requested funding represents a maximum of 25% of the total annual cost of the project and does not exceed **€25,000**.
-
-🔗 **Source:** https://www.sensefoundationbrussels.org/submit-your-project
-
----
-
-### Bottom Line
-March 2026 is an unusually active deadline month for Brussels community funding — **at least three separate grant deadlines** fall within the month. Groups focused on equality, culture, and community innovation have live opportunities right now, ranging from small creative grants (€10K) to mid-size operational subsidies (up to €25K). No major policy overhauls were detected; these appear to be continuation of established annual programs.
-
-## [grassroot] solidarity economy aligned founders network Europe announcement 2026
-
-Purpose: Find newly visible aligned people or orgs in the European solidarity/grassroot space for potential partnership or validation contacts.
-
-Based on thorough searching across multiple query variations, I was unable to find any verifiable announcement about a specific **"solidarity economy aligned founders network Europe 2026"** initiative. Here is an honest summary of what the searches did and did not find:
-
----
-
-## ⚠️ No Specific Match Found
-
-There is **no publicly indexed announcement** matching the specific phrase "solidarity economy aligned founders network Europe 2026." This could mean:
-- The initiative is too niche/new to be indexed by search engines yet
-- The name may differ slightly from how it was described in your query
-- It may exist on a private platform, newsletter, or not yet been publicly announced
-
----
-
-## What *Was* Found: Related Real Updates (with dates)
-
-Here are the closest verified, recent developments in the solidarity/social economy space in Europe and globally:
-
-**1. New GSEF Governance Committee Elected (January 22, 2026)**
-The Global Social Economy Forum (GSEF) elected a new Governance Committee for the **2026–2028 term**. The new governance model introduces five weighted voting colleges and reserved seats for youth, solidarity finance, and research, reflecting the geographical and thematic diversity of its 90 members.
-📌 Source: [ripess.org](https://www.ripess.org/ripess-congratulates-the-new-gsef-governance-2026-2028-and-celebrates-the-strengthened-presence-of-its-members-in-the-committee/?lang=en)
-
-**2. ASEAN Solidarity Economy Roadmap Launched (January 27, 2026)**
-On January 27, 2026, ASEAN officially launched a **Roadmap for integrating the Social Solidarity Economy (SSE)** into the implementation of the Sustainable Development Goals, proposing a common action framework to strengthen SSE as a driver of sustainable development across Southeast Asia.
-📌 Source: [ripess.org](https://www.ripess.org/?lang=en)
-
-**3. Mont Blanc Meetings Returning to Geneva in 2026**
-The **12th Mont Blanc Meetings** will be held in Geneva in 2026 — the flagship event of the International Forum of the Social and Solidarity Economy (ESSFI), bringing together SSE leaders from around the world.
-📌 Source: [socialeconomynews.eu](https://www.socialeconomynews.eu/en/)
-
----
-
-## Recommendation
-
-If you have a **specific source** (newsletter, platform, or organization) where you encountered the "aligned founders network Europe" announcement, sharing it would help locate the exact details. Alternatively, checking **RIPESS Europe** (ripess.eu) or **Social Economy Europe** (socialeconomy.eu.org) directly may surface it.
-
-## [dev] Cursor AI agent automation workflow indie developer update March 2026
-
-Purpose: Track any new Cursor Automations usage patterns or updates that could sharpen Julien's sprint tooling this week.
-
-Here's a concise, factual summary of what's new with Cursor AI as of March 2026:
-
----
-
-## 🤖 Cursor AI: "Automations" Launch — March 5, 2026
-
-### What Changed
-
-Cursor launched **Automations** on **March 5, 2026** — a system designed to create AI agents that operate continuously within coding environments, activating based on specific schedules or external triggers such as incoming Slack messages, newly created Linear issues, merged GitHub pull requests, or PagerDuty incidents. Custom events via webhooks are also supported.
-
-When an automation triggers, the agent initializes a cloud-based sandbox, executes instructions with configured models and multi-cloud providers (MCPs), and self-verifies its results. Agents also gain access to a **memory tool** that lets them retain information from previous executions and refine performance over time.
-
-**Key new integrations (30+ plugins):** Automations run on schedules or are triggered by events from Slack, Linear, GitHub, PagerDuty, and webhooks. New plugins include Atlassian, Datadog, GitLab, Glean, Hugging Face, monday.com, and PlanetScale — most containing MCPs that cloud agents can use when triggered automatically through automations.
-
-**Bugbot upgrades:** Bugbot can now automatically fix issues it finds in pull requests. Over **35% of Bugbot Autofix changes are merged** into the base PR.
-
----
-
-### Why It Matters for Indie Developers
-
-The system addresses a key bottleneck: software development is now slowed not by writing code, but by managing the growing volume of review, monitoring, and maintenance work that AI-generated code creates. Cursor Automations lets agents self-trigger, self-verify, and self-improve — turning a reactive development process into a continuous, event-driven pipeline.
-
-Real-world usage: Bugbot has caught millions of bugs since launch and is triggered thousands of times per day. Teams like Rippling have extended automations to incident triage, weekly status reports, and on-call handoff workflows.
-
-One limitation: **Cursor Automations runs exclusively within the Cursor standalone IDE** as of March 2026 — teams on VS Code, JetBrains, or other editors would need to migrate.
-
----
-
-### Most Important Sources
-
-| Source | URL |
-|---|---|
-| **TechCrunch** (March 5, 2026) | https://techcrunch.com/2026/03/05/cursor-is-rolling-out-a-new-system-for-agentic-coding/ |
-| **Cursor Official Changelog** | https://cursor.com/changelog |
-| **Releasebot — March 2026 Notes** | https://releasebot.io/updates/cursor |
-| **Dataconomy Deep-Dive** | https://dataconomy.com/2026/03/06/cursors-new-automations-launch-reimagines-agentic-coding/ |
-
----
-
-**Bottom line:** Cursor's March 2026 update is a significant shift from a coding assistant to an **always-on autonomous engineering platform** — particularly relevant for solo/indie developers who want AI agents to handle review, triage, and maintenance without constant manual prompting.
-
-## [game] indie game developer community monetization trend news March 2026
-
-Purpose: Maintain radar on game dev space Julien may re-enter at his 6-month decision horizon.
-
-Here is a concise, sourced summary of recent trends in indie game developer community monetization as of early 2026:
-
----
-
-## 🎮 Indie Game Monetization: Key Updates (Early 2026)
-
-### 📊 Market Size & Growth
-The indie game market was valued at **USD 5.54 billion in 2026** and is forecast to reach **USD 10.83 billion by 2031**. Mobile gaming contributed **51.42% of 2025 revenue** and is expanding at a **16.52% CAGR** through 2031.
+### 📅 Date
+**March 5, 2026** — Cursor introduced **Automations**, a system designed to create agents that operate continuously within coding environments.
 
 ---
 
 ### 🔄 What Changed
 
-1. **Subscription models are now mainstream for Indies**
-   Subscription services such as Xbox Game Pass and PlayStation Plus now offer indie developers fixed fees or revenue-share bonuses for predictable cash flows. Direct-to-consumer sales through itch.io or studio websites are also gaining traction among communities that prioritize creator support over convenience.
+Cursor now supports **always-on agents** that run based on triggers and instructions you define. Automations run on **schedules** or are triggered by events from **Slack, Linear, GitHub, PagerDuty, and webhooks**.
 
-2. **HTML5 / Web games surging as a low-cost monetization path**
-   Web portals and cross-device hubs give HTML5 creators steady, organic discovery without costly acquisition campaigns. Platforms like GameDistribution reach **4,000+ portals and 350 million monthly users**, helping developers monetize through high eCPMs on steady traffic.
+Unlike GitHub Copilot's interactive autocomplete or Devin's task execution model, Automations triggers AI agents based on **events** — code commits, Slack messages, PagerDuty incidents, or timers — running **autonomously without human prompting**.
 
-3. **Community-driven monetization is now the core strategy**
-   Games that grow through community feedback create natural reasons for players to return, and many successful indie games stay relevant because developers treat players as creative partners — reducing guesswork and improving retention.
-
-4. **Creator economy diversification (merchandise, UGC, streaming)**
-   The growth of the 2026 creator economy is driven by the explosion of user-generated content (UGC) platforms, the maturation of streaming monetization tools, and the rise of blockchain-based gaming economies. Notably, the 2026 creator economy **rewards niche expertise and authentic connection** more than raw reach.
-
-5. **Asia-Pacific dominance accelerating**
-   Asia-Pacific led the indie game market with a **44.35% revenue share in 2025**, growing at a **16.08% CAGR**. South Korea's Ministry of Culture earmarked **5 trillion won (USD 3.6 billion)** for content industries, including grants and overseas marketing support for indie studios.
+Also on **March 4, 2026**, Cursor became available in **IntelliJ IDEA, PyCharm, WebStorm**, and other JetBrains IDEs through the **Agent Client Protocol (ACP)**, allowing developers to use frontier models from OpenAI, Anthropic, Google, and Cursor for agent-driven development.
 
 ---
 
-### ❓ Why It Matters
-The mobile gaming industry is entering a new phase defined by personalization, community engagement, and platform integration. Success increasingly depends on **data-driven design, creative monetization, and user retention strategies** — not just game quality alone. For indie developers, this means that a launch-day revenue plan is no longer optional — community building and monetization must be planned together from the start.
+### 🐛 Key Feature: Bugbot Autofix
+**Bugbot Autofix** is an early example — an agent that runs automatically when a PR is created. Future plans include enabling Bugbot to **verify its own findings**, conduct deep research on complex issues, and **continuously scan your codebase** to catch and resolve bugs.
+
+---
+
+### 📊 Why It Matters
+
+Usage data shows a major behavioral shift: in March 2025, Cursor had roughly **2.5× as many Tab (autocomplete) users as agent users** — now that ratio has **flipped**, with **2× as many agent users as Tab users**.
+
+As agentic coding spreads, **human attention has become the limiting resource** — a single engineer may now oversee dozens of coding agents at once. Automations is aimed at keeping that complexity in check.
+
+Cursor estimates running **hundreds of automations per hour in production**, handling security reviews, incident response, and bug triage while humans supervise only high-risk findings.
+
+---
+
+### 🔗 Key Sources
+- **Official Changelog:** https://cursor.com/changelog
+- **TechCrunch:** https://techcrunch.com/2026/03/05/cursor-is-rolling-out-a-new-system-for-agentic-coding/
+- **Deep Dive:** https://byteiota.com/cursor-automations-always-on-agentic-coding-agents/
+
+## [game] indie game release discovery platformer March 2026
+
+Purpose: Maintain game radar for terrain scouting across Julien's 6-month horizon
+
+Here's a concise, fact-based summary of recent updates on indie game releases, discovery, and platformers in March 2026:
+
+---
+
+## 🎮 Indie Game Releases & Discovery — March 2026 Update
+
+### 🔑 What Changed
+
+**Nintendo Indie World Showcase (March 3, 2026)**
+Nintendo showcased 18 indie games during its latest Indie World presentation on March 3rd, 2026, including new game announcements, release dates, and shadow drops. Key platformer highlights include:
+
+- **Denshattack!** — an extreme action-adventure platforming game from developer Undercoders, published by Fireshine Games, launching **June 17** for Switch 2, PC, PS5, and Xbox Series X|S, with a demo available now on Switch 2's eShop and Steam.
+- **Öoo** — a charming exploration puzzle platformer where players discover creative ways to use bombs, featured in the Japanese Indie World showcase.
+
+**Slay the Spire 2 (March 5, 2026)**
+*Slay the Spire 2* launched in Early Access on **March 5, 2026**, returning with new characters and paths while fighting monsters and bosses, with the Early Access period driven by fan feedback via Discord.
+
+**Nintendo Indie World — More Announced Titles**
+The roughly 15-minute presentation also featured *Moonlighter 2: The Endless Vault*, *Mixtape*, and *Minishoot' Adventures*, the latter of which was shadow-dropped as a same-day release.
+
+**Steam Upcoming Releases (Mid-March)**
+Notable Steam releases around **March 16, 2026** included *Keplerian Space Discovery* (a 3D platformer/space sim) and *picoCAD 2* (a design and modeling tool).
+
+**Egg-Based Platformer: Oeuf**
+*Oeuf*, a chill collectathon platformer from indie developer Increpare, promises bobbling exploration and tense jumps to reach checkpoints, releasing on Steam.
+
+---
+
+### 💡 Why It Matters
+
+- The **Nintendo Indie World March 2026 showcase** is a major discovery vehicle for small developers, giving 18 titles instant global visibility on Switch and Switch 2.
+- **Slay the Spire 2's Early Access launch** is the most high-profile indie release of the month, signaling continued strength in the roguelike/deckbuilder genre.
+- The breadth of the March wrap-up (platformers, roguelikes, city builders, puzzlers) reflects a healthy, diverse indie pipeline heading into Q2 2026.
 
 ---
 
 ### 🔗 Most Important Sources
-| Source | Date |
+
+| Source | URL |
 |---|---|
-| [Mordor Intelligence – Indie Game Market 2026–2031](https://www.mordorintelligence.com/industry-reports/indie-game-market) | Jan 29, 2026 |
-| [GameDistribution – HTML5 Indie Dev Opportunities 2026](https://blog.gamedistribution.com/html5-indie-game-developer-opportunities-2026/) | Jan 8, 2026 |
-| [GamesPublisher – Navigating the 2026 Landscape](https://gamespublisher.com/indie-game-development-navigating-the-2025-landscape/) | Dec 25, 2025 |
-| [Gitnux – Indie Game Industry Statistics 2026](https://gitnux.org/indie-game-industry-statistics/) | ~Feb 2026 |
+| Nintendo Life – Full Indie World Breakdown | https://www.nintendolife.com/guides/nintendo-indie-world-showcase-march-2026-every-announcement-game-reveal-trailer |
+| Newsweek – Most Anticipated March 2026 Indie Releases | https://www.newsweek.com/entertainment/video-games/most-anticipated-indie-game-releases-in-march-2026-11551117 |
+| MonsterVine – March 2026 Indie Wrap-Up | https://monstervine.com/2026/03/march-2026-indie-games/ |
+| Six One Indie – Nintendo Indie World March 3 Full Recap | https://www.sixoneindie.com/post/everything-announced-at-nintendo-indie-world-march-3rd-2026 |
+
+## [geo_eu] Belgium Brussels policy regulation small business March 2026
+
+Purpose: Catch any EU or Belgian regulatory changes that could affect Chez Julien or cooperative structures
+
+Here is a concise, fact-based summary of the most relevant recent updates on Belgium/Brussels policy and regulation for small businesses, as of early 2026:
 
 ---
 
-**Bottom line:** Indie monetization in 2026 is shifting away from one-time purchases toward **multi-stream models** — subscriptions, community merch, UGC, and web-native distribution — with community engagement now being the single most reliable driver of long-term revenue.
-
-## [geo_eu] EU small retail energy cost policy update Belgium March 2026
-
-Purpose: Track any fresh EU or Belgian policy moves affecting Chez Julien operating costs after the Hormuz oil spike.
-
-Here is a concise, fact-based summary of the most recent updates:
+## 🇧🇪 Belgium & Brussels: Key Policy & Regulatory Updates (2026)
 
 ---
 
-## 🔋 EU & Belgium Small Retail Energy Cost Policy — March 2026 Update
+### 1. 🏢 EU "Single Company Law" (EU-INC) — *February 2026*
+The European Commission is pushing a single EU-wide company law framework — a "28th regime" that is **optional** and designed to help European startups scale faster and compete globally, **coexisting** alongside the 27 national company laws. The Commission aims for **parliamentary approval by the end of March 2026**, enabling the first EU-INC companies to launch in **2027**. The proposal will **not change taxes or labour laws**.
 
-### What Changed
-
-**1. EU Commission Package — 10 March 2026**
-On 10 March 2026, the European Commission presented new initiatives to boost investment in homegrown clean energy solutions, increase resilience, and reduce energy prices.
-
-**2. EU Leaders' Emergency Price Relief Agenda — March 2026**
-EU leaders have identified three key targets for quick relief on energy prices: (a) national electricity taxes (which can reach as high as 22% and represent around 10% of energy bills in several EU countries); (b) network charges, which cover infrastructure used to deliver electricity; and (c) carbon costs tied to energy prices. These changes are being discussed ahead of the European Council summit scheduled for 19–20 March 2026, driven in part by market disruption from attacks on the Strait of Hormuz.
-
-**3. Energy Omnibus — Q2 2026**
-The so-called "Energy Omnibus," scheduled for Q2 2026, will focus on simplifying energy product legislation as part of the EU's broader legislative simplification effort.
-
-**4. Energy Efficiency Directive — New Obligations From 2026**
-From 2026 onward, the EU Energy Efficiency Directive introduces phased, binding compliance obligations for companies. Small and medium-sized enterprises (SMEs) are generally exempt from mandatory systems, but may face indirect requirements through supply chains, permitting processes, and public procurement. By October 2026, companies with annual energy consumption above 10 terajoules (TJ) must carry out a regular, independent energy audit, unless they already operate a certified energy management system.
-
-**5. Belgium-Specific Context**
-A Belgian household/retail bill breaks down roughly as ~40% energy costs, ~25–30% network fees, and ~25–30% taxes/levies (including VAT at 6%). Wholesale prices fell sharply in 2024, with Elia reporting electricity prices averaged ~28% lower in 2024 than in 2023.
+**Why it matters for small businesses:** Startups and SMEs could incorporate once under EU law and operate across all member states, drastically reducing legal fragmentation and administrative costs.
 
 ---
 
-### Why It Matters
+### 2. 💼 Employment Law Reforms — *In force / rolling out in 2026*
 
-- **Small retailers** in Belgium — like all EU commercial consumers — are directly exposed to the three cost levers (taxes, network charges, carbon costs) that are now under active political review at the EU Council level.
-- Short-term relief measures such as price caps and tax reductions can ease price pressures, but do not address the underlying drivers of high electricity prices.
-- Between 2019 and 2024, electricity prices increased by around 53% for energy-intensive industries and by around 33% for households across the EU.
+Belgium is shifting towards a more modern and flexible framework for working hours. Legislative changes expected by 2026 aim to **reduce administrative burdens** and give employers more leeway to organize work effectively.
+
+Key changes include:
+- Removing the requirement to include all work schedules in employment regulations, and **introducing annual working time**, which allows the number of hours per week to be averaged over the entire year.
+- Employers are allowed to offer more **voluntary extra hours — up to 360 hours per year**, with a large portion not subject to overtime pay.
+- **Wage indexation** will be modified with a hybrid model: **full indexation will only apply to the first €4,000 of gross monthly salary** in 2026 and again in 2028.
+- Employers will also need to pay **30% of sick pay for two months** after the guaranteed wage period, increasing the financial impact of long-term absences.
+
+A formal **reintegration policy** is also required: employers must ask the internal prevention service to evaluate a worker's remaining work capacity after **8 weeks of absence**, and if there is potential, a formal reintegration process must start.
 
 ---
 
-### Key Source URLs
+### 3. 🛒 Flexibility for Distribution & E-commerce Businesses — *2026*
+Work regulation adjustments can now be made with the approval of **only one trade union**, significantly reducing unions' blocking power. The definition of the "distribution sector" now explicitly includes parcel companies such as **Bpost, supermarkets and their supply chains**. Other companies like **gas stations and night shops** will also benefit from this system. These changes are intended to support **late-evening logistics and e-commerce**, which increasingly depend on flexible staffing.
 
-| Source | Date | URL |
+---
+
+### 4. 💰 Tax Framework 2026–2029
+
+The Belgian federal government reached an agreement on the budget framework for the period **2026–2029** that includes proposed direct and indirect tax measures. The **standard VAT rate will remain at 21%**, but changes are proposed to reduced VAT rates on certain goods/services.
+
+---
+
+### 📎 Most Important Source URLs
+
+| Topic | Source | Date |
 |---|---|---|
-| European Commission — Energy cost reduction package | **10 Mar 2026** | https://commission.europa.eu/news-and-media/news/boosting-eus-energy-independence-and-lowering-costs-2026-03-10_en |
-| Euronews — EU energy price relief for industries | **9 Mar 2026** | https://www.euronews.com/my-europe/2026/03/09/european-commission-plans-energy-price-relief-for-struggling-industries |
-| Wirtek — Energy Efficiency Directive 2026–2030 | **12 Jan 2026** | https://www.wirtek.com/blog/energy-efficiency-directive-eu-company-obligations-from-2026-to-2030 |
-| Belgium electricity price breakdown | Ongoing | https://www.dayaheadmarket.eu/belgium |
+| EU-INC Single Company Law | [Euronews](https://www.euronews.com/my-europe/2026/02/04/eu-inc-brussels-plan-for-a-single-company-law-across-europe) | Feb 5, 2026 |
+| Belgium 2026 Labour Outlook | [L&E Global](https://leglobal.law/countries/belgium/belgium-2026-looking-ahead/) | Feb 3, 2026 |
+| Employment Law Updates 2026 | [Parakar](https://parakar.eu/knowledge/be/employment-law-updates-for-2026-belgium) | 2026 |
+| Tax Measures 2026–2029 | [KPMG](https://kpmg.com/us/en/taxnewsflash/news/2025/11/belgium-tax-measures-budget-framework-2026-2029.html) | Nov 2025 |
 
-> ⚠️ **Note:** No Belgium-specific *retail* energy policy decree dated specifically to March 2026 was found in the search results. The most relevant active developments are at the EU level (Commission package + Council summit, 19–20 March 2026), with Belgium subject to those EU-wide changes. For Belgium-specific regulatory updates, monitoring the **CREG** (federal energy regulator) at [creg.be](https://www.creg.be) is recommended.
+---
+
+**Bottom line:** The most significant changes for Belgian small businesses in early 2026 are the **EU-INC company law proposal** (parliamentary vote due by end of March), sweeping **labour flexibility reforms** (flexible hours, overtime thresholds, sick pay costs), and a **multi-year tax framework** locking in VAT and corporate tax structures through 2029.
