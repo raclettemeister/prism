@@ -1,328 +1,296 @@
-<!-- PRISM Web Intelligence — 2026-03-15 -->
-# Web Intelligence — 2026-03-15
+<!-- PRISM Web Intelligence — 2026-03-16 -->
+# Web Intelligence — 2026-03-16
 *Scheduled theme: Grassroot Hopper & Cooperative Tech*
 
-## [grassroot] cooperative tech platform funding grants Europe March 2026
+## [grassroot] cooperative tech platform funding grants Europe 2026 announcement
 
-Purpose: Scan for new grant cycles or funding announcements relevant to cooperative/community tech Julien could apply to for Grassroot Hoppers.
+Purpose: Scan for new EU or Belgian cooperative/community tech funding rounds relevant to Grassroot Hoppers positioning.
 
-Here is a concise, fact-based summary of the most recent updates on **cooperative tech platform funding & grants in Europe (around March 2026)**:
-
----
-
-## 🇪🇺 European Tech Platform Funding: Key Updates (2026)
-
-### 1. EIC 2026 Work Programme — €1.4 Billion Deployed
-The European Commission adopted the 2026 European Innovation Council (EIC) work programme, allocating **€1.4 billion** to support Europe's most promising deep tech entrepreneurs and researchers. Key instruments include:
-
-- **EIC Pathfinder** (€262 million) for multi-disciplinary research teams pursuing visionary, potentially breakthrough research (grants up to €4 million).
-- **EIC STEP Scale Up** (€300 million), providing additional equity funding to SMEs, start-ups, spin-offs, and small mid-caps driving innovation in critical areas.
-- **EIC Accelerator Open** is open to proposals in any field of technology, with a budget of **€384 million** in 2026.
-
-**Why it matters:** Developed in partnership with private investors, the new Fund aims to bridge the investment gap faced by Europe's deep-tech scale-ups, providing late-stage growth capital for international expansion while keeping companies anchored in Europe.
+Here is a concise, sourced summary of the most recent and relevant updates:
 
 ---
 
-### 2. EIC Accelerator — First 2026 Results In
-In the first 2026 results (October 2025 cut-off), **61 startups and SMEs from 17 countries** were selected from 121 companies that reached the interview stage, with total proposed funding of €467 million. 85% chose blended finance. Top countries: Germany, Spain, France, and Sweden.
+## 🇪🇺 Cooperative & Tech Platform Funding Grants in Europe — 2026 Updates
 
 ---
 
-### 3. Eurostars Call 10 — Deadline March 2026
-**Eurostars**, run by the EUREKA Network and co-funded by Horizon Europe, targets R&D-intensive SMEs. **Call 10** opened 16 January 2026, with a deadline of **19 March 2026**. It is particularly relevant for collaborative, cooperative tech ventures not yet ready for EIC Accelerator.
+### 1. Horizon Europe Work Programme 2026–2027 Launched
+**What changed:** The EU's flagship Horizon Europe programme has announced its main Work Programme for 2026–2027, investing over $16.4 billion in research and innovation priorities driving the green and digital transitions. The programme introduces new cross-disciplinary calls and topics, expands the "Choose Europe" initiative, and simplifies the funding application and participation process. The first calls for proposals are now open, with more to be launched throughout the year.
+
+**Why it matters:** This is the largest EU R&I funding mechanism. Cooperative tech platforms — including connected/automated mobility and AI — are explicitly prioritised.
+
+📌 Source: [RF CUNY – EU Announces New Research Opportunities for 2026–2027](https://www.rfcuny.org/rfwebsite/about/announcements/european-union-announces-new-research-opportunities-for-2026-and-2027/)
 
 ---
 
-### 4. STEP Platform — Structural Update (1 March 2026)
-The **Strategic Technologies for Europe Platform (STEP)** entered into force on 1 March 2024 via Regulation (EU) 2024/795 and serves as a dedicated online resource providing access to European and national funding programmes. A notable operational update: as of **1 March 2026**, EIT Manufacturing South East was integrated into EIT Manufacturing South.
+### 2. STEP (Strategic Technologies for Europe Platform) — 2026 Incentives Unlocked
+**What changed:** STEP maintains its 100% co-financing incentive and the opening for large enterprises, now extending these to IPCEIs (Important Projects of Common European Interest). The Mid-Term Review (MTR) also removes the previous 20% maximum allocation limit for STEP. If a programme reallocated ≥10% of its total allocation by 31 December 2025, it unlocks for 2026 an additional one-off pre-financing of 1.5% of total ERDF/CF/JTF support (or 9.5% for programmes covering regions bordering Russia or Ukraine), plus an extension of expenditure eligibility until 2030.
+
+**Why it matters:** STEP is Europe's strategic tool for tech sovereignty — covering deep tech, clean tech, and biotech. The removal of the 20% cap significantly broadens which programmes and platforms can benefit.
+
+📌 Source: [STEP Funding & Programmes – European Commission](https://strategic-technologies.europa.eu/about/step-funding-and-programmes_en)
 
 ---
 
-### 5. EISMEA Women-Led Deep-Tech Programme (March 2026)
-A call opened in **March 2026** for early-stage, **women-led startups** in the digital and deep-tech sectors across Europe to join a specialized open innovation program. To be eligible, companies must have raised €1 million or less in equity and be founded or co-founded by a woman holding a top management position and at least 25% of shares.
+### 3. GenAI4EU — Generative AI Platform Funding Expanding
+**What changed:** Efforts are underway to embed generative AI in future calls across Horizon Europe, the Digital Europe Programme (DEP), and the European Innovation Council (EIC) for 2026 and 2027, reinforcing Europe's position as a global hub for secure, inclusive, and innovative AI technologies.
+
+**Why it matters:** Cooperative AI platform development — including open-source, multilingual models — is now a structured cross-programme priority, not just a one-off call.
+
+📌 Source: [GenAI4EU – European Commission Digital Strategy](https://digital-strategy.ec.europa.eu/en/policies/genai4eu)
 
 ---
 
-### 📌 Most Important Sources
+### 4. Interoperable Europe — €6M for Cross-Border Digital Platform Cooperation
+**What changed:** A new call offers €6 million in funding at a 50% co-financing rate, supporting the joint development of foundational digital assets to enable connected public services across countries, with projects starting by the end of 2026.
+
+**Why it matters:** Directly targets cooperative, cross-border tech platforms in the public sector — a concrete, near-term grant opportunity.
+
+📌 Source: [EU Digital Funding Opportunities – Interoperable Europe Portal](https://interoperable-europe.ec.europa.eu/eu-digital-funding-opportunities)
+
+---
+
+### Key Takeaway
+The biggest shift is the **simultaneous opening of multiple 2026 grant channels** — Horizon Europe's new Work Programme, expanded STEP incentives, GenAI4EU, and the Interoperable Europe call — creating a broader and more accessible funding landscape for cooperative tech platforms across Europe than in prior years.
+
+## [grassroot] Brussels Belgium grassroots movement community organizing news March 2026
+
+Purpose: Detect fresh local movement signals in Brussels that could surface aligned people or partnership leads.
+
+Here's a concise, fact-based summary of grassroots and community organizing activity in Brussels/Belgium in March 2026:
+
+---
+
+## 🇧🇪 Brussels & Belgium: Grassroots & Community Organizing — March 2026
+
+### 1. 🛑 National Strike — March 12, 2026 *(Most Significant)*
+**What changed:**
+A National Day of Action was officially called by Belgium's three main union confederations — CSC/ACV, FGTB/ABVV, and CGSLB/ACLVB — for Thursday, March 12, 2026, with a formal 24-hour strike notice covering all sectors nationwide.
+
+Trade union members and supporters took to the streets of Brussels for a national demonstration, with demands including better pensions.
+
+Brussels Airport (BRU) cancelled all departing flights for the day. Airlines including Air Canada activated flexible rebooking policies. Significant disruptions also hit SNCB/NMBS trains and STIB public transport.
+
+**Why it matters:** When all three major union confederations act together, participation is effectively nationwide. This is the most significant labor mobilization in Belgium in early 2026.
+
+📎 Source: [Brussels Times](https://www.brusselstimes.com/2004616/everything-we-know-about-the-strikes-hitting-belgium-next-week) | [Strike Tracker](https://striketracker.app/strikes-in-belgium/belgium-national-multi-sector-strike-brussels-march-12-2026)
+
+---
+
+### 2. 🌿 Climate & Neighborhood Activism
+**What changed:**
+Rise for Climate Belgium is co-organizing an action with Tuiniersforumdesjardiniers.be — a network that unites many collectives and neighborhood committees defending natural spaces and biodiversity in Brussels.
+
+**Why it matters:** Rise for Climate, which usually acts at the global and European level, is now also acting at the local level, marking a shift toward neighborhood-scale grassroots coalition-building in Brussels.
+
+📎 Source: [Rise for Climate Belgium](https://riseforclimatebelgium.eu/index.php/en/)
+
+---
+
+### 3. 🏳️‍🌈 Queer Community Organizing
+**What changed:**
+Queer March transforms the month of March into a sprawling, city-wide queer festival in Ghent, built around community, solidarity, and political awareness.
+
+📎 Source: [KET Brussels](https://ket.brussels/en/2026/02/26/march-is-for-the-queers-why-you-should-put-queer-march-ghent-2026-on-your-radar/)
+
+---
+
+### 4. 📢 General Protest — March 8, 2026
+A protest was held in Brussels on Sunday, March 8, 2026, with traffic adapted from 2 pm to 4 pm. (Details beyond traffic adjustments were not officially published.)
+
+📎 Source: [City of Brussels](https://www.brussels.be/protest)
+
+---
+
+**Bottom line:** The dominant story is the **March 12 national strike** — the broadest cross-sector labor mobilization, paralyzing transport and backed by all major unions. Secondary threads involve climate/biodiversity neighborhood coalitions and queer community events.
+
+## [grassroot] indie maker shop tool cooperative community launch March 2026
+
+Purpose: Find recent grassroot-aligned maker/shop tools that validate or challenge the Grassroot Hoppers wedge hypothesis.
+
+Based on the search results, I was not able to find any recent, verified news specifically about an **"indie maker shop tool cooperative community launch in March 2026"** as a single, specific initiative or product. However, here's what the searches did surface that is relevant and factual:
+
+---
+
+### 🔍 What Was Found (March 2026, Verified)
+
+**1. Nintendo's March 2026 Indie World Showcase (Most Recent Relevant Event)**
+
+The **March 2026 Indie World Showcase** aired on **March 3, 2026**, with Nintendo releasing an official recap covering all reveals and news from the presentation. The showcase unveiled a broad variety of indie games across multiple genres and gameplay styles, with titles set to launch for Nintendo Switch 2 and Nintendo Switch throughout 2026. This is the closest confirmed "indie community launch" event tied to March 2026 — but it's **gaming-focused**, not a maker/tool cooperative.
+
+- 📎 Source: [nintendoeverything.com](https://nintendoeverything.com/march-2026-indie-world-showcase-official-recap-announcement/)
+
+---
+
+**2. Indie Maker Tools & Community Directories (Ongoing, No Specific March 2026 Launch)**
+
+**Indie Makers Tools** is a curated directory for tools and resources to help build startups, with a community of tech lovers and early adopters.
+
+**IndieMaker.space** is an invite-only community for indie makers, described as "a welcoming community where indie creators can come together, share experiences, and find inspiration."
+
+Neither announced a specific new cooperative launch in March 2026.
+
+---
+
+### ⚠️ Bottom Line
+
+> No specific **"indie maker shop tool cooperative community"** launching in March 2026 was found in current search results. The query may refer to something very niche, not yet publicly indexed, or possibly a future/planned announcement not yet covered by news sources.
+
+**Recommendation:** If you have a specific product name, founder name, or platform (e.g., Product Hunt, Indie Hackers, a specific co-op), I can do a more targeted search to find exactly what you're looking for.
+
+## [dev] open source AI developer tools release update March 2026
+
+Purpose: Keep dev radar live for tooling changes affecting Julien's build stack and David Toolkit direction.
+
+Here is a concise, fact-based summary of open source AI developer tool updates from March 2026:
+
+---
+
+## 🛠️ Open Source AI Developer Tools — March 2026 Update
+
+---
+
+### 1. 🏆 GLM-5 Emerges as Top Open-Source Value Play
+"GLM-5 is the biggest pricing story of March": MIT-licensed, self-hostable, with custom training support at $1.00/$3.20 per 1M tokens, making it the strongest open-source value play at frontier performance level.
+
+Its 744B MoE architecture (40B active per token) gives enterprise-grade power with efficient inference, with full audio input, video processing, and native document generation (.docx, .pdf, .xlsx) via Agent Mode. Notably, it is trained entirely on Huawei Ascend chips, with no NVIDIA dependency.
+
+**Why it matters:** An MIT-licensed model at frontier performance with self-hosting support directly challenges proprietary APIs on cost and freedom.
+
+---
+
+### 2. 🎥 LTX 2.3 — Open-Source Video Model Goes 4K
+Lightricks' LTX 2.3, a 22-billion-parameter open-source video model, now generates native 4K video at 50 FPS with synchronized audio and portrait-mode support up to 1080×1920.
+
+**Why it matters:** Studio-grade open video generation at zero licensing cost is now accessible to individual developers.
+
+---
+
+### 3. ⚡ NVIDIA Boosts llama.cpp, Ollama & ComfyUI (CES 2026, January)
+NVIDIA announced major updates for AI PC developers at CES 2026, including accelerated support and optimizations for open source tools like llama.cpp, Ollama, and ComfyUI, with ComfyUI seeing up to 3x performance boosts and llama.cpp and Ollama achieving up to 35% faster token generation.
+
+New features include NVFP4 and FP8 quantization, GPU token sampling, concurrency improvements, and memory management upgrades. NVIDIA also released Nemotron 3 Nano, optimized for agentic AI and fine-tuning.
+
+**Why it matters:** Local/offline AI inference is now dramatically faster on consumer RTX hardware.
+
+---
+
+### 4. 🤖 Agentic Frameworks Trending on GitHub (March 12, 2026)
+Alibaba unveiled "Page Agent," a new JavaScript-based in-page GUI agent designed to control web interfaces using natural language, published on GitHub Trending on March 12, 2026.
+
+"Superpowers," an agentic skills framework and software development methodology, was introduced as a complete workflow for coding agents, built on a foundation of composable "skills."
+
+**Why it matters:** Agentic, composable coding workflows are rapidly becoming the default paradigm for open-source developer tooling.
+
+---
+
+### 5. 🔁 OpenAI Codex Re-enters the Field
+Codex re-enters the top five as OpenAI's cloud-native coding agent, with parallel sandboxed execution, deep GitHub integration, and automatic PR creation — "the strongest pick for teams in the OpenAI ecosystem."
+
+**Why it matters:** Competitive pressure from open-source agents (like GLM-5 and Superpowers) is pushing even proprietary tools to re-invest in developer-facing coding automation.
+
+---
+
+### 📌 Most Important Source URLs
 | Source | URL |
 |---|---|
-| EIC 2026 Work Programme | https://eic.ec.europa.eu/eic-2026-work-programme_en |
-| EU Grants for Startups 2026 Guide | https://www.grantsfinder.eu/blog/eu-grants-for-startups-2026 |
-| EIC €1.4B Announcement | https://news.fundsforngos.org/2025/11/07/eu-commits-e1-4-billion-to-boost-deep-tech-startups-with-2026-european-innovation-council-work-programme/ |
-| STEP for SMEs | https://www.eitmanufacturing.eu/news-events/news/strategic-technologies-for-europe-platform-step-funding-for-smes/ |
+| LogRocket AI Dev Tool Power Rankings (March 2026) | https://blog.logrocket.com/ai-dev-tool-power-rankings/ |
+| NVIDIA Open Source Tool Upgrades (CES 2026) | https://developer.nvidia.com/blog/open-source-ai-tool-upgrades-speed-up-llm-and-diffusion-models-on-nvidia-rtx-pcs |
+| Sci-Tech Today: March 2026 AI Model Avalanche | https://www.sci-tech-today.com/news/march-2026-ai-models-avalanche/ |
+| AIToolly: March 12, 2026 AI News | https://aitoolly.com/ai-news/2026-03-12 |
 
 ---
 
-**Bottom line:** The biggest shift in early 2026 is the EIC's **simplified, faster application process** and the new **STEP Scale Up equity fund (€300M)** targeting deep-tech platforms and scale-ups — making this a particularly active window for cooperative and platform-based tech ventures seeking European public funding.
+**Bottom line:** March 2026 is defined by the narrowing gap between open-source and proprietary AI tools — cheaper frontier models (GLM-5), faster local inference (llama.cpp/Ollama/ComfyUI), and the rise of agentic coding frameworks are collectively making high-end AI development accessible without cloud lock-in.
 
-## [grassroot] Brussels Belgium community tech movement mutual aid solidarity economy news March 2026
+## [game] indie game developer community funding announcement March 2026
 
-Purpose: Detect fresh signals from Brussels/Belgium grassroots scene for aligned people or orgs to connect with.
+Purpose: Maintain game domain pulse for potential future project signals worth tracking toward September 2026.
 
-Here is a concise, factual summary based on what the searches found. I must be upfront: **there is no single major "Brussels community tech / mutual aid" news event in March 2026** — the space is active but distributed. Here's what is actually happening:
-
----
-
-## 🔎 Brussels & Belgium: Community Tech, Mutual Aid & Solidarity Economy — March 2026 Update
+Here's a concise summary of the most relevant recent developments:
 
 ---
 
-### 1. 🏙️ Creative Bruxsels Fund — Open Call for Community Projects (Active Now)
-**What changed:** The Creative Bruxsels Fund has launched a call for innovative community projects in 2026, with selected projects receiving financial support to develop and implement creative ideas within the Brussels-Capital Region. Supported projects must be innovative, creative, and community-oriented, and must take place in Brussels.
+## 🎮 Indie Game Developer Community Funding — March 2026 Updates
 
-**Why it matters:** The jury prioritises originality, creativity, and innovation, and also considers a project's potential for replication, its impact on community cohesion, and its ability to reflect Brussels' cultural diversity. This is an active funding opportunity for grassroots and tech-adjacent civic groups right now.
+### 1. Outersloth (by Innersloth) Publicly Releases Its Funding Contract
+**📅 March 10, 2026**
 
-📎 **Source:** [fundsforNGOs – Creative Bruxsels Fund, Feb 4 2026](https://www2.fundsforngos.org/community-development/creative-bruxsels-fund-call-for-innovative-community-projects-belgium/)
+**What changed:** Outersloth, the indie funding initiative run by Innersloth (the studio behind *Among Us*), publicly disclosed the full terms of its standard funding agreement for indie developers — a rare move that provides unprecedented transparency into its financial and publishing partnership.
 
----
+**Key terms:** Outersloth provides an upfront cash advance, and developers repay it by sharing 50% of net revenue until the advance is recouped, after which the rate drops to just 15% ongoing. Critically, the contract stipulates that intellectual property rights for the funded game remain with the original development studio.
 
-### 2. 🤝 City of Brussels: Equal Opportunities Grant — Deadline 22 March 2026
-**What changed:** The City of Brussels is supporting local associations active in the field of equal opportunities through a 2026 project call, with a submission deadline of 22 March 2026.
+**Why it matters:** By making its contract public, Outersloth aims to set a new benchmark for fairness and clarity in indie game financing — a sector often criticized for opaque and developer-unfriendly terms.
 
-**Why it matters:** This is a direct, time-sensitive funding mechanism for community solidarity organisations operating in Brussels right now.
-
-📎 **Source:** [City of Brussels – Equal Opportunities Subsidy, Jan 20 2026](https://www.brussels.be/equal-opportunities-subsidy)
-
----
-
-### 3. 💻 FOSDEM 2026 — Open Source & Digital Solidarity in Brussels
-**What changed:** Over 8,000 developers and open source advocates converged at the Université Libre de Bruxelles for FOSDEM 2026, where Europe's digital sovereignty was a central theme. Open source software, with its transparent codebases and collaborative ethos, was seen by many as Europe's best hope against vendor lock-in and hidden backdoors.
-
-**Why it matters:** FOSDEM remains the flagship grassroots tech community event in Brussels, and in 2026 its focus on democratic, community-controlled infrastructure directly aligns with the solidarity tech movement.
-
-📎 **Source:** [netcrook.com – FOSDEM 2026 recap](https://netcrook.com/fosdem-2026-digital-sovereignty-open-source/)
+🔗 **Sources:**
+- https://delimiter.online/blog/outersloth-funding-agreement/
+- https://80.lv/articles/indie-game-fund-by-among-us-developers-reveals-its-contract
 
 ---
 
-### 4. ⚠️ EU Tech Sovereignty Debate Heats Up (March 13, 2026)
-**What changed:** As of 13 March 2026, European businesses have warned Brussels that the 'tech sovereignty' drive could hit profits and undermine the continent's competitiveness.
+### 2. Stardock Expands Into Indie Game Publishing
+**📅 ~March 2026 (reported ~5 days ago)**
 
-**Why it matters:** This tension — between top-down EU digital sovereignty policy and grassroots/community tech approaches — is the defining fault line in Brussels' tech politics right now. Community and solidarity tech advocates sit on the opposite side from corporate lobbyists in this debate.
+**What changed:** Stardock Entertainment announced an expansion of its publishing business for indie game developers, noting that the competition is insane with tens of thousands of games releasing all the time. However, Stardock will be selective — signing only three games per year to ensure each gets proper attention.
 
-📎 **Source:** [Mayer Brown – Europe Daily News, Mar 13 2026](https://www.mayerbrown.com/en/insights/publications/2026/03/europe-daily-news/europe-daily-news-mar1326)
+**Why it matters:** Stardock's unique pitch is that, as a developer itself, it can offer hands-on creative and art support — not just funding.
 
----
-
-### 5. 🌍 Social Economy Europe's 2026 Priorities
-**What changed:** Social Economy Europe has called on all like-minded actors in 2026 to join forces to build a positive economy that works for people, the planet, and democracy, arguing it simply needs a level playing field and proper political support to thrive.
-
-📎 **Source:** [Social Economy Europe – Wishes for 2026, Jan 6 2026](https://www.socialeconomy.eu.org/2026/01/06/social-economy-europe-wishes-for-2026/)
+🔗 **Source:** https://www.gamingonlinux.com/2026/03/stardock-announce-an-expansion-into-indie-game-publishing/
 
 ---
 
-### ⚡ Bottom Line
-The Brussels community tech / solidarity economy space in early 2026 is defined by **three forces colliding**: active local funding (Creative Bruxsels, Equal Opportunities grants), a grassroots open-source tech community pushing democratic digital infrastructure (FOSDEM), and a major EU policy battle over who controls Europe's digital future. No single dramatic event — but a sector clearly gaining political salience.
+### TL;DR
+The biggest story is **Outersloth's contract transparency** (March 10, 2026) — it's a meaningful cultural shift in how indie funding deals are structured and communicated, potentially pressuring other funders to follow suit.
 
-## [grassroot] platform cooperativism open source tools small business shops 2026
+## [geo_eu] European Union digital sovereignty community infrastructure policy March 2026
 
-Purpose: Find new tools or frameworks emerging in cooperative tech that overlap with Grassroot Hoppers wedge validation.
+Purpose: Track EU policy shifts that could create grant or regulatory tailwinds for cooperative tech projects like Grassroot Hoppers.
 
-Now I have enough solid, sourced information to write a concise, well-cited summary.
-
----
-
-## Platform Cooperativism & Open Source Tools for Small Business Shops — Recent Updates
-
-### 🔄 What Changed
-
-**1. The Platform Co-op Development Kit is actively expanding (2024–2026)**
-
-The Platform Co-op Development Kit is a multi-year project initiated by the Platform Cooperativism Consortium (PCC) at The New School in New York City, in collaboration with OCAD University in Toronto. Its purpose is to make launching a platform co-op easier by sharing stories, new resources, learning materials, and open source tools. By working with pilot groups in sectors ranging from home services and garbage-recycling to beauty services, child care, and elder care, the project demonstrates how the cooperative approach plays out in the digital economy.
-
-**2. PCC's Cooperative Tool Library launched as a community-maintained directory**
-
-The Cooperative Tool Library (`tools.platform.coop`) is a website where people can find software tools for their co-ops and share the tools they use with other co-ops. It was built to be centred around cooperatives, prospective cooperatives, and those who assist in cooperative development. The library is created as a collaboration between the Inclusive Design Research Centre, co-designers from the cooperative community, and the Platform Cooperativism Consortium.
-
-**3. New open-source cooperative infrastructure: Coopify**
-
-Coopify is open-source infrastructure for platform cooperatives, enabling worker-owned alternatives to extractive gig platforms with democratic governance, transparent algorithms, and fair earnings for everyone. Workers using Coopify can keep 85–95% of what they earn, compared to 60–75% on traditional platforms. The platform provides everything needed to launch and run a worker-owned platform — from apps to governance tools to payment processing — with a "one worker, one vote" model.
-
-**4. PCC's AI + Cooperative work scaled globally (2025)**
-
-The global course *AI Without Bosses* ran alongside the Cooperative AI Conference in 2025 and enrolled close to 200 participants from 33 countries, examining cooperative ownership of AI systems, data governance, and worker-led approaches to automation. PCC affiliates contributed to public and policy-relevant outlets throughout 2025, including a widely circulated Harvard Business Review article on cooperative approaches to artificial intelligence.
-
-**5. *Solidarity Tech* journal issue incoming for 2026**
-
-PCC continued work on the forthcoming special journal issue *Solidarity Tech* for the *Journal of Co-operative Organization and Management*, examining the intersection of cooperative principles and digital technologies — set to launch in 2026.
-
-**6. PCC Conference & Fellowship Program planned for 2026**
-
-The Institute for the Cooperative Digital Economy (ICDE) at The New School opened applications for its 2026–2027 Fellowship Program, with fellows expected to present their work at the PCC Conference in Bangkok (Nov 12–15, 2026) and contribute at least one public-facing output with practical relevance for cooperatives.
+Here is a concise, source-backed summary of the latest EU digital sovereignty and infrastructure policy developments around March 2026:
 
 ---
 
-### 💡 Why It Matters
-
-Platform cooperativism offers small shops and independent workers a direct alternative to fee-extracting platforms. Traditional gig platforms like Uber, DoorDash, and Upwork take 25–40% of every transaction, with opaque algorithms and no worker voice. Open source tools like the PCC Dev Kit and Coopify lower the barrier to launching democratically governed, worker-owned digital shops. The movement is increasingly connecting cooperative ownership with AI governance — a critical frontier as automation reshapes small business operations.
+## 🇪🇺 EU Digital Sovereignty & Infrastructure Policy — March 2026 Update
 
 ---
 
-### 🔗 Most Important Sources
+### 1. 🌐 Digital Networks Act (DNA) Proposed — January 21, 2026
 
-| Source | URL |
-|---|---|
-| Platform Cooperativism Consortium (PCC) | https://platform.coop/ |
-| PCC 2025 Annual News | https://platform.coop/blog/news-from-the-platform-cooperativism-consortium-2025/ |
-| Cooperative Tool Library | https://tools.platform.coop/ |
-| Platform Co-op Dev Kit (GitHub) | https://github.com/platform-coop-toolkit |
-| Coopify (open-source co-op infrastructure) | https://coopify.app/en/ |
-| ICDE 2026–27 Fellowship Call (Dec 19, 2025) | https://platform.coop/blog/open-call-for-applications-2026-2027/ |
+On **January 21, 2026**, the European Commission adopted a proposed **Digital Networks Act (DNA)** — a regulation designed to modernize, simplify, and harmonize rules on network connectivity in the EU to "enable the adoption of AI, cloud, space and other innovative technologies."
 
-## [dev] Claude Sonnet Opus API pricing update developer reaction March 2026
+**What changed:**
+- The DNA proposes to modernise, simplify, and harmonise EU rules on connectivity networks.
+- It would introduce an **EU-level resilience and preparedness framework** to address security and continuity risks, including a *Union Preparedness Plan for Digital Infrastructures*, structured information collection, and crisis-cooperation mechanisms to help limit critical dependencies and manage disruptions such as natural disasters and foreign interference.
+- The proposal would also set a framework to **phase out copper networks** and support the shift to fiber by **December 31, 2035**.
 
-Purpose: Track developer community response to Anthropic flat long-context pricing to assess real cost impact on PRISM and David Toolkit builds.
+**Why it matters:** The DNA seeks to harmonize rules across the bloc for fibre roll-out, 4G/5G mobile networks, and satellite services, though the proposal stops short of creating a fully unified telecoms market or requiring Big Tech to contribute to network costs.
 
-Here is a concise, factual summary based on the search results:
+📎 **Source:** [Library of Congress — EU Digital Networks Act (March 13, 2026)](https://www.loc.gov/item/global-legal-monitor/2026-03-13/european-union-commission-proposes-digital-networks-act)
 
 ---
 
-## Claude API Pricing Update — March 2026
+### 2. ☁️ EURO-3C: €75M Federated Telco-Edge-Cloud Infrastructure — MWC 2026
 
-### 📌 What Changed
+At **Mobile World Congress 2026**, the European Commission unveiled **EURO-3C**, a **€75 million project** to develop Europe's first large-scale federated Telco-Edge-Cloud infrastructure, supported by Horizon Europe.
 
-On **March 13, 2026**, Anthropic announced that the **full 1M token context window is now generally available (GA)** for **Claude Opus 4.6** and **Claude Sonnet 4.6** at **standard API pricing, with no long-context premium**.
+**What changed:**
+- The project will showcase Europe's ability to deliver cutting-edge digital services entirely through its own connectivity infrastructure, **reducing reliance on third-country providers**.
+- EURO-3C deploys a federated multi-telco and multi-vendor infrastructure in production environments, with **more than 70 Edge and Cloud nodes distributed across more than 13 European countries**.
 
-**Current token rates (per 1M tokens):**
-- **Opus 4.6**: $5 input / $25 output | **Sonnet 4.6**: $3 input / $15 output | **Haiku**: $0.25 input / $1.25 output
+**Why it matters:** The project is directly aligned with the goals of the proposed Digital Networks Act and is expected to strengthen Europe's single telecom market and increase technological sovereignty, while driving European innovation in **6G, AI, cybersecurity, and telecoms**.
 
-A 900k-token request is billed at the same per-token rate as a 9k-token request. Prompt caching and batch processing discounts apply at standard rates across the full context window.
-
-**Additional pricing notes:**
-- For Claude Opus 4.6 and newer models, specifying **US-only inference** via the `inference_geo` parameter incurs a **1.1x multiplier** on all token pricing categories. Global routing (the default) uses standard pricing.
-- **Fast mode** for Claude Opus 4.6 (research preview) provides significantly faster output at **premium pricing (6x standard rates)**.
-- Earlier models (Claude Sonnet 4, Opus 4, and prior releases) retain their existing pricing.
+📎 **Source:** [European Commission — EURO-3C Announcement](https://digital-strategy.ec.europa.eu/en/news/commission-announces-eu75-million-euro-3c-project-build-federated-telco-edge-cloud-infrastructure)
 
 ---
 
-### 📌 Why It Matters
+### 3. ☁️ Cloud & AI Development Act (CADA) — Delayed, Still Pending
 
-Previously, hitting the 1M context window on models like Sonnet 4.5 triggered **premium long-context surcharges**. For Claude Sonnet 4.5 and Sonnet 4, the 1M context window remains in beta for organizations in usage tier 4 only, and requests exceeding 200k input tokens are automatically charged at **premium long-context rates** when the beta header is included. The GA removal of that premium for Opus 4.6 and Sonnet 4.6 is a **meaningful cost reduction** for developers building large-context applications (e.g., long documents, codebases, extended conversations).
+The **Cloud and AI Development Act (CADA)** has been delayed until Q1 2026, as the Commission considers the concept of **"European effective control"** as a mechanism to support EU digital sovereignty — with implications for eligibility requirements and procurement restrictions on non-EU cloud providers.
 
-Developer reaction has been immediately practical — developers on platforms like Cursor are already asking when third-party tools will reflect the new standard pricing.
-
----
-
-### 🔗 Key Sources
-
-| Source | URL |
-|---|---|
-| **Official Anthropic Pricing Docs** | https://platform.claude.com/docs/en/about-claude/pricing |
-| **Developer Reaction (Cursor Forum)** | https://forum.cursor.com/t/anthropic-just-announced-1m-context-ga-at-standard-pricing-for-opus-4-6-sonnet-4-6-when-will-cursor-reflect-this/154701 |
-| **TLDL Pricing Summary (Mar 2026)** | https://www.tldl.io/resources/anthropic-api-pricing |
+📎 **Source:** [Atlantic Council — Digital Sovereignty Report (Feb 12, 2026)](https://www.atlanticcouncil.org/in-depth-research-reports/report/digital-sovereignty-europes-declaration-of-independence/)
 
 ---
 
-**Bottom line:** As of March 13, 2026, Opus 4.6 and Sonnet 4.6 users no longer pay a surcharge for large context windows — a significant cost win for developers working at scale.
+### Bottom Line
 
-## [game] new indie game release narrative cooperative mechanics itch.io Steam March 2026
-
-Purpose: Maintain game radar for emerging cooperative or community-themed mechanics Julien might reference or learn from.
-
-Now I have enough information to provide a well-sourced, concise summary. Here it is:
-
----
-
-## 🎮 Indie Game Updates: Narrative & Co-op — March 2026
-
-### What Changed
-
-**1. March 2026 Indie Releases (Steam/itch.io)**
-
-The March 2026 indie wrap-up from MonsterVine highlights a fresh wave of releases, while noting that Steam remains an overcrowded marketplace — making wishlisting during events like Steam Next Fest increasingly critical for discoverability.
-
-Notable March 2026 releases include:
-
-- **Cupiclaw** — a unique arcade-style indie game — released on **March 5th, 2026** for PC via Steam, featuring a roguelite loop where players pull prizes from a claw machine under a 30-second timer while managing risk/reward upgrades.
-- **Galactic Vault** — a roguelike first-person shooter with strong movement mechanics — launched on **March 10th, 2026** for PC, offering modular builds (e.g., shotgun + bullet-seeking + air dodge combos) that were praised in demo form.
-
-**2. Anticipated: IKUMA – The Frozen Compass (Steam, 2026)**
-
-**IKUMA: The Frozen Compass**, from the creators of the award-winning *Lost Ember*, has been in secret production for five years and is targeting a **2026 release on Steam (Windows PC), PS5, and Xbox Series X|S**.
-
-The game is a narrative co-op adventure set in 1864 Arctic, where cabin boy Sam and his husky Ellie are stranded on an uncharted island. A single player can control both characters and switch between them, or two players can play **co-operatively**, each controlling one protagonist.
-
-**3. itch.io Narrative Scene — Early 2026**
-
-On itch.io, narrative and visual novel developers are actively expanding to Steam in 2026 — for example, *Lilacs in the Breeze*, a narrative game originally on itch.io, is coming to Steam in 2026 with added features like achievements. The broader itch.io narrative/VN scene is described as primed for a strong year, with multiple titles (*Lost Lune*, *Amaranthine*, etc.) targeting full releases.
-
----
-
-### Why It Matters
-
-- **Narrative + co-op is a growing niche**: The global indie game market was valued at **$9.9 billion in 2024** and is projected to reach **$28.58 billion by 2033** (CAGR of 12.5%), driven by accessible dev tools and digital platforms like Steam and itch.io.
-- Itch.io continues to be an incubator for narrative-focused indie games, with developers actively bridging to Steam — a key pipeline for indie discoverability and revenue growth in 2026.
-- The blend of narrative depth and co-op mechanics (seen in IKUMA) represents a differentiating strategy in a saturated market.
-
----
-
-### Key Sources
-
-| Source | URL | Date |
-|---|---|---|
-| March 2026 Indie Wrap-Up | https://monstervine.com/2026/03/march-2026-indie-games/ | ~2 weeks ago |
-| IKUMA Adventure Game Hotspot | https://adventuregamehotspot.com/announcement/4165/ikuma-the-frozen-compass-pointing-towards-2026-release | Apr 2025 |
-| Most Anticipated Indies 2026 | https://goodgamelobby.substack.com/p/most-anticipated-indie-games-of-2026 | Dec 2025 |
-| Itch.io 2025 Year in Review | https://itch.io/blog/1285106/2025-year-in-review | Jan 2, 2026 |
-| Indie Market Trends 2025–2026 | https://www.accio.com/business/2025-indie-game-trends | — |
-
-## [geo_eu] Belgium France local economy policy small retail regulation change March 2026
-
-Purpose: Catch any fresh policy or regulatory shifts in Belgium/France affecting small shops relevant to Chez Julien and Grassroot Hoppers.
-
-Here is a concise, fact-based summary of the most relevant recent updates on **Belgium & France local economy policy and small retail regulation**, with particular relevance to **March 2026**:
-
----
-
-## 🇧🇪 Belgium
-
-### 1. VAT Rate Changes Take Effect 1 March 2026
-The Belgian government officially postponed several planned VAT rate increases and decreases for the **hospitality and leisure sectors** until **1st March 2026**. The changes include moving certain items from the **6% to the 12% VAT rate**.
-
-**Why it matters:** While the postponement offered short-term relief, businesses in the affected sectors must now prepare for implementation of the new rates in March 2026. For consumers, the changes mean higher costs for hotel stays and certain leisure activities from that date.
-
-📌 **Source:** https://meridianglobalservices.com/belgium-vat-rate-increases-decreases-postponed-till-1st-march-2026/
-
----
-
-### 2. Labour & Distribution Sector Flexibility (Early 2026)
-Belgium's "distribution sector" definition now **explicitly includes parcel companies such as Bpost, supermarkets and their supply chains**, though a precise definition is still under discussion. Other companies like **gas stations and night shops** will also benefit from new flexible work-schedule rules. These changes are intended to support **late-evening logistics and e-commerce**, which increasingly depend on flexible staffing.
-
-📌 **Source:** https://leglobal.law/countries/belgium/belgium-2026-looking-ahead/
-
----
-
-### 3. EU Consumer Protection: Deadline 27 March 2026
-The **Empowering Consumers Directive** (EU 2024/825) must be implemented into Belgian national law by **27 March 2026**, before taking effect on 27 September 2026. This Directive aims to protect consumers from **'greenwashing'** and help them make more sustainable choices.
-
-📌 **Source:** https://iclg.com/practice-areas/consumer-protection-laws-and-regulations/belgium
-
----
-
-## 🇫🇷 France
-
-### 4. Town Centre Revival Plan — Linked to March 2026 Municipal Elections
-France's leading retail federation has called for **stronger local action on empty shops** ahead of the **2026 municipal elections**. Proposals include stricter property management, better access, and **simpler rules for small retailers**. Candidates and newly elected councils will be expected to address issues such as **accessibility, mobility, local jobs, and public space activation** as part of broader local retail policy strategies.
-
-📌 **Source:** https://www.retail-insight-network.com/news/france-retail-sector-calls-for-town-centre-revival-plan/
-
----
-
-### 5. France's "Year of Resistance" Against E-Commerce Giants (Feb 2026)
-France declared a **"year of resistance"** against online retail platforms like Shein in 2026, with Minister for SMEs Serge Papin highlighting concerns about **unfair competition** faced by physical stores. Shein is under scrutiny for undercutting local French retailers by shipping products directly from China at minimal cost.
-
-The French government is considering **legislation that would allow suspension of online platforms without court approval**, and has also **implemented a tax on small parcels** from these platforms.
-
-📌 **Sources:**
-- https://www.devdiscourse.com/article/law-order/3794667-frances-showdown-with-e-commerce-giants-the-shein-saga
-- https://www.retailnews.asia/frances-year-of-resistance-shein-and-other-online-retail-giants-battle-unfair-competition-claims/
-
----
-
-## 🔑 TL;DR
-| Country | Change | When |
-|---|---|---|
-| 🇧🇪 Belgium | VAT hike (6%→12%) for hospitality/leisure | **1 March 2026** |
-| 🇧🇪 Belgium | New distribution/retail labour flexibility rules | Early 2026 |
-| 🇧🇪🇫🇷 EU/Both | Anti-greenwashing consumer directive deadline | **27 March 2026** |
-| 🇫🇷 France | Town-centre retail revival policy push | Linked to **March 2026 elections** |
-| 🇫🇷 France | "Year of resistance" vs. e-commerce (Shein tax, suspension powers) | **Feb–2026 ongoing** |
+The EU is simultaneously pushing **regulatory harmonization** (DNA), **strategic investment in sovereign infrastructure** (EURO-3C), and **cloud market controls** (CADA) — a coordinated shift from regulation-only to regulation-plus-investment in pursuit of digital independence from non-EU tech providers.
