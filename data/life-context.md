@@ -1,90 +1,80 @@
-<!-- PRISM Life Context — Auto-generated 2026-03-21T04:24:34.762Z -->
+<!-- PRISM Life Context — Auto-generated 2026-03-22T04:49:04.645Z -->
 <!-- Source: context-note.md + LOG (3d) + 15 recent files -->
 <!-- Model: claude-sonnet-4-6 -->
 # LIFE CONTEXT SNAPSHOT — PRISM
-**Generated:** 2026-03-21 | **Subject:** Julien
+**Generated:** 2026-03-22 | **Subject:** Julien
 
 ---
 
 ## 1. RIGHT NOW
 
-Julien is in a sustained consolidation phase — no active project pushes, no commits, no journal entries. NightCrawler has been the only thing moving for roughly two weeks (March 7 through today). The quiet is deliberate, not stalled: he explicitly named this a consolidation phase and is holding it. The one area of recent file activity is the blog pipeline — four skill files (`blog-1-brainstorm` through `blog-5-publish`) and associated infrastructure were recently modified, suggesting background system-building or refinement even without visible output.
+Julien is in an extended consolidation phase — no commits, no file changes, no journal entries for roughly ten days. NightCrawler is the only thing moving. The recently modified files tell a different story than the silence: he's been building out a multi-skill blog pipeline (brainstorm → extract → draft → review → publish to Substack) inside `.cursor/skills/`, suggesting active system-building work that either predates the consolidation window or happened quietly without leaving LOG traces. His stated mood is calm and deliberate — "consolidation holds" repeated across multiple nights, no apparent distress about the stillness.
 
 ---
 
 ## 2. THIS WEEK
 
 **What's moving:**
-- **Blog pipeline infrastructure** — Skills 1–5 fully defined and recently touched: brainstorm → extract → draft → review → publish (Substack). The pipeline is operational. No active draft appears to be in progress based on activity signals, but the tooling is sharp and ready.
-- **Cursor skill system** — Multiple skills updated recently: `dancing-session`, `guitar-coach`, `update-business-status`, `value-plan-review`, `weekly-business-plan`. This is active system maintenance, not project work. Julien is tuning his AI operating environment.
+- **Blog pipeline (.cursor/skills/)** — Five skills fully built or recently updated: `blog-1-brainstorm`, `blog-2-extract`, `blog-3-draft`, `blog-4-review`, `blog-5-publish`. The publish skill includes a working Substack API integration (`substack_publish.py`) with auth handling via `substack.sid` cookie. This is the most recently touched work in the vault.
+- **Dancing session skill** — Present in recently modified files. Lindy Hop AI-coached practice system exists and is built out.
+- **Guitar coach skill** — Also present. Country ballad songwriter focus, full session/log/progress structure.
+- **Business skills** — `update-business-status` and `weekly-business-plan` skills exist and reference `Business/STATUS.md` as the handoff artifact. Status freshness gate is built in (7-day expiry).
 
-**What's parked / quiet:**
-- **Grassroot Hoppers** — Launched publicly in early March (repo split, movement site + David Toolkit product repo, French demo UI). The March 9–13 sprint was locked to validate the wedge against real shop use. No activity since sprint end. Status post-sprint: unknown, consolidation phase absorbed it.
-- **10k running project** — Last noted in late February action planning. No recent signals.
-- **Blog posts** — Pipeline built, no active draft detected.
-- **Business/Operation Autonomy active development** — No recent commits or file changes.
+**What's quiet / parked:**
+- **Grassroot Hoppers** — Went fully public ~March 8 (repo split, movement site + David Toolkit product repo, French demo UI). Sprint March 9–13 was meant to validate the wedge against real shop use. No activity logged since. Status unknown post-sprint.
+- **Blog essay** — Was in-progress draft as of ~March 8 (research done, SPEC created, draft started). No movement since.
+- **10k running project** — Updated ~March 4 alongside Values.md rewrite. Not touched since.
+- **Staffing Calendar System** — Referenced in business skill's file inventory (`Projects/Software/Staffing Calendar System/STATUS.md`, `SPEC.md`). No recent activity signals.
 
 ---
 
 ## 3. PRIORITIES & STRUGGLES
 
-**What Julien said matters most (his own words, highest trust):**
+**What he said matters most (his own words, highest trust):**
 
-> "It's not about the games I develop today. It's not about any of my dozens of projects. It's about what I'm going to start doing seriously in 6 months. Right now, it's only about understanding what's happening, understand what's worth pursuing and what is not. And I have no idea. That's why I'm trying so many things. I need to be at the edge."
+> "It's not about the games I develop today. It's not about any of my dozens of projects. It's about what I'm going to start doing seriously in 6 months. Right now, it's only about understanding what's happening, understanding what's worth pursuing and what is not. And I have no idea. That's why I'm trying so many things. I need to be at the edge."
 
-This is the master frame. Everything else is subordinate to it. He is in a **deliberate scouting phase** — not executing, but mapping the territory. The consolidation he's holding externally mirrors an internal orientation exercise. He's not lost; he's choosing not to commit prematurely.
+This is the core frame. Everything else is reconnaissance. The consolidation phase isn't stagnation — it's deliberate observation. He's running parallel experiments (Grassroot Hoppers, blog pipeline, dancing skill, guitar coach, business automation) not to ship them all, but to find the signal.
 
-**What's hard:**
-- The tension between multi-project exploration (which creates cognitive debt by his own admission) and the need to stay at the edge without yet knowing what's worth the full bet.
-- He knows his pattern: overinvests in Tier 3 creative projects, undertends Tier 1 life and relationships. The consolidation phase may be a corrective.
-- No journal entries in weeks — either the quiet is genuinely restorative or reflection is being deferred.
+**The real struggle:** He doesn't yet know what to commit to in 6 months. The experimentation phase is intentional but uncomfortable — "I have no idea" is an honest statement, not false modesty. He's tolerating ambiguity while staying at the edge.
 
-**What he's avoiding:**
-- No visible signals of what he's actively avoiding this week. The silence is the signal — he's not pushing anything hard right now.
+**What he's avoiding:** Premature commitment. False clarity. Picking the wrong thing to go deep on. Also: the shop still pulls operational attention he doesn't want to give it.
+
+**Pattern to watch (from stable identity):** He tends to overinvest in creative/Tier 3 projects while undertending life and relationships. With Lucia quitting her job May 1, the relational stakes are rising. The consolidation period may also be absorbing this background pressure.
 
 ---
 
 ## 4. BUSINESS
 
-**Chez Julien / Operation Autonomy:**
-
-- **Strategy:** Operation Autonomy is live since February 2026. Goal: full shop autonomy, Julien as passive CEO. Previous plan (Operation Exit / sell) was archived.
-- **Henry** — Full-time, invested, wants a managing role. Still 24, lacks experience and reliability. The soft manager pitch was delivered at the February 4 team meeting. The "Big Meeting" (full role restructure conversation) was planned for March 2026 — no file evidence it has occurred yet.
-- **Lucas** — Part-time to full-time, described as "questionable at the moment." Good with customers, but tends to grab cognitive tasks that should go to Henry. The February meeting asked him to focus on sales and the floor.
-- **The Big Meeting (March 2026):** This was explicitly scheduled as the follow-up to February's foundation-laying meeting — the full conversation about roles, development paths, Henry/Lucas division. Given the consolidation phase and no activity signals, unclear if this happened. High-priority item to flag.
-- **Staffing Calendar System:** Referenced in business infrastructure docs. Status unknown this week.
-- **Financials:** ~500K annual sales, high profitability. 18-year building loan (48% ownership). Serge (accountant) handles externals. No new financial signals this week.
-- **Business STATUS.md:** Freshness unknown — if older than 7 days, the `update-business-status` skill would gate the weekly business plan review.
-
-**Relevance this week:** The Big Meeting timeline makes business a live concern even during consolidation. Henry's development and the Lucas situation don't pause because Julien is quiet.
+**Chez Julien / GPFC srl:**
+- Operation Autonomy is the active strategy — full shop autonomy, minimal CEO time input. Started February 2026.
+- The February 4 team meeting happened (notes exist). The "Big Meeting" (full role restructure with Henry and Lucas) was planned for March 2026 but no meeting notes are visible for March yet. Unknown if it happened.
+- **Henry** — Full-time, invested, wants manager/operating officer role. 24 years old, lacks experience and structure, not yet reliable. Needs development regardless of shop's future. The Henry → Manager pillar is the most critical dependency for autonomy.
+- **Lucas** — Part-time to full-time, status described as "questionable." Good with customers, tends to grab cognitive tasks that should go to Henry. The role inversion is the operational problem.
+- **Staffing Calendar System** — A software tool being built to support autonomy. Status unknown this week.
+- **Financial state** — ~500K annual sales, high profitability, 48% building ownership (18-year loan). No new financial data points in recent activity.
+- **Business skills infrastructure** — `update-business-status` and `weekly-business-plan` are built and operational. Weekly rhythm tooling exists; unclear if it's being used this week.
 
 ---
 
 ## 5. TOOLS & STACK
 
-- **PRISM** — Julien's personal AI research/briefing system. This snapshot feeds it.
-- **NightCrawler** — Automated nightly logging and report generation. Running every night without interruption.
-- **Cursor** — Primary AI-assisted development environment. Skill system (`/.cursor/skills/`) is actively maintained and recently updated. Skills cover: blog pipeline (5 stages), dancing coaching, guitar coaching, business status, value plan review, weekly business plan.
-- **Substack** — Publishing target for The Dishwasher Generation. `blog-5-publish` skill uses `substack_publish.py` with cookie-based auth (`substack.sid`). Infrastructure is live.
-- **MyLifeOS** — Markdown-based personal OS. `LOG.md`, `CURRENT.md`, `CLAUDE.md` are the live surfaces. Journal/Weekly/ holds value and business plans.
-- **Models/platforms in use:** Not specified in recent signals. Cursor (likely Claude or GPT-4 class) for skill execution. PRISM context suggests multi-model awareness.
+- **PRISM** — Automated morning intelligence briefing. Running (NightCrawler confirms daily automation is live).
+- **NightCrawler** — Nightly automated logging and report generation. Running reliably every ~05:20–05:30.
+- **Cursor** — Primary AI coding/editing environment. The `.cursor/skills/` directory is his skill orchestration layer — all major workflows live here.
+- **Substack** — Active publishing channel (The Dishwasher Generation). `blog-5-publish` skill is integrated with Substack API via Python script + `.env` cookie auth.
+- **MyLifeOS** — Obsidian-based markdown vault. The operating system for everything. CLAUDE.md, CURRENT.md, LOG.md, AGENT.md are the core orientation files.
+- **Models in use** — Not specified in recent activity. Cursor's underlying model is the primary inference engine for skill execution.
 
 ---
 
 ## 6. LIFE
 
-- **Lucia** — Quitting her job May 1, 2026 to go self-employed (art teaching, selling her work). This is a live countdown — approximately 6 weeks out. Julien has committed to supporting her financially and with his time during the transition. They have shared business ideas. The May 1 date is a real inflection point for the household.
-- **Meeting anniversary:** 27th of each month — March 27 is 6 days away.
-- **Energy/health:** No explicit signals this week. Consolidation phase suggests either genuine rest or quiet depletion. No running log activity, no dancing session logs detected recently (though the `dancing-session` skill was recently updated, implying the practice is still in the system if not actively logged).
-- **Poncho** — Australian Shepherd, 2.5 years old. No specific signals this week.
-- **Reynolds Mode** — Shutdown ritual for full presence with Lucia. No signals it's under stress, but the lack of journaling makes it hard to assess.
+- **Lucia** — Quitting her job May 1, 2026 to go self-employed (art teaching + selling her art). This is 40 days away. Julien has committed to supporting her financially and with time. This is a significant life inflection point approaching fast — no explicit planning visible in recent activity, but it's the largest near-term personal stake.
+- **Energy / health** — Consolidation phase suggests deliberate low-output, possibly intentional rest. No signals of distress. Dancing skill is built (Lindy Hop daily practice is his keystone community habit). Guitar coaching skill is active. Both suggest he's maintaining creative/embodied practices even during the quiet period.
+- **Upcoming dates:** Meeting anniversary with Lucia is the 27th of each month — March 27 is in 5 days. Fête des mères is 2nd Sunday of May (relevant given Lucia transition timing).
+- **Poncho** — Australian Shepherd, 2.5 years old. No specific notes this week.
 
 ---
 
-## ANALYST NOTES
-
-- **The 6-month frame is the dominant signal.** Julien is not optimizing for this week's output. He's in a reconnaissance posture. Intelligence briefing should serve map-making, not task execution.
-- **Grassroot Hoppers post-sprint status is a gap.** The March 9–13 sprint ended without a logged outcome. Worth surfacing if new signals emerge.
-- **The Big Meeting (Henry/Lucas role restructure) was due in March.** No confirmation it happened. If unaddressed, it's the most time-sensitive business item.
-- **Lucia's May 1 transition** creates a household financial and time reallocation event. Six weeks out. Relevant to any planning conversation.
-- **Blog pipeline is fully built but idle.** When Julien shifts out of consolidation, the infrastructure is ready to run immediately.
+**Snapshot confidence:** High on current state (extended consolidation, blog pipeline as most recent work, 6-month horizon framing). Medium on business (Big Meeting status unclear, Grassroot Hoppers post-sprint status unknown). The "I have no idea" statement from Julien's own words is the single most important frame for personalizing any briefing — he is in active exploration mode, not execution mode.
