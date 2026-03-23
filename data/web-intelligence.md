@@ -1,361 +1,302 @@
-<!-- PRISM Web Intelligence — 2026-03-22 -->
-# Web Intelligence — 2026-03-22
-*Scheduled theme: Geopolitics, EU Economics & Brussels Context*
+<!-- PRISM Web Intelligence — 2026-03-23 -->
+# Web Intelligence — 2026-03-23
+*Scheduled theme: Software Dev & AI Building*
 
-## [geo_eu] Belgium Brussels business regulation economic policy change March 2026
+## [dev] new developer tool releases CLI IDE AI coding agent March 2026
 
-Purpose: Catch any new Belgian regulatory or economic shifts affecting Chez Julien / GPFC srl operations this week.
+Purpose: Catch any tool drops in the last 48h relevant to Julien's AI-assisted engineering stack
 
-Here is a concise, fact-based summary of recent Belgium/Brussels business regulation and economic policy changes around March 2026:
-
----
-
-## 🇧🇪 Belgium & Brussels: Business Regulation & Economic Policy Updates (2025–2026)
+Here's a concise, factual summary of the most important developer tool releases and updates as of **March 2026**:
 
 ---
 
-### 1. 🏛️ Belgian Competition Authority (BCA) — 2026 Priorities *(Published ~March 2026)*
-
-The BCA will enforce antitrust law in relation to professional rules and will advocate revision where market regulation is more restrictive than necessary to meet objectives of general economic interest.
-
-Key enforcement actions launching in 2026:
-- Guidelines on sustainability agreements and a guide for contracting authorities to recognize and prevent bid rigging are set for publication in early 2026. A communication relating to no-poach agreements is expected later in 2026.
-- The BCA will also launch a targeted awareness campaign on the illegality of vertical price fixing, with particular attention to online commerce and price comparison systems.
-- The BCA will continue to make significant investments in IT tools and detection capabilities, including a virtual lab for large-scale economic analyses and automated detection of collusion and unnotified merger transactions.
-
-**Why it matters:** Businesses operating in Belgium — especially in professional services, e-commerce, and public procurement — face heightened scrutiny and should review pricing, hiring, and sustainability practices.
-
-📎 **Source:** https://www.aoshearman.com/en/insights/belgian-competition-authority-2026-priorities-paper
+## 🛠️ Developer Tools Update — March 2026
 
 ---
 
-### 2. 💶 Belgian Federal Tax Changes — Budget Framework 2026–2029 *(Agreed late 2025, taking effect 2026)*
+### 1. 🆕 JetBrains Air (Public Preview) — *March 16, 2026*
+JetBrains previewed **Air**, a new agentic development environment designed to let developers delegate coding tasks to multiple AI agents running concurrently. It's built on the abandoned Fleet IDE. This was launched alongside a separate but related release:
 
-The Belgian federal government reached an agreement on the budget framework for 2026–2029. The standard VAT rate remains at 21%, but reduced VAT rates on certain goods and services will increase — hotels, campings, sports/leisure activities, and take-away meals will see VAT rise from 6% to 12%.
+**Junie CLI** is now in Beta — an evolution of Junie into a fully standalone AI agent. Developers can use it directly from the terminal, inside any IDE, in CI/CD, and on GitHub or GitLab. It supports **BYOK (Bring Your Own Key)**, giving teams the flexibility to choose their preferred LLM — useful for compliance, cost management, or internal policies.
 
-Additional business-relevant changes:
-- Withholding tax on "VVPRbis-shares" increased from 15% to 18%; taxation of liquidation reserves increased. Wage withholding tax exemptions for shift/night work and researchers are frozen in 2028 and 2029.
-- The favorable tax regime for copyright income becomes less attractive: the lump-sum deduction (up to 50%) is eliminated.
-
-**Why it matters:** Cost increases for hospitality, leisure, and IP-heavy businesses; investors and startup founders face higher dividend and exit tax costs.
-
-📎 **Source:** https://kpmg.com/us/en/taxnewsflash/news/2025/11/belgium-tax-measures-budget-framework-2026-2029.html
+**Why it matters:** JetBrains is now competing directly in the agentic CLI + multi-agent IDE space, previously dominated by Cursor and Windsurf.
+🔗 https://blog.jetbrains.com/junie/2026/03/junie-cli-the-llm-agnostic-coding-agent-is-now-in-beta/
+🔗 https://machineherald.io/article/2026-03/16-jetbrains-launches-air-an-agentic-development-environment-built-on-abandoned-fleet-ide/
 
 ---
 
-### 3. 🌍 EU-Level: "EU Inc." — Single EU Company Law Proposed *(February 2026)*
+### 2. 🔄 Cursor 2.0 — Major Update
+**Cursor 2.0** ships with a **Composer model (4x faster than competitors)**, a redesigned **multi-agent interface supporting up to 8 agents in parallel**, and a new **Plan Mode** for editable Markdown planning.
 
-Right now, starting or growing a startup in the EU means navigating 27 distinct legal systems. EU-INC would allow companies to operate entirely online under a single EU-wide system that all member states would automatically recognise. Brussels calls it a "28th regime" — optional but designed to help European startups.
-
-**Why it matters:** Belgian-based companies and startups could eventually use a single EU legal form instead of Belgian company law, reducing administrative burden and cross-border costs.
-
-📎 **Source:** https://www.euronews.com/my-europe/2026/02/04/eu-inc-brussels-plan-for-a-single-company-law-across-europe
+**Why it matters:** Multi-agent parallelism is now a core feature, not a differentiator — but Cursor is pushing speed and UX ahead.
+🔗 https://blog.logrocket.com/ai-dev-tool-power-rankings/
 
 ---
 
-### 4. 📉 Fiscal Consolidation Begins 2026 — OECD Warning
+### 3. 📊 Multi-Agent Becomes Table Stakes — Feb/March 2026
+In **February 2026, every major tool shipped multi-agent in the same two-week window**: Grok Build (8 agents), Windsurf (5 parallel agents), Claude Code Agent Teams, Codex CLI (Agents SDK), and Devin (parallel sessions). Running multiple agents simultaneously on different parts of a codebase is now considered **table stakes**.
 
-Fiscal consolidation will resume in 2026. Shifting the tax burden away from labour and removing work disincentives could help increase employment and economic growth. Reducing regulatory burdens and the associated costs for businesses could additionally stimulate investment.
-
-**Why it matters:** Belgium is entering a period of budget tightening — businesses should expect continued tax reform pressure and possible changes to public subsidies or support programs.
-
-📎 **Source:** https://www.oecd.org/en/topics/sub-issues/economic-surveys/Belgium-Economic-Snapshot.html
+**Why it matters:** The industry has converged — the differentiator has shifted from *having* multi-agent to *how well* the agent architecture works.
 
 ---
 
-### 🔑 TL;DR
-| Area | Change | Effective |
-|---|---|---|
-| Competition law | Tougher BCA enforcement on pricing, hiring, sustainability | 2026 |
-| VAT (hospitality/leisure) | 6% → 12% | 2026 |
-| Share/dividend taxes | VVPRbis withholding: 15% → 18% | 2026 |
-| Copyright tax regime | Lump-sum deduction eliminated | 2026 |
-| EU company law | "EU Inc." single-regime proposal | Proposed Feb 2026 |
-| Fiscal policy | Consolidation phase begins | 2026 |
+### 4. 🏆 Current Power Rankings (March 2026)
+**Windsurf** holds the top spot, featuring an **Arena Mode** for side-by-side model comparison with hidden identities and voting. **Claude Code** is rated the best AI coding agent for most developers overall, while **Cursor** is the most productive IDE agent for predictable usage. **Windsurf** ($15/month) is the go-to value alternative.
 
-## [geo_eu] EU eurozone economic outlook inflation trade tariffs March 21 22 2026
-
-Purpose: Track EU macroeconomic signals with direct cost-of-business impact in Belgium.
-
-Here is a concise, fact-based summary of the latest EU/Eurozone economic outlook updates around March 2025–March 2026:
+🔗 https://www.morphllm.com/ai-coding-agent
 
 ---
 
-## 🇪🇺 EU Eurozone Economic Outlook: What's Changed & Why It Matters
+### Key Takeaway
+The big shift in March 2026: **agentic CLI tools** (Junie CLI, Claude Code) are now on par with IDE-native agents, BYOK/model-agnosticism is a standard expectation, and **multi-agent parallelism** is fully mainstream across all major platforms.
+
+## [dev] AI-assisted micro-SaaS solo builder workflow automation March 2026
+
+Purpose: Scout micro-software opportunities that could become a 6-month bet for Julien
+
+Here's a concise, fact-based summary of what's happening in **AI-assisted micro-SaaS solo builder workflow automation** as of early 2026:
 
 ---
 
-### 📉 Growth: Modest but Fragile
+## 🔄 What Changed
 
-For 2025, EY (March 2026 outlook) anticipates a slight rebound in the euro area, with growth projected at **1.1% year-on-year**, while inflation is expected to stabilize around **2% y/y**. However, U.S. tariffs pose a significant concern for the European economy.
+**1. AI Moved from Assistant to Operator**
 
-In 2025, euro area GDP rose 1.5%, but this was inflated by a staggering **13.3% increase in Ireland**, largely linked to tariff frontloading effects. Excluding Ireland, underlying growth reached only **1.0%**, up from 0.8% in 2024.
+Prompts began triggering automated workflows, with humans stepping in primarily to review and approve outcomes — resulting in time savings of **50–70%**. AI no longer waits for instructions; it anticipates needs and acts within defined boundaries, with founders setting objectives rather than tasks.
 
-Headline GDP growth is projected to **slow to 1.3% in 2026** (from 1.5% in 2025), largely due to a normalization in Ireland. Inflation should stabilize near 2%, and the ECB is expected to **keep the deposit rate at 2%**.
+With clear oversight in place, time savings can rise to **70–90%**, turning AI into a continuously operating system rather than a tool — shifting solo builder automation into full infrastructure.
 
----
+**2. Solo-Founded Startups Are Surging**
 
-### 📦 Trade Tariffs: The Key Risk
+Solo-founded startups surged to **36.3% of all new companies**, powered by AI tools that cost under **$1,000/month**.
 
-ECB analysis suggests that a **25% U.S. tariff on European goods** would reduce eurozone GDP growth by around **0.3 percentage points** in the first year. If the EU retaliates with its own tariffs, this figure could rise to **0.5 percentage points**.
+**3. A Standard Solo Builder Stack Has Solidified**
 
-Speaking at a European Parliament hearing (March 20, 2025), ECB President Christine Lagarde warned that heightened trade uncertainty — especially from the United States' shifting policies — could disrupt the eurozone's recovery. "Trade frictions are detrimental to global growth and welfare," she said, adding that retaliatory tariffs and supply chain disruptions could push **inflation up by as much as 0.5 percentage points**.
+The most commonly used tools among successful solopreneurs include **Cursor and Claude** for software development, **ChatGPT Plus** for content and strategy, **Canva Pro** for design, and **Zapier or Make** for workflow automation.
 
-Manufacturing has returned to stagnation after an early-2025 uptick driven by tariff frontloading. Services continue to expand moderately, led by ICT. Cross-country disparities persist, but growth in laggard economies including **Germany** seems to be picking up.
+**4. Solo Devs Are Rebuilding SaaS Tools In-House**
 
----
+AI-assisted coding is enabling solo developers to rebuild internal tools — including document/spend automation, task coordination platforms, contact management, workflow tracking, and customer interaction bots — saving significantly on SaaS subscriptions. *(Published: January 3, 2026)*
 
-### 🔥 Inflation: Near Target but Risks Remain
+**5. Low-Code AI Workflow Builders Are Maturing**
 
-ECB March 2025 projections noted that the outlook for headline HICP inflation was **revised up by 0.2 percentage points for 2025**, on account of higher energy commodity price assumptions and the depreciation of the euro.
-
-The ECB expects inflation to average **2.3% in 2025** before settling at its **2% target in 2027**. A key driver has been the moderation in wage growth, which has slowed after a surge in response to the post-pandemic inflation spike.
-
-ECB December 2025 projections noted that global trade growth is projected to decline to **2.0% in 2026**, owing to the adverse impact of tariffs.
+Visual builder tools now make it easy to orchestrate SaaS actions, data steps, and AI without heavy coding. The best platforms include evaluations, versioning, observability, and governance so changes are tested and shipped safely.
 
 ---
 
-### ⚠️ Why It Matters
+## 💡 Why It Matters
 
-- The ECB is navigating a **dual threat**: tariff-driven inflation pressures vs. tariff-driven growth drag — a classic stagflation dilemma.
-- **Germany and Italy** face higher exposure to U.S. trade policy than France and Spain.
-- The ECB's rate-cut path could be complicated if tariffs reignite inflation while the economy slows.
+For founders who are deliberate about their tool stack and focused on specific, painful problems, the solo path is no longer a compromise — it's a **competitive advantage**. Lower overhead means faster iteration, higher margins, and total control. In a market where speed and efficiency determine survival, that combination is hard to beat.
 
 ---
 
-### 🔗 Key Sources
+## 🔗 Most Important Source URLs
+
 | Source | Date | URL |
 |---|---|---|
-| **Euronews – Lagarde Parliament Warning** | March 20, 2025 | https://www.euronews.com/business/2025/03/20/trade-tariffs-could-push-up-eurozone-inflation-by-05-ecbs-lagarde-warns |
-| **EY European Economic Outlook** | March 2026 | https://www.ey.com/en_pl/insights/economic-analysis-team/ey-european-economic-outlook-march-2026 |
-| **ECB Staff Projections** | March 6, 2025 | https://www.ecb.europa.eu/press/projections/html/ecb.projections202503_ecbstaff~106050a4fa.en.html |
-| **ECB Eurosystem Projections** | December 2025 | https://www.ecb.europa.eu/press/projections/html/ecb.projections202512_eurosystemstaff~12ead61977.en.html |
-
-## [geo_eu] Brussels EU geopolitics defense spending NATO Ukraine negotiations March 22 2026
-
-Purpose: Surface geopolitical developments centered on Brussels institutions that could shift the local business and funding environment Julien operates in.
-
-Here is a concise, fact-based briefing on the key EU/Brussels geopolitical developments around March 20–22, 2025:
+| Grey Journal – Solo Founders & AI | ~Mar 2026 (4 days ago) | https://greyjournal.net/hustle/grow/solo-founders-million-dollar-ai-businesses-2026/ |
+| PrometAI – Solopreneur Tech Stack 2026 | Jan 25, 2026 | https://prometai.app/blog/solopreneur-tech-stack-2026 |
+| DEV.to – SaaS Apocalypse / Solo Dev Rebuilds | Jan 3, 2026 | https://dev.to/paulriviera/the-saas-apocalypse-how-ai-lets-solo-devs-rebuild-tools-in-house-and-save-millions-in-2026-4ei8 |
+| Vellum – Top Low-Code AI Workflow Tools | Dec 3, 2025 | https://vellum.ai/blog/top-low-code-ai-workflow-automation-tools |
 
 ---
 
-## 🇪🇺 Brussels EU Geopolitics Briefing — Around March 20–22, 2025
+**Bottom line:** As of early 2026, the solo micro-SaaS builder workflow has fundamentally shifted — AI agents now handle end-to-end execution (dev, marketing, support, automation), the standard stack costs under $1K/month, and the solo founder model is the fastest-growing startup structure. The key inflection is AI going from *tool* to *operator*.
+
+## [dev] Cursor Claude Code Codex agentic workflow update March 23 2026
+
+Purpose: Track changes to the exact tools Julien runs daily in his .cursor/skills pipeline
+
+Here's a concise, fact-based summary of what's happening across **Cursor, Claude Code, and OpenAI Codex** in the agentic workflow space as of March 2026:
 
 ---
 
-### 🔄 What Changed
+## 🤖 Agentic AI Coding Tools — March 2026 Update
 
-**1. EU Regular Summit — March 20, 2025 (Brussels)**
+### What Changed
 
-The EU maintains its "peace through strength" approach, requiring Ukraine to be in the strongest possible position. EU leaders called for the implementation of defence capability actions identified in the March 6 conclusions to begin as a matter of urgency, and for continued work on relevant financing options.
+**Multi-Agent Convergence (Feb–March 2026)**
+In February 2026, every major tool shipped multi-agent capabilities in the same two-week window: Grok Build (8 agents), Windsurf (5 parallel agents), and Claude Code's Agent Teams.
 
-The European Council welcomed the joint statement by Ukraine and the United States following their meeting in Saudi Arabia on March 11, 2025, including proposals for a ceasefire agreement, humanitarian efforts, and the resumption of US intelligence sharing and security assistance. It called on Russia to show real political will to end the war.
+**Codex Re-enters the Rankings**
+Codex re-entered the top five as OpenAI's cloud-native coding agent, with parallel sandboxed execution, deep GitHub integration, and automatic PR creation — making it the strongest pick for teams in the OpenAI ecosystem.
 
-The EU also declared it remains ready to step up pressure on Russia through further sanctions and strengthening enforcement of existing measures, to weaken Russia's ability to continue waging war.
+**Fundamentally Different Architectures**
+Three tools now dominate developer conversations: OpenAI Codex (cloud-based autonomous agent), Cursor (AI-native IDE), and Claude Code (terminal-native assistant). Codex operates by spinning up a sandboxed VM, cloning your repo, working on a task asynchronously, then creating a pull request.
 
----
+**Claude Code's Agent Features**
+Claude Code supports multi-agent teams where multiple agents work on different parts of a project simultaneously (cutting large codebase review time roughly in half), and connects with external tools through MCP servers for GitHub, databases, and other APIs.
 
-**2. European Defence White Paper Released (~March 19, 2025)**
+**Cursor's Agentic Shift**
+The agentic power of these tools had a massive shift in early 2026 — for most of the previous year, Claude Code had an edge over Cursor because of its subagent system, background tasks, and checkpoint system.
 
-The White Paper released that week did not offer new funding options beyond what was already proposed in ReArm Europe, but several countries — France, Greece, Italy, and Spain — called for so-called Eurobonds to provide grants to member states.
+**AGENTS.md as a Shared Convention**
+A new shared convention called `AGENTS.md` has emerged for guiding coding agents, allowing one instruction file to be shared across Codex, Cursor, and Claude Code.
 
-The ReArm Europe / Readiness 2030 plan aims to leverage **€800 billion** in defence spending to 2029, including **€150 billion** in proposed EU-backed loans through a new Security Action for Europe (SAFE) instrument, and activating the national escape clause of the EU's Stability and Growth Pact to allow countries to increase military spending without breaching deficit rules.
-
----
-
-**3. Emergency Summit — March 6, 2025 (Key Context)**
-
-At the earlier March 6 emergency summit, EU leaders unanimously agreed to scale up defence investments. They declared that "Russia's war of aggression against Ukraine is an existential challenge for the European Union" — though Hungary did not support the Ukraine-specific conclusions.
-
-EU leaders also reaffirmed the principles that any peace process must follow: no negotiations on Ukraine without Ukraine; no negotiations affecting European security without Europe's involvement; and any truce must lead toward a comprehensive peace agreement with robust security guarantees for Ukraine.
-
----
-
-**4. European Peacekeeping Force Discussions — March 21, 2025**
-
-Military think-tank RUSI analyst Jack Watling stated that the purpose of a proposed Western military force in Ukraine would be to "give Ukraine confidence that a violation of the ceasefire would lead to the Russians having to contend with European forces, and in particular European air power."
+**Known Agentic Failure Modes**
+A year of production use has surfaced key failure modes: 65% of developers cite missing context as the top cause of poor AI code quality, and long-running agent sessions accumulate compounding errors. Agents also tend to fill knowledge gaps with plausible-sounding defaults instead of asking for clarification.
 
 ---
 
-### ⚠️ Why It Matters
+### Why It Matters
 
-- **NATO burden-sharing is shifting fast.** In 2024, 20 European NATO members already spent more than 2% of GDP on defence — a median rise of about 0.6% of GDP in just two years.
-- **U.S. retrenchment is the driver.** EU leaders were planning to discuss Ukraine's security needs with President Zelenskyy specifically after the Trump administration signalled Europe must take care of its own security.
-- **UK moving too.** The United Kingdom declared its intention to increase defence spending to 2.5% of GDP from April 2027, with a goal of reaching 3% in the next parliament.
+Terminal agents (Claude Code, Codex CLI, Aider) compose with Unix tools and handle automation, while IDE agents (Cursor, Windsurf, Cline) give visual feedback and faster editing loops. The most common setup has become: an IDE agent for daily work, a terminal agent for hard problems.
+
+Agentic development tools like Claude Code, Cursor, and Windsurf have matured from experiments to daily drivers — with features like hooks, subagents, and MCP integrations now considered table stakes.
 
 ---
 
-### 🔗 Key Source URLs
+### 🔗 Most Important Sources
 
 | Source | URL |
 |---|---|
-| 🏛️ EU Council — March 20 Ukraine Conclusions | https://www.consilium.europa.eu/en/press/press-releases/2025/03/20/european-council-20-march-2025-ukraine/ |
-| 🏛️ EU Council — March 20 Summit Overview | https://www.consilium.europa.eu/en/meetings/european-council/2025/03/20/ |
-| 📰 Euronews — March 20–21 Summit Live Coverage | https://www.euronews.com/my-europe/2025/03/20/ukraine-defence-and-economy-top-the-agenda-as-eu-leaders-meet-in-brussels |
-| 📰 Carnegie Endowment — Defence White Paper Analysis | https://carnegieendowment.org/emissary/2025/03/europe-defense-plan-ukraine-white-paper-rearm |
-| 📻 NPR — European Peacekeeping Force Discussions | https://www.npr.org/2025/03/21/nx-s1-5336095/europe-military-leaders-ukraine-russia-peacekeeping |
+| LogRocket March 2026 Power Rankings | https://blog.logrocket.com/ai-dev-tool-power-rankings/ |
+| NxCode: Codex vs Cursor vs Claude Code (2026) | https://www.nxcode.io/resources/news/codex-vs-cursor-vs-claude-code-2026 |
+| MorphLLM: 15 AI Agents Tested | https://www.morphllm.com/ai-coding-agent |
+| DataCamp: Claude Code vs Cursor | https://www.datacamp.com/blog/claude-code-vs-cursor |
+| Softr: Claude Code vs Cursor | https://www.softr.io/blog/claude-code-vs-cursor |
+
+## [grassroot] Grassroot community platform indie open source launch March 2026
+
+Purpose: Monitor competitive moves in the grassroots organizing tool space Grassroot Hoppers operates in
+
+Based on my search results, I was unable to find any specific product, project, or announcement precisely matching **"Grassroot community platform indie open source launch March 2026"** as a named entity or campaign. Here is an honest summary of what the searches did and did not turn up:
 
 ---
 
-> **Note:** Your query referenced "March 22, 2026," but no EU summit or major geopolitical event was found for that future date. The most recent and factually verifiable developments cluster around **March 20–21, 2025** — the EU regular summit — and the emergency defence summit of **March 6, 2025**, which together represent the most significant recent shift in EU defence and Ukraine policy.
+## 🔍 Search Summary
 
-## [dev] AI developer tools open source release update March 21 22 2026
+### What Was Found (Related, Not Exact)
 
-Purpose: Maintain radar on new tooling relevant to Julien's Cursor skill pipeline and blog automation stack.
+**1. Grassroot Platform (South Africa) — GitHub**
+The `grassroot-platform` on GitHub is described as a "modular application to make it easier and faster to organize and mobilize people, through a meeting organizer, vote taker, action logger and group manager" built for low-income communities. However, there is **no March 2026 launch announcement** associated with it in current search results.
 
-Here is a concise, sourced summary of the most relevant AI developer tools and open-source release updates from around March 21–22, 2026:
+**2. Grassroots.tools (Agriculture/Wheat)**
+Grassroots.tools is a data-sharing platform for the wheat research community that is fully open source and encourages anyone who benefits from it to use it. This is a scientific data tool, not an indie community platform.
 
----
+**3. Grassroots International — 2026 Toolkit**
+Grassroots International announced that in 2026, they are launching a guide for funders, donors, and movements called the "Solidarity Philanthropy Toolkit." This is a resource guide, not an open-source software platform.
 
-## 🤖 AI Developer Tools & Open Source: Key Updates (March 2026)
-
----
-
-### 1. 🧰 OpenAI Codex & GPT-5.4 Mini — New API & Coding Tool Integration
-
-**GPT-5.4 mini** is now available across the **Codex app, CLI, IDE extension, and web**. It uses only 30% of the GPT-5.4 quota, letting developers handle simpler coding tasks at about one-third the cost.
-
-In the API, GPT-5.4 mini supports text and image inputs, tool use, function calling, web search, file search, computer use, and skills. It has a **400K context window** and costs **$0.75 per 1M input tokens** and **$4.50 per 1M output tokens**.
-
-**Why it matters:** Codex can delegate to GPT-5.4 mini subagents so that less reasoning-intensive work runs on the cheaper model — a key pattern for composing multi-agent developer workflows.
-
-📎 Source: https://releasebot.io/updates/openai
+**4. Open Source Indie Hacker Trends (2026)**
+An January 30, 2026 guide notes that "in 2026, anyone can build almost anything" and that "open source is quietly becoming the best free marketing channel for bootstrapped founders." This reflects broader trends but is not a specific product launch.
 
 ---
 
-### 2. 🌐 Open-Source Agent Tooling Surge on GitHub (March 18–22)
+### ⚠️ Bottom Line
 
-Open-source AI isn't playing catch-up anymore. In early 2026, the most consequential developer tooling is being built in the open — and GitHub's trending page on March 18 reflects exactly that shift.
+> **No specific product or project called a "Grassroot community platform" with an indie open-source launch in March 2026 was found in current public search results.**
 
-Key projects gaining traction:
-- **obra/superpowers** — a Shell-based agentic skills framework sitting at the top of GitHub trending with **92,100 stars and 7,300 forks**, described as "an agentic skills framework and software development methodology that works," unusually accessible for developers wanting to compose AI agent behavior without heavy Python boilerplate.
-- **NVIDIA/NemoClaw** — a TypeScript plugin for secure installation and enterprise deployment of OpenClaw, with **4,200 stars and growing**, signaling OpenClaw is moving beyond hobbyists into serious infrastructure.
+This could mean:
+- The project hasn't received significant press/indexing yet
+- The name may be slightly different from what was searched
+- It may be a very niche or pre-launch project not yet widely covered
 
-**Why it matters:** Every major release this week — MiMo-V2-Pro, the continued OpenClaw ecosystem growth, the AutoResearchClaw project — is explicitly framed around **agents doing things**, not models answering questions. The architecture of what developers are building is shifting accordingly.
+**Recommended next steps:**
+- Search directly on **Product Hunt** (producthunt.com), **GitHub**, or **Hacker News** using the exact project name
+- Check the project's own website or social channels for the announcement
 
-📎 Source: https://www.devflokers.com/blog/new-ai-model-releases-open-source-projects-march-18-19-2026
+Would you like me to refine the search with a different spelling or more specific keywords?
 
----
+## [game] Unity GDC 2026 AI game generation solo dev tools update March 2026
 
-### 3. 📊 AI Dev Tool Power Rankings — March 2026 (LogRocket)
+Purpose: Follow up on GDC signals from yesterday's briefing for any new announcements or reactions
 
-**Windsurf** remains in the top spot for AI development tools. Features include **Arena Mode** for side-by-side model comparison with hidden identities and voting, **Plan Mode** for smarter task planning before code generation, and first-class parallel multi-agent sessions with Git worktrees. **Claude Opus 4.6** (fast mode) is available with promotional pricing.
-
-**Claude 4.6 Opus** leads AI model rankings with a **1M context window (beta)** — a first for Opus-class models — with 128K output enabling complex long-form tasks, plus Agent Teams, adaptive thinking, and effort controls.
-
-**Gemini 3.1 Pro** enters at #2 with an **ARC-AGI-2 score of 77.1%**, more than doubling Gemini 3 Pro's reasoning performance, with tiered thinking levels to optimize cost vs. quality per task.
-
-📎 Source: https://blog.logrocket.com/ai-dev-tool-power-rankings/
+Here's a concise, fact-based summary of what was announced around **Unity at GDC 2026 (March 2026)**:
 
 ---
 
-### 4. 🔓 Open-Source Deployment Economics Improving
+## 🎮 Unity GDC 2026 — AI & Solo Dev Tools Update
 
-Teams with data privacy requirements, cost constraints at scale, or fine-tuning needs now have **genuinely good open-source options** that do not require routing every inference through a third-party API. The economics of open-source deployment are also improving — running a capable open model locally or on your own infrastructure is becoming more practical as hardware requirements come down and tooling matures.
+### 🔑 What Changed
 
-📎 Source: https://dev.to/aibughunter/the-llm-and-ai-agent-releases-that-actually-matter-this-week-march-2026-5d7i
+**1. Prompt-to-Game AI Beta (Launched at GDC, March 2026)**
+
+Unity CEO Matthew Bromberg confirmed at GDC that the company unveiled a beta of the upgraded Unity AI, which enables developers to "prompt full casual games into existence with natural language only, native to our platform." The new web-accessible authoring environment is designed to remove friction for non-coders entirely.
+
+**2. Practical In-Editor AI Tools**
+
+Unity's AI is now integrated with the profiler — letting developers analyze performance captures and receive natural language optimization suggestions. The AI can also build UI from prompts or even images, understanding placement from visual context.
+
+Other demonstrated uses include using AI to populate environments with project assets and to debug the profiler.
+
+**3. Unity 6.4 Roadmap (6.4 → 6.8)**
+
+In advance of GDC, Unity released an hour-long "GDC Unity Product Update" video outlining what to expect from Unity 6.4 through 6.8, including standardization on the Universal Render Pipeline (URP). A new dynamic Global Illumination (GI) system is also coming to URP.
+
+**4. Platform Toolkit & Steam Support**
+
+Unity introduced Platform Toolkit — an API workflow designed to simplify multi-platform publishing, including support for PlayStation 4, Meta Quest 3, and Steam (including Steam Deck), along with a built-in checkout flow and an auto-generated web shop for direct sales.
+
+**5. Solo/Small Dev Trends**
+
+Unity's 2026 Game Development Report points to smaller teams making more casual games in less time, with AI tools handling the back-end work.
 
 ---
 
-### TL;DR
-| What | When | Why It Matters |
+### ❓ Why It Matters
+
+Unity CEO Bromberg's stated goal is to "democratize" game development by making it accessible to the masses — positioning Unity not just as an engine, but as an end-to-end creation platform for solo devs and non-coders. Notably, Unity is deliberately avoiding overpromising this cycle, framing this as a "Product Update" rather than a roadmap — focusing on delivering on already-announced goals.
+
+---
+
+### 🔗 Most Important Sources
+
+| Source | URL | Date |
 |---|---|---|
-| GPT-5.4 mini in Codex/API | ~March 21–22 | 70% cheaper, multi-agent delegation |
-| obra/superpowers (92K ⭐) | March 18–22 | Top open-source agent framework |
-| NVIDIA/NemoClaw plugin | March 18–22 | Enterprise-grade OpenClaw deployment |
-| Windsurf #1 AI dev tool | March 2026 | Full agentic IDE with multi-model support |
-| Claude Opus 4.6 / Gemini 3.1 Pro | March 2026 | New frontier model benchmarks for devs |
+| Game Developer (CEO quote) | https://www.gamedeveloper.com/programming/unity-says-its-ai-tech-will-soon-be-able-to-prompt-full-casual-games-into-existence- | Feb 18, 2026 |
+| InGameNews (AI Beta details) | https://www.ingamenews.com/2026/02/unity-announces-ai-beta-for-prompt-to.html | Feb 18, 2026 |
+| GameFromScratch (6.4 roadmap) | https://gamefromscratch.com/unity-6-4-and-beyond-unity-gdc-update/ | ~March 2026 |
+| Unity Official GDC Page | https://unity.com/campaign/gdc-2026 | March 2026 |
 
-## [grassroot] cooperative platform worker tool funding Europe launch March 2026
+## [geo_eu] Belgium VAT hospitality enforcement BCA compliance news March 2026
 
-Purpose: Keep Grassroot Hoppers competitive radar live while the project is quiet post-sprint.
+Purpose: Track any new enforcement actions or guidance relevant to Chez Julien's margin exposure flagged yesterday
 
-Based on my thorough searches across multiple relevant angles, I was unable to find a specific, verifiable news item matching the exact combination of "cooperative platform worker tool funding Europe launch March 2026." However, I can provide a well-sourced summary of the **closely related, confirmed developments** that are most likely what this query is about — the EU Platform Work Directive and related cooperative/union tech efforts.
-
----
-
-## What's Actually Happening: EU Platform Worker Directive & Cooperative Tech Efforts
-
-### 🔑 The Big Picture: EU Platform Work Directive
-
-The most significant confirmed development in this space is the EU's Platform Work Directive and its **December 2, 2026 implementation deadline** for all member states.
-
-The EU Platform Work Directive took effect on December 1, 2024, but EU member states have until December 2, 2026, to implement it into national law, including defining penalties and developing guidance for the classification of platform workers.
-
-In the past decade, platform work — from food delivery apps to taxi and ride-hailing platforms — has rapidly expanded. Member States, including Ireland, must implement the Directive by 2 December 2026, creating a relatively short window for compliance planning.
-
-**Why it matters:** With this directive, up to 40 million platform workers in the EU will have access to fair labour conditions, including protection against "bogus self-employment."
+Here is a concise, factual summary of what's happening with Belgium VAT hospitality enforcement and GKS/BCA compliance around March 2026:
 
 ---
 
-### 🤝 Cooperative Tech Tool Development by Unions
+## 🇧🇪 Belgium VAT & Cash Register (GKS) Hospitality Compliance — March 2026 Update
 
-The most directly relevant item matching "cooperative tool for platform workers" comes from an October 2025 EFF analysis:
+### 1. VAT Rate Changes: What Changed & When
 
-A report discusses unions investing in developing analytical capabilities so that when they request logs from algorithmic management systems as part of a labour dispute, they can independently analyse those files. The report acknowledges the significant tech burden on individual unions, and raises the possibility of unions **forming cooperative ventures** to do this work collectively.
+Although the measures were initially scheduled to enter into force on **1 January 2026**, a last-minute postponement was granted to allow the affected sectors additional time to prepare. All VAT changes therefore applied to VAT chargeable from **1 March 2026**.
+
+The specific rate changes are:
+
+- **Hotels, campsites, sports events, entertainment, and take-away meals**: VAT increases from **6% → 12%**.
+- **Non-alcoholic drinks in restaurants and cafés**: VAT *decreases* from **21% → 12%**.
+- **Pesticides**: VAT rises from **12% → 21%**.
+
+⚠️ **Important last-minute twist (13 February 2026):** On **13 February 2026**, Belgium's government **delayed** the planned 1 March 2026 VAT rises on **takeaway food, cultural and sports events**, following a strongly critical advisory opinion from the Council of State. However, the rise on **hotel and campsite accommodation** and pesticides went ahead on 1 March 2026.
+
+### 2. GKS 2.0 (Registered Cash Register / "Black Box") Compliance
+
+A GKS (Geregistreerd Kassasysteem) is a certified cash register system **required for hospitality businesses** in Belgium that generate more than €25,000 in revenue from meals.
+
+Due to a **shortage of certified POS systems and next-generation FDM (Fiscal Data Module) modules**, FPS Finance extended the mandatory commissioning tolerance period to **31 March 2026**. The launch was initially scheduled for July 1, 2025, but had already been postponed to January 1, 2026.
+
+FPS Finance acknowledged that the availability of certified cash registers and fiscal data modules remains insufficient, and that certified solutions as components of GKS 2.0 are yet to be fully presented to the market.
+
+Upgrade deadlines for existing businesses:
+- **Older systems** (registered before January 1, 2018): must upgrade by **1 July 2026**. Systems registered **between 2018 and 2021**: deadline is **1 July 2027**.
+
+Belgium is proceeding cautiously with the rollout of GKS 2.0, keeping the transition for now limited to the **HoReCa (hotel/restaurant/café) sector**.
+
+### 3. Why It Matters
+
+The VAT increase has drawn criticism from industry groups, warning that higher VAT rates will place Belgium's hotel sector at a **competitive disadvantage** compared to countries such as France, Italy, or Spain. Operators face a difficult choice: pass costs onto customers, or absorb the increase themselves — further reducing already-weakened profit margins.
+
+New businesses first commissioning a GKS between January 1 and March 31, 2026 may voluntarily opt for GKS 2.0, but due to shortages, may still have to install an older GKS 1.0 system.
 
 ---
 
-### ⚠️ Important Caveat
-
-**No specific announcement of a named cooperative platform worker tool with confirmed EU funding launching in March 2026 was found in current search results.** The query terms may refer to:
-- A niche or recently announced project not yet widely indexed
-- A funding *call deadline* in March 2026 (several EU/Horizon Europe calls do close in March 2026)
-- A project still in development
-
----
-
-### 📌 Most Important Sources
-
+### 📌 Key Sources
 | Source | URL |
 |---|---|
-| EU Platform Work Directive (Ogletree, Dec 2025) | https://ogletree.com/insights-resources/blog-posts/its-official-the-eu-platform-work-directive-is-here/ |
-| EFF on unions & gig work law (Oct 2025) | https://www.eff.org/deeplinks/2025/10/what-europes-new-gig-work-law-means-unions-and-technology |
-| EU Council on Platform Work | https://www.consilium.europa.eu/en/policies/platform-work-eu/ |
+| VATcalc (updated Feb 2026) | https://www.vatcalc.com/belgium/belgium-hotel-takeaway-meal-vat-rises-1-march-2026/ |
+| Bird & Bird (law firm) | https://www.twobirds.com/en/insights/2026/belgium/belgium-increases-vat-in-the-hospitality,-food-and-leisure-sectors-as-of-march-2026 |
+| Fiscal Solutions (GKS 2.0) | https://www.fiscal-requirements.com/news/4867 |
+| Titeca (Jan 2026) | https://www.titeca.be/en/news-item/gks-2-0-what-the-new-generation-of-registered-pos-systems-means-for-your-hospitality-business/ |
 
----
-
-> **Bottom line:** The clearest "launch" tied to March/late 2026 is the **EU Platform Work Directive's national implementation deadline (December 2, 2026)**, with member states actively preparing compliance tools and legal frameworks now. The cooperative tech angle remains emerging, with unions exploring shared platforms — but no single funded tool with a confirmed March 2026 launch date was verifiable in current sources. If you have a specific project name or organization in mind, sharing it would help narrow the search significantly.
-
-## [game] solo indie game AI generated Steam release March 2026
-
-Purpose: Track the solo dev floor drop Julien is scouting as a potential 6-month commitment signal.
-
-Here's a concise, sourced summary of the most relevant recent developments:
-
----
-
-## 🎮 AI-Generated Solo Indie Games on Steam — March 2026 Updates
-
----
-
-### 1. CODEX MORTIS — "World's First 100% AI-Developed Game" Launches on Steam (March 26, 2026)
-
-**What changed:**
-On March 18, 2026, CRUNCHFEST and GROLAF announced that *CODEX MORTIS* — billed as the world's first 100% AI-developed game — would launch into Early Access on Steam on **March 26, 2026**.
-
-The game's free demo (released in December 2025) ignited a firestorm of controversy covered by dozens of outlets across eight languages, from *PC Gamer* and *Eurogamer* to *Kotaku*. Despite the backlash, 10,500 players tried the demo and averaged 71 minutes of playtime.
-
-The developer, GROLAF, does not hide its AI origins — the Steam trailer openly displays classic AI artifacts and the game is described as "100% AI-driven development."
-
-**Why it matters:** This is likely the highest-profile test case of whether a fully AI-generated game can commercially succeed on Steam amid strong gamer hostility toward generative AI.
-
-🔗 **Source:** https://www.gamespress.com/CODEX-MORTIS-Announces-March-26-Early-Access-Launch---The-AI-Made-Game
-
----
-
-### 2. AI "Vibe-Coded" Clones Appear Within Hours of Viral Indie Ideas (March 18, 2026)
-
-**What changed:**
-Solo developer Freya Holmér publicly shared a prototype game concept, and within hours, AI-built clones of it appeared online. She called it disincentivizing to share work-in-progress content "when there are slop ghouls around every corner."
-
-In response, Holmér began setting up a Steam page to assert ownership of the concept before imitators could define it for her.
-
-**Why it matters:** This highlights a growing threat to solo indie devs — AI tools now allow bad-faith actors to clone unfinished game concepts almost instantly, creating a chilling effect on open development.
-
-🔗 **Source:** https://www.techspot.com/news/111742-indie-game-idea-went-viral-ai-built-clones.html
-
----
-
-### Bottom Line
-The week of March 18–26, 2026 became a flashpoint: a fully AI-built game pushed onto Steam amid public backlash, while legitimate solo devs found their original ideas being AI-cloned in real time. Both stories reflect the same underlying tension — AI is actively reshaping who makes games and how.
+> **Note on "BCA":** No results specifically used the acronym "BCA" in the Belgian hospitality VAT context. The closest relevant body is **FPS Finance** (Federal Public Service Finance) for GKS enforcement, and **BCAE** (Central VAT Office for Foreign Taxpayers) for registration. If you meant a different specific body or regulation, please clarify and I can search further.
