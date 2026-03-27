@@ -1,281 +1,299 @@
-<!-- PRISM Web Intelligence — 2026-03-26 -->
-# Web Intelligence — 2026-03-26
+<!-- PRISM Web Intelligence — 2026-03-27 -->
+# Web Intelligence — 2026-03-27
 *Scheduled theme: Grassroot Hopper & Cooperative Tech*
 
-## [grassroot] cooperative technology platform funding grants Europe March 2026
+## [grassroot] cooperative technology platform funding grants Europe 2026 March
 
-Purpose: Scan for new EU or Belgian cooperative tech grants Grassroot Hoppers could apply to.
+Purpose: Scan for new EU or Belgian grants targeting cooperative/community tech that could fund Grassroot Hoppers or aligned projects.
 
-Here's a concise, fact-based summary of recent updates on cooperative technology platform funding grants in Europe around March 2026:
-
----
-
-## 🇪🇺 Cooperative Tech Platform Funding Grants — Europe (March 2026 Update)
+Here is a concise, factual summary of recent updates on cooperative technology platform funding and grants in Europe relevant to March 2026:
 
 ---
 
-### 1. EIC 2026 Work Programme — Over €1.4 Billion Unlocked
-The European Commission adopted the **2026 work programme of the European Innovation Council (EIC)**, opening funding opportunities worth **over €1.4 billion** for strategic technologies and scaling up companies. Key allocations include:
-
-- **EIC Pathfinder** (€262M) for multi-disciplinary research teams pursuing visionary, potentially breakthrough technology (grants up to €4M).
-- **EIC Transition** (€100M) to turn research results into innovation opportunities (grants up to €2.5M).
-- **EIC Accelerator** (€634M) for start-ups and SMEs to develop and scale up market-creating innovations (grants below €2.5M, equity investments €0.5M–€10M).
-- **EIC STEP Scale Up** (€300M) providing additional equity funding to promising SMEs, start-ups, and small mid-caps driving innovation in critical areas.
-
-📌 **Source:** https://eic.ec.europa.eu/eic-2026-work-programme_en
+## 🇪🇺 European Cooperative Tech Platform Funding — Recent Updates (March 2026)
 
 ---
 
-### 2. STEP Platform — Structural Update as of 1 March 2026
-The **Strategic Technologies for Europe Platform (STEP)** was established via Regulation (EU) 2024/795, entering into force on 1 March 2024. It is a dedicated online resource providing access to European and national funding programmes, offering continuous updates and combined funding opportunities for innovative technological startups.
+### 1. **STEP (Strategic Technologies for Europe Platform) — Structural Changes**
+On **March 1, 2024**, Regulation (EU) 2024/795 entered into force, establishing **STEP** as a dedicated online resource providing access to European and national funding programs, aimed at offering continuous updates and combined funding opportunities for innovative technological startups.
 
-The **STEP Seal** serves as a label to enhance the visibility of high-quality projects eligible for funding, exclusively granted by the European Commission through specific STEP calls under five programmes including the Innovation Fund and Horizon Europe.
+As of recent updates, STEP maintains its **100% co-financing incentive** and has extended eligibility to large enterprises and IPCEIs (Important Projects of Common European Interest). The Mid-Term Review (MTR) removes the previous 20% maximum allocation limit for STEP and extends higher pre-financing possibilities for programs including STEP priorities.
 
-> Notably: **EIT Manufacturing South East** was integrated into EIT Manufacturing South as of **1 March 2026**.
+**Why it matters:** This significantly unlocks co-funding flexibility for tech platforms seeking EU structural fund support heading into 2026 programme cycles.
 
-📌 **Source:** https://www.eitmanufacturing.eu/news-events/news/strategic-technologies-for-europe-platform-step-funding-for-smes/
-
----
-
-### 3. Eurostars Call 10 — Deadline: 19 March 2026
-**Eurostars**, run by the EUREKA Network and co-funded by Horizon Europe, had **Call 10 open from 16 January 2026, with a deadline of 19 March 2026 at 14:00 CET**. Call 11 opens 9 July 2026. At least two independent entities from two different Eurostars countries are required, with at least one being an EU or Horizon Europe-associated country.
-
-📌 **Source:** https://www.grantsfinder.eu/blog/eu-grants-for-startups-2026
+📎 Source: [strategic-technologies.europa.eu](https://strategic-technologies.europa.eu/about/step-funding-and-programmes_en)
 
 ---
 
-### 4. DIGITAL Europe — Automotive Collaboration Platform Grant
-The European Commission launched call **DIGITAL-2026-AI-09-AUTOMOTIVE** aimed at developing a **large-scale collaboration platform** for automotive manufacturers, research institutions, and innovation companies. Participation is open to consortia including automotive industry companies, research organisations, universities, standardisation institutes, and digital ecosystem actors.
+### 2. **DIGITAL Europe — Automotive Collaboration Platform Grant (Call Open)**
+The European Commission launched call **DIGITAL-2026-AI-09-AUTOMOTIVE**, aimed at developing a **large-scale collaboration platform** for automotive manufacturers, research institutions, and innovation companies. Participation is open to consortia including industry firms, universities, standardisation institutes, and digital ecosystem actors.
 
-📌 **Source:** https://getgrant.eu/grants-and-funding/digital-europe-collaboration-platform-autonomous-vehicles/
+**Why it matters:** A concrete, open call for cross-sector cooperative platform development with EU backing — directly relevant to tech consortia looking to apply now.
+
+📎 Source: [getgrant.eu — DIGITAL Europe Automotive](https://getgrant.eu/grants-and-funding/digital-europe-collaboration-platform-autonomous-vehicles/)
 
 ---
+
+### 3. **Eurostars Call 10 — Deadline March 2026**
+The **Eureka Network's Eurostars Call 10** has a deadline in **March 2026**, with the Czech Technology Agency (TA CR) funding R&D costs for SMEs participating in the programme. Czech small companies can receive grants covering up to **80% of eligible costs**, and medium-sized companies up to **75%**, for cross-border applied research and experimental development.
+
+**Why it matters:** Eurostars is one of Europe's main cooperative R&D funding instruments for SMEs — Call 10 is actively closing **this month**.
+
+📎 Source: [eurekanetwork.org — Eurostars March 2026](https://www.eurekanetwork.org/programmes-and-calls/eurostars/eurostars-march-2026/)
+
+---
+
+### 4. **Digital Europe / Interoperable Europe — Cross-Border Platform Projects**
+The **Multi-Country Project (MCP)** under the Digital Europe Work Programme 2025–2027 will co-finance cross-border interoperability projects with **€6 million in funding at a 50% co-financing rate**, supporting the joint development of foundational digital assets to enable connected public services across countries, starting by end of **2026**.
+
+**Why it matters:** Directly funds collaborative digital infrastructure platforms across EU member states.
+
+📎 Source: [interoperable-europe.ec.europa.eu](https://interoperable-europe.ec.europa.eu/eu-digital-funding-opportunities)
+
+---
+
+### 🔑 Key Takeaway
+The most **time-sensitive action** right now is **Eurostars Call 10** (closing March 2026) for SME-led cooperative R&D. For larger platform infrastructure, the DIGITAL Europe automotive call and Interoperable Europe MCP offer substantial EU-backed funding. STEP continues to evolve as the overarching structural framework.
+
+## [grassroot] Brussels Belgium community movement civic tech new initiative March 2026
+
+Purpose: Detect fresh grassroot organizing or civic tech signals in Brussels that could surface aligned people or partnership leads.
+
+Here is a concise, fact-based summary of the most relevant recent updates on Brussels/Belgium community movement, civic engagement, and civic tech as of March 2026:
+
+---
+
+## 🗓️ Brussels & Belgium: Civic & Community Updates — March 2026
+
+---
+
+### 1. 🏛️ City of Brussels — "Equal Opportunities" Project Call (Deadline: 22 March 2026)
+
+**What changed:** The City of Brussels launched a support call for local associations active in the field of equal opportunities. Applicants for a grant must submit their forms by **22 March 2026**.
+
+**Why it matters:** This is a direct funding mechanism for grassroots community organisations in Brussels, opening the door for new civic initiatives to receive municipal backing.
+
+🔗 **Source:** https://www.brussels.be/equal-opportunities-subsidy
+
+---
+
+### 2. 🌐 Civil Society Week 2026 — Brussels (March 4–5, 2026)
+
+**What changed:** During Civil Society Week 2026 (held in Brussels), Civil Society Europe (CSE) participated on **March 4th** in a session on building an enabling environment for democratic resilience, and on **March 5th** contributed to a session on funding civic space.
+
+During the event, CSE announced its involvement in the **Civil Society Platform**, to be established by the end of 2026 — an initiative that is a pillar of the European Commission's Civil Society Strategy.
+
+**Why it matters:** With democracy and civic space under mounting pressure, civil society organisations, human rights defenders, and free media face growing constraints — from restrictive laws and disinformation campaigns to underfunding and public distrust. The platform is a direct response to this.
+
+🔗 **Sources:**
+- https://civilsocietyeurope.eu/events-meetings/
+- https://www.eesc.europa.eu/en/agenda/our-events/events/civil-society-week-2026
+
+---
+
+### 3. 🔧 City of Brussels — MyBXL Citizen Portal Maintenance (25 March 2026)
+
+**What changed:** On **Wednesday, 25 March 2026**, maintenance works are being carried out on the MyBXL citizen portal, making the portal and its appointment tools unavailable from 4:30 pm to 6 pm.
+
+**Why it matters:** Signals ongoing investment in Brussels' digital civic infrastructure (the MyBXL portal is the city's primary e-participation tool for residents).
+
+🔗 **Source:** https://www.brussels.be/participate
+
+---
+
+### Summary Table
+
+| Initiative | Date | Type |
+|---|---|---|
+| Equal Opportunities project grant | Deadline 22 Mar 2026 | Community funding |
+| Civil Society Week 2026 | Mar 4–5, 2026 | Civic advocacy / EU platform launch |
+| MyBXL portal upgrade | 25 Mar 2026 | Civic tech / digital infrastructure |
+
+---
+
+**Note:** No major *new* Brussels-specific civic tech startup launch was found in the search results for March 2026. The most significant new development is the announcement of the **EU Civil Society Platform**, which will directly affect Brussels-based organisations.
+
+## [grassroot] open source community scheduling staffing tool cooperative launch 2026
+
+Purpose: Check if any competitor or complementary tool to Grassroot Hoppers shipped or got traction in the last 48 hours.
+
+Based on the search results, here is an honest and concrete summary:
+
+---
+
+## 🔍 Search Results: Open Source Community Scheduling/Staffing Tools (2025–2026)
+
+**No specific "cooperative launch" event was found.** The searches did not surface any new worker-owned cooperative or community-governed scheduling platform announced for a 2026 launch. Here's what the results *do* show:
+
+---
+
+### What's Current (as of early 2026)
+
+Open-source employee scheduling software comprises publicly available modules created collaboratively by a global community of developers, delivering robust and transparent solutions — and can be downloaded for free.
+
+The most-discussed tools right now are:
+
+- **TimeTrex** (community edition) lets managers view and manage employee shifts, offering an open-source workforce management solution covering scheduling, time tracking, payroll, and HR management.
+
+- **Staffjoy** (open-source, self-hosted) is designed for small and medium-sized enterprises to facilitate workforce scheduling and includes modules like Chomp, Suit, and Mobius available on GitHub.
+
+- **StaffRoster Suite** is a comprehensive shift-scheduling platform built for larger organizations with complex, multi-location needs, centralizing roster planning across sites and enforcing contract and labor constraints.
 
 ### Why It Matters
-These updates represent a significant acceleration in **EU-backed cooperative tech funding** — emphasising platform-based collaboration (STEP, DIGITAL Europe), equity co-investment alongside grants (EIC Accelerator), and cross-border SME R&D cooperation (Eurostars). The March 2026 period marks both active deadlines and structural reorgs within the EIT network that affect how SMEs and startups access funding.
 
-## [grassroot] Brussels community movement solidarity economy news March 26 2026
-
-Purpose: Detect fresh Brussels-local grassroot signals for aligned people and movement building.
-
-Here is a concise, evidence-based summary of what the search results actually show around Brussels, community movements, and the solidarity economy in this period. **Note:** There is no single major breaking news story specifically dated March 26, 2026 matching all three terms together. Here is what the verified recent sources do report:
-
----
-
-## Brussels & Solidarity Economy: What's Current (March 2026)
-
-### 1. 🔧 European Solidarity Corps Platform Goes Offline — March 26, 2026
-**What changed:** Due to a major technical upgrade, the European Solidarity Corps Projects Results Platform was unavailable from **Thursday, 26 March 2026 at 19:00 (Brussels time)** until Monday, 6 April at 23:55 (Brussels time).
-
-**Why it matters:** This platform tracks all EU-funded youth solidarity and community projects across Europe, including those in Brussels. The outage temporarily halted public access to project data for over a week.
-
-🔗 **Source:** https://youth.europa.eu/solidarity/projects_en
-
----
-
-### 2. 💶 European Solidarity Corps 2026 Call — Major Funding Round Open
-**What changed:** The European Solidarity Corps has opened its 2026 call for proposals, offering over **EUR 129 million** to support projects that foster solidarity, social inclusion, and civic engagement across Europe.
-
-The European Commission launched the 2026 call, marking a double anniversary year: **30 years of EU volunteering** and **10 years of the European Solidarity Corps**.
-
-**Why it matters:** This is a significant funding event for Brussels-based and Belgian community organisations working in the solidarity economy space.
-
-🔗 **Source:** https://www2.fundsforngos.org/youth-adolescents-2/call-for-proposals-european-solidarity-corps-2026/
-
----
-
-### 3. 🏛️ EESC Civil Society Week 2026 — Brussels
-**What changed:** The European Economic and Social Committee (EESC) is organising **Civil Society Week 2026**, framed around the observation that "Europe is facing a pivotal moment" with social and economic inequalities, rapid technological change, anti-democratic forces, and geopolitical instability straining the European project.
-
-**Why it matters:** This Brussels-based event directly engages civil society and solidarity economy actors at the EU level.
-
-🔗 **Source:** https://www.eesc.europa.eu/en/agenda/our-events/events/civil-society-week-2026
-
----
-
-### 4. 🌍 Social & Solidarity Economy Global Forum — 2026 Geneva
-**What changed:** The **12th Mont Blanc Meetings** will be held in Geneva in 2026 — the flagship event of the International Forum of the Social and Solidarity Economy (ESSFI), bringing together SSE leaders from around the world to discuss global challenges and share solutions.
-
-🔗 **Source:** https://www.socialeconomynews.eu/en/
+The community-driven nature of open-source software means communities of users and developers are constantly improving features, fixing bugs, and enhancing security — often at a faster pace than proprietary tools.
 
 ---
 
 ### ⚠️ Caveat
-No results returned a **specific local Brussels community movement event dated exactly March 26, 2026**. The above represents the most relevant and verified recent developments at the intersection of Brussels, solidarity economy, and community movements as of late March 2026. If you have a specific organisation or event name in mind, I can search more precisely.
 
-## [grassroot] platform cooperatives community ownership tools launch 2026
-
-Purpose: Find newly launched cooperative or community tech tools that could inform or validate Grassroot Hoppers positioning.
-
-Here's a concise, sourced summary of the latest factual updates:
+The specific combination you searched — **a community scheduling/staffing tool structured as a cooperative, launching in 2026** — did not appear in any search results. This could mean:
+- The project is too niche/small to have indexed coverage yet
+- The launch hasn't been publicly announced under a widely-searchable name
+- The query may be forward-looking rather than referring to a specific known project
 
 ---
 
-## Platform Cooperatives & Community Ownership Tools — 2026 Updates
+### Most Relevant Source URLs
+- https://peoplemanagingpeople.com/tools/best-open-source-employee-scheduling-software/ *(Jan 13, 2026)*
+- https://www.selecthub.com/employee-scheduling/open-source-employee-scheduling-software/ *(Feb 12, 2026)*
+- https://hackread.com/collaborative-scheduling-enhancing-team-coordination-open-source-tools/ *(Sep 6, 2024)*
 
-### 🆕 What Changed
+**If you have a specific project name or organization in mind, I can do a more targeted search.**
 
-**1. PCC's 2026 "Solidarity AI" Conference Announced** (Dec 22, 2025)
-The Platform Cooperativism Consortium (PCC) announced its 12th annual conference: *Solidarity AI*, scheduled for **November 12–15, 2026**, at Chulalongkorn University in Bangkok, Thailand. The conference will continue PCC's work on cooperative approaches to artificial intelligence, digital infrastructure, and democratic governance, as part of a multi-year effort to develop alternatives to extractive and monopolistic models of the digital economy.
+## [dev] Claude Cowork Computer Use agentic workflow developer adoption week March 2026
 
-**2. New Practical Guide Launching in Early 2026** (Jan 7, 2026)
-Cooperatives Europe announced the release of *From Aid to Ownership: The Cooperative Approach to International Development* in early 2026, authored by Ifigeneia Douvitsa and Dina Rakin. It will introduce **four concrete tools** to support cooperative-based development work, covering partnership design, governance, and risk assessment.
+Purpose: Track real-world developer adoption signals for the Claude Computer Use launch covered yesterday.
 
-**3. New ICDE Report on Blockchain Governance for Platform Co-ops** (~1 week ago)
-A new report from the Institute for the Cooperative Digital Economy (2026) examines the intersection of digital commons, platform cooperatives, and blockchain governance as pathways toward more democratic digital systems. It argues that while blockchain tools like smart contracts and DAOs offer transparency and coordination, they do not inherently produce equitable outcomes.
-
-**4. Coopify — Open-Source Launch Tool for Worker Co-ops**
-Coopify is a new platform offering templates for bylaws, governance structures, and incorporation, plus one-click deployment of cooperative platforms with custom branding. All code is open source on GitHub — "no hidden logic, no secret algorithms."
+Here is a concise, fact-based summary of the latest updates on **Claude Cowork, Computer Use, and agentic workflow developer adoption** as of late March 2026:
 
 ---
 
-### 📌 Why It Matters
-
-- The movement is **actively scaling** — from research (ICDE, PCC) to ready-to-deploy tools (Coopify) to policy guides (Cooperatives Europe).
-- The **AI angle is new**: the field is pivoting from basic platform ownership toward governing AI systems cooperatively.
-- Existing gig platforms (Uber, DoorDash, Upwork) take **25–40% of every transaction**, with no worker voice or ownership — co-op tools directly challenge this model.
-
----
-
-### 🔗 Most Important Sources
-
-| Source | URL |
-|---|---|
-| PCC 2025 Year in Review | https://platform.coop/blog/news-from-the-platform-cooperativism-consortium-2025/ |
-| Cooperatives Europe 2026 Guide | https://coopseurope.coop/publication/teaser-new-practical-guide-on-international-cooperative-development-to-launch-in-january-2026/ |
-| ICDE Blockchain Report (2026) | https://platform.coop/blog/blockchain-governance-for-digital-commons-and-platform-cooperatives/ |
-| Coopify Platform | https://coopify.app/en/ |
-
-## [dev] Anthropic Claude Code auto mode security update March 2026
-
-Purpose: Follow up on Claude Code auto mode shipped yesterday and any security implications for Julien's stack.
-
-Here is a concise, factual summary based on the latest reporting:
-
----
-
-## 🔐 Anthropic Claude Code: "Auto Mode" Security Update — March 24, 2026
+## 🤖 Claude Cowork & Computer Use — Key Updates (March 2026)
 
 ### What Changed
 
-On **March 24, 2026**, Anthropic launched **"auto mode"** for Claude Code, allowing the coding assistant to autonomously decide permissions for file writes and bash commands.
+**1. Claude Cowork Launched as an Agentic Workflow Platform**
 
-Anthropic describes it as a **middle path** between Claude Code's default behavior (requesting approval for every file write and bash command) and the `--dangerously-skip-permissions` flag that some developers use to run the model fully unchecked. With auto mode enabled, **a classifier system** guides Claude — giving it permission to carry out actions it deems safe, while redirecting it to take a different approach when it determines an action might be risky.
+Claude Cowork is Anthropic's latest offering, bringing an agentic system into everyday workflows — you describe the outcome and let it handle the execution independently. It brings agentic, file-based automation beyond terminal tools, making it especially useful for researchers, analysts, ops teams, and project managers handling heavy workflows.
 
-Auto mode is a **two-layer classifier** running in parallel with the agent, evaluating each action before it executes — a safety layer that operates without asking the developer for permission every time.
+**2. Computer Use Now Built Into Claude Cowork & Claude Code (Research Preview)**
 
-When the classifier detects something potentially risky, it **prompts a permission request** to the user instead of proceeding automatically.
+Claude's computer use is now available inside Claude Cowork and Claude Code, enabling Claude to complete tasks like opening files, navigating a browser, and running developer tools — all without any setup required. Claude reads your screen, reasons about what it sees, and decides what to click or type next, much like a remote colleague handed temporary control of your machine.
+
+**3. Microsoft Copilot Cowork Announced (March 9, 2026) with Claude Integration**
+
+Microsoft's Copilot Cowork, announced March 9, 2026, introduces agentic AI that autonomously executes multi-step tasks through integration with Anthropic's Claude models, representing a fundamental shift in productivity software — moving from passive tools to active partners that handle complex workflows within Microsoft 365 applications while maintaining enterprise-grade governance and security controls.
+
+**4. Developer Adoption Surging**
+
+A recent March 2026 survey found that 75% of developers at small-to-mid-sized firms have adopted Claude Code as their primary tool, overtaking legacy options like GitHub Copilot.
+
+**5. Enterprise Agentic Coding Going Org-Wide**
+
+In 2025, engineering teams discovered AI could handle entire implementation workflows — writing tests, debugging failures, navigating complex codebases. In 2026, these capabilities are expanding significantly. Zapier, for example, achieved 89% AI adoption across their entire organization with 800+ agents deployed internally.
 
 ---
 
 ### Why It Matters
 
-Anthropic acknowledged that **"Claude Code's default permissions are purposefully conservative,"** which can slow down larger tasks — and that some developers were bypassing them entirely, which posed serious data security risks. Auto mode directly addresses this tension.
-
-A key design goal was to **reduce the likelihood of Claude carrying out mass file deletions** and other unintended, potentially destructive AI actions.
-
-The upgrade is being launched as a **research preview**, meaning it may not be fully reliable yet — it could allow some risky actions if context is unclear, or unnecessarily block safe ones. Improvements are expected over time.
-
----
-
-### Availability & Requirements
-
-The feature is currently available on **Team plans** and **requires administrator approval** before use. Support for Enterprise and API users is expected soon. It runs on newer models — **Claude Sonnet 4.6 and Claude Opus 4.6** — and excludes older versions and third-party platforms.
-
-Anthropic recommends use in **isolated environments**.
+- **No-code automation for non-developers:** Computer use removes the need for scripting or RPA tools — any user can delegate multi-step tasks to Claude.
+- **Enterprise-grade shift:** Microsoft's integration signals that agentic Claude workflows are entering mainstream enterprise software (M365).
+- **Developer ecosystem dominance:** Claude Code is rapidly displacing legacy tools like GitHub Copilot in adoption surveys.
+- **Security risks emerging:** With 655 malicious "skills" already cataloged by March 2026 — including patterns designed to exfiltrate data through conversational responses — vetting of third-party MCP servers has become a critical part of the production workflow.
 
 ---
 
-### Key Source URLs
+### 📌 Most Important Source URLs
 
-- 📰 **TechCrunch** (Mar 24, 2026): https://techcrunch.com/2026/03/24/anthropic-hands-claude-code-more-control-but-keeps-it-on-a-leash/
-- 🔒 **Help Net Security** (Mar 25, 2026): https://www.helpnetsecurity.com/2026/03/25/anthropic-claude-code-auto-mode-feature/
-- 📱 **Engadget** (Mar 25, 2026): https://www.engadget.com/ai/anthropic-releases-safer-claude-code-auto-mode-to-avoid-mass-file-deletions-and-other-ai-snafus-142500615.html
-- ⚙️ **TechRadar** (Mar 25, 2026): https://www.techradar.com/pro/anthropic-gives-claude-code-new-auto-mode-which-lets-it-choose-its-own-permissions
+| Source | Date | URL |
+|---|---|---|
+| Windows News – Copilot Cowork + Claude | March 9, 2026 | https://windowsnews.ai/article/microsoft-365-copilot-cowork-agentic-ai-that-executes-long-tasks-with-claude-integration.406863 |
+| AI Tools Club – Claude Computer Use | ~March 21, 2026 | https://aitoolsclub.com/claude-can-now-use-your-computer-to-automate-your-workflow-heres-how-it-works/ |
+| Analytics Vidhya – Inside Claude Cowork | ~March 21, 2026 | https://www.analyticsvidhya.com/blog/2026/03/claude-cowork/ |
+| Anthropic – 2026 Agentic Coding Trends Report | 2026 | https://resources.anthropic.com/hubfs/2026%20Agentic%20Coding%20Trends%20Report.pdf |
+| Claude.com – Eight Trends in Software 2026 | Jan 21, 2026 | https://claude.com/blog/eight-trends-defining-how-software-gets-built-in-2026 |
 
-## [game] indie game cooperative distribution itch.io update March 2026
+## [game] indie game micro-studio AI tools release March 27 2026
 
-Purpose: Keep game radar alive with any new cooperative or community-driven game distribution moves.
+Purpose: Maintain radar on AI-assisted indie game tooling shifts relevant to Julien's future game development horizon.
 
-Based on my thorough search across multiple queries, I was unable to find any verified, factual news or updates specifically about an **"indie game cooperative distribution itch.io update"** in **March 2026**. Here's what the searches did and did not surface:
-
----
-
-## What the Searches Found
-
-### About itch.io (General & Recent)
-- Itch.io was launched in March 2013 by Leaf Corcoran, and the service hosts over 1,000,000 products as of November 2024.
-- As of February 2026, compliant NSFW games, including paid visual novels and games with paid updates, continue to be released and hosted on the platform — highlighting ongoing tensions between platform autonomy and payment processor demands.
-- Itch.io is described as the most creator-friendly game distribution platform on the internet, with over 900,000 games, a choose-your-own revenue share model, and zero upfront publishing costs.
-
-### About Cooperative Game Development (General)
-- KO_OP is a Canadian game studio cooperative based in Montreal, founded in 2012, run as a workers cooperative with equal salary and decision-making between co-owners.
-- There is established general discourse about indie developers forming worker cooperatives, but no new platform-level announcement tied to itch.io in March 2026 was found.
+I was unable to find any specific event, product, or announcement tied to the exact query **"indie game micro-studio AI tools release March 27 2026."** There is no verifiable news item matching that precise date and description in the search results. Here's an honest breakdown of what I *did* find:
 
 ---
 
-## ⚠️ Important Caveat
+## ⚠️ No Verified Event Found for "March 27, 2026"
 
-**No specific, verifiable news story, announcement, or update matching "indie game cooperative distribution itch.io update March 2026" was found in any search result.** This topic may refer to:
-
-1. A **very niche or community-level announcement** not yet indexed widely.
-2. A **misremembered or conflated topic** (e.g., itch.io's existing open revenue sharing, or cooperative bundles).
-3. A **future/anticipated** development that hasn't been published yet.
-
-### Most Relevant Source URLs:
-- **itch.io updates blog:** https://itch.io/updates
-- **Itch.io Wikipedia (current state):** https://en.wikipedia.org/wiki/Itch.io
-- **Grokipedia (Feb 2026 status):** https://grokipedia.com/page/Itch.io
-
-If you have a more specific source or context (e.g., a blog post, a Twitter/X thread, a specific developer name), I'd be happy to search more precisely.
-
-## [geo_eu] Belgium EU social economy policy change March 2026
-
-Purpose: Track any Belgian or EU policy shifts affecting social economy and cooperative structures relevant to Grassroot Hoppers.
-
-Here is a concise, fact-based summary of the most relevant updates:
+My searches returned **no specific release, announcement, or news story** tied to that exact date or the phrase "micro-studio AI tools." This query may refer to:
+- A **rumored or speculative** event not yet publicly reported
+- A **niche product** not covered by major tech/gaming outlets
+- A **future announcement** not yet made
+- Or it may be based on **inaccurate/hallucinated information**
 
 ---
 
-## 🇧🇪 Belgium: Social & Labour Policy Changes — 2026
+## ✅ What IS Factually Known (Recent, Sourced)
+
+Here is what verified sources confirm about the broader topic of **AI tools for indie game developers in early 2026**:
+
+**Ludo.ai (March 2026 activity):**
+Ludo.ai posted an indie spotlight in early March 2026 featuring solo developer Bouchier Tristan, who used Ludo.ai to generate every character spritesheet in his Unity RPG *Alumnia Knights* (published 2026-03-06). Ludo.ai also released Pose Control, Animation Presets, and New Export Tools for Sprite Animations on 2026-03-02.
+
+**General AI Tool Landscape for Indie Devs:**
+Google AI Studio emerged as a go-to prototyping tool for indie devs in 2026, thanks to its generous free tier and multimodal capabilities. The most significant change for aspiring developers in 2026 is the rise of no-code, AI-powered platforms that remove the coding barrier, allowing creators to focus purely on design and gameplay.
+
+**Key Sources:**
+- Ludo.ai updates: https://ludo.ai/
+- Indie AI tool roundup (Jan 2026): https://www.browse-ai.tools/blog/top-ai-tools-for-indie-devs-in-2026-beyond-the-ai-bubble
+- Top 10 AI tools for game dev 2026: https://thedatascientist.com/top-10-ai-tools-revolutionizing-game-development-in-2026/
+
+---
+
+**Bottom line:** The specific claim of an "indie game micro-studio AI tools release on March 27, 2026" is **not corroborated by any current, findable source**. If you have a specific product name or company in mind, I'd be happy to search more precisely.
+
+## [geo_eu] European Union digital sovereignty regulation platform cooperatives ruling March 2026
+
+Purpose: Monitor EU policy moves that could affect cooperative tech platforms and grassroot digital infrastructure in Belgium.
+
+Based on my thorough search across multiple queries, I was unable to find any specific news, ruling, or regulatory decision from **March 2026** specifically about **"platform cooperatives"** and EU digital sovereignty. This is an important finding in itself. Here is an honest summary of what the evidence actually shows:
+
+---
+
+## ⚠️ Heads Up: No Verified "Platform Cooperatives Ruling" Found
+
+There does **not appear to be a specific EU ruling on "platform cooperatives" in March 2026** in any available sources. This particular framing may be **misremembered, conflated from multiple stories, or speculative**. Here's what the evidence *does* confirm:
+
+---
+
+## What Is Actually Happening: EU Digital Sovereignty in 2025–2026
 
 ### What Changed
 
-**1. Unemployment Benefit Time-Limit (March 2026 – key date)**
+- The European Parliament adopted a position on **European technological sovereignty and digital infrastructure on January 22, 2026**.
 
-For new unemployed workers, anyone who loses their job and submits a benefit application from **March 1, 2026**, will be subject to a new **24-month rule** (12-month base period + 12 additional months depending on professional history).
+- The **Digital Fairness Act**, expected to be introduced in **mid-2026**, will be the EU's flagship legislation for business-to-consumer relations, addressing protection of minors online, transparent online pricing, and manipulative design abuses.
 
-The second wave of existing claimants will lose their unemployment benefits from **1 March 2026**, followed by other progressive exclusions until 1 July 2027. Jobseekers who have been unemployed for less than 8 years will lose their benefits from 1 April 2026.
+- The European Commission proposed the **Digital Networks Act (DNA)** to modernise, simplify, and harmonise EU rules on connectivity networks, though it stops short of creating a fully unified telecoms market or requiring Big Tech contributions to network costs, instead introducing a **voluntary cooperation mechanism** between connectivity providers and digital platforms.
 
-**2. Pensions**
-
-Workers affected by pension measures set to take effect in 2026 will lose an average of **€318 per month** — a quarter of their pension. Women bear the brunt: seven out of ten affected workers are female.
-
-**3. Broader Labour & Social Reforms**
-
-The year 2026 brings numerous changes in Belgium regarding labour law, taxation, and social protection. Salary indexation, reforms to work incapacity, tax adjustments, and modifications to pensions and unemployment insurance are among the main changes planned.
-
-**4. Belgium's Role in EU Social Economy Policy**
-
-During its EU Council Presidency, Belgium's narrative reversed the traditional approach to social and health policies, treating them as investments rather than costs. In March, it organised the **first-ever joint meeting** of EU ministers of economic/financial affairs *and* employment/social affairs — a significant institutional step.
-
-At the national level, political competence on social economy has been gradually transferred to Belgium's regions. Companies recognised as social enterprises can become members of the **National Council for Cooperation, Social Entrepreneurship and Agricultural Enterprise (CNC)**, a consultative body promoting social businesses.
-
----
+- On the **platform work** front: The **EU Platform Work Directive** took effect on **December 1, 2024**, but EU member states have until **December 2, 2026**, to implement it into national law, including defining penalties for noncompliance.
 
 ### Why It Matters
 
-These reforms represent a significant tightening of Belgium's social safety net — one of Europe's most extensive — driven by EU fiscal consolidation requirements. From 1 January 2026, Belgium's unemployment benefits could be capped at two years for most jobseekers, a decision that would strip more than **184,000 people** of their benefits, with more than 25,000 losing support immediately. This is directly tied to Belgium's obligations under the EU's economic governance framework.
+- By 2026, the EU has shifted from a purely regulator-led approach to one that **combines regulation with large-scale strategic investment**, as control over data, compute capacity, and digital infrastructure increasingly shapes economic competitiveness, democratic resilience, and geopolitical autonomy.
 
-At the same time, Belgium has been an *advocate* at the EU level for treating social spending as productive investment — creating a policy tension between domestic austerity and EU-level social ambitions.
+- There is growing EU policy interest in **AI sovereignty through open, federated, and cooperative means**, in response to the Draghi report and weakened transatlantic cooperation.
 
----
+- Advocates have called for Europe's digital strategy to include **publicly owned data infrastructure and worker/community control** as part of genuine digital sovereignty.
 
-### Key Sources
+### Most Important Source URLs
 
 | Source | URL |
 |---|---|
-| Commissioner Brussels – Changes in 2026 | https://www.commissioner.brussels/what-changes-to-expect-in-2026/ |
-| Eures Grande Region – Belgium Key Reforms 2026 | https://eures-granderegion.eu/en/2026/01/23/belgium-key-reforms-for-2026/ |
-| Social Europe – Workers March Against Austerity | https://www.socialeurope.eu/belgian-workers-march-against-austerity-as-government-targets-the-most-vulnerable |
-| EU Social Economy Gateway – Belgium | https://social-economy-gateway.ec.europa.eu/my-country/belgium_en |
+| European Parliament resolution (Jan 22, 2026) | https://www.europarl.europa.eu/doceo/document/TA-10-2026-0022_EN.html |
+| Atlantic Council – EU Digital Sovereignty Report (Feb 2026) | https://www.atlanticcouncil.org/in-depth-research-reports/report/digital-sovereignty-europes-declaration-of-independence/ |
+| EU Digital Networks Act (Commission) | https://ec.europa.eu/commission/presscorner/detail/en/ip_26_107 |
+| EU Platform Work Directive overview | https://ogletree.com/insights-resources/blog-posts/its-official-the-eu-platform-work-directive-is-here/ |
+
+---
+
+**Bottom line:** The specific claim of a "platform cooperatives ruling in March 2026" is **not verifiable** in current sources. If you have a specific article or source in mind, sharing it would help verify or contextualize it. The broader EU digital sovereignty agenda is very active, but the "platform cooperatives" angle remains a niche advocacy position rather than a formal ruling at this time.
