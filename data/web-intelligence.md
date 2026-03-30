@@ -1,278 +1,334 @@
-<!-- PRISM Web Intelligence — 2026-03-29 -->
-# Web Intelligence — 2026-03-29
+<!-- PRISM Web Intelligence — 2026-03-30 -->
+# Web Intelligence — 2026-03-30
 *Scheduled theme: Grassroot Hopper & Cooperative Tech*
 
-## [grassroot] cooperative technology grants Belgium Brussels 2026 new funding announcement
+## [grassroot] cooperative technology platforms funding grants Europe 2026 last 24 hours
 
-Purpose: Scan for fresh grant or funding signals directly relevant to Grassroot Hoppers positioning in Brussels.
+Purpose: Scan for fresh grant announcements or funding rounds relevant to Grassroot Hoppers cooperative tech positioning.
 
-Here is a concise, fact-based summary of the most relevant recent updates on cooperative technology grants in Belgium/Brussels for 2026:
+Here is a concise, fact-based summary of the most recent updates on **cooperative technology platforms, funding, and grants in Europe (2026)**:
 
 ---
 
-## 🇧🇪 Cooperative Technology Grants — Belgium/Brussels: 2026 Updates
+## 🇪🇺 European Cooperative Tech Platform Funding — Latest Updates
+
+> ⚠️ **Note:** No results from the last 24 hours specifically were returned. The most recent sources are from **~4 days ago to a few weeks ago (March–February 2026)**. Here's what's new:
+
+---
+
+### 🔄 What Changed
+
+**1. STEP (Strategic Technologies for Europe Platform) — Rule Updates**
+STEP maintains a **100% co-financing incentive** for strategic technologies, now extended to IPCEIs (Important Projects of Common European Interest). The Mid-Term Review (MTR) removes the previous 20% maximum allocation limit for STEP and extends higher pre-financing possibilities, including a **one-off 20% pre-financing** for submissions made by 31 December 2025.
+
+If a programme reallocates at least 10% of its total allocation to STEP priorities, it unlocks an **additional 1.5% pre-financing** for 2026 and an extension of expenditure eligibility until **2030**.
+
+---
+
+**2. EU Digital & Interoperability Funding**
+The Interoperable Europe Portal has a call offering **€6 million in funding at a 50% co-financing rate**, supporting the joint development of foundational digital assets to enable connected public services across countries, with projects starting by end of 2026.
+
+A **Final Capacity Building Call (Cap2b)** was planned to open on 23 October 2025 and close on **19 March 2026**.
+
+---
+
+**3. 16 Major Research & Innovation Calls Open in 2026**
+Europe's major research and innovation funders have **16 significant funding calls open in 2026**, covering scientists at every career stage, deep-tech startups, SMEs, investors, and research institutes — from the ERC, EIC, NWO, UKRI, and philanthropic foundations such as Novo Nordisk Foundation.
+
+Notable among these: the **ERC Synergy Grant** offers up to **€7M** per award, with a deadline in November 2026.
+
+---
+
+**4. EU Startup & Innovation Grants**
+Poland's **Green Business programme** — Call 1 (€50M) and Call 2 (female-led, €8M) — are both **expected to open in 2026** under the European Funds for a Modern Economy (FENG) framework.
+
+The **Innovation Fund 2025 Net-Zero Technologies (NZT) Call** opened in December 2025, with a submission deadline of **23 April 2026** at 17:00 CET.
+
+The **LIFE 2026 Call for Proposals** will be published on **21 April 2026**, covering Nature & Biodiversity, Climate Change, and Clean Energy Transition — with grants ranging from **€1–5M** at 60–95% EU co-financing rates.
+
+---
+
+### 📌 Why It Matters
+
+- The **STEP rule changes** make it significantly easier for EU member states to redirect structural funds toward cooperative deep-tech, clean, digital, and defence platforms in 2026.
+- The **16 open calls** represent a broad, accessible funding landscape for tech cooperatives, consortia, and research partnerships across Europe.
+- Upcoming April 2026 deadlines (Innovation Fund NZT, LIFE) require **immediate preparation**.
+
+---
+
+### 🔗 Key Source URLs
+
+| Source | URL |
+|---|---|
+| STEP Funding & Programmes (EU) | https://strategic-technologies.europa.eu/about/step-funding-and-programmes_en |
+| EU Funding Deadlines Calendar 2026 | https://www.grantsfinder.eu/blog/eu-funding-deadlines-2026 |
+| 16 European Research Funding Calls 2026 | https://thesciencetalk.com/services/grants-fundraising/european-research-funding-calls-2026/ |
+| EU Digital Funding (Interoperable Europe) | https://interoperable-europe.ec.europa.eu/eu-digital-funding-opportunities |
+
+## [grassroot] Brussels Belgium community movement digital sovereignty cooperative news March 30 2026
+
+Purpose: Detect local Brussels/Belgium grassroot signals that could surface aligned people or partnership opportunities.
+
+Here is a concise, factual summary of the most recent developments around Brussels/Belgium, digital sovereignty, and community/cooperative movements, based on verified recent sources:
+
+---
+
+## 🗞️ Brussels & Digital Sovereignty: Recent Updates (March 2026)
 
 ### What Changed
 
-1. **KMO-portefeuille (VLAIO) — Scope Narrowed (Feb 1, 2026)**
-Since February 1, 2026, the advisory component of KMO-portefeuille is limited to cybersecurity only — digitalization advisory is no longer supported. Training services (including for digitalization and AI topics) remain available for all themes.
+**1. EU Tech Sovereignty Package in the Pipeline (late March 2026)**
+The European Commission plans to present a **Tech Sovereignty Package** at the end of May, aimed at developing cloud infrastructure and the AI sector. Brussels wants to reduce the bloc's reliance on US digital solutions and services.
 
-2. **Collaborative R&D Subsidy Rates — Still Active**
-Collaboration boosts your subsidy rate: if you can partner with another SME or a research institution, your subsidy percentage goes up significantly. This cooperative incentive remains a key feature of VLAIO's R&D grants.
+**2. EuroISPA General Meeting — Brussels, 16–17 March 2026**
+EuroISPA's first General Meeting of the year, on **16 and 17 March**, brought members together in Brussels for two days of constructive exchanges at a defining moment for European digital policy. The Cybersecurity and Infrastructure Committee evaluated key files such as the **Cybersecurity Act Review** and the **Digital Networks Act**, while also touching upon the upcoming Tech Sovereignty Package. The Data Economy Committee focused on the **Digital Omnibus on Data and Cyber** and broader data governance discussions.
 
-3. **Syndicate One — €22M Tech Startup Fund Raised (March 2026)**
-Notable developments include Syndicate One raising €22 million to fund tech startups in AI, robotics, and software, and Ghent joining Bloomberg Philanthropies' Mayors Challenge, fostering civic tech collaboration.
+**3. CISPE Pushes Back on "Sovereignty Washing" — 18 March 2026**
+European cloud infrastructure association CISPE argued that **sovereignty must be defined by control**, not by whether a provider merely has an EU presence — specifically meaning effective ownership of technology and protection from extraterritorial laws like the US CLOUD Act. This isn't CISPE's first clash with Brussels — last year it criticized the EU Cloud Sovereignty Framework for defining sovereignty so vaguely that it favoured incumbent hyperscalers over local operators.
 
-4. **Brussels-Capital Region Innovation Fund — Ongoing**
-The Brussels-Capital Region Innovation Fund supports innovative companies that adopt new technologies to improve their operations or offer new services. The fund covers up to 50% of eligible project costs, facilitating investment in digital tools such as AI systems, customised mobile applications, or cloud solutions.
+**4. Microsoft Brussels Sovereignty Summit — 25 March 2026**
+On 25 March in Brussels, Microsoft brought together policymakers, IT leaders, and enterprises to discuss digital sovereignty, noting that "customers are increasingly concerned about **business continuity** in the face of cyber incidents, geopolitical tension, supply chain disruption, and network instability."
 
-5. **VLAIO R&D Grants — Up to 50% Coverage**
-Entrepreneurs benefit from Belgium's mix of grants, tax relief, and government-backed funding, like VLAIO, which covers up to 50% of R&D costs for high-tech projects.
+**5. University of Antwerp Academic Workshop — 20 March 2026**
+On 20 March 2026, an academic workshop titled *EU Law for EU Digital Sovereignty* was held, addressing how the predominance of non-European digital players on the European market risks undermining the ability of European citizens, businesses, and governments to exercise digital control.
+
+**6. FOSDEM 2026 — Brussels, January 31 & February 1**
+At FOSDEM 2026, **digital sovereignty** — Europe's control over its own digital infrastructure and data — was a central theme, with open source emphasized as a strategic tool against foreign tech dominance. The conference highlighted **community-driven innovation**, including decentralized networking projects like DN42, as practical demonstrations of digital self-governance.
 
 ---
 
 ### Why It Matters
 
-- The **narrowing of KMO-portefeuille** (Feb 2026) is a concrete policy shift — companies that previously relied on digitalization advisory vouchers must now pivot to cybersecurity framing or use training pathways instead.
-- Belgian federal tax incentives can stack on top of regional subsidies, making cooperative projects especially attractive when layering VLAIO grants with Brussels Innovation Fund support.
-- The Syndicate One raise and Ghent's civic tech initiative signal growing momentum in Brussels-area **cooperative tech ecosystems** heading into 2026.
+The Brussels policy environment in early 2026 is rapidly consolidating around digital sovereignty as a geopolitical priority. The convergence of open-source community movements (FOSDEM), industry coalitions (CISPE, EuroISPA), and EU institutional action (upcoming Tech Sovereignty Package) signals a structured, multi-stakeholder push to reduce European dependence on US and Chinese tech platforms — with cooperative and community-driven models gaining traction as credible alternatives.
 
 ---
 
-### 📌 Key Sources
+### ⚠️ Important Note on Your Query
 
-| Source | URL | Date |
-|---|---|---|
-| Flowful AI — Belgium Funding Guide | https://flowful.ai/blog/fund-ai-project-belgium/ | ~1 month ago (2026) |
-| Iterates — Belgian Gov Grants for Digital Innovation | https://www.iterates.be/en/belgian-government-grants-for-digital-innovation/ | Dec 2025 |
-| Startup Grants Belgium March 2026 | https://blog.mean.ceo/startup-grants-belgium-news-march-2026/ | March 2026 |
-| ABGi — Innovation Funding Incentives Belgium | https://www.abgi-uk.com/innovation-funding-incentives-belgium/ | Aug 2025 |
-
-> ⚠️ **Caveat:** No single major new "cooperative technology grant program" with a specific 2026 launch announcement was found. The most concrete change is the **KMO-portefeuille restriction effective February 1, 2026**. If you're tracking a specific program, sharing its name would help narrow the search further.
-
-## [grassroot] community tech platform cooperative launch Europe last 48 hours
-
-Purpose: Detect newly launched or announced aligned projects that could be peers, partners, or validation signals for Grassroot Hoppers.
-
-I now have strong, well-sourced results. Let me compile the summary.
+No specific results were found for a **Brussels community cooperative movement** event or announcement **on or around March 30, 2026** specifically. The above represents the most relevant and recent verified activity. If you are tracking a specific local Brussels initiative or organization, please share more details (e.g., organization name) and I can search more precisely.
 
 ---
 
-## 🔍 Community Tech Platform Cooperative Launch — Europe (Last 48 Hours)
+### 📌 Key Source URLs
+- **EuroISPA Brussels General Meeting (March 16–17):** https://www.euroispa.org/2026/03/euroispa-brussels-general-meeting-a-recap/
+- **CISPE / The Register (March 18):** https://www.theregister.com/2026/03/18/cispe_sovereignty_washing/
+- **Microsoft Brussels Summit (March 25):** https://www.microsoft.com/en-us/microsoft-cloud/blog/2026/03/25/navigating-digital-sovereignty-at-the-frontier-of-transformation/
+- **FOSDEM 2026 Recap:** https://netcrook.com/fosdem-2026-digital-sovereignty-open-source/
 
-### What Changed
+## [grassroot] platform cooperatives solidarity economy new projects launches Europe this week
 
-**Euro-Office launched** — a coalition of European enterprises and community organisations has unveiled *Euro-Office*, an open-source solution for editing documents, spreadsheets, and presentations, developed as a "sovereign community collaboration" of over a dozen organisations. A tech preview is available immediately.
+Purpose: Identify newly launched cooperative or community tech projects that could validate or challenge Grassroot Hoppers wedge strategy.
 
-The effort is backed by major European tech firms including **IONOS, Nextcloud, Eurostack, XWiki, OpenProject, Soverin, Abilian, and BTactic**, with a first stable release planned for summer.
-
-The initiative brings together **commercial open-source companies, independent developers, and civil-society actors** under a shared governance framework. Euro-Office explicitly sees itself as a community initiative and invites further companies, public bodies, and civil-society organisations to get involved.
-
-The organisers describe it as "an effort to build a longer-term ecosystem around an office suite maintained by a broader European community rather than controlled by a single vendor."
+Here is a concise, fact-based summary of the most significant recent developments in platform cooperatives and the solidarity economy in Europe:
 
 ---
 
-### Why It Matters
+## 🧩 Platform Cooperatives & Solidarity Economy in Europe — Recent Updates (2025)
 
-Across Europe, public administrations, enterprises, and educational institutions are reassessing their dependence on non-European productivity platforms. Existing alternatives often require trade-offs between compatibility and usability, or are developed without transparent, open governance — creating structural risk for organisations handling sensitive and public data.
+---
 
-Development takes place through a transparent, publicly auditable process. All participating organisations have committed substantial resources to the project. As Nextcloud CEO Frank Karlitschek put it: *"Europe has had the technical building blocks for years. What was missing until now was an initiative to bring them together."*
+### 1. 🇪🇺 EU Proximity & Social Economy Platform — Launched February 6, 2025
 
-That open governance structure "may prove important if Euro-Office is to win support from public sector buyers and regulated industries, where procurement decisions often take governance, licensing terms, and long-term maintenance into account."
+**What changed:** On 6 February 2025, the "Transition Pathway: Kick-off for the EU Proximity and Social Economy Platform" online event was successfully held, with the European Commission emphasizing the platform's role in supporting stakeholders in the proximity and social economy and sustainable businesses.
+
+**What it does:** The EU Proximity and Social Economy Platform is implemented in collaboration with the European Research Institute on Cooperative and Social Enterprises (Euricse) and aims to foster collaboration between different social economy actors, enabling them to have online conversations and exchange knowledge. The platform features a best practices section, a news section, and a section with seven thematic areas, and the European Commission has recruited individuals and organisations to act as its ambassadors.
+
+**Why it matters:** This is the EU's first dedicated digital hub for social economy actors, directly linking cooperative and solidarity economy initiatives across member states to the EU's green and digital transition agenda.
+
+🔗 **Source:** https://www.thenews.coop/new-digital-community-brings-together-eu-social-economy-actors/ *(Feb 15, 2025)*
+
+---
+
+### 2. 🇫🇷 PlatformCoop Project (Hauts-de-France) — Phase 2 Active in 2024–2025
+
+**What changed:** The "Platforms in solidarity economy" (2024–2025) phase of the PlatformCoop project, the second phase, is now underway with the objective of improving cooperative platforms by accompanying local authorities. Funded by the European Union via the European Regional Development Fund (ERDF), it supports the emergence and development of cooperative platforms in Hauts-de-France.
+
+**Why it matters:** These online cooperatives are collective initiatives that address social, ecological, or economic concerns in the Hauts-de-France region, while offering alternatives to traditional platforms. This is a concrete, regionally-scaled experiment in replacing extractive gig platforms with worker-owned alternatives.
+
+🔗 **Source:** https://www.interphaz.org/en/projet-platformcoop-les-plateformes-cooperatives/ *(Dec 2, 2025)*
+
+---
+
+### 3. 🌍 GSEF 2025 — Bordeaux Declaration Adopted (October 29–31, 2025)
+
+**What changed:** The 7th edition of the Global Social and Solidarity Economy Forum (GSEF 2025) concluded with the publication of three documents marking a new horizon for the international SSE movement: the Bordeaux Declaration, the Declaration for Lasting Peace, and the International Youth Declaration for SSE.
+
+**Why it matters:** All three convey a unified message: in the face of ecological, social, and political crises, the Social and Solidarity Economy stands as a concrete alternative for justice, sustainability, and cooperation among peoples. A formal protocol of cooperation was also signed between CIRIEC International and GSEF to strengthen research and joint action.
+
+🔗 **Source:** https://www.socialeconomynews.eu/en/
+
+---
+
+### 4. 🤖 Platform Cooperativism Consortium (PCC) — AI Pivot & 2025 Impact Report
+
+**What changed:** The PCC published a widely read, comprehensive impact report in 2025 documenting the scope, scale, and outcomes of its work, and has decisively shifted its focus from platform co-ops toward AI as infrastructure, governance system, and site of power.
+
+**Why it matters:** ICDE Fellows made high-profile contributions shaping global debates on AI, data governance, and cooperative digital economies, including analysis published by the World Economic Forum and foundational CNRS research on cooperative data centers.
+
+🔗 **Source:** https://platform.coop/blog/news-from-the-platform-cooperativism-consortium-2025/
+
+---
+
+### ⚠️ Caveat on "This Week"
+The search results do not surface any single breaking story from the past 7 days specifically. The most recent dateable events are from late October–December 2025 (GSEF Bordeaux, PCC report). If you need truly this-week news, monitoring **https://www.socialeconomynews.eu** or **https://platform.coop/blog** directly is your best bet.
+
+## [dev] AI coding agents architecture maintainability debate new posts March 30 2026
+
+Purpose: Continue tracking the agent-vs-architecture thread from yesterday's briefing for Cursor skill system relevance.
+
+Here's a concise, fact-based summary of where the **AI coding agents + architecture/maintainability debate** stands as of late March 2026:
+
+---
+
+## 🧠 AI Coding Agents: Architecture & Maintainability Debate — March 2026 Update
+
+---
+
+### 📌 What Changed
+
+**The narrative has decisively shifted from speed → quality.**
+
+Throughout 2025, the focus was on scale: how much code AI could help generate, how quickly, and with how little human intervention. Quality, consistency, and maintainability became secondary concerns.
+
+Now, the data is forcing a reckoning:
+
+- **METR study**: Experienced open-source maintainers were **19% slower** with early-2025 AI tools while *believing* they were 20% faster — a 39-percentage-point perception gap. LinearB data shows **67.3% of AI-generated PRs get rejected** vs. 15.6% for manual code.
+
+- **Google's 2025 DORA Report** found that 90% AI adoption increase correlates with a **9% climb in bug rates**. Yet 57% of companies now run AI agents in production.
+
+- A CMU/STRUDEL academic study found that in AI-assisted repos, **static-analysis warnings rise ~18%** and **cognitive complexity rises ~39%**, with persistent complexity accumulation reaching +49% over time.
+
+- GitClear's analysis found **code duplication is up 4x** with AI, and short-term code churn is rising — suggesting more copy/paste and less maintainable design.
+
+- The estimated **quality deficit for 2026 is 40%** — the gap between code generated and code properly reviewed. Unmanaged AI-generated code drives maintenance costs to **4x traditional levels by year two** as technical debt compounds.
+
+---
+
+### 🔑 Why It Matters
+
+Developers generate larger pull requests, introduce inconsistent coding patterns, or rely on AI suggestions that don't align with established architectural standards — which over time can slow delivery and increase operational risk.
+
+The initial euphoria is waning: code quality, reviews, maintainability, and non-deterministic outcomes have cropped up as developer gripes in online forums.
+
+The architectural fix being advocated: the path to coherent software at scale runs through **orchestration and human oversight** — not autonomous "YOLO coding."
+
+Engineering organizations that thrive will be those that design workflows around reliability, maintainability, and architectural clarity — treating AI not as a shortcut, but as a system demanding robust validation and thoughtful oversight.
 
 ---
 
 ### 📅 Key Dates
-- **Launch date:** March 27, 2025 (≈ 2 days ago)
-- **Tech preview:** Available now on GitHub
-- **First stable release:** Planned for **Summer 2025**
+
+| Date | Event |
+|------|--------|
+| Jan 9, 2026 | IT Brief Asia: "AI coding tools face 2026 reset towards architecture" |
+| Jan 2026 | Mike Mason's agent coherence analysis published |
+| Feb 25–26, 2026 | Medium/Faros.ai quality-focused reviews published |
+| ~Mar 2026 | InfoQ covers 2025 DORA Report findings on AI & bugs |
+| 2026 (ongoing) | CMU academic paper on AI IDEs vs. agents + maintainability risks |
 
 ---
 
 ### 🔗 Most Important Sources
-1. **Tech.eu (primary):** https://tech.eu/2026/03/27/europe-builds-microsoft-compatible-euro-office-to-reclaim-digital-sovereignty/
-2. **Security Brief UK:** https://securitybrief.co.uk/story/euro-office-launches-as-europe-s-open-source-office-rival
-3. **Trending Topics EU:** https://www.trendingtopics.eu/euro-office-challenges-microsoft/
+
+1. **Mike Mason (Jan 2026)** — Deep analysis of orchestration vs. autonomy: https://mikemason.ca/writing/ai-coding-agents-jan-2026/
+2. **IT Brief Asia (Jan 9, 2026)** — Industry reset framing: https://itbrief.asia/story/ai-coding-tools-face-2026-reset-towards-architecture
+3. **CMU/STRUDEL Academic Paper** — Empirical complexity/warning data: https://cmustrudel.github.io/papers/msr2026agarwal.pdf
+4. **InfoQ / DORA Report (Mar 2026)** — Bug rate + throughput tradeoffs: https://www.infoq.com/news/2026/03/ai-dora-report/
+5. **CodeRabbit Blog** — "2025 = speed, 2026 = quality" framing: https://www.coderabbit.ai/blog/2025-was-the-year-of-ai-speed-2026-will-be-the-year-of-ai-quality
 
 ---
 
-> **Bottom line:** Euro-Office is the most significant and genuinely recent (48-hour) community tech cooperative platform launch in Europe — a multi-org, open-source, co-governed Microsoft Office alternative targeting digital sovereignty for the European public sector and beyond.
+**Bottom line:** The debate has moved from *"will AI agents write code?"* to *"can they write code that's actually maintainable?"* The answer, empirically, is: **not yet without significant human architectural oversight.**
 
-## [grassroot] solidarity economy movement Belgium mutual aid network news March 2026
+## [game] indie game developer cooperative community tools launch announcement March 2026
 
-Purpose: Track Brussels/Belgium grassroot movement signals for aligned people and potential community around Grassroot Hoppers.
+Purpose: Monitor for new community-oriented game dev tooling that intersects with Julien's game project radar.
 
-Here is a concise, evidence-based summary of what the search found. Note that **no Belgium-specific breaking news from March 2026** surfaced — here is what the most current and relevant sources show:
-
----
-
-## 🔍 Solidarity Economy & Mutual Aid: Belgium & Beyond — Latest Updates
-
-### What's New / What Changed
-
-- **New explainer series on the solidarity economy (Feb 26, 2026):** Shelterforce published a piece identifying "actual existing" solidarity economy practices, including buying clubs, volunteer collectives, time banks, peer lending, complementary currencies, free-cycle networks, and mutual aid. This reflects a growing mainstream effort to name and legitimize these networks.
-
-- **12th Mont Blanc Meetings confirmed for Geneva, 2026:** The 12th Mont Blanc Meetings will be held in Geneva in 2026 — the flagship event of the International Forum of the Social and Solidarity Economy (ESSFI), bringing together SSE leaders from around the world to discuss global challenges and share solutions.
-
-- **Belgium's Solsoc active on solidarity economy networks:** Solsoc (Belgium) is strengthening four types of target groups: mutual health insurance companies and their regional unions, networks of social and solidarity economy initiatives, and youth movements — providing organizational, technical, thematic, and political support.
+Here is a concise, fact-based summary of what the search results surfaced — note that no results matched a specific "indie developer cooperative community tools" launch event, but several closely related and significant March 2026 announcements were found:
 
 ---
 
-### Why It Matters
+## 🎮 Indie Game Developer Community & Tools — March 2026 Updates
 
-- The solidarity economy is gaining institutional recognition, with global forums and EU-level events planned for 2026.
-- Belgium's Solsoc acts as a bridge between local mutual aid networks and international solidarity frameworks, amplifying Southern partners' concerns in European policy spaces.
-- The Mont Blanc Meetings signal that SSE is being treated as a serious policy alternative, not just grassroots activism.
+### 1. Microsoft Announces Major Dev Tools at GDC 2026 *(~March 11–12, 2026)*
+**What changed:** At GDC 2026, Microsoft announced new tools and platform updates for Windows PC game developers, including faster asset streaming, smoother shader compilation, new debugging tools, and streamlined publishing paths. Specifically:
+- DirectStorage now supports Zstandard compression and a new **Game Asset Conditioning Library**, improving compression efficiency and simplifying asset conditioning across production pipelines.
+- New GPU debugging tools include **DirectX Dump Files**, **DebugBreak() in HLSL** (shader-level breakpoints), and a **Shader Explorer** for inspecting compiled shaders. Most features are available in preview starting May 2026.
 
----
+**Why it matters:** These tools directly lower the barrier for indie studios dealing with complex GPU pipelines — previously console-level capabilities are now coming to Windows PC.
 
-### ⚠️ Important Caveat
-
-No specific **March 2026 breaking news** unique to Belgium's mutual aid networks was found in current search results. The most recent dated source is from **February 26, 2026**.
-
----
-
-### 📌 Key Sources
-| Source | URL | Date |
-|---|---|---|
-| Shelterforce – What Is the Solidarity Economy? | https://shelterforce.org/2026/02/26/what-is-the-solidarity-economy/ | Feb 26, 2026 |
-| Solsoc Belgium | https://www.solsoc.be/en/ | Ongoing |
-| Social Economy News (ESSFI/Mont Blanc 2026) | https://www.socialeconomynews.eu/en/ | Ongoing |
-
-For the most current Belgium-specific updates, I'd recommend checking **Solsoc.be** and **socialeconomynews.eu** directly, as they publish rolling news.
-
-## [dev] AI coding agent tool release developer workflow March 29 2026
-
-Purpose: Maintain dev radar for new tooling Julien could absorb into Cursor skill system during consolidation.
-
-Here is a concise, source-backed summary of the most relevant recent updates on AI coding agent tools and developer workflow changes around late March 2026:
+🔗 **Source:** https://blogs.windows.com/windowsdeveloper/2026/03/11/gdc-2026-announcing-new-tools-and-platform-updates-for-windows-pc-game-developers/
 
 ---
 
-## 🤖 AI Coding Agent Tools: Latest Updates (March 2026)
+### 2. Indie Games Developer (IGD) Community Site & Awards Launch *(March 2026)*
+**What changed:** The IGD Awards are launching after the new IGD website launched in March 2026, alongside a newsletter (first edition January 2026) and the first *BIG BOOK of INDIE GAMES* — an initial collectible volume published with their publishing partner.
+
+**Why it matters:** IGD's team manages communities on multiple platforms, two of which have been active for over 13 years — this relaunch consolidates those resources into a unified hub for indie developers.
+
+🔗 **Source:** https://www.indiegamesdeveloper.com/
 
 ---
 
-### 1. 🆕 JetBrains Central — Announced March 24, 2026
-**What changed:** Announced on March 24, JetBrains Central acts as a control layer across agentic workflows alongside tools such as JetBrains's Air agentic development environment and the Junie LLM-agnostic coding agent.
+### ⚠️ Caveat
+No results matched a specific announcement about a **cooperative/co-op structured community tooling platform** for indie developers in March 2026. If you have a specific organization or product name in mind, a more targeted search query would yield better results.
 
-**What it does:** JetBrains Central connects developer tools, agents, and development infrastructure into a unified system where automated work can be executed and governed across teams and tools. Developers can interact with agent workflows from JetBrains IDEs, third-party IDEs, CLI tools, web interfaces, or automated systems. Agents can come from JetBrains or external ecosystems, including Codex, Gemini CLI, or custom agents.
+## [geo_eu] EU digital infrastructure funding announcement Brussels policy March 30 2026
 
-**Why it matters:** JetBrains Central is intended to address the difficulties developers face in dealing with the growing number of agents — developers are increasingly running into challenges with oversight, consistency, and control across these environments.
+Purpose: Track EU-level funding or policy moves that could open channels for cooperative tech projects in Belgium.
 
-**Timeline:** An early access program for JetBrains Central is set to begin in Q2 2026 with a limited number of design partners participating.
-
-🔗 **Source:** https://www.infoworld.com/article/4149535/new-jetbrains-platform-manages-ai-coding-agents.html
+Based on my research, I can now provide a well-sourced, honest summary. Note that your query referenced a specific "March 30, 2026" announcement — no single event with that exact date was found; however, there is a closely dated and highly relevant official amendment from **March 19, 2026**, plus several major surrounding developments. Here is the summary:
 
 ---
 
-### 2. 🌊 Windsurf IDE — New Agentic Features (March 2026)
-**What changed:** Windsurf shipped features no other IDE has in combination: Arena Mode, Plan Mode, and parallel multi-agent sessions with Git worktrees.
+## 🇪🇺 EU Digital Infrastructure Funding — Recent Updates (March 2026)
 
-**Why it matters:** Arena Mode is the standout — it runs two AI models side by side on the same task, identities hidden, and you vote on which output is better. After 40 rounds, you know exactly which model fits your coding style and codebase.
-
-🔗 **Source:** https://www.buildfastwithai.com/blogs/ai-tools-developers-march-2026
+> **Note:** No specific announcement dated exactly **March 30, 2026** was found in available sources. The most significant and closest confirmed official event is from **March 19, 2026**, with surrounding major developments throughout early 2026.
 
 ---
 
-### 3. 🧠 OpenAI Codex — Evolved into Full Agent Workflow
-**What changed:** In 2025, Codex moved beyond being just a coding model and became a "Software Engineer teammate," connecting models, local tooling, and cloud to help developers tackle longer, more complex coding tasks. Capabilities were consolidated into the GPT-5 family, with GPT-5.2-Codex becoming the default choice for code generation, review, and repo-scale reasoning.
+### 🔄 What Changed
 
-**Why it matters:** The open-source Codex CLI brought agent-style coding directly into local environments, enabling developers to run Codex over real repositories, iteratively review changes, and apply edits to files with human oversight.
+**1. Digital Europe Programme (DIGITAL) — Amended (March 19, 2026)**
 
-🔗 **Source:** https://developers.openai.com/blog/openai-for-developers-2025/
+The Digital Europe Programme's 2025–2027 work programme was formally amended in March 2026, with the updated document published alongside the October 2025 amendment.
 
----
+This amendment introduces a number of new actions, such as **digital infrastructure for schools** and an **online safety application** to support the EU Action Plan against cyberbullying, and ensures the programme continues to deliver for Europe's evolving digital needs.
 
-### 📌 Big Picture
-In 2025, a flurry of agent framework launches occurred: OpenAI's AgentKit and Agents SDK, Anthropic's Claude Agent SDK, Google's Agent Development Kit (ADK), and Vertex AI Agent Builder. The trend accelerating into March 2026 is **agent orchestration** — moving from single-model autocomplete to multi-agent, governed, pipeline-integrated development systems.
+**2. €116 Million Invested in 20 New 6G Projects**
 
-## [game] indie game developer community funding model cooperative 2026
+The European Smart Networks and Services Joint Undertaking (SNS JU) unveiled a **€116 million investment** in 20 new 6G research and innovation projects. The funding forms part of the EU's broader **€630 million Horizon Europe commitment** to next-generation connectivity since 2021, reinforcing Europe's ambition to lead global 6G standards and strengthen digital sovereignty.
 
-Purpose: Keep game domain radar alive for any emerging cooperative or community-funded game models relevant to Julien's scouting.
+For 2026 and 2027, the EU will launch a new flagship call, allocating **more than €270 million** in EU public funding to accelerate breakthrough research and strengthen industrial leadership in this area.
 
-Here is a concise, factual summary of recent updates on indie game developer community funding models and cooperatives heading into 2026:
+**3. Cloud & AI Development Act (Q1 2026)**
 
----
+The EU Commission's 2026 work programme is packed with **68 new initiatives**, with the **Cloud and AI Development Act** scheduled for Q1 2026, alongside a revised Chips Act — both under Article 114 TFEU.
 
-## 🎮 Indie Game Developer Community Funding: What's New (2025–2026)
+**4. Digital Commons EDIC Launched**
 
-### What Changed
-
-1. **Rise of Developer Cooperatives**
-In 2025, laid-off AAA developers are forming cooperatives and collectives, sharing resources to reduce overhead while jointly pitching multiple projects — increasing the odds that at least one secures funding.
-
-2. **Community-Validated Investment Models**
-Funds like **Blue Ocean Games** are pioneering a new approach: investing in teams validated by their community, rather than relying solely on financial data or historic success — signaling a broader move toward impact investing in gaming, where financial support is closely tied to creative authenticity and player trust.
-
-3. **Crowdfunding Surged in 2024 (Feeding 2026 Pipeline)**
-Kickstarter reported that successful video game projects raised **$26.1 million in 2024** — the highest total since 2015 — with initial funding jumping 28%. Strikingly, **83% of game-related campaigns succeeded**, the highest success rate in Kickstarter's 15-year history.
-
-4. **Hybrid Funding + UGC Micro-Economies**
-One of the most profound shifts is the rise of micro-economies powered by modding and user-generated content marketplaces, projected to account for nearly **20% of indie game revenue globally**. Studios now blend premium sales with ethical battle passes, subscription platform integration (Game Pass, PlayStation Plus), and user-driven content economies.
-
-5. **Mixed-Model Resilience**
-Indie devs now act as entrepreneurs and entertainers, mixing and matching funding models — starting with savings or arts grants, running a Kickstarter to validate community interest, then negotiating a publishing deal using that success as leverage.
+The Digital Commons European Digital Infrastructure Consortium (DC EDIC) was officially launched to bring together public administrations, open-source communities, and companies to pool resources, support strategic open components, and accelerate the transition from isolated pilots to **shared, scalable digital infrastructure**.
 
 ---
 
-### Why It Matters
+### ❓ Why It Matters
 
-- **The industry is structurally shifting** away from publisher gatekeeping. Community validation is replacing pitch decks.
-- Cooperatives give displaced AAA talent a path to independence without waiting for VC or publisher approval.
-- The healthiest indie studios of 2026 are not necessarily those with the largest budgets, but those with the most adaptable business models.
-
----
-
-### 📌 Most Important Sources
-
-| Source | URL | Date |
-|---|---|---|
-| GrowthHQ – 2026 Funding Strategies | https://www.growthhq.io/our-thinking/indie-game-funding-challenges-and-breakthrough-strategies-in-2026-navigating-the-14-billion-opportunity | 2026 |
-| Wardrome – 2025 Funding Landscape | https://wardrome.com/navigating-the-indie-game-funding-landscape-in-2025/ | May 30, 2025 |
-| Indie Fund (Cooperative Model) | https://indie-fund.com/ | Ongoing |
-
-## [geo_eu] EU digital sovereignty funding program announcement this week
-
-Purpose: Watch for fresh EU-level funding or policy moves that could open doors for cooperative tech projects before September 2026 commitment horizon.
-
-Here is a concise, fact-based summary of the most recent EU digital sovereignty funding developments, drawn from verified sources:
+- The Commission views the DC EDIC as a strategic instrument to **reduce EU dependency on a small number of global platforms** and to give governments, businesses, and citizens real digital choice built on European values.
+- 6G technologies are expected to enable ultra-secure communication infrastructures, supporting essential uses in public safety, defence, and cross-border healthcare.
+- The DIGITAL programme amendment signals the EU is actively expanding the scope of funded actions mid-programme to address emerging needs like online safety and school connectivity.
 
 ---
 
-## 🇪🇺 EU Digital Sovereignty Funding: Recent Updates
+### 🔗 Key Source URLs
 
-### What Changed
-
-**1. Digital Europe Programme (DIGITAL) — Work Programme 2025–2027 (adopted 28 March 2025)**
-The European Commission will allocate **€1.3 billion** for the deployment of critical technologies strategically important for Europe's tech sovereignty through the Digital Europe Programme work programme for 2025–2027, adopted on **28 March 2025**. Within this, €1.3 billion is specifically earmarked for European cybersecurity between now and 2027, with priority given to hospitals, schools, and transport networks.
-
-**2. InvestAI / AI Continent Action Plan (Early 2025)**
-Early in 2025, Commission President von der Leyen announced **InvestAI**, an initiative to raise **€200 billion** in investment capital to boost AI and digital tech development across Europe. The broader €200 billion AI Continent Action Plan also promotes a "European preference" in public procurement for critical technologies, including AI chips and cloud infrastructure.
-
-**3. EU Sovereign Tech Fund Proposal (Published ~July 23, 2025)**
-OpenForum Europe published a proposal arguing for an **EU Sovereign Tech Fund (EU-STF)**, modelled on Germany's Sovereign Tech Agency, to invest in critical open source components, identify software dependencies, and support broader ecosystem resilience.
-
-**4. First EU Digital Sovereignty Summit (November 18, 2025)**
-On **18 November 2025**, the first EU summit on European Digital Sovereignty took place at the EUREF campus in Berlin, hosted by the German and French governments, bringing together political decision-makers and representatives from business, science, and civil society. A key output was the **EuroStack Catalog** — a dynamic directory of sovereign European IT solutions to help public and private buyers identify interoperable, EU-controlled technologies.
-
----
-
-### Why It Matters
-
-The EU is accelerating its push to reduce dependency on US hyperscalers (Amazon, Microsoft, Google) and Chinese hardware. The European Commission is also reviving cloud sovereignty with a planned **Cloud and AI Development Act**, which would ensure that strategic EU use cases can rely on sovereign cloud solutions, with the public sector playing a crucial role. Commission President von der Leyen has also announced a "28th regime" legal framework for innovative companies, a "Scaleup Europe" fund, and an EU quantum sandbox as part of the broader sovereignty push. Analysts estimate that achieving full EU digital sovereignty could cost an estimated **€3.6 trillion**.
-
----
-
-### Key Source URLs
-
-| Source | URL |
+| Topic | URL |
 |---|---|
-| Digital Europe Programme (official) | https://digital-strategy.ec.europa.eu/en/library/work-programme-2025-2027-digital-europe-programme-digital |
-| EU Parliament – Digital Sovereignty News | https://www.europarl.europa.eu/news/en/agenda/plenary-news/2025-10-06/3/promoting-and-protecting-digital-sovereignty-in-the-eu |
-| EU Digital Sovereignty Summit (Deloitte Legal) | https://www.deloittelegal.de/dl/en/services/legal/perspectives/digitale-souveraenitaet-eu-gipfel-2025.html |
-| EU Sovereign Tech Fund Proposal (TechPolicy.Press) | https://www.techpolicy.press/the-case-for-open-source-investment-in-europes-digital-sovereignty-push/ |
+| March 19, 2026 DIGITAL amendment (official) | https://digital-strategy.ec.europa.eu/en/news/digital-europe-programme-amended-continue-deployment-innovative-digital-capacities-across-eu |
+| Work Programmes (inc. March 2026 PDF) | https://digital-strategy.ec.europa.eu/en/activities/work-programmes-digital |
+| €116M 6G Investment | https://www.openaccessgovernment.org/eu-invests-e116-million-in-20-new-6g-projects-to-strengthen-europes-digital-sovereignty/205729/ |
+| EU Commission 2026 Digital Work Programme | https://eutechloop.com/eu-commissions-2026-work/ |
+| Digital Commons EDIC launch | https://digital-strategy.ec.europa.eu/en/news/digital-commons-edic-launches-advance-europes-technological-sovereignty |
 
 ---
 
-> ⚠️ **Note:** No single **this-week** announcement (i.e., the week of this query) was surfaced in search results. The most recent datable items are from **late 2025**. If you have a specific announcement in mind, sharing the program name or source will help me find it precisely.
+*If you have a specific source or document in mind for a "March 30, 2026" announcement, please share more context and I can search more precisely.*
