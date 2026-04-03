@@ -1,199 +1,208 @@
-<!-- PRISM Web Intelligence — 2026-04-02 -->
-# Web Intelligence — 2026-04-02
+<!-- PRISM Web Intelligence — 2026-04-03 -->
+# Web Intelligence — 2026-04-03
 *Scheduled theme: Grassroot Hopper & Cooperative Tech*
 
-## [grassroot] cooperative technology platform Brussels Belgium funding announcement April 2026
+## [grassroot] cooperative tech platform grants Belgium Brussels 2026 April
 
-Purpose: Detect new grants or cooperative tech funding drops relevant to Grassroot Hoppers positioning in Brussels.
+Purpose: Scan for fresh funding calls or grant announcements targeting cooperative/community tech in Belgium this week.
 
-Based on my thorough search across multiple queries, I was unable to find a specific, verifiable news item matching all elements of your query — a **cooperative technology platform in Brussels, Belgium, with a funding announcement specifically in April 2026**. Here's an honest breakdown of what the searches did and didn't surface:
-
----
-
-## ⚠️ No Specific Match Found
-
-The search returned **no concrete, single announcement** about a cooperative technology platform in Brussels receiving funding in April 2026. This could mean:
-
-1. **The event hasn't been widely reported yet** (if it's very recent or niche).
-2. **The query may be mixing details** from different stories or be based on an anticipated (not yet published) announcement.
-3. **It may exist behind a paywall or in non-indexed sources.**
+Here is a concise, fact-based summary of the most relevant recent updates:
 
 ---
 
-## What *Was* Found (Related Context)
+## 🇧🇪 Cooperative Tech Platform Grants — Belgium / Brussels | April 2026 Update
 
-Here is what the searches *did* surface that is relevant and factual:
+### What Changed
 
-- **I-care**, Belgium's first tech unicorn of 2026, raised **€20 million** in a combined fundraising and refinancing round in January 2026, reaching a **€1 billion valuation** — reserved for existing shareholders and employees. *(Not a cooperative, but a major Belgian tech funding event.)*
-  👉 Source: https://techfundingnews.com/belgiums-first-tech-unicorn-of-2026-raises-e20m-funding-at-e1b-valuation/
+- Belgium's startup grant landscape is active in April 2026, with AI, clean energy, and green manufacturing as primary sectors gaining traction. Notably, **Belgium explicitly emphasizes cooperative projects**, particularly with other EU member states, as collaborations are noted to improve funding odds and align startups with larger innovation ecosystems.
 
-- The **Platform Cooperativism Consortium** (PCC) published an **open call for applications for its 2026–2027 ICDE Fellowship Program** in December 2025, including research into AI systems within cooperative platform economies.
-  👉 Source: https://platform.coop/blog/open-call-for-applications-2026-2027/
+- In Brussels specifically, **Innoviris** — the public organisation funding R&D and innovation in the Brussels-Capital Region — co-finances research and innovation projects in companies, research centres, and non-profit organisations, with a focus on urban challenges like mobility, health, and social inclusion.
 
-- **Innoviris**, Brussels's public R&D and innovation funding body, co-finances research and innovation projects in companies, research centres, and nonprofits, focusing on urban challenges like mobility, health, and social inclusion.
-  👉 Source: https://www.abgi-uk.com/innovation-funding-incentives-belgium/
+- The **Brussels-Capital Region Innovation Fund** supports innovative companies adopting new technologies. It covers **up to 50% of eligible project costs** for digital tools such as AI systems, mobile applications, or cloud solutions — open to any company in the Brussels-Capital Region involved in a digital innovation project.
 
----
+- **hub.brussels** lists a specific **Cooperative Employment Grant** among its subsidies for entrepreneurs, alongside digitalisation grants, coworking grants, and economic transition consultancy grants.
 
-## Recommendation
-
-To find the specific announcement you're looking for, I'd suggest:
-- Checking **Innoviris.brussels** directly
-- Searching **tech.eu** or **euractiv.com** with more specific keywords (e.g., the platform's actual name)
-- Looking at **press releases from the Brussels-Capital Region** government portal
-
-If you can share the name of the specific platform or organization, I can do a more targeted search.
-
-## [grassroot] community movement aligned people network Belgium April 2026 new initiative
-
-Purpose: Scan for newly surfaced aligned actors or grassroot movements in Belgium that could be connection signals for Julien.
-
-I now have sufficient information to provide a well-sourced, concrete answer. Here is the summary:
+- A **deadline of 30 April 2026** is active for the **Center for Financial Inclusion's Global DPI Insights Community Fund**, offering research grants of up to **USD $50,000** to support studies on the design, implementation, and sustainability of digital public infrastructure.
 
 ---
 
-## Community Movement & Aligned People Networks in Belgium — April 2026 Updates
+### Why It Matters
 
-### 🔑 What Changed
-
-**1. Réseau Transition Belgium × Réseau Transition Hauts-de-France: New Cross-Border Initiative (March 2026)**
-
-Réseau Transition Belgium and Réseau Transition Hauts-de-France (Northern France) have joined forces on a cross-border initiative, announced in the Transition Network international March 2026 newsletter. The snippet is truncated in the source, but this marks a new, formal bi-network collaboration between the Belgian and Northern French Transition movements.
-
-**2. Living Systems Alliance — Global Call for Pilot Regions (Deadline: April 5, 2026)**
-
-The Living Systems Alliance has officially launched — a new collaboration bringing together Transition Network International, The Biomimicry Institute, Global Ecovillage Network, Kincentric Leadership, and the Permaculture Association to support communities in designing and deciding in partnership with nature. Place-based partnerships are invited to apply for one of up to 10 places, which includes training and £5,000–£10,000 grants, with applications closing April 5th, 2026.
-
-**3. Day of Transition Practice — April 24, 2026 (Global Online Event)**
-
-The full programme and registration for the Day of Transition Practice, scheduled for 24 April 2026, is now open — a full day where Transitioners all around the world come together to share and learn from each other. (Note: an earlier edition had floated April 17; the confirmed date is **April 24**.)
-
-**4. Community Waves: Open-Source Social Platform Growing**
-
-Community Waves is an open-source social media space crafted with love and ethics for people involved in community-led change, and is being actively promoted as the movement's people network hub as of early 2026.
+The EU continues to prioritize funding for projects aligned with **climate neutrality and technological advancement**, making this a strategic window for cooperative tech platforms in Belgium to secure non-dilutive capital. Innovation funding in Belgium is significantly **decentralized**, with key agencies operating at regional levels — meaning Brussels-based cooperatives should engage Innoviris and hub.brussels directly, rather than relying solely on federal channels.
 
 ---
 
-### 📌 Why It Matters
+### Most Important Source URLs
 
-- The **Belgium × Northern France alliance** is a concrete step toward cross-border grassroots resilience-building aligned with the broader Transition movement's values.
-- The **Living Systems Alliance** represents one of the most significant new structured collaborations in the movement — bringing five major global networks together to fund and mentor regional communities (directly relevant to Belgian groups that could apply).
-- Over 2026–2027, the Alliance will co-create a multilingual toolkit for nature-centric design, decision-making, and governance, and partner with 8–10 regional networks worldwide to pilot these approaches.
-
----
-
-### 🔗 Most Important Sources
-
-| Source | URL | Date |
-|--------|-----|-------|
-| Transition Network March 2026 Newsletter | https://news.transitionnetwork.org/march-2026-being-wider-ecosystem/ | ~2 weeks ago (late March 2026) |
-| Living Systems Alliance — Call for Pilot Regions | https://news.transitionnetwork.org/lsa-call-for-pilot-regions/ | ~3 weeks ago |
-| Living Systems Alliance Overview | https://transitionnetwork.org/the-living-systems-alliance/ | Jan 2026 |
-| Réseau Transition Belgium Hub Profile | https://maps.transitionnetwork.org/hub/belgium-brussels-wallonie/ | ongoing |
-
-> **Note:** The search query's phrase "community movement aligned people network Belgium" maps most closely to **Réseau Transition Belgium** and its international parent, **Transition Network International** — the most active aligned-people/community-movement network in Belgium with documented April 2026 activity. If you had a specific organisation or network name in mind, let me know and I can refine the search.
-
-## [grassroot] open source cooperative social software launch community governance 2026
-
-Purpose: Track new cooperative or community-owned tech releases that could compete with or complement Grassroot Hoppers.
-
-Here is a concise, factual summary of the most recent updates on **open source cooperative social software, community governance, and launches heading into 2026**:
+1. **April 2026 Belgium Startup Grants Roundup:** https://blog.mean.ceo/startup-grants-belgium-news-april-2026/
+2. **hub.brussels Subsidies (incl. Cooperative Employment Grant):** https://info.hub.brussels/en/guide/subsidies-entrepreneurs
+3. **Brussels Innovation Fund / Innoviris overview:** https://www.iterates.be/en/belgian-government-grants-for-digital-innovation/
+4. **fundsforNGOs — Belgium grants with April 2026 deadlines:** https://www2.fundsforngos.org/tag/belgium/
 
 ---
 
-## 🔍 Summary of Recent Updates
+> ⚠️ **Note:** No single high-profile *new* cooperative tech platform grant specifically announced for Brussels in April 2026 was found. The updates above reflect the current active funding landscape as of April 2026. If you have a specific program name or organization in mind, I can refine the search further.
 
-### 1. Open Source Governance Is Shifting Beyond Code
-*(January 26, 2026 — Open Source Initiative)*
+## [grassroot] community tech movement aligned founders Europe April 2026 new project launch
 
-A major theme emerging in 2026 is that open source governance now extends beyond code — it encompasses education, policy fluency, and sustained engagement with governments and institutions that shape the digital world. This perspective comes from the virtual event *"Open Source in 2026,"* organized by Rachel Roumeliotis, drawing on a session by Katie Steen-James. A key concern: policy can inadvertently restrict open source by imposing obligations that don't align with open source licensing or development models, creating a chilling effect on contributors and communities.
+Purpose: Detect newly launched grassroot or solidarity-economy tech projects in Europe that could signal aligned peers or partnership opportunities.
 
-📌 **Source:** https://opensource.org/blog/open-source-software-public-policy-and-the-stakes-of-getting-it-right
-
----
-
-### 2. Research: Projects Are Formalizing Community Governance
-*(Updated February 5, 2026 — arXiv)*
-
-A research paper (arXiv: 2509.16295, last updated Feb 5, 2026) studies how open source projects transition from founder-led models to community governance. Key finding: rather than abrupt shifts in tone or control, communities grow by *layering and refining responsibilities*, with mature projects increasingly regulating ecosystem-level relationships and adding definition to oversight roles.
-
-📌 **Source:** https://arxiv.org/abs/2509.16295
+Here's a concise, fact-based summary of the most relevant recent updates matching your query:
 
 ---
 
-### 3. Academic Workshop on Cooperative Software Governance (April 2026)
-*(1 week ago — arXiv)*
-
-A research paper on governance roles in open source was accepted at the **19th International Workshop on Cooperative and Human Aspects of Software Engineering**, scheduled for April 12–18, 2026 in Rio de Janeiro, Brazil — a dedicated venue for cooperative, community-governed software. The research frames OSS communities as "living examples of large-scale collaboration," where authority has historically emerged through participation rather than formal appointment.
-
-📌 **Source:** https://arxiv.org/html/2603.24879
+## 🇪🇺 Community Tech Movement & Aligned Founders in Europe — April 2026 Updates
 
 ---
 
-### 4. Open Source Collective Continues Active Fiscal Hosting
-*(March–February 2026 — Open Collective)*
+### 1. 🏛️ Tech.eu Summit London 2026 — New Speaker Announcements
+**What changed:** The Tech.eu Summit London 2026 unveiled a new group of confirmed speakers, including leaders from OpenAI, London Stock Exchange Group, Morgan Stanley, NATO Innovation Fund, and Mastercard. The event takes place **21–22 April 2026** at the Queen Elizabeth II Centre in London, bringing together senior leaders, founders, and investors driving technology forward across Europe and beyond.
 
-The **Open Source Collective (OSC)** is a 501(c)(6) nonprofit that has provided financial and legal infrastructure to open source projects since 2017, handling invoicing, bank accounts, and contract review so that communities can focus on their work. Recent platform activity shows ongoing contributions and updates as of **March 30, 2026**, indicating the ecosystem remains actively funded and growing.
+**Why it matters:** This is one of Europe's leading founder and investor gatherings, signaling growing alignment between European tech communities and major global institutions around AI and deep tech.
 
-📌 **Source:** https://opencollective.com/opensource
-
----
-
-## ⚡ Why It Matters
-
-- **Governance is maturing:** Open source communities are moving past informal "founder dictator" models toward structured, community-owned governance — a direct parallel to cooperative principles.
-- **Policy risk is real:** Governments legislating AI and software supply chains may inadvertently undermine open source community structures if communities don't engage proactively.
-- **Cooperative + open source convergence** is becoming more formalized, with dedicated academic research and international workshops treating it as a distinct discipline in 2026.
-
-## [dev] Claude Code computer use agent update April 2026
-
-Purpose: Follow yesterday's Claude Code computer-use capability for any new capability drop or community reaction in last 48h.
-
-Here's a concise, fact-based summary of the latest Claude Code computer use / agent updates:
+📌 **Source:** https://tech.eu/2026/04/01/the-tech-eu-summit-london-2026-unveils-new-speakers-leaders-from-openai-london-stock-exchange-group-morgan-stanley-nato-innovation-fund-mastercard-and-many-more/
 
 ---
 
-## 🖥️ Claude Code: Computer Use & Agent Updates (Late March – April 2026)
+### 2. 🚀 Project Europe — Founder-Led Fund for the Next Generation
+**What changed:** 125 top European founders came together to launch **Project Europe**, a fund to find, fund, and mentor the next generation of ambitious founders. It has pooled **$10 million from 128 founders and tech execs**, including the founders of Klarna, Mistral, and SoundCloud.
+
+The fund invests from the idea stage onwards, supporting 10–20 founders annually with an initial **€200,000**, taking a 6.66% equity stake if they are leading the round.
+
+Unlike traditional initiatives, Project Europe remains independent of political movements, parties, and ideologies, with a core focus on encouraging young entrepreneurs to take risks and turn ideas into successful businesses.
+
+**Why it matters:** This is a rare community-driven, founder-to-founder model — not a traditional VC — explicitly designed to keep talent and ambition within Europe.
+
+📌 **Sources:**
+- https://tech.eu/2025/03/12/project-europe-launches/
+- https://techcrunch.com/2025/03/12/project-europe-a-new-early-stage-fund-will-back-under-25s-with-200k-to-build-the-next-tech-titan/
 
 ---
 
-### 🔑 What Changed
+### 3. 🔬 D2XCEL Deep Tech Programme — Final Cohort Impact Data (Concludes April 2026)
+**What changed:** The EU-backed **D2XCEL programme**, launched in November 2023 and running until **April 2026**, released its first cohort's impact data. It has connected **102 ventures** across a network of 250+ investors, lead customers, and innovation hubs in Europe, with nine additional events scheduled by end of April 2026.
 
-**1. Computer Use Added to Claude Code & Cowork (March 24, 2026)**
+**Why it matters:** The programme strengthens ventures' investment readiness, market entry strategies, and cross-border partnerships, connecting founders with investors and innovation ecosystems across Europe.
 
-Anthropic announced that its Claude Code and Claude Cowork tools are being updated to accomplish tasks using your computer. Users on Pro and Max plans can give Claude access to computer use — Claude can open files, run dev tools, point, click, and navigate what's on your screen.
-
-Anthropic introduced a significant upgrade enabling Claude to independently interact with desktop applications, mimicking how a human operates a computer. The update enables Claude to execute complex workflows without requiring constant user input — from writing code to launching applications and troubleshooting errors.
-
-The setup process involves enabling the "computer-use" MCP server within an interactive Claude Code session.
+📌 **Source:** https://eismea.ec.europa.eu/news/driving-deep-tech-growth-across-europe-d2xcel-project-releases-first-cohorts-impact-data-2026-02-26_en
 
 ---
 
-**2. New Claude Sonnet 4.6 Model**
+### ⚠️ Note
+I did not find a single specific initiative called the **"community tech movement aligned founders"** by that exact name. The results above represent the closest verified, real matches to your query. If you have a specific organization or project name in mind, feel free to share it and I'll search more precisely.
 
-Anthropic launched its most capable Sonnet model yet, with a full upgrade across coding, computer use, long-context reasoning, agent planning, knowledge work, and design. Sonnet 4.6 also features a 1M token context window in beta.
+## [grassroot] Brussels civil society cooperative digital commons funding announcement April 2026
 
----
+Purpose: Surface Brussels-specific movement signals, funding rounds, or coalition announcements relevant to Grassroot Hoppers positioning.
 
-**3. Recent Claude Code Changelog Fixes & Improvements (Early April 2026)**
-
-Recent fixes include: `switch_display` in the computer-use tool returning "not available in this session" on multi-monitor setups, MCP step-up authorization failing when a refresh token exists, a memory leak in remote sessions when a streaming response is interrupted, and persistent ECONNRESET errors during edge connection churn.
-
-Performance improvements include: plugin startup now loading commands, skills, and agents from disk cache without re-fetching, and Remote Control session titles appearing within seconds of the first message.
+Based on the search results, here is a concise, factual summary. Note that **no specific "Brussels civil society cooperative digital commons funding announcement" from April 2026** was found — the closest and most relevant real developments are from late 2025 and early 2026:
 
 ---
 
-**4. ⚠️ Accidental Source Code Leak (April 1, 2026)**
+## What Was Found (No April 2026-Specific Announcement Identified)
 
-Anthropic inadvertently released internal source code behind Claude Code, raising questions about security. Anthropic stated: "Earlier today, a Claude Code release included some internal source code. No sensitive customer data or credentials were involved or exposed." Several experts raised concerns about potential security vulnerabilities in light of the unintended exposure.
+There is no verifiable news of a distinct "Brussels civil society cooperative digital commons funding announcement" specifically dated **April 2026**. However, the most closely related real developments are:
 
 ---
 
-### 📌 Why It Matters
+### 🔷 1. Digital Commons EDIC Launch (December 2025)
+**What changed:** The European Commission approved the creation of the **Digital Commons European Digital Infrastructure Consortium (DC-EDIC)**, a new body tasked with advancing open and sovereign digital infrastructure across the EU. It officially launched on **11 December 2025 in The Hague**, bringing together Member States and private actors to deploy and scale shared digital infrastructure. France, Germany, the Netherlands, and Italy serve as founding members.
 
-- **Computer use** marks a major leap from Claude as a chat/coding assistant to a **fully autonomous agent** that can operate your desktop — a direct competitor to OpenAI's Operator and similar products.
-- The **Sonnet 4.6 model** significantly upgrades agentic planning and reasoning capabilities.
-- The **source code leak** is a notable security/trust event for a company that markets itself on safety.
+**Why it matters:** The Digital Commons are now recognized as foundational infrastructure for a sovereign, competitive, and democratic European digital ecosystem, requiring coordinated EU governance through the EDIC, strategic multi-year funding, and procurement reform.
+
+📎 **Source:** [CADE Project](https://cadeproject.org/updates/eu-moves-to-bolster-digital-sovereignty-with-new-digital-commons-consortium/) | [Open Future Summit Recap](https://openfuture.eu/event/digital-commons-policy-summit-2025/)
+
+---
+
+### 🔷 2. Civil Society Platform Announcement (Civil Society Week 2026)
+**What changed:** During **Civil Society Week 2026**, Civil Society Europe (CSE) announced its involvement in a new **Civil Society Platform**, to be established by the end of the year — a pillar of the Commission's Civil Society Strategy aimed at strengthening transparency and the engagement of civil society organisations in EU policymaking.
+
+**Why it matters:** The Platform intends to follow a bottom-up approach to give civil society actors a stronger voice in shaping policies that affect them.
+
+📎 **Source:** [Civil Society Europe](https://civilsocietyeurope.eu/events-meetings/)
+
+---
+
+### ⚠️ Caveat
+The precise query — a **cooperative digital commons funding announcement in Brussels in April 2026** — did not surface in any search result. It's possible this event is too recent to be indexed, uses different terminology, or may not yet have occurred. I'd recommend checking **NGI Commons** ([commons.ngi.eu](https://commons.ngi.eu/)) and the **European Commission's Digital Strategy page** ([digital-strategy.ec.europa.eu](https://digital-strategy.ec.europa.eu/en/activities/digital-programme)) directly for the latest updates.
+
+## [dev] AI coding agent architecture open source release April 2026
+
+Purpose: Track new dev tooling or agent architecture drops following the Claude Code leak momentum.
+
+Here is a concise, fact-based summary of the most significant open-source AI coding agent architecture releases from **late March – early April 2026**:
+
+---
+
+## 🔍 AI Coding Agent Architecture: Open Source Releases — April 2026
+
+### 1. 🦀 Claw Code — *April 2, 2026*
+**What changed:**
+Claw Code, an open-source AI coding agent framework built in Python and Rust, publicly launched on April 2, 2026, as an independent foundation for AI-assisted software development. Its core focus is the **"agent harness" layer** — the control layer that connects LLMs to tools, file systems, and task workflows — which has remained largely proprietary and opaque. Built as a clean-room rewrite without copying proprietary source code or using third-party model weights, it gives developers a fully open, inspectable, and extensible harness architecture.
+
+**Why it matters:**
+Within days of going public, the repository surpassed 72,000 GitHub stars and 72,600 forks. A Rust port is in progress, targeting a faster, memory-safe runtime for production environments.
+
+**Source:** https://www.24-7pressrelease.com/press-release/533389/claw-code-launches-open-source-ai-coding-agent-framework-with-72000-github-stars-in-first-days
+
+---
+
+### 2. 🤖 OpenCode — *Active releases through April 1, 2026*
+**What changed:**
+OpenCode is a Go-based CLI application that brings AI assistance to the terminal via a TUI (Terminal User Interface), with support for multiple AI providers including OpenAI, Anthropic Claude, Google Gemini, AWS Bedrock, Groq, Azure OpenAI, and OpenRouter. It also supports multi-session management, tool integration, and is available as a desktop app and IDE extension for VS Code, Cursor, and other tools.
+
+As of April 1, 2026, the latest release (v1.3.12) enabled prompt caching and cache token tracking for Google Vertex Anthropic.
+
+**Why it matters:**
+OpenCode supports over 75 LLM providers and is model-agnostic — not coupled to any single provider. It's positioned as a direct open-source alternative to Claude Code and GitHub Copilot.
+
+**Source:** https://github.com/anomalyco/opencode | https://www.infoq.com/news/2026/02/opencode-coding-agent/
+
+---
+
+### 3. 🦌 ByteDance Deer-Flow 2.0 — *Late March 2026*
+**What changed:**
+ByteDance released Deer-Flow 2.0, an open-source super-agent architecture designed to handle complex, multi-level tasks including research, coding, and creative production. The architecture utilizes sub-agents and a message gateway to coordinate long-running processes, with sandboxes, memory systems, tools, and skills — enabling workflows that span from several minutes to multiple hours.
+
+**Why it matters:**
+Deer-Flow 2.0 moves beyond simple prompt-response cycles to a structured "super-agent" model suited for sustained, professional-grade autonomous tasks — a meaningful architectural step forward.
+
+**Source:** https://aitoolly.com/ai-news/article/2026-03-27-bytedance-open-sourced-deer-flow-20-a-super-agent-framework-for-research-coding-and-creative-tasks
+
+---
+
+### 🔑 Bottom Line
+The dominant theme across all three April 2026 releases is **open, auditable agent architecture** — moving the "control layer" (harness, orchestration, memory, tool-use) out of proprietary black boxes and into inspectable, community-maintained infrastructure. Claw Code is the most architecturally focused; OpenCode is the most developer-ready; Deer-Flow 2.0 is the most ambitious in scope.
+
+## [game] indie game developer community crowdfunding launch April 2026
+
+Purpose: Monitor fresh game dev crowdfunding or community launches as weak signal for market appetite.
+
+Here's a concise, fact-based summary of the latest updates on indie game developer community crowdfunding as of 2026:
+
+---
+
+## 🎮 Indie Game Crowdfunding & Community Funding: 2026 Updates
+
+### What Changed
+
+1. **New $30M Venture Fund Launched**
+Blue Ocean Games launched a **$30 million fund** to invest in the next generation of indie game developers. This fund is backed by **Krafton** and represents one of the most significant recent shifts — the emergence of specialized venture funds targeting early-stage indie developers.
+
+2. **Crowdfunding Remains Central, But Costly**
+Crowdfunding and Early Access platforms such as **Kickstarter, Indiegogo, and Steam Early Access** continue to play a crucial role in supporting indie game development financially and fostering community engagement. However, in 2026, crowdfunding platform fees are projected at **50%** and marketing spend at **40%** — material drags on margin for indie developers.
+
+3. **IGD Awards Launching ~March/April 2026**
+The **IGD Awards** (from Indie Games Developer magazine) are set to launch after their new website goes live in **March 2026**.
+
+4. **Diversification Is the New Survival Strategy**
+The healthiest indie studios of 2026 are not necessarily those with the largest budgets, but those with the most adaptable business models — diversifying across monetization, community engagement, and funding sources.
+
+---
+
+### Why It Matters
+
+The indie game funding landscape in 2026 is shifting away from pure crowdfunding dependency. Specialized VC funds (like Blue Ocean/Krafton) are filling a gap, while crowdfunding platform fees are squeezing margins. Developers are increasingly expected to build communities *and* diversify revenue — crowdfunding alone is no longer a reliable standalone path.
 
 ---
 
@@ -201,96 +210,66 @@ Anthropic inadvertently released internal source code behind Claude Code, raisin
 
 | Source | URL |
 |---|---|
-| Engadget – Computer Use launch | https://www.engadget.com/ai/claude-code-and-cowork-can-now-use-your-computer-210000126.html |
-| Anthropic Release Notes (official) | https://support.claude.com/en/articles/12138966-release-notes |
-| Claude Code Changelog (official) | https://code.claude.com/docs/en/changelog |
-| Bloomberg – Source Code Leak | https://www.bloomberg.com/news/articles/2026-04-01/anthropic-accidentally-releases-source-code-for-claude-ai-agent |
-
-## [geo_eu] Trump Iran military escalation oil price Europe energy April 2026
-
-Purpose: Check if Gulf military situation advanced since yesterday's briefing with direct energy cost impact for Europe.
-
-Here is a concise, fact-based summary of the latest developments — current as of **early April 2026**:
+| Blue Ocean $30M Fund | https://globalventuring.com/corporate/asia/games-investor-blue-ocean-launches-30m-fund-for-indie-game-development/ |
+| 2026 Indie Funding Strategies | https://www.growthhq.io/our-thinking/indie-game-funding-challenges-and-breakthrough-strategies-in-2026-navigating-the-14-billion-opportunity |
+| 2026 Landscape Overview | https://gamespublisher.com/indie-game-development-navigating-the-2025-landscape/ |
+| IGD Awards / Community | https://www.indiegamesdeveloper.com/ |
 
 ---
 
-## 🔴 Trump, Iran & Energy: Key Updates (April 2026)
+> ⚠️ **Note:** No specific crowdfunding *campaign* launching in April 2026 was found in search results. The updates above reflect the broader indie dev community and funding ecosystem as of early 2026. If you're tracking a specific project or platform, share its name for a more targeted search.
+
+## [geo_eu] EU tech sovereignty policy update Brussels April 2026
+
+Purpose: Check for any movement on the delayed EU Tech Sovereignty Package or related Commission announcements this week.
+
+Here is a concise, source-backed summary of the latest EU tech sovereignty developments as of April 2026:
+
+---
+
+## 🇪🇺 EU Tech Sovereignty: Key Updates (April 2026)
 
 ### What Changed
 
-**The U.S.-Israel war on Iran** — which began on **February 28, 2026** — is now in its fifth week. Diplomatic and military signals shifted sharply in the past 48 hours:
+**1. Cloud & AI Development Act (CADA) — Delayed to May 2026**
 
-- **Oil prices spiked hard.** U.S. West Texas Intermediate crude futures for May gained 4.1% to $104.21 a barrel, while international benchmark Brent crude futures for June rose 5% to $106.42 per barrel.
+The CADA has been delayed and is now expected to be proposed on **27 May 2026**. It is a flagship legislative initiative aimed at tripling EU data centre capacity, establishing EU-wide eligibility requirements for cloud service providers, and creating a single EU-wide cloud policy for public administrations and procurement — collectively dubbed the **"tech sovereignty package."**
 
-- **Trump vowed further escalation.** The price of Brent crude was spiking by more than 4% to over $105 per barrel after Trump vowed to continue the conflict for another few weeks — alongside a renewed threat to hit Iran "extremely hard."
+**2. Digital Omnibus Package — Simplification Push**
 
-- **Strait of Hormuz effectively shut.** Traffic in the Strait of Hormuz, which used to see a fifth of the world's oil and gas flows through, has effectively ground to a halt since the U.S.-Israel war against Iran began on February 28, sending energy prices soaring in one of the world's most devastating energy crises.
+A key near-term development is the **Digital Omnibus package**, which seeks to streamline the GDPR, Data Act, and AI Act to reduce administrative friction.
 
-- **Trump told European allies to fend for themselves.** Per NBC News (April 1–2), Trump told allies to *"get your own oil"* from the Strait of Hormuz amid the price hikes. Trump again criticized European allies for not getting more involved in the war.
+**3. Cybersecurity Act Revision — Sovereignty Requirements in Focus**
 
-- **Then, a brief de-escalation signal.** Trump stated the U.S. would "probably" stop attacks on Iran within two to three weeks "whether we have a deal or not" — and renewed optimism over a possible de-escalation gave a strong boost to stock markets in Europe and Asia, now in the war's fifth week.
+The revised Cybersecurity Act (CSA) — delayed multiple times — was expected to be published in early 2026. Expected disagreements will likely revolve around the inclusion of **sovereignty requirements** in certification schemes, and the EU Commission is also reportedly considering **phasing out certain Chinese ICT vendors** from critical infrastructure.
+
+**4. Digital Networks Act (DNA) — Telecom Infrastructure Reform**
+
+The European Commission unveiled its **Digital Networks Act (DNA)**, aimed at boosting competitiveness and investment in telecom infrastructure. It seeks to harmonize rules across the bloc for fibre roll-out, 4G/5G mobile networks, and satellite services — but stops short of creating a fully unified telecoms market or requiring Big Tech contributions to network costs.
+
+**5. AI Office Proceedings — New Consultation**
+
+On 12 March 2026, the EU Commission published a draft implementing act on "detailed arrangements for the conduct of certain proceedings" by the **EU AI Office**, covering conditions for evaluations of general-purpose AI models.
+
+**6. EU Commission 2026 Work Programme — Sovereignty as a Guiding Principle**
+
+At a time of geopolitical instability, the European Commission has vowed to make **sovereignty and independence guiding principles** in its Work Programme for 2026, while simultaneously increasing policy momentum to simplify digital regulation to boost EU competitiveness.
 
 ---
 
 ### Why It Matters
 
-- **Europe faces real fuel shortages.** Asia and Europe will face fuel shortages if the war drags on; oil prices are likely to remain high even if the conflict ends, as countries restock depleted reserves.
-
-- **The Hormuz window is narrowing.** The economic and market fallout from the war could escalate sharply if the Strait of Hormuz isn't reopened within roughly the next one to three weeks. Even then, enough damage may have been done already to leave energy and many other prices higher for longer.
-
-- **Markets are on a knife's edge.** A portfolio manager at Fidelity International noted markets had braced for a "binary outcome" — a war exit signal or further escalation — and that "clearly we seem to be on the latter path right now," expecting further risk-off sentiment as investors wait for uncertainty to subside.
-
-- **No easy off-ramp.** Iran expert Vali Nasr says Tehran is not looking for a ceasefire — it wants a grand bargain including control of the Strait, economic compensation, and security guarantees. Former Defense Secretary Gen. Jim Mattis assessed the conflict is at a stalemate, with one side now likely to escalate further.
+- Industry players still getting to grips with the breadth and complexity of the recent wave of EU digital legislation now face the prospect of **further legislation on the horizon**.
+- A Franco-German **Summit on European Digital Sovereignty** (November 2025) launched a joint task force to report in 2026, with a final declaration underscoring member states' shared ambition to strengthen digital sovereignty as "a cornerstone of economic resilience, social prosperity, competitiveness and security."
+- The CADA's delay is particularly significant: techUK notes it will be paying close attention to the proposal to ensure **any impact on non-EU companies is fully understood**.
 
 ---
 
 ### 📌 Most Important Source URLs
 
-| Source | Date | URL |
-|--------|------|-----|
-| **CNBC** – Oil prices & Brent surge | April 2, 2026 | https://www.cnbc.com/2026/04/02/oil-prices-today-wti-brent-trump-speech-iran-war-.html |
-| **CNN** – Live war updates | April 1–2, 2026 | https://www.cnn.com/2026/04/01/world/live-news/iran-war-us-trump-oil |
-| **Euronews** – European market reaction | April 1, 2026 | https://www.euronews.com/business/2026/04/01/stocks-jump-and-oil-drops-as-trump-renews-hopes-of-iran-war-ending |
-| **CNBC** – Hormuz & CEO outlooks | March 28, 2026 | https://www.cnbc.com/2026/03/28/iran-war-oil-companies-price-gas-diesel-strait-hormuz.html |
-
----
-
-**Bottom line:** The U.S.-Israel war on Iran has triggered one of the worst energy crises in decades. Oil is above $100/barrel, the Strait of Hormuz is functionally closed, Europe faces supply shortages, and Trump's mixed signals — vowing escalation while hinting at a 2–3 week exit — are whipsawing markets daily.
-
-## [game] indie game community discovery tool cooperative launch April 2026
-
-Purpose: Maintain game radar for any new community-driven discovery or cooperative game tool that intersects Julien's reconnaissance horizon.
-
-I was unable to find any specific, verifiable news about a dedicated **"indie game community discovery tool cooperative launch in April 2026."** Here's what the search results actually show — transparently:
-
----
-
-### What the Search Found (April 2026 Context)
-
-**No specific tool launch matched your query.** Here is what is factually confirmed from recent sources:
-
-1. **Indie Game Releases – April 2026**
-Green Man Gaming published an April 2026 indie games round-up just days ago, highlighting a fresh wave of indie releases — covering puzzle, action, and cosy cooking genres — but no new community discovery tool was mentioned.
-
-2. **Develop:Brighton Indie Showcase – Submissions Opening April 2026**
-Indie Showcase submissions for 2026 will open in early April — this is a discovery/exposure program run by the Develop Conference for indie developers, not a standalone tool launch.
-📌 Source: [developconference.com](https://www.developconference.com/whats-on/indie-showcase)
-
-3. **Indie Game Alliance (IGA) – Existing Cooperative**
-The Indie Game Alliance is an existing cooperative that has helped nearly two thousand designers and publishers, been involved in more than a quarter billion dollars' worth of successful crowdfunding campaigns, and recruited over a thousand volunteers worldwide. No new April 2026 launch was found.
-📌 Source: [indiegamealliance.com](https://www.indiegamealliance.com/)
-
-4. **Indie Game Developer Network (IGDN) – Collective Action Model**
-The IGDN was built around the concept of collective action for isolated small creators — for example, pooling resources to share a booth at Gen Con. It positions itself as being "for all independent game designers who'd like to get more out of — and do more for — the industry."
-📌 Source: [igdnonline.com](https://www.igdnonline.com/)
-
----
-
-### ⚠️ Bottom Line
-
-**No specific "community discovery tool cooperative launch" in April 2026 was found in current search results.** The query may refer to something that:
-- Has not been widely reported yet,
-- Uses different terminology than what was searched, or
-- May not exist as described.
-
-If you have a specific tool name or organization in mind, share it and I can do a more targeted search.
+| Source | URL |
+|---|---|
+| techUK Brussels Dispatch (March 2026) | https://www.wired-gov.net/wg/news.nsf/articles/Dispatch+from+Brussels+Updates+on+EU+Tech+Policy+24032026112500 |
+| Atlantic Council — Digital Sovereignty Report (Feb 2026) | https://www.atlanticcouncil.org/in-depth-research-reports/report/digital-sovereignty-europes-declaration-of-independence/ |
+| Bird & Bird — 2026 Work Programme Analysis | https://www.twobirds.com/en/insights/2025/eu-a-bid-for-tech-sovereignty-drives-commissions-work-programme-for-2026 |
+| TechPolicy.Press — Digital Networks Act | https://www.techpolicy.press/eus-digital-networks-act-leaves-big-tech-untouched-sparks-net-neutrality-concerns/ |
