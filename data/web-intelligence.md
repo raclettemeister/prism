@@ -1,306 +1,288 @@
-<!-- PRISM Web Intelligence — 2026-04-04 -->
-# Web Intelligence — 2026-04-04
+<!-- PRISM Web Intelligence — 2026-04-05 -->
+# Web Intelligence — 2026-04-05
 *Scheduled theme: Grassroot Hopper & Cooperative Tech*
 
-## [grassroot] cooperative tech platform grants Belgium Brussels 2026 funding announcement
+## [grassroot] cooperative technology platform grants Belgium Brussels 2026 April
 
-Purpose: Catch new grant or funding signals relevant to Grassroot Hoppers or aligned Brussels orgs in the last 48h.
+Purpose: Scan for new funding cycles or grant announcements relevant to community/coop tech in Belgium this week.
 
-Based on thorough searches across multiple query angles, here is an honest and well-sourced summary of what the evidence actually shows:
-
----
-
-## 🔍 Findings: Cooperative Tech Platform Grants — Belgium/Brussels 2026
-
-> **Important caveat:** No search results returned a specific, named announcement about a *cooperative tech platform* grant scheme in Belgium/Brussels for 2026. The term you've used doesn't match any single identifiable program in current indexed sources. What *does* exist are several **adjacent and relevant** funding developments — summarized below.
+Here is a concise, factual summary of recent updates on **cooperative technology platform grants in Belgium / Brussels for 2026**:
 
 ---
 
-### What's Actually Happening (April 2026)
-
-**1. Brussels-Capital Region Innovation Fund (ongoing)**
-The Brussels-Capital Region Innovation Fund supports innovative companies that adopt new technologies to improve their operations or offer new services, covering up to 50% of eligible project costs for digital tools such as AI systems, mobile applications, or cloud solutions.
-
-**2. Belgium's Startup Grant Scene — Active as of April 2026**
-Belgium's startup grants scene is notably active this month, with significant opportunities for those in cleantech and green energy, fueled by recent EU efforts.
-
-**3. March 2026 — Key Belgian Tech Funding Moves**
-Notable developments from March 2026 include Syndicate One raising €22 million to fund tech startups in AI, robotics, and software, and Ghent joining Bloomberg Philanthropies' Mayors Challenge, fostering civic tech collaboration.
-
-**4. KMO-Portefeuille Change (February 1, 2026)**
-Since February 1, 2026, the advisory component of KMO-portefeuille has been limited to cybersecurity only — digitalization advisory is no longer supported, though training services (including for digitalization and AI topics) remain available for all themes.
-
-**5. EU-Level: Digital Europe Programme & Horizon Europe**
-Horizon Europe programmes provide substantial grants — up to €2.5 million for EIC Accelerator grants plus equity investments up to €10 million — while the Digital Europe Programme supports projects in AI, cybersecurity, advanced digital skills, and climate-neutral innovation.
-
-For 2021–2026, most activities in digital transformation in Belgium are financed through the Recovery and Resilience Facility, as well as Horizon, Erasmus+, ESIF, and EEA grant schemes.
-
----
-
-### Why It Matters
-Belgium is actively positioning itself as a European digital innovation hub, with layered funding from regional (Brussels Innovation Fund, VLAIO), national (KMO-portefeuille), and EU-level (Digital Europe, Horizon Europe) programs — all converging around AI, civic tech, and green digital transformation in 2025–2026.
-
----
-
-### Most Important Source URLs
-- 📰 **April 2026 Belgium Grants Roundup:** https://blog.mean.ceo/startup-grants-belgium-news-april-2026/
-- 📰 **March 2026 Belgium Grants Roundup:** https://blog.mean.ceo/startup-grants-belgium-news-march-2026/
-- 🏛️ **Brussels Digital Innovation Grants (iterates.be):** https://www.iterates.be/en/belgian-government-grants-for-digital-innovation/
-- 🇪🇺 **EU Digital Funding for Belgium:** https://digital-skills-jobs.europa.eu/en/latest/briefs/available-funding-belgium
-- 🔬 **ABGi Belgium Innovation Funding Overview:** https://www.abgi-uk.com/innovation-funding-incentives-belgium/
-
----
-
-**⚠️ If you're tracking a *specific* named program** (e.g., a particular cooperative economy grant or a named Brussels announcement), please share the program name or source — I can then search for it directly.
-
-## [grassroot] community-owned software cooperative Europe launch announcement April 2026
-
-Purpose: Spot newly announced aligned people or orgs building cooperative tech Julien should be aware of.
-
-Here is a concise, fact-based summary of the most relevant recent developments matching your query:
-
----
-
-## 🔍 Community-Owned Software Cooperative Europe — Key Updates
-
----
-
-### 1. 🚀 Euro-Office Launch (March 27, 2026) — *Most Relevant*
-
-**What changed:**
-On March 27, 2026, at a press event in Berlin organized by IONOS and Nextcloud, a coalition of European enterprises and community organizations launched **Euro-Office** — a sovereign, community-built replacement for Microsoft Office, covering documents, spreadsheets, and presentations. A tech preview is available immediately.
-
-The effort is backed by major European tech firms including IONOS, Nextcloud, Eurostack, XWiki, OpenProject, Soverin, Abilian, and BTactic — over a dozen organizations — with a first stable release planned for **summer 2026**.
-
-The project is explicitly structured as more than a single software launch: it aims to build a longer-term ecosystem around an office suite maintained by a broader European community rather than controlled by a single vendor, with participants committing staff and resources, and code developed through a process open to public scrutiny and outside contribution.
-
-**Why it matters:**
-Across Europe, public administrations, enterprises, and educational institutions are reassessing their dependence on non-European productivity platforms, and Euro-Office targets that gap with full Microsoft format compatibility.
-
-**📎 Source:** https://nextcloud.com/blog/press_releases/industry-initiative-launches-euro-office-as-true-sovereign-office-suite/
-Also covered at: https://itbrief.co.uk/story/euro-office-launches-as-europe-s-open-source-office-rival
-
----
-
-### 2. 🔄 Open Collective Europe → "Open Source Europe" Rebrand (March 13, 2026)
-
-**What changed:**
-On March 13, 2026, the nonprofit association **Open Collective Europe** announced it is becoming **Open Source Europe**, while the Open Collective Europe Foundation retains its name and continues its humanitarian work.
-
-**Why it matters:** This signals a broader mission pivot — from fiscal hosting for open source projects to a wider organizational identity around the European open source community.
-
-**📎 Source:** https://opencollective.com/europe
-
----
-
-### ⚠️ Note on April 2026 Specifically
-No announcements specifically dated **April 2026** were found in search results at this time. The closest and most significant matching event is the **Euro-Office launch (March 27, 2026)**, which fits all other aspects of your query (community-owned, software, cooperative structure, European launch). If you have a specific organization or project name in mind, I can refine the search.
-
-## [grassroot] grassroots movement Brussels Belgium civic tech organizing April 2026
-
-Purpose: Surface local Brussels movement signals that could intersect with Grassroot Hoppers positioning.
-
-Here is a concise, factual summary based on the search results. Note that **no major breaking news specific to April 2026** was found for this exact topic — but here is what is confirmed and current:
-
----
-
-## 🗳️ Grassroots & Civic Tech Organizing in Brussels — What's Happening (Early 2026)
+## 🇧🇪 Cooperative Tech & Platform Grants — Belgium/Brussels | April 2026 Update
 
 ### What Changed
 
-**1. Civil Society Week 2026 (Brussels, EESC) — March 2026**
-Civil Society Week 2026 brought together grassroot activists, youth representatives, EU policymakers, journalists, and organised civil society from across Europe and candidate countries. The event focused on advancing diversity, civic engagement, equality, and inclusion as key pathways to renewing Europe's democratic promise.
+1. **KMO-portefeuille Advisory Scope Narrowed (Feb 1, 2026)**
+   Since February 1, 2026, the advisory component of the KMO-portefeuille program is limited to cybersecurity only — digitalization advisory is **no longer supported**. Training services (including for digitalization and AI topics) remain available for all themes.
 
-**2. New EU Civil Society Platform Announced — March 2026**
-During Civil Society Week 2026, Civil Society Europe (CSE) announced its involvement in the Civil Society Platform, to be established by the end of 2026 — a pillar of the European Commission's Civil Society Strategy aimed at strengthening transparency and enhancing engagement of civil society organisations (CSOs) in EU policymaking. The Platform intends to follow a bottom-up approach to give civil society actors a stronger voice in shaping policies that affect them.
+2. **Brussels Innovation Fund — Active for Digital/AI Projects**
+   The **Brussels-Capital Region Innovation Fund** (via Innoviris) supports innovative companies adopting new technologies. It covers **up to 50% of eligible project costs**, facilitating investment in digital tools such as AI systems, custom mobile applications, or cloud solutions — ideal for companies developing new digital services.
 
-**3. Civic Lab Brussels — Ongoing Civic Tech Organizing**
-Civic Lab Brussels is a meetup for those interested in creating open societal solutions through science and technology — known as public interest tech and civic tech — holding biweekly open gatherings welcoming all backgrounds. It is organized under Open Knowledge Belgium.
+3. **Cooperative Projects Favored by EU & Belgian Frameworks**
+   Belgium emphasizes **cooperative projects**, particularly with other EU states — collaborations often improve funding odds and align startups with larger innovation ecosystems.
+
+4. **Innovation Partnerships — Large-Scale Collaborative Grants**
+   Significant funding is allocated to specific strategic areas through **Innovation Partnerships**, such as the €81 million "ATMP-Partenariat d'Innovation Technologique," which fosters collaboration between academia, research centers, and businesses.
+
+5. **Enabel Grant Deadline — April 6, 2026**
+   The Belgian Agency for Development Cooperation (Enabel) had a key grant deadline: concept notes had to be submitted **by April 6, 2026, before 23:55 (Moz time)**.
 
 ---
 
 ### Why It Matters
 
-With democracy and civic space under mounting pressure, civil society organisations, human rights defenders, and free media face growing constraints — from restrictive laws and disinformation campaigns to underfunding and public distrust. The new EU platform and ongoing local tech organizing represent a direct institutional and grassroots counter-response to these pressures.
+- The **narrowing of KMO-portefeuille** is a significant policy shift that affects SMEs relying on subsidized digitalization consulting — companies must now focus on cybersecurity framing or switch to training grants.
+- The Brussels Innovation Fund and EU cooperative frameworks remain **open and active**, making April 2026 a key window for tech platform startups to apply.
+- AI, clean energy, and green manufacturing are the industries gaining the most traction for grants, with the EU prioritizing funding for projects aligned with climate neutrality and technological advancement.
 
 ---
 
-### Most Important Source URLs
+### 🔗 Most Important Sources
 
 | Source | URL |
 |---|---|
-| Civil Society Week 2026 (EESC) | https://www.eesc.europa.eu/en/agenda/our-events/events/civil-society-week-2026 |
-| Civil Society Europe – Events & Platform News | https://civilsocietyeurope.eu/events-meetings/ |
-| Civic Lab Brussels (Meetup) | https://www.meetup.com/Civic-Lab-Brussels/ |
-| Civic Lab Brussels (Open Knowledge BE) | https://openknowledge.be/activities/civic-lab-brussels/ |
+| Startup Grants Belgium – April 2026 | https://blog.mean.ceo/startup-grants-belgium-news-april-2026/ |
+| Flowful AI – Funding AI in Belgium (Feb 2026) | https://flowful.ai/blog/fund-ai-project-belgium/ |
+| Iterates – Belgian Digital Innovation Grants | https://www.iterates.be/en/belgian-government-grants-for-digital-innovation/ |
+| ABGi – Belgium Innovation Funding Overview | https://www.abgi-uk.com/innovation-funding-incentives-belgium/ |
+| Hub.brussels – Subsidies for Entrepreneurs | https://info.hub.brussels/en/guide/subsidies-entrepreneurs |
+
+## [grassroot] aligned community movement Brussels solidarity economy news April 2026
+
+Purpose: Detect fresh signals from Brussels grassroot and solidarity economy actors Julien could connect with or learn from.
+
+Based on my research, I need to be transparent with you about what was found.
 
 ---
 
-**⚠️ Caveat:** No results surfaced events or announcements specifically dated **April 2026**. The most recent confirmed activity is from **March 2026** (Civil Society Week). If you're tracking a specific organization or initiative, I can refine the search further.
+## ⚠️ Honest Summary: "Aligned Community Movement Brussels" — April 2026
+
+**No specific organization or movement called "Aligned Community Movement Brussels" was found** in search results. This does not appear to be a documented or widely-reported named entity as of April 2026. It's possible the name is informal, local, or translated from Dutch/French.
+
+However, here is what **is verifiable and current** on the broader topic of **solidarity economy in Brussels and the EU**:
+
+---
+
+### 🔑 What Changed
+
+1. **EU Council Social Economy Review — Brussels, 30 March 2026**
+The Council of the European Union issued a document dated 30 March 2026 affirming that the social economy "acts as a source of resilience, creating and retaining local jobs, mobilising communities in a spirit of solidarity, and stepping in where markets fall short to promote inclusive growth." This document delivers on a commitment made in the EU's action plan for the social economy to review its implementation and impact halfway through and reaffirm the Commission's vision for the social economy in the new geopolitical context.
+📎 **Source:** https://data.consilium.europa.eu/doc/document/ST-7887-2026-INIT/en/pdf
+
+2. **European Solidarity Corps 2026 — Record Budget**
+The European Commission launched the European Solidarity Corps 2026 call, marking a double anniversary: 30 years of EU volunteering and 10 years of the Corps. The budget reached **€175.3 million** for the first time in 2026. Since 2016, the programme has offered opportunities to more than 150,000 young people through over 22,000 projects in solidarity, humanitarian aid, and development cooperation.
+📎 **Source:** https://youth.europa.eu/news/2026-european-solidarity-corps-call-open-ready-make-change_en
+
+3. **Mont Blanc Meetings 2026 (Global SSE Forum)**
+The 12th Mont Blanc Meetings — the flagship event of the International Forum of the Social and Solidarity Economy (ESSFI) — are scheduled to be held in Geneva in 2026, bringing together SSE leaders from around the world to discuss global challenges and share solutions.
+📎 **Source:** https://www.socialeconomynews.eu/en/
+
+---
+
+### 💡 Why It Matters
+
+The EU is actively reinforcing and reviewing its social economy framework, which directly affects community-level solidarity initiatives in Brussels and Belgium. The record Solidarity Corps budget signals growing institutional support for grassroots solidarity work across Europe.
+
+---
+
+### ❗ Recommendation
+
+If you are tracking a **specific local Brussels network or movement**, please share more details (e.g., the Flemish/French name, website, or affiliated organizations), and I can do a more targeted search. The term as stated did not match any documented group in available sources.
+
+## [grassroot] cooperative platform worker-owned tech Europe funding announcement April 2026
+
+Purpose: Surface new European coop-tech funding or initiative launches relevant to Grassroot Hoppers positioning.
+
+Based on two thorough searches, here is my honest assessment:
+
+---
+
+## 🔍 Search Result: No Specific Announcement Found
+
+There is **no verifiable, specific news story** about a "cooperative platform / worker-owned tech Europe funding announcement" in **April 2026** that surfaced across either search. Here's what the searches *did* reveal:
+
+---
+
+### What's Actually Happening in the Space (Verified, with Sources)
+
+**1. Structural funding challenge remains unchanged**
+The biggest challenge faced by cooperatives is access to funding — since shared ownership by workers and members is fundamental to the model, cooperatives cannot rely on venture capital, and investors and banks have little interest in financing them given they are not primarily profit-driven.
+
+**2. EU tech funding is scaling up broadly, but not co-op specific**
+The Strategic Technologies for Europe Platform (STEP), which turned two years old in late March 2026, has mobilised **€29 billion** of EU funding across programmes supporting digital & deep-tech, clean tech, and biotech innovation since its inception in March 2024.
+
+**3. EIB Group is ramping up general tech investment**
+In December 2025, the Boards of the EIF and EIB committed a total of **€1.25 billion** of their own funds to ETCI 2.0 (European Tech Champions Initiative), with further fundraising and investments expected to launch in early 2026.
+
+**4. The platform co-op sector's core proposition**
+Platform cooperatives are described as an alternative to venture capital-funded and centralized platforms, built on principles of broad-based ownership where workers control the technological features, algorithms, and data of the platform.
+
+---
+
+### ⚠️ Bottom Line
+
+The specific event you described — a **cooperative/worker-owned tech platform Europe funding announcement in April 2026** — does **not appear in current search results**. It may be:
+- A very niche or under-reported announcement
+- A misattributed or anticipated event
+- Rumored/speculative rather than confirmed
+
+**Recommended sources to monitor directly:**
+- 🔗 [Platform Cooperativism Consortium](https://platform.coop/)
+- 🔗 [Sifted.eu – Co-op/Startup coverage](https://sifted.eu/articles/startup-cooperatives-tech)
+- 🔗 [STEP EU Strategic Technologies Platform](https://strategic-technologies.europa.eu)
+
+If you have a more specific organization name or country in mind, I can refine the search further.
 
 ## [dev] open source AI coding agent release April 2026
 
-Purpose: Maintain dev radar continuity after two consecutive dev-override briefings.
+Purpose: Track any new agentic dev tool drop that widens the gap while Julien is in quiet mode.
 
-Here is a concise, fact-based summary of the most significant open-source AI coding agent news from April 2026:
-
----
-
-## 🤖 Open-Source AI Coding Agents — April 2026 Update
+Here's a concise, factual summary of the most significant open-source AI coding agent news from April 2026:
 
 ---
 
-### 1. 🦀 Claw Code — New Open-Source Agent Framework Explodes on GitHub
-**Launched: April 2, 2026**
+## 🤖 Open Source AI Coding Agent Updates — April 2026
 
-**Claw Code**, an open-source AI coding agent framework built in Python and Rust, publicly launched as an independent foundation for AI-assisted software development.
+### 1. 🦀 Claw Code — Major New Open-Source Framework (April 2, 2026)
 
 **What changed:**
-It addresses a widely felt gap: while LLMs have grown rapidly more capable, the "agent harness" — the control layer connecting models to tools, file systems, and task workflows — has remained largely proprietary and opaque. Built as a clean-room rewrite without copying proprietary source code or using third-party model weights, it gives developers a fully open, inspectable, and extensible harness architecture.
+**Claw Code**, an open-source AI coding agent framework built in Python and Rust, publicly launched on April 2, 2026, as an independent foundation for AI-assisted software development.
 
-**Why it matters:**
-Within days of going public, the repository surpassed **72,000 GitHub stars and 72,600 forks** — an extraordinary signal of community demand for transparent, auditable AI coding infrastructure.
+The project addresses a gap that has become increasingly visible: while LLMs have grown more capable, the "agent harness" — the control layer connecting them to tools, file systems, and task workflows — has remained largely proprietary and opaque. Claw Code is designed to change that, built as a clean-room rewrite without copying proprietary source code or using third-party model weights.
+
+**Traction:** Within days of going public, the repository surpassed **72,000 GitHub stars and 72,600 forks**.
+
+**Why it matters:** It gives developers a fully open, auditable, and extensible agent harness they can study, fork, and build on — directly challenging proprietary alternatives like Claude Code.
 
 🔗 **Source:** https://www.24-7pressrelease.com/press-release/533389/claw-code-launches-open-source-ai-coding-agent-framework-with-72000-github-stars-in-first-days
 
 ---
 
-### 2. 🌐 Broader Open-Weight Model Ecosystem — April 2026
-**Ongoing as of early April 2026**
+### 2. 🙌 OpenHands — Cloud Coding Agent Platform
 
 **What changed:**
-Six major labs now ship competitive open-weight models: **Google (Gemma 4), Alibaba (Qwen 3.6 Plus), Meta (Llama 4), Mistral (Small 4), OpenAI (gpt-oss-120b), and Zhipu AI (GLM-5)** — all competing with or matching proprietary alternatives on key benchmarks. The ecosystem has diversified well beyond the Llama-dominated landscape of 2024.
+**OpenHands** raised **$18.8M** to build cloud coding agents that claim to solve 87% of bug tickets the same day, offering autonomous problem solving that ships to production — not just a chat interface.
 
-**Notable release — Gemma 4 (April 2, 2026):**
-Google DeepMind released **Gemma 4** on April 2, 2026 — the first Gemma generation under an OSI-approved **Apache 2.0 license**, a strategic shift from Google's previous custom terms that created legal uncertainty for enterprise adopters.
+The OpenHands SDK is described as one of the most complete SDKs for agent harness and agentic AI development, including support for "vibecoding" with open-source models.
 
-**Why it matters:**
-Licensing has split into permissive and restricted camps — Gemma 4, gpt-oss-120b, and GLM-5 use Apache 2.0 or MIT licenses with no restrictions, while Llama 4 uses Meta's community license with a 700M monthly active user threshold. This matters greatly for teams building commercial products on top of these models.
+**Why it matters:** It's a production-grade, open platform already being used by developers for backend-heavy autonomous coding, complementing IDE tools like Windsurf.
 
-🔗 **Source:** https://www.digitalapplied.com/blog/open-source-ai-landscape-april-2026-gemma-qwen-llama
+🔗 **Source:** https://openhands.dev/
 
 ---
 
-### ⚡ TL;DR
+### 3. 📰 Broader Ecosystem Context (via LLM News Today)
 
-| What | When | Why It Matters |
-|---|---|---|
-| Claw Code open-source agent framework launch | Apr 2, 2026 | 72K+ GitHub stars; open alternative to proprietary agent harnesses |
-| Gemma 4 released under Apache 2.0 | Apr 2, 2026 | First Gemma with a fully permissive license; enterprise-friendly |
-| Multi-lab open-weight ecosystem | Ongoing | 6 major labs now offer competitive open-weight models |
+Anthropic announced that Claude subscriptions will **no longer cover usage on third-party tools like OpenClaw starting April 4**, to better manage capacity — a notable policy shift affecting open-source agent integrations.
 
-## [game] indie game developer community funding or platform news April 2026
+Meanwhile, Mark Zuckerberg reportedly returned to writing code after a two-decade hiatus and is "a heavy user of Claude Code CLI," reflecting how mainstream AI coding agents have become even at the executive level.
 
-Purpose: Keep game domain radar alive during Julien's quiet period.
-
-Here's a concise, fact-based summary of the most recent and relevant updates:
-
----
-
-## 🎮 Indie Game Developer Community: Funding & Platform News (April 2026)
-
----
-
-### 1. 🆕 **Indie Pass Launches — April 13, 2026**
-**What changed:** indie.io announced **Indie Pass**, a **$6.99/month subscription platform** exclusively for indie games, launching globally on PC via indiepass.com on **April 13, 2026**. It offers a low-cost, wide-variety model designed to help independent developers reach new audiences without exclusivity requirements.
-
-**Why it matters:** Discoverability is one of the biggest challenges for indie developers, and Indie Pass aims to be a dedicated destination where developers can build "sustainable, ongoing monetization without exclusivity or heavy lift," backed by a connected audience of more than **10 million monthly users** across indie.io's publishing network.
-
-🔗 **Source:** https://worthplaying.com/article/2026/4/2/patch/149515-indieio-announces-indie-pass-a-699month-subscription-platform-exclusive-to-indie-games/
-
----
-
-### 2. 🇯🇵 **Japan's Government Opens Grants Up to ~$62,000 for Indie Devs**
-**What changed:** Japan's **Ministry of Economy, Trade and Industry (METI)** launched **"IP360"** (nicknamed "sanrokumaru"), a program providing funding for new IPs — and critically, **indie developers are now eligible for grants of up to 10 million yen (~$62,000 USD)**.
-
-**Why it matters:** The grant covers a subsidy rate of up to **50% of eligible costs** and can be used across multiple stages of development, including pre-production, production, and post-production — a rare, government-backed lifeline for small studios. (Reported ~3 weeks ago.)
-
-🔗 **Source:** https://automaton-media.com/en/news/japanese-government-makes-indie-game-developers-eligible-for-grants-up-to-60000-usd/
-
----
-
-### 3. 💰 **Blue Ocean / Krafton's $30M Community-First Indie Fund**
-**What changed:** **Blue Ocean Games**, backed by Krafton, is operating a **$30 million fund** with a model focused on **community validation** rather than proven track records, targeting approximately **100 indie studios over three years**.
-
-**Why it matters:** This fund signals a shift in investor thinking — prioritizing trust, agility, and authenticity over established IPs, aiming to bridge the gap between investor caution and developer needs.
-
-🔗 **Source:** https://www.growthhq.io/our-thinking/indie-game-funding-challenges-and-breakthrough-strategies-in-2026-navigating-the-14-billion-opportunity
-
----
-
-### 4. 🏷️ **Kinetic Games (Phasmophobia) Launches Indie Publishing Label** *(Jan 2026)*
-**What changed:** **Kinetic Games** launched **Kinetic Publishing**, a new publishing label providing indie studios with **financial, legal, and marketing support**, with the aim of championing innovation and offering tailored support to a small slate of partner studios.
-
-**Why it matters:** It's a notable developer-turned-publisher move, adding another community-driven funding pathway for small teams.
-
-🔗 **Source:** https://www.gamedeveloper.com/business/phasmophobia-developer-kinetic-games-launches-indie-publishing-label
+🔗 **Source:** https://llm-stats.com/ai-news
 
 ---
 
 ### TL;DR
-The biggest April 2026 story is the **launch of Indie Pass** (a dedicated indie subscription service). Alongside it, Japan's government just opened real grant money to solo and small-team devs, and community-first investment funds are reshaping how indie studios get funded without giving up control.
+The biggest development is **Claw Code's April 2, 2026 launch** — an open, auditable coding agent framework that went viral instantly (72K+ GitHub stars). Combined with OpenHands' funding and growing SDK ecosystem, open-source alternatives to proprietary AI coding agents are rapidly maturing and gaining serious traction.
 
-## [geo_eu] Spain Asturias Galicia remote worker visa digital nomad policy change April 2026
+## [game] indie game cooperative community release itch.io April 2026
 
-Purpose: Track regulatory signals for Julien's Northern Spain destination horizon with Lucia's May job exit approaching.
+Purpose: Maintain radar on grassroot-adjacent game releases that could signal crossover community dynamics.
 
-Based on my research, I can now provide a well-sourced summary. Note importantly: **no search results found a specific "April 2026" policy change uniquely tied to Asturias or Galicia** — but there are several highly relevant, recent, concrete updates that directly affect remote workers and digital nomads targeting those regions. Here's the full picture:
-
----
-
-## 🇪🇸 Spain: Remote Worker / Digital Nomad Policy Updates (2025–2026)
-
-### 1. 📈 Income Threshold Raised (Effective 1 January 2026) — *National*
-
-Spain's Ministry of Inclusion, Social Security and Migration has updated the financial requirement for the Digital Nomad Visa (DNV): effective 1 January 2026, applicants must now prove a monthly income of at least **€2,849** — equivalent to 225% of Spain's 2026 minimum wage (SMI).
-
-The new SMI rate was approved on January 29, 2026, applying retroactively from January 1, 2026, with 12 annual payments amounting to €1,424.50/month. Dependants require additional proof: 75% of SMI (€949) per adult and 25% (€317) per minor.
-
-**Why it matters:** Anyone applying in 2026 or renewing faces a higher income bar than in 2025. This affects remote workers targeting *any* Spanish region, including Asturias and Galicia.
-
-**Source:** https://www.visahq.com/news/2026-03-23/es/spain-updates-digital-nomad-visa-income-threshold-to-2849-per-month/
+Here's a concise, factual summary of what's happening around **indie game cooperative community activity on itch.io in April 2026**:
 
 ---
 
-### 2. 🌐 EU Directives Incoming — Affects All Remote Workers in Spain
+## 🎮 Indie Game Cooperative Community Activity on itch.io — April 2026
 
-Spain must transpose the **EU Pay Transparency Directive** by June 2026 and the **Platform Work Directive** by December 2026. A mandatory digital time-tracking law is also expected.
+### What Changed
 
-Spain has also introduced a new provision allowing employees **up to four paid days off** when severe weather prevents travel to work, with remote working as a possible employer alternative.
+1. **Beginner's Jam April 2026 (itch.io)**
+The "Indie Game Dev Beginners" community hosted a week-long cooperative game jam in April 2026, aimed at gathering beginner developers together to make games and encourage each other through learning. Games are rated by the community on criteria including creativity, theme adherence, and visuals/sound.
 
-**Why it matters:** These directives will reshape employment rights and documentation requirements for remote workers and their employers across all of Spain, including the north-western regions.
+2. **Just for Kicks Jam! (April 2026)**
+Submissions for this community game jam were open from **April 1 to April 8, 2026**, with 38 participants joined and 3 entries submitted.
 
-**Source:** https://www.remoteworkeurope.eu/insights/spain-digital-nomad-visa-2026
+3. **Unlikely Collaborators™ Game Jam**
+A collaborative game jam ran from **March 21 to April 7, 2026**, requiring participants to register their games and designate a team lead; teams of up to 6 members were permitted.
 
----
+4. **April 2026 Indie Release Highlights (itch.io → Steam)**
+*Bone Fire Effigy*, originally released on itch.io in June 2025, moved to Steam with an expanded estimated playtime (now 30–60 minutes), releasing on **April 6, 2026** for PC.
 
-### 3. 🗺️ Galicia: Subsidies Exist, But No "Digital Nomad Grant"
-
-Galicia does **not** offer a universal "digital nomad grant," nor does it pay people simply for relocating with a laptop. What it does have is a set of public subsidies embedded in employment, equality, and digitalisation policy, administered by the Xunta de Galicia. In practical terms, this can translate into financial support of **up to €2,000 per teleworking person**, with caps per organisation, when telework agreements are properly documented.
-
-Regional programs like **Fixar**, launched by the Xunta, fund micro-enterprises and entrepreneurship projects aimed at consolidating employment in rural areas, emphasising permanence over novelty.
-
-**Why it matters:** If you're a remote worker *legally established* in Galicia (e.g., registered as autónomo), you may access real cost-sharing subsidies — but there's no simple "move here, get paid" program.
-
-**Source:** https://www.remoteworkeurope.eu/insights/galicia-remote-incentives
+5. **Curated Couch Co-Op List (Updated 2026)**
+The site *Couch Co-Op Favorites* maintains a handpicked, regularly updated list of cooperative indie games available on itch.io for Windows and Linux, with the goal of supporting indie developers and helping players find quality co-op games.
 
 ---
 
-### 4. 🏔️ Asturias: Tax Deductions for Rural/R&D Relocation
+### Why It Matters
 
-In Asturias, if you become newly self-employed in an area **at risk of depopulation**, you can apply for a **€1,000 deduction**. There's also a **15% deduction (up to €2,000)** for those moving for a highly qualified job in research and development.
-
-**Why it matters:** These are not grants but tax incentives, targeting self-employed remote workers and skilled professionals specifically choosing rural Asturian locations.
-
-**Source:** https://www.idealista.com/en/news/property-for-sale-in-spain/2025/09/02/89159-abandoned-villages-in-spain-grants-tax-reductions-pay-to-move-and-more
+The itch.io community continues to be a **primary launchpad and incubator** for cooperative/community-driven indie games. April 2026 saw multiple simultaneous game jams running on the platform, reflecting its role as an accessible, low-barrier venue for collaborative indie development — especially for beginners.
 
 ---
 
-### 5. 🚫 Golden Visa Eliminated (2025)
+### Key Source URLs
 
-Spain's investor visa programme (the Golden Visa) was **closed to new applicants in 2025** following housing market reforms. The digital nomad visa is now the **primary route** for non-EU remote workers.
+| Source | URL |
+|---|---|
+| Beginner's Jam April 2026 | https://itch.io/jam/beginners-jam-april-2026 |
+| Just for Kicks Jam | https://itch.io/jam/just-for-kicks-april |
+| Unlikely Collaborators Jam | https://itch.io/jam/ucgamejam2026 |
+| April 2026 Indie Wrap-Up | https://monstervine.com/2026/04/april-2026-indie-game-wrap-up/ |
+| Best Co-Op on itch.io 2026 | https://couchcoopfavorites.com/itch |
 
 ---
 
-### ⚠️ Important Caveat
-No search results confirmed a **specific April 2026 policy change** uniquely tied to Asturias or Galicia. It's possible that such an announcement is very recent, hyperlocal, or has not yet been widely reported. If you have a specific source or program name in mind, I'd recommend checking directly with the **Xunta de Galicia** (xunta.gal) or the **Gobierno del Principado de Asturias** (asturias.es) for the latest official publications.
+> ⚠️ **Note:** No single major "cooperative community release" event was found specifically matching that exact framing. The results above represent the closest verified, factual matches. If you have a specific game, studio, or event name in mind, I can search more precisely.
+
+## [geo_eu] EU economic outlook energy prices ECB April 2026
+
+Purpose: Monitor post-Hormuz energy and economic signals that affect Brussels cost context and Spain relocation calculus.
+
+Here is a concise, fact-based summary of the latest developments:
+
+---
+
+## 🇪🇺 EU Economic Outlook, Energy Prices & ECB — April 2026 Update
+
+### ⚡ What Changed
+
+**A Middle East war has triggered an energy price shock**, fundamentally shifting the EU's economic and inflation outlook since early March 2026.
+
+- A war in the Middle East has led to spikes in oil and gas prices, which will push up inflation.
+- ECB staff projections (cut-off: 11 March 2026) suggest quarterly average oil and gas prices will peak at around **USD 90/barrel** and **€50/MWh** respectively in Q2 2026.
+- In the ECB's baseline, headline inflation is now seen to average **2.6% in 2026**, 2.0% in 2027, and 2.1% in 2028.
+- Vanguard has revised its 2026 headline inflation forecast upward to **2.5%**, while lifting core inflation more modestly to **2.1%**, noting the euro area is particularly sensitive to energy shocks given its reliance on energy imports.
+- The OECD cut its eurozone growth forecast. Its report assumes energy disruptions will ease starting in mid-2026, but warns of significant uncertainty around the war's duration.
+
+---
+
+### 📉 Growth Impact
+
+- The war implies a **weaker growth outlook** for this year as higher inflation erodes consumers' purchasing power and uncertainty dents domestic and foreign demand. Growth is expected to pick up again in 2027 and 2028.
+- A more benign scenario (using data from early March, before the war fully escalated) showed oil peaking at **USD 79/barrel** and gas at **€48/MWh** — under that scenario, inflation would be 0.3 percentage points lower in 2026 and growth 0.1 pp higher each year.
+
+---
+
+### 🏦 ECB Stance
+
+- The ECB warned that the increase in energy prices caused by the war will drive inflation above 2% in the near term, and that if persistent, higher energy prices may lead to broader increases through indirect and second-round effects.
+- Vanguard notes the ECB's policy stance is "on a knife edge and firmly data dependent," with the expectation that rates will remain **on hold** as the Governing Council attempts to look through an energy-driven inflation shock.
+- ECB chief Christine Lagarde stated the eurozone is far better placed to absorb the shock than it was when Russia invaded Ukraine.
+- Assuming energy prices come back down in line with market expectations as of 11 March, inflation should return to target in **2027–28**, but the outlook is surrounded by **high uncertainty**.
+
+---
+
+### ⚠️ Why It Matters
+
+The Middle East conflict has introduced the biggest macro shock to the EU since the 2022 Russia-Ukraine crisis. The ECB is caught between an inflation overshoot and slowing growth — a classic stagflation dilemma — with rate decisions now entirely dependent on how long energy prices remain elevated.
+
+---
+
+### 🔗 Key Sources
+| Source | URL | Date |
+|---|---|---|
+| ECB March 2026 Staff Projections | https://www.ecb.europa.eu/press/projections/html/ecb.projections202603_ecbstaff~ebe291cd3d.en.html | March 2026 |
+| ECB Press Conference (Mar 19, 2026) | https://www.ecb.europa.eu/press/press_conference/monetary-policy-statement/2026/html/ecb.is260319~93b1cbad97.en.html | 19 Mar 2026 |
+| OECD via Euronews | https://www.euronews.com/business/2026/03/26/oecd-cuts-eurozone-growth-forecast-as-energy-prices-surge | 26 Mar 2026 |
+| Vanguard Euro Area Outlook | https://corporate.vanguard.com/content/corporatesite/us/en/corp/vemo/vemo-europe.html | Recent |
