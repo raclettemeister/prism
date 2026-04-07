@@ -1,300 +1,296 @@
-<!-- PRISM Web Intelligence — 2026-04-06 -->
-# Web Intelligence — 2026-04-06
+<!-- PRISM Web Intelligence — 2026-04-07 -->
+# Web Intelligence — 2026-04-07
 *Scheduled theme: Grassroot Hopper & Cooperative Tech*
 
-## [grassroot] cooperative tech platform launch OR community software funding announcement April 2026
+## [grassroot] cooperative technology grants Belgium Brussels 2026 new funding announcement
 
-Purpose: Catch any new cooperative/community tech tools or orgs that emerged in last 48h relevant to Grassroot Hoppers positioning
+Purpose: Scan for fresh grant or funding signals directly relevant to Grassroot Hoppers and Brussels-based cooperative tech projects.
 
-Here is a concise, factual summary based on the search results:
-
----
-
-## 🔍 Cooperative Tech Platform & Community Software: Recent Updates (April 2026)
+Here is a concise, fact-based summary of the most relevant recent updates on cooperative technology grants in Belgium/Brussels for 2026:
 
 ---
 
-### 1. Platform Cooperativism Consortium (PCC) — 2026 Activities Underway
-
-**What changed:**
-The PCC is set to launch a special journal issue, *Solidarity Tech*, for the *Journal of Co-operative Organization and Management* in 2026, examining the intersection of cooperative principles and digital technologies.
-
-PCC affiliates contributed to public and policy-relevant outlets throughout 2025, including a widely circulated Harvard Business Review article on cooperative approaches to AI. Their global course *AI Without Bosses* enrolled close to 200 participants from 33 countries, examining cooperative ownership of AI systems, data governance, and worker-led automation.
-
-**Why it matters:** This represents a growing organized effort to build and legitimize stakeholder-owned alternatives to VC-funded platforms.
-
-📎 **Source:** [platform.coop](https://platform.coop/blog/news-from-the-platform-cooperativism-consortium-2025/)
+## 🇧🇪 Cooperative Technology Grants – Belgium/Brussels 2026: Key Updates
 
 ---
 
-### 2. ICDE Fellowship Program — Open Call for 2026–2027
+### 1. 🔄 KMO-Portefeuille (VLAIO): Major Rule Change — *February 1, 2026*
+**What changed:** Since February 1, 2026, the advisory component of KMO-portefeuille is **limited to cybersecurity only**. Digitalization advisory is no longer supported. Training services (including for digitalization and AI topics) remain available for all themes.
 
-**What changed:**
-A new open call for the ICDE Fellowship Program (2026–2027) invites applicants to present work at the PCC Conference in Bangkok (Nov 12–15, 2026), engaging with cooperators, workers, technologists, and policymakers, and to contribute at least one public-facing output with emphasis on practical relevance for cooperatives.
+**Why it matters:** Companies that previously used KMO-portefeuille to fund digital transformation advice can no longer do so. Only cybersecurity advisory qualifies. AI and tech projects must now be framed as R&D innovation to access VLAIO grants. Collaboration boosts your subsidy rate — if you can partner with another SME or a research institution, your subsidy percentage goes up significantly.
 
-**Why it matters:** This pipeline develops practitioners and researchers building cooperative digital infrastructure, with a focus on tools usable by real communities.
-
-📎 **Source:** [platform.coop/blog/open-call-for-applications-2026-2027](https://platform.coop/blog/open-call-for-applications-2026-2027/)
+📌 **Source:** https://flowful.ai/blog/fund-ai-project-belgium/
 
 ---
 
-### ⚠️ Caveat
+### 2. 💊 €81M Cooperative Tech Partnership – Wallonia (ATMP)
+**What changed:** Significant funding has been allocated to specific strategic areas, such as the **€81 million "ATMP-Partenariat d'Innovation Technologique"** for Advanced Therapy Medicinal Products, fostering collaboration between academia and industry.
 
-No major *new* cooperative tech platform launches or community software funding announcements dated specifically in **April 2026** surfaced in search results. The most relevant activity centers on the PCC's ongoing 2026 programs. If you have a specific organization or initiative in mind, I can run a more targeted search.
+**Why it matters:** This is one of the largest announced cooperative technology partnerships in Belgium, directly targeting academia–industry collaboration — a key eligibility model for future cooperative grants.
 
-## [grassroot] Brussels Belgium grassroots movement civic tech grant announcement April 2026
-
-Purpose: Surface Brussels-local funding or movement signals that could open doors for Grassroot Hoppers or aligned community projects
-
-Based on the search results, here is what I found — and an important transparency note upfront:
+📌 **Source:** https://www.abgi-uk.com/innovation-funding-incentives-belgium/
 
 ---
 
-## ⚠️ Transparency Note
+### 3. 🏙️ Brussels Innovation Fund — Ongoing Digital Co-Funding
+**What changed/confirmed:** The **Brussels-Capital Region Innovation Fund** supports innovative companies that adopt new technologies to improve their operations or offer new services. The fund **covers up to 50% of eligible project costs**, facilitating investment in digital tools such as AI systems, customised mobile applications, or cloud solutions.
 
-There is **no specific, verifiable announcement** in the search results about a distinct "Brussels grassroots movement civic tech grant" announced in **April 2026** as a singular news event. The query may be too narrowly framed or refer to something not yet widely indexed. Here is what **is confirmed** from recent sources:
+**Why it matters:** This remains a key vehicle for Brussels-based cooperative tech projects heading into 2026, particularly for SMEs co-developing digital solutions.
 
----
-
-## What's Actually Out There (April 2026)
-
-### 1. 🏙️ Creative Bruxsels Fund — Community Project Grants (Most Relevant)
-*Source: fundsforngos.org, published February 4, 2026*
-
-Each year, the Creative Bruxsels Fund launches a call for projects with a total funding envelope of **€10,000**. Selected projects receive financial support to develop and implement creative ideas within the Brussels-Capital Region, with projects expected to start in 2026.
-
-All proposed projects must take place in Brussels. Applications must be submitted in French, Dutch, or English, and proposals are evaluated by a jury that prioritises originality, creativity, and innovation.
-
-The fund rewards originality, playfulness, and replicable ideas that benefit the general interest and reflect the unique spirit of the Brussels-Capital Region.
-
-🔗 **Source:** https://www2.fundsforngos.org/community-development/creative-bruxsels-fund-call-for-innovative-community-projects-belgium/
+📌 **Source:** https://www.iterates.be/en/belgian-government-grants-for-digital-innovation/
 
 ---
 
-### 2. 🌱 Youth Climate Grassroots Micro-Grants (Belgium-eligible)
-*Source: fundsforngos.org*
+### 4. 🤝 Syndicate One €22M Fund + Ghent Civic Tech — *March 2026*
+**What changed:** Notable developments include **Syndicate One raising €22 million** to fund tech startups in AI, robotics, and software, and **Ghent joining Bloomberg Philanthropies' Mayors Challenge**, fostering civic tech collaboration.
 
-With a deadline of **April 1, 2026**, the Youth Climate Changemakers Fund offers micro-grants of up to **€1,000** to informal youth groups across the European Union to strengthen grassroots climate activism.
+**Why it matters:** Signals growing private-public cooperative funding momentum in Belgium's tech ecosystem for 2026.
 
-🔗 **Source:** https://www2.fundsforngos.org/tag/belgium/
-
----
-
-### 3. 🖥️ Civic Tech in Belgium (Context)
-*Source: blog.mean.ceo, March 2026*
-
-Notable March 2026 developments include **Ghent joining Bloomberg Philanthropies' Mayors Challenge**, fostering civic tech collaboration across Belgium.
-
-🔗 **Source:** https://blog.mean.ceo/startup-grants-belgium-news-march-2026/
+📌 **Source:** https://blog.mean.ceo/startup-grants-belgium-news-march-2026/
 
 ---
 
-## Why It Matters
+### 5. 🔬 SENSE Foundation Brussels — Open Applications, 2026
+**What changed:** The **SENSE Foundation Brussels** is inviting applications for its 2026 grants, offering financial support to non-profit organisations and students in Belgium and abroad. **Deadlines: 30 April 2026** and **30 September 2026** (5 PM CEST).
 
-Brussels remains an active hub for community-driven and civic innovation funding, with multiple small-to-mid-scale grant mechanisms active in early 2026. However, **no single major grassroots civic tech grant announcement specific to Brussels in April 2026** was found in current indexed sources. If you have a specific organization or program name in mind, I'd recommend searching more directly or checking the **King Baudouin Foundation** or **Civitates** websites directly, as both are active funders in this space.
-
-## [grassroot] European cooperative digital infrastructure funding program 2026 announcement
-
-Purpose: Identify new EU-level grants or programs Julien could track as potential funding vectors for cooperative tech work
-
-Here is a concise, fact-based summary of recent updates on European cooperative digital infrastructure funding:
-
----
-
-## 🇪🇺 European Digital Infrastructure Funding: Key 2026 Updates
-
----
-
-### 1. 🚀 EURO-3C Project — €75M Federated Cloud Announced *(March 2026)*
-
-**What changed:**
-At Mobile World Congress 2026, the European Commission unveiled **EURO-3C**, a **€75 million project** to develop Europe's first large-scale federated Telco-Edge-Cloud infrastructure, supported by Horizon Europe.
-
-**Why it matters:**
-This project will showcase Europe's ability to deliver cutting-edge digital services entirely through its own connectivity infrastructure, **reducing reliance on third-country (i.e., U.S.) providers**. It is directly aligned with the goals of the proposed **Digital Networks Act** and opens opportunities to strengthen Europe's single telecom market and increase technological sovereignty. It will also drive European innovation in **6G, AI, cybersecurity, and telecoms**.
-
-📌 **Source:** [European Commission — EURO-3C Announcement](https://digital-strategy.ec.europa.eu/en/news/commission-announces-eu75-million-euro-3c-project-build-federated-telco-edge-cloud-infrastructure) *(March 3, 2026)*
-
----
-
-### 2. 🏛️ Digital Commons EDIC — Launched in The Hague *(Recent)*
-
-**What changed:**
-The **Digital Commons European Digital Infrastructure Consortium (EDIC)** has been officially launched in The Hague, with the Commission welcoming the initiative as having strong potential to **strengthen European digital sovereignty**.
-
-📌 **Source:** [How to get funding under the Digital Europe programme](https://digital-strategy.ec.europa.eu/en/activities/get-funding-digital)
-
----
-
-### 3. 📋 Digital Europe Programme (DIGITAL) — Active 2026 Calls
-
-**What changed:**
-Multiple open calls for proposals are running under the **Digital Europe Programme**, including consolidation of the network of **European Digital Innovation Hubs (EDIHs with reinforced AI focus)** and a **Data Space for Manufacturing** (both open Nov 4, 2025 – Mar 3, 2026).
-
-**Why it matters:**
-From October 2025 until the end of March 2026, funding under the Digital Europe Programme is available to a broad range of entities, including **SMEs, technology providers, research institutions, and public authorities**.
-
-📌 **Source:** [Digital Europe Programme Overview](https://digital-strategy.ec.europa.eu/en/activities/digital-programme)
+📌 **Source:** https://opportunitiesforyouth.org/2026/02/23/sense-foundation-brussels-grants-2026-supporting-science-health-and-sustainable-development/
 
 ---
 
 ### ⚡ Bottom Line
+The **biggest concrete change** is the **February 1, 2026 KMO-portefeuille restriction**, narrowing advisory support to cybersecurity only. For cooperative tech grants broadly, Belgium continues to reward **cross-sector and cross-border collaboration** with higher subsidy rates, and the Brussels Innovation Fund and ATMP partnership remain the flagship mechanisms for 2026.
 
-The most significant *new* announcement is the **EURO-3C €75M cooperative cloud infrastructure project** (March 2026), which represents Europe's most concrete step yet toward cloud and telecom independence from U.S. hyperscalers — framed as a direct response to the ~$600B being invested by American tech giants in cloud/AI infrastructure globally.
+## [grassroot] community-owned platform cooperative launch Europe April 2026
 
-## [dev] Claude Code Codex agentic harness update benchmark April 2026
+Purpose: Detect newly announced aligned actors or platform co-ops in Europe that could be partners or validators for Grassroot Hoppers positioning.
 
-Purpose: Maintain dev radar continuity from yesterday's briefing on agent harness layer developments
-
-Here is a concise, fact-based summary of recent developments around **Claude Code, Codex, agentic harnesses, and benchmarks** as of April 2026:
-
----
-
-## 🔍 Summary: Claude Code / Codex Agentic Harness & Benchmark Updates (April 2026)
+Based on the search results, I want to be transparent with you: **there is no single concrete news item specifically about a "community-owned platform cooperative launching in Europe in April 2026."** The search did not return a specific event matching that exact description. However, here is a concise, factual summary of the most relevant and recent developments in the space of community-owned / cooperative platforms in Europe:
 
 ---
 
-### 1. 🔓 Claude Code Source Leak — March 31, 2026 (Major Event)
+## 🔍 What the Search Found
 
-On **March 31, 2026**, a debug artifact (a source map file) was accidentally bundled into **version 2.1.88** of `@anthropic-ai/claude-code` on npm. Within hours, roughly **512,000 lines of TypeScript** were mirrored across GitHub and analyzed by thousands of developers. Anthropic confirmed it was a packaging error, with no customer data exposed.
+### 1. Open Research Europe (ORE) — New Community-Governed Platform Phase (Most Concrete Match)
+**~2 weeks ago | Source: CERN**
 
-The key takeaway for development teams: **the quality of the agentic harness matters as much as the quality of the underlying model** — look beyond benchmark scores to orchestration architecture, context management, error handling, and multi-step reasoning.
+CERN has been selected to host a new phase of **Open Research Europe (ORE)**, an initiative supported by the European Commission and a new funding consortium of European national funding agencies and research organisations. It is a **community-led alternative** to traditional academic publishing.
 
----
+The current platform is operational until fall 2026, and when the new ORE platform is launched later this year, authorship eligibility will be expanded to include researchers affiliated with institutions in participating countries.
 
-### 2. 📊 Benchmarks: Harness Engineering Outweighs Raw Model Scores
+Publishing will remain completely free for both European Commission-funded researchers and authors from participating countries, aiming to promote equity, diversity, and transparency in scholarly communication.
 
-**Claude Code scores 80.9% on SWE-bench**, higher than the raw Claude Opus 4.6 model — the gap is Anthropic's agent engineering: tool use patterns, retry logic, and context management.
-
-The **SWE-Bench Pro** results prove this dramatically: the same model scores **23%** with a basic SWE-Agent scaffold, but **45%+** with a 250-turn optimized scaffold — a **22-point swing** that dwarfs any gap between frontier models. GPT-5.4 scores 57.7% on SWE-bench Pro partly because it was tested with its own Codex scaffold.
-
----
-
-### 3. 🔌 OpenAI Ships Codex Plugin *Inside* Claude Code — March 30, 2026
-
-On **March 30, 2026**, OpenAI open-sourced **`codex-plugin-cc`**: an official plugin that lets you invoke Codex directly from within Claude Code. This confirms the moat is the harness, not the model — OpenAI would rather have Codex running inside Claude Code than have users not use Codex at all.
+**Why it matters:** This is Europe's flagship community-governed open-access publishing infrastructure — moving to a new, more independent, CERN-hosted model in 2026.
+**🔗 Source:** https://home.cern/news/news/cern/cern-host-europes-flagship-open-access-publishing-platform
 
 ---
 
-### 4. 🛠️ "Everything Claude Code" (ECC) Harness — Major Update (April 2026)
+### 2. Cooperatives Europe — 2026 Activities & 20th Anniversary
+**Feb 2026 | Source: Cooperatives Europe**
 
-The **ECC** project recently relaunched as an explicit **"agent harness performance system"** with a major update including: a hook reliability overhaul (SessionStart fallbacks, Stop-phase session summaries), new **hook runtime controls** (`ECC_HOOK_PROFILE=minimal|standard|strict`), and new harness commands like `/harness-audit`, `/loop-start`, `/quality-gate`, and `/model-route`.
+In October 2026, Cooperatives Europe will mark a major milestone — **20 years** of operation. Building on the momentum of the International Year of Cooperatives 2025, the anniversary aims to celebrate cooperative achievements across the continent.
 
-ECC has accumulated **82,000+ GitHub stars and 10,700 forks** since going open source in January 2026, making it the most-starred Claude Code configuration repository in existence.
+Cooperatives Europe also announced a new practical guide, *"From Aid to Ownership: The Cooperative Approach to International Development,"* to be released in early 2026.
 
----
-
-### 5. 🆚 Codex vs. Claude Code — Updated April 1, 2026
-
-Builder.io updated their **Codex vs. Claude Code** comparison on **April 1, 2026**, noting the state of both tools has shifted significantly since September 2025.
-
-Per the Leanware 2026 comparison: **"Codex leads for production-oriented work, while Claude Code shines in reasoning-heavy, interactive tasks."** Pick Claude Code for context depth and design fidelity.
+**🔗 Source:** https://coopseurope.coop/
 
 ---
 
-### 📌 Most Important Sources
+### 3. Platform Cooperativism Consortium (PCC) — 2026 Research & Fellowship Push
+**Dec 2025 | Source: Platform.coop**
 
-| Source | URL |
-|---|---|
-| WaveSpeedAI — Claude Code Leak Architecture | https://wavespeed.ai/blog/posts/claude-code-agent-harness-architecture/ |
-| Builder.io — Codex vs Claude Code (Updated Apr 1, 2026) | https://www.builder.io/blog/codex-vs-claude-code |
-| MorphLLM — Best AI for Coding Benchmarks 2026 | https://www.morphllm.com/best-ai-model-for-coding |
-| GitHub — Everything Claude Code (ECC) | https://github.com/affaan-m/everything-claude-code |
-| InfoSec Today — Harness Engineering SF April 2026 | https://www.infosectoday.io/everything-i-learned-about-harness-engineering-and-ai-factories-in-san-francisco-april-2026/ |
+The PCC continued work on a forthcoming special journal issue, *Solidarity Tech*, for the *Journal of Co-operative Organization and Management*, examining the intersection of cooperative principles and digital technologies — set to launch in **2026**.
 
----
+The PCC also opened a call for applications for its **2026–2027 ICDE Fellowship Program**, welcoming research grounded in political economy, labor analysis, and worker organization in digital economies.
 
-**Bottom line:** The dominant story right now is that **harness/scaffold engineering — not raw model capability — is the key differentiator** in agentic coding performance. The accidental Claude Code source leak confirmed this by revealing Anthropic's production orchestration patterns, and benchmark data backs it up with a 22+ point swing based purely on scaffold quality.
-
-## [game] indie game developer cooperative publishing tool release April 2026
-
-Purpose: Keep game domain radar active for any grassroot-adjacent indie dev movement signals
-
-Here is a concise, factual summary of the most relevant recent developments in the indie game developer publishing space, sourced from verified results:
+**🔗 Source:** https://platform.coop/blog/news-from-the-platform-cooperativism-consortium-2025/
 
 ---
 
-## 🎮 Indie Game Publishing: Recent Updates (Early 2026)
+## ⚠️ Important Caveat
+No search result confirmed a specific **April 2026** launch date for a named community-owned platform cooperative in Europe. If you have a specific organization or initiative in mind, sharing its name would help me search more precisely.
 
-There is **no single "cooperative publishing tool" release** specifically tied to April 2026 in the search results. However, two significant real developments are directly on point:
+## [grassroot] Belgium civic tech social enterprise movement news last 48 hours
 
----
+Purpose: Catch any Brussels or Belgian grassroot movement signals that could affect Grassroot Hoppers strategy or reveal aligned people.
 
-### 1. Stardock Entertainment Expands into Indie Publishing (March 2026)
-
-**What changed:**
-Stardock Entertainment announced they are expanding their publishing business for indie game developers. They highlighted the brutal competition indie devs face, noting that Steam alone saw over 20,000 releases in a year, making it extremely difficult for quality games to get noticed.
-
-Stardock CEO Brad Wardell stated: "What sets Stardock apart from other publishers is that we're a developer too. That means we can lend developer and art support to games before and after release."
-
-Stardock will only sign three games per year to ensure each gets the attention it deserves.
-
-**Why it matters:** A veteran developer-turned-publisher entering indie publishing with hands-on developer support is a meaningful shift, addressing the well-known problem of great games launching in silence.
-
-📌 **Source:** [GamingOnLinux – March 2026](https://www.gamingonlinux.com/2026/03/stardock-announce-an-expansion-into-indie-game-publishing/)
+Here is a concise, source-backed briefing on the most recent and relevant developments in the **Belgium civic tech & social enterprise** space. Note that no major breaking news from the past 48 hours specifically was found — the most recent verifiable updates are from early 2026 and mid-2025.
 
 ---
 
-### 2. Kinetic Games (Phasmophobia) Launches Indie Publishing Label (January 2026)
-
-**What changed:**
-Phasmophobia developer Kinetic Games launched a new publishing label — **Kinetic Publishing** — to provide indie studios with financial, legal, and marketing support. The label was formed with the aim of championing innovation within the indie space and intends to cultivate a small publishing slate.
-
-Kinetic Publishing ideally wants to support two or three projects at a time, taking on titles that are roughly 12 to 18 months from release, with a view to helping those projects accelerate toward the finish line.
-
-**Why it matters:** A solo indie success story (Phasmophobia) is now funneling its experience back into supporting early-stage developers — a cooperative, community-forward publishing model.
-
-📌 **Source:** [Game Developer – January 8, 2026](https://www.gamedeveloper.com/business/phasmophobia-developer-kinetic-games-launches-indie-publishing-label)
+## 🇧🇪 Belgium Civic Tech & Social Enterprise: Latest Updates
 
 ---
 
-### ⚠️ Caveat
-No specific **"cooperative publishing tool"** released in **April 2026** was found in search results. If you have a specific tool name or company in mind, feel free to share it and I can search more precisely.
+### 1. 💶 EIB Group Backs Belgian Social Entrepreneurship at Record Scale *(Feb 2026)*
 
-## [geo_eu] Strait of Hormuz oil supply disruption Europe energy price impact April 2026
+The European Investment Bank Group made **€2.6 billion** available in loans, equity, and guarantees for Belgian projects in 2025, including a record signature for social housing. The EIF specifically supported **microfinance and social entrepreneurship** with guarantees, and pushed digital transformation with equity investments in VC funds.
 
-Purpose: Track escalation fallout from April 3 F-15E incident on European energy costs affecting Brussels context
+In Flanders, the EIB signed the first tranche of **€700 million** of what will be its largest financing ever in Belgium — a €1.7 billion agreement with the Flemish government to support the construction of 56,000 new social housing units.
 
-Here is a concise, fact-based summary of the latest developments:
+**Why it matters:** This is the largest public-sector social investment commitment Belgium has seen. It directly validates the civic/social enterprise infrastructure model.
+
+📌 **Source:** [eib.org – Belgium EIB Group 2025 figures](https://www.eib.org/en/press/all/2026-038-activite-du-groupe-bei-en-2025-juin-2025-belgique)
 
 ---
 
-## 🛢️ Strait of Hormuz Crisis – Europe Energy Impact (April 2026)
+### 2. 🌐 TICTeC 2025 Global Civic Tech Summit Hosted in Mechelen *(June 2025)*
+
+To mark ten years since TICTeC began, mySociety hosted the **8th Impacts of Civic Technology Conference (TICTeC)** on **10 & 11 June 2025 in Mechelen, Belgium**, and online.
+
+Described by one attendee as a **"laboratory of hope"**, TICTeC 2025 brought together **212 civic technologists**, philanthropists, government and civil society representatives — 134 in-person and 78 online — with 37 countries represented.
+
+The 2025 conference focused on pro-democracy tech innovations across themes including: **access to information and open data**, democracy and politics, and **climate change**.
+
+**Why it matters:** Belgium positioned itself as a European hub for pro-democracy civic tech, hosting the world's leading summit in this field — a signal of institutional and civic momentum.
+
+📌 **Source:** [tictec.mysociety.org](https://tictec.mysociety.org/event/tictec-2025-mechelen-online/)
+
+---
+
+### 3. 🏆 European Social Innovation Competition Finalists Announced in Brussels *(Feb–Mar 2025)*
+
+The European Commission announced finalists for the **European Social Innovation Competition** focused on **digital democracy**, with the winner announced on **11 March 2025** at the European Social Innovation Forum Annual Event (NeSEI) in **Brussels**. The winner received a **€75,000 prize**, with runners-up receiving €50,000 and €25,000.
+
+One finalist project offered "an engaging app featuring daily civic" participation tools geared toward digital democracy, addressing disinformation and empowering civil society through inclusive technology.
+
+**Why it matters:** Brussels continues to serve as the institutional center of European social innovation policy, with real prize money flowing to civic tech.
+
+📌 **Source:** [eic.ec.europa.eu](https://eic.ec.europa.eu/news/meet-european-social-innovation-competition-finalists-promoting-digital-democracy-2025-02-20_en)
+
+---
+
+### ⚠️ Caveat on "Last 48 Hours"
+No verified breaking news from the past 48 hours was indexed on this specific topic. The updates above are the **most recent reliable developments** available. For real-time monitoring, consider setting up alerts via [Google Alerts](https://alerts.google.com) for terms like *"Belgium civic tech"*, *"CitizenLab Belgium"*, or *"social enterprise Belgium 2025."*
+
+## [dev] Cursor AI coding agent architecture update April 2026
+
+Purpose: Monitor changes to the agentic harness layer directly relevant to Julien's Cursor skill infrastructure.
+
+Here's a concise, factual summary of what's new with Cursor AI as of **April 2026**:
+
+---
+
+## 🚀 Cursor 3 — Agent-First Architecture Update (April 2, 2026)
 
 ### What Changed
 
-- Brent crude oil prices surpassed **$100/barrel on March 8, 2026** — the first time in four years — rising to a peak of **$126/barrel**. The closure has been described as the largest disruption to the energy supply since the 1970s energy crisis.
+1. **New Agents Window (core architectural shift)**
+   Announced on April 2, 2026, Cursor 3 adds the **Agents Window** — a standalone interface that lets developers run multiple AI agents in parallel across local machines, worktrees, SSH environments, and cloud setups, all without interrupting the main workflow.
 
-- The Strait of Hormuz remains **effectively blocked**, halting tanker traffic and disrupting **~20–30% of global oil flows**, with supply disruption estimated at ~14 million barrels/day — exceeding COVID-era shocks.
+2. **Rebuilt interface from scratch**
+   Cursor launched version 3 on April 2, 2026, and the team rebuilt the interface from scratch around a new idea: that most code will be written by AI agents.
 
-- As of **April 1, 2026**, IEA Executive Director Fatih Birol warned that **April will see an intensification** of the oil supply constraints that have driven prices sharply higher since the start of the Iran war.
+3. **Composer 2 — New AI Agent Engine (shipped March 19, 2026)**
+   The centerpiece of Cursor's 2026 offering is **Composer 2**, a ground-up reconstruction of autonomous coding capabilities. The architecture enables agents to work with complete codebase awareness, understanding how different components interact regardless of project scale or complexity.
+   The system maintains persistent context across entire development sessions, remembering not just the current file but the full history of decisions, constraints, and specifications discussed with the developer.
 
-- Iran's effective closure of the Strait has caused a global oil shortage **already affecting consumers from Europe to Asia**, with some nations taking extraordinary measures to maintain fuel supplies.
+4. **Cloud & Self-hosted Agents**
+   Agents are now better at monitoring long-running jobs. An **Await tool** was added that lets agents wait for background shell commands and subagents to complete, or wait for specific output such as "Ready" or "Error".
 
----
-
-### Why It Matters for Europe
-
-- Fuel crunches hitting Asia are **spreading west**. Europe is at risk of **diesel shortages in the coming weeks**, with some in the industry warning of "scarcity pricing" — particularly for diesel, described as the lifeblood of the global economy.
-
-- Early estimates indicate the disruption could push **average European gas prices up by 50%** — from €30/MWh in February 2026 to **€45–60/MWh** over the course of the year, depending on duration.
-
-- Europe entered this crisis especially vulnerable, with gas storage at only **46 billion cubic metres (bcm)** at the end of February 2026 — compared to 60 bcm in 2025 and 77 bcm in 2024.
-
-- Europe is particularly exposed to **refined fuel shortages** (diesel, jet fuel) from Saudi Arabia and Kuwait. Meanwhile, LNG shipments originally bound for Europe are being **diverted to Asia**, where buyers pay higher prices.
-
-- Even if hostilities ended quickly, analysts warn the economic and energy impacts **could linger for some time**, feeding into inflation and industrial costs. Restarting shut-down facilities could take **several months**, while rebuilding damaged sites may take **up to three years**.
+5. **Security Automation Templates**
+   Cursor released four security automation templates for **Cursor Automations**, enabling scalable vulnerability detection and repair across thousands of PRs — including agents: Agentic Security Review, Vuln Hunter, Anybump, and Invariant Sentinel.
 
 ---
 
-### Most Important Sources
+### Why It Matters
+
+With Cursor 3, Anysphere states they have "the foundational pieces in place — model, product, and runtime — to build more autonomous agents and better collaboration across teams," with a long-term goal of codebases becoming **self-driving**.
+
+Cursor has raised more than **$3 billion** in funding from Nvidia, Google, and others, and this release directly positions it against competitors like Claude Code and Google's Antigravity IDE.
+
+> ⚠️ **Notable community pushback:** Some developers pushed back, wanting to keep coding themselves rather than manage agents. A Cursor engineer clarified that the IDE still exists and the new Agents Window is a **separate surface** — both can be used simultaneously or independently.
+
+---
+
+### 📌 Key Source URLs
+
+| Source | URL |
+|---|---|
+| **Official Cursor Blog (Cursor 3 announcement)** | https://cursor.com/blog/cursor-3 |
+| **Official Changelog** | https://cursor.com/changelog |
+| **SiliconAngle News Coverage** | https://siliconangle.com/2026/04/02/cursor-refreshes-vibe-coding-platform-focus-ai-agents/ |
+| **DEV.to Deep Dive** | https://dev.to/devtoolpicks/cursor-3-just-launched-with-an-ai-agents-window-what-changed-and-is-it-still-worth-it-496f |
+
+## [game] indie game studio cooperative model funding announcement 2026
+
+Purpose: Keep game domain radar active for cooperative or community-aligned game development signals.
+
+Here's a concise, fact-based summary of recent developments at the intersection of **indie game studios, cooperative models, and funding in 2026**:
+
+---
+
+## 🎮 Indie Game Studio Cooperative/Collective Funding — 2026 Updates
+
+### 1. Indie Fund Posts New Activity (February 22, 2026)
+**Indie Fund** — a funding source for independent game projects run by a **collective of experienced game makers** — published a new update on **February 22, 2026**. The fund has now backed **53 games** through **34 investors**. This is the most prominent ongoing cooperative-model funding body in the indie space, operating peer-to-peer rather than through traditional VC or publisher routes.
+🔗 https://indie-fund.com/
+
+---
+
+### 2. Blue Ocean Games Launches $30M Mission-Driven Fund (2026)
+**Blue Ocean Games**, backed by **Krafton**, launched a **$30 million fund** targeting early-stage indie developers. Its approach focuses on **community validation and reliability** rather than proven track records or established IP. By supporting approximately **100 indie studios over three years**, it aims to bridge the gap between investor caution and developers' need for trust, agility, and authenticity.
+🔗 https://www.growthhq.io/our-thinking/indie-game-funding-challenges-and-breakthrough-strategies-in-2026-navigating-the-14-billion-opportunity
+
+---
+
+### 3. Paparuda Studio Raises €210K for Cooperative Gaming (April 2, 2026)
+**Paparuda Studio**, founded in 2026 in Moldova, secured **€210K** to create original IP. Its first projects center on **cooperative (co-op) gaming experiences**, designed to foster social interaction and collaborative gameplay. The investment will support expanding the team from 5 to approximately **15–20 specialists**.
+🔗 https://tech.eu/2026/04/02/paparuda-studio-lands-eur210k-to-launch-moldovas-next-generation-of-game-development-talent/
+
+---
+
+### 4. Indie Subscription Model Backlash (April 2026)
+As of April 2026, a newly announced indie game subscription service faces backlash because **subscription models risk removing the direct financial link between players and developers** — a key concern given that indie games are often already affordably priced for individual purchase. This highlights broader tensions around **cooperative vs. extractive funding structures** in the indie space.
+🔗 https://www.ingamenews.com/2026/04/indie-game-subscription-service-faces.html
+
+---
+
+### ⚡ Why It Matters
+The clearest trend: **cooperative/collective funding models** (peer investor pools like Indie Fund, community-validated funds like Blue Ocean Games) are gaining ground as an alternative to publisher advances and VC, giving studios more creative control. At the same time, subscription aggregators face pushback for undermining direct developer-to-player economics.
+
+> ⚠️ **Note:** No single major "cooperative model funding announcement" dominated headlines as a single event. The landscape is made up of several concurrent developments as of early 2026.
+
+## [geo_eu] EU energy costs small business impact Brussels April 2026
+
+Purpose: Track latest developments on energy cost spiral affecting Chez Julien operating margins.
+
+Here is a concise, fact-based summary of the latest developments on EU energy costs and small business impact, as of April 2026:
+
+---
+
+## 🔆 EU Energy Costs & Small Business Impact — April 2026 Update
+
+### What Changed
+
+- On **April 1, 2026**, the EU proposed a limited adjustment to its carbon trading program (ETS) to curb the impact of emissions costs on soaring energy bills, pledging flexibility to avoid placing an excessive burden on industry during the clean energy transition.
+
+- EU leaders are actively considering reviewing **national electricity taxes** — which vary widely across EU member states and can reach as high as **22%**, representing around 10% of energy bills in several countries — as well as network charges and carbon costs, as potential quick fixes for struggling industries.
+
+- This pressure intensified in mid-March 2026 as renewed **volatility in global energy markets** following escalation around Iran coincided with growing political pressure on the EU Emissions Trading System (ETS) and electricity market design.
+
+- A formal **European Parliament question (E-001279/2026)** was filed, noting that energy costs for European industry remain significantly higher than in the US and Asia, negatively impacting competitiveness and investment decisions — with gas and electricity prices having risen sharply again due to geopolitical tensions.
+
+---
+
+### Why It Matters
+
+- Energy prices are at the top of the EU's political agenda, as concerns over declining competitiveness compared to China and the US have been exacerbated by tensions in the Middle East.
+
+- Between September 2021 and June 2023, EU governments already spent **€651 billion** shielding citizens, businesses, and energy-intensive industries from fossil fuel shocks — a burden that strained public finances and worsened debt levels. A repeat scenario is what Brussels is now urgently trying to prevent.
+
+- For **SMEs specifically**, a separate EU/EIB initiative announced in late 2025 aims to mobilize over **€65 billion** in investment by 2027 to support energy savings by more than 350,000 European companies, helping close a market gap in Europe.
+
+---
+
+### 📌 Most Important Source URLs
 
 | Source | Date | URL |
 |---|---|---|
-| **Time** – Global energy rationing wave | Apr 5, 2026 | https://time.com/article/2026/04/05/strait-of-hormuz-fuel-rationing-oil/ |
-| **Wikipedia** – 2026 Hormuz Crisis overview | Apr 5, 2026 | https://en.wikipedia.org/wiki/2026_Strait_of_Hormuz_crisis |
-| **CNBC / IEA** – April crunch warning | Apr 1, 2026 | https://www.cnbc.com/2026/04/01/oil-price-iea-fatih-birol-brent-iran-strait-hormuz.html |
-| **Euronews** – European implications | Mar 31, 2026 | https://www.euronews.com/my-europe/2026/03/31/strait-of-hormuz-shutdown-what-implications-for-europe-for-how-long-and-how-high-can-price |
-| **Bruegel** – EU energy market analysis | ~Mar 22, 2026 | https://www.bruegel.org/first-glance/how-will-iran-conflict-hit-european-energy-markets |
+| Bloomberg — ETS Carbon Concessions | Apr 1, 2026 | https://www.bloomberg.com/news/articles/2026-04-01/eu-proposes-adjusting-carbon-reserve-to-limit-price-volatility |
+| Euronews — Energy Tax Relief Plans | Mar 9, 2026 | https://www.euronews.com/my-europe/2026/03/09/european-commission-plans-energy-price-relief-for-struggling-industries |
+| European Parliament Question E-001279/2026 | ~Apr 2026 | https://www.europarl.europa.eu/doceo/document/E-10-2026-001279_EN.html |
+| E3G Analysis (pre-Council March summit) | Mar 12, 2026 | https://www.e3g.org/news/euco-march2026-europe-braces-energyprices/ |
 
-> ⚠️ **Bottom line:** The 2026 Hormuz crisis is escalating in April, not stabilizing. Europe faces diesel shortages, gas price spikes of up to 50%, and compounding vulnerability from low storage — with long-term infrastructure damage extending the risk well beyond any ceasefire.
+---
+
+**Bottom line:** Brussels is under acute pressure in spring 2026 to lower energy costs driven by geopolitical shocks and ETS costs. Concrete policy responses include ETS flexibility proposals and tax reviews, with SME financing support already mobilized — but structural relief has yet to materialize for most small businesses.
