@@ -1,339 +1,298 @@
-<!-- PRISM Web Intelligence — 2026-04-09 -->
-# Web Intelligence — 2026-04-09
+<!-- PRISM Web Intelligence — 2026-04-10 -->
+# Web Intelligence — 2026-04-10
 *Scheduled theme: Grassroot Hopper & Cooperative Tech*
 
-## [grassroot] cooperative tech platform launch OR community software tool Brussels Belgium 2026 April
+## [grassroot] cooperative technology platform funding grants Europe 2026 April
 
-Purpose: Scan for new aligned-people tech or cooperative tools emerging in Brussels/Belgium in the last 48h
+Purpose: Scan for new EU or Belgian cooperative tech grants Julien could apply to for Grassroot Hoppers or aligned projects.
 
-Here is a concise, fact-based summary of the most relevant recent developments matching your query:
-
----
-
-## 🔍 Cooperative Tech & Community Software in Brussels, April 2026 — Key Updates
+Here is a concise, factual summary of recent updates on **cooperative technology platform funding grants in Europe for 2026**, based on current sources:
 
 ---
 
-### 1. 🟢 OCX 2026 — Open Community Experience (Eclipse Foundation)
-**Dates: 21–23 April 2026 | Venue: The EGG, Brussels, Belgium**
-
-**What changed:**
-On **February 26, 2026**, the Eclipse Foundation — one of the world's largest open source software organisations — announced the full agenda for **Open Community Experience (OCX 2026)**, taking place **21–23 April 2026** at The EGG conference centre in Brussels. The event features nearly **150 sessions** across six thematic tracks and five collocated communities.
-
-Following a successful debut in 2024, OCX 2026 returns with a significantly expanded technical program, growing from three to **five collocated communities** and increasing session volume by **more than 35 percent**.
-
-**What's covered:**
-The five collocated events focus on **Tooling, AI, Automotive, Compliance, and Research** — each offering a concentrated experience for specific technical communities, fully accessible with a single pass.
-
-**Why it matters:**
-The Eclipse Foundation is headquartered in Brussels, is an international non-profit supported by over 300 members, and hosts major open source projects including Adoptium, the Eclipse IDE, Jakarta EE, and more than 400 high-impact projects.
-
-🔗 **Source:** https://newsroom.eclipse.org/news/announcements/eclipse-foundation-unveils-full-agenda-ocx-2026
-
----
-
-### 2. 🔵 Sovereign Tech Europe — Inaugural Summit (April 2026, Brussels)
-**Status: Inaugural event | Page updated ~1 week ago**
-
-**What changed:**
-The **inaugural Sovereign Tech Europe** summit is launching in Brussels, positioned at "a pivotal moment in Europe's digital future." The event frames **technological sovereignty** as a defining ambition of Europe's digital and political agenda, addressing Europe's determination to strengthen its **autonomy, resilience, and competitiveness**.
-
-**Why it matters:** This is a brand-new event focused on reducing Europe's dependency on non-European technology stacks — directly relevant to cooperative and community-driven software development at the policy level.
-
-🔗 **Source:** https://eu-techsovereignty.com/
-
----
-
-### 3. 🟡 software.brussels — Brussels Software Cluster
-**Ongoing | 2026 International Action Plan active**
-
-**software.brussels** unites **120 startups, SMEs and partners** driving Brussels' software and IT sector. Their **International Action Plan 2026** brings together **87 international actions** — including economic missions, trade fairs, buyer invitations, and sector events.
-
-🔗 **Source:** https://software.brussels/
-
----
-
-### Bottom Line
-The most concrete, dated event is **OCX 2026 (Apr 21–23, Brussels)** — a major open-source community software gathering with a newly published full agenda (Feb 26, 2026). The inaugural **Sovereign Tech Europe** summit and the **software.brussels** cluster's 2026 action plan are also active, but with fewer confirmed specifics on April dates.
-
-## [grassroot] EU grant funding community cooperative small business digital tools April 2026
-
-Purpose: Detect fresh grant or funding announcements relevant to cooperative/community tech projects like David Toolkit
-
-Here is a concise, fact-based summary of the latest EU grant funding updates relevant to community cooperatives, small businesses, and digital tools, as of **April 2026**:
-
----
-
-## 🇪🇺 EU Grant Funding Update: Community Cooperatives, SMEs & Digital Tools — April 2026
+## 🇪🇺 European Cooperative Tech Platform Funding — April 2026 Update
 
 ---
 
 ### 🔄 What Changed
 
-**1. New Cooperative & Agricultural Funding (March–April 2026)**
+**1. Strategic Technologies for Europe Platform (STEP) — New EIC Equity Allocation**
+In 2026, an additional **€300 million in equity** has been allocated under the European Innovation Council (EIC), in line with the Strategic Technologies for Europe Platform (STEP). The aim is to support large private investment rounds (of €50M+) in SMEs, startups, spin-offs, and small mid-cap companies operating in critical technology areas, with EU equity tickets ranging from **€10–30 million**.
 
-A call launched on **March 30, 2026** via EIT Climate-KIC targets **farmers, cooperatives, and regional partners** to develop bioeconomy and circular economy solutions from underutilised agricultural materials. A total funding pool of **€900,000** is available, structured by consortium size.
+**2. Interoperable Europe Portal — Cooperative Digital Infrastructure Grants**
+With **€6 million in funding at a 50% co-funding rate**, the Interoperable Europe initiative supports the joint development of foundational digital assets to enable connected public services across countries, with delivery starting by the end of 2026. Horizon Europe and Interreg are also active, promoting regional cooperation to enhance digital connectivity and innovation in public services.
 
-**2. Digital Europe Programme — SME Digital Tools Window (closing)**
+**3. Horizon Europe — April 2026 Open Calls**
+A new Horizon Europe call (listed **April 9, 2026**) focuses on five priorities including **interoperability, secure sharing frameworks, and common data spaces**. A separate SME-focused call for innovative, data-driven energy services offers a total funding pool of **€1.2 million**, selecting up to 20 projects.
 
-From **October 2025 until the end of March 2026**, the **Digital Europe Programme** was open to a broad range of entities including **SMEs, technology providers, research institutions, and public authorities** — specifically to build competitive advantage through early adoption of **advanced digital tools**. This window has now closed, but the broader 2025–2027 work programme remains active.
+**4. COST — 2026 Submission Cycle Open**
+**COST (European Cooperation in Science and Technology)** — a key funding body for research and innovation networks — has updated its 2026 submission guidelines, with new details on what to expect for this year's cycle. COST Actions are collaborative, bottom-up networks across all tech fields with a 4-year duration.
 
-**3. Digital Interoperability Fund — Cross-border SME Tools (ongoing into 2026)**
+**5. Digital Europe Programme**
+The **Digital Europe Programme** has allocated approximately **€1 billion** to support digital capacity, artificial intelligence, cybersecurity, and advanced digital skills.
 
-A **Multi-Country Project (MCP)** under the **Digital Europe Work Programme 2025–2027** will co-finance cross-border projects to improve interoperability, with **€6 million in funding at a 50% co-financing rate**, supporting connected digital services across countries — with delivery targeted **by end of 2026**.
-
-**4. Cultural Heritage & Community Grants (April 7, 2026)**
-
-A call posted on **April 7, 2026** offers grants to **non-profit organizations and civil society groups** in 11 eligible countries, with **up to €5,000 for small projects** (12 months) and **up to €10,000 for larger projects** (18 months), focused on community heritage and engagement.
-
-**5. SME IP Protection Fund (EUIPO — ongoing)**
-
-The **EUIPO SME Fund** ("Ideas Powered for Business") continues to offer financial support to **EU-based SMEs** for protecting intellectual property rights — accessible by business owners, employees, or authorised representatives.
+**6. April 2026 Startup Grant Landscape**
+April 2026 brings key updates on EU startup grants, with major emphasis on funding initiatives in **cleantech, artificial intelligence, and manufacturing** — including a **€15 billion** funding initiative.
 
 ---
 
-### ⚠️ Why It Matters
+### ❓ Why It Matters
 
-- **Cooperatives and community businesses** now have a dedicated agricultural/bioeconomy funding stream via EIT Climate-KIC, a relatively rare opportunity at EU level.
-- The **Digital Europe Programme's SME-facing cybersecurity/digital tools window has closed** (end of March 2026), so businesses that missed it must wait for the next cycle under the 2025–2027 work programme.
-- **April 2026** is described as bringing "vital updates on EU startup grants, emphasizing funding initiatives in **cleantech, artificial intelligence, and manufacturing**" — signalling where future SME digital grant priorities are heading.
+- The EU is accelerating **cross-border tech cooperation** through interoperability, data spaces, and shared digital infrastructure — a shift from siloed national platforms.
+- STEP and EIC together are specifically designed to bridge the **commercialization gap** — Europe is strong in research but historically weak in scaling deep tech.
+- The April 2026 calls signal **active open windows** — founders and consortia should apply now.
 
 ---
 
-### 📌 Most Important Source URLs
+### 🔗 Most Important Source URLs
 
 | Source | URL |
 |---|---|
-| EU Funding Portal — Grants 2026 | https://eufundingportal.eu/grants/ |
-| EU Funding Portal — Small Business | https://eufundingportal.eu/small-business-grants/ |
-| Digital Europe / Interoperable Europe Portal | https://interoperable-europe.ec.europa.eu/eu-digital-funding-opportunities |
-| Digital Europe + SME Digital Tools (Rublon/DEP) | https://rublon.com/blog/digital-europe-programme-funding-mfa/ |
-| EUIPO SME Fund | https://www.euipo.europa.eu/en/sme-corner/sme-fund |
+| EU Funding Portal (Grants 2026) | https://eufundingportal.eu/grants/ |
+| Interoperable Europe Digital Funding | https://interoperable-europe.ec.europa.eu/eu-digital-funding-opportunities |
+| STEP Platform (Strategic Technologies) | https://strategic-technologies.europa.eu/get-funding_en |
+| COST (Cooperative S&T Networks) | https://www.cost.eu/ |
+| EU 2026 Grants Overview (Corpenza) | https://corpenza.com/en/european-union-2026-grants-and-incentives/ |
+| April 2026 Startup Grants Roundup | https://blog.mean.ceo/startup-grants-europe-news-april-2026/ |
 
 ---
 
-**Bottom line:** The biggest immediate opportunity for cooperatives and community SMEs is the **EIT Climate-KIC bioeconomy call (March 30, 2026)** and the ongoing **Digital Europe MCP interoperability fund**. The dedicated SME digital tools window under Digital Europe's cybersecurity programme **closed in March 2026** — the next opening will be under the continuing 2025–2027 work programme cycle.
+**Bottom line:** April 2026 is an active period for EU cooperative tech platform grants. The biggest moves are the €300M STEP/EIC equity boost, the €6M Interoperable Europe co-funding call, and the Digital Europe Programme's €1B envelope — all targeting cross-border, platform-level digital collaboration.
 
-## [grassroot] Belgium grassroots movement solidarity economy news April 9 2026
+## [grassroot] Brussels commons movement community organizing events April 2026
 
-Purpose: Surface any Belgium movement signals or solidarity economy developments that could reveal aligned actors or wedge opportunities
+Purpose: Detect fresh signals from Brussels grassroot scene — aligned people, events, or orgs worth connecting with.
 
-Here is a concise, factual summary based on the most recent available information. Note that **no specific news event dated exactly April 9, 2026** was found in search results; the closest and most relevant developments are from early April 2026 and late 2025.
+Here is a concise, fact-based summary of what's currently known about the **Brussels commons movement** and community organizing events around **April 2026**:
 
 ---
 
-## 🇧🇪 Belgium — Grassroots & Solidarity Economy: Latest Updates
+## 🏙️ Brussels Commons Movement – April 2026 Update
+
+### What's Happening
+
+**1. 4WARD Climate & Sustainability Networking Meetup — April 16, 2026**
+A Climate 4WARD Quarterly Member Meetup is scheduled for **Thursday, April 16, 2026**, hosted at **Commons Hub Brussels**. It brings together Brussels-based climate professionals, founders, investors, and corporates focused on sustainability and climate change.
+
+**2. National Assembly of the Commons (ongoing initiative)**
+Commons Hub Brussels is organizing a **National Assembly of the Commons** — a national gathering of commons-oriented projects aimed at cross-pollination across **Flanders, Brussels, and Wallonia**, with the intention to build national bridges. The gathering is driven by a belief that "gathering brings us closer together and creates a feeling of a movement of the commons," with solidarity and shared experience making communities more resilient (#communityisimmunity). *(No specific April 2026 date confirmed for this event.)*
+
+**3. Commons Hub Brussels as Ongoing Infrastructure**
+Commons Hub Brussels is described as "a living ecosystem where community builders come together to share resources, knowledge, and inspiration," located in the heart of Brussels, providing infrastructure for communities to gather, collaborate, and thrive. It is managed as a common itself, with shared responsibilities and ownership — "all members are crew."
+
+**4. New European Bauhaus Festival — June 2026 (nearby)**
+The **NEB Festival 2026** (June 9–13, Brussels) will focus on **Democratic Engagement** and **Affordable Housing**, exploring how citizens can be involved in shaping their communities. While not in April, this is a major adjacent event for the commons/community space.
+
+---
+
+### Why It Matters
+The Brussels commons movement is consolidating around a **permanent hub** (Commons Hub Brussels, Rue de la Madeleine 51) that functions as both a coworking space and a civic organizing base. The National Assembly signals a push to **scale the movement nationally** — beyond Brussels — which is a structural shift. Events like the April climate meetup show the hub is becoming a **go-to venue** for civil society and sustainability organizing.
+
+---
+
+### Key Sources
+- 🔗 **Commons Hub Brussels (main site):** https://commonshub.brussels/
+- 🔗 **National Assembly of the Commons (registration):** https://shop.commonshub.brussels/event/national-assembly-of-the-commons-2/register
+- 🔗 **April 16 Climate Meetup (Eventbrite):** https://www.eventbrite.com/e/4ward-global-climate-sustainability-networking-meetups-brussels-tickets-1980766809849
+- 🔗 **Commons Hub Events Calendar (Luma):** https://luma.com/commonshub_bxl
+
+---
+
+> ⚠️ **Caveat:** Specific April 2026 commons-movement dates are limited in public sources as of now. The Luma calendar (linked above) is the best place to check for the most current event listings.
+
+## [grassroot] platform cooperativism solidarity economy news this week
+
+Purpose: Surface any movement-level shifts in cooperative/community tech that could validate or challenge the Grassroot Hoppers wedge.
+
+Here is a concise, sourced summary of the most recent developments in **platform cooperativism & solidarity economy** (as of late December 2025):
+
+---
+
+## 🔄 What Changed
+
+### 1. PCC Published Its 2025 Annual Year-in-Review (Dec 22, 2025)
+The Platform Cooperativism Consortium (PCC) released a comprehensive **2025 impact report** documenting the scope, scale, and outcomes of its work, with its network now spanning **more than 60 countries**, linking universities, cooperatives, and solidarity-economy organizations.
+
+### 2. "The Solidarity Stack" Keynote Published (Dec 21, 2025)
+Trebor Scholz delivered a keynote titled *The Solidarity Stack* at the **Cooperative AI Conference in Istanbul** on November 11, 2025, as part of PCC's 11th annual convening, addressing AI governance, cooperative digital infrastructure, and **worker-led alternatives to extractive platform systems**.
+
+### 3. New ICDE Research Fellowship Cohort Announced
+The **Institute for the Cooperative Digital Economy (ICDE)** has opened applications for its **2026–2027 Fellowship Program** — a global, non-residential research fellowship for scholars examining cooperatives, unions, and solidarity-economy approaches to digital systems, including AI and data-intensive infrastructures.
+
+### 4. *Solidarity Tech* Academic Journal Issue in Progress
+Guest editors Trebor Scholz, Johanna Mair, Mark Graham, Morshed Mannan, and Simon Pek are producing **"Solidarity Tech"** — a 2025 special issue of the *Journal of Co-operative Organization and Management* — showcasing research on how platform cooperatives address governance, sustainability, and equity challenges in the digital economy.
+
+### 5. RIPESS Position Paper at the ILO (June 2025)
+RIPESS presented a position paper, *"Reclaiming the Platform Economy through Social Solidarity,"* at the **113th International Labour Conference** (Geneva, June 2–14, 2025), arguing that workers, communities, and cooperatives must be at the forefront of reimagining ownership models and governance structures in the platform economy.
+
+### 6. New Mapping Research Published (Dec 2025)
+A new working paper from EURICSE maps platform cooperative identities and dimensions globally, including examples such as **data-sharing infrastructure cooperatives for solidarity economy orgs**, short food supply chain platforms for farmers, and neighborhood service-matching platforms.
+
+---
+
+## ❓ Why It Matters
+
+- **AI governance** is now front and center in platform coop discussions — the Istanbul conference signals a shift from "gig work reform" to contesting who controls AI infrastructure.
+- The ILO engagement by RIPESS shows the movement is pushing for **international labor standards**, not just local experiments.
+- The 60-country network and new fellowship cohort indicate **institutional maturation** of the field.
+
+---
+
+## 🔗 Most Important Sources
+
+| Source | URL | Date |
+|---|---|---|
+| PCC 2025 Year in Review | https://platform.coop/blog/news-from-the-platform-cooperativism-consortium-2025/ | Dec 22, 2025 |
+| The Solidarity Stack Keynote | https://platform.coop/blog/the-solidarity-stack/ | Dec 21, 2025 |
+| RIPESS / ILO Position Paper | https://www.ripess.org/ripess-at-the-113th-international-labour-conference-reclaiming-the-platform-economy-through-social-solidarity/ | June 5, 2025 |
+| EURICSE Mapping Report | https://euricse.eu/wp-content/uploads/2025/12/WP-138_Tortorici_2025.12.18_FV.pdf | Dec 2025 |
+
+## [dev] Cursor AI agent coding workflow update April 2026
+
+Purpose: Check for new Cursor or agentic coding tooling changes directly affecting Julien's build stack.
+
+Here is a concise, fact-based summary of the latest Cursor AI updates as of April 2026:
+
+---
+
+## 🚀 Cursor AI: Agent Workflow Update — April 2026
 
 ### What Changed
 
-RIPESS (the Intercontinental Network for the Promotion of the Social Solidarity Economy) announced its participation in the **103rd Social Week** organised by the **Mouvement Ouvrier Chrétien (MOC)**, scheduled for **16–17 April 2026 in Charleroi, Belgium**.
+**Cursor 3 launched on ~April 2, 2026** — a major redesign by Anysphere.
 
-The MOC is a historic social movement in Belgium that brings together trade unions, mutual societies, educational bodies and associations — including the Mutualité Chrétienne (MC), the CSC trade union, and regional networks — with a mission to build a collective response based on equality, justice, and democracy.
+1. **Agent-First Workspace ("Agents Window")**
+   Cursor 3 is a unified agent-first workspace for building software, bringing a cleaner, faster interface with multi-repo support, one place for local and cloud agents, seamless handoff between environments, improved diffs, and integrated tools for browsing, plugins, and PR workflow.
 
-The 103rd edition is the third part of a trilogy launched in 2024, asking: *how can the social economy be developed as a desirable alternative to capitalism, from the grassroots, in an emancipatory, solidarity-based, egalitarian and ecologically sustainable way?*
+2. **Task Delegation, Not Autocomplete**
+   Instead of acting like a smart autocomplete tool, the system can now plan and execute tasks across a project. According to Wired, Cursor 3 allows developers to assign tasks to an AI agent, which then works through the problem across multiple steps.
 
-Thematic workshops cover gender, food, housing, self-management, financing, decent work, and alternative economic indicators.
+3. **Design Mode**
+   A newly added Design Mode lets developers select UI elements and add natural language text describing how they should be changed. Cursor's AI agents automatically implement the requested modifications, displaying a step-by-step overview of each task completed.
+
+4. **Multi-LLM Querying**
+   Users can send commands to multiple AI models simultaneously and choose the best output.
+
+5. **Bugbot Update (April 8, 2026)**
+   A follow-up release on April 8 introduced updates to Bugbot, including the ability to self-improve in real time, MCP support, improvements to Bugbot Autofix, and a resolution rate now at 78%. A "Fix All" action was also added to apply multiple Bugbot fixes in one operation.
 
 ---
 
 ### Why It Matters
 
-In Belgium, the social and solidarity economy (SSE) already accounts for **around 12% of employment** and mobilises **more than one million volunteers**, making it a key pillar of economic and social life.
-
-This comes against the backdrop of broader labour resistance: Belgian unions marched in Brussels demanding fair pensions and job security, as federal government reforms — including slashing unemployment protection and penalising interrupted careers — threaten Belgium's most vulnerable workers. Workers facing 2026 pension measures will lose an average of **€318/month**, with seven out of ten affected being women.
+The update marks a further shift in software development, where developers do less manual programming and increasingly rely on the work of AI systems. In the last year, the team moved from manually editing files to working with agents that write most of the code — and is now building toward a future where fleets of agents work autonomously to ship improvements.
 
 ---
 
-### Most Important Source URLs
+### Most Important Sources
 
-| Source | Date | Link |
-|---|---|---|
-| RIPESS – MOC 103rd Social Week announcement | April 1, 2026 | https://www.ripess.org/ripess-takes-part-in-the-mocs-103rd-social-week-in-belgium/ |
-| Social Europe – Belgian Workers vs. Austerity | Nov 2025 | https://www.socialeurope.eu/belgiums-workers-rise-against-austerity-as-government-doubles-down-on-cuts |
-| OECD – Social Economy in Belgium | Dec 2025 | https://www.oecd.org/en/publications/social-economy-in-europe_12970cca-en/belgium_1cd734b0-en.html |
-
----
-
-**⚠️ Caveat:** No specific breaking event on **April 9, 2026** was indexed in available search results. The above reflects the most current verified news around that date. For real-time updates, monitoring [moc.be](https://www.moc.be) or [ripess.org](https://www.ripess.org) directly is recommended.
-
-## [dev] open source AI coding agent update Cursor Claude April 2026
-
-Purpose: Track changes in the AI dev tooling stack Julien builds against
-
-Now I have comprehensive, well-sourced information. Let me compile the summary.Here's a concise, fact-based summary of the major updates in AI coding agents as of April 2026:
-
----
-
-## 🚀 AI Coding Agent Updates — April 2026
-
----
-
-### 1. Cursor 3 — "Agent-First" Redesign (Launched April 2, 2026)
-
-**What changed:**
-Cursor launched version 3 on April 2, 2026 — a completely rebuilt interface built around a new idea: that most code will be written by AI agents, and the developer's job is to orchestrate them, not write every line.
-
-Key new features:
-- At the heart of Cursor 3 is the new **"Agents Window"** — a centralized command hub designed to manage complex, multi-step tasks across a project.
-- Cursor 3 launched with the new **Agents Window**, **Design Mode**, and **cloud agents**.
-- The new version was built under the internal codename **"Glass"** and is Cursor's direct answer to Anthropic's Claude Code and OpenAI's Codex, both of which have been eating into Cursor's share of the market.
-
-**Why it matters:**
-This signals a significant escalation in the 'coding wars.' While traditional tools like GitHub Copilot focused on 'ghost text' autocompletion, Cursor's new agentic framework is designed to understand entire codebases, execute terminal commands, and perform multi-file refactors autonomously.
-
-**Caveats:**
-In March 2026, a **code reversion bug** silently undid developer changes — Cursor confirmed three root causes but couldn't say how many users were affected. Users also complain the UI changes weekly, forcing constant reconfiguration, and heavy users report bills climbing to $40–50/month with usage overages.
-
-📌 **Key source:** https://devtoolpicks.com/blog/cursor-3-agents-window-review-2026
-
----
-
-### 2. Claude Code (Anthropic) — Steady Iteration in April 2026
-
-**What changed:**
-On **April 2, 2026**, Claude Code added MCP tool result persistence override (up to **500K characters**), allowing larger results like DB schemas to pass through without truncation, plus a `disableSkillShellExecution` setting and support for multi-line deep links.
-
-Recent releases also added **interactive `/powerup` lessons**, stronger resume and performance improvements, and a broad set of fixes for dialogs, hooks, editing, scrolling, and PowerShell permissions.
-
-**Why it matters:**
-Claude Code **dominates terminal-first agentic workflows**, while Cursor leads in IDE-integrated code generation. Claude Code still wins for developers who prefer a terminal-first workflow and do not want a full IDE.
-
-📌 **Key source:** https://code.claude.com/docs/en/changelog & https://releasebot.io/updates/anthropic/claude-code
-
----
-
-### 3. Anthropic Platform API — April 2026 Updates
-
-**What changed:**
-Anthropic launched **Claude Sonnet 4.6**, a balanced model combining speed and intelligence, with improved agentic search performance and fewer tokens consumed. It supports extended thinking and a 1M token context window (beta).
-
-Anthropic also raised the `max_tokens` cap to **300K** on the Message Batches API for Claude Opus 4.6 and Sonnet 4.6, enabling longer single-turn outputs for large code generation tasks.
-
-📌 **Key source:** https://platform.claude.com/docs/en/release-notes/overview
-
----
-
-### 4. Open Source AI Coding Agents — State of Play (April 2026)
-
-**What changed:**
-In 2026, leading open source AI coding agents include **Cline, Aider, OpenHands, Continue.dev, Tabby, and OpenCode**.
-
-**OpenCode** is an open source agent that helps you write code in your terminal, IDE, or desktop, with free models included or the ability to connect any model from any provider, including Claude, GPT, Gemini, and more.
-
-**Why it matters:**
-OpenCode wins on **flexibility, privacy, and cost control** versus Cursor. Its cost depends entirely on API usage, compared to Cursor's $20/month Pro plan.
-
-📌 **Key source:** https://opencode.ai & https://www.opensourceaireview.com/blog/best-open-source-ai-coding-agents-in-2026-ranked-by-developers
-
----
-
-### ⚡ TL;DR
-
-| Tool | Big April 2026 Move |
+| Source | URL |
 |---|---|
-| **Cursor 3** | Full rebuild → parallel AI agents ("Agents Window"), ships April 2 |
-| **Claude Code** | 500K MCP persistence, `/powerup` lessons, perf fixes |
-| **Anthropic API
+| Official Cursor Blog (Cursor 3 announcement) | https://cursor.com/blog/cursor-3 |
+| Official Changelog (Bugbot update, Apr 8) | https://cursor.com/changelog |
+| SiliconANGLE coverage | https://siliconangle.com/2026/04/02/cursor-refreshes-vibe-coding-platform-focus-ai-agents/ |
+| Developer-Tech overview | https://www.developer-tech.com/news/cursorlaunches-agent-based-coding-workflows-amid-ai-agent-growth/ |
 
-## [game] indie game developer cooperative funding or release news April 2026
+## [geo_eu] Balkan conflict NATO response latest 48 hours
 
-Purpose: Maintain game sector radar for emerging models or releases worth noting
+Purpose: Maintain geopolitical radar on European instability relevant to Julien's Brussels base and Spain relocation horizon.
 
-Here is a concise, fact-based summary of the most relevant recent updates:
-
----
-
-## 🕹️ Indie Game Developer Cooperative Funding & Release News — April 2026
+Here is a concise, source-backed summary of the most recent developments on Balkan tensions and NATO's response:
 
 ---
 
-### 1. 🇰🇷 South Korea's "Golden Month" for Indie Grants (April 2026)
-April 2026 is being called the "Golden Month" for South Korean indie developers, with major grants, mentoring, and global exhibition opportunities all closing their application windows simultaneously. Total prize pools exceed 100 million KRW, with monthly stipends of 1.5 million KRW and fully funded booths at Gamescom 2026 and ChinaJoy on the line. Key program deadlines include IndieGo (April 12).
+## 🔴 Balkans / NATO — Latest Updates (as of early 2026)
 
-- **Why it matters:** It's one of the most concentrated, government-backed funding windows for indie developers globally this year.
-- **Source:** https://indiegame.com/en/archives/25039
+### What Changed
 
----
+**1. NATO Publicly Presses Serbia on Accountability (January 27, 2026)**
+NATO Secretary General Mark Rutte, speaking at a joint session of the European Parliament's Committees on Foreign Affairs and Security and Defence in Brussels, stated that NATO expects Serbian authorities to establish full accountability for the Banjska attack and the attack on KFOR troops. Rutte acknowledged a personal relationship with President Vučić but stated: "we expect him to establish accountability for what happened a couple of years ago, on two issues. On both of them, he has promised full accountability."
 
-### 2. 🎮 Landfall (*Peak* Co-Developer) Opens Indie Funding via "Evil Landfall" (April 2026)
-Evil Landfall has already quietly invested in titles such as *REPO*, *How To Fish*, and *Voidigo*, and has now broken cover in an attempt to formalize its processes and widen its portfolio. The label is open to supporting self-publishing developers with funding and advice, and potentially publishing games if the right opportunities arise.
+**2. Croatia–Albania–Kosovo Military Bloc Deepens, Serbia Reacts (Late January / Early March 2026)**
+In late January 2026, defence officials from Croatia, Albania, and Kosovo met in Zagreb, discussing possibilities for improving cooperation in defence capacities and defence industry interaction. Albanian Chief of General Staff Arben Kingji announced that the three countries would hold joint military exercises in 2026 — two in Zagreb and one in Tirana. Serbia's President Vučić sharply criticized the arrangement, though a Kosovar security analyst noted that "the primary actor in Kosovo remains NATO through its KFOR mission" and called Serbia's reaction largely driven by "domestic political calculations."
 
-- **Why it matters:** A high-profile studio behind a massive viral hit (*Peak*) is now a cooperative-style funder for indie developers — a rare developer-run investment model going public.
-- **Source:** https://www.gamedeveloper.com/business/peak-co-developer-landfall-might-finance-your-next-indie-game *(published ~14 hours ago)*
+**3. North Kosovo — Ongoing Incidents & KFOR Readiness**
+On November 3, 2025, Kosovo Police reported that Millan Vukashinović, a member of the Kosovar Insurance Bureau, was attacked and abducted by several masked men in camouflage near the Kosovo–Serbia border; Kosovo Police accused Serbia's Gendarmerie of being responsible. On November 6, 2025, NATO Brigadier General Luca Piperni stated that NATO is ready to send more troops to Kosovo if tensions worsen.
 
----
+KFOR currently consists of approximately 5,200 troops from 33 Allied and partner countries, operating under UN Security Council Resolution 1244. NATO also maintains reserve forces ready to deploy if necessary.
 
-### 3. 🇯🇵 Japan's Government Opens Indie-Eligible IP Grants (~March 2026)
-Japan's IP360 program (nicknamed "sanrokumaru") will provide funding for the creation of new IPs, making even indie developers eligible for grants of up to 10 million yen (about $62,000 USD), covering production costs and promotion.
+**4. Bosnia — Post-Dodik Transition Underway**
+Republika Srpska held a snap presidential election in November 2025 after electoral authorities stripped separatist leader Milorad Dodik of the presidency in August, following his conviction for refusing to implement decisions of the international peace envoy. He also received a one-year prison sentence and a six-year ban from politics.
 
-- **Why it matters:** Government grant programs rarely extend to solo/indie studios; this is a meaningful policy shift.
-- **Source:** https://automaton-media.com/en/news/japanese-government-makes-indie-game-developers-eligible-for-grants-of-up-to-60000-usd-covering-production-costs-and-promotion/
-
----
-
-### 4. ⚠️ New Indie Subscription Service Faces Industry Backlash (April 2026)
-A newly announced Indie Game Subscription Service faces backlash after its 2026 debut, as industry professionals and players raise concerns regarding its compensation structure and impact on game ownership. As of April 2026, there is no indication that the company plans to alter its compensation structure, despite vocal opposition from both developers and the gaming public.
-
-- **Why it matters:** Compensation disputes between subscription platforms and indie developers remain a live and unresolved tension in the ecosystem.
-- **Source:** https://www.ingamenews.com/2026/04/indie-game-subscription-service-faces.html
+**5. Serbia — Political Turmoil & EU Drift**
+The year 2025 was described as "very eventful" for the Western Balkans. Serbia, in particular, faces ongoing political instability, with the government refusing to hold snap elections despite large protests, and its EU progress stalled.
 
 ---
 
-**Bottom line:** April 2026 is an unusually active month for indie funding, with cooperative/developer-led models (Landfall), government grants (South Korea, Japan), and new platform controversies all converging simultaneously.
+### Why It Matters
 
-## [geo_eu] EU economic policy small business tariff impact April 2026
-
-Purpose: Monitor EU-level signals that could affect operating costs for Chez Julien
-
-Here is a concise, sourced summary of recent updates on **EU economic policy and small business tariff impact** as of April 2026:
-
----
-
-## 🇪🇺 EU Economic Policy & Tariff Impact on Small Business — April 2026 Update
+- **NATO is increasingly vocal** about holding Serbia accountable, raising the stakes in the alliance's posture toward Belgrade.
+- **The Croatia–Albania–Kosovo military pact** is hardening regional blocs and could escalate Serbia–Kosovo friction without careful management.
+- **KFOR's deployment posture** signals NATO is treating the risk of a military flashpoint in northern Kosovo as credible and near-term.
+- **Bosnia's political transition** (post-Dodik) is fragile and could either stabilize or destabilize the country further, with implications for NATO's Article 5 perimeter.
 
 ---
 
-### 📌 What Changed
+### 📌 Most Important Sources
 
-**1. A new EU–US trade deal ("Turnberry deal") was endorsed by the European Parliament.**
-The endorsement of the Turnberry deal by the European Parliament marks a turning point in EU–US trade relations. By ruling out the near-term use of tariff coercion instruments, the agreement brings greater clarity and predictability — though national ratification still has to follow.
+| Source | URL |
+|---|---|
+| European Western Balkans — NATO/Banjska statement (Jan 27, 2026) | https://europeanwesternbalkans.com/2026/01/27/nato-expects-serbia-to-ensure-accountability-for-the-banjska-attack/ |
+| European Western Balkans — Croatia/Albania/Kosovo military pact (Mar 4, 2026) | https://europeanwesternbalkans.com/2026/03/04/military-cooperation-between-croatia-albania-and-kosovo-prompts-harsh-reactions-in-serbia/ |
+| Wikipedia — North Kosovo Crisis (2022–2026), updated 2 days ago | https://en.wikipedia.org/wiki/North_Kosovo_crisis_(2022%E2%80%932026) |
+| NATO.int — KFOR mission status | https://www.nato.int/en/what-we-do/operations-and-missions/natos-role-in-kosovo |
 
-**2. A 15% effective tariff rate on EU exports to the US is now the new baseline.**
-Fixing tariffs at 15% should reduce trade policy uncertainty and ease non-tariff frictions, lowering compliance costs for firms exporting to the United States — but that clarity comes at a price.
+> ⚠️ **Note:** No single acute military incident was confirmed in the strict "last 48 hours" window. The situation is best described as a **slowly escalating structural crisis** with regular flashpoints, not a sudden outbreak of open conflict.
 
-**3. EU export growth to the US is still expected to slow.**
-EU export growth to the US is expected to slow further by around **4.6% in 2026** due to tariffs alone, even though the underlying drivers differ from those observed in 2025.
+## [game] indie game developer revenue model shift April 2026
 
-**4. Trade policy uncertainty hit historic highs throughout 2025, damaging business sentiment.**
-Trade policy uncertainty has risen significantly in recent years, reaching historically high levels throughout the past year — initially during the US–China trade conflict in 2018–19, and intensifying again around the 2024 US presidential election and the start of the second Trump term.
+Purpose: Keep game domain radar live for any monetization or distribution signals worth tracking as a future project direction.
 
----
-
-### ⚠️ Why It Matters (Especially for Small Businesses)
-
-**Productivity and investment at risk.** The ECB warned in February 2026 that:
-When firms cannot reliably predict conditions of trade and future revenues, they tend to adopt "wait-and-see" strategies — delaying investment, postponing expansion plans, and often shifting innovation away from risky frontier research towards safer, incremental projects.
-
-**Smaller, export-oriented firms are most vulnerable.**
-If export-oriented firms — which are typically more efficient and innovative — scale back their activity or shut down entirely due to higher tariffs, the economy will lose some of its strongest producers, making resource allocation less efficient and slowing the spread of new technologies.
-
-**Manufacturing sector is hardest hit.**
-The negative impact of trade policy uncertainty is more pronounced in the manufacturing sector, which was directly affected by the tariff escalations.
-
-**Diversification is underway, but limited.**
-Diversifying trade towards partners such as Mercosur and India is both a necessary and welcome policy response, but these markets still fall short of the depth of the US market — reinforcing the importance of strengthening the EU internal market as a key policy priority.
+Here's a concise, fact-based summary of what's happening:
 
 ---
 
-### 🔗 Most Important Sources
+## 🎮 Indie Game Developer Revenue Model Shift — April 2026
 
-| Source | Date | URL |
+### What Changed
+
+**1. "Indie Pass" Subscription Service Launched — and Sparked Backlash**
+
+**Indie Pass**, a $6.99/month indie game subscription service from publisher **indie.io**, launched on **April 13, 2026** with roughly 70 titles. Developers earn revenue based on **subscriber playtime** — not direct sales — which immediately triggered concern over earnings and ownership tradeoffs.
+
+The platform's attempt to solve the "discoverability" problem has instead created a new set of ethical and financial concerns, with developers wary of designing games around engagement metrics rather than creative vision.
+
+As of April 2026, the company has not indicated plans to alter its compensation structure. Critics argue that by removing the direct financial link between player and developer, the model risks distancing creators from their primary support base.
+
+**2. Broader Industry Shift Toward Hybrid & Smaller-Scale Models**
+
+Hybrid strategies are reshaping indie business models broadly — studios now blend premium sales with ethical battle passes, subscription platform integration, and user-generated content economies.
+
+The 2026 Unity Game Development Report (based on a survey of 300 developers) found that studios are prioritizing **smaller-scale, focused player experiences** to manage risk, leading to "a noticeable increase in short, commensurately priced games selling millions of copies." Over 52% of developers surveyed say their teams are now focusing on smaller projects.
+
+**3. Self-Funding on the Rise**
+
+According to the GDC 2025 State of the Game Industry report, **more than half of all developers are now self-funding** their games, reflecting a shift away from traditional publisher models.
+
+---
+
+### Why It Matters
+
+- Indie PC revenues have grown at a **22% compound annual rate** between 2018 and 2024, compared to just 8% for AA and AAA games — making monetization model choices increasingly consequential.
+- The playtime-based subscription model may structurally disadvantage short or niche indie games, which earn less "clock time" regardless of quality or price.
+- A growing player base and market share means the revenue split debate will shape what kinds of games get made.
+
+---
+
+### Key Sources
+
+| Source | URL | Date |
 |---|---|---|
-| **ING Think** — EU tariff shock 2025 vs. 2026 | April 2026 (13 hrs ago) | https://think.ing.com/articles/the-us-tariff-shock-same-negative-impact-different-drivers-in-2025-and-2026/ |
-| **ECB Blog** — Tariffs & business dynamism | Feb 25, 2026 | https://www.ecb.europa.eu/press/blog/date/2026/html/ecb.blog20260225~f0dae9781d.en.html |
-| **Bruegel** — Trump tariff impact on Europe | Feb 10, 2026 | https://www.bruegel.org/analysis/economic-impact-trumps-tariffs-europe-initial-assessment |
-| **ECB Economic Bulletin** — Trade policy uncertainty | March 2026 | https://www.ecb.europa.eu/press/economic-bulletin/focus/2026/html/ecb.ebbox202602_04~e3daeb434a.en.html |
+| Outlook Respawn — Indie Pass Launch | https://respawn.outlookindia.com/gaming/gaming-news/indie-pass-launch-sparks-debate-over-indie-subscription-model | ~5 days ago |
+| InGameNews — Backlash Coverage | https://www.ingamenews.com/2026/04/indie-game-subscription-service-faces.html | ~3 days ago |
+| Unity 2026 Game Dev Report | https://www.gamesmarket.global/2026-unity-game-development-report-released/ | ~3 weeks ago |
+| GrowthHQ — Funding & Monetization Shifts | https://www.growthhq.io/our-thinking/indie-game-funding-challenges-and-breakthrough-strategies-in-2026-navigating-the-14-billion-opportunity | Recent |
 
 ---
 
-**Bottom line:** The EU–US trade truce ("Turnberry deal") has reduced the worst-case scenario, but a ~15% tariff baseline is now locked in. For small businesses — especially manufacturers and exporters — the damage is real: slower growth, deferred investment, and reduced innovation, with eurozone GDP projected to take a measurable hit through 2026.
+**Bottom line:** The biggest April 2026 story is **Indie Pass** — a new playtime-based subscription model that is forcing a sector-wide debate about whether subscription platforms help or harm indie developers financially and creatively.
