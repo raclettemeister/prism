@@ -1,236 +1,224 @@
-<!-- PRISM Web Intelligence — 2026-04-12 -->
-# Web Intelligence — 2026-04-12
+<!-- PRISM Web Intelligence — 2026-04-13 -->
+# Web Intelligence — 2026-04-13
 *Scheduled theme: Grassroot Hopper & Cooperative Tech*
 
-## [grassroot] cooperative technology platform funding grants Europe April 2026
+## [grassroot] cooperative technology platform funding announcements Europe April 2026
 
-Purpose: Scan for new EU cooperative/community tech funding rounds or grant announcements in the last 48h
+Purpose: Scan for new grants or funding rounds relevant to co-op/community tech Julien could apply to or pitch into.
 
-Here is a concise, fact-based summary of recent updates on **cooperative technology platform funding grants in Europe (April 2026)**:
+Here is a concise, fact-based summary of the most relevant recent updates on cooperative technology platform funding in Europe in April 2026:
 
 ---
 
 ## 🇪🇺 European Cooperative Tech Platform Funding — April 2026 Update
 
-### What Changed
+---
 
-- **Horizon Europe (April 9, 2026 update):** New Horizon Europe funding opportunities were listed, with a focus on interoperability, secure sharing frameworks, and common data spaces, with an indicative budget of €8 million for one key call.
+### 1. 🧠 EIC Boosts Ukrainian Deep Tech Cooperatives (April 1, 2026)
+**What changed:** The European Commission awarded **€20 million** to **41 Ukrainian start-ups and SMEs** through the European Innovation Council (EIC), with each company receiving between €300,000 and €500,000, plus fast-track access to the EIC Accelerator for larger grants and equity investments.
 
-- **Cascade Funding Hub — GATE 5.0 Open Call (active April 2026):** The GATE 5.0 Open Call is now open, supporting SMEs to co-develop Agriculture 5.0 solutions combining agrifood and technology expertise.
+**Why it matters:** This builds on the *Seeds of Bravery* initiative launched in 2022 and now specifically targets companies ready to move from development to real-world demonstration and commercialisation. It represents a direct EU effort to plug funding gaps in cross-border innovation cooperation under wartime conditions.
 
-- **EU Digital / Interoperable Europe Platform:** A €6 million funding call (at a 50% co-funding rate) supports the joint development of foundational digital assets to enable connected public services across countries, starting by end of 2026. Additionally, a call supports accelerating the adoption of VR/AR technologies in healthcare by reducing market barriers in less developed European regions, targeting five flagship SMEs upgrading solutions from TRL 6 to TRL 9.
-
-- **Startup/Cleantech grants surge:** April 2026 brings vital updates on EU startup grants, with funding initiatives emphasizing cleantech, artificial intelligence, and manufacturing — including programs like the EIC Accelerator targeting startups with groundbreaking projects.
-
-- **Strategic Technologies for Europe Platform (STEP):** STEP now provides an interactive dashboard to discover EU open calls in the digital, clean, bio, and defence technology sectors.
-
-- **COST (European Cooperation in Science & Technology):** COST continues to fund bottom-up cooperative research networks across Europe and beyond, with COST Actions lasting four years; new guidance for 2026 submissions is now available.
+📌 **Source:** [European Innovation Council – April 1, 2026](https://eic.ec.europa.eu/news/commission-boosts-support-ukrainian-deep-tech-innovators-2026-04-01_en)
 
 ---
 
-### Why It Matters
+### 2. 💸 Midas Platform Raises $50M Series A (late March–early April 2026)
+**What changed:** Midas, the Berlin-based platform that tokenises institutional investment strategies into regulatory-compliant on-chain products, raised **$50 million** in a Series A led by RRE Ventures and Creandum, with participation from Franklin Templeton, Coinbase Ventures, and Anchorage Digital, bringing total funding to **$58.75 million**.
 
-These updates signal a **coordinated push** by the EU to fund cooperative, cross-border tech platforms — particularly in **data infrastructure, agritech, digital public services, and deep tech startups**. The emphasis on interoperability and shared data spaces reflects the EU's Digital Decade strategy. SMEs and research consortia are the primary beneficiaries.
+**Why it matters:** The company holds EU regulatory approval to serve retail investors and is using the round to launch *Midas Staked Liquidity*, a dedicated layer designed to make instant redemptions the default for on-chain investment products. This is a notable example of a cooperative fintech platform scaling under EU regulation.
 
----
-
-### Most Important Source URLs
-
-| Source | URL |
-|---|---|
-| EU Funding Portal (Grants 2026) | https://eufundingportal.eu/grants/ |
-| Cascade Funding Hub (Open Calls) | https://cascadefunding.eu/ |
-| Interoperable Europe — Digital Funding | https://interoperable-europe.ec.europa.eu/eu-digital-funding-opportunities |
-| STEP Platform | https://strategic-technologies.europa.eu/get-funding_en |
-| April 2026 Startup Grants Roundup | https://blog.mean.ceo/startup-grants-europe-news-april-2026/ |
-
-> ⚠️ **Note:** Specific deadlines shift frequently. Always verify open call status directly on the official portals before applying.
-
-## [grassroot] Brussels Belgium community movement civic tech initiative launch 2026
-
-Purpose: Detect new Brussels-local grassroot or civic tech signals relevant to Julien's home base and aligned-people radar
-
-Based on two targeted searches, here is an honest and transparent summary of what the search results actually show:
+📌 **Source:** [The Next Web – Week of 30 March–5 April 2026](https://thenextweb.com/news/europes-top-funding-rounds-30-march-5-april)
 
 ---
 
-## 🔍 Search Results: Brussels Civic Tech & Community Initiatives (2026)
+### 3. 🛰️ Xoople Raises $130M for AI-Driven Data Platform (Mar 31–Apr 7, 2026)
+**What changed:** Xoople is building what it calls "Earth's System of Record" — a satellite constellation paired with a **four-layer data platform** (collection, refinement, distribution, and AI-ready insights), raising **$130M** to fund satellite constellation deployment, expanded data infrastructure, and deeper enterprise partnerships.
 
-**Honest finding:** There is **no single, specific "community movement civic tech initiative" formally launched in Brussels in 2026** that surfaces prominently in current search results. However, several related and concrete updates were found:
+**Why it matters:** The global Earth observation market is projected to exceed **$8 billion by 2028**, driven by enterprise AI adoption. Xoople's cooperative model with partners like Microsoft, Esri, and EY positions it as key infrastructure.
 
----
-
-### 1. 🤖 AI Community Days Brussels – April 27, 2026
-**AI Community Days (AICD) Brussels 2026** is scheduled for **April 27, 2026**, at Microsoft Belgium (Zaventem). It is described as part of "a premier global movement dedicated to democratizing Artificial Intelligence," bringing together developers, researchers, and entrepreneurs.
-- **Why it matters:** It reflects Brussels' growing role as a hub for tech-meets-community events with civic dimensions.
-- 🔗 **Source:** https://www.eventbrite.be/e/ai-community-days-aicd-brussels-2026-tickets-1982490671967
+📌 **Source:** [Qubit Capital – Europe Series B+ Roundup, Week 1 April 2026](https://qubit.capital/blog/europe-series-b-plus-weekly-funding-roundup-week-1-april-2026)
 
 ---
 
-### 2. 🏛️ Civil Society Week 2026 – March 2026
-**Civil Society Week 2026** offered space to discuss issues around democratic resilience. In March 2026, sessions were held on "how to build an enabling environment for democratic resilience" and contributions were made on civil society matters.
-- **Why it matters:** Signals active EU-level civic organizing in Brussels around democracy.
-- 🔗 **Source:** https://civilsocietyeurope.eu/events-meetings/
+### 4. 🤖 Mistral AI: $830M Debt Financing for Compute Infrastructure
+**What changed:** Mistral AI raised **$830 million in debt** — its first-ever debt financing — to purchase 13,800 Nvidia chips for a major data centre near Paris, expected to come online in **Q2 2026**, arranged through a consortium of seven banks including BNP Paribas, HSBC, and MUFG.
+
+**Why it matters:** This marks a structural shift in how European AI platforms are financing shared compute infrastructure — moving from equity rounds to institutional debt consortia.
+
+📌 **Source:** [The Next Web – Week of 30 March–5 April 2026](https://thenextweb.com/news/europes-top-funding-rounds-30-march-5-april)
 
 ---
 
-### 3. 🔬 Centre for Digitalisation, Democracy and Innovation (CD2I) – Active 2025–2026
-The **Centre for Digitalisation, Democracy and Innovation (CD2I)** at the Brussels School of Governance "conducts cutting-edge academic and policy-relevant research on the ongoing digital transformation of society."
-- **Why it matters:** This is an ongoing institutional effort in Brussels bridging civic tech and democratic governance research.
-- 🔗 **Source:** https://www.brussels-school.be/research/centre-digitalisation-democracy-and-innovation
+### Bottom Line
+The dominant April 2026 trend across European tech funding is **infrastructure-layer investment**: sovereign AI compute, cooperative data platforms, and cross-border institutional vehicles — rather than single-product bets. The EU Commission is also actively co-funding cooperative innovation networks through EIC mechanisms.
+
+## [grassroot] Brussels Belgium civic tech community movement events April 2026
+
+Purpose: Detect fresh Brussels-local signals of aligned people or orgs Julien should know about near his base.
+
+Here is a concise, factual summary of what search results reveal about Brussels/Belgium civic tech & community-tech events around April 2026:
 
 ---
 
-### ⚠️ Important Caveat
-The search did **not return a specific named initiative** matching the exact phrase "community movement civic tech initiative launch 2026" in Brussels. This query may refer to something very local, recently announced, or not yet widely indexed online. If you have a specific initiative name or organization in mind, please share it and I can search more precisely.
+## Brussels Civic & Community Tech — April 2026 Update
 
-## [grassroot] platform cooperativism solidarity economy network news April 2026
+### 🔑 What Changed / What's Happening
 
-Purpose: Surface new people or orgs at the cooperative/community tech edge that could be worth tracking as potential aligned collaborators
+**1. AI Community Days Brussels (AICD) — April 27, 2026**
 
-Here is a concise, fact-based summary of the latest updates:
+**AICD Brussels 2026** is scheduled for **Monday, April 27, 2026**, hosted in-person at **Microsoft Belgium, Zaventem** (near Brussels), running 8:30 am–5 pm.
 
----
+AICD is a worldwide initiative to democratize Artificial Intelligence and make innovation accessible to everyone. Key features include:
 
-## Platform Cooperativism & Solidarity Economy — Recent Updates (Late 2025–Early 2026)
-
-### 🔑 What Changed
-
-1. **Solidarity AI Conference Announced (Bangkok, Nov 12–15, 2026)**
-The 12th Platform Cooperativism Consortium (PCC) Conference will take place **November 12–15, 2026**, at Chulalongkorn University in Bangkok, Thailand, under the title **"Solidarity AI."** Co-convened by PCC Global and PCC Thailand, the event brings together movement builders, researchers, AI developers, policymakers, union organizers, and digital rights advocates.
-
-2. **Open Call for Researchers & Practitioners (February 2026)**
-The **Solidarity AI 2026** call for submissions was issued in **February 2026**, drawing on traditions resisting extractive techno-solutionism, including Buddhist ethics and Thailand's sufficiency economy framework. A key thematic track is **"Building Solidarity Stacks: AI With, By, and For Communities."**
-
-3. **ICDE Fellowship Program Opened (December 2025)**
-The Institute for the Cooperative Digital Economy (ICDE) has opened applications for its **2026–2027 Fellowship Program**, a global, non-residential research fellowship for scholars examining cooperatives, unions, and solidarity-economy approaches to digital systems, including AI and data-intensive infrastructures.
-
-4. **PCC Network Growth**
-As of 2025, PCC's network spanned **more than 60 countries**, linking universities, cooperatives, unions, research institutes, and grassroots organizations.
-
-5. **Expected Research Publications**
-New research reports from ICDE fellows are expected to be **published early in 2026.** Fellows are required to produce a substantial research output (~8,000–10,000 words) accessible to non-academic readers and applicable to cooperatives, worker organizations, unions, and solidarity-economy formations.
+- Events are **community-driven and free**, organized by passionate AI professionals, developers, and enthusiasts — not corporations.
+- The movement has **global reach**, with events in 50+ major cities across every continent.
+- It is focused on **responsible AI, diversity, and empowering local communities.**
+- Programming includes a **Community Showcase** highlighting local projects and success stories, plus knowledge sharing on cutting-edge AI trends.
 
 ---
 
-### 💡 Why It Matters
+### 🏛️ Related Civic-Tech Adjacent Event (June 2026)
 
-The movement is **pivoting AI governance** into its core agenda — shifting from abstract principles to concrete democratic infrastructure. Rather than ceding AI development to corporate platforms, PCC is mobilizing a global network to build alternative, community-controlled AI frameworks grounded in solidarity economy values.
+The **New European Bauhaus (NEB) Festival 2026** will focus on **Democratic Engagement** — showing how citizens can be involved in shaping their communities — and is set for **June 9–13, 2026**, at Brussels' Art & History Museum, Parc du Cinquantenaire. While not April, it is a closely relevant upcoming Brussels civic participation event.
+
+---
+
+### 📌 Why It Matters
+
+These events signal a **growing grassroots and civic-tech movement in Brussels**: AICD brings free, community-led AI education directly to citizens, while the NEB Festival elevates democratic participation as a design principle. Together, they reflect Brussels' role as a hub for open, inclusive technology governance in 2026.
 
 ---
 
 ### 🔗 Most Important Source URLs
 
-| Source | URL |
-|---|---|
-| PCC 2025 Year in Review | https://platform.coop/blog/news-from-the-platform-cooperativism-consortium-2025/ |
-| Solidarity AI Conference Page | https://platform.coop/events/solidarity-ai/ |
-| ICDE Fellowship Call | https://platform.coop/blog/open-call-for-applications-2026-2027/ |
-| Call for Researchers (Feb 2026) | https://platform.coop/blog/call-for-researchers-and-practitioners/ |
-
-> ⚠️ **Note:** No major breaking news specific to **April 2026** was found in search results — the most recent dated content is from **February 2026**. The above reflects the most current verified updates available.
-
-## [dev] AI coding agent benchmark update April 2026
-
-Purpose: Track any new model or tooling benchmark shifts following GLM-5.1 rise to maintain frontier awareness
-
-Here's a concise, fact-based summary of the latest AI coding agent benchmark updates as of **April 2026**:
+- **AICD Brussels (April 27):** https://www.communitydays.org/event/2026-04-27/aicd-brussels
+- **AICD Eventbrite tickets:** https://www.eventbrite.be/e/ai-community-days-aicd-brussels-2026-tickets-1982490671967
+- **NEB Festival 2026:** https://new-european-bauhaus.europa.eu/festival_en
 
 ---
 
-## 🤖 AI Coding Agent Benchmark Update — April 2026
+> ⚠️ **Note:** No results surfaced events specifically labelled *"civic tech"* (e.g., open data, participatory governance tools) in Brussels for April 2026 specifically. The AICD event is the closest confirmed community-tech gathering. If you're tracking a specific organization or initiative (e.g., Open Belgium, Citivox, CitizenLab), a more targeted search may yield better results.
 
-### 🏆 What Changed: New Leaders Emerging
+## [grassroot] open source community organizing tools launch update last 48 hours
 
-- As of April 2026, **Claude Mythos Preview** leads the provisional coding leaderboard on BenchLM with a weighted score of **100.0%**, followed by **Gemini 3.1 Pro** (94.3%) and **Claude Opus 4.6** (90.8%).
+Purpose: Track new tooling in the cooperative/community tech space that could inform or compete with Grassroot Hoppers.
 
-- On **SWE-bench Verified** (real-world bug fixing across GitHub repos), **Claude Opus 4.6** leads at ~**80%**, while **GPT-5.3-Codex** dominates **Terminal-Bench 2.0** at **77%** for command-line workflows — neither wins everything.
-
-- **GPT-5.4** scores **76.9%** on SWE-bench Verified (high setting) and leads **SWE-bench Pro** at **57.7%**. It also hit **75.1%** on **Terminal-Bench 2.0**, which measures agentic execution — how well the AI runs commands, interprets results, and adapts.
-
-- **Cursor Composer 2** sets a new benchmark for IDE-native AI coding, scoring **61.3 on CursorBench** (a 37% improvement over Composer 1.5) and **73.7 on SWE-bench Multilingual**. It is built on Kimi K2.5 with custom reinforcement learning, delivering frontier-level coding at **$0.50 per million input tokens**.
-
-- On live coding arena results, **Qwen3.5-27B** leads with an arena score of **1577**, followed by Gemma 4 26B-A4B (1250) and Claude Sonnet 4.6 (1049).
+Now I have enough information to provide a well-sourced, concrete summary. The most recent and relevant updates are from **TagSpaces 6.10** (~2 weeks ago) and the **activist-org/activist** platform. Let me compose the answer.
 
 ---
 
-### 📊 New Benchmarks Introduced
+## 🗓️ Open Source Community Organizing Tools — Recent Updates
 
-- **BrowseComp**, **MCP-Atlas**, and **tau-squared-Bench** are now being used to evaluate agentic tasks, alongside traditional SWE-bench scores.
-
-- A new real-world benchmark found that **four agents cross the 90% success threshold when provided with proper documentation**, and that **documentation is the single most impactful investment** for AI coding success — with base scores being misleading since four different agents can achieve 100% with an AGENTS.md file.
+Here's what's actually changed in the last ~2 weeks, based on the freshest available sources:
 
 ---
 
-### ⚠️ Why It Matters: Enterprise & Security Risks
+### 1. 🏷️ TagSpaces 6.10 Released *(~2 weeks ago)*
 
-- The **Opsera AI Coding Impact Benchmark Report** (February 2026), drawn from 250,000+ developers across 60+ enterprise organizations, found that **nearly 90% of enterprise teams now use AI in the development lifecycle**, making adoption universal rather than differentiating.
+**What changed:**
+The 6.10 release cycle focuses on making everyday workflows smoother — bringing improvements to the Pro perspectives, making Markdown documents more interconnected, adding new translations, and addressing a long list of smaller issues reported by the community.
 
-- Key findings: AI-driven coding **reduces time to pull request by up to 58%**, but **AI-generated PRs wait 4.6x longer in review** without governance, and AI-generated code introduces **15–18% more security vulnerabilities**.
+Key highlights:
+- The built-in Markdown editor now recognizes and preserves **YAML frontmatter blocks** — displayed in a dedicated, collapsible header rather than as raw document content. This is a significant step for users who maintain knowledge bases in tools like Obsidian, Logseq, or Jekyll.
+- **Anchor links** within a Markdown file now work correctly in the preview — clicking a `#heading-name` link jumps directly to that section, which is particularly useful for longer notes, runbooks, or reference documents with a table of contents.
 
----
+**Why it matters:**
+With the frontmatter support and internal link resolution introduced in version 6.10, TagSpaces becomes a capable tool for building and navigating a **personal knowledge base made of interconnected Markdown files**. This directly competes with Obsidian and Logseq — but fully offline and open source, with no vendor lock-in.
 
-### 🔗 Key Sources
-
-| Source | URL |
-|--------|-----|
-| BenchLM Coding Leaderboard | https://benchlm.ai/coding |
-| Fungies.io — 9 Best AI Coding Agents | https://fungies.io/best-ai-coding-agents-2026/ |
-| BuildMVPFast — Top 10 Ranked | https://www.buildmvpfast.com/articles/best-llms-2026-guide/coding-ai |
-| Opsera Enterprise Report | https://opsera.ai/resources/report/ai-coding-impact-2026-benchmark-report/ |
-| DigitalApplied April 2026 Rankings | https://www.digitalapplied.com/blog/ai-coding-assistants-april-2026-cursor-copilot-claude |
+🔗 **Source:** https://www.tagspaces.org/blog/tagspaces-6-10/
 
 ---
 
-**Bottom line:** The coding AI landscape in April 2026 is highly fragmented — no single model wins all benchmarks. Claude Mythos Preview and GPT-5.4 are top contenders on real-world coding tasks, but the right tool still depends on your workflow (IDE vs. terminal vs. open-weight). Enterprise adoption is near-universal but introducing meaningful governance and security challenges.
+### 2. 🌐 activist-org/activist Platform — Ongoing Development *(updated ~3 weeks ago)*
 
-## [game] indie game developer revenue model community 2026
+**What changed:**
+The `activist-org/activist` GitHub repository — an open-source activism platform — has active recent commits (last updated ~3 weeks ago), with 66 open issues including ones flagged "good first issue" and "help wanted," indicating active community development on the MVP for **activist.org**, a central platform to find and connect with activist organizations.
 
-Purpose: Keep game domain radar active for business model signals relevant to Julien's 6-month horizon scouting
+The platform aims to secure a progressive community by design, putting **platform health before platform growth** — with only existing organizations able to vouch for new ones joining.
 
-Here's a concise, fact-based summary of what's changing in the indie game developer revenue model and community landscape heading into 2026:
+**Why it matters:** It's one of the few open source, self-sovereign alternatives to corporate social/organizing platforms (like Meetup or Facebook Groups) purpose-built for activism and community organizing.
 
----
-
-## 🎮 Indie Game Dev: Revenue Model & Community — Key Updates (2026)
-
----
-
-### 📈 What Changed
-
-**1. Market is growing fast — but median revenue stays low**
-
-The indie game market was valued at USD 5.54 billion in 2026 and is forecast to reach USD 10.83 billion by 2031, growing at a CAGR of 14.32%. Yet the reality on the ground is brutal: the median Steam indie revenue remains just $4,000 lifetime (as of 2023), with 55% of indie devs being solo and a 70% failure rate.
+🔗 **Source:** https://github.com/activist-org/activist
 
 ---
 
-**2. A new indie-only subscription model just launched — and it's controversial**
+### ⚠️ Caveat on "Last 48 Hours"
+No verified tool launches or major announcements landed in a strict 48-hour window at the time of this search. The updates above are the **most recent confirmed changes** (within ~2–3 weeks). For real-time releases, monitor:
+- **TagSpaces releases:** https://github.com/tagspaces/tagspaces/releases
+- **activist.org activity:** https://github.com/activist-org/activist/activity
 
-**Indie Pass** launched on April 13, 2026, offering a $6.99/month subscription with 70 titles, where developers earn revenue based on subscriber playtime. The community reaction has been sharp: 3D Realms co-founder George Broussard called it "poison for game developers and a net negative for gaming." Concerns center on revenue structure and ownership tradeoffs.
+## [dev] AI coding benchmark controversy response developer community April 13 2026
 
----
+Purpose: Follow the fallout from yesterday's Berkeley benchmark integrity story to catch practitioner reactions and fixes.
 
-**3. Hybrid monetization and UGC economies are becoming the norm**
-
-Studios are now blending premium sales with ethical battle passes, subscription platform integration (e.g., Game Pass, PlayStation Plus), and user-driven content economies. Modding and user-generated content marketplaces are projected to account for nearly 20% of indie game revenue globally — a model that reinforces community engagement and long-term sustainability.
-
----
-
-**4. Crowdfunding hit a record in 2024**
-
-There were 441 successful video game campaigns on Kickstarter in 2024 — a platform record — with $26M pledged to successful video game campaigns that year. Self-funding remains the #1 model, but publisher deals and grants are the next most common paths.
+Here is a concise, evidence-based summary of recent developments around the AI coding benchmark controversy and developer community response:
 
 ---
 
-**5. Platform costs are squeezing margins**
+## 🧪 AI Coding Benchmark Controversy — April 2026 Update
 
-Variable costs (royalties, payment processing fees) are projected to reach 170% of gross revenue in 2026 for some studio models — meaning for every dollar earned, $1.70 goes out in fees. Experts are urging developers to negotiate platform splits or shift to owned sales channels immediately.
+### What Changed
+
+**1. Top models are now statistically tied — and developers noticed.**
+Independent testing by LM Council, ByteIota, and vals.ai found Claude Opus 4.6, GPT-5.4, and Gemini 3.1 Pro are all basically tied in March 2026 benchmark results. This deflated months of competitive hype and prompted a community rethink about whether benchmarks are meaningful at all.
+
+**2. A new 13-language benchmark (published ~early April) exposed real trade-offs.**
+A 600-run benchmark by Ruby committer Yusuke Endoh tested Claude Code across 13 languages implementing a simplified Git. Ruby, Python, and JavaScript were fastest and cheapest at $0.36–$0.39 per run, while statically typed languages cost 1.4–2.6x more. A commenter on the DEV Community post raised a qualitative concern that a 2x speedup is potentially offset if the generated code is harder to modify later, and that Rust and Haskell test failures should not simply be categorized as bugs.
+
+**3. Benchmark critics argue the metrics are fundamentally broken.**
+A March 2, 2026 Medium post argued that if there's a 20% chance of a "spaghetti explosion" every half hour, you can't leave the AI alone for five hours — framing AI coding as "pair programming with a very fast, very brilliant, but very drunk junior developer."
+
+**4. Productivity data contradicts developer perception.**
+Developers report feeling 20% faster while actually performing 19% slower — a 39-point perception gap. Developers spend 9% of task time reviewing and cleaning AI output, equaling nearly four hours per week. PR volumes increase 98% while delivery velocity remains flat, meaning AI shifts bottlenecks rather than removing them.
 
 ---
 
-### ❓ Why It Matters
+### Why It Matters
 
-The indie dev community is at an inflection point: the market is large and growing, but most individual developers aren't capturing that growth. New subscription models like Indie Pass are polarizing — offering discoverability but potentially devaluing games. UGC/modding economies and ethical monetization are emerging as the community-endorsed alternative to predatory paywalls.
+- **Benchmark "winners" are no longer useful signals.** Smart developers in 2026 aren't asking "which model should I use?" — they're asking "how do I route different tasks to different models?"
+- **Quality risk is real and delayed.** AI code that passes initial review often fails 30–90 days later in production.
+- **Community adoption is accelerating anyway.** GitHub Copilot leads work adoption, but Claude Code has risen to share second place, each used by 18% of developers in professional settings — a significant jump from just two surveys ago.
+
+---
+
+### Most Important Sources
+
+| Source | URL | Date |
+|---|---|---|
+| **Pudgy Cat** — "AI Coding Benchmarks 2026: Nobody Won" | [pudgycat.io](https://pudgycat.io/the-ai-coding-war-is-over-nobody-won/) | ~March/April 2026 |
+| **InfoQ** — 13-Language Claude Code Benchmark | [infoq.com](https://www.infoq.com/news/2026/04/ai-coding-language-benchmark/) | ~April 7, 2026 |
+| **Exceeds AI** — Safe Productivity Thresholds 2026 | [blog.exceeds.ai](https://blog.exceeds.ai/industry-benchmarks-ai-code-productivity/) | ~April 2026 |
+| **Medium** — "AI Coding Benchmarks are Wrong" | [medium.com](https://medium.com/@polyglot_factotum/ai-coding-benchmarks-are-wrong-274596257413) | March 2, 2026 |
+
+> ⚠️ **Note:** My knowledge cutoff is early 2025, and I cannot independently verify events from April 13, 2026 specifically. The above is based on what web search returned as of now. Treat details — especially model version names — as community-reported, not verified.
+
+## [game] indie game cooperative publishing model news April 2026
+
+Purpose: Maintain game-sector radar for alternative distribution or community-ownership models Julien might reference.
+
+Here's a concise, fact-based summary of recent developments in **indie game cooperative/developer-led publishing**, as of April 2026:
+
+---
+
+## 🎮 Indie Game Cooperative Publishing — April 2026 Update
+
+### What Changed
+
+**1. Black Tabby Games launches Black Tabby Publishing (March 31, 2026)**
+The indie studio behind *Slay the Princess* and *Scarlet Hollow*, Black Tabby Games, announced the launch of its own publishing arm. Critically, they will avoid extended recoup structures and won't retain intellectual property rights, with contracts designed to **revert full ownership back to developers three years after launch**. Black Tabby Publishing has already signed deals for *Prove You're Human* and one unannounced title.
+
+**2. Landfall unveils Evil Landfall publishing label (April 8, 2026)**
+Landfall, the developer behind *Content Warning*, *Haste*, and (in part) *Peak*, is looking to finance indie projects through its new publishing offshoot, **Evil Landfall**. The seven-person team, led by Evil Landfall CEO Kirsten-Lee Naidoo, is based in Stockholm and was established as a separate business entity around three years ago — it previously worked behind the scenes to publish Landfall titles, but has now opened up to partner with external developers. The label is looking to sink cash into **silly titles with short development cycles**.
+
+**3. New Indie Subscription Service Faces Backlash (April 2026)**
+A newly announced Indie Game Subscription Service faces backlash after its 2026 debut, as industry professionals and players raise concerns about its **compensation structure** and impact on game ownership. Unlike traditional storefronts where developers receive a set percentage of individual sales, this subscription service utilizes an **engagement-based payment model**, and as of April 2026, there is no indication the company plans to alter this structure.
+
+---
+
+### Why It Matters
+
+Traditional publishers are contracting while distribution barriers stay low — for indie developers with proven titles, the window to establish their own publishing operations is open now. Developers-turned-publishers like Innersloth and Pocketpair are leveraging their success to help other indie games thrive, offering more generous terms because they "don't necessarily need to recoup money ASAP." The key question going forward is whether this represents a **permanent structural shift** in the industry or temporary opportunism during a period of instability.
 
 ---
 
@@ -238,56 +226,51 @@ The indie dev community is at an inflection point: the market is large and growi
 
 | Source | URL | Date |
 |---|---|---|
-| Indie Pass controversy | https://respawn.outlookindia.com/gaming/gaming-news/indie-pass-launch-sparks-debate-over-indie-subscription-model | ~April 2026 |
-| Indie Game Statistics 2026 | https://randomgamegenerator.com/indie-game-statistics/ | Mar 2026 |
-| Market Size Forecast | https://www.mordorintelligence.com/industry-reports/indie-game-market | Jan 2026 |
-| Funding & Hybrid Strategy | https://www.growthhq.io/our-thinking/indie-game-funding-challenges-and-breakthrough-strategies-in-2026-navigating-the-14-billion-opportunity | 2026 |
+| IndieGames.eu (Black Tabby) | https://www.indie-games.eu/slay-the-princess-devs-announce-new-publishing-label-for-indie-games/ | Mar 31, 2026 |
+| Game Developer (Evil Landfall) | https://www.gamedeveloper.com/business/peak-co-developer-landfall-might-finance-your-next-indie-game | Apr 8, 2026 |
+| Themeridiem (industry analysis) | https://themeridiem.com/startup-ecosystem-entrepreneurship/2026/04/09/indie-studios-pivot-to-publishing-as-distribution-power-shifts | Apr 9, 2026 |
+| Aftermath (broader trend piece) | https://aftermath.site/indie-game-publishers-outersloth-pocketpair/ | Feb 5, 2026 |
 
-## [geo_eu] European Union digital sovereignty policy regulation announcement April 2026
+## [geo_eu] European Union digital commons policy announcement April 2026
 
-Purpose: Monitor EU-level policy shifts that could affect cooperative tech, funding landscape, or Brussels-based projects
+Purpose: Monitor EU-level moves on digital public infrastructure that could open funding or regulatory tailwinds for Julien's Brussels projects.
 
-Here is a concise, fact-based summary of the most recent updates on EU digital sovereignty policy:
-
----
-
-## 🇪🇺 EU Digital Sovereignty Policy: Recent Updates (Early 2026)
-
-### 📋 What Changed
-
-**1. Digital Networks Act (DNA) — Proposed January 21, 2026**
-
-The European Commission unveiled its **Digital Networks Act (DNA)**, which aims to boost the bloc's competitiveness and investment in telecom infrastructure. If adopted, the DNA would replace the 2018 European Electronic Communications Code, which had struggled to deliver the scale or coordination Brussels had hoped for. While the new proposal introduces key reforms, it leaves national governments in control of key areas like spectrum allocation, competition, and market structure.
-
-Key provisions include:
-- Harmonizing telecoms regulation across the EU, though it stops short of creating a fully unified single market — Europe's telecoms landscape will remain divided between 27 national markets, as the Act does not mandate the consolidation of telecoms rules.
-- Creating an EU-level **"single passport"** for providers, allowing companies to register in one Member State and operate across the Union.
-
-**2. Broader Regulatory Simplification Drive (2025–2026)**
-
-The new European Commission, with its recent **digital policy omnibus simplification proposal**, is seeking to simplify the existing regulatory rulebook and reduce regulatory burdens, while also proposing key new legislation, potentially including a **Digital Fairness Act**.
-
-**3. Digital Sovereignty Goes Mainstream**
-
-Over the past several years, the concept of digital sovereignty has become ever more central to European notions of competitiveness and economic resilience. Formerly a niche idea, it has now gone mainstream with major European leaders — from Commission President Ursula von der Leyen to former ECB head Mario Draghi — calling for the EU to achieve digital sovereignty.
+Here is a concise, source-backed summary of the latest factual updates on the EU Digital Commons policy:
 
 ---
 
-### ⚠️ Why It Matters
+## 🇪🇺 EU Digital Commons Policy — Latest Updates (April 2026)
 
-- Executive Vice-President Henna Virkkunen called the DNA "foundational to Europe's economic future," arguing that high-performance, resilient connectivity is a prerequisite for competitiveness, innovation, and digital sovereignty.
-- Some analysts argue the proposal does little to alter Europe's structural dependence on non-EU digital infrastructure. Atlantic Council Senior Fellow Konstantinos Komaitis argues the DNA is "more about market integration than a strategic reset," and that it "does not reduce Europe's reliance on US digital infrastructure."
-- Washington's combative posture toward EU tech regulation sets the stage for more conflict that could imperil the **$1.5-trillion transatlantic trading relationship**.
+### What Changed
+
+The **Digital Commons EDIC (European Digital Infrastructure Consortium)** is actively taking shape, expanding to more member countries, appointing a director, and launching its first concrete projects.
+
+These first initiatives include a **"100 Day Challenge"** to build sovereign and interoperable open-source components, and a **pilot of a European Sovereign Tech Fund (EU-STF)**, developed in collaboration with Germany's Sovereign Tech Agency, to strengthen critical open digital infrastructure.
+
+This follows the formal launch of the DC EDIC in December 2025: The Digital Commons EDIC was **officially launched in The Hague on 11 December 2025**, with the European Commission welcoming the initiative as having strong potential to strengthen European digital sovereignty.
+
+The launch followed the **Summit for European Digital Sovereignty held in Berlin on 18 November**, where EU Member States signed the *Declaration for European Digital Sovereignty*, committing to reduce Europe's dependence on a small number of global platforms and to invest in trusted European infrastructures.
+
+### Why It Matters
+
+The DC EDIC is a new body tasked with **advancing open and sovereign digital infrastructure** across the European Union, building on wider EU efforts to strengthen strategic autonomy in digital technologies.
+
+The Commission views the DC EDIC as a **strategic instrument to reduce EU dependency on a small number of global platforms** and to give governments, businesses, and citizens real digital choice built on European values. It will serve as an incubator and one-stop-shop, providing funding pathways, technical and legal expertise, and cross-border collaboration models.
+
+To maximise reuse and transparency, **any jointly developed software is by default released under Free and Open-Source licences.**
+
+Additionally, a **forthcoming EU Open Source Strategy is expected in 2026**, signalling further institutionalisation of digital commons at the EU policy level.
 
 ---
 
-### 🔗 Most Important Sources
+### 📌 Most Important Source URLs
 
-| Source | URL | Date |
+| Source | Date | URL |
 |---|---|---|
-| European Commission (official) | https://ec.europa.eu/commission/presscorner/detail/en/ip_26_107 | Jan 20, 2026 |
-| TechPolicy.Press (DNA analysis) | https://www.techpolicy.press/eus-digital-networks-act-leaves-big-tech-untouched-sparks-net-neutrality-concerns/ | Jan 22, 2026 |
-| Atlantic Council (sovereignty report) | https://www.atlanticcouncil.org/in-depth-research-reports/report/digital-sovereignty-europes-declaration-of-independence/ | Feb 12, 2026 |
-| IIEA (2025–2026 policy overview) | https://www.iiea.com/blog/the-transition-to-a-new-digital-policy-agenda-eu-digital-policy-2025-2026 | Dec 15, 2025 |
+| NGI Commons (April 2026 update) | ~April 1, 2026 | https://commons.ngi.eu/2026/04/01/digital-commons-edic-takes-shape-with-more-countries-director-and-first-projects |
+| European Commission (official launch) | Dec 11, 2025 | https://digital-strategy.ec.europa.eu/en/news/digital-commons-edic-launches-advance-europes-technological-sovereignty |
+| Sovereign Tech Agency (background) | Oct 29, 2025 | https://www.sovereign.tech/news/open-resilient-european-the-edic-digital-commons |
 
-> **Note:** No major EU digital sovereignty announcements were found specifically dated **April 2026**. The most recent confirmed developments are from **January–February 2026**, centered on the Digital Networks Act proposal.
+---
+
+**Bottom line:** As of April 2026, the EU's Digital Commons EDIC has moved from announcement to early execution — adding members, a director, and launching its first open-source sovereignty projects. This is the EU's most concrete step yet toward reducing dependence on Big Tech platforms.
