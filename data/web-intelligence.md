@@ -1,310 +1,313 @@
-<!-- PRISM Web Intelligence — 2026-04-17 -->
-# Web Intelligence — 2026-04-17
-*Scheduled theme: Geopolitics, EU Economics & Brussels Context*
+<!-- PRISM Web Intelligence — 2026-04-18 -->
+# Web Intelligence — 2026-04-18
+*Scheduled theme: Software Dev & AI Building*
 
-## [geo_eu] Belgium Brussels economic news April 17 2026
+## [dev] new developer tool releases April 17-18 2026 CLI AI coding assistant builder
 
-Purpose: Catch overnight Brussels-level economic or political developments affecting local business conditions.
+Purpose: Catch any tool drops in the last 48h relevant to Julien's Cursor-heavy AI-assisted stack
 
-Here is a concise, sourced summary of the latest economic news on Belgium/Brussels as of mid-April 2026:
-
----
-
-## 🇧🇪 Belgium – Economic Update (April 2026)
-
-### 📉 What Changed: Growth Forecast Sharply Downgraded
-
-KBC Economics now sees Belgian real GDP growth in 2026 at just **0.6%** — down from its February forecast of 1.1%, a major downward adjustment of 0.5 percentage points. This is notably weaker than earlier projections from other institutions.
-
-Even before the latest shock, a limited downward adjustment was already warranted: the Q4 2025 quarterly growth rate came out lower than the earlier flash estimate, and confidence indicators — especially in manufacturing — had already been deteriorating.
+I now have enough information to provide a well-sourced, concrete summary. Let me compile it.
 
 ---
 
-### 📊 GDP: Barely Growing in Late 2025
+## 🛠️ Developer Tool Releases: April 16–18, 2026 — CLI & AI Coding Assistants
 
-A second estimate revised Q4 2025 GDP growth down: Belgium's economy expanded only marginally, clocking just **+0.1% quarter-on-quarter** (seasonally adjusted), after +0.3% in Q3. The deceleration was broad-based, with construction falling and services losing steam.
-
----
-
-### 💸 Fiscal Position: A Persistent Problem
-
-The IMF has flagged that Belgium "remains scarred with large structural fiscal deficits, elevated and rising public debt, and a weak external position." Despite welcome reforms, **public debt is expected to further increase through 2030.**
-
-The IMF's February consultation deemed current budget measures **insufficient to prevent a widening fiscal deficit** and called for further spending cuts.
+Here's a concise, factual rundown of the most significant updates in this window:
 
 ---
 
-### 📈 What's Still Holding Up
+### 1. 🚀 OpenAI Codex Desktop — Major Update (April 16–17, 2026)
 
-Lower energy costs and slower wage growth are expected to **bring inflation below 2% in 2026**, before it converges back to target.
+**What changed:**
+"The updated Codex app for macOS and Windows adds computer use, in-app browsing, image generation, memory, and plugins to accelerate developer workflows."
 
-The National Bank of Belgium projects economic activity to expand by **1% in 2026 and 2027**, before picking up to 1.2% in 2028, supported in part by robust domestic demand and defence investment.
+More specifically:
+
+- OpenAI has released a significant update to Codex, introducing features such as background computer use, an in-app browser, image generation, memory, expanded automations, and **more than 90 new plugins**.
+- These connectors — including CircleCI, GitLab, and Microsoft Suite — allow the agent to gather context and take action across the entire toolchain a developer uses daily.
+- Codex is now able to operate desktop Mac apps with its own cursor, seeing what's on the screen, clicking, and typing to complete tasks. Codex can run **multiple agents on the Mac in parallel**.
+- Codex has been updated to use **gpt-image-1.5** for generating images in the app, which OpenAI says is helpful for creating visuals for product concepts and mockups. Codex now includes support for **multiple terminal tabs**, addressing GitHub review workflows.
+
+**Rollout notes:**
+Personalization features, including context-aware suggestions and memory, will roll out to Enterprise, Edu, and users in the EU and UK soon. Computer use is initially available on macOS and will expand to EU and UK users in the near future.
+
+**Why it matters:**
+Confirming it has reached **3 million weekly developers**, OpenAI is massively updating its Codex developer environment to bring it closer to a full-lifecycle coding agent — from writing and reviewing code to operating other apps autonomously on your desktop.
+
+🔗 **Source:** https://openai.com/index/codex-for-almost-everything/ | https://www.ghacks.net/2026/04/17/openai-updates-codex-with-computer-use-in-app-browser-memory-and-90-plus-new-plugins/
 
 ---
 
-### ❗ Why It Matters
+### 2. 🧩 OpenAI Codex CLI — Marketplace & MCP Updates (Around April 17–18, 2026)
 
-Belgium is a core EU/NATO hub (Brussels hosts both EU institutions and NATO HQ). A slowdown in Belgian growth compounds broader eurozone softness, stresses EU fiscal rules, and raises questions about Belgium's ability to fund rising defence commitments without worsening its already large deficit.
+**What changed:**
+Added `codex marketplace add` and app-server support for **installing plugin marketplaces from GitHub, git URLs, local directories, and direct `marketplace.json` URLs**. Added TUI prompt history improvements, including **Ctrl+R reverse search** and local recall for accepted slash commands. Added TUI and app-server controls for **memory mode, memory reset/deletion**, and memory-extension cleanup.
+
+Codex also adds **realtime voice sessions** on the v2 WebRTC path, expands MCP Apps and custom servers, and improves remote workflows, TUI controls, notifications, and resume stability.
+
+**Why it matters:** The open-source Codex CLI (built in Rust) is evolving rapidly from a simple terminal coding agent into a full plugin-driven, voice-capable, memory-aware workspace — blurring the line between IDE and agent.
+
+🔗 **Source:** https://developers.openai.com/codex/changelog | https://github.com/openai/codex/releases
 
 ---
 
-### 🔗 Key Sources
-| Source | URL |
+### 3. 🟢 OpenCode v1.4.10 — Open-Source CLI Agent Update (April 17, 2026)
+
+**What changed:**
+OpenCode v1.4.10 (Apr 17, 2026): **Restored workspace history** on connect so existing sessions catch up before live sync resumes; passed OTEL exporter settings into managed workspaces so telemetry works there too; normalized provider metadata defaults so models still load when catalog data is incomplete.
+
+**Why it matters:**
+OpenCode is an open-source AI coding agent available as a **terminal-based interface, desktop app, or IDE extension**, supporting free models or any provider including Claude, GPT, and Gemini — making it a provider-agnostic alternative to proprietary tools.
+
+🔗 **Source:** https://opencode.ai/changelog
+
+---
+
+### 🔑 Bottom Line
+
+| Tool | Date | Key Change |
+|---|---|---|
+| **OpenAI Codex Desktop** | Apr 16–17 | Computer use, 90+ plugins, in-app browser, image gen, memory |
+| **OpenAI Codex CLI** | ~Apr 17–18 | Marketplace installs, Ctrl+R TUI history, voice sessions, memory controls |
+| **OpenCode** | Apr 17 | Workspace history fix, telemetry, model catalog stability |
+
+The dominant theme: **CLI and desktop AI coding agents are converging into full lifecycle tools** — no longer just autocomplete, but agents that browse, click, remember, and operate your entire dev toolchain.
+
+## [dev] micro-SaaS AI-assisted workflow automation launch April 2026 indie builder
+
+Purpose: Surface small software opportunities Julien could evaluate during his orientation phase
+
+Here's a concise, fact-based summary of what's happening in the **micro-SaaS + AI-assisted workflow automation** space as of early-to-mid 2026:
+
+---
+
+## 🔄 What Changed
+
+**Verified launches and revenue milestones are replacing vaporware hype.** The indie builder community has shifted from idea lists to documented case studies with real numbers.
+
+- A notable launch in this space is a **visual workflow builder for AI agents** — described as "Zapier for AI" — that lets non-technical users chain LLM calls, tools, and data sources via a drag-and-drop interface, founded by Max Brodeur-Urbas and Rahul Behal.
+
+- **Bolt.new** (by StackBlitz) went from ~$0 to ~$20M ARR in about 8 weeks after launch in late 2024 — one of the fastest SaaS ramps on record — demonstrating how AI-assisted workflow tools can scale explosively.
+
+- As of early 2026, validated AI micro-SaaS ideas are being ranked by **launch speed and market saturation**, with solo founders using decision frameworks focused on 2-week MVPs and organic customer reach rather than paid ads.
+
+- Emerging 2026 trends include **AI-first products, vertical automation tools, and workflow integrations** that enhance enterprise systems, with automation, compliance, and analytics as dominant categories.
+
+---
+
+## 📅 Key Dates
+
+| Event | Date |
 |---|---|
-| KBC Economics – Belgium Perspectives | https://www.kbc.com/en/economics/forecasts/belgium.html |
-| IMF – 2026 Article IV Mission Statement | https://www.imf.org/en/news/articles/2025/12/15/cs-belgium-staff-concluding-statement-of-the-2026-article-iv-mission |
-| National Bank of Belgium (Dec 2025) | https://www.nbb.be/en/news-events/news/moderate-economic-growth-and-persistent-deficit-belgium-continues-wrestle-its |
-| FocusEconomics – Belgium | https://www.focus-economics.com/countries/belgium/ |
-
-> ⚠️ **Note:** No breaking news specific to April 17, 2026 was found. The most current data reflects forecasts and reports published in **late 2025 through early 2026**, representing the freshest available economic picture for Belgium.
-
-## [geo_eu] EU tariffs trade policy impact Belgium SME April 2026
-
-Purpose: Track any new EU trade or tariff moves that could hit small Brussels businesses like the shop in the next weeks.
-
-Here is a concise, fact-based summary of the latest developments on EU tariffs and trade policy as they affect Belgium and its SMEs:
+| EgoistAI verified case studies published | ~April 2026 (1 week ago) |
+| Y Build "50 no-code micro-SaaS ideas" guide | March 9, 2026 |
+| Calmops solo founder opportunity guide | March 2, 2026 |
+| Millipixels roadmap & execution guide | February 2, 2026 |
+| Medium launch speed/saturation ranking guide | February 10, 2026 |
 
 ---
 
-## 🇧🇪 EU Tariffs & Trade Policy: Impact on Belgium & SMEs — April 2026 Update
+## ⚡ Why It Matters
+
+Every case study in the current wave is based on **publicly documented revenue** from founders themselves — Twitter posts, Indie Hackers profiles, interviews, or on-record podcast statements — not first-person claims, making this a more credible signal of market viability than prior cycles.
+
+The consistent pattern emerging: **speed to market matters more than sophistication**, and finding overlooked corners of a workflow — then wrapping better AI around them — is the repeatable playbook.
 
 ---
 
-### 📌 What Changed
+## 🔗 Most Important Source URLs
 
-**1. A 15% baseline US tariff on EU goods is now locked in (since ~August 2025)**
-After the handshake deal announced by Presidents Trump and von der Leyen at the end of July 2025, a joint EU-US statement published on 21 August laid out that a general tariff of 15% will be levied on EU goods imported into the US. Generic medicines are exempt, but these account for only a small proportion of Belgium's pharmaceutical exports.
-
-**2. Trade war re-escalated in early 2026**
-The new tariff announcement in January 2026 effectively reopened the trade war between the EU and the US, despite the temporary truce reached in late July. This next phase brings higher stakes and a far tougher approach. Belgium is set to keep the 15% tariff but is positioned between the Netherlands and France, both of which saw tariffs rise to 25% as of 1 February 2026.
-
-**3. The 15% locked-in rate may actually be *worse* for 2026 than 2025**
-For the EU, the effective tariff rate climbed to 8.5% in 2025. Fixing tariffs at 15% means a higher effective tariff rate than the 8.5% observed in 2025, and the EU's relative competitive position is set to weaken in 2026.
-
-**4. EU Omnibus Package: SME exemptions on compliance rules (June 2025)**
-A provisional agreement on the EU Omnibus Package was reached, with CBAM, CSRD, and CSDDD simplifications that include SME exemptions and reduced reporting requirements.
-
-**5. New EU tariffs on Russian goods & steel protection**
-The EU imposed a 50% additional customs duty on Russian agricultural imports, and for certain nitrogen-based fertilizers, tariffs will rise to up to €430/ton by 2028.
+1. **Verified 2026 case studies (EgoistAI):** https://egoistai.com/articles/ai-saas-microstartup-case-studies/
+2. **Launch speed & saturation rankings (Medium):** https://medium.com/@vicki-larson/in15-ai-micro-saas-ideas-ranked-by-launch-speed-market-saturation-2026-guide-96d4820a4ee4
+3. **50+ solo founder opportunities (Calmops):** https://calmops.com/indie-hackers/micro-saas-ideas-2026/
 
 ---
 
-### 📉 Impact Already Felt in Belgium
+> ⚠️ **Note:** No single "April 2026 indie builder launch" event was found as a named product launch. The results reflect the **broader, active trend** of micro-SaaS AI workflow tools launching and scaling in early 2026. If you have a specific product or builder name in mind, share it and I can search more precisely.
 
-Between May and July 2025, exports from Belgium to the US fell by 12%. Exports of Belgian-made cars fell by almost half, while the chemical industry recorded a 30% fall in exports and pharmaceuticals saw a 20% drop.
+## [dev] Cursor AI IDE update April 2026 new features agent workflow
 
-Belgium's economy ministry calculated that US tariffs will cost Belgian exporters between €4.17 billion and €4.38 billion. However, economists note that "the largest part of the tariff bill is being paid in the US itself," falling mainly on US importers and companies rather than Belgian exporters — for now.
+Purpose: Track direct changes to Julien's primary dev tool that could affect his skill scaffolding
 
-Ireland, Belgium, and the Netherlands have relatively low effective tariff rates (ETRs), but because exports to the United States represent a sizeable part of their economies, they experience greater overall exposure to US tariffs.
-
----
-
-### 📊 Macroeconomic Outlook for Belgium
-
-Belgium's economic growth is expected to slow down in 2025, mainly due to high global uncertainty and decreased exports. GDP growth is projected to increase slightly in 2026 and 2027, supported by improving external demand and investments. The introduction of US tariffs negatively affects Belgian exports, with the US being Belgium's fourth-largest export market, although their impact was limited in 2025 due to frontloaded exports.
+Here's a concise, fact-based summary of the Cursor AI IDE updates from April 2026:
 
 ---
 
-### ⚠️ Why It Matters for Belgian SMEs
+## 🚀 Cursor 3 — April 2026 Update Summary
 
-- **Supply chain disruption**: Heightened uncertainty initially encouraged tariff frontrunning, but later led to postponed investment and exports, as well as lower trade volumes due to rising administrative and compliance burdens.
-- **Compliance cost relief**: The EU Omnibus SME exemptions on CSRD/CSDDD reduce regulatory burdens, but tariff-related compliance costs remain.
-- **Port activity shifting**: Belgian ports could become busier as they present a potential route for goods diversion, given Belgium's lower 15% tariff rate versus neighbouring France and Netherlands at 25%.
+### What Changed
+
+**Cursor 3 launched on April 2, 2026** with a completely rebuilt interface built around parallel AI agents. The IDE is no longer the point — the new interface is built around AI agents rather than files.
+
+Key new features include:
+
+1. **Agents Window & Parallel Agents**
+Agent Tabs allow you to view multiple chats at once, side-by-side or in a grid. A new `/worktree` command creates a separate git worktree so changes happen in isolation.
+
+2. **Local-to-Cloud Agent Handoff**
+You can move an agent session from local to cloud to keep it running while you're offline, or to move on to the next task — especially useful for longer-running tasks that would otherwise get interrupted when you close your laptop.
+
+3. **Design Mode**
+In the Agents Window, you can use Design Mode to annotate and target UI elements directly in the browser, allowing more precise feedback and faster iteration by pointing the agent to exactly the part of the interface you're referring to.
+
+4. **Custom UI (Not a VS Code Fork)**
+Moving beyond its VS Code fork origins, Cursor 3 features a new UI built from scratch specifically centered around agent workflows, and is now inherently multi-workspace, enabling humans and agents to work across different repositories simultaneously.
+
+5. **Built-in Git, Diffs & Plugin Marketplace**
+The new diffs view allows editing and reviewing changes faster with a simpler UI, with the ability to stage, commit, and manage PRs. A plugin marketplace lets you browse hundreds of plugins extending agents with MCPs, skills, subagents, and more.
+
+6. **Cursor 3.1 — Canvases**
+In the Agents Window, canvases are durable artifacts that live in the side panel alongside the terminal, browser, and source control, available in Cursor 3.1.
+
+---
+
+### Why It Matters
+
+The Agents Window, parallel execution, cloud agent handoff, Design Mode, and built-in Git move Cursor from a smart IDE with AI toward something closer to an **agent orchestration platform** that happens to have an editor.
+
+The new workspace supports local-to-cloud agent handoff, multi-repo parallel execution, and a plugin marketplace — though community reaction has been divided, with developers questioning cost overhead and the move away from Cursor's IDE-first identity.
+
+---
+
+### Pricing (as of April 2026)
+The Agents Window ships **free**. Cloud agents, Composer 2, and Automations require **Pro ($20/mo)**.
 
 ---
 
 ### 🔗 Most Important Sources
+- **Official blog (Cursor):** https://cursor.com/blog/cursor-3
+- **Official changelog:** https://cursor.com/changelog
+- **DataCamp deep-dive:** https://www.datacamp.com/blog/cursor-3
+- **InfoQ analysis:** https://www.infoq.com/news/2026/04/cursor-3-agent-first-interface/
 
-| Source | URL | Date |
-|---|---|---|
-| **National Bank of Belgium** – What do Trump tariffs mean for Belgium? | [nbb.be](https://www.nbb.be/en/blog/what-do-trump-tariffs-mean-belgium) | Sep 2025 |
-| **ING Think** – US tariff shock 2025 vs 2026 | [think.ing.com](https://think.ing.com/articles/the-us-tariff-shock-same-negative-impact-different-drivers-in-2025-and-2026/) | ~Apr 2026 |
-| **ING Think** – Europe in a new tariff fight (Jan 2026 escalation) | [think.ing.com](https://think.ing.com/articles/updated-europe-finds-itself-back-in
+## [grassroot] Grassroot Hoppers point-of-sale small shop software competitor launch April 2026
 
-## [geo_eu] eurozone inflation ECB rate decision April 2026
+Purpose: Monitor the competitive landscape around David Toolkit while Grassroot Hoppers status is unresolved
 
-Purpose: Monitor ECB signals relevant to cost pressure and cash-flow planning as Lucia's job exit approaches in May.
+No results from the web search match "Grassroot Hoppers" as a specific product, company, or news event. Let me do a couple of follow-up searches to be thorough.---
 
-Here is a concise, fact-based summary of the latest developments on eurozone inflation and ECB rate decisions:
+## ⚠️ No Results Found — Likely a Fictitious or Unknown Entity
+
+After conducting multiple targeted searches, **no verifiable information exists** about "Grassroot Hoppers" as a point-of-sale software product, company, or competitor launch — in April 2026 or at any other time.
+
+Here's what the searches returned:
+
+| Search Query | Results |
+|---|---|
+| `Grassroot Hoppers point-of-sale small shop software competitor launch April 2026` | No match — unrelated results only |
+| `"Grassroot Hoppers" software` | **Zero results** |
+| `"Grassroot Hoppers" POS retail` | **Zero results** |
+
+### What this means:
+
+- **"Grassroot Hoppers"** does not appear to be a real, publicly documented software product or company as of the current date.
+- It is **not indexed by any search engine**, which rules out press releases, product announcements, news articles, or industry coverage.
+- The query may involve a **hallucinated, fictional, or misremembered name**. Similar-sounding real products include *Grasshopper* (a phone system) and *SpotHopper* (restaurant software), but neither matches your description.
+
+### Recommendation:
+
+- Double-check the **exact product/company name** — a slight spelling difference could explain the lack of results.
+- If this came from an internal document, email, or AI-generated content, treat it with caution — it may not reflect a real product.
+- If you have a source (URL, document, press release), sharing it would help verify the details.
+
+## [game] solo indie game dev AI pipeline release April 2026 Unity Godot
+
+Purpose: Maintain radar on the consolidating solo dev stack flagged in yesterday's game briefing
+
+Here's a concise, sourced summary of the current state of **AI pipelines for solo indie game dev in 2026**, across Unity and Godot:
 
 ---
 
-## 🏦 ECB Rate Decision & Eurozone Inflation — April 2026 Update
+## 🤖 AI Pipelines for Solo Indie Devs: What's Changed in 2026
 
 ### What Changed
 
-**March 2026 Decision (most recent confirmed decision):**
-The European Central Bank held interest rates unchanged at its March 2026 meeting. The main refinancing rate remains at **2.15%**, with the deposit facility at **2.0%** and the marginal lending rate at **2.4%**.
+**AI-assisted asset generation is now a structural part of the solo dev pipeline**, not just an experiment:
 
-**Inflation Forecasts Revised Sharply Upward:**
-In its baseline projections, the ECB now sees headline inflation averaging **2.6% in 2026**, 2.0% in 2027, and 2.1% in 2028. Inflation has been revised up compared with the December projections, especially for 2026 — because energy prices will be higher owing to the **war in the Middle East**.
+- AI tools for music, art, and voice acting, combined with Godot's lightweight workflow, let a solo developer produce content volumes that previously required a small team — identified as the structural driver behind breakout solo successes.
 
-**Growth Forecasts Cut:**
-The ECB expects GDP growth of only **0.9% in 2026**, 1.3% in 2027, and 1.4% in 2028.
+- SEELE AI, an AI-native game development platform, generates 3D assets, game code, and animations from text prompts. Its AI asset pipeline reduces 3D model creation time from 8+ hours (manual Blender workflow) to under 60 seconds, enabling solo developers to build and ship browser-based 3D games without a dedicated technical artist.
+
+- On the Godot side: **AI Assistant Hub** embeds AI directly in Godot using Ollama for local LLM inference (works offline, costs nothing, respects privacy); **Godot Copilot** provides in-editor completions adapted for GDScript and Godot 4's syntax; and **Godot AI Suite** (available on itch.io) connects multiple AI providers with an Agent Mode that can execute multi-step plans.
+
+- On the Unity side: **Bezi** reads an entire Unity project hierarchy, understands context across prefabs and scripts, and is especially useful for debugging complex issues.
+
+- The broader community has also noted that Unity's Muse and Unreal's MetaHuman hint at text-to-asset pipelines, while the Godot community has built an AI-assisted sprite in-painting plugin under the MIT license.
 
 ---
 
-### April 2026 Decision (Imminent — as of ~April 16)
+### Engine Roadmaps (2026)
 
-The ECB is heading into the April decision "with an unusually wide and contrasted set of plausible scenarios in a context of weak growth in key economies, sticky inflation dynamics, and renewed upside risks to energy prices from Middle East tensions."
+- Unity's AI tools are in early beta — described as "promising but still too early to tell" whether they'll be a genuine game-changer or a gimmick.
 
-ING now believes the ECB could announce **at least one "insurance" rate hike**, driven by concerns that a blockade of the **Strait of Hormuz** could trigger a cascade of price increases — from gasoline to transportation, food, and industrial products. ING notes: "The longer the blockade of the Strait of Hormuz lasts, the higher the likelihood that some pain points will be hit."
+- Godot's 2026 roadmap focuses on stability and polish: a new **Vulkan renderer** for better performance and lower memory usage, an improved editor UI, and better **console export support** for Switch, PlayStation, and Xbox.
 
-ECB Governing Council member **Jens Nagel** said the ECB must "keep optionalities" and that "monetary policy shouldn't exclude anything." Fellow council member **Martins Kazaks** said the ECB is taking a "meeting-by-meeting" approach, and when asked if April is too soon to hike, replied: *"we'll see."*
+- Unity 2026 is described as "still the go-to for 2D and 3D games," now integrated with AI-assisted coding suggestions.
 
 ---
 
 ### Why It Matters
 
-- The ECB had been on a prolonged **hold** after ending its rate-cutting cycle; a potential **rate hike** would mark a significant pivot.
-- The **Middle East conflict** (especially the Strait of Hormuz situation) has become the dominant variable driving both inflation and growth uncertainty in the eurozone.
-- The war in the Middle East has led to spikes in oil and gas prices which will push up inflation, and while prices are expected to return to target in 2027–28, "the outlook is surrounded by high uncertainty."
+For 2D genres (platformers, RPGs, roguelikes, visual novels), Godot has almost no weaknesses, offers higher development efficiency, and carries zero license risk. For 3D realistic or console-targeted projects, Unity remains the pragmatic choice. The AI tooling layer is narrowing the gap between solo devs and small teams significantly.
 
 ---
 
-### 📌 Key Source URLs
+### 📎 Key Sources
 
-| Source | URL |
+| Date | Source |
 |---|---|
-| **ECB Official Statement (Mar 2026)** | https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.mp260319~3057739775.en.html |
-| **CNBC – April 2026 ECB Preview** | https://www.cnbc.com/2026/04/16/ecb-interest-rates-hike-inflation-iran-washington.html |
-| **Trading Economics – Rate Tracker** | https://tradingeconomics.com/euro-area/interest-rate |
+| Feb 28, 2026 | [DEV Community – Godot vs Unity 2026 (AI pipeline focus)](https://dev.to/linou518/godot-vs-unity-in-2026-which-engine-should-indie-developers-choose-50g4) |
+| Mar 3, 2026 | [Seeles.ai – 7 Best Game Engines for Indie Devs 2026](https://www.seeles.ai/resources/blogs/best-game-engines-indie-developers-2026) |
+| Nov 2025 | [GameDev AI Hub – AI Tools for Solo Indie Devs](https://gamedevaihub.com/ai-tools-for-solo-indie-game-developers/) |
+| ~Apr 2026 | [Toxigon – Godot or Unity in 2026](https://toxigon.com/godot-vs-unity-which-is-better-for-indie-developers) |
 
-## [dev] AI developer tools Cursor update April 2026
+> ⚠️ **Note:** No single landmark "April 2026 release" announcement was found tied specifically to a named AI pipeline product. The updates above represent the cumulative state of the space as of early-to-mid 2026. If you're tracking a specific tool or announcement, share the name and I can search more precisely.
 
-Purpose: Check for any Cursor or agentic dev tooling changes relevant to Julien's active skill-building work.
+## [geo_eu] Belgium Brussels small retail consumer demand April 2026 economic signal
 
-Here's a concise, sourced summary of the latest Cursor updates in April 2026:
+Purpose: Track local demand conditions as macro tightening from yesterday's briefing hits Chez Julien margins
+
+Here is a concise, factual briefing based on the most current available data:
 
 ---
 
-## 🛠️ Cursor — April 2026 Updates
+## 🇧🇪 Belgium / Brussels — Small Retail & Consumer Demand: April 2026 Signal
 
-### 1. Cursor 3 Launch — April 2, 2026
-Cursor 3 launched on **April 2, 2026** with a completely rebuilt interface built around parallel AI agents, introducing a new **Agents Window**, **Design Mode**, and **cloud agents**.
+### What Changed
 
-- The **Agents Window** is a standalone interface that lets developers run multiple AI agents in parallel across local machines, worktrees, SSH environments, and cloud setups — all without interrupting the main workflow.
-- Instead of acting like a smart autocomplete tool, the system can now **plan and execute tasks across a project**, representing a shift toward agent-based coding workflows.
-- The Agents Window closes a key competitive gap — parallel agents, cloud execution, and mobile launch support now put Cursor on similar ground to Claude Code for fully autonomous, terminal-based agentic work.
+**Consumer demand is under renewed pressure heading into Q2 2026**, driven by a convergence of weak household spending, falling small-cap equity values, and a fresh energy price shock.
 
-### 2. Self-Hosted Cloud Agents — mid-April 2026
-Cursor introduced **self-hosted cloud agents**, which keep your codebase, build outputs, and secrets on internal machines running in your own infrastructure, while the agent handles tool calls locally. Self-hosted cloud agents offer the same capabilities as Cursor-hosted cloud agents, including isolated VMs, full development environments, multi-model harnesses, and plugins.
+- **Household consumption stagnated** in Q4 2025. Belgium's Q4 2025 GDP growth was revised down by the National Accounts Institute from 0.2% to 0.1% qoq, an outcome that "mainly resulted from a stagnation of household consumption."
 
-### 3. Interactive Canvases — April 15, 2026
-On **April 15**, Cursor added the ability to respond by **creating interactive canvases** — visualizations that can include dashboards and custom interfaces built using first-party components.
+- **Retail sales and industrial production were below Q4 levels in January 2026.** Heading into Q1 2026, "January's industrial production and retail sales were below Q4 levels, while economic sentiment weakened in January–February."
 
-### 4. Bugbot Learned Rules
-Cursor shipped **Bugbot learned rules**, letting the AI code review tool learn from real PR feedback — turning developer reactions, replies, and human reviewer comments into rules that improve future reviews. The update aims to boost bug detection and reduce false positives. Bugbot's resolution rate is now nearing **80%**, which Cursor claims is 15 percentage points higher than the next-closest AI code review product.
+- **Small-cap equities dropped sharply.** The Euronext Brussels BEL Small Return index fell to **12,445.95 in March 2026**, down from **13,957.65 in February 2026** — a decline of roughly **10.8% in one month**.
+
+- **CPI crept up slightly.** Belgium's Consumer Price Index rose to **101.84 points in March 2026**, up from 101.72 in February 2026.
+
+- **2026 GDP growth forecast slashed.** KBC Economics now projects Belgian real GDP growth at **0.6% for 2026**, cut from a prior forecast of 1.1% — "a major downward adjustment" driven partly by deteriorating confidence indicators and the Middle East energy shock.
+
+- **Inflation set to surge.** KBC now sees Belgian HICP inflation averaging **3.3% in 2026**, up 1.4 percentage points from their February forecast, driven by the energy price spike.
 
 ---
 
 ### Why It Matters
-In the first week of April 2026, Cursor shipped a rebuilt interface for orchestrating parallel agents at the same time OpenAI published an official plugin running inside Anthropic's Claude Code — signaling that **the major AI coding tools are converging into a single, interoperable stack**.
+
+For small retailers in Brussels, this combination is a **triple squeeze**: stagnating consumer spending power, rising input/energy costs, and falling investor confidence in small-cap firms. The IMF's February consultation also "deemed current budget measures insufficient to prevent a widening fiscal deficit and called for further spending cuts," which signals limited government buffer to support domestic demand recovery.
+
+The European Commission still forecasts activity to grow by 1.0% in 2025 and 1.1% in 2026, but flags "a potential downside risk" of a "slower-than-expected EU demand recovery."
 
 ---
 
-### 🔗 Key Sources
-- **Official Changelog:** https://cursor.com/changelog
-- **Cursor 3 Announcement:** https://cursor.com/blog/cursor-3
-- **SiliconANGLE Coverage (Apr 2, 2026):** https://siliconangle.com/2026/04/02/cursor-refreshes-vibe-coding-platform-focus-ai-agents/
-- **Full April Timeline:** https://releasebot.io/updates/cursor
+### 📌 Most Important Sources
 
-## [grassroot] cooperative tech platform small retail automation news April 2026
-
-Purpose: Scan for signals in the shop-tech or cooperative tooling space that could reactivate the Grassroot Hoppers wedge.
-
-Here is a concise, fact-based summary of the most relevant recent developments at the intersection of **retail tech platforms, automation, and small/cooperative retail** — with the strongest signal coming from **April 2026**:
+| Source | URL | Date |
+|---|---|---|
+| **KBC Economics – Belgium Perspectives** | https://www.kbc.com/en/economics/forecasts/belgium.html | ~April 2026 (3 weeks ago) |
+| **FocusEconomics – Belgium** | https://www.focus-economics.com/countries/belgium/ | April 2026 |
+| **CEIC – BEL Small Return Index** | https://www.ceicdata.com/en/belgium/euronext-brussels-index/index-euronext-brussels-bel-small-return | Mar 2026 data |
+| **EC Economic Forecast – Belgium** | https://economy-finance.ec.europa.eu/economic-surveillance-eu-member-states/country-pages/belgium/economic-forecast-belgium_en | Nov 2025 |
 
 ---
 
-## 🔑 Key Updates: Retail Tech Platform & Automation News (April 2026)
-
----
-
-### 1. 📦 Instacart Acquires Instaleap — April 14, 2026 *(Most Relevant)*
-**What changed:**
-Instacart acquired Colombia-based grocery tech firm Instaleap, founded in 2019. Instaleap is a global fulfillment solutions platform that helps retailers streamline and scale their online operations, with clients across nearly 30 countries in Latin America, Europe, and the Middle East.
-
-Instacart said it will initially operate Instaleap as a wholly-owned subsidiary to ensure continuity for Instaleap retailers. Financial terms were not disclosed.
-
-**Why it matters for small/cooperative retailers:**
-The deal gives Instacart a grocery-specific fulfillment solutions services platform. International retailers who work with Instaleap may also want to use Instacart's e-commerce, smart cart, and catering solutions. This effectively extends enterprise-grade fulfillment automation — previously concentrated in North America — to independent and cooperative grocers in dozens of new markets.
-
-To date, Instaleap has powered more than 100 million transactions.
-
-🔗 **Sources:**
-- [TechCrunch – April 14, 2026](https://techcrunch.com/2026/04/14/instacart-acquires-instaleap-to-expand-its-enterprise-platform-internationally/)
-- [Grocery Dive](https://www.grocerydive.com/news/instacart-acquire-retail-tech-platform-instaleap/817385/)
-- [Instacart Investor Relations (official PR)](https://investors.instacart.com/news-releases/news-release-details/instacart-acquires-instaleap-accelerate-global-expansion-its)
-
----
-
-### 2. 🤖 UiPath Launches Agentic Retail Automation Solutions — (~Late March 2026)
-**What changed:**
-UiPath announced new purpose-built agentic AI solutions designed to help retailers optimize and automate complex workflows spanning merchandising, commercial pricing, and inventory management. Retailers and manufacturers face growing pressure to respond quickly to shifting consumer demand, manage complex global supply chains, and optimize pricing across omnichannel environments.
-
-**Why it matters:**
-Built-in capabilities include price elasticity analysis, a promotion and markdown planner that uses forecasting to optimize campaign timing, and a campaign agent that automates the launch and management of promotions across both digital and physical channels. These tools are especially relevant for smaller retailers who previously lacked access to sophisticated pricing automation.
-
-🔗 **Source:** [UiPath IR – Business Wire](https://ir.uipath.com/news/detail/437/uipath-optimizes-retail-and-manufacturing-operations-with-new-agentic-solutions)
-
----
-
-### 3. 🛒 Automated Micro-Retail Hubs on the Rise — (March–April 2026)
-**What changed:**
-In 2026, automated retail is shifting from simple vending to connected, automated micro-retail hubs, with key technologies including smart locker API integrations, QR-based "phygital" payments, and real-time cloud inventory.
-
-**Why it matters:**
-Platforms like TheiShare bring smart lockers, vending boxes, and self-serve rentals together in one dashboard, allowing businesses to control access, track usage, manage inventory, and see performance in real time. This lowers the barrier for small and cooperative retailers to run automated, unmanned storefronts.
-
-🔗 **Source:** [TheiShare – 2026 Automated Retail Trends](https://theishare.com/top-trends-in-automated-retail-self-serve-technology-for-2026/)
-
----
-
-### ⚠️ Note on "Cooperative Tech Platform" Specifically
-There were **no major April 2026 announcements** from explicitly worker-owned or consumer cooperative tech platforms (e.g., co-op-structured software companies). The Instacart/Instaleap deal is the closest match to your query — it's a platform acquisition directly affecting small independent and cooperative grocery retailers globally. If you're tracking a specific co-op platform (e.g., Open Food Network, Stocksy, or similar), let me know and I can search more precisely.
-
-## [game] indie game publishing revenue model news April 17 2026
-
-Purpose: Maintain game dev radar for any distribution or monetization shifts since yesterday's Indie Pass briefing.
-
-Here's a concise, sourced summary of the most relevant recent developments:
-
----
-
-## 🎮 Indie Game Publishing Revenue Model — Key Updates (April 2026)
-
----
-
-### 1. 🆕 **Indie Pass Launches a Playtime-Based Subscription Model** *(April 13, 2026)*
-
-Indie Pass, a **$6.99/month** indie game subscription service from publisher **indie.io**, launched on **April 13, 2026**, with around **70 titles**.
-
-**What changed:**
-For developers and publishers, Indie Pass introduces a **flexible, non-exclusive participation model** with revenue distributed based on **player time spent** in each title.
-
-**Why it matters:**
-The platform distinguishes itself through its **exclusive focus on indie titles** and its playtime-tied revenue-sharing model, offering developers a potential alternative to traditional storefront discovery algorithms and front-loaded sales models. However, early reactions from developers and social media focused on **concerns about the revenue structure and ownership tradeoffs**.
-
-indie.io reports a connected network of **more than 10 million monthly users** across its publishing ecosystem, which could provide immediate visibility for participating titles.
-
-📌 **Source:** https://respawn.outlookindia.com/gaming/gaming-news/indie-pass-launch-sparks-debate-over-indie-subscription-model
-
----
-
-### 2. 📈 **Indie Studios Moving Into Publishing Roles** *(April 9–10, 2026)*
-
-**What changed:**
-Black Tabby Games launched a publishing arm, marking the **fourth major indie-to-publisher transition in 18 months** — signaling a structural shift in game industry value chains as direct platforms erode traditional gatekeepers.
-
-**Why it matters:**
-A traditional publisher might demand **50% of revenue indefinitely**, whereas an **indie-turned-publisher** offers recent platform experience, better revenue splits, and cultural alignment with independent development — and increasingly wins deals when both can deliver comparable audience reach.
-
-Indie publishers can afford lower title counts because they're **not supporting large operational overhead** — a fundamentally different model than traditional publishers pursuing portfolio volume to offset failures.
-
-📌 **Source:** https://themeridiem.com/startups/2026/4/9/indie-studios-capture-publishing-margins-as-distribution-shifts
-
----
-
-### TL;DR
-Two converging trends are reshaping indie game revenue models right now: **(1)** a new subscription platform tying developer pay to playtime (debated), and **(2)** successful indie studios cutting out traditional publishers by becoming publishers themselves — capturing better margins and creative control.
+**Bottom line:** As of early April 2026, Belgium's small retail sector faces a deteriorating demand environment — stagnant household consumption, weak retail sales, falling small-cap valuations, and an upward inflation surprise from energy costs — with the full April data not yet published.
