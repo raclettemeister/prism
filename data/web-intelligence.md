@@ -1,296 +1,302 @@
-<!-- PRISM Web Intelligence — 2026-04-20 -->
-# Web Intelligence — 2026-04-20
+<!-- PRISM Web Intelligence — 2026-04-21 -->
+# Web Intelligence — 2026-04-21
 *Scheduled theme: Grassroot Hopper & Cooperative Tech*
 
-## [grassroot] cooperative technology grants Belgium Brussels 2026 new funding announcement
+## [grassroot] cooperative technology platform funding grants Europe April 2026
 
-Purpose: Scan for fresh grant or funding signals relevant to Grassroot Hoppers and cooperative tech in Julien's home base.
+Purpose: Scan for new grant rounds or funding calls relevant to cooperative/community tech projects Julien could apply to.
 
-Here is a concise, fact-based summary of the most relevant recent updates on **cooperative technology grants in Belgium / Brussels for 2026**:
-
----
-
-## 🇧🇪 Cooperative Technology Grants — Belgium/Brussels 2026: Key Updates
-
-### 1. Brussels Sovereign AI Centre Launched (April 13, 2026)
-Accenture and Google Cloud unveiled a new centre in Brussels to accelerate sovereign AI adoption. The facility combines air-gapped cloud infrastructure and training to support Europe's most sensitive workloads.
-
-> **Why it matters:** This is a significant private-sector cooperative tech investment anchored in Brussels, complementing public grant mechanisms and signalling the city's growing role as a European AI hub.
-> 🔗 **Source:** https://tech.eu/2026/04/13/accenture-and-google-cloud-unveil-brussels-centre-to-accelerate-sovereign-ai-adoption/
+Here is a concise, fact-based summary of the latest updates on **cooperative technology platform funding grants in Europe (April 2026)**:
 
 ---
 
-### 2. Brussels-Capital Region Innovation Fund (Active, updated Dec 2025)
-The Brussels-Capital Region Innovation Fund supports innovative companies that adopt new technologies to improve their operations or offer new services. The fund covers up to **50% of eligible project costs**, facilitating investment in digital tools such as AI systems, customised mobile applications, or cloud solutions. It is ideal for companies needing financial support to develop revolutionary digital solutions.
+## 🇪🇺 EU Cooperative Tech Platform Funding — April 2026 Update
 
-> **Why it matters:** This is the primary public grant mechanism for Brussels-based tech companies — covering up to half of project costs, including AI and cloud initiatives.
-> 🔗 **Source:** https://www.iterates.be/en/belgian-government-grants-for-digital-innovation/
+### What Changed
 
----
+- **April 2026 is an active funding month.** April 2026 brings vital updates on EU startup grants, emphasizing funding initiatives in cleantech, artificial intelligence, and manufacturing — including from €15B funding initiatives.
 
-### 3. VLAIO KMO-Portefeuille: Key Rule Change (February 1, 2026)
-Since **February 1, 2026**, the advisory component of KMO-portefeuille is **limited to cybersecurity only** — digitalization advisory is no longer supported. Training services (including for digitalization and AI topics) remain available for all themes.
+- **Digital cooperative infrastructure is a priority.** One active initiative aims to support the green-digital transformation of cities and communities by utilizing secure and sovereign data infrastructures, with eligibility requiring a consortium of at least two local or regional partners.
 
-Collaboration boosts your subsidy rate: if you can partner with another SME or a research institution, your subsidy percentage goes up significantly.
+- **STEP platform aggregates open calls across sectors.** The Strategic Technologies for Europe Platform (STEP) provides an interactive dashboard to find EU open calls in the digital, clean, bio, and defence technology sectors.
 
-> **Why it matters:** This is a concrete rule change that affects how Belgian tech companies can use one of the most popular grant programs. Teams relying on VLAIO for digital advisory funding need to reframe their approach.
-> 🔗 **Source:** https://flowful.ai/blog/fund-ai-project-belgium/
+- **Horizon Europe co-funded partnerships continue.** Co-funded partnerships under Horizon Europe fund joint research and innovation programmes implemented through Grant Agreements signed by the Commission and a consortium of partners — typically research funders and public authorities — with either 30% or 50% co-funding from Horizon Europe. A new Biennial Monitoring Report (BMR) cycle is scheduled for publication in 2026.
 
----
+- **Cooperative agri-tech grants open April 15, 2026.** A call closing April 15, 2026 targets digital technologies and DeepTech through the 28DIGITAL program, supporting cooperatives in building technologically advanced platforms incorporating digital or AI-enabled tools for quality control and traceability.
 
-### 4. March 2026: Notable Funding Rounds & Cooperative Tech
-Notable developments in March 2026 include **Syndicate One raising €22 million** to fund tech startups in AI, robotics, and software, and **Ghent joining Bloomberg Philanthropies' Mayors Challenge**, fostering civic tech collaboration. Entrepreneurs benefit from Belgium's mix of grants, tax relief, and government-backed funding.
-
-> **Why it matters:** Confirms active momentum in cooperative/collaborative tech funding models in Belgium in early 2026.
-> 🔗 **Source:** https://blog.mean.ceo/startup-grants-belgium-news-march-2026/
+- **Interoperable Europe: €6M for digital public service platforms.** With €6 million in funding at a 50% co-funding rate, one active call supports the joint development of foundational digital assets to enable connected public services across countries, starting by end of 2026.
 
 ---
 
-### 5. R&D Collaboration Incentives (Ongoing)
-Significant funding is allocated to specific strategic areas, such as the **€81 million "ATMP-Partenariat d'Innovation Technologique"** for Advanced Therapy Medicinal Products, fostering collaboration between academia and industry. Innovation and R&D support is significantly decentralised in Belgium, with key agencies operating at the regional level (Flanders, Wallonia, and Brussels-Capital Region).
+### Why It Matters
+
+EU cooperative tech platform grants are converging around **three themes**: green-digital transformation, AI/data infrastructure, and cross-border interoperability. April 2026 marks a particularly active period for open calls, with new deadlines, competitive SME-focused programs, and the STEP platform making discovery easier. Organizations that form **multi-partner consortia** are best positioned to qualify.
 
 ---
 
-### ⚡ Bottom Line
-The biggest **changes** in 2026 are the VLAIO advisory scope restriction (Feb 2026) and the new Brussels AI centre (April 2026). The most actionable **cooperative funding** remains the Brussels Innovation Fund (up to 50% cost coverage) and VLAIO R&D grants, where **cross-partner projects** receive higher subsidy rates.
-
-## [grassroot] community tech platform launch solidarity economy Europe April 2026
-
-Purpose: Detect new aligned actors or tools in the European cooperative/community tech space that could be partners or signal.
-
-Here's an honest, concise summary based on what the search results actually show:
-
----
-
-## Search Results: Community Tech Platform + Solidarity Economy in Europe (April 2026)
-
-There is **no single, specific news story** matching all four elements of your query simultaneously. However, here are the most relevant factual updates found:
-
----
-
-### 1. 🆕 Sovereign Tech Europe — Inaugural Event, Brussels (April 2026)
-**What changed:** The inaugural *Sovereign Tech Europe* (#EUTechSov26) conference launched in Brussels, focusing on Europe's technological sovereignty, resilience, and competitiveness in the digital landscape.
-
-**Why it matters:** Key questions on the agenda include the economic impact of open source software, how open source can strengthen Europe's competitiveness, and how it can improve cybersecurity across Europe's digital ecosystem. This is a first-of-its-kind convening around community-oriented, open tech infrastructure in Europe.
-
-**Source:** https://eu-techsovereignty.com/ *(published ~5 days ago)*
-
----
-
-### 2. 🔄 RIPESS Europe — Digital Solidarity Economy Platform Ecosystem (Ongoing)
-**What changed (background context):** RIPESS Europe built an ecosystem of digital software platforms based on FLOSS (Free-Libre Open Source Software) and Creative Commons/GPL licenses, aiming to promote decentralised, interoperable, cooperatively owned, and community-managed alternatives to commercial platforms.
-
-**Source:** https://ripess.eu/en/digital-solidarity-economy-an-ecosystem-of-free-software-platforms/ *(Feb 2023, still active)*
-
----
-
-### 3. 📋 Social Economy Europe — EU-Funded Capacity Projects (Active 2025–2026)
-**What changed:** The *baSE* project is reinforcing Social Economy (SE) capacities involving 25 partners from 10 European countries, focused on skills mismatches and reskilling of social economy practitioners, co-funded by the European Union under Horizon Europe.
-
-**Source:** https://www.socialeconomy.eu.org/our-work/projects-2/
-
----
-
-### ⚠️ Important Caveat
-The search returned **no single headline launch** of a "community tech platform" explicitly tied to solidarity economy in Europe in April 2026. If you have a specific organization, project name, or country in mind, I can run a more targeted search to get you precise results.
-
-## [grassroot] shop local movement cooperative retail Belgium grassroot initiative April 2026
-
-Purpose: Track grassroot retail and local shop movements that intersect with Grassroot Hoppers' wedge use case.
-
-Based on my research, I have to be transparent with you about what the searches found. Here is an honest summary:
-
----
-
-## 🔍 Search Summary: Shop Local / Cooperative Retail Movement in Belgium (April 2026)
-
-### ⚠️ Transparency Note
-No specific **breaking news or updates from April 2026** were found for this exact topic. My knowledge cutoff and available search results do not surface a distinct new initiative launched in April 2026. Here is what the most credible, recent sources do confirm:
-
----
-
-### 🛒 What Exists (Confirmed Facts)
-
-**BEES Coop – Belgium's flagship grassroots cooperative retail model:**
-
-In Belgium, BEES Coop in Brussels opened the country's first consumer-owned and managed supermarket in 2014, functioning based on a "triple commitment" from its members — who are simultaneously an owner, a worker, and a customer. The cooperative now has over 1,500 members.
-
-BEES Coop is a not-for-profit cooperative with 1,600 co-operators. It is a unique supermarket where members must participate to earn the right to shop, offering healthy and quality food — preferably locally sourced.
-
-**The model has spread across Belgium:**
-
-In Charleroi in 2016, a small group of dedicated citizens launched a similar cooperative under the name Coopéco. BEES Coop is described as "the big brother" of these kinds of initiatives in Belgium — one of the first projects of its kind in the country.
-
-**How the model works:**
-
-"Cooperative" means initiatives take the form of co-ops where members jointly own and control the venture, managed on the principle of "one person, one vote." "Participative" means each member commits to working voluntarily for a few hours per month to keep the shop running smoothly.
-
-**Why it matters — the philosophy:**
-
-"If you buy from your neighbour, then that's de facto fair trade. We also want to take producer input into account as much as possible so as not to drive down the prices."
-
----
-
-### 📈 Broader Belgian Retail Context (2025–2026)
-
-The market size of the supermarkets & grocery stores industry in Belgium is €47.9bn in 2026. There are 8,437 businesses in this industry, which has declined at a CAGR of 0.1% between 2020 and 2025 — suggesting consolidation pressure that makes grassroots cooperative models more relevant as a counter-movement.
-
----
-
-### 🔗 Most Important Source URLs
+### Key Source URLs
 
 | Source | URL |
 |---|---|
-| ICA – Rise of cooperative supermarkets | https://ica.coop/en/newsroom/news/community-community-rise-cooperative-participative-supermarkets-0 |
-| Trade for Development Centre (Belgium) | https://www.tdc-enabel.be/en/2021/12/21/cooperative-participative-supermarkets/ |
-| FoodUnfolded – BEES Coop profile | https://www.foodunfolded.com/article/participatory-food-cooperatives |
-| BEES Coop official site | https://bees-coop.be/en/ |
+| April 2026 Startup Grants Roundup | https://blog.mean.ceo/startup-grants-europe-news-april-2026/ |
+| EU Funding Portal – Open Calls | https://eufundingportal.eu/eu-calls-for-proposals/ |
+| Interoperable Europe Digital Funding | https://interoperable-europe.ec.europa.eu/eu-digital-funding-opportunities |
+| STEP – Strategic Technologies Platform | https://strategic-technologies.europa.eu/get-funding_en |
+| Horizon Europe Partnerships | https://research-and-innovation.ec.europa.eu/funding/funding-opportunities/funding-programmes-and-open-calls/horizon-europe/european-partnerships-horizon-europe_en |
+
+## [grassroot] Brussels Belgium community movement civic tech new initiative announcement April 2026
+
+Purpose: Detect fresh local movement signals in Brussels that could surface aligned people or partnership opportunities for Grassroot Hoppers.
+
+Here is a concise, factual summary of what's happening in Brussels around community movements, civic tech, and new initiatives in April 2026:
 
 ---
 
-**Bottom line:** The Belgian grassroots cooperative retail movement is well-established and growing, anchored by BEES Coop and regional spin-offs, but **no specific new initiative uniquely tied to April 2026** surfaced in available sources. If you have a specific organization or event in mind, sharing more details would help narrow the search.
+## 🗓️ Brussels: Community & Civic Tech — April 2026 Update
 
-## [dev] Anthropic Claude API pricing change April 2026
+### 1. 🖥️ Open Community Experience (OCX) 2026 — *21–23 April 2026*
+**What changed:** The Eclipse Foundation announced the full agenda for OCX 2026, taking place 21–23 April 2026 at The EGG conference centre in Brussels — one of Europe's leading open source community gatherings.
 
-Purpose: Check for any new pricing or quota updates after Opus 4.7 launch that affect Julien's MyLifeOS skill infrastructure.
+**Why it matters:** The 2026 conference combines the main OCX tracks with five co-located events covering Tooling, AI, Automotive, Compliance, and Research. It's a significant convergence of open-source civic and industrial tech communities in Brussels.
 
-Here's a concise, sourced summary of the recent Anthropic Claude API pricing changes around April 2026:
-
----
-
-## Anthropic Claude API Pricing Changes — April 2026
-
-### 🔄 What Changed
-
-**1. Enterprise Pricing Restructured (Key Change)**
-
-Anthropic has revised its seat-based pricing for enterprise customers, shifting them to a new plan upon contract renewal. The transition began in **November 2025**, and in **February 2026**, the company introduced further changes.
-
-The seat-based component — the flat monthly fee and associated token pool — for Enterprise **no longer comes with subsidized tokens**. Legacy documentation previously noted that some Enterprise organizations received discounted token bundles, but that benefit has been removed.
-
-The new structure surfaces a **$20/month seat for technical users (Claude Code)** and lower seats for business users, while removing previous API discounts and **requiring organizations to commit to estimated monthly consumption up front**.
-
-**2. Claude Code / Third-Party Tool Change (April 4, 2026)**
-
-Starting **April 4, 2026**, Claude Code subscribers can "no longer use their Claude subscription limits for third-party harnesses including OpenClaw," making it more expensive to use Claude with third-party tools.
-
-**3. Token Prices Themselves Are Unchanged**
-
-Token unit prices are unchanged. The restructuring is about removing legacy discounts, not raising per-token rates. Current API rates are:
-- **Claude Opus 4.6**: $5.00/$25.00 per million tokens (input/output). **Claude Sonnet 4.6**: $3.00/$15.00 per million tokens.
-- **Claude Haiku 4.5**: $1.00/$5.00 per million tokens.
-
-**4. Batch API Discount Still Available**
-
-The Anthropic Message Batches API processes requests asynchronously within 24 hours at **50% off standard token prices**, with no quality difference from real-time responses.
+**Source:** https://newsroom.eclipse.org/news/announcements/eclipse-foundation-unveils-full-agenda-ocx-2026
 
 ---
 
-### ⚠️ Why It Matters
+### 2. 🤖 AI Community Days Brussels (AICD) — *27 April 2026*
+**What changed:** AI Community Days (AICD) — a worldwide initiative to democratize Artificial Intelligence — is holding its Brussels edition on April 27, 2026, organized by AI professionals, developers, and enthusiasts, not corporations.
 
-Anthropic has executed one of the more consequential pricing pivots in AI — not by raising headline subscription prices, but by **restructuring the underlying logic of who pays for what, and when**. The shift is toward usage-based billing: metered, multiplied, and increasingly unavoidable for anyone doing serious work with Claude. Enterprise customers who previously benefited from bundled token discounts will now face higher effective costs at scale.
+**Why it matters:** The event is hosted at Microsoft Belgium and is part of a global network spanning 50+ major cities. It represents a grassroots, community-driven push to broaden AI access.
+
+**Source:** https://www.communitydays.org/event/2026-04-27/aicd-brussels
+
+---
+
+### 3. 🏛️ New European Bauhaus (NEB) Festival — *Brussels, 2026*
+**What changed:** The 2026 NEB Festival focuses on **Democratic Engagement** — showing how citizens can be involved in shaping their communities — and on **Affordable Housing** as a foundation for inclusive societies.
+
+**Why it matters:** The festival includes urban exploration of Brussels' public spaces and hands-on workshops with architects and urban practitioners, directly linking civic participation with city transformation.
+
+**Source:** https://new-european-bauhaus.europa.eu/festival_en
+
+---
+
+### 4. ⚖️ EDRi Civic Digital Rights Alert — *15 April 2026*
+**What changed:** EDRi's April 15, 2026 newsletter flagged that the EU's **Digital Omnibus** proposals — framed as "simplification" — risk weakening essential safeguards in the GDPR, the ePrivacy Directive, and the AI Act.
+
+**Why it matters:** One year ago, EDRi, ECNL, and Lighthouse Reports launched the **Civic Journalism Coalition** to connect investigative journalists with digital rights — and this latest alert underscores ongoing civic pushback against EU regulatory rollbacks.
+
+**Source:** https://edri.org/our-work/edri-gram-15-april-2026/
+
+---
+
+### 📌 Bottom Line
+April 2026 sees Brussels as an active hub for **open-source tech, AI democratization, citizen participation, and digital rights advocacy** — with multiple overlapping community-driven events and a sharp civic debate around EU tech regulation. The EDRi alert and NEB Festival are the most directly "civic/community movement" oriented items.
+
+## [grassroot] open source community-owned software cooperative launch news April 2026
+
+Purpose: Track new aligned projects or actors entering the cooperative tech space that could inform Grassroot Hoppers positioning.
+
+Here is a concise, fact-based summary of the most relevant recent development:
+
+---
+
+## 🆕 Open Source Endowment (OSE) — Launch & Status Update
+
+### What Changed
+
+A group of notable open-source programmers joined with a VC investor to launch a nonprofit called the **Open Source Endowment (OSE)**, aimed at permanently solving the perennial funding problem for open-source software.
+
+Backers include Thomas Dohmke (former GitHub CEO), Mitchell Hashimoto (founder of HashiCorp), Supabase founder Paul Copplestone, an NGINX co-founder, and the creators of Vue.js and cURL, plus executives from Elastic, Spotify, and others — over 50 donors in total.
+
+The OSE formally achieved **501(c)(3) nonprofit status** with **$717,000 in commitments from 95 founding donors**. The article was updated as recently as **April 8, 2026**.
+
+**First payments are scheduled for Q2 2026.** Grant recipients are nominated via a form on the website, with funding selected using a risk assessment model and community input.
+
+OSE describes itself as "a community-led endowment fund that leverages open source alumni," operating as an open nonprofit with public governance processes and clear accountability in all funding decisions.
+
+---
+
+### Why It Matters
+
+Up to **86% of open-source developers are not paid for their work**, and the lack of sustainable funding has been a longstanding crisis in the ecosystem.
+
+A new and urgent pressure has emerged: AI-generated code is flooding projects with junk pull requests and fabricated vulnerability reports, pushing maintainers to "the breaking point."
+
+OSE has stated it "won't give money for commercial product development — it is dedicated to supporting existing highly-used nonprofit and independent OSS."
+
+---
+
+### ⚠️ A Note on Your Query
+
+Your query specifically asked about a **"community-owned software cooperative"** launching in **April 2026**. No exact match for that specific framing was found in search results. The OSE is the closest and most newsworthy real development — it is community-governed, nonprofit, and open to all contributors — but it is structured as an **endowment fund**, not a formal worker cooperative.
+
+---
+
+### 📌 Most Important Sources
+
+- **TechCrunch (Feb 26, 2026):** https://techcrunch.com/2026/02/26/a-vc-and-some-big-name-programmers-are-trying-to-solve-open-sources-funding-problem-permanently/
+- **OSE Official Site:** https://endowment.dev/
+- **The Register (Feb 27, 2026):** https://www.theregister.com/2026/02/27/open_source_endowment/
+
+## [dev] Anthropic Claude API pricing change or model deprecation April 2026
+
+Purpose: Monitor for further cost or model shifts that could affect Julien's MyLifeOS skill infrastructure.
+
+Here's a concise, factual summary of the key Anthropic Claude API changes around April 2026:
+
+---
+
+## Anthropic Claude API: Key Changes (April 2026)
+
+### 1. 🚨 Model Deprecations
+
+**Claude Haiku 3 — Retired April 19, 2026**
+**`claude-3-haiku-20240307` retires April 19, 2026** — after that date, API requests fail outright with no redirect. The replacement is `claude-haiku-4-5-20251001` at **$1.00/$5.00** per million tokens (up from $0.25/$1.25 — a 4× price increase).
+
+Claude Sonnet 3.7 is also deprecated. If you're running production workloads on either, migrate now.
+
+**Claude Sonnet 4 & Opus 4 — Deprecated, retiring June 15, 2026**
+Anthropic announced the deprecation of `claude-sonnet-4-20250514` and `claude-opus-4-20250514`, with retirement on the Claude API scheduled for **June 15, 2026**. Anthropic recommends migrating to Claude Sonnet 4.6 and Claude Opus 4.6 respectively.
+
+---
+
+### 2. 💰 Enterprise Pricing: Flat Rate → Usage-Based
+
+The transition began in **November 2025**, when Anthropic began renewing companies under a usage-based plan. In February 2026, the company introduced a single **$20-per-employee monthly fee** covering Claude Code, Cowork, and chat on a usage-based plan. By no later than March 8, company documentation changed to say that the **legacy enterprise plan would no longer be available**.
+
+**Why it matters:** Anthropic changed Claude Enterprise billing from a fixed per-seat subscription to a **lower headline seat fee plus mandatory consumption commitments**.
+
+---
+
+### 3. 🚫 Third-Party AI Agents Blocked from Subscriptions
+
+**Effective April 4**, Claude Pro and Max subscribers can no longer use their plan limits to power tools like OpenClaw. Users who want to keep those agents running must now switch to **pay-as-you-go usage bundles** or connect through a direct API key.
+
+---
+
+### 4. ✅ Long-Context Pricing Surcharge Removed (Good News)
+
+Anthropic removed the long-context pricing surcharge for **Claude Opus 4.6 and Sonnet 4.6**, making 1-million-token context windows available at **standard per-token rates**.
 
 ---
 
 ### 📌 Most Important Source URLs
 
-| Source | Date | URL |
-|---|---|---|
-| The Register (Enterprise token bundle removal) | Apr 16, 2026 | https://www.theregister.com/2026/04/16/anthropic_ejects_bundled_tokens_enterprise/ |
-| TechCrunch (Claude Code / OpenClaw change) | Apr 4, 2026 | https://techcrunch.com/2026/04/04/anthropic-says-claude-code-subscribers-will-need-to-pay-extra-for-openclaw-support/ |
-| Anthropic Official Pricing Docs | Live | https://platform.claude.com/docs/en/about-claude/pricing |
-| Kingy AI (Enterprise billing analysis) | Apr 2026 | https://kingy.ai/ai/usage-based-billing-no-flat-rate-why-anthropics-2026-pricing-shift-changes-everything-for-claude-users/ |
+| Topic | URL |
+|---|---|
+| Haiku 3 deprecation & migration | https://tokencost.app/blog/claude-haiku-3-deprecation-migration |
+| Enterprise pricing shift | https://www.theregister.com/2026/04/16/anthropic_ejects_bundled_tokens_enterprise/ |
+| Agent access blocked | https://www.pymnts.com/artificial-intelligence-2/2026/third-party-agents-lose-access-as-anthropic-tightens-claude-usage-rules/ |
+| April 2026 release notes | https://releasebot.io/updates/anthropic |
+| Official API pricing | https://platform.claude.com/docs/en/about-claude/pricing |
 
-## [game] indie game developer cooperative distribution platform launch 2026
+## [game] indie game release or solo developer launch itch.io April 2026
 
-Purpose: Monitor for new community-owned or cooperative game distribution models emerging as alternatives to Steam.
+Purpose: Keep radar on the indie game space Julien may move toward in his 6-month horizon.
 
-Here's a concise, fact-based summary of the most relevant recent development:
+Here is a concise, fact-based summary of what's happening with indie game / solo developer launches on itch.io around April 2026:
 
 ---
 
-## 🎮 Indie Pass by indie.io — New Dedicated Indie Game Subscription Platform
+## 🎮 Indie & Solo Dev Launches — April 2026 Update
 
 ### What Changed
-**indie.io** announced **Indie Pass**, described as the world's only subscription platform exclusively for indie games. It launched globally on PC on **April 13, 2026**, with 70+ titles and a low-cost, wide-variety subscription model aimed at helping independent developers reach new audiences.
 
-For developers and publishers, Indie Pass uses a **non-exclusive participation model**, with revenue distributed based on how much time players spend in each game — positioning this as an ongoing revenue stream beyond a game's initial launch window.
+**1. April 2026 Indie Release Wave**
+April 2026 saw a wave of notable indie releases and demos, including *Fishbowl* (released **April 2nd, 2026** for PC and PlayStation 5) and *Bone Fire Effigy* by solo developer Vladimere Lhore (released **April 6th, 2026** for PC via Steam). Notably, *Bone Fire Effigy* was originally released on itch.io in June 2025 before its Steam version launched, with the developer also updating the estimated play time from 20–50 minutes to 30–60 minutes.
 
-According to indie.io, the platform launched with access to its existing network, which it says connects to **more than 10 million monthly users** across its publishing and community channels.
+**2. Solo Debut Launch on itch.io**
+A solo developer shared on itch.io's Release Announcements board that, after more than three years of work, they finally released their debut indie game — posted approximately **4 weeks ago** (late March/early April 2026).
 
-### Why It Matters
-- **Non-exclusivity** is a key differentiator: developers don't have to lock their game to the platform, lowering the barrier to participation.
-- It directly addresses a gap for indie developers who struggle with discoverability and post-launch monetization on larger platforms like Steam.
-- indie.io already distributes games through **more than 60 different channels**, including all major platforms and digital retail storefronts, giving Indie Pass a built-in distribution backbone.
+**3. Active itch.io Devlogs in April 2026**
+itch.io's devlogs page shows active updates as recently as **April 19, 2026**, with developers pushing new game content and feature patches.
 
-### Most Important Sources
-- 🔗 **MonsterVine (April 2026):** https://monstervine.com/2026/04/indie-pass-launch-april-13-indie-game-subscription-service/
-- 🔗 **Christ Centered Gamer (3 weeks ago):** https://www.christcenteredgamer.com/phpBB3/viewtopic.php?p=608894
-- 🔗 **indie.io official site:** https://www.indie.io/
-
----
-
-**Note:** No indie developer *cooperative* (worker/creator-owned co-op structure) distribution platform specifically launching in 2026 surfaced in results. The closest match is **Indie Pass**, which is developer-friendly but operated by indie.io as a company, not a cooperative. If you're tracking a specific co-op model project, it may not yet have significant press coverage.
-
-## [geo_eu] Asturias Galicia digital nomad visa residency update April 2026
-
-Purpose: Catch any recent legal or policy changes affecting Julien and Lucia's Spain relocation plan.
-
-Based on the search results, here is a concise, factual summary. Note upfront: **no search results found any specific "Asturias–Galicia digital nomad visa residency update" dated April 2026** — that specific framing does not appear to exist as a distinct policy event. What *does* exist are national-level Spain DNV changes and separate regional incentive schemes in both Asturias and Galicia. Here's what's real and current:
-
----
-
-## 🇪🇸 Spain Digital Nomad Visa & Asturias/Galicia — What's Actually Changed (2025–2026)
-
-> ⚠️ **No single "Asturias–Galicia DNV update for April 2026" was found.** The relevant changes are (a) national-level Spain DNV rule tightening and (b) separate regional subsidy/incentive programs in each region.
-
----
-
-### 1. 🔧 National DNV: UGE Overhaul (Early 2026)
-*(Source: [remotefromspain.com](https://remotefromspain.com/spains-digital-nomad-permit-2026-update/) — 3 days ago; [nodisea.com](https://nodisea.com/spain-digital-nomad-visa-in-2026) — 5 days ago)*
-
-The UGE (Spain's Digital Nomad Office) reorganized with a more senior, specialized team. The stated goal is to improve service and speed up processing, but also to enforce requirements more strictly.
-
-**Why the crackdown?** Much of the recent tightening responds to two real problems the office detected: fraudulent documents (fake employment contracts and registrations of companies that don't actually exist), and applicants failing to register with Spanish Social Security after approval.
-
-**Key new rules:**
-- It is not possible to modify from a Non-Lucrative Visa (NLV) or other non-work residence permits into Digital Nomad residency — a pathway many applicants previously assumed was available.
-- Autónomo registration must be completed as soon as possible after approval, but does not have to be done on the same day as the residency approval. Autónomo applications do not require a letter of authorization.
-- Bank statements must come from a Spanish bank account where autónomo payments are registered.
-
----
-
-### 2. 💶 Income Threshold Raised (January 1, 2026)
-*(Source: [myspanishresidency.com](https://www.myspanishresidency.com/visas-spain/digital-nomad-visa-spain/) — January 3, 2026)*
-
-Due to a €50 increase in Spain's annual minimum wage caused by inflation, the minimum salary required to apply for the Digital Nomad Visa in 2026 is now €2,763 per month.
-
----
-
-### 3. 🌿 Asturias: Regional Tax Deductions for Remote Workers
-*(Source: [idealista.com](https://www.idealista.com/en/news/property-for-sale-in-spain/2025/09/02/89159-abandoned-villages-in-spain-grants-tax-reductions-pay-to-move-and-more))*
-
-In Asturias, if you become newly self-employed in an area at risk of depopulation, you can apply for a €1,000 deduction. There's also a 15% deduction (up to €2,000) for those moving for a highly qualified job in research and development. These are regional tax perks — not a standalone visa.
-
----
-
-### 4. 🗺️ Galicia: Subsidies Exist, But No "Nomad Grant"
-*(Source: [remoteworkeurope.eu](https://www.remoteworkeurope.eu/insights/galicia-remote-incentives) — March 4, 2026)*
-
-Galicia does not offer a universal "digital nomad grant," nor does it pay people simply for relocating with a laptop. What it does have is a set of public subsidies embedded in employment, equality, and digitalisation policy, administered by the Xunta de Galicia, that can meaningfully offset costs for people who are legally established and working remotely under the Spanish system.
-
-The most relevant framework for remote work sits inside a recurring programme known as the *Programa de axudas á conciliación, igualdade e teletraballo*, managed through the Xunta's electronic administration portal. Each year, the programme opens under a specific procedure code — currently **TR357D** — and must be applied for directly through the Sede Electrónica da Xunta de Galicia.
+**4. Solo Devs to Watch in 2026**
+In the past decade, a number of solo developers have achieved success on par with triple-A studios, aided by increasingly accessible game development tools. Notably, Lucas Pope (of *Papers, Please* fame) has been releasing smaller titles on itch.io, including *Moida Mansion* (2024), playable free in-browser, while also mentoring emerging solo developers.
 
 ---
 
 ### Why It Matters
-The combination of stricter national DNV enforcement + rising income thresholds + modest (but real) regional tax breaks means:
-- **Getting in is harder** — fraudulent or sloppy applications are now more likely to trigger broader audits
-- **Asturias/Galicia incentives are niche**, not headline grants — they require legal establishment in Spain first, and are not marketed internationally
+
+- **itch.io remains a vital launchpad**: Solo devs continue to use it for early/experimental releases before (or instead of) Steam.
+- **The itch.io → Steam pipeline is active**: *Bone Fire Effigy* is a clear example of a game graduating from itch.io to a full Steam release in April 2026.
+- Despite wide budget variance, approximately 60% of indie developers self-fund their projects, with ~20% recouping costs within the first year through platforms like Steam and itch.io.
 
 ---
 
-### 🔗 Most Important Sources
-| Topic | URL | Age |
+### 📌 Key Sources
+
+| Source | URL |
+|---|---|
+| April 2026 Indie Wrap-Up (MonsterVine) | https://monstervine.com/2026/04/april-2026-indie-game-wrap-up/ |
+| Solo Dev Debut Launch (itch.io forum) | https://itch.io/t/6148931/finally-released-my-debut-indie-game-after-3-years-of-development |
+| 10 Solo Devs to Watch 2026 (Screen Rant) | https://screenrant.com/best-solo-dev-games-2026/ |
+| itch.io Devlogs (live) | https://itch.io/devlogs |
+
+## [geo_eu] European Union digital sovereignty or platform regulation news April 2026
+
+Purpose: Track EU policy shifts that could shape the regulatory environment for cooperative tech in Belgium.
+
+Here is a concise, source-backed briefing on EU digital sovereignty and platform regulation as of **April 2026**:
+
+---
+
+## 🇪🇺 EU Digital Sovereignty & Platform Regulation — April 2026 Update
+
+---
+
+### 1. 🔒 Sovereign Cloud Contracts Awarded (April 17, 2026)
+
+**What changed:** This April, the European Commission awarded its Sovereign Cloud tender, through which EU institutions, bodies, offices and agencies can procure sovereign cloud services for up to **€180 million over 6 years**. The tender was launched last October as part of efforts to strengthen the digital sovereignty posture of Union entities.
+
+The Commission awarded **four contracts** to ensure diversification and resilience, avoiding potential lock-in by a single provider — including a Belgian-French-Luxembourgish partnership led by Proximus, using services from S3NS (a Thales/Google Cloud joint venture), Clarence, and Mistral.
+
+To be eligible, providers needed to reach **SEAL-2 Data Sovereignty level**, meaning they abide by EU laws and regulations without requiring additional technical measures by the customer.
+
+**Why it matters:** This is the EU putting real procurement muscle behind sovereignty — mandating compliant cloud infrastructure for its own institutions and signaling market expectations to providers.
+
+📎 **Source:** https://commission.europa.eu/news-and-media/news/commission-advances-cloud-sovereignty-through-strategic-procurement-2026-04-17_en
+
+---
+
+### 2. ⚖️ DSA Second Enforcement Wave Begins (Q2 2026)
+
+**What changed:** The DSA's second enforcement wave, beginning in **Q2 2026**, extends obligations that previously applied only to Very Large Online Platforms (VLOPs) to a **much broader set of companies** — including several that have so far escaped serious regulatory scrutiny.
+
+**Why it matters:** This significantly widens the regulatory perimeter. Mid-size platforms previously operating below the VLOP threshold now face DSA-level compliance obligations on content moderation, transparency, and algorithmic accountability.
+
+📎 **Source:** https://howsociable.com/news/2026/04/why-the-eu-digital-services-act-matters-2026
+
+---
+
+### 3. 💸 DMA Fines & US Retaliation Threat (Ongoing in 2026)
+
+**What changed:** Apple and Meta were fined **€500 million and €200 million respectively** for non-compliance with the Digital Markets Act (DMA); Google was hit with a **€2.95 billion fine** for breaching competition rules.
+
+The EU's DMA and DSA enforcement is targeting Apple, Google, Meta, Amazon, and Microsoft with potential fines exceeding **€100 billion collectively**, according to Commission estimates. President Trump has threatened "immediate and substantial retaliation" against the EU's escalating tech enforcement.
+
+**Why it matters:** The clash between EU enforcement and US political pressure is the defining tension in transatlantic tech relations — with trade war implications.
+
+📎 **Source:** https://europeanbusinessmagazine.com/european-news/eu-prepares-tougher-tech-enforcement-in-2026-as-trump-warns-of-retaliation/
+
+---
+
+### 4. 📡 Digital Networks Act Proposed (January 2026)
+
+**What changed:** The European Commission proposed the **Digital Networks Act (DNA)** to modernise, simplify, and harmonise EU rules on connectivity networks. It seeks to harmonise rules across the bloc for fibre roll-out, 4G/5G mobile networks, and satellite services, though it stops short of creating a fully unified telecoms market or requiring Big Tech contributions to network costs.
+
+**Why it matters:** The DNA is a foundational piece of infrastructure sovereignty — but its exemption of Big Tech from network cost contributions is already controversial.
+
+📎 **Source:** https://ec.europa.eu/commission/presscorner/detail/en/ip_26_107
+
+---
+
+### TL;DR
+
+| Development | Date | Key Number |
 |---|---|---|
-| UGE 2026 overhaul (national) | https://remotefromspain.com/spains-digital-nomad-permit-2026-update/ |
+| Sovereign Cloud contracts awarded | April 17, 2026 | €180M, 4 providers |
+| DSA extended to broader platforms | Q2 2026 | Wider than VLOPs only |
+| DMA fines: Apple, Meta, Google | 2026 | €500M / €200M / €2.95B |
+| Digital Networks Act proposed | Jan 20, 2026 | Harmonizes telecoms rules |
