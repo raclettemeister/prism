@@ -1,288 +1,287 @@
-<!-- PRISM Web Intelligence — 2026-04-23 -->
-# Web Intelligence — 2026-04-23
+<!-- PRISM Web Intelligence — 2026-04-24 -->
+# Web Intelligence — 2026-04-24
 *Scheduled theme: Grassroot Hopper & Cooperative Tech*
 
-## [grassroot] cooperative technology platform news Belgium Brussels 2026 last 24 hours
+## [grassroot] Brussels cooperative tech community funding grants April 2026
 
-Purpose: Scan for fresh cooperative/community tech signals in Julien's home base
+Purpose: Scan for new grant cycles or funding announcements relevant to cooperative/community tech in Belgium this week.
 
-Here is a concise, factual summary of the most relevant recent developments matching your query — covering **cooperative technology platforms** in **Belgium/Brussels** in **2026**:
-
----
-
-## 🔎 Recent Updates: Cooperative Technology Platforms — Belgium/Brussels 2026
+Here is a concise, factual summary of what the search results reveal about Brussels cooperative/tech community funding grants around April 2026:
 
 ---
 
-### 1. 🤖 Accenture & Google Cloud Launch Sovereign AI Centre in Brussels
-**Date: ~April 13, 2026** | *~1 week ago*
+## Brussels Tech & Cooperative Funding — April 2026 Update
 
-**What changed:**
-Accenture and Google Cloud opened a new **Sovereign Cloud & AI Innovation Center** in Brussels, aimed at helping governments and highly regulated industries scale artificial intelligence while maintaining strict control over data and infrastructure. The new facility, jointly operated by both companies, serves as an innovation hub and training centre.
+### 🔄 What Changed
 
-The centre provides organisations with a space to innovate, train, explore, design, and validate secure cloud and AI solutions in an air-gapped environment, supporting mission-critical workloads that cannot connect to public networks.
+1. **Brussels Digitalization Bonus (active in 2026):**
+The main source of tech/digital funding for businesses in Brussels in 2026 is the **Digitalization Bonus**, which reimburses between **25% and 70%** of consulting fees to create or improve a website or e-commerce platform, with a ceiling of **€10,000 per year** for SMEs with their operational headquarters in the Brussels-Capital Region.
 
-It addresses growing concerns over digital sovereignty in critical sectors such as finance, health, and defence.
+2. **Hub.Brussels Cooperative Employment Grant (ongoing):**
+Hub.brussels lists a **Cooperative Employment Grant** as one of its current featured subsidy offerings for entrepreneurs in Brussels, alongside digitalization grants, coworking grants, and investment grants. This is notable for community-oriented and cooperative tech ventures specifically.
 
-**Why it matters:** This is Brussels becoming a focal point for Europe's sovereign AI infrastructure — a direct response to EU data governance pressures.
+3. **SENSE Foundation Brussels — April 30, 2026 Deadline:**
+The **SENSE Foundation Brussels** has opened a funding round with a first application deadline of **5pm CEST, April 30, 2026**, targeting non-profit organizations. Grants are intended as a "booster" to help organizations secure additional funding from other sources. Grants are currently intended for projects **9–12 months in duration**, implemented from summer 2026 onward, and applicants must have been legally registered as a non-profit for at least 2 years.
 
-**Source:** [consultancy.eu](https://www.consultancy.eu/news/13505/accenture-and-google-cloud-launch-sovereign-cloud-and-ai-innovation-center-in-brussels) | [tech.eu](https://tech.eu/2026/04/13/accenture-and-google-cloud-unveil-brussels-centre-to-accelerate-sovereign-ai-adoption/)
-
----
-
-### 2. 💻 Eclipse Foundation's OCX 2026 — Open Source Cooperative Platform Event in Brussels
-**Date: April 21–23, 2026** | *Announced Feb 26, 2026; happening now/this week*
-
-**What changed:**
-The Eclipse Foundation announced the full agenda for **Open Community Experience (OCX) 2026)**, taking place April 21–23, 2026 at The EGG conference centre in Brussels — OCX is the Foundation's flagship conference and one of Europe's premier open source events.
-
-The event expands with five high-impact co-located communities across **AI, automotive, compliance, research, and tooling**.
-
-**Why it matters:** As the Open-Source Leader within the O-CEI project, the Eclipse Foundation is hosting two key events: the Open Community Experience (OCX) and the co-located **Open Community for Research (OCR)** — making Brussels a live hub for European open-source cooperative technology governance this week.
-
-**Source:** [newsroom.eclipse.org](https://newsroom.eclipse.org/news/announcements/eclipse-foundation-unveils-full-agenda-ocx-2026) | [ocxconf.org](https://www.ocxconf.org/event/403bffe2-15d8-49ac-af52-e2781b7296b3/summary)
+4. **Belgium Startup Grants — Cleantech & Green Tech Focus (April 2026):**
+Belgium's startup grants scene in April 2026 is notably active in **cleantech and green energy**, with companies in solar, wind, and battery tech well-positioned for co-funding opportunities.
 
 ---
 
-### 3. 🚂 European Sleeper Cooperative — Brussels–Milan Night Train Delayed to September 2026
-**Date: March 5, 2026**
+### 📌 Why It Matters
 
-**What changed:**
-A new night train linking **Brussels with Milan** will no longer launch in June as planned — the route operated by European Sleeper will now take to the rails in **September 2026** instead.
-
-European Sleeper is a **Dutch-Belgian cooperative** that has already launched a Brussels–Prague route and a Paris–Brussels–Berlin sleeper (which launched March 26, 2026).
-
-**Why it matters:** The cooperative model is expanding European night rail, but faces operational delays — a signal of the practical challenges facing mission-driven transport cooperatives.
-
-**Source:** [euronews.com](https://www.euronews.com/travel/2026/03/05/european-sleepers-new-brussels-milan-route-delayed-until-september)
+- The **Digitalization Bonus** is directly actionable for tech cooperatives or community-oriented SMEs based in Brussels needing digital infrastructure support.
+- The **SENSE Foundation deadline (April 30, 2026)** is immediately time-sensitive for non-profit tech/community organizations.
+- The **Hub.brussels cooperative employment grant** signals continued regional support for the cooperative economic model specifically.
 
 ---
 
-### ⚠️ Caveat
-No results surfaced within a strict **last 24-hour** window specifically labelled as "cooperative technology platform" news. The above are the **closest and most recent verified matches** to your query. If you have a specific organisation or platform name in mind, please share it for a more targeted search.
+### 🔗 Most Important Source URLs
 
-## [grassroot] community movement grants funding Europe grassroots organizations April 2026
-
-Purpose: Surface new grant or funding opportunities aligned with Grassroot Hoppers direction
-
-Here is a concise, factual summary of recent updates on community movement grants and funding for grassroots organizations in Europe, as of April 2026:
-
----
-
-## 🌍 Grassroots & Community Grants in Europe — April 2026 Update
-
-### 1. ENCC "Up Grants" 2026 — Democracy & Participation Microgrants
-**What changed:** The European Network of Cultural Centres (ENCC) has relaunched its **Up Grants** microgrants programme, now with a focus on **democracy and participation**. Public and expert voting ran through **April 7th**, with one winning project per strand receiving **€4,000**.
-
-**Why it matters:** Up Grants is not just a grants scheme but a platform to help socio-cultural centres working on democracy, participation, or social transformation gain visibility and grow their impact beyond their local context.
-
-🔗 **Source:** https://encc.eu/articles/up-grants-2026
+| Source | URL |
+|---|---|
+| Brussels Digitalization Bonus guide | https://www.numinam.com/en/blog/grants-for-creating-a-website-in-brussels-in-2026-complete-guide-to-the-digitalization-grant-25-to-70-subsidy |
+| Hub.Brussels subsidies (incl. Cooperative Employment Grant) | http://info.hub.brussels/en/guide/subsidies-entrepreneurs |
+| SENSE Foundation Brussels (deadline: Apr 30, 2026) | https://www.sensefoundationbrussels.org/submit-your-project |
+| Belgium Startup Grants — April 2026 | https://blog.mean.ceo/startup-grants-belgium-news-april-2026/ |
 
 ---
 
-### 2. EU Internal Security Fund (ISF) CEEP — Up to €1.5M for Community Resilience
-**What changed:** The **EU Internal Security Fund (ISF) CEEP Grant 2026** offers up to **€1.5 million** in funding for civil society-led projects aimed at **preventing online radicalisation and strengthening community resilience** across Europe. The final deadline to apply is **May 27, 2026**.
+> ⚠️ **Note:** No single major new announcement specifically targeting *cooperative tech communities* in Brussels was found for April 2026. The landscape is a combination of ongoing regional programs and imminent deadlines. It's worth checking hub.brussels directly for any newly announced calls.
 
-**Why it matters:** Proposals are evaluated on Relevance (30 pts), Quality (50 pts), and Impact (20 pts), requiring a minimum total score of 70/100 — emphasizing methodology, feasibility, sustainability, and scalability.
+## [grassroot] aligned people movement community building Europe new projects 2026
 
-🔗 **Source:** https://opportunitiesforyouth.org/2026/04/21/eu-security-fund/
+Purpose: Surface newly announced grassroot initiatives or aligned-values communities in Europe that could be signal for Julien's orientation phase.
 
----
-
-### 3. Tiered Sub-Grants for Grassroots Movements (Climate, Gender & Economic Justice)
-**What changed:** A **March 11, 2026** call for proposals launched to **empower grassroots movements, youth groups, and small-to-medium civil society organizations**, focused on climate, gender, and economic justice. The funding is structured in three tiers: **Macro grants (€40,000–€60,000)**, **Meso grants (€20,000–€35,000)**, and **Micro grants (€5,000–€15,000)**.
-
-**Why it matters:** The tiered structure makes funding accessible to very small organizations, not just established NGOs.
-
-🔗 **Source:** https://eufundingportal.eu/capacity-building/
+Here is a concise, factual summary of what the search results reveal on this topic as of mid-2026:
 
 ---
 
-### 4. CERV Programme 2026 — €305M for Rights, Equality & Democracy
-**What changed:** The **CERV Programme 2026** comprises **12 EU calls with a total budget of €305 million**, covering rights, equality, democracy, and anti-violence work — including **€76M for civic participation and democracy** and **€27M for gender equality and anti-discrimination**.
+## 🗺️ Aligned People / Movement Community Building in Europe — Updates (2025–2026)
 
-**Why it matters:** The funding rate is usually **90%** (lump sum), making it highly accessible for non-profit and grassroots partners across transnational consortia (2+ countries).
+### 1. European Solidarity Corps — 2026 Call Launched *(November 17, 2025)*
+The European Commission launched the **2026 European Solidarity Corps call for proposals**, marking a double anniversary: 30 years of EU volunteering and 10 years of the Solidarity Corps. This EU initiative creates opportunities for young people to volunteer or work in projects in their own country or abroad that benefit communities and people across Europe.
 
-🔗 **Source:** https://global-disruption.com/eu-calls/cerv/index.html
-
----
-
-### Key Takeaway
-April 2026 marks an **active and well-funded moment** for European grassroots organizations, with multiple concurrent calls across democracy, resilience, climate justice, and civic participation — ranging from small microgrants (€4,000) to large civil society funds (€1.5M+). Deadlines are concentrated between **April and May 2026**, so immediate action is needed.
-
-## [grassroot] aligned people network solidarity economy new initiative launch April 2026
-
-Purpose: Detect newly announced people or projects in the aligned-builder/solidarity space worth tracking
-
-Based on extensive searching across multiple query combinations — including **"aligned people network solidarity economy"**, **"aligned people network 2026"**, and related variants — no results were found for any organization or initiative specifically named **"Aligned People Network"** in the context of a solidarity economy launch in April 2026.
-
-Here's what I can tell you concretely:
+**Why it matters:** This is a major funded pipeline for people wanting to plug into values-aligned community projects across Europe.
+🔗 [eacea.ec.europa.eu](https://www.eacea.ec.europa.eu/news-events/news/launch-2026-european-solidarity-corps-call-proposals-and-programme-guide-2025-11-17_en)
 
 ---
 
-### 🔍 Search Summary
+### 2. GEN Europe — Ecovillage Volunteering 2026 *(January 2026)*
+GEN Europe advertised a funded volunteering opportunity to **live and work at the heart of the European ecovillage movement**, specifically at Arterra Bizimodu ecovillage in the Basque Country, Spain — open to EU residents under 30 with interests in IT, media/design, or nonprofit/events management.
 
-**No verifiable results found** for an entity called the **"Aligned People Network"** launching a solidarity economy initiative in April 2026.
-
-**What the searches did return:**
-- General updates from established solidarity economy organizations like the **New Economy Coalition (NEC)**, **USSEN**, and **RIPESS** — but none involve a new initiative under that name.
-- An unrelated **"Aligned Partner Network" (APN)** run by Worksystems in Portland, focused on workforce training, not solidarity economy work. ([worksystems.org](https://worksystems.org/aligned-partner-network/))
-- Various unrelated uses of "aligned" + "network" in healthcare and AI contexts.
+**Why it matters:** Demonstrates concrete, place-based community-building projects actively recruiting aligned people in 2026.
+🔗 [gen-europe.org](https://gen-europe.org/info-sheet-esc-gen-europe/)
 
 ---
 
-### ⚠️ What This Likely Means
+### 3. Wild Minds Network — Off-Grid & Land-Based Community Platform *(Ongoing)*
+Wild Minds Network is **a members-only space to meet aligned people, discover real-world projects, and find where you fit in the movement** — focused on off-grid, land-based, and freedom-oriented projects including farms, communities, land offers, and volunteering.
 
-1. **The organization may not exist under that exact name** — it's possible there's a naming variation (e.g., "People's Aligned Network," "Aligned Communities Network," etc.).
-2. **It may be too new or small** to have been indexed by search engines yet.
-3. **The query may contain inaccurate details** — e.g., the launch month, organization name, or framing may differ from what's publicly reported.
-
----
-
-### 💡 Recommendation
-
-If you have a source (press release, newsletter, social media post) where you first encountered this, sharing it would help verify and contextualize the details. Alternatively, try searching directly at:
-- [neweconomy.net](https://neweconomy.net) — the leading US solidarity economy network hub
-- [ussen.org](https://ussen.org) — the US Solidarity Economy Network
-
-## [dev] AI coding tools pricing changes developer tools April 2026
-
-Purpose: Monitor continued repricing moves after Anthropic and Copilot signals from prior two days
-
-Here's a concise, sourced summary of the latest AI coding tools pricing changes as of April 2026:
+**Why it matters:** Represents a growing niche of self-organized, non-institutional community-building networks attracting people outside mainstream civic structures.
+🔗 [wildmindscommunity.com](https://www.wildmindscommunity.com/join-wm-network)
 
 ---
 
-## 🔧 AI Coding Tools Pricing Changes — April 2026
+### 4. EU Resilience & Community Building Focus — 2026 Work Programmes *(March 2026)*
+Looking ahead to 2026, EU thematic panels will **prioritise strengthening a locally grounded, whole-of-society approach to prevention and resilience**, with a strong focus on youth engagement. New EU-funded projects like **SHIELDed** are advancing local resilience efforts to protect schools and places of worship, while other projects are addressing extremism in underserved demographics.
 
-### 1. GitHub Copilot — Restructured Individual Plans
-On **April 20, 2026**, GitHub published a major restructuring update for Copilot's individual developer plans, introducing newly tiered plans with updated pricing structures. Details on exact new tier prices are still being communicated to users.
-
-📌 **Source:** https://www.flowdevs.io/blog/post/understanding-githubs-april-2026-copilot-changes-for-individual-developers
-
----
-
-### 2. Windsurf — Credits → Quotas (March 2026, grandfathered through April 2026)
-**March 2026:** Windsurf replaced its credit system with daily and weekly usage quotas across Free, Pro ($20/mo), Max ($200/mo), and Teams ($40/user/mo) plans. Existing subscribers were grandfathered at the old credit pricing through April 2026, but new subscribers are on quotas right away. The change sparked significant pushback on Product Hunt and dev forums.
+**Why it matters:** EU institutional funding is increasingly flowing toward community-level resilience and alignment-building — creating grant opportunities for grassroots organizers.
+🔗 [home-affairs.ec.europa.eu](https://home-affairs.ec.europa.eu/eu-knowledge-hub-update-march-2026_en)
 
 ---
 
-### 3. Replit — Price Drop + New Pro Tier (March 2026)
-**March 2026:** Replit dropped its Core plan price from $25 to $20/month and launched a new Pro plan at $100/month with tiered credits and rollover.
+### 5. Building Movement Project — Solidarity & Equity Resources *(Early 2026)*
+The Building Movement Project, focused on aligning principles and practices and engaging staff and communities for transformation, published new resources in early 2026 including pieces on **solidarity lessons, equity in motion, and a new Solidarity Syllabus blog series** (February–April 2026).
+
+🔗 [buildingmovement.org](https://buildingmovement.org/)
 
 ---
 
-### 4. Amazon Kiro — New GA Launch (March 2026)
-**March 2026:** Amazon Kiro launched for general availability after a startup-only beta, with pricing at: Free (50 credits), Pro ($20/1,000 credits), Pro+ ($40/2,000 credits), and Power ($200/10,000 credits).
+### Bottom Line
+The clearest trend: **EU-backed and grassroots community-building in Europe is expanding in 2026**, with new funding calls (Solidarity Corps, Culture Moves Europe), ecovillage/land-based networks actively recruiting, and resilience-focused EU panels redirecting resources toward local, values-aligned initiatives.
+
+## [grassroot] David Toolkit Grassroot Hoppers Lindy Hop community platform update April 2026
+
+Purpose: Check for any external reactions, forks, or community signals around Grassroot Hoppers since the March launch went quiet.
+
+Based on my thorough search, I need to give you an honest and transparent answer.
 
 ---
 
-### 5. OpenAI Codex — Switched to Pay-As-You-Go
-Codex switched to a pay-as-you-go model, moving away from flat subscription pricing — meaning costs scale directly with usage.
+## Search Results: David Toolkit / Grassroot Hoppers – April 2026
+
+**There are no verified updates from April 2026** for this specific query combination. Here is what the search results *do* confirm:
 
 ---
 
-### 6. The "Real Cost" Gap — Subscriptions vs. Actual Spend
-Every AI coding tool has a marketing price and a real price. Claude Pro is $20/month and Claude Max is $100–200/month, but developers using Claude Code as an agent report **$500–2,000/month in API costs** due to token waste, agent loops, and context bloat. The real range across tools runs **$10 to $1,400/month** depending on which tool and how heavily it's used.
+### ✅ What Was Found: David Toolkit by Grassroot-Hoppers
 
-📌 **Source:** https://www.morphllm.com/ai-coding-costs | https://spectrumailab.com/blog/ai-coding-tools-pricing-compared-2026
+The only confirmed, factual result is the GitHub repository at **`github.com/Grassroot-hoppers/david-toolkit`**.
 
----
-
-### Why It Matters
-- **Credit → quota models** (Windsurf) and **pay-as-you-go shifts** (Codex) make costs less predictable for heavy users.
-- **GitHub Copilot's restructuring** affects a massive share of the developer market.
-- The gap between advertised and real costs is widening, especially for agentic/autonomous coding workflows.
-
-## [game] indie game developer community funding itch.io announcement April 2026
-
-Purpose: Maintain game radar for any new platform or funding shift relevant to Julien's game probes
-
-Based on my search across multiple queries, here is an honest and fully transparent summary:
+- **What it is:** A browser-first, open-source retail intelligence demo built for independent shop owners. It reads POS CSV exports, applies a correction layer, overlays weather and calendar context, and renders a founder-grade dashboard.
+- **Last known release:** `v0.1.0` — shipped **March 13, 2026**, built during a 5-day solo hackathon.
+- **Status at that time:** Tabs 1–4 functional with real data; Tabs 5–7 were documented stubs.
+- **License:** AGPL-3.0-only (copyleft — improvements to hosted versions must stay open-source).
+- **Source:** [https://github.com/Grassroot-hoppers/david-toolkit](https://github.com/Grassroot-hoppers/david-toolkit)
 
 ---
 
-## ⚠️ No Specific "April 2026 itch.io Community Funding Announcement" Found
+### ⚠️ What Was NOT Found
 
-I searched thoroughly and **found no verifiable, specific announcement** from itch.io in April 2026 regarding a new community funding program or major platform-level funding initiative. It's possible the event you're referencing doesn't exist, hasn't been widely reported, or the details are slightly different from the query.
-
-Here is what the search results **do** confirm as factual and recent:
-
----
-
-### What's Known About itch.io & Indie Funding in 2026
-
-- Itch.io (tracked by Tracxn as of March 2026) has raised a total of **$484K** over one seed round from 2 investors, and operates as an online retailer of downloadable indie games, assets, and game development tools.
-
-- Itch.io is described as "the most creator-friendly game distribution platform on the internet," with over **900,000 games**, a choose-your-own revenue share model, and zero upfront publishing costs.
-
-- A 2026 indie game funding guide notes that **67% of indie developers** rely primarily on personal savings or revenue from previous projects, while grants like **Epic MegaGrants ($5K–$500K)** and the **UK Games Fund (up to £50,000)** remain key external funding sources.
-
-- On itch.io's own devlogs, notable April 2026 activity includes the **7th anniversary of DragonRuby Game Toolkit** (April 19, 2026), celebrated by making the engine free for a limited period.
+- **No April 2026 update, changelog, or announcement** for this project appeared in any search result.
+- The combination **"Grassroot Hoppers + Lindy Hop community platform"** returned **no matching results** — the Grassroot-Hoppers GitHub org appears to be a retail/tech project, not a Lindy Hop dance community platform.
 
 ---
 
-### Most Relevant Source URLs
+### 🔎 Possible Explanations
 
-- **itch.io official updates:** https://itch.io/updates
-- **Tracxn itch.io profile (March 2026):** https://tracxn.com/d/companies/itch/__ERwwvBdgWSrhEZjkY9HIoO0XX5KP7vcqhAEZiz3wuKI
-- **Indie Funding Guide 2026:** https://fungies.io/indie-game-funding/
-
----
-
-### Recommendation
-
-If you saw this announcement somewhere specific (e.g., itch.io's blog, a press release, or social media), I'd suggest checking **https://itch.io/updates** or **https://itch.io/blog** directly for the most authoritative source, as those pages weren't fully indexed in my search results. It's also possible the announcement is very recent or from a niche community post not yet widely indexed.
-
-## [geo_eu] European Union digital sovereignty policy regulation announcement April 2026
-
-Purpose: Track EU-level moves that could shape cooperative tech or funding landscape Julien operates in
-
-Here is a concise, fact-based summary of the most recent EU digital sovereignty developments as of **April 2026**:
+1. **The "Lindy Hop community platform" framing may be inaccurate** — the project is retail-focused, not dance-community-focused.
+2. **No April 2026 update has been publicly indexed** yet (as of this search).
+3. The query may conflate separate entities (a Lindy Hop group and a software toolkit).
 
 ---
 
-## 🇪🇺 EU Digital Sovereignty: Key Recent Updates (April 2026)
+**Recommendation:** Check the GitHub repo directly for any new releases or commits after March 2026: [https://github.com/Grassroot-hoppers/david-toolkit/releases](https://github.com/Grassroot-hoppers/david-toolkit/releases)
+
+## [dev] Qwen3 local model coding benchmark deployment update April 24 2026
+
+Purpose: Track any new Qwen3 deployment reports or benchmark comparisons in the last 48 hours following the recent drop.
+
+Here is a concise, sourced summary of the most recent factual updates on **Qwen3 local model coding benchmarks and deployment**, as of late April–May 2026:
 
 ---
 
-### 🔑 What Changed
+## 🔄 Qwen3 Coding & Deployment: What's New
 
-**1. EU Selects 4 Sovereign Cloud Providers (April 20, 2026 — most recent)**
+### 1. **Qwen3-Coder-Next — Released April 8, 2026**
+Qwen3-Coder-Next is a coding-specialized model released by Alibaba Cloud's Qwen team on **April 8, 2026**. It features 80 billion total parameters with only 3 billion active per token via a Mixture-of-Experts (MoE) architecture, and a 256K context window.
 
-The European Commission awarded contracts to four cloud providers, making EU institutions, offices, and agencies able to procure cloud-based resources and services for **up to €180 million (~$212M)** over six years. The goal is to avoid vendor lock-in by diversifying providers.
+**Benchmark performance:**
+It scores **58.7% on SWE-bench Verified**, outperforming GLM-4.7-Flash (54.2%), DeepSeek-Coder-V3 (52.1%), and CodeLlama 70B (48.9%) on Alibaba's April 2026 published results.
 
-The Commission developed a **Cloud Sovereignty Framework** with "Sovereignty Effectiveness Assurance Levels" (SEAL), ranging from SEAL-0 (no sovereignty) to SEAL-4 (full EU supply chain, from chips to software). One winning consortium is a Belgian-French-Luxembourg partnership led by **Proximus**, using services from **S3NS** (a Google-backed entity), plus Clarence and Mistral. The inclusion of a Google-linked provider has raised eyebrows, given the broader push to reduce US tech dependency.
-
-**2. Digital Networks Act (DNA) — Proposed January 2026**
-
-The European Commission unveiled the **Digital Networks Act (DNA)**, which aims to boost the bloc's competitiveness and investment in telecom infrastructure. While the DNA seeks to harmonize telecoms regulation across the EU, it stops short of a fully unified single market, leaving Europe's telecoms landscape divided among 27 national markets — and leaves core 4G/5G mobile network rules largely under national control. A key new feature is an **EU-level "single passport"** for providers, allowing a company registered in one Member State to operate across the Union.
-
-**3. Quantum Act Coming Q2 2026**
-
-A forthcoming **Quantum Act**, expected in Q2 2026, will mirror the structure of the EU Chips Act by introducing funding mechanisms to build a European quantum ecosystem.
+**Why it matters for local deployment:**
+Because only ~3B parameters participate in any forward pass, inference speed is competitive with a dense 8B model once weights are loaded — making frontier-level coding accessible on consumer hardware. A 256K native context window is large enough to hold an entire small monorepo or a 40,000-line file in working memory, which is where local coding agents typically stall.
 
 ---
 
-### ⚠️ Why It Matters
+### 2. **Qwen3.6 — Released ~April/May 2026 (days ago)**
+**Qwen3.6** introduces a unified vision-language foundation via early fusion training on trillions of multimodal tokens, achieving cross-generational parity with Qwen3 and outperforming Qwen3-VL across reasoning, coding, agents, and visual understanding benchmarks.
 
-More than **80% of Europe's digital technologies and infrastructure are imported**, and American tech giants control more than **70% of Europe's cloud infrastructure** — a dependency that has driven urgent policy action framed in some circles as countering "digital colonialism."
+The Qwen3.6-35B-A3B model supports a **262,144 token native context**, extensible up to 1,010,000 tokens.
 
-A flashpoint: during a court hearing in June 2025, Microsoft was asked by French authorities whether it could guarantee that European data would **never be shared with U.S. authorities** under the U.S. CLOUD Act — underlining the legal and geopolitical stakes of cloud dependency.
-
-Washington's increasingly combative posture toward EU tech regulation also sets the stage for further conflict that could imperil the **$1.5-trillion US–EU trading relationship.**
+It uses **Gated Delta Networks combined with sparse MoE** to deliver high-throughput inference with minimal latency and cost overhead.
 
 ---
 
-### 📌 Most Important Source URLs
+### 3. **Earlier Milestone: Qwen3-Coder-Next >70% SWE-Bench**
+Qwen3-Coder-Next achieves **over 70% on SWE-Bench Verified** using the SWE-Agent scaffold, with performance remaining competitive across multilingual settings and the more challenging SWE-Bench Pro benchmark.
 
-| Source | Date | Link |
+It is an open-weight model built on Qwen3-Next-80B-A3B-Base, using a hybrid attention and MoE architecture, agentically trained on large-scale executable task synthesis, environment interaction, and reinforcement learning.
+
+---
+
+## 📌 Why It Matters
+- **Local coding agents are now viable on prosumer GPUs** — the MoE design means 80B-class performance at 8B-class inference cost.
+- **SWE-bench scores above 58–70%** place these models competitively against proprietary cloud models for real repo-level coding tasks.
+- **Qwen3.6 pushes into multimodal + coding agent territory** with a million-token context ceiling.
+
+---
+
+## 🔗 Key Sources
+| Source | URL |
+|---|---|
+| Qwen3-Coder-Next Blog | https://qwen.ai/blog?id=qwen3-coder-next |
+| Qwen3.6 GitHub | https://github.com/QwenLM/Qwen3.6 |
+| Qwen3.6 HuggingFace | https://huggingface.co/Qwen/Qwen3.6-35B-A3B |
+| Local Hardware Guide (April 2026) | https://www.compute-market.com/blog/qwen-3-coder-next-local-hardware-guide-2026 |
+| Qwen3 Original Release Blog | https://qwenlm.github.io/blog/qwen3/ |
+
+> ⚠️ **Note:** Your query mentioned "April 24, 2026" — no single announcement is pinned to that exact date, but the surrounding window (April 8 Qwen3-Coder-Next release + Qwen3.6 released within the last few days) is the most relevant activity.
+
+## [game] indie game cooperative distribution platform launch April 2026
+
+Purpose: Detect new cooperative or community-owned game distribution moves that could intersect with Julien's edge-finding.
+
+Here's a concise, sourced summary:
+
+---
+
+## 🎮 Indie Pass — New Indie-Exclusive Subscription Platform
+
+**What Changed:**
+
+**Indie Pass** launched on **April 13, 2026**, for PC — a new subscription platform built exclusively around indie games, available through **indiepass.com**. The service launched with a library of more than **70 titles**, with additional games planned to be added regularly.
+
+The platform is operated by **indie.io**, a US-based game management and publishing platform supporting independent developers from development through distribution and beyond, with a mission to help indie games succeed long-term without upfront costs or taking control of their IPs.
+
+**How the Revenue Model Works:**
+
+For developers and publishers, Indie Pass uses a **non-exclusive participation model**, with revenue distributed based on how much **time players spend** in each game — positioning that structure to create an ongoing revenue stream beyond a game's initial launch window.
+
+**Why It Matters:**
+
+For developers, this approach offers a potential alternative to traditional storefront discovery algorithms and front-loaded sales models. However, as with other subscription platforms, its long-term impact will likely depend on player engagement patterns and how revenue distribution scales across a larger catalog.
+
+---
+
+**Key Sources:**
+- 📰 Official announcement: https://www.indie.io/post/indie-io-unveils-indie-pass-a-subscription-platform-dedicated-to-elevating-indie-games-exclusively
+- 📰 MonsterVine coverage: https://monstervine.com/2026/04/indie-pass-launch-april-13-indie-game-subscription-service/
+- 📰 80.lv analysis: https://80.lv/articles/indie-pass-introduces-subscription-model-focused-on-indie-games
+
+## [geo_eu] Spain Asturias Galicia digital nomad community coworking new space 2026
+
+Purpose: Find fresh signals about emerging communities or infrastructure in northern Spain ahead of Julien and Lucia's planned move.
+
+Here is a concise, fact-based summary of the latest developments in the **Asturias & Galicia digital nomad / coworking scene**, as of early 2026:
+
+---
+
+## 🗺️ Asturias & Galicia: Digital Nomad & Coworking Update (2025–2026)
+
+---
+
+### 🆕 What Changed
+
+**1. CRAB Network formally launched (January 2025)**
+
+The first official gathering of **CRAB (Creative Rural Hubs)** took place at Anceu Coliving in January 2025, marking the project's kick-off. Key partners included Espacio Arroelo, Dinamo10, Giovani Iddocca–Treballu, and Sende. CRAB is co-funded by the European Union through the Creative Europe Programme and operates across three rural locations: Senderiz (Galicia, Spain), Anceu (Galicia, Spain), and Laconi (Sardinia, Italy).
+
+A direct outcome of the kick-off meeting was the development of a new network website (crabspaces.com), designed to showcase rural creative hubs, facilitate networking, and share best practices.
+
+**2. Nomadico Asturias — barn-converted coliving space (coming soon)**
+
+In Asturias, Nomadico has transformed a barn into a coworking space with dedicated desks, comfy chairs, and solid 5G WiFi — a rural coliving project currently listed as "coming soon."
+
+**3. Somiedo Living Lab (Asturias) — highlighted as a standout space**
+
+In Asturias, **Somiedo Living Lab** is described as one of the most complete and established coliving projects in the region — a space where initiatives tackling complex rural community challenges are designed and implemented, mixing User Experience and Ambient Intelligence concepts to address issues like "Empty Spain."
+
+**4. Galicia's Anceu & Sende remain active anchors (updated Jan 2026)**
+
+Anceu Coliving, founded in July 2020 and based in the village of Anceu near Pontevedra, continues as a rural coliving and coworking space for remote workers, combining accommodation with community living. Prices start from €882/month.
+
+**5. Broader 2026 Spain trends: coliving–coworking hybrids exploding**
+
+A significant trend for 2026 is the explosive growth of co-living–co-working hybrids across Spain, offering integrated accommodation and workspace that streamlines the digital nomad experience. The Spanish Co-working Association's demand data indicates a 40% year-on-year increase in inquiries for family-friendly coworking spaces in 2025–2026.
+
+---
+
+### 💡 Why It Matters
+
+- **Rural Galicia and Asturias are moving from isolated experiments to a coordinated, EU-funded network** (CRAB), giving these spaces institutional backing and cross-border visibility.
+- The focus on **rural regeneration** ("Empty Spain") makes these hubs politically and socially relevant, not just lifestyle products.
+- Asturias is **emerging** as a new frontier (Nomadico, Somiedo) after Galicia led the wave, offering lower costs and greener settings vs. Madrid/Barcelona.
+
+---
+
+### 🔗 Key Sources
+
+| Source | URL | Date |
 |---|---|---|
-| The Register — Sovereign Cloud Awards | Apr 20, 2026 | https://www.theregister.com/2026/04/20/europe_picks_4_sovereign_cloud/ |
-| Daily Sabah — Digital Sovereignty Overview | ~Apr 17, 2026 | https://www.dailysabah.com/business/tech/eu-formally-launches-digital-sovereignty-war |
-| TechPolicy.Press — Digital Networks Act | Jan 22, 2026 | https://www.techpolicy.press/eus-digital-networks-act-leaves-big-tech-untouched-sparks-net-neutrality-concerns/ |
-| European Commission — DNA Official | Jan 20, 2026 | https://ec.europa.eu/commission/presscorner/detail/en/ip_26_107 |
-
----
-
-**Bottom line:** April 2026 marks a concrete milestone — the EU is now actively procuring sovereign-certified cloud infrastructure, while simultaneously pushing new laws (DNA, Quantum Act) to reduce dependency on US and non-EU tech. The tension between stated sovereignty goals and practical reliance on US-linked providers (like Google/S3NS) remains unresolved.
+| CRAB Network launch | https://anceu.com/crab-the-future-network-of-rural-creative-hubs/ | Nov 17, 2025 |
+| Anceu Coliving (updated) | https://anceu.com/ | Jan 22, 2026 |
+| Nomadico Asturias coliving | https://www.nomadico.io/asturias-coliving | — |
+| Somiedo Living Lab / Rooral roundup | https://www.rooral.co/post/9-rural-coliving-and-coworking-spaces-in-spain-and-portugal | Feb 1, 2026 |
+| Spain coworking 2026 trends | https://nimextranjeria.com/the-future-of-co-working-spaces-in-spain-for-digital-nomads-trends/ | Feb 13, 2026 |
