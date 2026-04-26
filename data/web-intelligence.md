@@ -1,308 +1,308 @@
-<!-- PRISM Web Intelligence — 2026-04-25 -->
-# Web Intelligence — 2026-04-25
+<!-- PRISM Web Intelligence — 2026-04-26 -->
+# Web Intelligence — 2026-04-26
 *Scheduled theme: Grassroot Hopper & Cooperative Tech*
 
-## [grassroot] cooperative technology grants Brussels Belgium 2026 new funding announcement
+## [grassroot] cooperative technology platform funding announcement Europe April 2026
 
-Purpose: Scan for fresh grant or funding signals relevant to Brussels-based cooperative/community tech projects Julien could align with.
+Purpose: Spot new grants or cooperative tech funding rounds relevant to Grassroot Hoppers positioning
 
-Here is a concise, factual summary based on the search results:
-
----
-
-## Cooperative Technology Grants – Brussels/Belgium 2026: Key Updates
+Based on my research, I was unable to find a specific announcement titled or tagged exactly as **"cooperative technology platform funding — Europe, April 2026."** However, there are several **concrete, verified funding announcements** from Europe in this timeframe that closely match your query. Here is a concise summary:
 
 ---
 
-### 🔴 BIGGEST CHANGE: Innoviris (Brussels) Has Suspended All New Grant Programs in 2026
+## 🇪🇺 European Tech Platform Funding — April 2026 Updates
 
-**No new calls will be launched in 2026**, and **all programs at Innoviris — Brussels's primary research and innovation funding agency — are suspended for 2026**. Funding applications already submitted will continue to be processed and may be eligible for funding in 2027, depending on available resources.
+### 1. Digital Europe Programme — New Calls Opened (April 21, 2026)
 
-This applies across all Innoviris programs, including cooperative/interregional technology grants, GenAI, Eurostars, Proof of Business, SP-Program, and more.
-
-**Why it matters:** Innoviris is the main gateway for cooperative tech grants in the Brussels-Capital Region. Any Brussels-based organisation or SME hoping to access new regional cooperative tech funding in 2026 faces a **full freeze** and must look to 2027 or pivot to EU-level alternatives.
-
-📌 **Source:** [https://www.innoviris.brussels/program/sp-program](https://www.innoviris.brussels/program/sp-program)
-
----
-
-### 🟡 EU-LEVEL ALTERNATIVE: Horizon Europe 2026–27 Work Programmes Released (Dec 2025)
-
-The European Commission released its **Horizon Europe 2026–27 work programmes** on **11 December 2025**, spread across **13 work programmes** covering specific funding instruments and priorities. The biggest novelty is the introduction of **horizontal calls for cross-cutting innovation challenges**, covering two new topics: the **Clean Industrial Deal** and a second cross-cutting theme.
-
-Separately, the EU opened **2026 Digital Calls investing €307.3 million** in Horizon Europe's 'Digital, Industry and Space' cluster, targeting AI, quantum, future networks, virtual worlds, and other key technologies — open until **15 April 2026**.
-
-**Why it matters:** Belgian entities (including Brussels-based ones) can still access EU-level cooperative tech grants through Horizon Europe even while Innoviris is frozen.
-
-📌 **Sources:**
-- [https://sciencebusiness.net/news/horizon-europe/commission-releases-horizon-europe-final-work-programmes-2026-27](https://sciencebusiness.net/news/horizon-europe/commission-releases-horizon-europe-final-work-programmes-2026-27)
-- [https://eufordigital.eu/horizon-europe-eu-opens-2026-digital-calls-investing-e307-million/](https://eufordigital.eu/horizon-europe-eu-opens-2026-digital-calls-investing-e307-million/)
-
----
-
-### 🟢 PRIVATE/REGIONAL ACTIVITY CONTINUES
-
-In March 2026, **Syndicate One raised €22 million** to fund tech startups in AI, robotics, and software, and **Ghent joined Bloomberg Philanthropies' Mayors Challenge**, fostering civic tech collaboration. Belgium's VLAIO (Flemish Agency for Innovation & Entrepreneurship) continues to offer R&D subsidies, including grants for feasibility studies, research, and development projects.
-
----
-
-### Bottom Line
-
-| Layer | Status in 2026 |
-|---|---|
-| **Brussels-Capital (Innoviris)** | 🔴 All programs suspended; no new calls |
-| **EU Horizon Europe** | 🟢 Active; €307M+ digital calls open now |
-| **Flanders (VLAIO)** | 🟢 Ongoing R&D grant programs available |
-| **Private (e.g., Syndicate One)** | 🟢 Active investment rounds |
-
-The most significant and actionable change is the **Innoviris freeze** — a notable reversal for Brussels-specific cooperative tech grant seekers in 2026.
-
-## [grassroot] aligned community tech movement Europe new initiative launch April 2026
-
-Purpose: Detect newly announced grassroot or solidarity-tech collectives in Europe that could be signal for Julien's orientation scanning.
-
-Based on the search results, here is a concise, factual summary. Note that I was **unable to find a specific initiative called the "aligned community tech movement Europe"** by that exact name — this phrase does not appear to match any known initiative in current sources. However, here are the most relevant and recent European tech community/alliance launches and initiatives:
-
----
-
-## 🔍 Recent European Tech Initiative Updates (2025–2026)
-
-### 1. Trusted Tech Alliance — Launched February 13, 2026
 **What changed:**
-On February 13, 2026, at the Munich Security Conference, 16 companies from Africa, Asia, Europe, and North America announced the launch of the **Trusted Tech Alliance (TTA)** — a group of like-minded global technology providers coming together based on shared principles for a trusted technology stack, from connectivity and cloud infrastructure to AI.
+Two new calls for proposals — *DIGITAL-2026-SKILLS-10 (Advanced Digital Skills)* and *DIGITAL-2026-BESTUSE-10 (Accelerating Best Use of Technologies)* — were published on the EU Funding and Tenders portal and opened on **21 April 2026**.
 
-**Why it matters:**
-The principles are designed to ensure that, regardless of a supplier's nationality, Alliance companies adhere to common commitments of **transparency, security, and data protection**, with the goal of building trust and passing the benefits of technology to people globally.
+Key funded areas include:
+- **€7.8 million** for AI skills in healthcare — funding training programmes to increase AI readiness of healthcare organisations.
+- **€14.4 million** to build capacity for the **European Health Data Space (EHDS)**, deploying digital health services and systems to support citizens' rights and health data reuse.
+- Funding for **Safer Internet Centres** across Europe to protect children online.
 
-🔗 **Source:** https://news.microsoft.com/source/2026/02/13/global-technology-leaders-launch-trusted-tech-alliance/
+**Deadline:** Applications close **1 October 2026** at 17:00 Brussels time.
+
+**Why it matters:** These are cooperative, cross-border digital platform initiatives directly funded by the EU to accelerate technology adoption across member states.
+
+📎 **Source:** [HaDEA — Digital Europe Programme Calls (April 2026)](https://hadea.ec.europa.eu/news/new-calls-proposals-under-digital-europe-programme-published-2026-04-10_en)
 
 ---
 
-### 2. EU European Innovation Council (EIC) — €1.4B Work Programme for 2026
+### 2. European Innovation Council (EIC) — €1.4 Billion Work Programme
+
 **What changed:**
-The European Commission adopted the **2026 EIC Work Programme**, allocating **€1.4 billion** to support Europe's most promising deep tech entrepreneurs and researchers, offering simplified access to funding, investment opportunities, and partner connections.
+The European Commission adopted the **EIC 2026 work programme**, allocating **€1.4 billion** to support Europe's most promising deep tech entrepreneurs and researchers.
 
-In tandem, the Commission is preparing to launch the **Scaleup Europe Fund**, a market-based, privately managed initiative under the EIC Fund, designed to bridge the investment gap for Europe's deep-tech scale-ups.
+**Why it matters:** This is one of the largest single-year deep tech funding packages in Europe, targeting startups and scale-ups building cooperative technology platforms across AI, quantum, biotech, and more.
 
-**Why it matters:**
-The new programme introduces key improvements including a simpler, faster application process and the launch of pilot **Advanced Innovation Challenges**, inspired by the US ARPA model.
-
-🔗 **Source:** https://news.fundsforngos.org/2025/11/07/eu-commits-e1-4-billion-to-boost-deep-tech-startups-with-2026-european-innovation-council-work-programme/
+📎 **Source:** [European Commission Press Release](https://ec.europa.eu/commission/presscorner/detail/en/ip_25_2612)
 
 ---
 
-### 3. EIB Group — European Tech Champions Initiative 2.0 (ETCI 2.0)
+### 3. EU Horizon Europe — €307 Million for Digital & AI Technologies
+
 **What changed:**
-The EIB Group is shaping up for the **second European Tech Champions Initiative (ETCI 2.0)**, part of the TechEU platform — the EU's largest financing programme for its best technology companies. In December 2025, the EIF and EIB Boards committed a total of **€1.25 billion** in own funds, with further fundraising and investments expected to launch in **early 2026**.
+The EU invested **over €307 million** into artificial intelligence and related technologies under Horizon Europe, with the application window remaining open until **15 April 2026**.
 
-🔗 **Source:** https://www.eif.org/flagship-initiatives/european-tech-champions-initiative/overview
-
----
-
-### ⚠️ Important Caveat
-The specific phrase **"aligned community tech movement Europe"** did not return a matching initiative in current sources. If you have a specific organization name, acronym, or region in mind, please share it and I can refine the search. It's also possible this initiative has not yet been publicly announced (especially if it's slated for April 2026).
-
-## [grassroot] platform cooperatives community tools Brussels Belgium news last 48 hours
-
-Purpose: Surface any breaking local movement activity in Brussels that could reveal aligned people or collaboration opportunities.
-
-Here is a concise, factual briefing on the most recent developments:
+📎 **Source:** [EU Digital Strategy — AI Investment](https://digital-strategy.ec.europa.eu/en/news/eu-invests-over-eu307-million-artificial-intelligence-and-related-technologies)
 
 ---
 
-## 📋 Platform Cooperatives & Community Tools — Brussels/Belgium Update
+### ⚠️ Note on Scope
+No single announcement using the exact phrase **"cooperative technology platform"** was found. If you are tracking a *specific* named initiative (e.g., a particular consortium, startup, or EU project with that label), please share more details and I can refine the search.
 
-> ⚠️ **No breaking news from the last 48 hours** was found on this specific topic. The most recent and relevant updates are from **June 2025** and late **2025**, summarized below.
+## [grassroot] Brussels Belgium community movement activist organizing news April 25-26 2026
 
----
+Purpose: Detect local Brussels grassroot signals that could surface aligned people or collectives
 
-### 🔴 What Changed
-
-**1. Brussels Labour Court Ruling on Platform Workers (13 June 2025)**
-On 13 June 2025, the Brussels Labour Court ruled that an Uber driver should be classified as an **employee**, not a self-employed worker — overturning a lower court's decision from 21 December 2022 which had classified the driver as an independent contractor.
-
-**2. Mandatory Accident Insurance for Platform Workers (Coming Jan 2026)**
-From **1 January 2026**, self-employed platform workers in Belgium will be covered by compulsory accident insurance under ordinary law. The cost will be borne by the platforms.
-
-**3. Belgium Endorses CODEC as a Cooperative Diplomacy Platform (June 2025)**
-On UN Day of Cooperatives, Belgium endorsed CODEC — a global cooperative diplomacy and economic citizenship platform — and welcomed its strategic intent to establish its **international diplomatic secretariat in Brussels**, home to the International Cooperative Alliance (ICA).
-
-**4. Belgian Cooperative Monitor: Fewer but More Legitimate Co-ops (Dec 2025)**
-Although only 0.14% of Belgian enterprises are cooperatives, they account for 1.1% of Belgium's GDP and 1.5% of all employment. The number of cooperatives fell from 24,971 in 2016 to **12,517 by 2025** — a result of a post-2019 legal reform that eliminated "false" cooperatives that didn't genuinely operate on cooperative principles.
-
-**5. Platform Coop Brussels — Ongoing Infrastructure**
-Platform Coop Brussels is a project operating in the Brussels region that actively supports the establishment of platform cooperatives and the creation of networks among cooperatives. The Eurofound database tracking this was **last updated in September 2025**. The project is led by **Smart** (société mutuelle pour artistes) and **SAW-B** (Fédération d'économie sociale).
+Now I have enough information to provide a well-sourced, concrete summary. Let me compile the findings.
 
 ---
 
-### 💡 Why It Matters
+## Brussels Community & Activist Organizing: Late April 2026 Update
 
-- The **June 2025 court ruling** is a landmark shift — it signals Belgian courts are increasingly willing to reclassify gig workers as employees, which directly challenges the operating models of platform giants and strengthens the case for worker-owned cooperative alternatives.
-- The **2026 insurance law** is the first time Belgian law will impose platform-funded accident protection, a model that cooperative platforms have long advocated.
-- Belgium's endorsement of a **cooperative diplomatic secretariat in Brussels** reinforces the city's role as the EU hub for the cooperative economy movement.
+Here's a concise, factual summary of what's happening in Brussels around April 25–26, 2026, and the broader movement context:
 
 ---
 
-### 🔗 Key Sources
+### 🔴 What Changed / What's Happening
 
-| Topic | URL |
-|---|---|
-| Eurofound — Belgium Platform Economy | https://apps.eurofound.europa.eu/platformeconomydb/countries/belgium/ |
-| Platform Coop Brussels profile | https://apps.eurofound.europa.eu/platformeconomydb/platform-coop-brussels-105701 |
-| Belgium endorses CODEC (June 2025) | https://leadership.ng/un-day-of-cooperatives-belgium-endorses-codec/ |
-| KU Leuven Belgian Cooperative Monitor | https://nieuws.kuleuven.be/en/content/2025/belgian-cooperative-monitor-decline-in-number-but-not-in-impact |
+**1. Registered Protest on April 24 (City of Brussels)**
 
----
+A protest is officially registered with the City of Brussels for **Friday, April 24, 2026**. No further details (organizer, cause, scale) are publicly posted on the city's page yet.
 
-> 📌 For truly last-48-hour updates, monitoring **SAW-B**, **Smart Belgium**, and **Eurofound's live database** directly would be recommended, as this topic is niche enough that no major news outlets broke stories in the past two days.
+**2. "Hands Off!" Pro-Democracy Protest – April 26, 2025 (Historical Note)**
+Democrats Abroad Belgium held a **"Hands Off!" rally on April 26, 2025** — this is a 2025 event, not 2026. It should not be confused with current activity.
 
-## [dev] AI coding agent autonomous software development breakthrough April 2026
+**3. Major Union National Strike Announced for May 12, 2026 (Key Upcoming Escalation)**
 
-Purpose: Maintain dev radar on fast-moving agent/coding tool shifts after yesterday's GPT-5.5 and Codex reshuffling.
+Belgium's three main union confederations — FGTB/ABVV, CSC/ACV and CGSLB/ACLVB — announced a **nationwide day of action on 12 May 2026** in Brussels, part of an ongoing campaign against the "Arizona" coalition government's social and pension reforms and falling purchasing power. This alert was originally created on **13 April 2026**.
 
-Here's a concise, fact-based summary of what's happening with AI coding agents in **April 2026**:
+**4. Ongoing Anti-Austerity Movement Context**
 
----
+Belgium's three main unions oppose several government measures, including **changes to the wage index system, increased labour flexibility, and new pension rules**, arguing the reforms will harm workers and weaken social protections.
 
-## 🤖 AI Coding Agents: Recent Breakthroughs (April 2026)
+Belgian police counted **80,000 demonstrators** at the national trade union demonstration in Brussels on March 12, 2026 — the culmination of a national day of action called by the three big unions against federal and Flemish government austerity.
 
----
+**5. Human Rights Film Festival – One World Brussels (Apr 20–24)**
 
-### 🔑 What Changed
-
-**1. AI agents can now self-correct their own code (April 23, 2026)**
-Antithesis, the autonomous software verification company, demonstrated a way for AI coding agents to correct their own code — announced April 23, 2026.
-
-**2. Anthropic's Three-Agent Harness for Full-Stack Development (April 2026)**
-Anthropic introduced a multi-agent harness design to support long-running autonomous application development, targeting both frontend design and full-stack software creation. The approach divides tasks among distinct agents responsible for planning, generation, and evaluation.
-
-**3. OpenAI released GPT-5.5 — a purpose-built agentic model**
-OpenAI announced GPT-5.5, an agentic model designed to work through complex tasks autonomously by switching between multiple tools.
-
-**4. The shift from short prompts to hours-long autonomous runs**
-The biggest change in 2026 is that agents are no longer limited to short prompt-response interactions — they can now run for minutes or hours, and interact with real development tools rather than simply generating text. Instead of suggesting solutions, agents can execute them directly.
+One World Brussels returned for its **19th edition from April 20–24, 2026**, rolling out a five-day program of screenings and debates across venues in the Belgian capital, organized by Czech NGO People in Need — described as the world's largest human rights film festival with public discussion as a core part of its programming.
 
 ---
 
 ### ❓ Why It Matters
 
-2026 is poised to be the year when the systemic effects of this evolutionary shift reconfigure the software development lifecycle and reshape software teams entirely — with tasks that once required weeks of cross-team coordination now handled by agents.
-
-Many platforms now support specialized agents designed for different tasks, and these agents collaborate to solve complex problems — effectively forming **autonomous AI development teams**.
+The April 25–26 window falls during an **intensifying cycle of Belgian labor and social activism**. The union movement, which has staged strikes and demonstrations almost continuously since early 2025, is building toward a **May 12 national mobilization** — making late April a key organizational and preparatory period. The social resistance against federal reforms continues into 2026, following the FGTB 'coup de poing' action in Brussels.
 
 ---
 
 ### 📌 Most Important Source URLs
 
-| Source | Date | URL |
-|---|---|---|
-| Antithesis self-correcting AI | Apr 23, 2026 | https://www.globenewswire.com/news-release/2026/04/23/3280089/0/en/Antithesis-Teaches-AIs-To-Correct-Their-Own-Output.html |
-| Anthropic 3-Agent Harness (InfoQ) | Apr 2026 | https://www.infoq.com/news/2026/04/anthropic-three-agent-harness-ai/ |
-| LLM News / GPT-5.5 | Apr 2026 | https://llm-stats.com/ai-news |
-| Anthropic 2026 Agentic Coding Report | 2026 | https://resources.anthropic.com/hubfs/2026%20Agentic%20Coding%20Trends%20Report.pdf |
+| Source | URL |
+|---|---|
+| City of Brussels – April 24 Protest Notice | https://www.brussels.be/protest-and-traffic-friday-24-april-2026 |
+| Strike Tracker – Belgium April 2026 | https://striketracker.app/strikes-in-belgium |
+| Strike Tracker – May 12 National Strike | https://striketracker.app/strikes-in-belgium/strike-brussels-capital-region-12-may-2026 |
+| Belga News Agency – March 12 demo | https://www.belganewsagency.eu/tens-of-thousands-expected-at-national-union-protest-in-brussels |
 
 ---
 
-**Bottom line:** The defining leap of April 2026 is autonomy at scale — agents that self-correct, run for hours, and collaborate in multi-agent teams to build full software products with minimal human intervention.
+> ⚠️ **Note:** No major community movement event specifically dated **April 25 or 26, 2026** in Brussels was found in public records as of the time of this search. The April 24 protest and the May 12 national strike are the closest confirmed bookend actions. If you have a specific organization or event name in mind, a more targeted search would yield better results.
 
-## [game] indie game funding community-led game launch news April 2026
+## [grassroot] platform cooperative open source community tool launch April 2026
 
-Purpose: Keep game domain radar active for emerging grassroot or community-funded game projects.
+Purpose: Find newly launched cooperative or community tech projects that overlap with Grassroot Hoppers niche
 
-Here's a concise, sourced summary of the latest developments in **indie game funding and community-led game launches as of April 2026**:
-
----
-
-## 🕹️ Indie Game Funding & Community-Led Launches — April 2026 Update
+Based on the search results, I was unable to find any **specific news, announcements, or launches** tied to a "platform cooperative open source community tool" in **April 2026**. The results returned either evergreen/background content or unrelated topics. Here's an honest breakdown of what the search found:
 
 ---
 
-### 💰 What Changed: Funding Landscape
+### 🔍 Summary of Search Findings
 
-- **Blue Ocean Games launched a $30 million fund in 2026** specifically for indie developers, focusing on teams with strong *community validation* rather than just financial projections.
+**What exists (but is not new in April 2026):**
 
-- Grant programs remain a key pillar — **Epic MegaGrants** continue offering $5,000–$500,000 for projects using Unreal Engine. Successful crowdfunding campaigns typically start marketing **3–6 months before launch**, and digital-only reward tiers are increasingly recommended to reduce logistics risk.
+- The **Platform Co-op Development Kit** is a multi-year project initiated by the **Platform Cooperativism Consortium** (PCC), homed at The New School in New York City, in collaboration with the Inclusive Design Research Centre at OCAD University in Toronto. It relies on platform co-op communities worldwide contributing their knowledge and sharing their work.
 
-- In a notable community-funded developer-to-developer move, **the makers of *Slay the Princess* are funding the next game from the creator of *1000xResist*** — the new title, *'Prove You're Human,'* features an AI that thinks it's a person. *(Bloomberg, April 10, 2026)*
+- Funded by the Google.org Foundation, the project adapts the cooperative business model to bring **democratic governance, transparency, and broad-based ownership** to the digital economy, rooted in the successes of the free & open-source software movement.
 
----
+- **Platform 6 Development Co-operative** describes its mission as "bringing cooperative development into the era of the digital platform," building a community of interest for new co-op projects and aligning cooperative values with those of the free/libre open source software (FLOSS) movement.
 
-### 🌏 K-Indie Boom: South Korea's "Golden Month"
-
-- **April is described as the "Golden Month" for South Korean indie developers**, with major grants, mentoring, and global exhibition opportunities all closing their application windows. Total prize pools exceed **100 million KRW**, with monthly stipends of **1.5 million KRW** and fully funded booths at Gamescom 2026 and ChinaJoy on the line.
-
-- Several key programs have urgent deadlines, including **IndieGo (closed April 12)** and the Jeonbuk AI Support program.
+**No specific April 2026 launch was found.**
 
 ---
 
-### 🎮 Community-Led Launches: Xbox Indie Showcase
+### ⚠️ Important Caveat
 
-- At the **April 2026 Xbox Showcase**, *Albion Online* and *Vampire Crawlers* received **surprise immediate launches** across the Xbox ecosystem. Highly anticipated upcoming releases include *inKONBINI*, *Echo Generation 2*, and the dark fantasy RPG *Mistfall Hunter*.
+No search result confirmed a **new tool launch in April 2026** matching your query. The most relevant ongoing resources are:
 
-- **Cross-progression is now a standard foundational feature** for these titles, reflecting Microsoft's push for ecosystem parity.
+| Resource | URL |
+|---|---|
+| Platform Cooperativism Consortium (PCC) | https://platform.coop/blog/the-platform-co-op-development-kit/ |
+| Platform Co-op Toolkit on GitHub | https://github.com/platform-coop-toolkit |
+| Platform 6 Co-op (Open Collective) | https://opencollective.com/platform6-coop |
+
+**Recommendation:** If you're tracking a specific tool, project name, or announcement, providing the exact name would help narrow down results significantly. It's also possible the launch hasn't been widely indexed yet.
+
+## [dev] Cursor xAI deal impact developer tools ecosystem April 2026
+
+Purpose: Track fallout from Cursor-xAI deal on the coding tool stack Julien relies on
+
+Here's a concise, fact-based summary of the **SpaceX/xAI × Cursor deal** as of late April 2026:
 
 ---
 
-### 📌 Why It Matters
+## 🔑 What Changed
 
-Players are increasingly empowered to **contribute directly to a game's success** through modding economies and community validation processes — fostering greater ownership and more durable engagement. The **healthiest indie studios of 2026 are not necessarily those with the largest budgets, but those with the most adaptable business models.**
+On **April 21, 2026**, SpaceX announced the right to acquire **Anysphere** (the company behind AI coding tool **Cursor**) for **$60 billion** later this year, or alternatively pay **$10 billion** for their joint work together.
+
+SpaceX stated that "SpaceXAI and @cursor_ai are now working closely together to create the world's best coding and knowledge work AI."
+
+Prior to SpaceX's announcement, **Microsoft** had also looked at a potential deal for Cursor but chose not to proceed with a bid. Meanwhile, Cursor had separately been in talks to raise **$2 billion** at a valuation of over $50 billion, with Andreessen Horowitz slated to co-lead the round, and Nvidia and Thrive Capital also expected to participate.
 
 ---
 
-### 🔗 Most Important Sources
+## 📊 Context & Scale
+
+- As of **February 2026**, Cursor became the fastest company to hit **$2 billion in annualized revenue**, with over half of the Fortune 500 using the tool.
+- Elon Musk had previously **merged SpaceX with xAI in February** in a deal he valued at **$1.25 trillion**.
+- SpaceX is preparing for a **June 2026 IPO** at a projected **$1.75 trillion valuation**.
+
+---
+
+## ⚙️ Why It Matters for the Developer Tools Ecosystem
+
+**1. Cursor's model dependency problem gets solved (potentially):**
+The deal addresses Cursor's structural weakness: it currently depends on models from Anthropic and OpenAI — the very companies building competing developer tools (Claude Code, Codex). Access to xAI's **Colossus** supercomputer creates a pathway for Cursor to develop a proprietary coding model and reduce that dependency.
+
+**2. Vertical integration accelerates:**
+The deal reveals weaknesses at both companies — neither Cursor nor xAI has proprietary models that can match the leading offerings from Anthropic and OpenAI, the same companies now competing directly with Cursor for the developer market.
+
+**3. Developer trust at risk:**
+Developer trust could be tested if Cursor shifts from a neutral platform to a more controlled ecosystem, potentially pushing users toward alternatives.
+
+**4. A new M&A template:**
+The current high-value option structure reflects a new trend where tech giants negotiate for access to capability rather than immediate, outright ownership.
+
+---
+
+## 🔗 Most Important Sources
 
 | Source | URL |
 |---|---|
-| Fungies.io – Indie Funding 2026 Guide | https://fungies.io/indie-game-funding/ |
-| indiegame.com – K-Indie April 2026 Programs | https://indiegame.com/en/archives/25039 |
-| Bloomberg – Indie Dev Team-Up (Apr 10, 2026) | https://www.bloomberg.com/news/newsletters/2026-04-10/in-a-brutal-video-game-industry-two-indie-developers-are-teaming-up |
-| AllKeyShop – April 2026 Xbox Indie Showcase | https://www.allkeyshop.com/blog/en-us/best-indie-game-reveals-id-xbox-april-2026-news-r/ |
-| GrowthHQ – Indie Funding Challenges 2026 | https://www.growthhq.io/our-thinking/indie-game-funding-challenges-and-breakthrough-strategies-in-2026-navigating-the-14-billion-opportunity |
-
-## [geo_eu] European Union digital sovereignty policy announcement April 2026
-
-Purpose: Track any new EU-level policy moves relevant to tech autonomy and cooperative digital infrastructure.
-
-Here's a concise, fact-based summary of the latest EU digital sovereignty developments from April 2026:
+| CNBC (deal announcement) | https://www.cnbc.com/2026/04/21/spacex-says-it-can-buy-cursor-later-this-year-for-60-billion-or-pay-10-billion-for-our-work-together.html |
+| CNBC (Microsoft angle) | https://www.cnbc.com/2026/04/22/microsoft-looked-at-buying-cursor-before-spacex-deal-sources-say.html |
+| TechCrunch (analysis) | https://techcrunch.com/2026/04/21/spacex-is-working-with-cursor-and-has-an-option-to-buy-the-startup-for-60-billion/ |
+| Everest Group (ecosystem impact) | https://www.everestgrp.com/blogs/spacex-cursor-deal-amid-the-vertical-integration-wars-go-full-stack-or-fall-behind |
 
 ---
 
-## 🇪🇺 EU Digital Sovereignty: April 2026 Update
+**Bottom line:** This is one of the largest potential tech acquisitions in history, signaling that AI coding tools are now a strategic battleground — and that control of the developer layer is seen as essential to winning the broader AI platform war.
 
-### What Changed
+## [game] indie game developer monetization news itch.io Steam April 2026
 
-**April 17–20, 2026 — EU Awards €180M Sovereign Cloud Contract**
+Purpose: Maintain radar on game distribution shifts relevant to Julien's game experiments
 
-The European Commission awarded its **Sovereign Cloud call for tender**, through which EU institutions, bodies, offices, and agencies can procure sovereign cloud services for **up to €180 million over 6 years**.
+Here is a concise, fact-based summary of the current state of **indie game developer monetization on itch.io and Steam** as of early-to-mid 2026, based on recent sources:
 
-The deal allows the Commission, the EU Parliament, the Council, and all their various offices and agencies to procure sovereign cloud services from four providers over the next six years: **Luxembourg's Post Telecom, Germany's StackIT, France's Scaleway, and Belgium's Proximus**.
+---
 
-The Commission awarded four contracts specifically **to ensure diversification and resilience, avoiding potential lock-in by a single provider**.
+## 🎮 Indie Game Dev Monetization: itch.io & Steam — April/May 2026 Update
 
-**One notable controversy:** The Commission awarded contracts to four providers, but **one uses services from S3NS — a joint venture between Thales and Google Cloud** — raising questions about true sovereignty.
+### What Changed / What's True Now
 
-To be eligible, providers needed to demonstrate at least **SEAL-2 (Data Sovereignty level)**, meaning they abide by EU laws and regulations without requiring additional technical measures by the customer to protect data. The other three providers demonstrated SEAL-3 (Digital Resilience), meaning they are immune from supply chain interference.
+**On Steam:**
+
+- Steam's revenue structure remains tiered: indie games accounted for **48% of full-game revenue (copies sold)** on Steam as of late 2024 — up from just 24% in 2018, representing a dramatic structural shift in the platform's makeup.
+- The **median indie game on Steam earns between $5,000 and $15,000 in lifetime gross revenue**. After Steam's 30% cut, that's roughly $3,500–$10,500 in the developer's pocket — and half of all indie games earn less than that.
+- Steam's **tiered revenue share** (70/30 default) improves to 75/25 at $10M in revenue and 80/20 at $50M. These thresholds are out of reach for most indie studios, making the flat 30% cut the practical reality.
+- Steam continues to release **tens of thousands of new games per year**, intensifying discoverability pressure for smaller teams.
+
+**On itch.io:**
+
+- itch.io remains **free to publish** with a **flexible, creator-set revenue share** — developers can give itch.io anywhere from 0% to 100%. With over **900,000 games** hosted, it functions as the go-to launchpad for low-risk testing and community-building.
+- itch.io's **open revenue-share slider** lets creators decide what percentage (if any) to allocate to the platform — a fundamental differentiator from Steam and other storefronts.
+
+**On Monetization Strategy:**
+
+- The **premium (pay-once) model** remains the optimal default for PC indie games in 2026, offering the highest player trust, best word-of-mouth efficiency, and maximum pricing flexibility in the **$5–$30 range**. Going above $30 requires strong brand recognition, or conversion rates drop sharply.
+- **2025 was the highest-grossing year in indie game history**, with Steam indie games generating over **$4.5 billion**.
+- **Subscription models** for PC indie games remain "experimental territory" in 2026, best suited to content-heavy roguelites or live-service games with large existing fanbases.
+- Multi-platform publishing (itch.io first → then Steam) is increasingly the dominant strategy: itch.io validates the game for free, builds an audience, and that audience amplifies the Steam launch — which requires a one-time **$100 publishing fee**.
 
 ---
 
 ### Why It Matters
 
-- The tender was launched last October as part of the Commission's efforts to **strengthen the digital sovereignty posture of EU institutions**, with an additional goal of encouraging the market to offer sovereign digital solutions that comply with EU laws and values.
-
-- The Commission's spokesperson confirmed these companies meet sovereignty objectives "including on transparency, environmental considerations, technological openness, but of course also security."
-
-- This is a concrete, procurement-level step — not just a policy declaration — signaling the EU is actively **shifting away from dependence on US hyperscalers** (AWS, Microsoft Azure, Google) for sensitive institutional infrastructure.
+The indie market is larger and more competitive than ever. Steam's 30% cut and brutal discoverability make survival hard for most small developers, but itch.io's zero-cost model provides a low-risk validation path. The gap between median earners ($5K–$15K) and breakout hits is enormous, and the best-performing games in 2026 lean heavily on **co-op mechanics, viral/streaming potential, and the $15–$20 price sweet spot**.
 
 ---
 
-### Most Important Sources
+### Key Sources
+- 📄 [Indie Game Revenue Data — Steam Page Analyzer (Feb 2026)](https://www.steampageanalyzer.com/blog/indie-game-revenue-data)
+- 📄 [Indie Game Monetization in 2026: Premium, DLC, or Subscription — DEV Community (Mar 2026)](https://dev.to/linou518/indie-game-monetization-in-2026-premium-dlc-or-subscription-which-path-is-right-for-you-955)
+- 📄 [itch.io vs Steam for Indie Games (Mar 2026)](https://generalistprogrammer.com/tutorials/itchio-vs-steam-indie-game-platform-comparison)
+- 📄 [Indie Game Statistics 2026 — Random Game Generator (Mar 2026)](https://randomgamegenerator.com/indie-game-statistics/)
 
-| Source | URL |
-|---|---|
-| 🏛️ European Commission (official) | [commission.europa.eu](https://commission.europa.eu/news-and-media/news/commission-advances-cloud-sovereignty-through-strategic-procurement-2026-04-17_en) |
-| 📰 GovInfoSecurity (detail + context) | [govinfosecurity.com](https://www.govinfosecurity.com/europe-spurs-digital-sovereignty-213m-cloud-contract-a-31455) |
-| 📰 The Register (Google controversy) | [theregister.com](https://www.theregister.com/2026/04/20/europe_picks_4_sovereign_cloud/) |
+> ⚠️ **Note:** No major *platform policy announcements* (e.g., new fee structures or terms changes) from itch.io or Valve were found specifically dated April 2026. The above reflects the current operational state and strategic landscape as reported by recent industry sources.
+
+## [geo_eu] Spain Asturias Galicia digital nomad remote worker policy change April 2026
+
+Purpose: Track any regulatory or lifestyle signals in Julien's stated long-term destination
+
+Based on my research, I can now provide a clear and well-sourced summary. Importantly, **no specific Asturias- or Galicia-region-only policy change was announced for April 2026** — the changes are national-level (Spain-wide), with those regions mentioned only as lifestyle destinations. Here's what the evidence actually shows:
 
 ---
 
-**Bottom line:** In April 2026, the EU made its most concrete digital sovereignty move to date by committing €180M to sovereign cloud infrastructure — but the inclusion of a Google-linked consortium in the winning contracts has already sparked debate about whether the policy goes far enough.
+## 🇪🇸 Spain Digital Nomad / Remote Worker Policy: What's Changed in 2026
+
+### What Changed
+
+**1. Higher Income Threshold (effective February 17, 2026)**
+
+On 17 February 2026, Spain's Council of Ministers approved Royal Decree 126/2026, raising the minimum interprofessional salary (SMI) by 3.1% to €1,221/month. Because the Digital Nomad Visa income requirement is pegged at 200% of the SMI, this directly raised the bar for all applicants. The new minimum is approximately **€2,849/month** (~€34,188/year) for a single applicant.
+
+**2. Stricter Enforcement & Anti-Fraud Crackdown**
+
+The Digital Nomad Office (UGE) has been reorganized with a more senior, specialized team. Much of the tightening responds to two problems: fraudulent documents (fake employment contracts and non-existent companies) and applicants failing to register with Spanish Social Security after approval.
+
+Reused documentation — where agents submitted nearly identical documents for multiple applicants, changing only names — has also been flagged. If fraud is detected in one case, other applications submitted by the same representative may be reviewed or cancelled.
+
+**3. Stricter Remote Work Documentation**
+
+Job titles and descriptions must now explicitly confirm a 100% remote role. Any implication of physical presence, operational management, or production oversight may result in refusal.
+
+**4. Business Owners Warned Off Direct Applications**
+
+Applying directly as a business owner is strongly discouraged, as doing so may require registering the business in Spain and could disqualify the applicant from Digital Nomad residency. Applying as "Owner" or "Director" can trigger additional tax obligations and procedural dead ends.
+
+**5. Golden Visa Closed; DNV Now Primary Route**
+
+Spain's investor (Golden) Visa programme was closed to new applicants in 2025. The Digital Nomad Visa is now the primary route for non-EU remote workers.
+
+**6. EU Directives on the Horizon**
+
+Spain must transpose the EU Pay Transparency Directive by June 2026 and the Platform Work Directive by December 2026. A mandatory digital time-tracking law is also expected.
+
+---
+
+### Why It Matters
+
+The combination of a higher income bar, tougher document scrutiny, and Social Security compliance enforcement means **casual or poorly prepared applications will increasingly be rejected**. The most significant change in 2026 isn't a single new rule — it's a tightening of enforcement across the board, as Spanish authorities have been dealing with a growing number of fraud cases involving people who don't genuinely meet requirements or fail to register properly.
+
+---
+
+### ⚠️ On Asturias & Galicia Specifically
+
+No specific Asturias- or Galicia-targeted digital nomad policy was found for April 2026. Regions like Galicia, Asturias, Cantabria, and the Basque Country are highlighted as attractive lifestyle destinations for remote workers, but the policy changes affecting them are Spain's **national-level** DNV rules above. The regional grant program that *has* emerged is in **Extremadura** (not Asturias/Galicia), which is a separate initiative.
+
+---
+
+### 📌 Key Sources
+- **National UGE enforcement changes:** https://remotefromspain.com/spains-digital-nomad-permit-2026-update/
+- **Updated income/SMI rules:** https://www.remoteworkeurope.eu/insights/spain-digital-nomad-visa-2026
+- **Legal & renewal detail:** https://nodisea.com/spain-digital-nomad-visa-in-2026
+- **April 2026 global ranking context:** https://www.travelandtourworld.com/news/article/spain-joins-malta-portugal-italy-and-the-bahamas-in-2026-digital-nomad-visa-race-with-tax-and-residency-overhauls/
+
+If you have a more specific source or announcement about Asturias/Galicia you've seen referenced, share it and I can search more precisely.

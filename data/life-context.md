@@ -1,29 +1,31 @@
-<!-- PRISM Life Context — Auto-generated 2026-04-25T05:07:11.795Z -->
+<!-- PRISM Life Context — Auto-generated 2026-04-26T05:33:26.472Z -->
 <!-- Source: context-note.md + LOG (3d) + 15 recent files -->
 <!-- Model: claude-sonnet-4-6 -->
 # LIFE CONTEXT SNAPSHOT — PRISM
-**Generated:** 2026-04-25 | **Snapshot window:** last 30 days
+**Generated:** 2026-04-26 | **Confidence:** Low-medium (long quiet period, sparse recent signal)
 
 ---
 
 ## 1. Right Now
 
-Julien is in a deep quiet period. No commits, no file changes, no journal entries since at least April 1 — NightCrawler runs nightly and finds nothing. The only recent file activity is in `.cursor/skills/`, where the blog pipeline (skills 1–5) and several other skills (dancing-session, guitar-coach, update-business-status, value-plan-review, weekly-business-plan) were touched in the last 48 hours, suggesting system/tooling maintenance or setup rather than active project work. Energy and mood are unreadable from the log; the silence is consistent and deliberate, not erratic.
+Julien is in a sustained output pause. No commits, no file changes, no journal entries since the period he calls "after the reset" — a pattern that has held continuously from late March through April 25. NightCrawler runs nightly and logs nothing but its own activity. The recently modified files are all `.cursor/skills/` — blog pipeline, dancing session, guitar coach, business status tools — suggesting the system is being maintained or rebuilt, not actively used for production work.
 
 ---
 
 ## 2. This Week
 
-**What's moving:**
-- `.cursor/skills/` — Multiple skill files modified in the last 48h. The full blog pipeline (brainstorm → extract → draft → review → publish to Substack), dancing session coach, guitar coach, business status updater, value plan review, and weekly business plan skills are all present and recently touched. This looks like infrastructure maintenance — refining the AI skill system itself, not executing through it.
+**What's moving (system/infrastructure level):**
+- `.cursor/skills/` folder was recently modified — blog pipeline (blog-1 through blog-5-publish), dancing-session, guitar-coach, update-business-status, value-plan-review, weekly-business-plan skills all touched. This is skill scaffolding work, not output work. PRISM's own tooling is being refined.
+- Blog-5-publish skill includes a working Substack push pipeline targeting *The Dishwasher Generation*. Infrastructure exists but no posts appear to have shipped recently.
 
-**What's parked:**
-- **Grassroot Hoppers / David Toolkit** — Shipped publicly in early March (repo split, French demo UI, English docs). March 9–13 sprint was meant to validate the wedge against real shop use. No activity since. Status unknown post-sprint.
-- **Blog** — Research done, SPEC created, draft in progress as of early March. No movement since.
-- **10k running project** — Mentioned in late February planning. No log activity.
-- **Business (Chez Julien / Operation Autonomy)** — No file changes, no meeting notes, no admin activity visible in recent log.
+**What's idle:**
+- Grassroot Hoppers (went public ~March 6, repo split live, French demo UI shipped, March 9–13 sprint was the last recorded sprint). No activity since.
+- Blog essay (was in draft as of early March). No visible progress.
+- Running / 10k project. Not mentioned since early March.
+- All other named projects: silent.
 
-**Pattern:** Everything that was active in late February / early March has gone quiet. The reset language ("same as the days after the reset") started appearing around April 1 and has continued through April 23. The period before April (Mar 16–30) used "consolidation holds" language. There's been a deliberate stop.
+**The pattern:**
+Every night from April 1 through April 25 logged identically: "NightCrawler ran, nothing from me." This is not a one-week slump — it is seven weeks of near-zero personal output following whatever "the reset" refers to.
 
 ---
 
@@ -33,52 +35,54 @@ Julien is in a deep quiet period. No commits, no file changes, no journal entrie
 
 > "It's not about the games I develop today. It's not about any of my dozens of projects. It's about what I'm going to start doing seriously in 6 months. Right now, it's only about understanding what's happening, understand what's worth pursuing and what is not. And I have no idea. That's why I'm trying so many things. I need to be at the edge."
 
-This is the operative frame. Julien is not in execution mode. He is in **orientation mode** — scanning, experimenting, trying to find signal. The quiet period is not stagnation; it is the negative space of someone who hasn't yet found the thing worth moving toward.
+This is the operative frame. Everything else is subordinate to it. Julien is explicitly **not** in execution mode — he is in a sensing/scouting phase with a 6-month horizon in mind. The quiet period is likely intentional or at minimum accepted, not a crisis.
 
 **What's hard:**
-- Genuine uncertainty about direction. He doesn't know what to pursue seriously. No false clarity.
-- The 6-month horizon is the real deadline in his mind — not today's projects.
-- High project volume (dozens by his count) has not produced a clear winner or conviction.
-- The "reset" framing (used since April 1) suggests something ended or was deliberately cleared. What exactly reset is not stated.
+- Radical uncertainty about direction. He has no idea what to pursue. The dozens of projects are experiments, not commitments.
+- The gap between the active system infrastructure (skills, tools, PRISM) and the absence of personal output suggests the scaffolding is ready but the direction isn't clear enough to build on.
+- "The reset" is referenced repeatedly but never defined in available data. Something shifted in late March/early April that changed the operating mode. Nature unknown.
 
 **What he's avoiding:**
-- Premature commitment to any single project before he has conviction.
-- Execution for its own sake.
+- Premature commitment to any single project or direction.
+- Possibly: output for its own sake (consistent with the "understanding first" frame).
 
 ---
 
-## 4. Business
+## 4. Business — Chez Julien / Operation Autonomy
 
-**Chez Julien / Operation Autonomy:**
-- No new meeting notes, no admin activity, no financial updates visible in recent log.
-- Last substantive business activity: Team Meeting February 4, 2026 (foundation-laying meeting with Henry and Lucas). The Big Meeting (full role restructure conversation) was planned for March 2026 — no record of it having happened.
-- Operation Autonomy is in "Setup & Planning" phase as of its last update (February 2026). Goal: make the shop run without Julien's daily involvement.
-- **Henry** is the key person for the manager path. No development log entries visible recently.
-- **Lucas** — sales/floor focus, role tension documented. No recent updates.
-- Julien's strategic posture on the shop: keep it as a cash-flow asset, stay operationally hands-off, no growth or expansion.
+**Stable background, low recent signal:**
+- Operation Autonomy is the active strategic frame: make Chez Julien self-running, extract cash, stay hands-off.
+- Henry is the key person — designated soft manager path as of February 2026. Team meeting happened February 4; The Big Meeting (full role restructure) was planned for March 2026. No data on whether it occurred.
+- Lucas is floor/sales focus. Student hires planned to absorb simple tasks.
+- No recent business file activity visible. Business/STATUS.md freshness unknown — if it exists, likely stale given the quiet period.
+- Financials: P&L, balance sheets exist in Operation Autonomy/05_Financials/ but not parsed here.
 
-**Relevance this week:** Low signal. No indication Julien is actively working on business matters. The shop is likely running on its own momentum while Julien is in his orientation period.
+**What this means for PRISM:** Business is likely running on autopilot (per the autonomy goal). Julien is not actively managing it this week based on all available signal.
 
 ---
 
 ## 5. Tools & Stack
 
-- **PRISM / MyLifeOS** — Active. NightCrawler runs nightly (auto-logging, context notes, nightly reports). Cursor-based skill system is the primary AI interaction layer.
-- **Cursor skills actively maintained:** blog pipeline (5 skills, including Substack publish via `python-substack`), dancing-session coach, guitar-coach, update-business-status, value-plan-review, weekly-business-plan.
-- **Substack** — The Dishwasher Generation publication. Blog-5-publish skill is wired for push/create via cookie auth. No recent publishes evident.
-- **GitHub** — No commits since at least April 1. Grassroot Hoppers repos (movement site + David Toolkit product repo) are live and public.
+- **PRISM / MyLifeOS:** Active. NightCrawler running nightly (auto-log, nightly report). Cursor-based skill system maintained and recently modified.
+- **Cursor skills in active maintenance:** blog-1-brainstorm, blog-2-extract, blog-3-draft, blog-4-review, blog-5-publish (Substack), dancing-session, guitar-coach, update-business-status, value-plan-review, weekly-business-plan.
+- **Substack:** *The Dishwasher Generation* is the active publication. Blog-5 publish pipeline is wired. No recent pushes confirmed.
+- **Git:** No commits. Repo activity flat.
+- **Languages/platforms implied:** Python (substack_publish.py), markdown vault (Obsidian-style), `.env` for credentials.
 
 ---
 
 ## 6. Life
 
-- **Lucia** — Quitting her job in May (as of February planning). This was the stated reason for Julien stepping back from the shop and a concrete anchor for the "life is changing" frame given to Henry and Lucas. May is now imminent — this is a live transition point.
-- **Location** — Brussels. Northern Spain (Asturias/Galicia direction) is the long-term destination. Not yet concrete.
-- **Health/Energy** — No data from recent log. Dancing and guitar coaching skills are maintained, suggesting these practices are valued even if not logged recently.
-- **Key upcoming date:** Lucia leaving her job in May. This is the nearest concrete life transition marker and likely relevant to whatever "6 months from now" means in Julien's framing.
+- **Lucia:** Quitting her job in May 2026 (this is imminent — within weeks of today). She and Julien plan to build things together. This is a concrete life event approaching fast and likely relevant to his current sensing/waiting posture.
+- **Spain:** Northern Spain (Asturias/Galicia) is the stated long-term destination. Not yet concrete in timeline. Portugal dropped, Switzerland ruled out.
+- **Creative projects:** Guitar (country ballad songwriter direction), Lindy Hop/dancing, blog writing — all have skill infrastructure but no logged recent activity.
+- **Energy/health:** Unknown. No journal entries to read. The quiet period gives no mood signal.
+- **Age/location:** 31, Brussels.
 
 ---
 
-## Analyst Notes
+## Key Signal for AI Analyst
 
-The "reset" language and extended silence are the dominant signal. Julien is not stuck — he is deliberately paused at a choice point. The skill infrastructure work in the last 48h suggests he's maintaining his system without using it for output yet. The 6-month horizon in his own words is the most important planning context: whatever briefings or analysis he engages with now should serve **orientation and signal-finding**, not execution optimization. Avoid pushing project-level urgency. Surface pattern recognition, opportunity assessment, and identity-direction questions instead.
+Julien is not stuck — he is deliberately paused at the observation layer. His own words establish this clearly: 6-month horizon, trying many things, needs to understand before committing. The infrastructure (PRISM, skills, tools) is being maintained and refined, suggesting the system itself is the current work. Lucia's job exit in May is the nearest concrete external event and likely a meaningful inflection point. Do not interpret the output silence as dysfunction — interpret it as strategic patience with acknowledged uncertainty.
+
+**The reset** remains an undefined variable. Whatever happened in late March changed his operating mode. Worth surfacing if he references it again.
