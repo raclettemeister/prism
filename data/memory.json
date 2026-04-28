@@ -1,6 +1,12 @@
 {
   "lastBriefings": [
     {
+      "date": "2026-04-28",
+      "articleCount": 18,
+      "theme": "dev",
+      "overrideReason": "Dev override — urgent direct-impact signal outscored scheduled Grassroot day"
+    },
+    {
       "date": "2026-04-27",
       "articleCount": 18,
       "theme": "dev",
@@ -32,12 +38,6 @@
     },
     {
       "date": "2026-04-22",
-      "articleCount": 18,
-      "theme": "dev",
-      "overrideReason": "Dev override — urgent direct-impact signal outscored scheduled Grassroot day"
-    },
-    {
-      "date": "2026-04-21",
       "articleCount": 18,
       "theme": "dev",
       "overrideReason": "Dev override — urgent direct-impact signal outscored scheduled Grassroot day"
@@ -109,14 +109,13 @@
     "Better Testing Harnesses for LLM Coding",
     "LLM Harness/Prompting Framework (specific tool unclear)"
   ],
-  "lastRun": "2026-04-27T05:49:23.732Z",
+  "lastRun": "2026-04-28T05:54:56.197Z",
   "feedHealth": {
     "https://www.latent.space/feed": {
-      "lastSuccess": "2026-04-27",
+      "lastSuccess": "2026-04-28",
       "failCount": 0,
       "avgArticles": 2,
       "samples": [
-        2,
         1,
         1,
         2,
@@ -125,11 +124,12 @@
         4,
         3,
         1,
-        0
+        0,
+        2
       ]
     },
     "https://buttondown.email/ainews/rss": {
-      "lastSuccess": "2026-04-27",
+      "lastSuccess": "2026-04-28",
       "failCount": 0,
       "avgArticles": 0,
       "samples": [
@@ -164,15 +164,15 @@
       "samples": []
     },
     "https://jack-clark.net/feed/": {
-      "lastSuccess": "2026-04-27",
+      "lastSuccess": "2026-04-28",
       "failCount": 0,
       "avgArticles": 0,
       "samples": [
         0,
         0,
+        1,
+        1,
         0,
-        1,
-        1,
         0,
         0,
         0,
@@ -181,11 +181,10 @@
       ]
     },
     "https://www.exponentialview.co/feed": {
-      "lastSuccess": "2026-04-27",
+      "lastSuccess": "2026-04-28",
       "failCount": 0,
       "avgArticles": 1,
       "samples": [
-        0,
         1,
         1,
         1,
@@ -194,15 +193,15 @@
         0,
         1,
         2,
-        1
+        1,
+        0
       ]
     },
     "https://hnrss.org/best?count=30&q=AI+OR+LLM+OR+agent+OR+Claude": {
-      "lastSuccess": "2026-04-27",
+      "lastSuccess": "2026-04-28",
       "failCount": 0,
       "avgArticles": 3,
       "samples": [
-        3,
         2,
         2,
         3,
@@ -211,32 +210,32 @@
         5,
         0,
         5,
-        4
+        4,
+        5
       ]
     },
     "https://hnrss.org/best?count=20&q=cursor+OR+coding+OR+prompt": {
-      "lastSuccess": "2026-04-27",
+      "lastSuccess": "2026-04-28",
       "failCount": 0,
       "avgArticles": 1,
       "samples": [
         0,
         0,
-        0,
         1,
         2,
         2,
         1,
         0,
         1,
+        2,
         2
       ]
     },
     "https://simonwillison.net/atom/everything/": {
-      "lastSuccess": "2026-04-27",
+      "lastSuccess": "2026-04-28",
       "failCount": 0,
       "avgArticles": 6,
       "samples": [
-        5,
         4,
         5,
         3,
@@ -245,11 +244,12 @@
         9,
         13,
         6,
-        2
+        2,
+        5
       ]
     },
     "https://lilianweng.github.io/index.xml": {
-      "lastSuccess": "2026-04-27",
+      "lastSuccess": "2026-04-28",
       "failCount": 0,
       "avgArticles": 0,
       "samples": [
@@ -266,15 +266,15 @@
       ]
     },
     "https://www.interconnects.ai/feed": {
-      "lastSuccess": "2026-04-27",
+      "lastSuccess": "2026-04-28",
       "failCount": 0,
       "avgArticles": 0,
       "samples": [
         0,
         0,
+        1,
+        1,
         0,
-        1,
-        1,
         0,
         0,
         0,
@@ -283,11 +283,10 @@
       ]
     },
     "https://www.bensbites.com/feed": {
-      "lastSuccess": "2026-04-27",
+      "lastSuccess": "2026-04-28",
       "failCount": 0,
-      "avgArticles": 1,
+      "avgArticles": 0,
       "samples": [
-        1,
         0,
         0,
         0,
@@ -295,12 +294,13 @@
         1,
         1,
         1,
+        0,
         0,
         0
       ]
     },
     "https://hnrss.org/show": {
-      "lastSuccess": "2026-04-27",
+      "lastSuccess": "2026-04-28",
       "failCount": 0,
       "avgArticles": 20,
       "samples": [
@@ -317,11 +317,11 @@
       ]
     },
     "https://hnrss.org/launches": {
-      "lastSuccess": "2026-04-27",
+      "lastSuccess": "2026-04-28",
       "failCount": 0,
       "avgArticles": 0,
       "samples": [
-        1,
+        0,
         0,
         0,
         0,
@@ -334,11 +334,10 @@
       ]
     },
     "https://www.artificialintelligence-news.com/feed/": {
-      "lastSuccess": "2026-04-27",
+      "lastSuccess": "2026-04-28",
       "failCount": 0,
       "avgArticles": 3,
       "samples": [
-        2,
         0,
         0,
         3,
@@ -347,11 +346,12 @@
         6,
         5,
         2,
-        0
+        0,
+        1
       ]
     },
     "https://the-decoder.com/feed/": {
-      "lastSuccess": "2026-04-27",
+      "lastSuccess": "2026-04-28",
       "failCount": 0,
       "avgArticles": 10,
       "samples": [
@@ -368,7 +368,7 @@
       ]
     },
     "https://venturebeat.com/category/ai/feed/": {
-      "lastSuccess": "2026-04-27",
+      "lastSuccess": "2026-04-28",
       "failCount": 0,
       "avgArticles": 0,
       "samples": [
@@ -391,17 +391,17 @@
       "samples": []
     },
     "https://blog.replit.com/feed.xml": {
-      "lastSuccess": "2026-04-27",
+      "lastSuccess": "2026-04-28",
       "failCount": 0,
       "avgArticles": 1,
       "samples": [
         0,
         0,
         0,
-        0,
         3,
         3,
         1,
+        0,
         0,
         0,
         0
@@ -426,7 +426,7 @@
       "samples": []
     },
     "https://blog.pragmaticengineer.com/rss/": {
-      "lastSuccess": "2026-04-27",
+      "lastSuccess": "2026-04-28",
       "failCount": 0,
       "avgArticles": 0,
       "samples": [
@@ -435,15 +435,15 @@
         0,
         0,
         0,
+        1,
+        1,
         0,
-        1,
-        1,
         0,
         0
       ]
     },
     "https://entrepreneurshandbook.co/feed": {
-      "lastSuccess": "2026-04-27",
+      "lastSuccess": "2026-04-28",
       "failCount": 0,
       "avgArticles": 0,
       "samples": [
@@ -460,11 +460,10 @@
       ]
     },
     "https://www.saastr.com/feed/": {
-      "lastSuccess": "2026-04-27",
+      "lastSuccess": "2026-04-28",
       "failCount": 0,
       "avgArticles": 5,
       "samples": [
-        5,
         4,
         4,
         5,
@@ -473,7 +472,8 @@
         6,
         5,
         4,
-        4
+        4,
+        5
       ]
     },
     "https://www.reddit.com/r/microsaas/.rss": {
@@ -483,11 +483,10 @@
       "samples": []
     },
     "https://gamefromscratch.com/feed/": {
-      "lastSuccess": "2026-04-27",
+      "lastSuccess": "2026-04-28",
       "failCount": 0,
       "avgArticles": 2,
       "samples": [
-        1,
         0,
         0,
         1,
@@ -496,15 +495,15 @@
         3,
         3,
         2,
+        1,
         1
       ]
     },
     "https://gamedeveloper.com/rss.xml": {
-      "lastSuccess": "2026-04-27",
+      "lastSuccess": "2026-04-28",
       "failCount": 0,
-      "avgArticles": 6,
+      "avgArticles": 5,
       "samples": [
-        7,
         5,
         0,
         2,
@@ -513,15 +512,15 @@
         9,
         10,
         5,
-        0
+        0,
+        5
       ]
     },
     "https://www.gamesindustry.biz/feed/news": {
-      "lastSuccess": "2026-04-27",
+      "lastSuccess": "2026-04-28",
       "failCount": 0,
       "avgArticles": 7,
       "samples": [
-        7,
         3,
         0,
         8,
@@ -530,15 +529,15 @@
         12,
         11,
         7,
-        0
+        0,
+        5
       ]
     },
     "https://itch.io/games/new-and-popular.xml": {
-      "lastSuccess": "2026-04-27",
+      "lastSuccess": "2026-04-28",
       "failCount": 0,
       "avgArticles": 4,
       "samples": [
-        2,
         6,
         10,
         7,
@@ -547,16 +546,16 @@
         0,
         0,
         1,
-        1
+        1,
+        7
       ]
     },
     "https://godotengine.org/rss.xml": {
-      "lastSuccess": "2026-04-27",
+      "lastSuccess": "2026-04-28",
       "failCount": 0,
       "avgArticles": 0,
       "samples": [
         1,
-        1,
         0,
         0,
         0,
@@ -564,11 +563,12 @@
         0,
         1,
         1,
+        0,
         0
       ]
     },
     "https://weirdwonderfulai.art/feed/": {
-      "lastSuccess": "2026-04-27",
+      "lastSuccess": "2026-04-28",
       "failCount": 0,
       "avgArticles": 0,
       "samples": [
@@ -585,11 +585,10 @@
       ]
     },
     "https://www.creativebloq.com/feed": {
-      "lastSuccess": "2026-04-27",
+      "lastSuccess": "2026-04-28",
       "failCount": 0,
-      "avgArticles": 20,
+      "avgArticles": 19,
       "samples": [
-        24,
         21,
         19,
         16,
@@ -598,15 +597,15 @@
         23,
         18,
         17,
-        14
+        14,
+        17
       ]
     },
     "https://arstechnica.com/ai/feed/": {
-      "lastSuccess": "2026-04-27",
+      "lastSuccess": "2026-04-28",
       "failCount": 0,
       "avgArticles": 4,
       "samples": [
-        7,
         2,
         0,
         3,
@@ -615,15 +614,15 @@
         5,
         5,
         3,
-        0
+        0,
+        4
       ]
     },
     "https://www.theverge.com/rss/ai-artificial-intelligence/index.xml": {
-      "lastSuccess": "2026-04-27",
+      "lastSuccess": "2026-04-28",
       "failCount": 0,
       "avgArticles": 7,
       "samples": [
-        10,
         7,
         2,
         3,
@@ -632,7 +631,8 @@
         10,
         10,
         5,
-        0
+        0,
+        8
       ]
     },
     "https://sifted.eu/feed/": {
@@ -663,11 +663,10 @@
       ]
     },
     "https://tech.eu/feed/": {
-      "lastSuccess": "2026-04-27",
+      "lastSuccess": "2026-04-28",
       "failCount": 0,
       "avgArticles": 10,
       "samples": [
-        16,
         7,
         1,
         7,
@@ -676,7 +675,8 @@
         17,
         15,
         5,
-        1
+        1,
+        12
       ]
     },
     "https://www.euractiv.com/sections/digital/feed/": {
@@ -692,11 +692,10 @@
       "samples": []
     },
     "https://www.brusselsmorning.com/feed/": {
-      "lastSuccess": "2026-04-27",
+      "lastSuccess": "2026-04-28",
       "failCount": 0,
       "avgArticles": 11,
       "samples": [
-        14,
         9,
         11,
         14,
@@ -705,15 +704,15 @@
         10,
         12,
         11,
-        8
+        8,
+        10
       ]
     },
     "https://stratechery.com/feed/": {
-      "lastSuccess": "2026-04-27",
+      "lastSuccess": "2026-04-28",
       "failCount": 0,
       "avgArticles": 1,
       "samples": [
-        2,
         1,
         0,
         1,
@@ -722,11 +721,12 @@
         2,
         2,
         1,
-        0
+        0,
+        1
       ]
     },
     "https://www.oneusefulthing.org/feed": {
-      "lastSuccess": "2026-04-27",
+      "lastSuccess": "2026-04-28",
       "failCount": 0,
       "avgArticles": 0,
       "samples": [
@@ -735,19 +735,18 @@
         0,
         0,
         0,
+        1,
+        1,
         0,
-        1,
-        1,
         0,
         0
       ]
     },
     "https://www.technologyreview.com/feed/": {
-      "lastSuccess": "2026-04-27",
+      "lastSuccess": "2026-04-28",
       "failCount": 0,
       "avgArticles": 5,
       "samples": [
-        10,
         4,
         0,
         3,
@@ -756,7 +755,8 @@
         8,
         5,
         3,
-        0
+        0,
+        4
       ]
     },
     "https://www.retaildive.com/feeds/news/": {
@@ -813,11 +813,10 @@
       ]
     },
     "https://huggingface.co/blog/feed.xml": {
-      "lastSuccess": "2026-04-27",
+      "lastSuccess": "2026-04-28",
       "failCount": 0,
       "avgArticles": 1,
       "samples": [
-        1,
         1,
         0,
         1,
@@ -826,7 +825,8 @@
         1,
         1,
         0,
-        0
+        0,
+        2
       ]
     },
     "https://www.marktechpost.com/feed/": {
@@ -838,7 +838,7 @@
       ]
     },
     "https://blog.val.town/rss.xml": {
-      "lastSuccess": "2026-04-27",
+      "lastSuccess": "2026-04-28",
       "failCount": 0,
       "avgArticles": 0,
       "samples": [
@@ -855,11 +855,10 @@
       ]
     },
     "https://www.politico.eu/section/technology/feed/": {
-      "lastSuccess": "2026-04-27",
+      "lastSuccess": "2026-04-28",
       "failCount": 0,
-      "avgArticles": 4,
+      "avgArticles": 3,
       "samples": [
-        5,
         5,
         1,
         3,
@@ -868,15 +867,15 @@
         4,
         3,
         2,
-        1
+        1,
+        3
       ]
     },
     "https://mshibanami.github.io/GitHubTrendingRSS/daily/all.xml": {
-      "lastSuccess": "2026-04-27",
+      "lastSuccess": "2026-04-28",
       "failCount": 0,
       "avgArticles": 12,
       "samples": [
-        15,
         10,
         10,
         10,
@@ -884,6 +883,7 @@
         12,
         16,
         12,
+        13,
         13,
         13
       ]
@@ -959,11 +959,10 @@
       "samples": []
     },
     "https://vercel.com/atom": {
-      "lastSuccess": "2026-04-27",
+      "lastSuccess": "2026-04-28",
       "failCount": 0,
       "avgArticles": 1,
       "samples": [
-        4,
         1,
         0,
         1,
@@ -972,15 +971,15 @@
         0,
         2,
         1,
-        0
+        0,
+        1
       ]
     },
     "https://blog.cloudflare.com/rss/": {
-      "lastSuccess": "2026-04-27",
+      "lastSuccess": "2026-04-28",
       "failCount": 0,
-      "avgArticles": 3,
+      "avgArticles": 2,
       "samples": [
-        13,
         7,
         0,
         3,
@@ -989,12 +988,13 @@
         1,
         0,
         0,
+        0,
         0
       ]
     },
     "https://blog.langchain.dev/rss/": {
       "lastSuccess": "2026-04-15",
-      "failCount": 12,
+      "failCount": 13,
       "avgArticles": 2,
       "samples": [
         1,
@@ -1016,11 +1016,10 @@
       "samples": []
     },
     "https://openai.com/news/rss.xml": {
-      "lastSuccess": "2026-04-27",
+      "lastSuccess": "2026-04-28",
       "failCount": 0,
-      "avgArticles": 3,
+      "avgArticles": 4,
       "samples": [
-        1,
         0,
         0,
         1,
@@ -1029,15 +1028,15 @@
         14,
         9,
         0,
-        1
+        1,
+        5
       ]
     },
     "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_anthropic_news.xml": {
-      "lastSuccess": "2026-04-27",
+      "lastSuccess": "2026-04-28",
       "failCount": 0,
       "avgArticles": 0,
       "samples": [
-        1,
         0,
         0,
         0,
@@ -1046,7 +1045,8 @@
         0,
         2,
         0,
-        0
+        0,
+        1
       ]
     },
     "https://deepmind.google/blog/feed.xml": {
@@ -1068,7 +1068,7 @@
       "samples": []
     },
     "https://huyenchip.com/feed.xml": {
-      "lastSuccess": "2026-04-27",
+      "lastSuccess": "2026-04-28",
       "failCount": 0,
       "avgArticles": 0,
       "samples": [
@@ -1085,13 +1085,13 @@
       ]
     },
     "https://sebastianraschka.com/rss_feed.xml": {
-      "lastSuccess": "2026-04-27",
+      "lastSuccess": "2026-04-28",
       "failCount": 0,
       "avgArticles": 0,
       "samples": [
         0,
-        0,
         1,
+        0,
         0,
         0,
         0,
@@ -1102,7 +1102,7 @@
       ]
     },
     "https://www.swyx.io/rss.xml": {
-      "lastSuccess": "2026-04-27",
+      "lastSuccess": "2026-04-28",
       "failCount": 0,
       "avgArticles": 0,
       "samples": [
@@ -1119,13 +1119,13 @@
       ]
     },
     "https://magazine.sebastianraschka.com/feed": {
-      "lastSuccess": "2026-04-27",
+      "lastSuccess": "2026-04-28",
       "failCount": 0,
       "avgArticles": 0,
       "samples": [
+        1,
+        1,
         0,
-        1,
-        1,
         0,
         0,
         0,
@@ -1142,11 +1142,10 @@
       "samples": []
     },
     "https://www.lennysnewsletter.com/feed": {
-      "lastSuccess": "2026-04-27",
+      "lastSuccess": "2026-04-28",
       "failCount": 0,
       "avgArticles": 2,
       "samples": [
-        0,
         1,
         2,
         3,
@@ -1155,11 +1154,12 @@
         3,
         2,
         1,
-        2
+        2,
+        3
       ]
     },
     "http://www.aaronsw.com/2002/feeds/pgessays.rss": {
-      "lastSuccess": "2026-04-27",
+      "lastSuccess": "2026-04-28",
       "failCount": 0,
       "avgArticles": 219,
       "samples": [
@@ -1176,12 +1176,11 @@
       ]
     },
     "https://pluralistic.net/feed/": {
-      "lastSuccess": "2026-04-27",
+      "lastSuccess": "2026-04-28",
       "failCount": 0,
       "avgArticles": 2,
       "samples": [
         2,
-        2,
         1,
         1,
         2,
@@ -1189,6 +1188,7 @@
         2,
         2,
         2,
+        1,
         1
       ]
     },
@@ -1211,11 +1211,10 @@
       "samples": []
     },
     "https://www.producthunt.com/feed": {
-      "lastSuccess": "2026-04-27",
+      "lastSuccess": "2026-04-28",
       "failCount": 0,
-      "avgArticles": 15,
+      "avgArticles": 12,
       "samples": [
-        36,
         11,
         5,
         8,
@@ -1224,15 +1223,15 @@
         22,
         17,
         1,
-        0
+        0,
+        8
       ]
     },
     "https://news.ycombinator.com/rss": {
-      "lastSuccess": "2026-04-27",
+      "lastSuccess": "2026-04-28",
       "failCount": 0,
       "avgArticles": 22,
       "samples": [
-        22,
         19,
         22,
         23,
@@ -1241,15 +1240,15 @@
         26,
         22,
         17,
-        24
+        24,
+        22
       ]
     },
     "https://techcrunch.com/category/startups/feed/": {
-      "lastSuccess": "2026-04-27",
+      "lastSuccess": "2026-04-28",
       "failCount": 0,
-      "avgArticles": 8,
+      "avgArticles": 7,
       "samples": [
-        11,
         6,
         2,
         1,
@@ -1258,6 +1257,7 @@
         16,
         14,
         8,
+        3,
         3
       ]
     },
@@ -1298,11 +1298,10 @@
       "samples": []
     },
     "https://www.wired.com/feed/rss": {
-      "lastSuccess": "2026-04-27",
+      "lastSuccess": "2026-04-28",
       "failCount": 0,
-      "avgArticles": 30,
+      "avgArticles": 28,
       "samples": [
-        43,
         23,
         13,
         18,
@@ -1311,12 +1310,13 @@
         50,
         42,
         23,
-        13
+        13,
+        26
       ]
     },
     "https://hnrss.org/best?count=20&q=agent+OR+autonomous+OR+agentic": {
       "lastSuccess": "2026-04-27",
-      "failCount": 0,
+      "failCount": 1,
       "avgArticles": 1,
       "samples": [
         0,
@@ -1332,28 +1332,27 @@
       ]
     },
     "https://hnrss.org/best?count=15&q=Claude+OR+Anthropic": {
-      "lastSuccess": "2026-04-27",
+      "lastSuccess": "2026-04-28",
       "failCount": 0,
       "avgArticles": 2,
       "samples": [
+        1,
+        2,
+        2,
+        2,
+        2,
+        3,
+        1,
+        3,
         0,
-        1,
-        2,
-        2,
-        2,
-        2,
-        3,
-        1,
-        3,
         0
       ]
     },
     "https://hnrss.org/best?count=15&q=Europe+OR+EU+OR+Brussels": {
-      "lastSuccess": "2026-04-27",
+      "lastSuccess": "2026-04-28",
       "failCount": 0,
       "avgArticles": 0,
       "samples": [
-        0,
         0,
         0,
         0,
@@ -1362,15 +1361,16 @@
         2,
         0,
         0,
-        1
+        1,
+        0
       ]
     },
     "https://hnrss.org/whoishiring/jobs": {
-      "lastSuccess": "2026-04-27",
+      "lastSuccess": "2026-04-28",
       "failCount": 0,
       "avgArticles": 0,
       "samples": [
-        2,
+        0,
         0,
         0,
         0,
@@ -1401,11 +1401,10 @@
       "samples": []
     },
     "https://www.project-syndicate.org/rss": {
-      "lastSuccess": "2026-04-27",
+      "lastSuccess": "2026-04-28",
       "failCount": 0,
       "avgArticles": 8,
       "samples": [
-        13,
         7,
         0,
         5,
@@ -1414,7 +1413,8 @@
         13,
         11,
         7,
-        0
+        0,
+        5
       ]
     },
     "https://www.bruegel.org/rss.xml": {
@@ -1430,11 +1430,10 @@
       "samples": []
     },
     "https://www.noahpinion.blog/feed": {
-      "lastSuccess": "2026-04-27",
+      "lastSuccess": "2026-04-28",
       "failCount": 0,
       "avgArticles": 1,
       "samples": [
-        2,
         1,
         1,
         1,
@@ -1442,50 +1441,50 @@
         2,
         1,
         1,
-        1,
-        0
-      ]
-    },
-    "https://marginalrevolution.com/feed": {
-      "lastSuccess": "2026-04-27",
-      "failCount": 0,
-      "avgArticles": 9,
-      "samples": [
-        10,
-        9,
-        9,
-        9,
-        10,
-        10,
-        10,
-        10,
-        9,
-        8
-      ]
-    },
-    "https://www.foreignaffairs.com/rss.xml": {
-      "lastSuccess": "2026-04-27",
-      "failCount": 0,
-      "avgArticles": 3,
-      "samples": [
-        3,
-        0,
-        1,
-        10,
-        9,
-        2,
-        3,
         1,
         0,
         1
       ]
     },
-    "https://ecfr.eu/feed/": {
-      "lastSuccess": "2026-04-27",
+    "https://marginalrevolution.com/feed": {
+      "lastSuccess": "2026-04-28",
       "failCount": 0,
-      "avgArticles": 2,
+      "avgArticles": 9,
       "samples": [
+        9,
+        9,
+        9,
+        10,
+        10,
+        10,
+        10,
+        9,
+        8,
+        8
+      ]
+    },
+    "https://www.foreignaffairs.com/rss.xml": {
+      "lastSuccess": "2026-04-28",
+      "failCount": 0,
+      "avgArticles": 3,
+      "samples": [
+        0,
+        1,
+        10,
+        9,
+        2,
         3,
+        1,
+        0,
+        1,
+        2
+      ]
+    },
+    "https://ecfr.eu/feed/": {
+      "lastSuccess": "2026-04-28",
+      "failCount": 0,
+      "avgArticles": 1,
+      "samples": [
         0,
         0,
         2,
@@ -1494,7 +1493,8 @@
         3,
         3,
         0,
-        0
+        0,
+        1
       ]
     },
     "https://www.chathamhouse.org/rss": {
@@ -1504,11 +1504,10 @@
       "samples": []
     },
     "https://www.slowboring.com/feed": {
-      "lastSuccess": "2026-04-27",
+      "lastSuccess": "2026-04-28",
       "failCount": 0,
-      "avgArticles": 4,
+      "avgArticles": 3,
       "samples": [
-        5,
         3,
         2,
         3,
@@ -1517,16 +1516,17 @@
         5,
         5,
         3,
-        2
+        2,
+        3
       ]
     },
     "https://theovershoot.co/feed": {
-      "lastSuccess": "2026-04-27",
+      "lastSuccess": "2026-04-28",
       "failCount": 0,
       "avgArticles": 0,
       "samples": [
         1,
-        1,
+        0,
         0,
         0,
         0,
@@ -1544,12 +1544,11 @@
       "samples": []
     },
     "https://www.geopoliticaldispatch.com/feed": {
-      "lastSuccess": "2026-04-27",
+      "lastSuccess": "2026-04-28",
       "failCount": 0,
       "avgArticles": 2,
       "samples": [
         2,
-        2,
         1,
         1,
         2,
@@ -1557,6 +1556,7 @@
         2,
         2,
         2,
+        1,
         1
       ]
     },
@@ -1579,11 +1579,10 @@
       "samples": []
     },
     "https://geopoliticalfutures.com/feed/": {
-      "lastSuccess": "2026-04-27",
+      "lastSuccess": "2026-04-28",
       "failCount": 0,
       "avgArticles": 3,
       "samples": [
-        5,
         4,
         1,
         2,
@@ -1592,7 +1591,8 @@
         5,
         4,
         3,
-        1
+        1,
+        3
       ]
     },
     "https://carnegieeurope.eu/rss/": {
@@ -1602,11 +1602,10 @@
       "samples": []
     },
     "https://www.economist.com/leaders/rss.xml": {
-      "lastSuccess": "2026-04-27",
+      "lastSuccess": "2026-04-28",
       "failCount": 0,
-      "avgArticles": 2,
+      "avgArticles": 1,
       "samples": [
-        5,
         0,
         0,
         0,
@@ -1614,16 +1613,16 @@
         1,
         5,
         4,
+        0,
         0,
         0
       ]
     },
     "https://www.economist.com/europe/rss.xml": {
-      "lastSuccess": "2026-04-27",
+      "lastSuccess": "2026-04-28",
       "failCount": 0,
-      "avgArticles": 2,
+      "avgArticles": 1,
       "samples": [
-        4,
         0,
         0,
         2,
@@ -1632,15 +1631,15 @@
         3,
         1,
         0,
-        1
+        1,
+        2
       ]
     },
     "https://www.economist.com/finance-and-economics/rss.xml": {
-      "lastSuccess": "2026-04-27",
+      "lastSuccess": "2026-04-28",
       "failCount": 0,
       "avgArticles": 2,
       "samples": [
-        3,
         1,
         0,
         1,
@@ -1649,49 +1648,49 @@
         5,
         5,
         0,
+        2,
         2
       ]
     },
     "https://www.economist.com/asia/rss.xml": {
-      "lastSuccess": "2026-04-27",
+      "lastSuccess": "2026-04-28",
       "failCount": 0,
       "avgArticles": 2,
       "samples": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        5,
+        5,
+        0,
+        1,
+        2
+      ]
+    },
+    "https://www.economist.com/science-and-technology/rss.xml": {
+      "lastSuccess": "2026-04-28",
+      "failCount": 0,
+      "avgArticles": 1,
+      "samples": [
+        1,
+        0,
+        0,
+        1,
         3,
-        0,
+        2,
         1,
         1,
-        0,
-        0,
-        5,
-        5,
         0,
         1
       ]
     },
-    "https://www.economist.com/science-and-technology/rss.xml": {
-      "lastSuccess": "2026-04-27",
-      "failCount": 0,
-      "avgArticles": 1,
-      "samples": [
-        2,
-        1,
-        0,
-        0,
-        1,
-        3,
-        2,
-        1,
-        1,
-        0
-      ]
-    },
     "https://www.economist.com/business/rss.xml": {
-      "lastSuccess": "2026-04-27",
+      "lastSuccess": "2026-04-28",
       "failCount": 0,
       "avgArticles": 2,
       "samples": [
-        4,
         0,
         1,
         3,
@@ -1700,15 +1699,15 @@
         5,
         3,
         0,
-        0
+        0,
+        1
       ]
     },
     "https://www.economist.com/middle-east-and-africa/rss.xml": {
-      "lastSuccess": "2026-04-27",
+      "lastSuccess": "2026-04-28",
       "failCount": 0,
-      "avgArticles": 2,
+      "avgArticles": 1,
       "samples": [
-        4,
         1,
         1,
         1,
@@ -1717,11 +1716,12 @@
         3,
         1,
         0,
-        0
+        0,
+        1
       ]
     },
     "https://www.ft.com/world?format=rss": {
-      "lastSuccess": "2026-04-27",
+      "lastSuccess": "2026-04-28",
       "failCount": 0,
       "avgArticles": 25,
       "samples": [
@@ -1738,11 +1738,10 @@
       ]
     },
     "https://www.ft.com/global-economy?format=rss": {
-      "lastSuccess": "2026-04-27",
+      "lastSuccess": "2026-04-28",
       "failCount": 0,
       "avgArticles": 19,
       "samples": [
-        25,
         13,
         15,
         19,
@@ -1751,15 +1750,15 @@
         25,
         23,
         10,
-        13
+        13,
+        25
       ]
     },
     "https://www.ft.com/opinion?format=rss": {
-      "lastSuccess": "2026-04-27",
+      "lastSuccess": "2026-04-28",
       "failCount": 0,
-      "avgArticles": 23,
+      "avgArticles": 22,
       "samples": [
-        25,
         25,
         14,
         24,
@@ -1768,15 +1767,15 @@
         25,
         25,
         24,
-        13
+        13,
+        20
       ]
     },
     "https://www.ft.com/climate-capital?format=rss": {
-      "lastSuccess": "2026-04-27",
+      "lastSuccess": "2026-04-28",
       "failCount": 0,
       "avgArticles": 2,
       "samples": [
-        3,
         0,
         0,
         1,
@@ -1785,6 +1784,7 @@
         4,
         1,
         0,
+        3,
         3
       ]
     },
@@ -1813,11 +1813,10 @@
       "samples": []
     },
     "https://thediplomat.com/feed/": {
-      "lastSuccess": "2026-04-27",
+      "lastSuccess": "2026-04-28",
       "failCount": 0,
-      "avgArticles": 15,
+      "avgArticles": 14,
       "samples": [
-        26,
         10,
         0,
         14,
@@ -1826,7 +1825,8 @@
         24,
         23,
         8,
-        0
+        0,
+        14
       ]
     },
     "https://www.euractiv.com/feed/": {
@@ -1836,7 +1836,7 @@
       "samples": []
     },
     "https://www.politico.eu/feed/": {
-      "lastSuccess": "2026-04-27",
+      "lastSuccess": "2026-04-28",
       "failCount": 0,
       "avgArticles": 10,
       "samples": [
@@ -1853,11 +1853,10 @@
       ]
     },
     "https://euobserver.com/rss": {
-      "lastSuccess": "2026-04-27",
+      "lastSuccess": "2026-04-28",
       "failCount": 0,
       "avgArticles": 12,
       "samples": [
-        18,
         10,
         4,
         11,
@@ -1866,7 +1865,8 @@
         16,
         14,
         7,
-        5
+        5,
+        13
       ]
     },
     "https://www.dw.com/en/top-stories/europe/rss": {
@@ -1876,11 +1876,10 @@
       "samples": []
     },
     "https://www.theguardian.com/world/europe-news/rss": {
-      "lastSuccess": "2026-04-27",
+      "lastSuccess": "2026-04-28",
       "failCount": 0,
       "avgArticles": 13,
       "samples": [
-        13,
         16,
         12,
         13,
@@ -1889,7 +1888,8 @@
         12,
         14,
         12,
-        10
+        10,
+        11
       ]
     },
     "https://www.euronews.com/rss": {
@@ -1901,11 +1901,10 @@
       ]
     },
     "https://www.france24.com/en/rss": {
-      "lastSuccess": "2026-04-27",
+      "lastSuccess": "2026-04-28",
       "failCount": 0,
       "avgArticles": 23,
       "samples": [
-        23,
         24,
         24,
         22,
@@ -1914,7 +1913,8 @@
         23,
         24,
         24,
-        24
+        24,
+        23
       ]
     },
     "https://www.reuters.com/world/rss": {
@@ -1924,11 +1924,10 @@
       "samples": []
     },
     "https://feeds.bbci.co.uk/news/world/rss.xml": {
-      "lastSuccess": "2026-04-27",
+      "lastSuccess": "2026-04-28",
       "failCount": 0,
       "avgArticles": 30,
       "samples": [
-        29,
         24,
         30,
         34,
@@ -1937,11 +1936,12 @@
         35,
         33,
         38,
-        15
+        15,
+        27
       ]
     },
     "https://www.aljazeera.com/xml/rss/all.xml": {
-      "lastSuccess": "2026-04-27",
+      "lastSuccess": "2026-04-28",
       "failCount": 0,
       "avgArticles": 25,
       "samples": [
@@ -1958,11 +1958,10 @@
       ]
     },
     "https://www.ft.com/rss/home": {
-      "lastSuccess": "2026-04-27",
+      "lastSuccess": "2026-04-28",
       "failCount": 0,
       "avgArticles": 9,
       "samples": [
-        8,
         10,
         9,
         9,
@@ -1971,6 +1970,7 @@
         10,
         9,
         8,
+        9,
         9
       ]
     },
@@ -2011,12 +2011,11 @@
       "samples": []
     },
     "https://80000hours.org/feed/": {
-      "lastSuccess": "2026-04-27",
+      "lastSuccess": "2026-04-28",
       "failCount": 0,
       "avgArticles": 1,
       "samples": [
         1,
-        1,
         0,
         0,
         0,
@@ -2024,16 +2023,16 @@
         1,
         1,
         1,
-        0
+        0,
+        3
       ]
     },
     "https://www.astralcodexten.com/feed": {
-      "lastSuccess": "2026-04-27",
+      "lastSuccess": "2026-04-28",
       "failCount": 0,
       "avgArticles": 1,
       "samples": [
         0,
-        0,
         1,
         1,
         1,
@@ -2041,11 +2040,12 @@
         1,
         1,
         0,
-        0
+        0,
+        1
       ]
     },
     "https://www.lesswrong.com/feed.xml": {
-      "lastSuccess": "2026-04-27",
+      "lastSuccess": "2026-04-28",
       "failCount": 0,
       "avgArticles": 10,
       "samples": [
@@ -2062,11 +2062,10 @@
       ]
     },
     "https://timharford.com/feed/": {
-      "lastSuccess": "2026-04-27",
+      "lastSuccess": "2026-04-28",
       "failCount": 0,
       "avgArticles": 1,
       "samples": [
-        2,
         0,
         0,
         0,
@@ -2075,11 +2074,12 @@
         1,
         2,
         2,
-        1
+        1,
+        0
       ]
     },
     "https://waitbutwhy.com/feed": {
-      "lastSuccess": "2026-04-27",
+      "lastSuccess": "2026-04-28",
       "failCount": 0,
       "avgArticles": 0,
       "samples": [
@@ -2096,7 +2096,7 @@
       ]
     },
     "https://fs.blog/feed/": {
-      "lastSuccess": "2026-04-27",
+      "lastSuccess": "2026-04-28",
       "failCount": 0,
       "avgArticles": 0,
       "samples": [
@@ -2104,16 +2104,16 @@
         0,
         0,
         0,
+        1,
+        1,
         0,
-        1,
-        1,
         0,
         0,
         0
       ]
     },
     "https://thebrowser.com/feed/": {
-      "lastSuccess": "2026-04-27",
+      "lastSuccess": "2026-04-28",
       "failCount": 0,
       "avgArticles": 0,
       "samples": [
@@ -2136,28 +2136,27 @@
       "samples": []
     },
     "https://www.palladiummag.com/feed/": {
-      "lastSuccess": "2026-04-27",
+      "lastSuccess": "2026-04-28",
       "failCount": 0,
       "avgArticles": 0,
       "samples": [
-        1,
         0,
         0,
         0,
         0,
         1,
         1,
+        0,
         0,
         0,
         0
       ]
     },
     "https://www.noemamag.com/feed/": {
-      "lastSuccess": "2026-04-27",
+      "lastSuccess": "2026-04-28",
       "failCount": 0,
       "avgArticles": 1,
       "samples": [
-        2,
         1,
         0,
         0,
@@ -2166,6 +2165,7 @@
         1,
         2,
         1,
+        0,
         0
       ]
     },
@@ -2176,11 +2176,10 @@
       "samples": []
     },
     "https://daringfireball.net/feeds/main": {
-      "lastSuccess": "2026-04-27",
+      "lastSuccess": "2026-04-28",
       "failCount": 0,
-      "avgArticles": 7,
+      "avgArticles": 6,
       "samples": [
-        10,
         4,
         4,
         7,
@@ -2189,11 +2188,12 @@
         9,
         11,
         5,
-        3
+        3,
+        6
       ]
     },
     "https://every.to/chain-of-thought/feed": {
-      "lastSuccess": "2026-04-27",
+      "lastSuccess": "2026-04-28",
       "failCount": 0,
       "avgArticles": 0,
       "samples": [
@@ -2211,25 +2211,25 @@
     },
     "https://every.to/feed": {
       "lastSuccess": null,
-      "failCount": 77,
+      "failCount": 78,
       "avgArticles": 0,
       "samples": []
     },
     "https://buildermethods.substack.com/feed": {
       "lastSuccess": null,
-      "failCount": 77,
+      "failCount": 78,
       "avgArticles": 0,
       "samples": []
     },
     "https://briancasel.com/feed": {
       "lastSuccess": null,
-      "failCount": 77,
+      "failCount": 78,
       "avgArticles": 0,
       "samples": []
     },
     "https://steve-yegge.substack.com/feed": {
       "lastSuccess": "2026-02-22",
-      "failCount": 71,
+      "failCount": 72,
       "avgArticles": 0,
       "samples": [
         0
@@ -2237,7 +2237,7 @@
     },
     "https://steveyegge.substack.com/feed": {
       "lastSuccess": "2026-02-22",
-      "failCount": 71,
+      "failCount": 72,
       "avgArticles": 0,
       "samples": [
         0
@@ -2245,18 +2245,18 @@
     },
     "https://addyosmani.com/rss": {
       "lastSuccess": null,
-      "failCount": 77,
+      "failCount": 78,
       "avgArticles": 0,
       "samples": []
     },
     "https://addyosmani.com/feed.xml": {
-      "lastSuccess": "2026-04-27",
+      "lastSuccess": "2026-04-28",
       "failCount": 0,
       "avgArticles": 0,
       "samples": [
         0,
-        0,
         1,
+        0,
         0,
         0,
         0,
@@ -2267,11 +2267,10 @@
       ]
     },
     "https://blog.google/technology/ai/rss/": {
-      "lastSuccess": "2026-04-27",
+      "lastSuccess": "2026-04-28",
       "failCount": 0,
       "avgArticles": 1,
       "samples": [
-        3,
         1,
         0,
         0,
@@ -2280,29 +2279,30 @@
         3,
         3,
         1,
-        0
+        0,
+        1
       ]
     },
     "https://lovable.dev/blog/rss": {
       "lastSuccess": null,
-      "failCount": 77,
+      "failCount": 78,
       "avgArticles": 0,
       "samples": []
     },
     "https://lovable.dev/rss.xml": {
       "lastSuccess": null,
-      "failCount": 77,
+      "failCount": 78,
       "avgArticles": 0,
       "samples": []
     },
     "https://changelog.lovable.dev/rss": {
       "lastSuccess": null,
-      "failCount": 77,
+      "failCount": 78,
       "avgArticles": 0,
       "samples": []
     },
     "https://blog.stackblitz.com/rss.xml": {
-      "lastSuccess": "2026-04-27",
+      "lastSuccess": "2026-04-28",
       "failCount": 0,
       "avgArticles": 0,
       "samples": [
@@ -2320,45 +2320,44 @@
     },
     "https://codeium.com/blog/rss": {
       "lastSuccess": null,
-      "failCount": 77,
+      "failCount": 78,
       "avgArticles": 0,
       "samples": []
     },
     "https://codeium.com/blog/rss.xml": {
       "lastSuccess": null,
-      "failCount": 77,
+      "failCount": 78,
       "avgArticles": 0,
       "samples": []
     },
     "https://cursor.com/changelog/rss": {
       "lastSuccess": null,
-      "failCount": 77,
+      "failCount": 78,
       "avgArticles": 0,
       "samples": []
     },
     "https://hnrss.org/best?count=20&q=micro-SaaS+OR+vibe+coding+OR+indie+hacker": {
-      "lastSuccess": "2026-04-27",
+      "lastSuccess": "2026-04-28",
       "failCount": 0,
       "avgArticles": 1,
       "samples": [
         0,
         0,
         0,
-        0,
         1,
         1,
         1,
         2,
         1,
-        2
+        2,
+        1
       ]
     },
     "https://hnrss.org/best?count=15&q=Lovable+OR+Bolt.new+OR+Windsurf+OR+Cursor": {
-      "lastSuccess": "2026-04-27",
+      "lastSuccess": "2026-04-28",
       "failCount": 0,
       "avgArticles": 4,
       "samples": [
-        2,
         2,
         2,
         4,
@@ -2367,15 +2366,15 @@
         6,
         4,
         4,
-        5
+        5,
+        2
       ]
     },
     "https://hnrss.org/best?count=15&q=solo+founder+OR+bootstrapped+OR+AI-assisted": {
-      "lastSuccess": "2026-04-27",
+      "lastSuccess": "2026-04-28",
       "failCount": 0,
       "avgArticles": 3,
       "samples": [
-        3,
         2,
         2,
         1,
@@ -2384,16 +2383,16 @@
         4,
         1,
         2,
-        3
+        3,
+        4
       ]
     },
     "https://lobste.rs/t/ai.rss": {
-      "lastSuccess": "2026-04-27",
+      "lastSuccess": "2026-04-28",
       "failCount": 0,
       "avgArticles": 2,
       "samples": [
         0,
-        0,
         2,
         0,
         3,
@@ -2401,15 +2400,16 @@
         3,
         0,
         2,
-        2
+        2,
+        1
       ]
     },
     "https://lobste.rs/t/ml.rss": {
-      "lastSuccess": "2026-04-27",
+      "lastSuccess": "2026-04-28",
       "failCount": 0,
       "avgArticles": 0,
       "samples": [
-        1,
+        0,
         0,
         0,
         0,
@@ -2422,7 +2422,7 @@
       ]
     },
     "https://adamtooze.com/feed/": {
-      "lastSuccess": "2026-04-27",
+      "lastSuccess": "2026-04-28",
       "failCount": 0,
       "avgArticles": 0,
       "samples": [
@@ -2440,16 +2440,15 @@
     },
     "https://rss.dw.com/rdf/rss-en-europe": {
       "lastSuccess": null,
-      "failCount": 77,
+      "failCount": 78,
       "avgArticles": 0,
       "samples": []
     },
     "https://80.lv/feed": {
-      "lastSuccess": "2026-04-27",
+      "lastSuccess": "2026-04-28",
       "failCount": 0,
       "avgArticles": 9,
       "samples": [
-        10,
         10,
         4,
         10,
@@ -2458,11 +2457,12 @@
         10,
         10,
         10,
-        3
+        3,
+        10
       ]
     },
     "https://blog.unity.com/feed": {
-      "lastSuccess": "2026-04-27",
+      "lastSuccess": "2026-04-28",
       "failCount": 0,
       "avgArticles": 0,
       "samples": [
@@ -2471,19 +2471,18 @@
         0,
         0,
         0,
-        0,
         1,
+        0,
         0,
         0,
         0
       ]
     },
     "https://lobste.rs/t/practices.rss": {
-      "lastSuccess": "2026-04-27",
+      "lastSuccess": "2026-04-28",
       "failCount": 0,
       "avgArticles": 3,
       "samples": [
-        1,
         0,
         0,
         2,
@@ -2492,15 +2491,15 @@
         0,
         3,
         5,
-        4
+        4,
+        3
       ]
     },
     "https://lobste.rs/t/culture.rss": {
-      "lastSuccess": "2026-04-27",
+      "lastSuccess": "2026-04-28",
       "failCount": 0,
       "avgArticles": 1,
       "samples": [
-        2,
         0,
         0,
         1,
@@ -2509,12 +2508,13 @@
         1,
         1,
         0,
-        0
+        0,
+        1
       ]
     },
     "https://www.reddit.com/r/opensource/.rss": {
       "lastSuccess": "2026-04-24",
-      "failCount": 3,
+      "failCount": 4,
       "avgArticles": 12,
       "samples": [
         10,
@@ -2531,7 +2531,7 @@
     },
     "https://www.reddit.com/r/selfhosted/.rss": {
       "lastSuccess": "2026-04-24",
-      "failCount": 3,
+      "failCount": 4,
       "avgArticles": 24,
       "samples": [
         23,
@@ -2548,7 +2548,7 @@
     },
     "https://www.reddit.com/r/belgium/.rss": {
       "lastSuccess": "2026-04-24",
-      "failCount": 3,
+      "failCount": 4,
       "avgArticles": 24,
       "samples": [
         23,
@@ -2565,7 +2565,7 @@
     },
     "https://www.reddit.com/r/cooperatives/.rss": {
       "lastSuccess": "2026-04-24",
-      "failCount": 3,
+      "failCount": 4,
       "avgArticles": 2,
       "samples": [
         1,
@@ -2582,7 +2582,7 @@
     },
     "https://www.reddit.com/r/SideProject/.rss": {
       "lastSuccess": "2026-04-24",
-      "failCount": 3,
+      "failCount": 4,
       "avgArticles": 23,
       "samples": [
         23,
@@ -2598,11 +2598,10 @@
       ]
     },
     "https://itsfoss.com/feed/": {
-      "lastSuccess": "2026-04-27",
+      "lastSuccess": "2026-04-28",
       "failCount": 0,
-      "avgArticles": 4,
+      "avgArticles": 3,
       "samples": [
-        7,
         3,
         3,
         4,
@@ -2611,15 +2610,15 @@
         9,
         10,
         2,
-        0
+        0,
+        1
       ]
     },
     "https://lwn.net/headlines/rss": {
-      "lastSuccess": "2026-04-27",
+      "lastSuccess": "2026-04-28",
       "failCount": 0,
       "avgArticles": 6,
       "samples": [
-        8,
         4,
         1,
         5,
@@ -2628,17 +2627,18 @@
         11,
         6,
         3,
-        0
+        0,
+        9
       ]
     },
     "https://fosdem.org/2026/news/atom": {
       "lastSuccess": null,
-      "failCount": 55,
+      "failCount": 56,
       "avgArticles": 0,
       "samples": []
     },
     "https://blog.opencollective.com/rss/": {
-      "lastSuccess": "2026-04-27",
+      "lastSuccess": "2026-04-28",
       "failCount": 0,
       "avgArticles": 0,
       "samples": [
@@ -2655,7 +2655,7 @@
       ]
     },
     "https://nlnet.nl/feed.atom": {
-      "lastSuccess": "2026-04-27",
+      "lastSuccess": "2026-04-28",
       "failCount": 0,
       "avgArticles": 0,
       "samples": [
@@ -2673,12 +2673,12 @@
     },
     "https://bonfire.cafe/blog/feed": {
       "lastSuccess": null,
-      "failCount": 55,
+      "failCount": 56,
       "avgArticles": 0,
       "samples": []
     },
     "https://decidim.org/blog/feed.xml": {
-      "lastSuccess": "2026-04-27",
+      "lastSuccess": "2026-04-28",
       "failCount": 0,
       "avgArticles": 0,
       "samples": [
@@ -2696,12 +2696,12 @@
     },
     "https://coopyleft.coopcycle.org/en/feed.xml": {
       "lastSuccess": null,
-      "failCount": 55,
+      "failCount": 56,
       "avgArticles": 0,
       "samples": []
     },
     "https://dev.to/feed/tag/opensource": {
-      "lastSuccess": "2026-04-27",
+      "lastSuccess": "2026-04-28",
       "failCount": 0,
       "avgArticles": 12,
       "samples": [
@@ -2718,7 +2718,7 @@
       ]
     },
     "https://dev.to/feed/tag/socialimpact": {
-      "lastSuccess": "2026-04-27",
+      "lastSuccess": "2026-04-28",
       "failCount": 0,
       "avgArticles": 0,
       "samples": [
@@ -3037,6 +3037,26 @@
   "weeklyDigestDue": "2026-02-22",
   "actionTracking": [
     {
+      "date": "2026-04-28",
+      "actions": [
+        {
+          "action": "Protect attention for the current theme and ignore noise.",
+          "project": "dev",
+          "status": "pending"
+        },
+        {
+          "action": "Keep one eye on cross-domain radar only for real alerts.",
+          "project": "dev",
+          "status": "pending"
+        },
+        {
+          "action": "Record any strong miss so tomorrow’s review is sharper.",
+          "project": "dev",
+          "status": "pending"
+        }
+      ]
+    },
+    {
       "date": "2026-04-27",
       "actions": [
         {
@@ -3155,26 +3175,6 @@
           "status": "pending"
         }
       ]
-    },
-    {
-      "date": "2026-04-21",
-      "actions": [
-        {
-          "action": "Protect attention for the current theme and ignore noise.",
-          "project": "dev",
-          "status": "pending"
-        },
-        {
-          "action": "Keep one eye on cross-domain radar only for real alerts.",
-          "project": "dev",
-          "status": "pending"
-        },
-        {
-          "action": "Record any strong miss so tomorrow’s review is sharper.",
-          "project": "dev",
-          "status": "pending"
-        }
-      ]
     }
   ],
   "projectWatchlist": [],
@@ -3183,8 +3183,8 @@
       "humanCount": 2,
       "slopCount": 0,
       "lastChecked": "2026-02-18",
-      "articleCount": 392,
-      "lastSeen": "2026-04-27"
+      "articleCount": 396,
+      "lastSeen": "2026-04-28"
     },
     "mshibanami.github.io": {
       "humanCount": 0,
@@ -3214,22 +3214,22 @@
       "humanCount": 1,
       "slopCount": 0,
       "lastChecked": "2026-02-18",
-      "articleCount": 152,
-      "lastSeen": "2026-04-27"
+      "articleCount": 154,
+      "lastSeen": "2026-04-28"
     },
     "latent.space": {
       "humanCount": 0,
       "slopCount": 0,
       "lastChecked": "2026-02-18",
-      "articleCount": 115,
-      "lastSeen": "2026-04-26"
+      "articleCount": 117,
+      "lastSeen": "2026-04-28"
     },
     "the-decoder.com": {
       "humanCount": 0,
       "slopCount": 0,
       "lastChecked": "2026-02-18",
-      "articleCount": 2,
-      "lastSeen": "2026-04-04"
+      "articleCount": 3,
+      "lastSeen": "2026-04-28"
     },
     "bensbites.com": {
       "humanCount": 0,
@@ -3242,24 +3242,24 @@
       "lastChecked": "2026-02-18"
     },
     "ft.com": {
-      "articleCount": 200,
-      "lastSeen": "2026-04-27"
+      "articleCount": 203,
+      "lastSeen": "2026-04-28"
     },
     "economist.com": {
-      "articleCount": 149,
-      "lastSeen": "2026-04-27"
+      "articleCount": 151,
+      "lastSeen": "2026-04-28"
     },
     "noahpinion.blog": {
-      "articleCount": 82,
-      "lastSeen": "2026-04-26"
+      "articleCount": 83,
+      "lastSeen": "2026-04-28"
     },
     "theguardian.com": {
       "articleCount": 5,
       "lastSeen": "2026-02-22"
     },
     "news.ycombinator.com": {
-      "articleCount": 65,
-      "lastSeen": "2026-04-27"
+      "articleCount": 66,
+      "lastSeen": "2026-04-28"
     },
     "france24.com": {
       "articleCount": 10,
@@ -3274,8 +3274,8 @@
       "lastSeen": "2026-04-17"
     },
     "80.lv": {
-      "articleCount": 126,
-      "lastSeen": "2026-04-27"
+      "articleCount": 128,
+      "lastSeen": "2026-04-28"
     },
     "project-syndicate.org": {
       "articleCount": 2,
@@ -3415,7 +3415,7 @@
     ],
     "nextIndex": 1,
     "lastTheme": "dev",
-    "lastThemeDate": "2026-04-27",
+    "lastThemeDate": "2026-04-28",
     "lastOverrideReason": "Dev override — urgent direct-impact signal outscored scheduled Grassroot day"
   }
 }
